@@ -23,3 +23,16 @@ Mẫu engine tìm có giới hạn, khác fixture; số liệu192v2 không cộn
 
 ## Chưa hỗ trợ
 Bảng§9.1 tổng quát, sát tinh hỗn hợp, hai nhóm chính tinh khác chiều, lượng từ nhiều và định nghĩa hợp nhất sáng/mờ. Phủ đơn thủDần/Thân§7.7 không khớp cấu trúc engine, không chữa sách. Điền vô chính diệu§7.63 có nhánh Tuần/Triệt và Nhật–Nguyệt cùng sáng chưa đặc tả phối hợp. Các nhóm sao liệt kê chưa đủ toán tử. Không tự bổ sung lời cảnh báo chung để tính là có nội dung.
+
+
+## Lô 1.58.0 / catalog1.55.0 — 21/10/2026
+
+Baseline thực tế `main` sạch9f8d407 (code3bff73c);192 báo cáo dựng lại khớp1.57/catalog1.54. Dùng audit/ma trận cũ; chỉ đối chiếu câu tại ảnh PDF153/157, không đọc lại chương. Code `e7bd1e4`, module `no-dien-phuc.ts`, evaluator/facts/renderer/quyền chung; rule draft/review=null.
+
+- `dien-vcd-inheritance`: PDF157§7.63 gạch đầu: “Không được thừa hưởng tổ nghiệp: phải tự tay gây dựng.” Điều kiện nguồn là Điền không có chính tinh. Các gạch sau nói quy mô/diễn tiến khi phối hợp TT/Nhật–Nguyệt; không dùng chúng để chặn mọi câu về nguồn gốc tài sản. Chỉ xuất nguồn gốc/tự gây dựng; không mượn chính tinh đối cung, không suy quy mô hoặc thời điểm.
+- `dien-kinh-bright`: PDF153 mục Kình Dương mang số§7.14 in trùng Phá Quân: “Sáng sủa tốt đẹp: cơ nghiệp trước phá sau thành.” Trạng thái dùng bảngTB39 đã audit: chỉ Đắc tại Thìn/Tuất/Sửu/Mùi. Không suy các ô không in thành Hãm. Câu Không–Kiếp ngay sau chưa rõ một hay cả hai: nhánh hiện tại xác nhận vắng cả hai, không gọi một sao là đủ kích hoạt ngoại lệ.
+- Hai nhánh vẫn giữ cổng chưa xuất khi TT trực tiếp theo§7.32: **giới hạn triển khai vì phép điều chỉnh chưa rõ**, không tuyên bố nguồn cấm mọi nhận định. Không đảo mọi lời hoặc ưu tiên nguồn thắng.
+
+Bộ192: Điền59→43 trống,16 mới có nhận định/4 đã có được bổ sung; VCD khớp19, Kình2 (có giao nhau). Nô71→71,0 mới/0 bổ sung. Nô không còn nhánh mới đủ đặc tả trong ma trận đã rà: bảng khác ô/VCD và TT chưa có phép áp; nhóm Xương–Khúc/Khôi–Việt/Tả–Hữu/Khoa–Quyền–Lộc/Khốc–Hư thiếu lượng từ, Phục Binh phụ thuộc “nhiều”; ví dụ TL giữ đủ ba cung. Không tự bỏ cổng này.
+
+Điền còn chặn: Kình ở ô trạng thái chưa được bảng định nghĩa; nhóm Hỏa–Linh/Không–Kiếp/Xương–Khúc/Khôi–Việt/Lộc–Khoa/Tả–Hữu/Cô–Quả/Quang–Quý/Đẩu thiếu lượng từ; VCD phối hợp TT/Nhật–Nguyệt chưa rõ điều kiện và tác động. Ma quái, bệnh/sinh tử, số lượng tài sản không được mở phạm vi. Phần triển khai đủ căn cứ đã hết **trong phạm vi đã rà**, không tuyên bố đã khai thác hết sách. Xem ND04/09/10 trong backlog duy nhất và [kiểm/bàn giao](../.local/no-dien-phuc-20261021/ban-giao.md).

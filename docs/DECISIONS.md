@@ -81,3 +81,8 @@ Không có sổ quyết định có chữ ký/permalink độc lập cho toàn b
 ## 21/10/2026 — duyệt đúng bốn mẫu Tử–Phu
 
 **U trực tiếp:** chủ dự án duyệt triển khai hai chú giải Đồng/Mão, Đồng–Âm/Ngọ tại Phu và hai đặc tính Hóa Khoa, Hồng Loan tại Tử; cho biên tập gọn, pipeline chung và luồng khách. Thay trạng thái đề xuất chưa duyệt của đúng bốn mẫu trong [Phu–Tử](PHU-TU-1.33.0.md). ND19 chỉ mở thông minh/khéo tay theo câu độc lập, không Hóa Quyền hoặc loại khác. Hai mẫu Phu bắt buộc điều kiện unknown, outcomeApplied=false; không đặt tuổi/hỏi thêm/suy ngược. Độ phủ tách nhận định với chú giải, không gọi đầy đủ cung. D/C:3bff73c,1.57/catalog1.54; G2/lịch sử/Live giữ nguyên.
+
+
+## 21/10/2026 — lô Nô–Điền–Phúc 1.58
+
+Căn cứ yêu cầu trực tiếp trong phiên: chuyển các câu độc lập đủ điều kiện từ audit hiện có sang pipeline khách khi bấm “Lập lá số”, giữ đúng phương diện quan hệ/nguồn gốc/tạo dựng/duy trì; không tự mở loại nội dung hoặc áp duyệt bốn mẫu Tử–Phu cho cung khác. Đã thực hiện9nhánh tại codee7bd1e4. Phân biệt các cổng TT, vắng Riêu/Đà/Kỵ hoặc Không/Kiếp là giới hạn triển khai khi điều chỉnh chưa giải; không nhận chúng là điều kiện nguyên văn hoặc tự bỏ để tăng độ phủ. Bỏ chặn toàn mục VCDĐiền khi câu đầu độc lập; DươngPhúc dùng tọa thủ đúng nguồn. Chưa phê duyệt chuyên môn toàn báo cáo, rule vẫn draft/review=null. Nhóm ngoài phạm vi giữ riêng theoND19; lịch sử/G2/Livefalse không đổi. Đặc tả chi tiết ở NO-DIEN-1.31.0 và PHUC-DI-1.0.0.

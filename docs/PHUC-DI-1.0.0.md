@@ -67,3 +67,19 @@ Chưa triển khai Đồng–Âm (Tý/Ngọ có hai chiều), Cơ–Âm (Dần/T
 Bổ sung sau kết quả sáu cặp trên, không sửa lịch sử đặc tả: đối chiếu ảnh PDF33,175–177,180 xác định câu nền Nhật–Nguyệt ở175§10.5/176§10.8 không có điều kiện chi/sáng-hãm. Câu “lại càng rực rỡ” là tăng thêm trên nền, chưa đặc tả nơi xét Tuần/Kỵ khi xung chiếu; không biến ngoại lệ chưa rõ thành điều kiện phải vắng các sao ấy. Triển khai **chỉ nền** với `tanbien.di-vcd-nhat-nguyet-base`, phương pháp `tanbien-di-vcd-sun-moon-base-1.0.0`: DiVCD thực, Nhật–Nguyệt đồng cung thật tại Mệnh xung chiếu, danh sách chính tinh đầy đủ/toàn vẹn. Không sử dụng brightness của cung cho hay nhận, không dời sao/phụ tinh. Nội dung giữ giới hạn chưa áp dụng vế tăng thêm. Lời phụ tinh, gồm Kỵ Di, vẫn độc lập và không bị xóa.
 
 Đồng–Âm Tý/Ngọ, Cơ–Âm Dần/Thân vẫn chưa rõ lấy vị trí nào để chọn vế; Dương–Lương/Dương–Cự chưa có hợp đồng chuyển điều kiện vị trí và lời đơn thủ. Không lấy sáu cặp trước làm chứng minh. Câu chữ lặp “Tuần, Tuần” vẫn chưa được tự sửa thành Triệt. Nhật–Nguyệt5 mẫu nay có nền,9 mẫu nhóm còn lại vẫn thiếu lời; không gọi ngoại lệ đã giải quyết. Điều kiện, expected trước chạy, toàn bộ kết quả và điểm dừng ghi tại **ND04 trong V1-DELIVERY-PLAN.md**.
+
+
+## Bổ sung hữu hạn 1.58.0 / catalog1.55.0 — 21/10/2026
+
+Dùng ma trận cũ và đặc tả1.47; chỉ đối chiếu câu tại ảnh133/141/142. Không đọc lại chương. Code `e7bd1e4`, bảy nhánh trong `no-dien-phuc.ts`, không đổi Thiên Di.
+
+- PDF133§6.1.5: Thái Dương **tọa thủ**, không phải đơn thủ. Hai nhóm chi giữ nguyên Dần/Mão/Thìn/Tỵ/Ngọ và Thân/Dậu/Tuất/Hợi/Tý. Chỉ xuất hưởng phúc/khó toại lòng và hoàn cảnh họ hàng; không tuổi thọ/phẩm hạnh hoặc biến lời khuyên ly tổ thành điều kiện đã áp. Bỏ giới hạn đơn thủ tự đặt; không cấy độ sáng engine. Xác nhận vắng Riêu/Đà/Kỵ để tránh§39–40 chưa rõ lượng từ: đây là cổng an toàn của dự án, không suy một sao là đủ kích hoạt ngoại lệ.
+- PDF141§46 Cự–Kỵ đồng cung: khó toại lòng, họ hàng bất hòa/ly tán/sa sút. PDF141§47 Cự–Hỏa đồng cung: câu độc lập về họ hàng bất hòa/ly tán/sa sút; không bệnh, chết hoặc cháy từ đường.
+- PDF141 tiêu đề§51 và câu142: **Hỏa hay Linh**, đồng cung Tang Môn; giữ câu họ hàng ly tán. Tang Môn dùng vòng Thái Tuế bản mệnh đủ12 vị trí, không giả làm phụ tinh để khớp mẫu.
+- PDF142§52: Kỵ đồng cung **Kình hay Đà**; giữ nhiều lo toan, may ít rủi nhiều, họ hàng tranh chấp/sa sút; bỏ vế phẩm hạnh. PDF142§53: **Kỵ, Không, Kiếp đồng cung**, đủ cả ba; giữ khó toại lòng/họ hàng ly tán suy bại, bỏ vế phẩm hạnh.
+
+Chữ “hay” là căn cứ OR, “đồng cung” và danh sách ba sao§53 là căn cứ hội đủ; không tự đặt lượng từ. Tất cả giữ cổng TT trực tiếp chưa giải§36, ghi rõ giới hạn triển khai. Không tự xóa lời nền Cơ–Cự, không chọn Cự–Kỵ thắng; lời tổ hợp giữ riêng và nói rõ chưa hợp nhất. Không áp cơ chế điều kiện unknown của bốn mẫu Tử–Phu sang đây.
+
+Bộ192: Phúc43→36 trống,7 mới có nhận định/8 bổ sung. Số khớp từng nhánh: Dương cao7/thấp1, Cự–Kỵ4, Hỏa/Linh–Tang1, Kỵ–Kình/Đà2. Cự–Hỏa và Kỵ–Không–Kiếp **chỉ có fixture kỹ thuật**, chưa có chứng kiến engine trong192 hoặc các đầu vào mới có chủ đích; không tuyên bố bất khả đạt. Hai mẫu engine ngoài192 được tạo qua form: nữ21/02/1978 giờSửu (Cự–Kỵ), nữ07/11/1978 giờTỵ (Hỏa/Linh–Tang).
+
+Còn chặn: Tử Vi có sát/TT, Riêu–Đà–Kỵ chưa rõ lượng từ/tác động; VCD/Tam Không/Đà độc thủ chưa rõ tập sao/phối hợp; các câu Cự/Lương bất nhất; Hóa Quyền dẫn chiếu chưa xác định lời thay thế. §45 trùng nghĩa không thêm claim;§55–56 lời thuận gắn nguyên nhân thần linh, không tách thành dự báo độc lập;§48/54/57–60 chưa có câu độc lập đủ điều kiện và phạm vi. Không mở âm phần, sinh tử, bệnh, phẩm hạnh. Phần đủ đặc tả trong phạm vi rà này đã triển khai hết, không tuyên bố hết sách. Backlog ND08/19 giữ đúng điểm chặn; [bằng chứng](../.local/no-dien-phuc-20261021/ban-giao.md).

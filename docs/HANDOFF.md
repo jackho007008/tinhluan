@@ -55,3 +55,8 @@ QA3062 phục vụ1.56.0/catalog1.53.0 từ `.local/kin-batch-20261021/qa-final`
 ## Bốn mẫu Tử–Phu đã duyệt — 1.57.0
 
 QA3062 đang1.57/catalog1.54, code3bff73c; [trạng thái](CURRENT_STATUS.md), [toàn văn/bàn giao](PHU-TU-1.33.0.md), ND12/13/19 trong [backlog duy nhất](V1-DELIVERY-PLAN.md).17Tử mới có nhận định,2Phu chỉ chú giải có điều kiện chưa xác định; không tính là cung hoàn chỉnh. Lịch sử/G2/Live giữ nguyên.
+
+
+## Lô Nô–Điền–Phúc — 1.58.0
+
+QA3062 đang1.58/catalog1.55, code `e7bd1e4`, checkout `.local/no-dien-phuc-20261021/qa-final`. Đọc [trạng thái](CURRENT_STATUS.md), ND04/08/09/10 trong [backlog duy nhất](V1-DELIVERY-PLAN.md), [Nô–Điền](NO-DIEN-1.31.0.md), [Phúc–Di](PHUC-DI-1.0.0.md), [bàn giao và cách tạo mẫu](../.local/no-dien-phuc-20261021/ban-giao.md). Không còn nhánh đủ đặc tả chưa triển khai trong phạm vi đã rà; không tuyên bố hết sách. Giữ riêng2nhánh chỉfixture, lịch sử/G2/QA3070/Livefalse.
