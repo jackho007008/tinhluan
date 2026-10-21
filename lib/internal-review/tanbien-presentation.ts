@@ -1,3 +1,5 @@
+import {kinExtensionBranches} from '../interpretation-rules/kin-extension';
+import {childrenVcdBranches,childrenVcdFacts} from '../interpretation-rules/children-vcd';
 import {familyVcdBranches,familyVcdKey,familyVcdAssessment} from '../interpretation-rules/family-vcd';
 import {bookState} from '../tuvi-engine/tanbien';
 import {completionFacts} from '../interpretation-rules/natal-completion';
@@ -212,10 +214,11 @@ const factLabels: Record<string, string> = {
   "fact.wealth-minor-stars": "phụ tinh tại Tài Bạch",
 };
 export function conditionText(c: Condition): string {
+  const children=childrenVcdBranches.slice(6).find(r=>c.fact==='fact.children-vcd-'+r.id);if(children)return `Tử Nữ không có chính tinh; đúng cặp ${children.stars.join('–')} tại Điền Trạch xung chiếu, không chuyển phụ tinh.`;
   const vcd=familyVcdBranches.find(r=>c.fact==='fact.'+familyVcdKey(r));if(vcd)return `${vcd.palace} không có chính tinh; đúng cả cặp ${vcd.stars.join('–')} bản mệnh xung chiếu.`;
   if(c.fact === "fact.life-literary-m05")return "Nam mệnh; Vũ miếu/vượng/đắc tọa Mệnh, Xương hoặc Khúc đồng cung theo Tân Biên.";
   if(c.fact === "fact.life-literary-m07")return "Kỵ bản mệnh tọa Mệnh Tý/Hợi; Khoa bản mệnh đồng cung hoặc xung chiếu.";
-  const kin=kinBranches.find(r=>c.fact==='fact.'+kinKey(r)); if(kin)return kinCondition(kin);
+  const kin=[...kinBranches,...kinExtensionBranches.slice(9)].find(r=>c.fact==='fact.'+kinKey(r)); if(kin)return kinCondition(kin);
   const fam=familyBranches.find(r=>c.fact==='fact.'+familyKey(r)); if(fam)return familyCondition(fam);
   const nd=noDienBranches.find(r=>c.fact==='fact.'+noDienKey(r));
   if(nd)return noDienCondition(nd)+' — đúng cung bản mệnh; điều chỉnh Tuần/Triệt được kiểm tra riêng.';
@@ -268,6 +271,7 @@ export function conditionText(c: Condition): string {
     : `Điều kiện về ${label}: ${c.value}.`;
 }
 export function factEvidence(s: ChartSnapshot, id: string): ReadingEvidence {
+ const children=childrenVcdBranches.slice(6).find(r=>id==='fact.children-vcd-'+r.id);if(children){const f=childrenVcdFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,'snapshot'):item('Chưa đủ dữ kiện chính tinh và quan hệ xung chiếu để kiểm tra nhánh Tử Nữ này.');}
  const vcd=familyVcdBranches.find(r=>id==='fact.'+familyVcdKey(r));if(vcd){const a=familyVcdAssessment(s,vcd);return item(a.text,a.paths,a.cause==='unresolved-adjustment'?'editorial':'snapshot');}
  if(id.startsWith("fact.life-literary-")){const f=lifeLiteraryFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện nhất quán để kiểm tra nhánh văn tinh/Tứ Hóa tại Mệnh.");}
  if(id.startsWith("fact.life-npl-local-")){const f=nplLocalFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"snapshot"):item("Chưa có đủ dữ kiện nhất quán để kiểm tra quan hệ đồng cung bản mệnh này.");}
@@ -275,7 +279,7 @@ export function factEvidence(s: ChartSnapshot, id: string): ReadingEvidence {
  if(id.startsWith("fact.life-npl-two-")){const f=nplTwoFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện hoặc bảng NPL nhất quán để xét hai chính tinh với Bản Mệnh.");}
  if(["fact.life-body-position","fact.life-body-relation"].includes(id)){const f=lifeBodyFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"snapshot"):item("Chưa đủ dữ kiện nhất quán để xác định vị trí hoặc quan hệ Mệnh–Thân.");}
  const vb=voidBranches.find(r=>id==='fact.'+r.key); if(vb){const a=voidAssessment(s,vb);return item(a.text,a.paths,a.cause==='unresolved-adjustment'?'editorial':'snapshot');}
-  const kin=kinBranches.find(r=>id==='fact.'+kinKey(r));if(kin){const a=kinAssessment(s,kin);return item(a.text,a.paths,'snapshot');}
+  const kin=[...kinBranches,...kinExtensionBranches.slice(9)].find(r=>id==='fact.'+kinKey(r));if(kin){const a=kinAssessment(s,kin);return item(a.text,a.paths,'snapshot');}
   const fam=familyBranches.find(r=>id==='fact.'+familyKey(r));if(fam){const a=familyAssessment(s,fam);return item(a.text,a.paths,a.cause==='unresolved-adjustment'?'editorial':'snapshot');}
   const nd=noDienBranches.find(r=>id==='fact.'+noDienKey(r));
   if(nd){const a=noDienAssessment(s,nd);return item(a.text,a.paths,a.cause==='unresolved-adjustment'?'editorial':'snapshot');}

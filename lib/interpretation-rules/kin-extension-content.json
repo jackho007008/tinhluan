@@ -176,5 +176,283 @@
     "excerpt": "",
     "stateMethod": "none",
     "customer": "Thái Dương đơn thủ tại Phu Thê ở Dậu, Tuất, Hợi hoặc Tý gắn với những trắc trở trong việc cưới hỏi. Trong cùng đoạn, lời tránh những điều chẳng lành chỉ đi với điều kiện muộn đường hôn phối; chưa có mốc tuổi để xác định điều kiện ấy cho hồ sơ này."
+  },
+  {
+    "id": "liem-pha-later",
+    "palace": "Tử Nữ",
+    "stars": [
+      "Liêm Trinh",
+      "Phá Quân"
+    ],
+    "branches": [],
+    "page": 199,
+    "section": "13.2.2",
+    "text": "mô tả con cái về sau không khá giả.",
+    "customer": "Liêm Trinh–Phá Quân đồng cung Tử Nữ được sách mô tả là con cái về sau không khá giả. Đây là lời về hoàn cảnh vật chất, không xác nhận có con hay hoàn cảnh của một người con thực tế.",
+    "limit": "Câu về hoàn cảnh về sau không đặt điều kiện nếu/mới; không xuất số con, sinh sản hoặc khó nuôi, không suy kết quả nuôi con từ câu vật chất.",
+    "gender": null,
+    "mode": "exact",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "id": "liem-tham-later",
+    "palace": "Tử Nữ",
+    "stars": [
+      "Liêm Trinh",
+      "Tham Lang"
+    ],
+    "branches": [],
+    "page": 199,
+    "section": "13.2.2",
+    "text": "mô tả con cái về sau không khá giả.",
+    "customer": "Liêm Trinh–Tham Lang đồng cung Tử Nữ được sách mô tả là con cái về sau không khá giả. Đây là lời về hoàn cảnh vật chất, không xác nhận có con hay hoàn cảnh của một người con thực tế.",
+    "limit": "Câu về hoàn cảnh về sau không đặt điều kiện nếu/mới; không xuất số con, sinh sản hoặc khó nuôi, không suy kết quả nuôi con từ câu vật chất.",
+    "gender": null,
+    "mode": "exact",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "id": "am-high-early-male",
+    "palace": "Phu Thê",
+    "stars": [
+      "Thái Âm"
+    ],
+    "branches": [
+      "Dậu",
+      "Tuất",
+      "Hợi"
+    ],
+    "page": 211,
+    "section": "14.8",
+    "text": "mô tả hai bên có vị thế, lấy nhau sớm và hòa thuận lâu bền. Người vợ giàu sang, người chồng thường nể vợ và đôi khi nhờ vợ mà có danh giá, của cải.",
+    "customer": "Thái Âm đơn thủ tại Phu Thê ở Dậu, Tuất hoặc Hợi gắn với mặt thuận về vị thế của hai người, việc lấy nhau sớm và sự hòa thuận lâu bền. Với hồ sơ nam, sách còn mô tả người vợ giàu sang, người chồng thường nể vợ và đôi khi nhờ vợ mà có danh giá, của cải. “Sớm” chưa có mốc tuổi; đây không phải xác nhận hôn nhân hoặc tài sản thực tế.",
+    "limit": "Giữ sớm trong mô tả; không đặt tuổi hoặc xác nhận lịch sử hôn nhân. Không xuất nhan sắc/phẩm hạnh.",
+    "gender": "male",
+    "mode": "exact",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "id": "am-high-early-female",
+    "palace": "Phu Thê",
+    "stars": [
+      "Thái Âm"
+    ],
+    "branches": [
+      "Dậu",
+      "Tuất",
+      "Hợi"
+    ],
+    "page": 211,
+    "section": "14.8",
+    "text": "mô tả hai bên có vị thế, lấy nhau sớm và hòa thuận lâu bền.",
+    "customer": "Thái Âm đơn thủ tại Phu Thê ở Dậu, Tuất hoặc Hợi gắn với mặt thuận về vị thế của hai người, việc lấy nhau sớm và sự hòa thuận lâu bền. “Sớm” chưa có mốc tuổi; đây không phải xác nhận hôn nhân hoặc tài sản thực tế.",
+    "limit": "Giữ sớm trong mô tả; không đặt tuổi hoặc xác nhận lịch sử hôn nhân. Không xuất nhan sắc/phẩm hạnh.",
+    "gender": "female",
+    "mode": "exact",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "id": "co-am-dan-obstacles",
+    "palace": "Phu Thê",
+    "stars": [
+      "Thiên Cơ",
+      "Thái Âm"
+    ],
+    "branches": [
+      "Dần"
+    ],
+    "page": 210,
+    "section": "14.6",
+    "text": "nêu những trở ngại trong việc cưới hỏi và mô tả hai bên có tài. Lời tránh bất hòa hoặc xa cách gắn với muộn đường hôn phối, chưa xác định cho hồ sơ.",
+    "customer": "Thiên Cơ–Thái Âm đồng cung Phu Thê tại Dần được mô tả là thường gặp trở ngại trong việc cưới hỏi, cả hai đều có tài. Trong cùng đoạn, lời tránh bất hòa hoặc xa cách gắn với muộn đường hôn phối; chưa có mốc tuổi để xác định điều kiện đó cho hồ sơ này.",
+    "limit": "Lời khuyên muộn trong nguồn không chứng minh hồ sơ đã đáp ứng điều kiện thời gian; không đặt tuổi hoặc khuyên kết hôn. Không suy lời tránh hại thành dự báo hại chắc chắn.",
+    "gender": null,
+    "mode": "exact",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "id": "sun-luong-dau-obstacles",
+    "palace": "Phu Thê",
+    "stars": [
+      "Thái Dương",
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Dậu"
+    ],
+    "page": 212,
+    "section": "14.12",
+    "text": "nêu việc cưới xin hay trắc trở. Lời tránh những sự chẳng lành gắn với muộn đường hôn phối, chưa xác định cho hồ sơ.",
+    "customer": "Thái Dương–Thiên Lương đồng cung Phu Thê tại Dậu gắn với những trắc trở trong việc cưới hỏi. Lời tránh những điều chẳng lành trong cùng đoạn có điều kiện muộn đường hôn phối; chưa có mốc tuổi để áp điều kiện ấy cho hồ sơ này.",
+    "limit": "Lời khuyên muộn trong nguồn không chứng minh hồ sơ đã đáp ứng điều kiện thời gian; không đặt tuổi hoặc khuyên kết hôn. Không suy lời tránh hại thành dự báo hại chắc chắn.",
+    "gender": null,
+    "mode": "exact",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "id": "sat-dan-than-temper",
+    "palace": "Phu Thê",
+    "stars": [
+      "Thất Sát"
+    ],
+    "branches": [
+      "Dần",
+      "Thân"
+    ],
+    "page": 213,
+    "section": "14.13",
+    "text": "mô tả cả hai bên đều cương cường. Chưa áp lời khuyên muộn đường hôn phối trong đoạn nguồn.",
+    "customer": "Thất Sát đơn thủ tại Phu Thê ở Dần hoặc Thân được mô tả là cả hai bên đều cương cường. Đoạn nguồn còn có lời khuyên về muộn đường hôn phối; lời khuyên ấy không được dùng để xác nhận thời điểm kết hôn hay suy ra chia ly cho bạn.",
+    "limit": "Lời khuyên muộn trong nguồn không chứng minh hồ sơ đã đáp ứng điều kiện thời gian; không đặt tuổi hoặc khuyên kết hôn. Không suy lời tránh hại thành dự báo hại chắc chắn. Không xuất phẩm hạnh/thứ bậc.",
+    "gender": null,
+    "mode": "exact",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "id": "sat-ty-ngo-harmony",
+    "palace": "Phu Thê",
+    "stars": [
+      "Thất Sát"
+    ],
+    "branches": [
+      "Tý",
+      "Ngọ"
+    ],
+    "page": 213,
+    "section": "14.13",
+    "text": "mô tả hai bên cương cường và hay bất hòa. Vế hình khắc hay chia ly chỉ đặt dưới điều kiện nếu sớm lập gia đình, chưa xác định cho hồ sơ.",
+    "customer": "Thất Sát đơn thủ tại Phu Thê ở Tý hoặc Ngọ được mô tả là hai bên cương cường, hay bất hòa. Riêng lời hình khắc hay chia ly trong đoạn nguồn có điều kiện “nếu sớm lập gia đình”; chưa có mốc tuổi để xác định điều kiện ấy, nên không kết luận bạn sẽ chia ly.",
+    "limit": "Lời khuyên muộn trong nguồn không chứng minh hồ sơ đã đáp ứng điều kiện thời gian; không đặt tuổi hoặc khuyên kết hôn. Không suy lời tránh hại thành dự báo hại chắc chắn. Không xuất phẩm hạnh/thứ bậc; giữ nếu sớm bên cạnh lời nền.",
+    "gender": null,
+    "mode": "exact",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "id": "liem-phu-household",
+    "palace": "Phu Thê",
+    "stars": [
+      "Liêm Trinh",
+      "Thiên Phủ"
+    ],
+    "branches": [],
+    "page": 208,
+    "section": "14.2",
+    "text": "mô tả hai bên cương cường nhưng chung sống lâu bền, gia đình sung túc và thường có danh giá. Đoạn nguồn có lời khuyên muộn lập gia đình, chưa xác định thời điểm cho hồ sơ.",
+    "customer": "Liêm Trinh–Thiên Phủ đồng cung Phu Thê được mô tả là hai bên cương cường nhưng vẫn chung sống lâu bền; gia đình sung túc và thường có danh giá. Đoạn nguồn đặt lời này sau lời khuyên muộn lập gia đình. Chưa có mốc tuổi để áp lời khuyên ấy; đây không phải xác nhận một kết quả hôn nhân thực tế.",
+    "limit": "Lời khuyên muộn trong nguồn không chứng minh hồ sơ đã đáp ứng điều kiện thời gian; không đặt tuổi hoặc khuyên kết hôn. Không suy lời tránh hại thành dự báo hại chắc chắn.",
+    "gender": null,
+    "mode": "exact",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "id": "vu-alone-support-male",
+    "palace": "Phu Thê",
+    "stars": [
+      "Vũ Khúc"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "page": 209,
+    "section": "14.4",
+    "text": "mô tả người chồng nhờ vợ mà có tiền. Chưa áp lời khuyên muộn lập gia đình và gần bằng tuổi trong câu trước.",
+    "customer": "Vũ Khúc đơn thủ tại Phu Thê ở Thìn hoặc Tuất, với hồ sơ nam, gắn với lời người chồng nhờ vợ mà có tiền. Câu trước trong nguồn có lời khuyên kết hôn muộn và bằng hoặc gần bằng tuổi; chưa xác định các yếu tố đó, không coi lời này là bảo đảm tài sản thực tế.",
+    "limit": "Lời khuyên muộn trong nguồn không chứng minh hồ sơ đã đáp ứng điều kiện thời gian; không đặt tuổi hoặc khuyên kết hôn. Không suy lời tránh hại thành dự báo hại chắc chắn. Không tự thêm điều kiện đã kết hôn hoặc tuổi người phối ngẫu.",
+    "gender": "male",
+    "mode": "exact",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "id": "vu-alone-support-female",
+    "palace": "Phu Thê",
+    "stars": [
+      "Vũ Khúc"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "page": 209,
+    "section": "14.4",
+    "text": "mô tả người vợ nhờ chồng mà được hưởng giàu sang. Chưa áp lời khuyên muộn lập gia đình và gần bằng tuổi trong câu trước.",
+    "customer": "Vũ Khúc đơn thủ tại Phu Thê ở Thìn hoặc Tuất, với hồ sơ nữ, gắn với lời người vợ nhờ chồng mà được hưởng giàu sang. Câu trước trong nguồn có lời khuyên kết hôn muộn và bằng hoặc gần bằng tuổi; chưa xác định các yếu tố đó, không coi lời này là bảo đảm tài sản thực tế.",
+    "limit": "Lời khuyên muộn trong nguồn không chứng minh hồ sơ đã đáp ứng điều kiện thời gian; không đặt tuổi hoặc khuyên kết hôn. Không suy lời tránh hại thành dự báo hại chắc chắn. Không tự thêm điều kiện đã kết hôn hoặc tuổi người phối ngẫu.",
+    "gender": "female",
+    "mode": "exact",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "id": "liem-sat-separation",
+    "palace": "Phu Thê",
+    "stars": [
+      "Liêm Trinh",
+      "Thất Sát"
+    ],
+    "branches": [],
+    "page": 209,
+    "section": "14.2",
+    "text": "nêu hình khắc hay sinh ly. Lời khuyên muộn nhằm tránh buồn thương không chứng minh kết quả tránh hại đã xảy ra.",
+    "customer": "Liêm Trinh–Thất Sát đồng cung Phu Thê có lời về hình khắc hoặc xa cách trong quan hệ. Nguồn còn khuyên muộn lập gia đình để tránh buồn thương; chưa có mốc tuổi hay dữ kiện để áp lời ấy, không xác nhận bạn sẽ chia ly.",
+    "limit": "Lời khuyên muộn trong nguồn không chứng minh hồ sơ đã đáp ứng điều kiện thời gian; không đặt tuổi hoặc khuyên kết hôn. Không suy lời tránh hại thành dự báo hại chắc chắn. Không quy hình khắc thành bệnh hoặc tử vong.",
+    "gender": null,
+    "mode": "exact",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "id": "tuong-high-background-male",
+    "palace": "Phu Thê",
+    "stars": [
+      "Thiên Tướng"
+    ],
+    "branches": [
+      "Tỵ",
+      "Hợi",
+      "Sửu",
+      "Mùi"
+    ],
+    "page": 212,
+    "section": "14.11",
+    "text": "mô tả người vợ khôn ngoan, có tài đảm đang, xuất thân khá giả. Chưa áp lời khuyên muộn, chênh tuổi hoặc điều kiện họ xa trong đoạn nguồn.",
+    "customer": "Thiên Tướng đơn thủ tại Phu Thê ở Tỵ, Hợi, Sửu hoặc Mùi, với hồ sơ nam, được sách liên hệ với người vợ khôn ngoan, có tài đảm đang, xuất thân khá giả. Đoạn nguồn còn bàn về muộn đường hôn phối, chênh tuổi và họ hàng xa; chưa xác định các yếu tố ấy, nên không kết luận đã tránh được bất hòa hay xa cách.",
+    "limit": "Câu mô tả người phối ngẫu độc lập với chỉ dẫn tránh hại. Không xuất nhan sắc, không đặt tuổi, không xác nhận năng lực/danh chức/tài sản thực tế, không suy đã đạt điều kiện họ xa hoặc tránh hại.",
+    "gender": "male",
+    "mode": "exact",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "id": "tuong-high-background-female",
+    "palace": "Phu Thê",
+    "stars": [
+      "Thiên Tướng"
+    ],
+    "branches": [
+      "Tỵ",
+      "Hợi",
+      "Sửu",
+      "Mùi"
+    ],
+    "page": 212,
+    "section": "14.11",
+    "text": "mô tả người chồng có danh chức và giỏi giang. Chưa áp lời khuyên muộn, chênh tuổi hoặc điều kiện họ xa trong đoạn nguồn.",
+    "customer": "Thiên Tướng đơn thủ tại Phu Thê ở Tỵ, Hợi, Sửu hoặc Mùi, với hồ sơ nữ, được sách liên hệ với người chồng có danh chức và giỏi giang. Đoạn nguồn còn bàn về muộn đường hôn phối, chênh tuổi và họ hàng xa; chưa xác định các yếu tố ấy, nên không kết luận đã tránh được bất hòa hay xa cách.",
+    "limit": "Câu mô tả người phối ngẫu độc lập với chỉ dẫn tránh hại. Không xuất nhan sắc, không đặt tuổi, không xác nhận năng lực/danh chức/tài sản thực tế, không suy đã đạt điều kiện họ xa hoặc tránh hại.",
+    "gender": "female",
+    "mode": "exact",
+    "excerpt": "",
+    "stateMethod": "none"
   }
 ]

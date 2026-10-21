@@ -11,6 +11,7 @@ export const childrenVcdBranches=[
  {"id": "tu-pha", "stars": ["Tử Vi", "Phá Quân"], "section": "13.2.1", "page": 199, "text": "Cặp Tử Vi–Phá Quân mô tả con cái về sau hay xung khắc với cha mẹ."},
  {"id": "liem-phu", "stars": ["Liêm Trinh", "Thiên Phủ"], "section": "13.2.2", "page": 199, "text": "Cặp Liêm Trinh–Thiên Phủ mô tả con cái về sau khá giả."},
  {"id": "vu-phu", "stars": ["Vũ Khúc", "Thiên Phủ"], "section": "13.2.4", "page": 200, "text": "Cặp Vũ Khúc–Thiên Phủ gắn với mặt thuận về vị thế của con cái về sau."},
+ {id:'liem-pha',stars:['Liêm Trinh','Phá Quân'],section:'13.2.2',page:199,text:'Cặp Liêm Trinh–Phá Quân mô tả con cái về sau không khá giả.'},{id:'liem-tham',stars:['Liêm Trinh','Tham Lang'],section:'13.2.2',page:199,text:'Cặp Liêm Trinh–Tham Lang mô tả con cái về sau không khá giả.'},
 ];
 export function childrenVcdFacts(s:ChartSnapshot):DerivedFact[]{
  if(s.chart.tanBien?.completeness?.majorStars!=='complete'||!principalIntegrity(s.chart).valid)return [];

@@ -11,7 +11,7 @@ it('Nô accepts unanimous cells, never majority/strongest; incomplete and direct
 for(const r of kinExtensionBranches)it('new clause '+kinKey(r)+' keeps its source gate and full limits',()=>{
  const s=fixture([{palace:r.palace,stars:r.stars,branch:r.branches[0]||'Dần'}]);s.normalized.gender=(r.gender||'male')as any;const rule=kinExtensionRules.find(x=>x.id==='tanbien.'+kinKey(r))!,raw=JSON.stringify(s);
  expect(kinAssessment(s,r).value).toBe(true);expect(executeRules(s,[rule],'internal-draft').previewClaims).toHaveLength(1);expect(rule.status).toBe('draft');expect(rule.review).toBeNull();expect(rule.sourceReferences[0].location).toMatch(/Trang PDF/);expect(JSON.stringify(s)).toBe(raw);
- if(r.id.includes('early'))expect(r.customer).toContain('sớm');if(r.id.includes('separation'))for(const t of ['ly tán','phiêu bạt','về sau'])expect(r.customer).toContain(t);if(r.id==='sun-low-obstacles')for(const t of ['trắc trở','điều kiện','muộn','chưa có mốc tuổi'])expect(r.customer).toContain(t);
+ if(r.id.includes('early'))expect(r.customer).toContain('sớm');if(r.palace==='Tử Nữ'&&r.id.includes('separation'))for(const t of ['ly tán','phiêu bạt','về sau'])expect(r.customer).toContain(t);if(r.id==='sun-low-obstacles')for(const t of ['trắc trở','điều kiện','muộn','chưa có mốc tuổi'])expect(r.customer).toContain(t);
  const target=s.chart.palaces.find(p=>p.name===r.palace)!,other=s.chart.palaces.find(p=>p.name!==r.palace&&p.majorStars.length)!;[target.majorStars,other.majorStars]=[other.majorStars,target.majorStars];expect(kinAssessment(s,r).value).toBe(false);[target.majorStars,other.majorStars]=[other.majorStars,target.majorStars];(target.majorStars[0]as any).scope='year';expect(kinAssessment(s,r).value).toBeUndefined();delete(s.chart.tanBien as any).completeness;expect(kinAssessment(s,r).value).toBeUndefined();
 });
 it('gender, branch and source ambiguity exclusions are specific; no late-age inferred gate',()=>{
@@ -23,4 +23,25 @@ for(const[id,stars]of [['tu-sat',['Tử Vi','Thất Sát']],['tu-pha',['Tử Vi'
 });
 it('new content remains paid under G2 with the same free whole groups',async()=>{
  const {snapshot:s,receipt}=await calculateInternal({date:'1983-05-18',hour:1,minute:0,gender:'female',place:'Hà Nội',timezone:'Asia/Ho_Chi_Minh',calendar:'solar',profile:'tanbien-vn-trial-v2',unknownTime:false,consent:true});const frozen=freezeReading(s,receipt),record:any={snapshot:s,frozen};expect(frozen.customerReport!.sections.flatMap(s=>s.paragraphs).some(p=>p.members.some(m=>m.claim.rules.some(r=>r.id.includes('dong-luong-early'))))).toBe(true);record.accessPolicy=captureReadingPolicy(record);const free=JSON.stringify(projectReading(record));for(const p of frozen.customerReport!.sections.filter(s=>s.palaces.includes('Nô Bộc')||s.palaces.includes('Phu Thê')).flatMap(s=>s.paragraphs))expect(free).not.toContain(JSON.stringify(p.text));
+});
+it('ND12/13 keeps conditional harms conditional and separates independent clauses',()=>{
+ const get=(id:string)=>kinExtensionBranches.find(r=>r.id===id)!;
+ expect(get('sat-ty-ngo-harmony').customer).toContain('nếu sớm lập gia đình');
+ expect(get('sat-ty-ngo-harmony').customer).toContain('không kết luận bạn sẽ chia ly');
+ for(const id of ['co-am-dan-obstacles','sun-luong-dau-obstacles']){expect(get(id).customer).toMatch(/trở ngại|trắc trở/);expect(get(id).customer).toContain('chưa có mốc tuổi');}
+ for(const id of ['liem-pha-later','liem-tham-later']){expect(get(id).customer).toContain('về sau không khá giả');expect(get(id).customer).not.toMatch(/khó nuôi|hiển đạt|sinh nhiều/);}
+ const r=get('am-high-early-female'),s=fixture([{palace:'Phu Thê',stars:['Thái Âm'],branch:'Hợi'}]);s.normalized.gender='female';expect(kinAssessment(s,r).value).toBe(true);at(s,'Phu Thê','Thìn');expect(kinAssessment(s,r).value).toBe(false);
+ expect(get('am-high-early-male').customer).toContain('đôi khi nhờ vợ');expect(r.customer).not.toContain('nhờ vợ');
+ for(const excluded of ['dong-mao','dong-am-ngo','sun-cu-than','tu-sat','pha-ty-ngo'])expect(kinExtensionBranches.some(r=>r.id===excluded)).toBe(false);
+});
+for(const[id,star]of [['liem-pha','Phá Quân'],['liem-tham','Tham Lang']])it('ND12 VCD '+id+' uses only the source pair, never donor minor stars',()=>{
+ const s=fixture([{palace:'Tử Nữ',stars:[],branch:'Thìn'},{palace:'Điền Trạch',stars:['Liêm Trinh',star],branch:'Tuất'}]),rule=childrenVcdRules.find(r=>r.id==='tanbien.children-vcd-'+id)!;
+ expect(executeRules(s,[rule],'internal-draft').previewClaims).toHaveLength(1);expect(rule.claimTemplate).toContain('về sau không khá giả');
+ at(s,'Tử Nữ','Tỵ');expect(executeRules(s,[rule],'internal-draft').previewClaims).toHaveLength(0);
+ at(s,'Tử Nữ','Thìn');s.chart.tanBien!.completeness.majorStars='unknown' as any;expect(executeRules(s,[rule],'internal-draft').previewClaims).toHaveLength(0);
+});
+it('new customer evidence shows actual source conditions instead of an unmapped fact',async()=>{
+ const {factEvidence,conditionText}=await import('../lib/internal-review/tanbien-presentation');
+ for(const r of kinExtensionBranches.slice(9)){const s=fixture([{palace:r.palace,stars:r.stars,branch:r.branches[0]||'Dần'}]);s.normalized.gender=(r.gender||'male')as any;const id='fact.'+kinKey(r);expect(JSON.stringify(factEvidence(s,id))).not.toContain('chưa có ánh xạ');expect(conditionText({fact:id,op:'eq',value:'yes'})).toContain(r.palace);}
+ const s=fixture([{palace:'Tử Nữ',stars:[],branch:'Thìn'},{palace:'Điền Trạch',stars:['Liêm Trinh','Tham Lang'],branch:'Tuất'}]);expect(JSON.stringify(factEvidence(s,'fact.children-vcd-liem-tham'))).toContain('Điền Trạch');
 });

@@ -27,3 +27,10 @@ it('order print uses the order entitlement route with guest cookie, never the fr
  const orderId='876bf6fb-3c2a-4d53-837b-f0314c678382';await renderStoredCustomerPdf(record,{kind:'order',token:'owner',orderId},true);
  expect(browser.goto).toHaveBeenCalledWith('http://127.0.0.1:3062/don-thu?id='+orderId+'&print=1',expect.any(Object));expect(browser.addCookies).toHaveBeenCalledWith([expect.objectContaining({name:'tinhluan_trial',value:'owner'})]);
 });
+it('1.56 uses the shared paginator while preserving stored report text',async()=>{
+ const {paginateCustomerReport}=await import('../lib/internal-review/customer-pagination');
+ const next=structuredClone(record);next.frozen.customerReport!.version='1.56.0';browser.version='1.56.0';
+ await renderStoredCustomerPdf(next,{kind:'trial',token:'owner'});
+ expect(browser.evaluate).toHaveBeenCalledWith(paginateCustomerReport);
+ expect(next.frozen.customerReport!.sections[0].paragraphs[0].text).toBe('Nội dung đã lưu, có dấu tiếng Việt.');
+});

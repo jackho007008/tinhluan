@@ -4,7 +4,7 @@ import type {ChartSnapshot} from '../tuvi-engine';
 import type {ContinuousReport} from './continuous-report';
 import {CUSTOMER_COPY} from './customer-copy';
 import EDITORIAL from './customer-editorial.json';
-export const CUSTOMER_VERSION='1.55.1';
+export const CUSTOMER_VERSION='1.56.0';
 type Group=ContinuousReport['palaces'][number]['groups'][number];
 export type CustomerParagraph={id:string;title:string;text:string;claimIds:string[];sentences:{text:string;claimIds:string[];kind:'paraphrase'|'editorial-transition'|'source-relation'}[];original:string;members:Group['members'];relations:unknown[];movedToEvidence:string[];review:'editorial-checked'|'pending-editorial'};
 export type CustomerSection={id:string;title:string;palaces:string[];intro:string|null;paragraphs:CustomerParagraph[];notices:{text:string;reason:unknown}[]};
