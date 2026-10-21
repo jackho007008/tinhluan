@@ -3,7 +3,7 @@ import type {ContinuousReport} from './continuous-report';
 
 /** Shared financial text belongs under a palace with content; historical editions keep their placement. */
 export function customerTopicOwner(version:string,section:{id:string;palaces:string[]},palaces:{name:string}[],scope:{name:string;state:string}[]){
- if(version==='1.54.0'&&section.id==='assets'&&section.palaces.includes('Tài Bạch')&&scope.some(p=>p.name==='Tài Bạch'&&['free','available','locked'].includes(p.state)))return 'Tài Bạch';
+ if(['1.54.0','1.55.0'].includes(version)&&section.id==='assets'&&section.palaces.includes('Tài Bạch')&&scope.some(p=>p.name==='Tài Bạch'&&['free','available','locked'].includes(p.state)))return 'Tài Bạch';
  return palaces.find(p=>section.palaces.includes(p.name))?.name;
 }
 

@@ -69,3 +69,16 @@ Danh sách này chỉ ghi lỗi mở tìm được trong tài liệu gần nhấ
 ## 6. Kết thúc một lượt kiểm
 
 Ghi cwd/codeidentity, envđích khôngsecret, lệnh, files/cases, kết quả từng lượt, lỗi và thay đổi sau kiểm, fixturesvsengine/providerthật, phần chưa chạy. Nếu sửa code saugate, chỉ nêu phần kết quả còn hiệu lực; không chạy lại toànbộ trừ tác động yêu cầu. Task tài liệu kiểm link/diff là đủ; không dùng nó để báo ứng dụng đã được nghiệm thu lại.
+
+## ND04 Phụ/Huynh — 21/10/2026
+
+Baseline `main@1fa0829`, đầu lô sạch. Code cuối phục vụ từ `.local/vcd-20261021/qa-final`; root/QA trùng byte các file ứng dụng đổi. Chỉ sửa tài liệu sau lượt kiểm cuối.
+
+- `node node_modules/vitest/vitest.mjs run tests/family-vcd.test.ts tests/phu-huynh.test.ts tests/family-extension.test.ts tests/di-vcd.test.ts tests/di-vcd-sun-moon.test.ts tests/customer-editorial-catalog.test.ts tests/customer-topic-editorial.test.ts tests/continuous-report.test.ts`: **679/679,8file**. [Log](../.local/vcd-20261021/tests-final.log).
+- `node .local/vcd-20261021/run.mjs scope-test`: **6/6**, `reading-scope.test.ts` trong DB riêng tạo mới; không QA chính. [Log](../.local/vcd-20261021/g2-tests.log).
+- `node .local/vcd-20261021/run.mjs typecheck` và `build` gọi `npm run typecheck/build` trong checkout QA: đạt. Build một lượt; typecheck lượt đầu có2TS2790 do test delete thuộc tính bắt buộc, sửa castfixture rồi đạt.
+- `.local/vcd-20261021/compare.ts`: so đủ192, giữ claims/facts/rule/trace/relations cũ, ND01/Di/ND03 và G2. Lượt đầu bắt thay metadata B, đã tách B-vcd để giữ nguyên B; lần cuối đạt. Không thay expected lịch sử.
+- Các lỗi setup khác: fixture place trống bị validation; search chọn1971ngoài miền. Sửa fixture và phạm vi tìm; không tính output lỗi thành mẫu. Tìm1.440input hợp lệ ngoài192 có15nhánh/14input;18nhánh chỉfixture. Test nguồn khớp/không khớp/unknown/TT/ngoài bảng không thay chứng kiến engine.
+- Hai phiên khách qua form → lưu/mở lại; fullPDF403 trước grant, chéo đọc/PDF404; hai đơn **mock** nội bộ để kiểm toàn bài. Mobile360/390/căn cứ; PDF8trang,18đoạn đúng bản lưu, đã xem đủ ảnh. Không báo mock là SePay thật. [Bằng chứng](../.local/vcd-20261021/public-acceptance.json), [PDF](../.local/vcd-20261021/pdf-check.json).
+
+Không chạy toàngate, bộPDF hoặc nghiệm thu provider. Lượt cuối các file đã chạy không fail/skip; phần chưa chạy không được tuyên bố đạt. Bảo toàn117file báo cáo/103ID,35file phiên,14filecode bảo vệ và các dòng quyền/link/binding cũ;34bài công khai không đổi. [Manifest](../.local/vcd-20261021/preservation.json).

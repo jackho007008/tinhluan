@@ -1,3 +1,4 @@
+import {familyVcdBranches,familyVcdKey,familyVcdAssessment} from '../interpretation-rules/family-vcd';
 import {bookState} from '../tuvi-engine/tanbien';
 import {completionFacts} from '../interpretation-rules/natal-completion';
 import {lifeLiteraryFacts,M05} from '../interpretation-rules/life-literary';
@@ -211,6 +212,7 @@ const factLabels: Record<string, string> = {
   "fact.wealth-minor-stars": "phụ tinh tại Tài Bạch",
 };
 export function conditionText(c: Condition): string {
+  const vcd=familyVcdBranches.find(r=>c.fact==='fact.'+familyVcdKey(r));if(vcd)return `${vcd.palace} không có chính tinh; đúng cả cặp ${vcd.stars.join('–')} bản mệnh xung chiếu.`;
   if(c.fact === "fact.life-literary-m05")return "Nam mệnh; Vũ miếu/vượng/đắc tọa Mệnh, Xương hoặc Khúc đồng cung theo Tân Biên.";
   if(c.fact === "fact.life-literary-m07")return "Kỵ bản mệnh tọa Mệnh Tý/Hợi; Khoa bản mệnh đồng cung hoặc xung chiếu.";
   const kin=kinBranches.find(r=>c.fact==='fact.'+kinKey(r)); if(kin)return kinCondition(kin);
@@ -266,6 +268,7 @@ export function conditionText(c: Condition): string {
     : `Điều kiện về ${label}: ${c.value}.`;
 }
 export function factEvidence(s: ChartSnapshot, id: string): ReadingEvidence {
+ const vcd=familyVcdBranches.find(r=>id==='fact.'+familyVcdKey(r));if(vcd){const a=familyVcdAssessment(s,vcd);return item(a.text,a.paths,a.cause==='unresolved-adjustment'?'editorial':'snapshot');}
  if(id.startsWith("fact.life-literary-")){const f=lifeLiteraryFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện nhất quán để kiểm tra nhánh văn tinh/Tứ Hóa tại Mệnh.");}
  if(id.startsWith("fact.life-npl-local-")){const f=nplLocalFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"snapshot"):item("Chưa có đủ dữ kiện nhất quán để kiểm tra quan hệ đồng cung bản mệnh này.");}
  if(id.startsWith("fact.life-npl-foundation-")||id.startsWith("fact.life-npl-two-v2-")){const f=[...nplFoundationFacts(s),...nplTwoV2Facts(s)].find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện nhất quán cho phép xét ngũ hành này.");}

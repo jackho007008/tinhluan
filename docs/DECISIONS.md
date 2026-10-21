@@ -51,6 +51,10 @@ U gói recovery yêu cầu hash token, hạn, dùng một lần, chỉ tiêu th�
 
 **Đã chốt theo yêu cầu trực tiếp20/10.** U: “Triển khai ND03: hoàn thiện văn và bố cục các chủ đề Công việc, Tiền bạc–tích lũy–nhà đất từ nhận định hiện có”; giữ G2/evaluator/lịch sử, chưa Tật/Live. Thay trạng thái “đề xuất chưa triển khai” của phiên tài liệu; không thay bất kỳ quyết định chuyên môn nào. D: [bàn giao1.54](../.local/nd03-20261020/ban-giao.md); C: `editCustomerTopics`, `customerTopicOwner`, `buildCustomerReport`; kiểm `customer-topic-editorial.test.ts` và so192. Không tính biên tập thành giảm cung trống/đủ12cung.
 
+### Q10 — ND04 Phụ/Huynh, tập con có câu không phụ thuộc chi/trạng thái
+
+**Triển khai theo ủy quyền lô nội dung21/10; không phải phê duyệt chuyên môn của chủ dự án.** U giao giải một nhóm điều kiện và publish phần đủ nguồn, giữ G2/lịch sử/Tật chưa publish. C: `familyVcdAssessment`, `familyVcdRules`, `tests/family-vcd.test.ts`. D: [bảng nguồn](PHU-HUYNH-1.32.0.md), [bằng chứng](../.local/vcd-20261021/ban-giao.md). Dùng chỉ dẫn riêng PDF131/224 và câu cung nhận không đòi chi/trạng thái; không giả định phương pháp mượn chung. Cổng giữ unknown khi Tuần/Triệt ở một trong hai cung với lời vật chất Phụ là lựa chọn thận trọng của triển khai, chưa phải điều kiện được chủ dự án hoặc nguồn xác nhận. Tập con33nhánh đã lên1.55/1.52; các câu trạng thái/ngoại lệ chưa rõ vẫn ở backlog, không mở rộng quyết định phạm vi.
+
 ## Đề xuất chưa duyệt hoặc chưa xác định nguồn quyết định
 
 - **ND02:** mở nguyên ba nhóm vai trò Mệnh–Thân miễn phí, hai nhóm Thân cư Quan/Tài chi tiết. D: mục phân quyền5rule trong kế hoạch; **chưa thấy U duyệt thay policy**. Giữ G2.

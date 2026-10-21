@@ -39,3 +39,7 @@ QA3062 đang phục vụ1.54.0/catalog1.51.0. Đọc [CURRENT_STATUS](CURRENT_ST
 Xem [GIT-BASELINE](GIT-BASELINE.md) cho phạm vi baseline, kiểm secret/fixture và trạng thái commit. Ghi nhận “không có Git” phía trên là lịch sử của phiên trước. Không dùng số phiên bản ứng dụng thay cho branch/status/diff. Kho `.local`, báo cáo, sách gốc và bằng chứng loại khỏi Git vẫn giữ nguyên trên máy; liên kết tới chúng không được bảo đảm có trên máy mới.
 
 Baseline Git đã tạo: `0c5461a1d6fe2bbba9522e99dbeebd8fab67eb98` (`main`), `chore: establish Tinh Luan baseline and handoff docs`.597 file staged khớp manifest trước commit; không thay QA hoặc dữ liệu. Cập nhật ghi nhận này nằm ở commit tài liệu riêng; xem `git log -2 --oneline` và trạng thái hiện tại trước task mới.
+
+## Cập nhật sau ND04 Phụ/Huynh — 21/10/2026
+
+QA3062 phục vụ1.55.0/catalog1.52.0. Đọc [trạng thái hiện hành](CURRENT_STATUS.md), [ND04 trong backlog](V1-DELIVERY-PLAN.md), [đặc tả nguồn Phụ/Huynh](PHU-HUYNH-1.32.0.md) và [toàn văn/bằng chứng](../.local/vcd-20261021/ban-giao.md). Tập con này đã tích hợp luồng khách; không phải phương pháp mượn chung hoặc đủ12cung. QA3070, G2, lịch sử và Tật chưa publish giữ nguyên.

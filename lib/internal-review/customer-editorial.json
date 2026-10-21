@@ -4791,5 +4791,533 @@
       "Giữ cả vế sớm xa nhau và về sau đều giàu có; không suy quan hệ nhân quả giữa chúng.",
       "Không xuất số lượng anh chị em. Chưa phối hợp Phúc Đức hay các lời khác chiều; không suy thành tài chính của bản thân."
     ]
+  },
+  "tanbien.parents-vcd-tu-phu": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Tử Vi–Thiên Phủ ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả cha mẹ giàu sang, con được thừa hưởng nhiều của cải để lại. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Tử Vi–Thiên Phủ xung chiếu theo lời riêng về Phụ Mẫu: sách liên hệ với hoàn cảnh cha mẹ giàu sang và phần của cải để lại cho con.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "79a11efd29385cb6a598a0ddc3b9c0d511ae10d4e2ac89e4ef299f5a1761bef6",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Giữ chưa xác định khi Tuần/Triệt tại cung nhận hoặc cung cho; chưa giải vị trí áp dụng §5.2.30."
+    ]
+  },
+  "tanbien.parents-vcd-tu-tuong": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Tử Vi–Thiên Tướng ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả cha mẹ có vị thế, gia đình yên vui và phúc lộc dồi dào. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Tử Vi–Thiên Tướng xung chiếu theo lời riêng về Phụ Mẫu: sách mô tả gia đình yên vui, cha mẹ có vị thế và phúc lộc.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "c8a94ec1806ba4c65547c2845ad4bdc8563b8f4c8b87e1df5b385d669c5d531b",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Giữ chưa xác định khi Tuần/Triệt tại cung nhận hoặc cung cho; chưa giải vị trí áp dụng §5.2.30."
+    ]
+  },
+  "tanbien.parents-vcd-tu-sat": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Tử Vi–Thất Sát ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả cha mẹ có điều kiện vật chất và vị thế thuận lợi nhưng bất hòa; con không hợp tính cha mẹ, gia đình có sự xa cách. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Tử Vi–Thất Sát xung chiếu theo lời riêng về Phụ Mẫu: sách mô tả mặt vật chất thuận lợi đi cùng sự bất hòa, không hợp tính giữa cha mẹ và con, và sự xa cách trong gia đình.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "1490dc361d6df6e8a47e3a7a43a490ca01ad8a97a15756a95f2f5e5d46aed45e",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Giữ chưa xác định khi Tuần/Triệt tại cung nhận hoặc cung cho; chưa giải vị trí áp dụng §5.2.30."
+    ]
+  },
+  "tanbien.parents-vcd-tu-pha": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Tử Vi–Phá Quân ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả cha mẹ khá giả nhưng trong nhà hay có sự bất hòa. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Tử Vi–Phá Quân xung chiếu theo lời riêng về Phụ Mẫu: sách mô tả cha mẹ khá giả nhưng trong nhà hay có sự bất hòa.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "a60d3c659184c5edc7db6b45fdc97a1e30ee4794b4194e9f1aebd1ff99e66ad6",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Giữ chưa xác định khi Tuần/Triệt tại cung nhận hoặc cung cho; chưa giải vị trí áp dụng §5.2.30."
+    ]
+  },
+  "tanbien.parents-vcd-tu-tham": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Tử Vi–Tham Lang ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả hoàn cảnh cha mẹ bình thường. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Tử Vi–Tham Lang xung chiếu theo lời riêng về Phụ Mẫu: sách mô tả hoàn cảnh cha mẹ bình thường.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "c71baeb0a839960a052234021220b3767e8413e086df210387121874b93038eb",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Giữ chưa xác định khi Tuần/Triệt tại cung nhận hoặc cung cho; chưa giải vị trí áp dụng §5.2.30."
+    ]
+  },
+  "tanbien.parents-vcd-liem-phu": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Liêm Trinh–Thiên Phủ ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả cha mẹ có của cải nhưng bất hòa, con không hợp tính cha mẹ. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Liêm Trinh–Thiên Phủ xung chiếu theo lời riêng về Phụ Mẫu: sách mô tả cha mẹ có của cải nhưng gia đình bất hòa, cha mẹ và con không hợp tính.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "5b5c779a0c1638eb5aece6c4f1eef8b37f42240168b79d534cbb1cbcd69fba0c",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Giữ chưa xác định khi Tuần/Triệt tại cung nhận hoặc cung cho; chưa giải vị trí áp dụng §5.2.30."
+    ]
+  },
+  "tanbien.parents-vcd-liem-tuong": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Liêm Trinh–Thiên Tướng ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả cha mẹ vất vả, con khó chung sống gần gũi với cha mẹ. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Liêm Trinh–Thiên Tướng xung chiếu theo lời riêng về Phụ Mẫu: sách mô tả sự vất vả và khó chung sống gần gũi giữa cha mẹ và con.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "09249df0c4c0ff3fafeb23e27ae49f2709b2b5a2f77e1575fe154154d0390d32",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.parents-vcd-liem-sat": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Liêm Trinh–Thất Sát ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả trong nhà thường có sự bất hòa. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Liêm Trinh–Thất Sát xung chiếu theo lời riêng về Phụ Mẫu: sách mô tả trong nhà thường có sự bất hòa.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "8d0332f34008ff920212e56f4a9c192bfc16be2e6025e62da93ecdc804177a59",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.parents-vcd-liem-tham": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Liêm Trinh–Tham Lang ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả hoàn cảnh cha mẹ thiếu thốn và gia đình có sự xa cách. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Liêm Trinh–Tham Lang xung chiếu theo lời riêng về Phụ Mẫu: sách mô tả hoàn cảnh thiếu thốn và sự xa cách trong gia đình.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "6b30e98882bb6f3ef42505fa5840b3a5b4d447a083767db01e7306d11f9a0d0c",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Giữ chưa xác định khi Tuần/Triệt tại cung nhận hoặc cung cho; chưa giải vị trí áp dụng §5.2.30."
+    ]
+  },
+  "tanbien.parents-vcd-dong-luong": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Thiên Đồng–Thiên Lương ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả cha mẹ khá giả. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Thiên Đồng–Thiên Lương xung chiếu theo lời riêng về Phụ Mẫu: sách liên hệ với hoàn cảnh cha mẹ khá giả.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "ab267870d495bf65871707179fe317533cde59cd0b6b5983fc7ec9a417deb01f",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Giữ chưa xác định khi Tuần/Triệt tại cung nhận hoặc cung cho; chưa giải vị trí áp dụng §5.2.30."
+    ]
+  },
+  "tanbien.parents-vcd-dong-cu": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Thiên Đồng–Cự Môn ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả sớm xa cách cha mẹ và trong nhà thiếu hòa khí. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Thiên Đồng–Cự Môn xung chiếu theo lời riêng về Phụ Mẫu: sách mô tả thiếu hòa khí và sự xa cách giữa con với cha mẹ.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "005740ec61ce969368f09df39646f87a556efcd3b32cd55dd39c988b037b87cb",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.parents-vcd-vu-phu": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Vũ Khúc–Thiên Phủ ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả cha mẹ giàu có và có vị thế. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Vũ Khúc–Thiên Phủ xung chiếu theo lời riêng về Phụ Mẫu: sách liên hệ với của cải và vị thế của cha mẹ.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "d1a8ee78cdf8ee2914dd578b46750ebf70041f1edd04378ff007b2839e0905c2",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Giữ chưa xác định khi Tuần/Triệt tại cung nhận hoặc cung cho; chưa giải vị trí áp dụng §5.2.30."
+    ]
+  },
+  "tanbien.parents-vcd-vu-tuong": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Vũ Khúc–Thiên Tướng ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả cha mẹ có quyền thế và nhiều của cải. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Vũ Khúc–Thiên Tướng xung chiếu theo lời riêng về Phụ Mẫu: sách liên hệ với quyền thế và của cải của cha mẹ.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "741334eb199365d36cc5e99d5780c6406fea00ef57ac3f30e9444a42b6218ffc",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Giữ chưa xác định khi Tuần/Triệt tại cung nhận hoặc cung cho; chưa giải vị trí áp dụng §5.2.30."
+    ]
+  },
+  "tanbien.parents-vcd-vu-tham": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Vũ Khúc–Tham Lang ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả cha mẹ có của cải nhưng không hợp tính con, trong nhà thiếu hòa khí. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Vũ Khúc–Tham Lang xung chiếu theo lời riêng về Phụ Mẫu: sách mô tả cha mẹ có của nhưng không hợp tính con, gia đình thiếu hòa khí.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "ab867cb9262e45e86e3acf5ba5d0ed7404bc5c21a2c5f28b435d280f9d9bbc9e",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Giữ chưa xác định khi Tuần/Triệt tại cung nhận hoặc cung cho; chưa giải vị trí áp dụng §5.2.30."
+    ]
+  },
+  "tanbien.parents-vcd-vu-pha": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Vũ Khúc–Phá Quân ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả cha mẹ bất hòa, con không hợp tính cha mẹ và gia đình thường ly tán. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Vũ Khúc–Phá Quân xung chiếu theo lời riêng về Phụ Mẫu: sách mô tả bất hòa, không hợp tính giữa cha mẹ và con, và sự xa cách trong gia đình.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "cb89ae30d2194203923bb41907465c090f9c19e8ffe6d8520557a5aed4435d84",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.parents-vcd-co-luong": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Thiên Cơ–Thiên Lương ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả cha mẹ giàu có và có vị thế. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Thiên Cơ–Thiên Lương xung chiếu theo lời riêng về Phụ Mẫu: sách liên hệ với của cải và vị thế của cha mẹ.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "7adbbe5c25e094f4d5f5659b1a8cb85155b7aceb37cec631b53b51288eca70aa",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Giữ chưa xác định khi Tuần/Triệt tại cung nhận hoặc cung cho; chưa giải vị trí áp dụng §5.2.30."
+    ]
+  },
+  "tanbien.parents-vcd-co-cu": {
+    "text": "Khi Phụ Mẫu không có chính tinh tọa thủ, cặp Thiên Cơ–Cự Môn ở đối cung được dùng để xét riêng phần cha mẹ. Lời luận mô tả trong nhà thiếu hòa khí. Đây là lời riêng của cặp sao, chưa phải kết luận chung về gia đình.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu xét cặp Thiên Cơ–Cự Môn xung chiếu theo lời riêng về Phụ Mẫu: sách mô tả trong nhà thiếu hòa khí.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "097e1bbfbd34774774a5b4c01db900942745211a1586fa73dc0f1883ed565d79",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về cha mẹ và quan hệ gia đình; chưa hợp nhất với Nhật–Nguyệt và các yếu tố khác.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-tu-phu": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Tử Vi–Thiên Phủ ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả anh chị em có vị thế. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Tử Vi–Thiên Phủ xung chiếu theo lời riêng về Huynh Đệ: sách liên hệ với vị thế của anh chị em.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "b0b9038b282dd54048f9b1065e073ec8573db120bcb9025a05967bb0b5c9310e",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-tu-tuong": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Tử Vi–Thiên Tướng ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả anh chị em khá giả nhưng hay bất hòa vì thiếu sự nhường nhịn lẫn nhau. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Tử Vi–Thiên Tướng xung chiếu theo lời riêng về Huynh Đệ: sách mô tả mặt vật chất khá giả nhưng thiếu hòa khí giữa anh chị em.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "3f736c987c239cca72b6c6dab87de53364f3e21785196cb93ff8d59750e995ee",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-tu-sat": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Tử Vi–Thất Sát ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả anh chị em có điều kiện vật chất và vị thế thuận lợi. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Tử Vi–Thất Sát xung chiếu theo lời riêng về Huynh Đệ: sách liên hệ với điều kiện vật chất và vị thế thuận lợi của anh chị em.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "7bfc2266700325ab16a9b4747c0d1eed525181e829a842ac4c54a01cbd1a2f15",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-tu-pha": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Tử Vi–Phá Quân ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả anh chị em sớm xa cách nhau, trong nhà thiếu hòa khí. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Tử Vi–Phá Quân xung chiếu theo lời riêng về Huynh Đệ: sách mô tả sự xa cách và thiếu hòa khí giữa anh chị em.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "4b442bb594540de4362e76a1593724761d740eaf67ae0dfd12f153591bb4844f",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-tu-tham": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Tử Vi–Tham Lang ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả anh chị em thường ly tán và vất vả trên đường đời. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Tử Vi–Tham Lang xung chiếu theo lời riêng về Huynh Đệ: sách mô tả sự ly tán và vất vả của anh chị em.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "3cb0918350894c50960fd89cfdb4a10a0f165a711331040712a31cce6bf71041",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-liem-phu": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Liêm Trinh–Thiên Phủ ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả anh chị em khá giả nhưng không hợp tính nhau. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Liêm Trinh–Thiên Phủ xung chiếu theo lời riêng về Huynh Đệ: sách mô tả hoàn cảnh khá giả nhưng không hợp tính giữa anh chị em.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "ef68da10148af18cc9e38447d9be961c07e7df47f562112293ee757d0a58ff55",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-liem-tuong": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Liêm Trinh–Thiên Tướng ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả anh chị em có vị thế. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Liêm Trinh–Thiên Tướng xung chiếu theo lời riêng về Huynh Đệ: sách liên hệ với vị thế của anh chị em.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "1e8cef1d883a9806e553532af7390a407eaf1cbcdbb341afc61c3cdd9191ccc0",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-liem-tham": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Liêm Trinh–Tham Lang ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả anh chị em khó khăn, xa cách và bất hòa, có sự oán giận và tranh cãi. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Liêm Trinh–Tham Lang xung chiếu theo lời riêng về Huynh Đệ: sách mô tả hoàn cảnh khó khăn, xa cách và bất hòa, có tranh cãi giữa anh chị em.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "8b73965960568a4378f5ee90d32ee94bec8b24f01e8f218553090e0923f3007d",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-dong-luong": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Thiên Đồng–Thiên Lương ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả anh chị em khá giả. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Thiên Đồng–Thiên Lương xung chiếu theo lời riêng về Huynh Đệ: sách liên hệ với hoàn cảnh anh chị em khá giả.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "da6f8afb694294fa663161f47085f32cf2b1bac042478e57a882ca8124acc301",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-dong-cu": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Thiên Đồng–Cự Môn ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả trong nhà thiếu hòa khí. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Thiên Đồng–Cự Môn xung chiếu theo lời riêng về Huynh Đệ: sách mô tả trong nhà thiếu hòa khí.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "3d747af6a238dbfcfd349e1bd2450552755a6b23bef6c0fd843298dacab61943",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-vu-phu": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Vũ Khúc–Thiên Phủ ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả anh chị em giàu có và có vị thế. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Vũ Khúc–Thiên Phủ xung chiếu theo lời riêng về Huynh Đệ: sách liên hệ với của cải và vị thế của anh chị em.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "848e77aec67221ceba5ce29de425a48677e5536d0f3dc86ae6fbc0109e055837",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-vu-pha": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Vũ Khúc–Phá Quân ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả anh chị em hay xung đột và phải xa cách nhau. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Vũ Khúc–Phá Quân xung chiếu theo lời riêng về Huynh Đệ: sách mô tả xung đột và sự xa cách giữa anh chị em.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "f6efd54cfae12bad82744dc9d9b701d4602892da09b2cca9d591e87727746599",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-co-luong": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Thiên Cơ–Thiên Lương ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả anh chị em khá giả và thuận hòa. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Thiên Cơ–Thiên Lương xung chiếu theo lời riêng về Huynh Đệ: sách mô tả hoàn cảnh khá giả và thuận hòa giữa anh chị em.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "173f27686821e553b896266f51fd8a19ea097eb450bc0ed2a7cd92caffd03f0a",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-co-cu": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Thiên Cơ–Cự Môn ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả anh chị em khá giả nhưng không hợp tính nhau. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Thiên Cơ–Cự Môn xung chiếu theo lời riêng về Huynh Đệ: sách mô tả hoàn cảnh khá giả nhưng không hợp tính giữa anh chị em.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "e8050275b1ab90fa3cca1d7d6ff4d27370d7c9587dbf0eaea3a295a80e645f73",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-vu-tham-later": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Vũ Khúc–Tham Lang ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả anh chị em sớm xa nhau, về sau đều giàu có. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Vũ Khúc–Tham Lang xung chiếu theo lời riêng về Huynh Đệ: sách mô tả anh chị em sớm xa nhau, về sau đều giàu có.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "ed2962ae15adc82b25432b645ffb80725f17fefac1efaa6a0e412ed078e73f9e",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
+  },
+  "tanbien.siblings-vcd-sun-moon": {
+    "text": "Khi Huynh Đệ không có chính tinh tọa thủ, cặp Thái Dương–Thái Âm ở đối cung được dùng để xét riêng phần anh chị em. Lời luận mô tả anh chị em khá giả nhưng thiếu hòa khí. Phần này chưa phối hợp ảnh hưởng của Phúc Đức để kết luận toàn bộ quan hệ anh chị em.",
+    "sourceTemplate": "Theo Tân Biên, Huynh Đệ vô chính diệu xét cặp Thái Dương–Thái Âm xung chiếu theo lời riêng về Huynh Đệ: sách mô tả anh chị em khá giả nhưng thiếu hòa khí.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "89c629a34e5c43b69a97c1eaf98b75f9713d687bae47a956e7283a6ea298e0cb",
+    "strategy": "ND04: independent receiving-palace clause under its explicit VCD instruction",
+    "movedToEvidence": [
+      "Lời riêng về anh chị em; chưa phối hợp Phúc Đức để kết luận toàn bộ, không xác định người thân cụ thể.",
+      "Chú giải cục bộ trong phạm vi câu đã đối chiếu, không kết luận hoàn cảnh thực tế của người thân.",
+      "Không xuất số lượng, sinh tử, bệnh tật, phẩm hạnh hoặc lời khuyên sống xa gia đình để tránh tai họa. Không thay chúng bằng lời nhẹ hơn.",
+      "tanbien-family-vcd-pairs-1.0.0",
+      "Chứng nhận chính tinh đầy đủ và toàn vẹn. Không dựng cung giả.",
+      "Trạng thái: không dùng; câu được chọn không có điều kiện địa chi/sáng-hãm. Không suy đã giải cách lấy trạng thái cho nhánh khác.",
+      "Không thêm cổng vắng Tuần/Triệt cho câu không thuộc phép đảo giàu nghèo của Phụ Mẫu."
+    ]
   }
 }
