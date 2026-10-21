@@ -75,6 +75,8 @@ ND04:38 snapshot có43 claim mới; Phụ16 cung mới có lời/2 bổ sung, Hu
 
 Lỗi đầu đã ghi: assertion Tử áp nhầm nhánh Phu do chuỗi ID; sandbox chặn DB localhost; thiếu1.56 trong danh sách phân trang gây mục lục trống; thiếu ánh xạ căn cứ mới; công cụ hệ thống thiếu pdftotext/pypdf (đã dùng runtime đi kèm). Không sửa expected lịch sử, không chạy toàngate. Giữ nhóm nếu/mới, TT/lượng từ, VCD chưa rõ và phạm vi loại trừ; câu hỏi/phương án ở nguồn và ND04/12/13/19. Dừng sau lô này.
 
+Khép bàn giao1.56 bằng tài liệu: không còn nhóm Tử–Phu đủ đặc tả trong phạm vi hiện hành chưa triển khai. Năm nhóm câu hỏi, phương án và người cần quyết định đã ghi trực tiếp trong [đặc tả](PHU-TU-1.33.0.md); phần chuyên môn do người thẩm định, phạm viND19 do chủ dự án. Đây không phải xác nhận khai thác hết sách hoặc phê duyệt phương án mới. Không sửa ứng dụng/chạy test/build trong bước khép này.
+
 ## Baseline Git — 21/10/2026
 
 Đã chuẩn bị quản lý mã/tài liệu cục bộ theo [GIT-BASELINE](GIT-BASELINE.md). Đã có baseline commit `0c5461a1d6fe2bbba9522e99dbeebd8fab67eb98` trên branch `main`, từ597 file đã rà; cập nhật bàn giao bằng commit tài liệu riêng. Không có remote/push. Gói Git không xác minh lại hoặc thay runtime1.54.0/catalog1.51.0, không restart QA/test/build/migration.

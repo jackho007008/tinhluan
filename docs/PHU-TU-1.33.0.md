@@ -58,12 +58,55 @@ Thêm14 nhánh tọa thủ trong `kin-extension-content.json` và2 nhánh TửVC
 
 Mọi nhánh tọa thủ giữ exact đúng bộ chính tinh, đúng chi và giới nếu có; chứng nhận thiếu/sao lưu không kích hoạt. Không thêm điều kiện vắng TT. Cổng nguồn không rõ vẫn giữ riêng; đây không phải bỏ toàn bộ cổng bảo thủ.
 
-### Phần còn lại và câu hỏi cần chốt
+### Năm nhóm quyết định còn chặn — khép lô1.56.0
 
-- **ND12:** Tướng Mão/Dậu201§13.3.11 và Cơ–Cự200 có “muộn…mới”; Nhật–Cự Thân200 và Nhật–Lương Dậu200/202 còn điều kiện sinh muộn. Chưa có tuổi/định nghĩa và dữ kiện kiểm, không xuất phần thuận như đã thỏa. TT205§13.3.45 chưa rõ một/cả hai và phạm vi câu quan hệ; các nhóm Kình–Đà–Không–Kiếp/Hỏa–Linh/Xương–Khúc/Đẩu/Khốc–Hư chưa rõ lượng từ, tập cung, sáng/mờ. Lộc Tồn203 có ngoại lệ “nhiều sao mờ” tác động tới sự hiện hữu của đối tượng nên chưa bóc lời quan hệ. Liêm–Tướng, Vũ đơn, Sát Dần/Thân chưa tách phần thuận khỏi hoàn cảnh nuôi con trong câu. Những nhánh chỉ số con/giới tính/quý tử, Hóa Quyền/Khoa/Hồng Loan và phẩm hạnh/sinh tử giữ phạm vi audit cũ, không tự mở.
-- **ND13:** Đồng Mão209, Đồng–Âm Ngọ209/211, Nhật–Cự Thân210, Tử–Sát208/213 chỉ cho lời tránh hại/bền lâu khi chậm/muộn/tiên trở hậu thành; chưa định nghĩa. Cơ–Cự210, Nhật–Nguyệt210/211, Vũ–Tham209 và Vũ–Phá209/213, Phá Tý/Ngọ213 gắn vế thuận với nếu/ngoại lệ trong cùng câu: không chỉ lấy vế thuận. Đồng–Âm Tý có “như trên” dẫn khác chiều209/211; Lương Tỵ212 có hai dòng khác chiều, không tự sửa thành Tý hoặc chọn lời thắng. Các nhánh Cự thấp, Liêm đơn, Phá/Sát khác chứa số lần hôn nhân/tai họa/phẩm hạnh, không đổi thành văn quan hệ chung. Nhóm Xương/Khúc, Khôi/Việt, Quang/Quý, Cô/Quả, Cự–Hỏa–Linh, Song Hao và “nhiều” chưa chốt lượng từ/vị trí; Lộc ở216 chưa rõ sao nào. PhuVCD chưa có hợp đồng riêng, không dùng định nghĩa Tử207 cho Phu.
-- **Quyết định phạm vi ND19:** giữ hiện trạng (khuyến nghị cho lô này), hoặc cho thẩm định riêng số lượng/thứ bậc/quý tử/đặc tính con. Phương án thứ hai cần duyệt từng loại và cách diễn đạt trước code; chưa thể hứa số cung sẽ giảm. Không bao gồm việc cho phép bệnh/sinh tử/phẩm hạnh.
-- **Câu hỏi chuyên môn ND04/12/13:** nguồn nào định nghĩa tuổi sớm/muộn và dữ kiện cần nhập; nếu chưa có, giữ không áp kết quả thay vì tự chọn tuổi. Với VCD/TT/nhóm sao, cần cung cho/nhận, trạng thái, lượng từ và ngoại lệ cụ thể; không biểu quyết AND/OR theo sở thích. Với hai bất nhất209/211 và212, cần bằng chứng đính chính hoặc quyết định giữ hai chú giải xung đột; hiện giữ chưa áp, không chọn bên thắng.
+Chỉ tổng hợp kết quả audit/đặc tả đã có; không mở lại PDF, không suy thêm điều kiện. Số hiện hành của bộ192: Tử93 cung trống, Phu51. Các nhóm dưới có thể giao nhau; số cấu trúc bị ảnh hưởng không phải số cung chắc chắn sẽ được lấp.
+
+**1. Khi nguồn viết “nếu/mới”, phải biết điều kiện thời gian nào đã thỏa? — ND12/13**
+
+- **Câu và chỗ chưa rõ:** Tướng/Tử201§13.3.11: “Nếu muộn sinh mới dễ nuôi và sau này con mới khá giả”; Cơ–Cự/Tử200 cũng gắn khá giả với muộn sinh. Đồng/Phu Mão209 có “chậm cưới mới…”; Tử–Sát/Phu208/213 có “tiên trở hậu thành mới…” và “như thế mới…”. Chưa có định nghĩa đủ để kiểm sớm/muộn, tiên trở hậu thành, dữ kiện cần biết hoặc phạm vi kết quả chịu điều kiện. Không đồng nhất các câu này với mô tả “lấy nhau sớm” đã triển khai.
+- **Loại:** thiếu cách áp dụng nguồn; không phải chủ dự án tùy chọn một tuổi. Với câu có sinh sản/khó nuôi còn có giới hạn sản phẩm, tách ở nhóm5.
+- **Cách xử lý và đề xuất:** giữ kết quả có điều kiện chưa áp dụng; chỉ thực thi khi người thẩm định cung cấp định nghĩa có địa chỉ nguồn, dữ kiện cần kiểm và bảng trường hợp đạt/không đạt/chưa biết. Có thể thẩm định một chú giải giữ nguyên “nếu…” mà không khẳng định hồ sơ thỏa điều kiện, nhưng không tính đó là dự báo cá nhân đã áp dụng. **Đề xuất giữ chưa áp cho lô này**, không tự đặt mốc tuổi hay thu thêm tuổi kết hôn khi chưa biết dữ kiện đó có đủ không.
+- **Ảnh hưởng:** Tử Tướng, Cơ–Cự, Nhật–Cự Thân, Nhật–Lương Dậu; Phu Đồng Mão, Đồng–Âm Ngọ, Nhật–Cự Thân, Tử–Sát; các vế gắn điều kiện của Cơ–Cự, Nhật–Nguyệt, Vũ–Tham/Vũ–Phá, Phá Tý/Ngọ. Đã có số **10 cung Tử có Thiên Tướng còn trống**, nhưng chưa tách bao nhiêu thuộc riêng Mão/Dậu; không gán cả10 cho điều kiện muộn.
+- **Người quyết định:** người thẩm định chốt nghĩa/điều kiện nguồn. Chủ dự án chỉ quyết định có phục vụ chú giải có điều kiện chưa áp dụng hay không, sau khi có mẫu được thẩm định; không quyết định tuổi thay chuyên môn.
+
+**2. Với VCD, được dùng lời nào và lấy điều kiện ở cung nào? — ND04**
+
+- **Câu và chỗ chưa rõ:** Tử207§13.3.68: “Coi Chính diệu xung chiếu như Chính diệu tọa thủ”. Các câu không phụ thuộc chi/trạng thái đã có hợp đồng riêng và đã triển khai. Với phần còn lại, chưa rõ địa chi/trạng thái lấy ở cung cho hay cung nhận, cùng phạm vi ngoại lệ. Phu chưa có hợp đồng riêng đủ căn cứ; không lấy câu Tử để áp sang Phu.
+- **Loại:** thiếu cách áp dụng nguồn, không phải thiếu thao tác chuyển sao trong code.
+- **Cách xử lý và đề xuất:** tiếp tục giữ ngoài nhánh áp dụng những câu còn phụ thuộc chi/trạng thái; chỉ mở từng tập con khi người thẩm định chỉ rõ câu cung nhận, sao được xét, nơi lấy trạng thái và nơi áp ngoại lệ. **Đề xuất giữ các tập con đã triển khai và chặn phần chưa có hợp đồng**; không dựng cung giả hoặc chuyển toàn bộ catalog đối cung.
+- **Ảnh hưởng:** các cấu trúc Tử VCD còn thiếu và **21 cung Phu VCD còn trống trong192**. Không có số đã xác nhận cho riêng tập con Tử phụ thuộc trạng thái sẽ được giải. Liêm–Phá/TửVCD đã có code nhưng chưa có chứng kiến engine; đó là giới hạn bằng chứng kiểm, không phải rule còn chờ triển khai.
+- **Người quyết định:** người thẩm định xác lập hợp đồng nguồn; chủ dự án không tự chọn địa chi hoặc trạng thái sao.
+
+**3. Một sao, cả bộ hay “nhiều” sao; ngoại lệ tác động tới vế nào? — ND12/13**
+
+- **Câu và chỗ chưa rõ:** Tử205§13.3.45 dưới tiêu đề “Tuần, Triệt án ngữ” có lời con về sau xung khắc, không chung một nhà; chưa rõ một hay cả hai sao và phạm vi tác động. Phu215§14.30 ghi “Cô, Quả” với lời bất hòa/xa cách; các mục dùng “nhiều sao sáng sủa tốt đẹp” hoặc “nhiều sao mờ ám xấu xa” chưa có tập sao, lượng từ và vị trí đủ rõ. “Lộc” trong tổ hợp ở216 chưa xác định là sao nào. Lộc Tồn/Tử203 có ngoại lệ về khả năng có con, nên không tách lời quan hệ như ngoại lệ đã được xét.
+- **Loại:** thiếu cách áp dụng nguồn; không phải lựa chọn sản phẩm giữa AND và OR.
+- **Cách xử lý và đề xuất:** chỉ thực thi khi có bảng điều kiện được thẩm định cho đúng mục: danh tính sao, một/cả bộ, quan hệ vị trí, cách xác định sáng/mờ và vế bị điều chỉnh. **Đề xuất giữ các nhóm này chưa áp dụng**; không lấy cách viết của một mục khác hoặc số lần xuất hiện trong192 để đoán toán tử/ngưỡng. Nếu chưa có bảng đó, không có phương án coding hợp lệ để chọn.
+- **Ảnh hưởng:** Tử TT, Kình–Đà–Không–Kiếp, Hỏa–Linh, Xương–Khúc, Đẩu Quân, Khốc–Hư, Lộc Tồn; Phu Xương–Khúc, Khôi–Việt, Quang–Quý, Cô–Quả, Cự–Hỏa–Linh, Song Hao và các tổ hợp Lộc. **Chưa có số mẫu tách riêng đáng tin cậy cho từng điều kiện chưa định nghĩa**; không cộng toàn bộ93/51 cung trống vào nhóm này.
+- **Người quyết định:** người thẩm định. Chủ dự án không được yêu cầu chọn AND/OR, ngưỡng “nhiều” hoặc tập cung thay bằng chứng nguồn.
+
+**4. Hai chỗ văn bản dẫn tới lời khác chiều xử lý thế nào? — ND13**
+
+- **Câu và chỗ chưa rõ:** Đồng–Âm tại Tý dùng “cũng như trên” ở209§14.3 và211§14.8, nhưng các đoạn được dẫn có nội dung khác chiều. Lương/Phu212§14.12 ghi “đơn thủ tại Tỵ, Ngọ” với lời sớm/dễ dàng/quý hiển, rồi “đơn thủ tại Tỵ, Hợi” với lời dễ gặp/dễ xa; Tỵ nằm ở cả hai dòng.
+- **Loại:** bất nhất văn bản/tham chiếu, không phải thiếu thuật toán chọn lời thắng.
+- **Cách xử lý và đề xuất:** (a) giữ riêng hai chỗ chưa áp; (b) thay bằng cách đọc đã có bằng chứng đính chính được thẩm định; hoặc (c) trình bày cả hai như chú giải xung đột, nếu được duyệt về chuyên môn và phạm vi hiển thị, không hợp thành kết luận cá nhân. **Đề xuất(a)**. Không tự sửa Tỵ thành Tý, không chọn lời theo kết quả engine.
+- **Ảnh hưởng:** Đồng–Âm/Tý và Lương/Tỵ ở Phu. Lương/Ngọ và Lương/Hợi đã được xử lý riêng, không chặn lại. Hồ sơ bàn giao **chưa có số tách riêng cho đúng hai cấu trúc bất nhất**; không dùng tổng ca Lương hoặc Đồng–Âm để thay thế.
+- **Người quyết định:** người thẩm định xác nhận cách đọc/đính chính. Chủ dự án chỉ quyết định có cho hiển thị chú giải xung đột đã được thẩm định hay không.
+
+**5. Phần bị loại là phạm vi sản phẩm hay lời chưa tách được khỏi điều kiện? — ND12/13/19**
+
+- **Câu và chỗ chưa rõ:** Liêm–Tướng/Tử199 có “khó nuôi nhưng lớn lên…”; Sát/Tử202 có “dù sinh nhiều…chỉ còn…nhưng…”. Chưa xác nhận có thể lấy riêng vế thuận mà giữ nghĩa. Các mục chỉ số con, thứ bậc, “quý tử”, số lần hôn nhân và các câu về đặc tính con (Hóa Quyền/Khoa/Hồng Loan) bị loại theo phạm vi audit; có câu đã rõ nội dung đơn lẻ nhưng chưa được cho phép vào sản phẩm hiện hành.
+- **Loại:** hai lớp cần phân biệt: **thiếu cách áp dụng/tách nghĩa** ở câu ghép; **giới hạn sản phẩm tự đặt** ở số lượng/thứ bậc/quý tử/đặc tính con. Cấm bệnh/sinh tử/quy kết phẩm hạnh đang có hiệu lực, không gộp vào một câu hỏi xin mở tất cả.
+- **Cách xử lý và đề xuất:** chủ dự án có thể giữ phạm vi hiện hành hoặc cho thẩm định riêng từng loại phi sức khỏe, trước hết các câu độc lập về đặc tính con; việc cho thẩm định không đồng nghĩa cho phát hành. Người thẩm định phải xác định nghĩa “quý tử”, tính độc lập của vế thuận và điều kiện còn phải giữ. **Đề xuất giữ phạm vi hiện hành để khép1.56; nếu mở bước sau, duyệt danh sách loại cụ thể và mẫu văn trước**, không cho phép lấy riêng vế thuận bằng quyết định thương mại.
+- **Ảnh hưởng:** Tử Liêm–Tướng, Vũ đơn, Sát Dần/Thân; các nhánh chỉ số lượng/quý tử và Hóa Quyền/Khoa/Hồng Loan. Phu gồm các nhánh chỉ số lần hôn nhân hoặc gắn nội dung đang loại trừ như Cự thấp, Liêm đơn, một số Phá/Sát. **Chưa có số giảm cung trống được chứng minh cho một lựa chọn phạm vi**; mở phạm vi không tự giải lượng từ, điều kiện hoặc bất nhất của bốn nhóm trước.
+- **Người quyết định:** chủ dự án quyết định loại nội dung được thẩm định/đưa vào sản phẩm; người thẩm định quyết định nghĩa và khả năng tách câu. Không ai được coi việc chọn phạm vi là bằng chứng nguồn đã rõ.
+
+### Xác nhận phần triển khai còn lại
+
+**Không còn nhóm đủ đặc tả, thuộc phạm vi sản phẩm hiện hành, nhưng chưa triển khai trong phần Tử–Phu đã rà của lô1.56.0. Phần triển khai được đã hết trong phạm vi này.** Đây là kết luận theo hồ sơ lô đã có, không phải một đợt audit/code/test mới và không tuyên bố đã khai thác hết sách.
+
+Hai nhánh mới Nhật–Lương Dậu/Phu và Liêm–Phá/TửVCD đã có code; còn thiếu chứng kiến engine ngoài fixture. Các câu chỉ đặc tính/số lượng bị loại thuộc câu hỏi phạm vi ở nhóm5, không được ghi thành hàng đợi coding đã được phép. ND04/12/13 còn mở ở mức điều kiện/bằng chứng; ND19 còn mở ở mức phạm vi. Các phương án đề xuất ở trên chưa phải quyết định được duyệt.
 
 ### Kết quả kỹ thuật
 
