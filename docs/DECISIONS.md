@@ -73,3 +73,7 @@ U gói recovery yêu cầu hash token, hạn, dùng một lần, chỉ tiêu th�
 - Cổng kỹ thuật Nô chỉ một chính tinh và Vũ–Tham/Huynh phải có tuổi đã được lô1.52/1.53 sửa theo nguồn; đây là **sửa lựa chọn triển khai**, không phải chủ dự án sửa nội dung sách.
 
 Không có sổ quyết định có chữ ký/permalink độc lập cho toàn bộ lịch sử. Những chỗ không có U được đánh dấu ở trên; không lấy lời assistant trong kế hoạch làm xác nhận thay chủ dự án.
+
+## Q11 — Lô Tử–Phu21/10/2026
+
+**U trực tiếp trong task:** hoàn thiện toàn lô đủ căn cứ hai cung, xử lý giới hạn code đặt thêm khi chứng minh không phải điều kiện nguồn; giữ loại trừ/G2/lịch sử/Live tắt. Đây là ủy quyền triển khai, không phải duyệt chuyên môn hoặc mở ND19. D/C: [bảng câu và điều kiện](PHU-TU-1.33.0.md), commit8776d6e;14nhánh tọa thủ +2TửVCD. Giữ nguyên các điều kiện nếu/mới ở câu có chúng; chữ sớm mô tả hoặc lời khuyên đứng riêng không tự trở thành gate tuổi của câu độc lập. Những phân định cụ thể thay ô chặn rộng trong ma trận cũ, không thay quy tắc nguồn chung hoặc quyền lịch sử.
