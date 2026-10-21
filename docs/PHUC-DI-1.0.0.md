@@ -83,3 +83,19 @@ Chữ “hay” là căn cứ OR, “đồng cung” và danh sách ba sao§53 l
 Bộ192: Phúc43→36 trống,7 mới có nhận định/8 bổ sung. Số khớp từng nhánh: Dương cao7/thấp1, Cự–Kỵ4, Hỏa/Linh–Tang1, Kỵ–Kình/Đà2. Cự–Hỏa và Kỵ–Không–Kiếp **chỉ có fixture kỹ thuật**, chưa có chứng kiến engine trong192 hoặc các đầu vào mới có chủ đích; không tuyên bố bất khả đạt. Hai mẫu engine ngoài192 được tạo qua form: nữ21/02/1978 giờSửu (Cự–Kỵ), nữ07/11/1978 giờTỵ (Hỏa/Linh–Tang).
 
 Còn chặn: Tử Vi có sát/TT, Riêu–Đà–Kỵ chưa rõ lượng từ/tác động; VCD/Tam Không/Đà độc thủ chưa rõ tập sao/phối hợp; các câu Cự/Lương bất nhất; Hóa Quyền dẫn chiếu chưa xác định lời thay thế. §45 trùng nghĩa không thêm claim;§55–56 lời thuận gắn nguyên nhân thần linh, không tách thành dự báo độc lập;§48/54/57–60 chưa có câu độc lập đủ điều kiện và phạm vi. Không mở âm phần, sinh tử, bệnh, phẩm hạnh. Phần đủ đặc tả trong phạm vi rà này đã triển khai hết, không tuyên bố hết sách. Backlog ND08/19 giữ đúng điểm chặn; [bằng chứng](../.local/no-dien-phuc-20261021/ban-giao.md).
+
+## Một quyết định phương pháp còn chờ — Đồng–Âm xung chiếu Di,21/10/2026
+
+Phiên nối80d9232 đã triển khai nhóm TàiVCD trực tiếp1.60, chưa mở lại9Di. Khi tra điểm chặn, hồ sơ NPL-16/HS52 cho biết **có phương pháp giữ chi/trạng thái sao chiếu tại vị trí thật**; ví dụ Âm ởNgọ chiếuTý không được dời vềTý. TânBiên180§10.36 cho xét chính diệu xungchiếu, nhưng không nói tường minh chi trong câu Đồng–Âm/Di175§10.3/176§10.8 phải hiểu ở cung cho hay nhận. Hai vị trí Tý/Ngọ có lời trái chiều. Không ghép hai nguồn chỉ vì một vế thuận.
+
+**Phương án đề xuất để chủ dự án quyết định:** chấp thuận một hợp đồng phối hợp **TB–NPL riêng cho Đồng–Âm/Di**, dùng HS52 để cố định chi cặp tạiMệnh thật; dùng đúng lời **vềDi** TB175–176 theo chi đó. Ghi tên hai nguồn/phần đóng góp trong căn cứ, không gán cách phối hợp này cho một tác giả. Không dời sao, không tính lại độ sáng ởDi, không chuyển lờiMệnh, TT/Kỵ hay phụ tinh; không tự nhân rộng sangPhụ/Phúc/Quan/Tài/Phu. TH88 nói mức xungchiếu không được lượng hóa: không đặt tỷ lệ, không gọi đây là kết luận toànDi. Duyệt phương pháp này vẫn cần kiểm đủ phảnvídụ/ngoạilệ và văn trước khi tích hợp; chưa có code/coverage mới.
+
+**Ví dụ đầu ra dự kiến**, Di tạiTý trống, cặp thật ởMệnhNgọ:
+
+> Thiên Di không có chính tinh; Thiên Đồng–Thái Âm ở Mệnh tại Ngọ xung chiếu về. Lời riêng về môi trường bên ngoài của cấu trúc này nhấn vào cạnh tranh, sự ghen ghét và việc ra ngoài rất bất lợi. Mức ảnh hưởng của thế chiếu chưa được xác định, nên chưa dùng đoạn này làm kết luận chung về việc đi xa.
+
+Cặp thật ởMệnhTý chiếuDiNgọ phải theo vếTý: quý nhân giúp đỡ, được kính trọng, buôn bán thuận; **không** lấy vếNgọ chỉ vì cung nhận ởNgọ. Hai hướng được chọn bằng một hợp đồng hình học nhất quán, không chọn câu thuận. Mẫu trên là phương án chưa duyệt.
+
+**Phương án giữ nguyên:** chỉ dùng TB trong các nhánhDi hiện hành; không ghépHS52 để chọn câu phụ thuộc chi. Ví dụ đầu ra cho cùng cấu trúc: “Thiên Di chưa có nhận định cho cấu trúc này”, kèm dữ kiện thật ở phần tra cứu; không tạo đoạn lành/dữ chung để lấp. Không tăng độ phủ, nhưng chưa đưa một phép phối hợp tác giả vào sản phẩm.
+
+**Tác động đo được, chưa phải kết quả triển khai:** lọc hình học từ192snapshot đã lưu có3ứngviên34/127/139, cả3Di trước chưa cóđoạn;2cặp ởMệnhTý,1ởMệnhNgọ. Nếu duyệt, đây là tối đa3cung mới có nhận định trong tập con đó trước kiểm ngoại lệ, không hứa giảm đủ3hoặc giải6DiVCDcòn lại. [Danh sách ứng viên cục bộ](../.local/finance-vcd-20261021/di-method-candidates.json). Không có yêu cầu thẩm định bên ngoài; chủ dự án quyết định hợp đồng sản phẩm sau lập luận của Codex. **Chưa duyệt/chưa triển khai** phương án này.

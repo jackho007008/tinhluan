@@ -134,3 +134,16 @@ Baseline `main` sạch `e9fdbbd` (codee7bd1e4),192report dựng lại khớp1.58
 - QA3062 saucutover:3mẫu form mới đúng1.59/catalog1.56, reloadđúngfree, khôngtạođơnmockởQA chính.186file cũ giữhash;26token/23binding/18linkvà34bài côngkhai nguyên. Web81341/worker81345đúngcheckout, QA3070pid94421/cwdnguyên, Livefalse. Khôngtestproviderthật hoặc chạytoàngate.
 
 Mẫu ngoài192: nam20/02/1978giờTỵ (QuanVũ–Tham), nữ05/05/1988giờTỵ (TàiVũ–Tham); Nhật–Cự/Thân dùng mẫuengine192nam06/05/2008giờSửu. Fixture hoán đổisao chỉkiểm logic. Bằng chứng: baseline.json, impact192.json, representative-attempts.json, public-acceptance.json, main-acceptance.json, pdf-check.json, preservation.json, db-after.json, serving-code.json.
+
+
+## Tài VCD trực tiếp1.60 — 21/10/2026
+
+Baseline `main@80d9232` sạch, code `48683ce`; không chạy toàn gate. Bằng chứng `.local/finance-vcd-20261021/` ngoài Git; [bàn giao](../.local/finance-vcd-20261021/ban-giao.md).
+
+- `finance-vcd`, `void-palace`, `finance-presentation`, `customer-editorial-catalog`, `customer-topic-editorial`, `continuous-report`: **68/68 tại6file**, lượt đầu và cuối sau bổ sung kiểm căn cứ. Không fail/skip. Kiểm đúng/sai/unknown, trạng thái ở chi thật, TT đối cung/cả hai TT, thiếu/trùng/sao lưu/cặp TT sai; cả hai Nhật–Nguyệt sáng giữ ngoài tập con kể cả không chiếu. Fixture không chứng minh khả đạt engine.
+- Dựng lại đủ192 khớp baseline1.59; thêm một fact/rule, bốn snapshot thêm claim, **1Tài mới có nhận định/3bổ sung**. Facts/rules/traces/claims/P2/relations/văn/member cũ và G2 nguyên. Phu49 không đoạn +2 chú giải chưa áp vẫn là51 chưa có nhận định. Ba mẫu88/53/150 qua engine/form; ba ngày lân cận88 đều không khớp, giữ kết quả âm, không gọi bất khả đạt.
+- **6/6 reading-scope** ở DB mới `tinhluan_finance_vcd_1792571439851`; **6/6 stored-customer-pdf** với renderer giả. Lượt DB đầu bị sandboxEPERM trước tạo DB; chạy lại với quyền loopback đạt. Typecheck đầu4TS2741 do fixtureTT thiếu `source`; sửa fixture rồi đạt. Build đầu đạt; sau thêm ánh xạ căn cứ, build cuối đạt. Không sửa ứng dụng sau đó.
+- QA3086 cách ly: hai mẫu đầu rồi bổ sung riêng mẫu Tài trước trống, tổng3bản/3đơn mock và3cấu trúc. Form → miễn phí → full mock → reload giữ toàn văn. Không lọt lời khóa payload/DOM; freePDF403, chéo phiên đọc/PDF404; mobile360/390 và căn cứ đạt. Hai PDF thật9trang/20đoạn và8trang/14đoạn khớp frozen; đã xem contact mọi trang và trang chứa đoạn mới. Đọc đủ toàn văn ba mẫu; không đọc lại toàn192. Mock không phải SePay thật.
+- QA3062 tích hợp ba bản mới đúng1.60/catalog1.57 qua form/reload, chỉ quyền miễn phí; không đơn mock trên DB chính. Web13354/worker13359 cùng checkout `.local/finance-vcd-20261021/qa-final`; tám file code/test đổi trùng hash commit.192file báo cáo/phiên cũ,26token/23binding/18link và34bài công khai nguyên. Livefalse; QA3070pid94421/cwd nguyên. QA3086 đã tắt, không worker thử chồng. Không kiểm provider ngoài/tunnel hoặc migration/restore QA.
+
+Lượt commit đầu bị sandbox chặn `.git/index.lock` trước stage; chạy lại với quyền ghi Git đạt, không đổi branch/remote/push. Không đổi expected nguồn/lịch sử để xanh. Hạn chế chuyên môn còn mở ở FINANCE-ASSETS; kiểm kỹ thuật không chứng minh đủ12cung.

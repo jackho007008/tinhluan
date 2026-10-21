@@ -4,6 +4,8 @@ Cập nhật21/10/2026 nối `main@5c228e4`; bàn giao TL186 `f96c25f`. [Kho ri�
 
 Kho sách, chữ đầy đủ, ảnh và hồ sơ dài ở `/Volumes/DATA/TINHLUAN/.local/source-library/`, ngoài Git/phần công khai theo ignore hiện có. Liên kết cục bộ không được khôi phục bằng clone Git; chưa tạo bản sao lưu ngoài máy.
 
+**Chỉ đạo mới21/10, nối80d9232:** dừng mở thêm sách, chuyển sang hoàn thiện báo cáo từ TB/NPL/HS/TL đã đọc. Nguyễn Phúc Ấm120 và DDSN898 **giữ nguyên đã trích/chưa đọc toàn chương** trong danh mục và inventory; không có lượt đọc mới. Kết quả triển khai một tập con Tài VCD và phân loại điểm chặn nằm tại [đặc tả hiện có](FINANCE-ASSETS-1.37.0.md); kết quả TL298 bên trên là checkpoint nghiên cứu trước, không phải kết luận không còn phần đủ căn cứ để coding. Không tạo hồ sơ kiến thức tổng quát hoặc đọc lại toàn sách.
+
 ## Danh mục và mức đọc thực tế
 
 | ID | Tài liệu | Tác giả theo tài liệu | Trang PDF | Trạng thái đọc |

@@ -55,6 +55,12 @@ U gói recovery yêu cầu hash token, hạn, dùng một lần, chỉ tiêu th�
 
 **Triển khai theo ủy quyền lô nội dung21/10; không phải phê duyệt chuyên môn của chủ dự án.** U giao giải một nhóm điều kiện và publish phần đủ nguồn, giữ G2/lịch sử/Tật chưa publish. C: `familyVcdAssessment`, `familyVcdRules`, `tests/family-vcd.test.ts`. D: [bảng nguồn](PHU-HUYNH-1.32.0.md), [bằng chứng](../.local/vcd-20261021/ban-giao.md). Dùng chỉ dẫn riêng PDF131/224 và câu cung nhận không đòi chi/trạng thái; không giả định phương pháp mượn chung. Cổng giữ unknown khi Tuần/Triệt ở một trong hai cung với lời vật chất Phụ là lựa chọn thận trọng của triển khai, chưa phải điều kiện được chủ dự án hoặc nguồn xác nhận. Tập con33nhánh đã lên1.55/1.52; các câu trạng thái/ngoại lệ chưa rõ vẫn ở backlog, không mở rộng quyết định phạm vi.
 
+### Q12 — Dừng mở sách; chuyển sang hoàn thiện báo cáo,21/10/2026
+
+**U trực tiếp ở task nối80d9232:** “Dừng mở thêm sách”; “chưa đọc Nguyễn Phúc Ấm120 và DDSN898; giữ nguyên trạng thái chưa đọc”; dùng Tân Biên/Tổng Hợp/Hàm Số/Thiên Lương đã đọc để đối chiếu điểm chặn và triển khai phần đủ căn cứ trong phạm vi đã duyệt. Không yêu cầu người thẩm định bên ngoài; Codex đề xuất phương pháp có căn cứ cho chủ dự án quyết định khi có lựa chọn, không tự ghép. Giữ Tật/hai mẫu chưa duyệt, G2/lịch sử/Live. Thay đề xuất tiếp tục xây kho hoặc yêu cầu phải chỉ định người thẩm định ngoài ở các bản bàn giao trước.
+
+**Thực thi trong phạm vi task, không phải duyệt chuyên môn của chủ dự án:** [TàiVCD–TT trực tiếp](FINANCE-ASSETS-1.37.0.md), code48683ce. Gỡ cổng đòi giải toàn phép mượn cho riêng câuTT đã rõ; vẫn giới hạn khi Nhật–Nguyệt không cùng sáng để không chạm ngoại lệ chưa rõ. Không cho phép tự sửa “hợp chiến”, mượn mọi lời, mởND19 hoặc phát hànhTật.
+
 ## Đề xuất chưa duyệt hoặc chưa xác định nguồn quyết định
 
 - **ND02:** mở nguyên ba nhóm vai trò Mệnh–Thân miễn phí, hai nhóm Thân cư Quan/Tài chi tiết. D: mục phân quyền5rule trong kế hoạch; **chưa thấy U duyệt thay policy**. Giữ G2.

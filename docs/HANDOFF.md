@@ -2,6 +2,10 @@
 
 Cập nhật21/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
+## Lô hiện hành — Tài VCD1.60,21/10/2026
+
+QA3062 đang1.60/catalog1.57, code `48683ce`, checkout `.local/finance-vcd-20261021/qa-final`. [Trạng thái](CURRENT_STATUS.md), ND04/16 trong [backlog duy nhất](V1-DELIVERY-PLAN.md), [đặc tả và phân loại điểm chặn](FINANCE-ASSETS-1.37.0.md), [bàn giao/toàn văn mẫu](../.local/finance-vcd-20261021/ban-giao.md). Một nhóm TT trực tiếp ở Tài VCD:1cung mới có nhận định/3bổ sung, Tài21→20trống. Chưa giải phép mượn chung. Dừng mở sách; NPA120/DDSN898 vẫn chưa đọc. G2/lịch sử/Tật/Live/QA3070 giữ nguyên. Checkpoint kho nguồn dưới đây là mốc trước lô triển khai, không dùng identity1.59 thay trạng thái hiện hành.
+
 ## Kho nguồn — checkpoint21/10/2026
 
 Đọc [SOURCE-LIBRARY](SOURCE-LIBRARY.md) trước khi tra sách. **TL298 đã đọc hết298/298trang chữ:**291mới+7kế thừa đọc lại,61trang kiểm ảnh,76mốc đối chiếu;2hồ sơ mới về quan hệ/dị bản, tổng80hồ sơ. [Hồ sơ TL298–TL186](../.local/source-library/knowledge/tl298-reading/README.md), [kết quả ND](../.local/source-library/blocker-results-tl298-complete.md). TL298 chủ yếu dàn lại cùng tác phẩm, có lớp biên tập thêm/bớt; chưa chứng minh bản tác giả mở rộng. Không còn chương TL186/TL298 đang dở, chưa tự tiếp cuốn khác. Kho chi tiết ngoài Git. Chưa đóng ND lớn, chưa duyệt/publish hai mẫu Tật; ThiênLương không thay cách luận TânBiên. Ứng dụng1.59/catalog1.56/codebb230d5 là identity bàn giao trước, không kiểm runtime lại; G2, lịch sử và Live tắt giữ nguyên.
