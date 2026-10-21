@@ -5677,5 +5677,16 @@
       "Giữ “ngoài 30”, không đổi thành “từ 30”; không suy trước mốc là nghèo hoặc qua mốc chắc chắn giàu.",
       "Nhận định truyền thống cục bộ, chưa có phép hợp nhất mọi yếu tố; không chọn sao thắng."
     ]
+  },
+  "tanbien.finance-vcd-direct-void": {
+    "text": "Tài Bạch không có chính tinh, có Tuần hoặc Triệt án ngữ trực tiếp, trong khi Nhật–Nguyệt không cùng ở thế sáng. Với cấu trúc này, việc kiếm tiền được mô tả là khó khăn lúc đầu, về sau dễ dàng hơn, càng về già càng sung túc. Các vế nói về một diễn tiến theo cách luận truyền thống; chưa xác định bạn đang ở giai đoạn nào hoặc mức thu nhập, tài sản thực tế.",
+    "sourceTemplate": "Tài Bạch không có chính tinh, có Tuần hoặc Triệt án ngữ trực tiếp, trong khi Nhật–Nguyệt không cùng ở thế sáng. Với cấu trúc này, việc kiếm tiền được mô tả là khó khăn lúc đầu, về sau dễ dàng hơn, càng về già càng sung túc. Các vế nói về một diễn tiến theo cách luận truyền thống; chưa xác định bạn đang ở giai đoạn nào hoặc mức thu nhập, tài sản thực tế.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "722634b631536df2a05c76a3856b7797c19e6851b08dc43db6d810bcb0f60658",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Không xác nhận thu nhập/tài sản hoặc giai đoạn hiện tại; không gán tuổi cho “về già”.",
+      "Không mượn chính tinh, phụ tinh hoặc lời của đối cung; không kết luận toàn cung hay cân đối tài sản ròng."
+    ]
   }
 }

@@ -49,3 +49,25 @@ Còn chặn cụ thể:
 - Liêm–Phủ/Thiên Không và Cơ–Lương/Kỵ vẫn giữ song song; chưa có phép xác định lời giữ/tạo tiền thắng hao tán. Không đổi bố cục thành kết luận tổng hợp.
 
 Phần đủ đặc tả trong ma trận đã rà đã hết sau lô này; không tuyên bố hết sách. Backlog duy nhất ND15/16 và phần VCD ND04; [toàn văn mẫu và kiểm](../.local/quan-tai-20261021/ban-giao.md).
+
+## ND04/16 — Tài VCD, Tuần/Triệt trực tiếp, 1.60.0 — 21/10/2026
+
+Lô hữu hạn nối baseline `main@80d9232` sạch; chỉ một nhánh `tanbien.finance-vcd-direct-void`, module [finance-vcd.ts](../lib/interpretation-rules/finance-vcd.ts). Cập nhật này thay kết luận chặn **toàn** §12.56 ở lô1.59 đối với tập con dưới đây; không giải phép mượn chung. Catalog1.57, trình bày1.60; dùng nguyên evaluator/renderer/freeze/G2 hiện có, draft/review=null.
+
+**Căn cứ:** Tân Biên277trang, SHA256 đã ghi ở các mục trước; chữ và ảnh PDF197§12.56 đã đối chiếu đúng trang. Nhánh TT ghi độc lập đủ diễn tiến: buổi đầu kiếm tiền khó, về sau dễ, càng về già càng sung túc. Nó không đòi xác định cặp chính tinh đối cung, không cần tính tuổi hiện tại. Cùng mục có ngoại lệ Nhật–Nguyệt cùng sáng và vế tăng thêm với TT; ảnh thực sự ghi “hợp chiến”, chưa được sửa thành “hợp chiếu”. Bảng trạng thái riêng Tân Biên PDF33§2.10/35–36 xét tại chi sao thật; không dùng bảng NPL/TL hoặc brightness engine.
+
+**Hợp đồng:** Tài thật sự không có chính tinh, danh sách12cung/14chính tinh đủ/toàn vẹn/bản mệnh; hai cặp Tuần Không/Triệt Lộ duy nhất và kề nhau hợp lệ; ít nhất một cặp án trực tiếp Tài. Cả hai cùng có vẫn là có TT, không tự triệt tiêu. Tra được cả hai ô Nhật–Nguyệt tại chi thật và ít nhất một sao không Miếu/Vượng/Đắc. Khi cả hai sáng (dù quan hệ nào), giữ ngoài tập con; thiếu ô/dữ liệu giữ unknown. Đây là **giới hạn dự án nhằm chắc chắn loại điều kiện cần của ngoại lệ thứ hai**, không gán điều kiện vắng hai sao cho sách, không tự giải chữ “hợp chiến”. Không chuyển sao, lời Phúc đối cung, phụ tinh hoặc phép điều chỉnh; không tạo cung giả.
+
+**Văn khách hàng nguyên đoạn:**
+
+> Tài Bạch không có chính tinh, có Tuần hoặc Triệt án ngữ trực tiếp, trong khi Nhật–Nguyệt không cùng ở thế sáng. Với cấu trúc này, việc kiếm tiền được mô tả là khó khăn lúc đầu, về sau dễ dàng hơn, càng về già càng sung túc. Các vế nói về một diễn tiến theo cách luận truyền thống; chưa xác định bạn đang ở giai đoạn nào hoặc mức thu nhập, tài sản thực tế.
+
+Điều kiện ảnh hưởng ý nghĩa nằm trong đoạn; nguồn, trạng thái cụ thể, vị trí TT và lý do giới hạn nằm trong căn cứ. Không biến lời này thành kết luận tài sản ròng hoặc khuyên đầu tư.
+
+**Phân biệt ba nguyên nhân sau tra kho và code:**
+
+- **Có phương pháp, chưa áp:** TT trực tiếp của Tài§12.56 vừa được triển khai. HS52 đã chỉ rõ sao xung chiếu giữ chi/trạng thái thật, ví dụ Âm Ngọ chiếu Tý; chưa áp như hợp đồng chung cho các lời Tân Biên phụ thuộc địa chi. Điều sau là một lựa chọn phối hợp phương pháp cần chốt cụ thể, không mặc định chuyển lời TB theo NPL. TH108 nhánh Mệnh trống và bảng một sao tuy hồ sơ `inherited-NPL-07` còn giữ trạng thái lịch sử thiếu coding, **code npl-foundation.ts hiện đã áp**; không triển khai lại.
+- **Yêu cầu dự án tự đặt:** đòi giải toàn phép mượn trước khi xuất câu TT độc lập ở Tài là cổng quá rộng, đã gỡ riêng ở tập con trên. Cổng Phụ có vật chất giữ unknown khi TT ở một trong hai cung là cổng thận trọng của dự án, không phải sách đòi vắng TT; chưa tự gỡ vì còn phạm vi nghịch đảo §5.2.30. ND19 số lượng/thứ bậc/âm phần là phạm vi triển khai, không coi là nguồn thiếu. Không tự mở phạm vi.
+- **Nguồn còn thiếu/bất nhất:** “hợp chiến”/phạm vi ngoại lệ Tài; vị trí áp điều chỉnh sau mượn và lời phụ thuộc chi; lượng từ “nhiều”/nhóm chưa xác định; các ô ngũ hành thiếu và mâu thuẫn đã ghi. TL18679–80/183 và TL298118–121/280 có lớp chính văn/phụ luận khác nhau về TamKhông, không chọn câu thắng. TH88–89 thừa nhận mức ảnh hưởng xung chiếu không được lượng hóa; không tự tạo tỷ lệ hoặc kết quả ròng. Không yêu cầu người thẩm định bên ngoài để Codex tiếp tục; bất nhất phải giữ rõ thay vì tự chốt.
+
+**Điểm dừng:** đã giải một nhóm trực tiếp, chưa giải VCD mọi cung, chín Di, PhuVCD, ngoại lệ Phúc/TamKhông hoặc Tật. Chỉ có phương pháp NPL không tự cho phép thay nghĩa/chi của rule TB. Giữ nguồn riêng; nếu mở nhánh phụ thuộc chi cần quyết định dùng tầng NPL riêng hay phối hợp TB–NPL kèm câu và phản ví dụ cụ thể. Tật/hai mẫu/G2/lịch sử/Live không đổi.
