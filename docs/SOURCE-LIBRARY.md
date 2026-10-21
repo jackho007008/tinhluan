@@ -8,8 +8,8 @@ Kho sách, chữ đầy đủ, ảnh và hồ sơ dài ở `/Volumes/DATA/TINHLU
 
 | ID | Tài liệu | Tác giả theo tài liệu | Trang PDF | Trạng thái đọc |
 |---|---|---|---:|---|
-| `tb` | [Tử Vi Đẩu Số Tân Biên](../.local/source-library/books/tb/INDEX.md) | Vân Đằng Thái Thứ Lang | 277 | Kế thừa đọc1–277 |
-| `npl` | [Tử Vi Tổng Hợp](../.local/source-library/books/npl/INDEX.md) | Nguyễn Phát Lộc | 442 | Kế thừa đọc1–442 |
+| `tb` | [Tử Vi Đẩu Số Tân Biên](../.local/source-library/books/tb/INDEX.md) | Vân Đằng Thái Thứ Lang | 277 | Đọc hết lớp chữ theo nhật ký gốc1–277; ≥173trang kiểm ảnh có ghi nhận; phân tích phương pháp chưa đầy đủ |
+| `npl` | [Tử Vi Tổng Hợp](../.local/source-library/books/npl/INDEX.md) | Nguyễn Phát Lộc | 442 | Đọc hết theo11nhật ký gốc1–442, scan/bảng đọc bằng ảnh;362trang kiểm ảnh theo audit;53hồ sơ có dẫn sách này |
 | `hs` | [Tử Vi Hàm Số](../.local/source-library/books/hs/INDEX.md) | Nguyễn Phát Lộc | 237 | Kế thừa đọc1–237 |
 | `tl298` | [Tử Vi Nghiệm Lý Toàn Thư](../.local/source-library/books/tl298/INDEX.md) | Thiên Lương | 298 | Kế thừa chọn lọc160–163,180–182; chưa đọc hết |
 | `tl186` | [Tử Vi Nghiệm Lý Toàn Thư](../.local/source-library/books/tl186/INDEX.md) | Thiên Lương | 186 | Đã đọc186/186; phiên này161trang mới,47trang kiểm ảnh |
@@ -21,6 +21,29 @@ Kho sách, chữ đầy đủ, ảnh và hồ sơ dài ở `/Volumes/DATA/TINHLU
 8PDF Tử Vi/7nhóm nhan đề,2.468trang đã trích theo trang; không đồng nghĩa đã đọc hoặc phục hồi mọi bảng/ảnh. Hai Thiên Lương khác hash, số trang/bố cục; chưa chứng minh cùng phiên bản, không gộp offset. Không có bản trùng byte trong danh mục. Tân Biên có mốc1956/ebook2014; NPL lời mở đầu1974/1972; TL186 lời giới thiệu1985; các mốc này không chứng nhận phiên bản in. DDSN là bản dịch máy tiếng Việt theo đầu trang; tên tác giả tạm theo tên tệp, cần xác minh tiếp. Tài liệu thuật ngữ không ghi tác giả trong10trang đã đọc.
 
 Kiểm kê thư mục nguồn `/Users/taiho/Desktop/TAILIEUTUVI`, các PDF Desktop đã được hồ sơ dự án tham chiếu và cây tài liệu dự án; tách HTML tổng quan do dự án sinh,62PDF QA/báo cáo khỏi sách. Không quét sâu bản sao runtime/backup/dependencies để đếm lại. Danh mục không khẳng định bao phủ mọi thiết bị hoặc sách ngoài các đường dẫn đã kiểm.
+
+## Xác minh riêng Tổng Hợp và Tân Biên — nối `f96c25f`
+
+Lượt này chỉ kiểm manifest, nhật ký, hồ sơ và đường dẫn; **không đọc lại chữ sách, mở PDF/ảnh, trích xuất hoặc chạy test/build**. [Biên bản máy đọc được: khoảng trang, hash hồ sơ gốc, danh sách ảnh và dẫn chiếu](../.local/source-library/verifications/npl-tb-20261021.json). Số trang dưới đây là PDF. Hash trong manifest cũ khớp danh mục kho; không tính lại hash PDF trong bước này.
+
+| Sách | Tổng trang / trích xuất | Khoảng đã đọc có bằng chứng | Chưa đọc hoặc chưa có bằng chứng đọc | Đã kiểm ảnh theo nhật ký | Đã phân tích thành hồ sơ kiến thức |
+|---|---|---|---|---|---|
+| `tu vi tong hop-nguyen-phat-loc.pdf` — Nguyễn Phát Lộc | **442**; đủ442tệp chữ theo trang, không bảo đảm mọi bảng đã chép sạch | **1–442**, hợp11nhật ký gốc bên dưới; trang scan/bảng được đọc bằng ảnh, không chỉ dựa vào OCR | **Không có khoảng thiếu theo nhật ký cuối.** Chưa xác minh độc lập lịch sử từng lần đọc hoặc độ hiểu mọi câu | **362trang** trong audit14/10; danh sách `readingJournal` khớp `checkpoint`, đủ362tệp ảnh được dẫn. Không cộng ảnh chỉ tồn tại hoặc OCR mới thành đã xem | **53/55 hồ sơ NPL có dẫn Tổng Hợp**, phủ250trang được trích dẫn;2hồ sơ còn lại chỉ dẫn Hàm Số.55bản kế thừa khớp hồ sơ gốc. Đây là nhóm phương pháp, **không phải mọi mệnh đề của250trang đã đặc tả**, cũng không phải192trang còn lại chưa đọc |
+| Tử Vi Đẩu Số Tân Biên — Vân Đằng Thái Thứ Lang | **277**; đủ277tệp chữ theo trang, chưa kiểm sạch mọi hình/bảng | **1–277**, hợp hai lượt ghi trong nhật ký engine;58–70/84–93 đã ghi đọc lại vì output bị cắt | **Không có khoảng thiếu bằng chứng đọc lớp chữ theo nhật ký.** Còn khoảng thiếu phân tích chi tiết, liệt kê bên dưới | **Ít nhất173trang khác nhau** từ12hồ sơ gốc đã đối chiếu, loại trùng; không phải tổng toàn dự án đã được chứng minh đầy đủ. Con số60 trong manifest đầu chỉ là lượt engine | Audit lập số/định nghĩa; các mục Mệnh chọn lọc; ma trận Phụ–Phúc–Điền–Quan–Nô–Di–Tật–Tài–Tử–Phu–Huynh; **22mệnh đề S01–S22 tại226–227**, tiếp audit229–237. Chưa có tổng số hồ sơ không trùng hoặc chứng cứ phân tích đầy đủ mọi phương pháp |
+
+### Dẫn về bằng chứng gốc
+
+- **Tổng Hợp:** [audit.json](../.local/npl-full-audit-20261014/audit.json), trường `sources`, `readingJournal`, `readingCompletion`, `methods`; [checkpoint.json](../.local/npl-full-audit-20261014/checkpoint.json).11nhật ký có nội dung khớp bản nhúng trongaudit: [1–38](../.local/npl-full-audit-20261014/logs/npl-001-038.md), [39–88](../.local/npl-full-audit-20261014/logs/npl-039-088.md), [89–128](../.local/npl-full-audit-20261014/logs/npl-089-128.md), [129–175](../.local/npl-full-audit-20261014/logs/npl-129-175.md), [176–193](../.local/npl-full-audit-20261014/logs/npl-176-193.md), [194–221](../.local/npl-full-audit-20261014/logs/npl-194-221.md), [222–241](../.local/npl-full-audit-20261014/logs/npl-222-241.md), [242–266](../.local/npl-full-audit-20261014/logs/npl-242-266.md), [267–306](../.local/npl-full-audit-20261014/logs/npl-267-306.md), [307–346](../.local/npl-full-audit-20261014/logs/npl-307-346.md), [347–442](../.local/npl-full-audit-20261014/logs/npl-347-442.md). Các dòng “đang đọc/ảnh còn chờ” là checkpoint cũ; `readingCompletion` và phần bổ sung ảnh ghi rõ đã thay chúng. Không chỉ lấy tên tệp log làm bằng chứng.
+- **Tân Biên:** [nhật ký gốc TANBIEN-ENGINE-TRIAL §Nguồn](TANBIEN-ENGINE-TRIAL.md#nguồn-và-giới-hạn-việc-đọc) và [manifest gốc](../.local/tanbien-engine-source/manifest.json). Lượt v1:1–51,225–228,248–249,267–277; lượt v2:52–172,173–224,229–247,250–266. [Kiểm kê15/10](TANBIEN-READING-COVERAGE.md) là đầu mối thứ cấp, không thay nhật ký gốc. [Audit bổ sung226–227/229–237](TANBIEN-MENH-THAN-SUPPLEMENT-AUDIT.md) đã thực hiện sau kiểm kê. Danh sách12hồ sơ chứng minh173trang ảnh, từng trang và hash tài liệu nằm trong biên bản; không cộng bản sao cùng hồ sơ thành chứng cứ độc lập.
+- Hash auditNPL, kiểm kêTB và auditbổ sungTB khớp các bản kế thừa trong kho. Đây là xác minh chuỗi hồ sơ hiện có; **chưa kiểm lại transcript/tool log gốc của từng lượt lịch sử**, không biến xác nhận của nhật ký thành kiểm chứng độc lập việc đọc hay chất lượng diễn giải.
+
+### Phần cần bổ sung, không đọc lại phần đã khép
+
+**Tổng Hợp:** không có khoảng cần đọc lần đầu được xác định. Dùng53hồ sơ và nhật ký để chuyển các phương pháp còn thiếu sang cấu trúc; không đọc lại1–442. Chỉ đối chiếu câu cụ thể khi xử lý Q01–Q08 trongaudit: chiều sinh/khắc, đa hành, cứu giải, lượng từ, TT và câu/bảng đứt. Ví dụ Q08 đã khoanh117,135,187,219,300,349,387,399–400,412; chúng **đã đọc nhưng chưa giải chắc**, không phải danh sách trang bỏ sót. Bản OCR bổ sung21/10 không tự tạo thêm lượt đọc hoặc kiểm ảnh.
+
+**Tân Biên:** theo kiểm kê và §11 backlog hiện có, ưu tiên bổ sung sổ phân tích **44–51,60–61,81–84;102–117,122–123;225,228,243** (35trang). Tra audit/citation hiện có trước, chỉ đọc lại đúng phần ngữ cảnh/ngoại lệ chưa được ghi đầy đủ. Đây là thiếu hồ sơ chi tiết, không phủ nhận nhật ký đọc hết. **226–227 và229–237 đã được bổ sung: không đưa trở lại hàng chờ đọc.** Các câu54–55,36/76/77,118/120,163–164,190–197 có audit nhưng còn bất định; chỉ nối bằng chứng mới, không mở lại toàn chương. Phần biểu tượng/vận/tiểu nhi hoặc nội dung ngoài phạm vi vẫn cần phân tích thêm nếu muốn kho học thuật đầy đủ, nhưng không tự thành việc phải triển khai cho V1.
+
+**Ba mức không đồng nhất:** “trích xuất hết” = đủ tệp chữ theo trang; “đọc hết” = có nhật ký đọc toàn lớp chữ và xử lý phần ảnh được ghi; “phân tích đầy đủ phương pháp” = chưa được chứng minh ở cả hai cuốn. Phiên xác minh này đọc mới **0trang sách**, kiểm ảnh mới **0trang**. Backlog duy nhất vẫn V1; không tạo nhiệm vụ cạnh tranh hoặc sửa trạng thái ứng dụng.
 
 ## Cách dùng
 
