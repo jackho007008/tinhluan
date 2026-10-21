@@ -1,6 +1,6 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-Cập nhật21/10/2026 sau checkpoint kho nguồn (chỉ tài liệu; ứng dụng vẫn1.59.0). Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
+Cập nhật21/10/2026 sau khi đọc hết Thiên Lương186 (chỉ tài liệu; ứng dụng vẫn1.59.0). Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
 
 Đọc tiếp: [hợp đồng sản phẩm](BUSINESS_RULES.md), [sổ quyết định](DECISIONS.md), [đầu mối bàn giao](HANDOFF.md).
 
@@ -67,14 +67,13 @@ ND04:38 snapshot có43 claim mới; Phụ16 cung mới có lời/2 bổ sung, Hu
 - **Kiểm thử ND03:**27/27 tại5file; G2 riêng6/6; typecheck/build cuối đạt. Expected cơ bản cũ đã được đối chiếu hợp đồng nguyên nhóm1.1 và khép; không phải toàngate xanh. [TESTING](TESTING.md#5-lỗi-mở-và-kết-quả-cũ-còn-giới-hạn).
 - **Bảo toàn:**112file báo cáo/98ID khác nhau,31file phiên cũ giữ hash; quyền/binding/link cũ và34bài công khai giữ nguyên.4bản/4đơn mock QA mới qua2lượt, chỉ2cấu trúc engine. [File](../.local/nd03-20261020/file-preservation.json), [DB](../.local/nd03-20261020/db-after.json), [UI](../.local/nd03-20261020/public-acceptance.json).
 
-## 5. Task hiện hành — kho nguồn, checkpoint có thể tiếp tục
+## 5. Task hiện hành — đã khép lượt đọc Thiên Lương186
 
-- [Đầu mối danh mục/tra cứu](SOURCE-LIBRARY.md), [kho riêng](../.local/source-library/README.md), [kết quả điểm chặn](../.local/source-library/blocker-results.md).8PDF Tử Vi/7nhóm nhan đề,2.468trang trích xuất;45trang OCR bổ sung. Không coi mọi bảng/chữ đã sạch hoặc đã đọc toàn kho. TOEIC ngoài phạm vi; hai bản TL giữ riêng.
-- Kế thừa đọc toàn TB277/TH442/HS237 và7trang TL298 chọn lọc có chứng cứ; đọc mới TL18625trang và thuật ngữ10trang, kiểm ảnh mới17trang.64hồ sơ gồm55nhóm NPL kế thừa+9hồ sơ mới; chưa đặc tả toàn sách.
-- Chưa đóng điểm chặn lớn hoặc thêm rule. Có định nghĩa cục bộ TL về bộ/tam hợp/xung và TT; khác biệt nguồn giữ riêng. Phần Tật mới là đối chiếu bản khác của nội dung đã audit, chưa giải lời từng sao/cứu–tác/Mệnh–Thân–Phúc; hai mẫu vẫn chưa duyệt/publish.
-- Chủ dự án xác nhận không có người thẩm định bên ngoài: Codex tiếp tục khảo cứu và đề xuất có lập luận, chủ dự án quyết định sản phẩm/phát hành; không đẩy toán tử hoặc chọn câu thắng sang chủ dự án. Các yêu cầu chọn người thẩm định và dự toán chờ bên ngoài phía dưới là lịch sử, đã được thay.
-- Tiếp **TL186 PDF17–25 (Lộc bắt đầu16), rồi26–35**, lưu checkpoint mỗi chương; sau đó TL298/NPA/DDSN. Không đọc lại phần có bằng chứng đủ chỉ để ghi nhật ký. Backlog triển khai vẫn ND01–ND19, không tự code/publish.
-- Baseline đầu phiên `main@cee0647` sạch;8file receipt codebb230d5 trùng root/checkoutQA3062 khi kiểm tĩnh. Không kiểm lại HTTP/DB/tunnel hoặc chạy test/build; ứng dụng/G2/lịch sử/Live giữ nguyên.
+- [Đầu mối tra cứu](SOURCE-LIBRARY.md), [70ghi chép/14hồ sơ nguồn mới](../.local/source-library/knowledge/tl186-reading/README.md), [đối chiếu điểm chặn](../.local/source-library/blocker-results-tl186-complete.md). **186/186trang đã đọc:**25kế thừa+161mới;47trang kiểm ảnh mới. Không kiểm kê/trích xuất lại; chưa coi mọi chữ/bảng sạch hoặc mọi mệnh đề đã đặc tả. Tổng kho78hồ sơ; các sách khác giữ tiến độ trước.
+- Đủ đặc tả nguồn cục bộ nhị hợp/xung, VCDMùi–Kỵ, cổng Lộc/lục sát và giới hạn giáp. Giữ riêng Thiên Lương, phụ luận Lê Hồng Đức và bài Thời Lý học; không dùng để sửa nghĩa Tân Biên/NPL. Bất nhất có sẵn trên ảnh và bằng chứng không giải giả thuyết được lưu, không yêu cầu chủ dự án chọn toán tử/câu thắng.
+- **Chưa đóng ND lớn hoặc thêm rule.** Tật chưa đủ lời từng sao/cứu–tác/Mệnh–Thân–Phúc cho mọi cấu trúc; hai mẫu chưa duyệt/publish. Chủ dự án quyết định sản phẩm/phát hành, Codex khảo cứu/đề xuất, không chờ người thẩm định ngoài.
+- Không còn chương TL186 đang dở. Bước đề xuất sau khi được giao: đối chiếu TL298 theo mục VCD/TamKhông/TT/nhị hợp/Phụ–Ách, không giả định chung offset/phiên bản. Backlog ND01–ND19 duy nhất; chưa bắt đầu cuốn khác.
+- Baseline đầu phiên `main@093feff` sạch; chỉ tài liệu/kho riêng. Không chạy test/build, không tác động HTTP/DB/worker/QA. Ứng dụng1.59.0/catalog1.56.0/codebb230d5, G2/lịch sử/Live tắt giữ nguyên.
 
 ### Mốc trước — bảng quyết định12 cung, chỉ tài liệu
 

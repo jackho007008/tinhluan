@@ -4,7 +4,7 @@ Cập nhật21/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ 
 
 ## Kho nguồn — checkpoint21/10/2026
 
-Đọc [SOURCE-LIBRARY](SOURCE-LIBRARY.md) trước khi tra sách:8PDF/2.468trang đã trích;35trang đọc mới,64hồ sơ kiến thức kế thừa/mới. Kho riêng ngoài Git; chưa đọc hết mọi sách. Tiếp TL186 PDF17–25 từ mục Lộc; tra chữ/audit trước, chỉ mở PDF khi thiếu ngữ cảnh/nghi OCR/cần kiểm ảnh. Chủ dự án và Codex thực hiện, không chờ thẩm định bên ngoài. Baseline task `cee0647`; ứng dụng1.59/catalog1.56/codebb230d5 giữ nguyên, chưa publish Tật.
+Đọc [SOURCE-LIBRARY](SOURCE-LIBRARY.md) trước khi tra sách. **TL186 đã đọc hết186/186:** phiên nối `093feff` đọc mới161trang, kiểm ảnh47trang;70ghi chép theo chương và14hồ sơ nguồn mới, tổng78hồ sơ. Kho riêng ngoài Git, chưa đọc hết mọi sách. Không còn chương TL186 đang dở; bước đề xuất tiếp là đối chiếu mục tương ứng TL298, chưa tự bắt đầu. Tra chữ/hồ sơ/ảnh đã kiểm trước, chỉ mở PDF đúng phần thiếu. Chủ dự án và Codex thực hiện; chưa đóng ND lớn, chưa duyệt/publish hai mẫu Tật. Ứng dụng1.59/catalog1.56/codebb230d5, G2, lịch sử và Live tắt giữ nguyên.
 
 ## Sáu tài liệu và thứ tự đọc
 

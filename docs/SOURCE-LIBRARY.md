@@ -1,6 +1,6 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
-Cập nhật21/10/2026 từ `main@cee0647`. [Kho riêng/hướng dẫn](../.local/source-library/README.md) · [Danh mục đầy đủ, tác giả, phiên bản, SHA256](../.local/source-library/inventory.json) · [Hồ sơ kiến thức](../.local/source-library/knowledge/README.md) · [Kết quả đối chiếu điểm chặn](../.local/source-library/blocker-results.md) · [Nhật ký mới/checkpoint](../.local/source-library/journals/20261021.json).
+Cập nhật21/10/2026 nối `main@093feff`. [Kho riêng/hướng dẫn](../.local/source-library/README.md) · [Danh mục đầy đủ, tác giả, phiên bản, SHA256](../.local/source-library/inventory.json) · [Hồ sơ kiến thức](../.local/source-library/knowledge/README.md) · [Kết quả đối chiếu điểm chặn](../.local/source-library/blocker-results-tl186-complete.md) · [Nhật ký mới/checkpoint](../.local/source-library/journals/tl186-remaining-20261021.json).
 
 Kho sách, chữ đầy đủ, ảnh và hồ sơ dài ở `/Volumes/DATA/TINHLUAN/.local/source-library/`, ngoài Git/phần công khai theo ignore hiện có. Liên kết cục bộ không được khôi phục bằng clone Git; chưa tạo bản sao lưu ngoài máy.
 
@@ -12,7 +12,7 @@ Kho sách, chữ đầy đủ, ảnh và hồ sơ dài ở `/Volumes/DATA/TINHLU
 | `npl` | [Tử Vi Tổng Hợp](../.local/source-library/books/npl/INDEX.md) | Nguyễn Phát Lộc | 442 | Kế thừa đọc1–442 |
 | `hs` | [Tử Vi Hàm Số](../.local/source-library/books/hs/INDEX.md) | Nguyễn Phát Lộc | 237 | Kế thừa đọc1–237 |
 | `tl298` | [Tử Vi Nghiệm Lý Toàn Thư](../.local/source-library/books/tl298/INDEX.md) | Thiên Lương | 298 | Kế thừa chọn lọc160–163,180–182; chưa đọc hết |
-| `tl186` | [Tử Vi Nghiệm Lý Toàn Thư](../.local/source-library/books/tl186/INDEX.md) | Thiên Lương | 186 | Đọc mới1–16,51–53,58–60,109–111 (25trang) |
+| `tl186` | [Tử Vi Nghiệm Lý Toàn Thư](../.local/source-library/books/tl186/INDEX.md) | Thiên Lương | 186 | Đã đọc186/186; phiên này161trang mới,47trang kiểm ảnh |
 | `npa` | [Tử Vi Lập Thành và Phụ Đoán](../.local/source-library/books/npa/INDEX.md) | Nguyễn Phúc Ấm | 120 | Đã trích; chưa đọc toàn chương |
 | `terms` | [Một số thuật ngữ thường dùng trong Tử Vi](../.local/source-library/books/terms/INDEX.md) | Chưa xác định | 10 | Đọc và kiểm ảnh1–10; còn lỗi OCR nhỏ |
 | `ddsn` | [Tử vi đấu sổ tinh thành (thượng hạ biên)](../.local/source-library/books/ddsn/INDEX.md) | Đại Đức Sơn Nhân — theo tên tệp, chờ kiểm nội dung | 898 | Đã trích; chưa đọc toàn chương |
@@ -28,10 +28,12 @@ Tra `books/<id>/full.txt` hoặc `pages/NNNN.txt` trước; `pages.json` chỉ b
 
 `rg --no-ignore -n -i 'vô chính diệu|tuần|triệt' .local/source-library/books/*/full.txt`
 
-[Chỉ mục chủ đề](../.local/source-library/topic-index.json) và [ứng viên đề mục](../.local/source-library/chapter-candidates.json) là kết quả máy tìm, chưa phải chứng cứ đã đọc.64hồ sơ kiến thức gồm55nhóm NPL kế thừa và9hồ sơ mới;9audit cũ giữ bản/hash. Đây là bước chuyển có chọn lọc, chưa đặc tả từng mệnh đề toàn kho. Mỗi nguồn giữ riêng điều kiện, vị trí, lượng từ, ngoại lệ, kết quả, dẫn chiếu và phần chưa biết; bản tóm tắt Codex không được gọi nguyên văn.
+[Chỉ mục chủ đề](../.local/source-library/topic-index.json) và [ứng viên đề mục](../.local/source-library/chapter-candidates.json) là kết quả máy tìm, chưa phải chứng cứ đã đọc.78hồ sơ kiến thức:64hồ sơ mốc trước và14hồ sơ nguồn mới; [70ghi chép theo chương/phương pháp TL186](../.local/source-library/knowledge/tl186-reading/README.md), kèm47lượt kiểm ảnh.9audit cũ giữ bản/hash. Đây là bước chuyển có chọn lọc, chưa đặc tả từng mệnh đề toàn kho. Mỗi nguồn giữ riêng điều kiện, vị trí, lượng từ, ngoại lệ, kết quả, dẫn chiếu và phần chưa biết; bản tóm tắt Codex không được gọi nguyên văn.
 
 ## Kết quả và điểm tiếp tục
 
-Đọc mới35trang, kiểm ảnh17trang. Đã làm rõ cục bộ cách Thiên Lương xét bộ/tam hợp/xung và phạm vi TT; tìm thấy khác biệt với tài liệu thuật ngữ. Chưa có bằng chứng mới đủ đóng điểm chặn lớn ND: VCD/địa chi–trạng thái, M06/lượng từ, bất nhất TB, phối hợp cùng phương diện, Tật cá nhân vẫn mở. Tật TL186109–111 đối chiếu nội dung TL298160–163 đã có; không phải phương pháp mới giải đủ Tật. Hai mẫu vẫn chưa duyệt/publish.
+**Đã đọc hết bản Thiên Lương186:**25trang kế thừa +161trang đọc mới;47trang kiểm ảnh mới (cộng7trang trước thành54). Không kiểm kê/trích xuất lại. Đã nối mục Lộc từ16 và khép các chương tới mục lục186. Phụ luận ký Lê Hồng Đức179–182 và bài Thời Lý học182–184 được giữ riêng; không gán mọi câu cho một tác giả. Đọc hết không đồng nghĩa đã hiệu đính mọi chữ/bảng hoặc đặc tả từng mệnh đề.
 
-Tiếp **TL186 PDF17–25**, mục Lộc bắt đầu16; rồi26–35. Sau từng chương lưu nhật ký và hồ sơ; không đọc lại25trang đã khép nếu không thiếu ngữ cảnh. Hoàn tất TL186, đối chiếu TL298 theo mục, rồi NPA/DDSN; TB/NPL/HS dùng nhật ký cũ, bổ sung đúng đoạn thiếu. Phạm vi này thay giới hạn “không đọc toàn sách” của kế hoạch cũ theo yêu cầu mới; không tạo backlog triển khai khác. Codex làm khảo cứu/đối chiếu và đề xuất có lập luận; chủ dự án quyết định sản phẩm/duyệt phát hành, không phải đoán toán tử hoặc chọn câu thắng. Xem [quyết định](DECISIONS.md), ND04–18 trong [backlog duy nhất](V1-DELIVERY-PLAN.md).
+Đủ căn cứ lưu đặc tả nguồn cục bộ về nhị hợp/xung83–86/155–159, VCDMùi–Kỵ75, chỉ huy/điều kiện lục sát39–43, Lộc16–18/34–37 và giới hạn giáp93–95. VCD/TamKhông có khác biệt giữa chính văn80 và phụ luận183; TT, TứHóa, KhôiViệt và một số bảng còn bất nhất đã ghi địa chỉ/ảnh. **Chưa đóng điểm chặn lớn ND hoặc có rule mới được phép triển khai.** Tật vẫn thiếu phép phối hợp lời từng sao+cứu/tác+Mệnh–Thân–Phúc cho mọi cấu trúc; hai mẫu chưa duyệt/publish.
+
+Không còn chương chưa đọc ởTL186. Nếu được giao tiếp: đối chiếu TL298 theo mục VCD/TamKhông, TT, nhị hợp/xung và Phụ–Ách bằng kho chữ, không suy cùng phiên bản/offset; sau đó mới tiếp NPA/DDSN. TB/NPL/HS dùng audit cũ, không đọc lại chỉ để tạo nhật ký. [Kết quả có bằng chứng âm tính và điểm tiếp tục](../.local/source-library/blocker-results-tl186-complete.md). Backlog duy nhất vẫn [V1](V1-DELIVERY-PLAN.md); ứng dụng/G2/lịch sử/Live giữ nguyên.
