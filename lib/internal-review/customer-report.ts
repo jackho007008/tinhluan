@@ -4,9 +4,9 @@ import type {ChartSnapshot} from '../tuvi-engine';
 import type {ContinuousReport} from './continuous-report';
 import {CUSTOMER_COPY} from './customer-copy';
 import EDITORIAL from './customer-editorial.json';
-export const CUSTOMER_VERSION='1.56.0';
+export const CUSTOMER_VERSION='1.57.0';
 type Group=ContinuousReport['palaces'][number]['groups'][number];
-export type CustomerParagraph={id:string;title:string;text:string;claimIds:string[];sentences:{text:string;claimIds:string[];kind:'paraphrase'|'editorial-transition'|'source-relation'}[];original:string;members:Group['members'];relations:unknown[];movedToEvidence:string[];review:'editorial-checked'|'pending-editorial'};
+export type CustomerParagraph={conditionalAssessment?:{condition:string;status:'unknown';outcomeApplied:false}[];id:string;title:string;text:string;claimIds:string[];sentences:{text:string;claimIds:string[];kind:'paraphrase'|'editorial-transition'|'source-relation'}[];original:string;members:Group['members'];relations:unknown[];movedToEvidence:string[];review:'editorial-checked'|'pending-editorial'};
 export type CustomerSection={id:string;title:string;palaces:string[];intro:string|null;paragraphs:CustomerParagraph[];notices:{text:string;reason:unknown}[]};
 export type CustomerReport={version:string;snapshotId:string;title:string;name:string;birth:string;notice:string;intro:string;sections:CustomerSection[];basicSectionIds:string[];basicSelectionVersion?:string;palaces:{name:string;branch:string|null;target:string;facts:string;details:unknown}[];glossary:{term:string;text:string}[];unplaced:unknown[];status:'draft';review:null;catalogVersion:string};
 const labels:Record<string,string>={'Phụ Mẫu':'Cha mẹ và gia đình','Huynh Đệ':'Anh chị em','Phu Thê':'Tình cảm và hôn nhân','Tử Nữ':'Quan hệ với con cái','Nô Bộc':'Bạn bè và người trợ giúp','Thiên Di':'Môi trường bên ngoài','Phúc Đức':'Phúc Đức và dòng họ','Quan Lộc':'Sự nghiệp và cách làm việc','Tật Ách':'Tật Ách — phạm vi dữ kiện'};
@@ -110,7 +110,8 @@ export function makeCustomerParagraph(g:Group,r:ContinuousReport,s:ChartSnapshot
  }
  if(pending)parts.push({text:'Một phần nội dung đang chờ biên tập; nội dung gốc và giới hạn vẫn được giữ trong căn cứ.',claimIds:g.claimIds});
  const text=parts.map(p=>p.text).join(' ');
- return {id:g.id,title:'',text,claimIds:g.claimIds,sentences:parts.flatMap(p=>p.text.split(/(?<=[.!?])\s+/u).filter(Boolean).map(text=>({text,claimIds:p.claimIds,kind:'paraphrase' as const}))),original:g.text,members:g.members,relations:r.palaces.flatMap(p=>p.relations).filter(d=>d.claimIds.some(id=>g.claimIds.includes(id))),movedToEvidence:unique(moved),review:pending?'pending-editorial':'editorial-checked'};
+ const conditionalAssessment=g.members.flatMap(m=>m.claim.rules.flatMap(rule=>rule.presentation?.conditionalAssessment?[rule.presentation.conditionalAssessment]:[]));
+ return {...(conditionalAssessment.length?{conditionalAssessment}:{}),id:g.id,title:'',text,claimIds:g.claimIds,sentences:parts.flatMap(p=>p.text.split(/(?<=[.!?])\s+/u).filter(Boolean).map(text=>({text,claimIds:p.claimIds,kind:'paraphrase' as const}))),original:g.text,members:g.members,relations:r.palaces.flatMap(p=>p.relations).filter(d=>d.claimIds.some(id=>g.claimIds.includes(id))),movedToEvidence:unique(moved),review:pending?'pending-editorial':'editorial-checked'};
 }
 /** Shared prototype policy: whole topic groups, never select by identity or favorable wording. */
 export function selectBasicSectionIds(sections:CustomerSection[]):string[]{
@@ -128,6 +129,7 @@ export function buildCustomerReport(s:ChartSnapshot,r:ContinuousReport,catalogVe
   for(const g of p.groups){const rules=ids(g);let t=target;
    if(p.name==='Mệnh')t=rules.some(id=>id.includes('life-polarity-')||id.includes('life-foundation-')||id.includes('life-two-major-'))?sections[3]:rules.some(id=>id.includes('life-body-'))?sections[0]:rules.some(id=>['tanbien.r02','tanbien.life-wu-literary-male','npl.life-local-khoa-kiep','tanbien.life-empty-mui-sun-moon-trine'].includes(id))?sections[2]:sections[1];
    const para=makeCustomerParagraph(g,r,s);const asset=r.financeAssets?.entries.find(e=>e.groupId===g.id);para.title=p.name==='Tài Bạch'?(asset?.aspect==='retention'?'Tích lũy và giữ tiền':asset?.aspect==='income'?'Nguồn thu':'Tiền bạc'):p.name==='Điền Trạch'?'Tạo lập và duy trì nhà đất':'';
+   if(para.conditionalAssessment?.length)para.title='Chú giải có điều kiện — chưa xác định';
    t.paragraphs.push(para);
   }
   if(p.gap){const kind=p.gap.kind;const text=p.name==='Tật Ách'?(r.tatAch?.notice||'Phần này chỉ trình bày dữ kiện, không đánh giá sức khỏe.'):kind==='missing-data'?'Chưa đủ dữ kiện đáng tin cậy để đọc phần này.':kind==='unresolved-adjustment'?'Một số lời nền chưa được đưa ra vì ảnh hưởng của điều kiện đi kèm còn chưa rõ.':kind==='partial-adjustment'?'Lời về nhà đất đã tính đến điều kiện trực tiếp nêu trên; các yếu tố còn lại chưa được hợp nhất thành kết luận chung.':p.groups.length?'Phần này còn những cấu trúc chưa có luận giải.':'Phần này hiện chưa có luận giải.';

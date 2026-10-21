@@ -57,6 +57,7 @@ export const ruleSchema = z
           "context",
           "combination",
         ]),
+        conditionalAssessment: z.object({condition:z.string().min(1),status:z.literal("unknown"),outcomeApplied:z.literal(false)}).strict().optional(),
         applicability: z.string().min(1),
         knownExceptions: z.array(z.string()),
         unknownConditions: z.array(z.string()).min(1),

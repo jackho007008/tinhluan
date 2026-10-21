@@ -1,3 +1,4 @@
+import {approvedKinBranches} from '../interpretation-rules/kin-approved';
 import {kinExtensionBranches} from '../interpretation-rules/kin-extension';
 import {childrenVcdBranches,childrenVcdFacts} from '../interpretation-rules/children-vcd';
 import {familyVcdBranches,familyVcdKey,familyVcdAssessment} from '../interpretation-rules/family-vcd';
@@ -218,7 +219,7 @@ export function conditionText(c: Condition): string {
   const vcd=familyVcdBranches.find(r=>c.fact==='fact.'+familyVcdKey(r));if(vcd)return `${vcd.palace} không có chính tinh; đúng cả cặp ${vcd.stars.join('–')} bản mệnh xung chiếu.`;
   if(c.fact === "fact.life-literary-m05")return "Nam mệnh; Vũ miếu/vượng/đắc tọa Mệnh, Xương hoặc Khúc đồng cung theo Tân Biên.";
   if(c.fact === "fact.life-literary-m07")return "Kỵ bản mệnh tọa Mệnh Tý/Hợi; Khoa bản mệnh đồng cung hoặc xung chiếu.";
-  const kin=[...kinBranches,...kinExtensionBranches.slice(9)].find(r=>c.fact==='fact.'+kinKey(r)); if(kin)return kinCondition(kin);
+  const kin=[...kinBranches,...kinExtensionBranches.slice(9),...approvedKinBranches].find(r=>c.fact==='fact.'+kinKey(r)); if(kin)return kinCondition(kin);
   const fam=familyBranches.find(r=>c.fact==='fact.'+familyKey(r)); if(fam)return familyCondition(fam);
   const nd=noDienBranches.find(r=>c.fact==='fact.'+noDienKey(r));
   if(nd)return noDienCondition(nd)+' — đúng cung bản mệnh; điều chỉnh Tuần/Triệt được kiểm tra riêng.';
@@ -279,7 +280,7 @@ export function factEvidence(s: ChartSnapshot, id: string): ReadingEvidence {
  if(id.startsWith("fact.life-npl-two-")){const f=nplTwoFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện hoặc bảng NPL nhất quán để xét hai chính tinh với Bản Mệnh.");}
  if(["fact.life-body-position","fact.life-body-relation"].includes(id)){const f=lifeBodyFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"snapshot"):item("Chưa đủ dữ kiện nhất quán để xác định vị trí hoặc quan hệ Mệnh–Thân.");}
  const vb=voidBranches.find(r=>id==='fact.'+r.key); if(vb){const a=voidAssessment(s,vb);return item(a.text,a.paths,a.cause==='unresolved-adjustment'?'editorial':'snapshot');}
-  const kin=[...kinBranches,...kinExtensionBranches.slice(9)].find(r=>id==='fact.'+kinKey(r));if(kin){const a=kinAssessment(s,kin);return item(a.text,a.paths,'snapshot');}
+  const kin=[...kinBranches,...kinExtensionBranches.slice(9),...approvedKinBranches].find(r=>id==='fact.'+kinKey(r));if(kin){const a=kinAssessment(s,kin);return item(a.text,a.paths,'snapshot');}
   const fam=familyBranches.find(r=>id==='fact.'+familyKey(r));if(fam){const a=familyAssessment(s,fam);return item(a.text,a.paths,a.cause==='unresolved-adjustment'?'editorial':'snapshot');}
   const nd=noDienBranches.find(r=>id==='fact.'+noDienKey(r));
   if(nd){const a=noDienAssessment(s,nd);return item(a.text,a.paths,a.cause==='unresolved-adjustment'?'editorial':'snapshot');}
@@ -420,7 +421,7 @@ export function ruleEvidence(s: ChartSnapshot, rule: Rule) {
         ? "Tài Bạch"
         : rule.presentation?.readingTheme === "phuc" ? "Phúc Đức" : rule.presentation?.readingTheme === "di" ? "Thiên Di" : rule.presentation?.readingTheme === "no" ? "Nô Bộc" : rule.presentation?.readingTheme === "dien" ? "Điền Trạch" : rule.presentation?.readingTheme === "parents" ? "Phụ Mẫu" : rule.presentation?.readingTheme === "spouse" ? "Phu Thê" : rule.presentation?.readingTheme === "children" ? "Tử Nữ" : rule.presentation?.readingTheme === "siblings" ? "Huynh Đệ" : "Mệnh";
   return {
-    contentLabel:
+    contentLabel: rule.presentation?.conditionalAssessment ? "Chú giải có điều kiện — chưa xác định, kết quả chưa áp dụng" :
       rule.presentation?.contentType === "context"
         ? "Chú giải nền theo nhánh nguồn — chưa kết luận"
         : [

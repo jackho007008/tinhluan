@@ -5501,5 +5501,49 @@
       "Chú giải cục bộ về quan hệ và hoàn cảnh theo sách; không xác nhận tình trạng hôn nhân, hành vi của người phối ngẫu hoặc kết quả chung. Chưa phối hợp Mệnh, Thân, Phúc Đức, Quan Lộc và Nô Bộc.",
       "Câu mô tả người phối ngẫu độc lập với chỉ dẫn tránh hại. Không xuất nhan sắc, không đặt tuổi, không xác nhận năng lực/danh chức/tài sản thực tế, không suy đã đạt điều kiện họ xa hoặc tránh hại."
     ]
+  },
+  "tanbien.spouse-dong-mao-conditional": {
+    "text": "Thiên Đồng đơn thủ tại Mão ở Phu Thê có lời luận: chậm cưới mới thuận lợi trong hôn nhân và chung sống lâu bền. “Chậm cưới” chưa được xác định đối với bạn; đây là chú giải có điều kiện, chưa kết luận hôn nhân sẽ lâu bền và không phải lời khuyên cưới muộn.",
+    "sourceTemplate": "Thiên Đồng đơn thủ tại Mão ở Phu Thê có lời luận: chậm cưới mới thuận lợi trong hôn nhân và chung sống lâu bền. “Chậm cưới” chưa được xác định đối với bạn; đây là chú giải có điều kiện, chưa kết luận hôn nhân sẽ lâu bền và không phải lời khuyên cưới muộn.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "f98f4b2cc1aa9e9fdb57f8c6a73226f059ee82e10c97c288b6daddaeb9bc0392",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Chú giải cục bộ về quan hệ và hoàn cảnh theo sách; không xác nhận tình trạng hôn nhân, hành vi của người phối ngẫu hoặc kết quả chung. Chưa phối hợp Mệnh, Thân, Phúc Đức, Quan Lộc và Nô Bộc.",
+      "Chưa định nghĩa hoặc xác nhận điều kiện chậm cưới; kết quả thuận chưa áp dụng. Không đặt tuổi, khuyên cưới hoặc suy kết quả ngược."
+    ]
+  },
+  "tanbien.spouse-dong-am-ngo-conditional": {
+    "text": "Thiên Đồng–Thái Âm đồng cung tại Ngọ ở Phu Thê có lời luận: muộn lập gia đình mới tránh được chia ly. Điều kiện “muộn lập gia đình” chưa được xác định đối với bạn, nên chưa kết luận bạn đã tránh được chia ly. Đây không phải lời khuyên về thời điểm kết hôn, cũng không có nghĩa kết hôn sớm sẽ chia ly.",
+    "sourceTemplate": "Thiên Đồng–Thái Âm đồng cung tại Ngọ ở Phu Thê có lời luận: muộn lập gia đình mới tránh được chia ly. Điều kiện “muộn lập gia đình” chưa được xác định đối với bạn, nên chưa kết luận bạn đã tránh được chia ly. Đây không phải lời khuyên về thời điểm kết hôn, cũng không có nghĩa kết hôn sớm sẽ chia ly.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "0eb5595688f8cf38f4de6e0066e804e2438ee0971371d43e3b61b1081333c225",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Chú giải cục bộ về quan hệ và hoàn cảnh theo sách; không xác nhận tình trạng hôn nhân, hành vi của người phối ngẫu hoặc kết quả chung. Chưa phối hợp Mệnh, Thân, Phúc Đức, Quan Lộc và Nô Bộc.",
+      "Chưa định nghĩa hoặc xác nhận điều kiện muộn lập gia đình; kết quả tránh chia ly chưa áp dụng. Không đặt tuổi, khuyên cưới hoặc suy kết quả ngược."
+    ]
+  },
+  "tanbien.children-khoa-traditional-trait": {
+    "text": "Hóa Khoa tại cung Tử Nữ được nguồn luận gắn với nét thông minh của con. Đây là mô tả theo cấu trúc lá số, chưa phải đánh giá trí thông minh của một người con cụ thể.",
+    "sourceTemplate": "Hóa Khoa tại cung Tử Nữ được nguồn luận gắn với nét thông minh của con. Đây là mô tả theo cấu trúc lá số, chưa phải đánh giá trí thông minh của một người con cụ thể.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "433fb1391119c07bcd95893f5fd1b5f1733ebda00e4518518d058ac028673301",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Chú giải cục bộ theo sách, không xác nhận hoàn cảnh hay đặc điểm của một người con thực tế. Chưa phối hợp Phúc Đức, Mệnh và Thân.",
+      "Không xác nhận có con hoặc năng lực của một người con thực tế; không suy mọi người con, điểm số, thành tích hay thời điểm thành công."
+    ]
+  },
+  "tanbien.children-hong-loan-traditional-trait": {
+    "text": "Hồng Loan tại cung Tử Nữ được nguồn luận gắn với nét khéo tay của con. Đây là mô tả theo cấu trúc lá số, chưa xác nhận kỹ năng thực tế của một người con cụ thể.",
+    "sourceTemplate": "Hồng Loan tại cung Tử Nữ được nguồn luận gắn với nét khéo tay của con. Đây là mô tả theo cấu trúc lá số, chưa xác nhận kỹ năng thực tế của một người con cụ thể.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "93c8727af3dd5300e6d1637800624ef42f8ce2bff0407008c2551b2dea21b8d2",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Chú giải cục bộ theo sách, không xác nhận hoàn cảnh hay đặc điểm của một người con thực tế. Chưa phối hợp Phúc Đức, Mệnh và Thân.",
+      "Không xác nhận có con hoặc kỹ năng của một người con thực tế; không suy mọi người con, năng khiếu nghệ thuật hay nghề nghiệp."
+    ]
   }
 }
