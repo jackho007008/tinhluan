@@ -4,7 +4,7 @@ Cập nhật21/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ 
 
 ## Kho nguồn — checkpoint21/10/2026
 
-Đọc [SOURCE-LIBRARY](SOURCE-LIBRARY.md) trước khi tra sách. **TL186 đã đọc hết186/186:** phiên nối `093feff` đọc mới161trang, kiểm ảnh47trang;70ghi chép theo chương và14hồ sơ nguồn mới, tổng78hồ sơ. Kho riêng ngoài Git, chưa đọc hết mọi sách. Không còn chương TL186 đang dở; bước đề xuất tiếp là đối chiếu mục tương ứng TL298, chưa tự bắt đầu. Tra chữ/hồ sơ/ảnh đã kiểm trước, chỉ mở PDF đúng phần thiếu. Chủ dự án và Codex thực hiện; chưa đóng ND lớn, chưa duyệt/publish hai mẫu Tật. Ứng dụng1.59/catalog1.56/codebb230d5, G2, lịch sử và Live tắt giữ nguyên.
+Đọc [SOURCE-LIBRARY](SOURCE-LIBRARY.md) trước khi tra sách. **TL298 đã đọc hết298/298trang chữ:**291mới+7kế thừa đọc lại,61trang kiểm ảnh,76mốc đối chiếu;2hồ sơ mới về quan hệ/dị bản, tổng80hồ sơ. [Hồ sơ TL298–TL186](../.local/source-library/knowledge/tl298-reading/README.md), [kết quả ND](../.local/source-library/blocker-results-tl298-complete.md). TL298 chủ yếu dàn lại cùng tác phẩm, có lớp biên tập thêm/bớt; chưa chứng minh bản tác giả mở rộng. Không còn chương TL186/TL298 đang dở, chưa tự tiếp cuốn khác. Kho chi tiết ngoài Git. Chưa đóng ND lớn, chưa duyệt/publish hai mẫu Tật; ThiênLương không thay cách luận TânBiên. Ứng dụng1.59/catalog1.56/codebb230d5 là identity bàn giao trước, không kiểm runtime lại; G2, lịch sử và Live tắt giữ nguyên.
 
 ## Sáu tài liệu và thứ tự đọc
 

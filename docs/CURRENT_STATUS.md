@@ -67,13 +67,13 @@ ND04:38 snapshot có43 claim mới; Phụ16 cung mới có lời/2 bổ sung, Hu
 - **Kiểm thử ND03:**27/27 tại5file; G2 riêng6/6; typecheck/build cuối đạt. Expected cơ bản cũ đã được đối chiếu hợp đồng nguyên nhóm1.1 và khép; không phải toàngate xanh. [TESTING](TESTING.md#5-lỗi-mở-và-kết-quả-cũ-còn-giới-hạn).
 - **Bảo toàn:**112file báo cáo/98ID khác nhau,31file phiên cũ giữ hash; quyền/binding/link cũ và34bài công khai giữ nguyên.4bản/4đơn mock QA mới qua2lượt, chỉ2cấu trúc engine. [File](../.local/nd03-20261020/file-preservation.json), [DB](../.local/nd03-20261020/db-after.json), [UI](../.local/nd03-20261020/public-acceptance.json).
 
-## 5. Task hiện hành — đã khép lượt đọc Thiên Lương186
+## 5. Task hiện hành — đã khép lượt đọc Thiên Lương298
 
-- [Đầu mối tra cứu](SOURCE-LIBRARY.md), [70ghi chép/14hồ sơ nguồn mới](../.local/source-library/knowledge/tl186-reading/README.md), [đối chiếu điểm chặn](../.local/source-library/blocker-results-tl186-complete.md). **186/186trang đã đọc:**25kế thừa+161mới;47trang kiểm ảnh mới. Không kiểm kê/trích xuất lại; chưa coi mọi chữ/bảng sạch hoặc mọi mệnh đề đã đặc tả. Tổng kho78hồ sơ; các sách khác giữ tiến độ trước.
-- Đủ đặc tả nguồn cục bộ nhị hợp/xung, VCDMùi–Kỵ, cổng Lộc/lục sát và giới hạn giáp. Giữ riêng Thiên Lương, phụ luận Lê Hồng Đức và bài Thời Lý học; không dùng để sửa nghĩa Tân Biên/NPL. Bất nhất có sẵn trên ảnh và bằng chứng không giải giả thuyết được lưu, không yêu cầu chủ dự án chọn toán tử/câu thắng.
-- **Chưa đóng ND lớn hoặc thêm rule.** Tật chưa đủ lời từng sao/cứu–tác/Mệnh–Thân–Phúc cho mọi cấu trúc; hai mẫu chưa duyệt/publish. Chủ dự án quyết định sản phẩm/phát hành, Codex khảo cứu/đề xuất, không chờ người thẩm định ngoài.
-- Không còn chương TL186 đang dở. Bước đề xuất sau khi được giao: đối chiếu TL298 theo mục VCD/TamKhông/TT/nhị hợp/Phụ–Ách, không giả định chung offset/phiên bản. Backlog ND01–ND19 duy nhất; chưa bắt đầu cuốn khác.
-- Baseline đầu phiên `main@093feff` sạch; chỉ tài liệu/kho riêng. Không chạy test/build, không tác động HTTP/DB/worker/QA. Ứng dụng1.59.0/catalog1.56.0/codebb230d5, G2/lịch sử/Live tắt giữ nguyên.
+- [Đầu mối nguồn](SOURCE-LIBRARY.md), [76mốc đọc/đối chiếu TL298](../.local/source-library/knowledge/tl298-reading/README.md), [kết quả điểm chặn](../.local/source-library/blocker-results-tl298-complete.md). **298/298trang chữ đã đọc:**291mới+7kế thừa đọc lại;61trang kiểm ảnh. Không kiểm kê/OCR lại toàn bộ. Hai hồ sơ quan hệ/dị bản mới, tổng80; tái dùng kiến thức TL186, không tạo rule trùng.
+- TL298 là ebook dàn lại/biên tập cùng tác phẩm chủ yếu: thêm lá số phần mềm8, thiếu phụ luận Kỹ thuật ổn định TL186180–182, chuyển13chú thích cuối và có hình bị bỏ. Chưa chứng minh bản tác giả mở rộng/lịch sử ấn bản giấy; không offset hằng hoặc cộng thành nguồn độc lập.
+- Sáu nhóm Lộc/lục sát/VCD/nhị hợp–xung/giáp/TT đã đối chiếu; không thấy điều kiện mới đủ đóng ND lớn. Bất nhất TânTí/TânTỵ, TamKhông chính văn/phụ luận, TứHóa/KhôiViệt giữ riêng. **ND18 chưa đủ:** hai mẫu Tật chưa duyệt/publish. ThiênLương/LêHồngĐức/ThờiLý không gộp và không thay phương pháp TânBiên/NPL.
+- Không còn chương TL298 đang dở. Còn hiệu đính/đặc tả sâu từng mệnh đề; không tự tiếp cuốn khác hoặc tạo backlog. Kế thừa TL186186/186,54trang ảnh tổng,70digest; các sách khác giữ tiến độ trước.
+- Baseline đầu phiên `main@5c228e4` sạch, nối bàn giao TL186f96c25f. Chỉ tài liệu/kho riêng; kiểm liên kết/JSON/diff, không test/build/HTTP/DB/worker/QA. Ứng dụng1.59.0/catalog1.56.0/codebb230d5 là identity trước, không xác minh lại runtime; G2/lịch sử/Live tắt giữ nguyên.
 
 ### Mốc trước — bảng quyết định12 cung, chỉ tài liệu
 
