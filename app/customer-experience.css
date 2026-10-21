@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/QdVPSTAyLFyeg_IDWvOJmVES_Eww.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/QdVMSTAyLFyeg_IDWvOJmVES_HTEJl8y.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/QdVMSTAyLFyeg_IDWvOJmVES_HToIV8y.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/QdVMSTAyLFyeg_IDWvOJmVES_HSMIF8y.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Phudu';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/0FlJVPSHk0ya-7OUeO_U-Lwm7PkKh2zUSw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Phudu';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/0FlJVPSHk0ya-7OUeO_U-Lwm7PkKa2vUSw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Phudu';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/0FlJVPSHk0ya-7OUeO_U-Lwm7PkKUmvUSw.ttf) format('truetype');
+}
+
+/* Layout copied from approved reference-redesign/style.css; scoped to the real customer route. */
+@media screen{
+.reference-ui{--bg:#f4ecd9;--paper:#fbf6e9;--ink:#241c12;--muted:#65553e;--border:#b9a377;--line:#d8c9a6;--accent:#a54232;--gold:#89702d}.reference-ui *{box-sizing:border-box}.reference-ui{scroll-behavior:smooth;scroll-padding-top:116px}.reference-ui{margin:0;background:var(--bg);color:var(--ink);font:14px/1.65 'Be Vietnam Pro',system-ui,sans-serif}.reference-ui a{color:var(--accent);text-decoration:none}.reference-ui button,.reference-ui input,.reference-ui select{font:inherit;color:inherit}.reference-ui button,.reference-ui a,.reference-ui input,.reference-ui select,.reference-ui summary{-webkit-tap-highlight-color:transparent}.reference-ui button,.reference-ui summary{cursor:pointer}.reference-ui button{background:none}.reference-ui a:focus-visible,.reference-ui button:focus-visible,.reference-ui input:focus-visible,.reference-ui select:focus-visible,.reference-ui summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.reference-ui h1,.reference-ui h2,.reference-ui h3,.reference-ui .display{font-family:Phudu,'Arial Narrow',sans-serif;line-height:1.25}.reference-ui h1{font-size:27px;margin:0 0 5px}.reference-ui h2{font-size:23px;margin:0 0 8px}.reference-ui h3{font-size:18px;margin:0 0 8px}.reference-ui p{margin:0 0 12px}.reference-ui header{height:60px;border-bottom:1px solid var(--line);background:var(--bg)}.reference-ui .header-inner{max-width:1120px;height:100%;margin:auto;display:flex;align-items:center;gap:25px;padding:0 18px}.reference-ui .brand{display:flex;align-items:center;gap:10px;color:var(--ink);font:700 20px Phudu,sans-serif}.reference-ui .seal{border:1.5px solid var(--accent);border-radius:50%;width:35px;height:35px;display:grid;place-items:center;color:var(--accent);font:600 14px Georgia,serif}.reference-ui .old{margin-left:auto;font-size:12px;border:1px solid var(--border);border-radius:24px;padding:5px 12px;min-height:34px;display:flex;align-items:center;color:var(--muted)}.reference-ui .desktop-nav{display:flex;gap:24px}.reference-ui .desktop-nav a{color:var(--muted)}.reference-ui .prototype-label{text-align:center;font:10px/1.5 'Be Vietnam Pro',sans-serif;letter-spacing:1px;color:var(--muted);padding:9px 12px 0}.reference-ui main{max-width:1000px;margin:16px auto 0;padding:0 16px}.reference-ui .input-wrap{max-width:600px;margin:0 auto}.reference-ui .card{background:var(--paper);border:1px solid var(--border);border-radius:12px;padding:20px;box-shadow:0 5px 12px #35261208}.reference-ui .intro{display:flex;gap:12px;align-items:center;margin-bottom:20px}.reference-ui .intro p{margin:0;color:var(--muted);font-size:13px}.reference-ui .mini-seal{border:1.5px solid var(--accent);border-radius:4px;padding:6px;color:var(--accent);font:600 14px/1.1 Phudu,sans-serif;transform:rotate(-3deg)}.reference-ui .field{margin-bottom:17px}.reference-ui .field>label,.reference-ui legend{display:block;font-size:13px;margin-bottom:6px;font-weight:500}.reference-ui input,.reference-ui select{border:1px solid var(--border);border-radius:7px;background:var(--paper);height:45px;width:100%;padding:8px 11px;min-width:0;font-size:16px;box-shadow:inset 0 1px 2px #4938200b}.reference-ui fieldset{margin:0;padding:0;border:0;min-width:0}.reference-ui .choice{display:flex;gap:8px;margin:6px 0 10px}.reference-ui .choice label{position:relative}.reference-ui .choice input{position:absolute;opacity:0;width:1px;height:1px}.reference-ui .choice span{display:block;border:1px solid var(--border);border-radius:30px;padding:7px 16px;min-height:38px;line-height:22px}.reference-ui .choice input:checked+span{background:var(--ink);border-color:var(--ink);color:var(--paper)}.reference-ui .choice input:focus-visible+span{outline:3px solid var(--gold);outline-offset:2px}.reference-ui .row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.reference-ui .row.two{grid-template-columns:1fr 1fr}.reference-ui .row .field{margin-bottom:0}.reference-ui .row label{font-size:12px;color:var(--muted);display:block;margin-bottom:5px}.reference-ui .button{display:flex;justify-content:center;align-items:center;gap:8px;border:1px solid var(--accent);border-radius:8px;background:var(--accent);color:var(--paper);min-height:48px;font:600 18px Phudu,sans-serif;padding:10px 16px;width:100%}.reference-ui .quiet{background:transparent;color:var(--accent);font:500 13px 'Be Vietnam Pro',sans-serif;min-height:42px}.reference-ui .hint{font-size:12px;line-height:1.65;color:var(--muted);margin:10px 0 0}.reference-ui .input-extra{margin:18px 2px 0;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--muted)}.reference-ui .profile{padding:17px 18px}.reference-ui .profile-top{display:flex;gap:12px;justify-content:space-between}.reference-ui .eyebrow{font-size:10px;letter-spacing:1.7px;color:var(--muted);margin-bottom:4px}.reference-ui .profile h1{font-size:25px}.reference-ui .profile p{font-size:12px;color:var(--muted);margin:0}.reference-ui .profile .stamp{font:600 16px/1.3 Phudu,sans-serif;border:1px solid var(--accent);color:var(--accent);border-radius:5px;align-self:flex-start;padding:7px 10px;transform:rotate(-3deg);text-align:center}.reference-ui .facts{border-top:1px dashed var(--line);margin-top:12px;padding-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:5px 12px;font-size:12px}.reference-ui .facts span{color:var(--muted)}.reference-ui .facts b{font-weight:600}.reference-ui .sample-note{font-size:11px;color:var(--muted);margin:9px 2px}.reference-ui .tabs{display:flex;position:sticky;top:0;z-index:3;background:var(--bg);border-bottom:1px solid var(--line);margin:10px 0 16px;gap:20px;overflow:auto}.reference-ui .tabs a{white-space:nowrap;min-height:46px;display:flex;align-items:center;border-bottom:2px solid transparent;color:var(--muted);font:600 15px Phudu,sans-serif}.reference-ui .tabs a.active{color:var(--accent);border-color:var(--accent)}.reference-ui .section-heading{display:flex;justify-content:space-between;align-items:center;margin:12px 0 10px}.reference-ui .section-heading h2{margin:0}.reference-ui .section-heading span{font-size:11px;color:var(--muted)}.reference-ui .chart-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.reference-ui .palace{border:1px solid var(--border);background:var(--paper);border-radius:8px;padding:10px;text-align:left;min-height:152px;display:flex;flex-direction:column;box-shadow:0 2px 3px #35261205}.reference-ui .palace.life{border-color:var(--accent)}.reference-ui .palace-head{display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding-bottom:5px;margin-bottom:6px;font:600 13px Phudu,sans-serif}.reference-ui .palace-head small{font:10px 'Be Vietnam Pro';color:var(--muted)}.reference-ui .major{font-size:12px;line-height:1.5;font-weight:650;min-height:21px}.reference-ui .minor{font-size:10px;line-height:1.65;color:var(--muted);margin-top:5px}.reference-ui .palace-foot{margin-top:auto;padding-top:8px;display:flex;gap:5px;font-size:9px;color:var(--gold)}.reference-ui .body-badge{border:1px solid var(--gold);border-radius:3px;padding:0 3px}.reference-ui .chart-center{grid-column:2/4;grid-row:2/4;border:1px dashed var(--line);border-radius:10px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:20px;color:var(--muted)}.reference-ui .chart-center .seal{width:52px;height:52px;font-size:22px;margin:0 0 14px}.reference-ui .chart-center h3{color:var(--ink);font-size:22px}.reference-ui .chart-center p{font-size:13px;margin:0}.reference-ui .more-chart{margin:9px 0 0;display:none}.reference-ui .reading{max-width:760px;margin:24px auto}.reference-ui .reading>p{font-size:12px;color:var(--muted)}.reference-ui .topic-nav{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 16px}.reference-ui .topic-nav a{border:1px solid var(--border);border-radius:30px;padding:7px 12px;font-size:12px;min-height:36px}.reference-ui .reading-section{margin-bottom:12px;padding:18px}.reference-ui .reading-section h3{color:var(--gold);font-size:20px;margin-bottom:12px}.reference-ui .reading-section p{line-height:1.9;font-size:14px}.reference-ui .reading-section .section-intro,.reference-ui .reading-section .notice{font-size:12px;color:var(--muted)}.reference-ui details{border-top:1px dashed var(--line);font-size:12px;color:var(--muted);margin-top:8px}.reference-ui summary{min-height:40px;display:flex;align-items:center;justify-content:space-between;color:var(--accent);list-style:none}.reference-ui summary:after{content:'+';font-size:18px}.reference-ui details[open]>summary:after{content:'−'}.reference-ui details p{font-size:12px!important;line-height:1.7!important}.reference-ui details ul{padding-left:18px}.reference-ui footer{text-align:center;font-size:11px;color:var(--muted);padding:20px 16px 32px;line-height:2}.reference-ui dialog{background:var(--paper);color:var(--ink);border:1px solid var(--border);border-radius:12px;padding:24px;max-width:450px;width:calc(100% - 32px);max-height:85vh}.reference-ui dialog::backdrop{background:#241c1270}.reference-ui .close{float:right;border:1px solid var(--border);border-radius:50%;width:36px;height:36px;font-size:25px;line-height:1}.reference-ui dialog p{font-size:14px;line-height:1.8}.reference-ui .error{color:var(--accent);font-size:12px}.reference-ui #reading,.reference-ui #chart,.reference-ui #scope,.reference-ui .reading-section{scroll-margin-top:60px}
+@media(max-width:650px){.reference-ui .desktop-nav{display:none}.reference-ui .header-inner{padding:0 16px}.reference-ui .brand{font-size:19px}.reference-ui main{margin-top:12px}.reference-ui .card{padding:18px}.reference-ui .profile{padding:15px}.reference-ui .profile h1{font-size:24px}.reference-ui .chart-grid{grid-template-columns:1fr 1fr}.reference-ui .chart-center{display:none}.reference-ui .palace{grid-area:auto!important;min-height:146px}.reference-ui .chart-grid:not(.expanded) .palace:nth-of-type(n+5){display:none}.reference-ui .more-chart{display:flex}.reference-ui .reading{margin-top:24px}.reference-ui .reading-section{padding:16px}.reference-ui .tabs{gap:24px}.reference-ui .input-extra{gap:12px}.reference-ui .profile .stamp{font-size:13px}.reference-ui .profile p{font-size:11px}.reference-ui .facts{font-size:11px}.reference-ui .palace .major{font-size:12px}.reference-ui .input-wrap .card{padding:20px}.reference-ui .minor{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.reference-ui{scroll-behavior:auto}}
+.reference-ui [hidden]{display:none!important}.reference-ui .row select{font-size:14px;padding:8px}.reference-ui .row.two .choice span{padding:7px 14px}
+.reference-ui .mutagen{color:var(--gold);font-size:10px;font-weight:500}
+@media(min-width:651px){.reference-ui .profile{max-width:760px;margin:auto}.reference-ui .profile .facts{grid-template-columns:repeat(4,minmax(0,1fr))}.reference-ui .sample-note{max-width:760px;margin:9px auto}}
+
+.reference-ui{min-height:100vh;--primary:var(--accent);--surface:var(--paper)}
+.reference-ui header{position:static;padding:0;display:block;width:auto}.reference-ui header nav{margin:0;padding:0}
+.reference-ui main{width:auto;display:block;min-height:0}.reference-ui h1,.reference-ui h2,.reference-ui h3{letter-spacing:normal;font-weight:700}
+.reference-ui form{margin:0}.reference-ui fieldset{display:block}.reference-ui label{display:block}.reference-ui .choice label{margin:0;display:block}
+.reference-ui .card{margin-bottom:0}.reference-ui .reading-section{margin-bottom:12px}.reference-ui input,.reference-ui select{margin:0}.reference-ui .choice input{padding:0;min-height:0}
+.reference-ui .leap-choice{font-size:12px;margin-top:10px}.reference-ui .leap-choice input{width:18px;height:18px;vertical-align:middle}
+.reference-ui .error:empty{display:none}.reference-ui .reading-disclosure{border-top:1px dashed var(--line);font-size:12px;color:var(--muted);margin-top:8px}
+.reference-ui .disclosure-toggle{border:0;padding:0;background:none;min-height:40px;width:100%;text-align:left;display:flex;align-items:center;justify-content:space-between;color:var(--accent);font:inherit}
+.reference-ui .disclosure-toggle:after{content:'+';font-size:18px}.reference-ui [data-open=true]>.disclosure-toggle:after{content:'−'}
+.reference-ui .reading-disclosure p{font-size:12px!important;line-height:1.7!important}.reference-ui .reading-disclosure ul{padding-left:18px}
+.reference-ui .reading-section h4{font:600 14px/1.6 'Be Vietnam Pro',sans-serif;margin:12px 0 8px}.reference-ui .evidence-item{margin:10px 0}
+.reference-ui .customer-chart .sheet-actions,.reference-ui .customer-chart .sheet-block>label,.reference-ui .customer-chart .sheet-block>details,.reference-ui .customer-chart .sheet-block>p{display:none}
+.reference-ui .sheet-viewport{overflow:auto;max-width:100%}.reference-ui .customer-chart{margin:0}.reference-ui .sheet-block{margin:0;padding:0;border:0;background:transparent}
+.reference-ui .reading-section,.reference-ui #palaces,.reference-ui #transformations{scroll-margin-top:60px}
+}
+/* Neutralize legacy global defaults which are absent in the approved reference. */
+@media screen{
+.reference-ui .intro{padding:0;justify-content:normal}.reference-ui .intro h1{max-width:none}
+.reference-ui label{font-weight:400}.reference-ui .field>label,.reference-ui legend{font-weight:500}
+.reference-ui input:not([type=checkbox]),.reference-ui select{min-height:0}.reference-ui .row select{min-height:auto}
+.reference-ui .seal{padding:0;margin:0}.reference-ui header{align-items:normal;justify-content:normal}
+.reference-ui .tabs{flex-wrap:nowrap}.reference-ui .eyebrow{font-weight:400}
+.reference-ui .section-heading{gap:normal}.reference-ui nav{align-items:normal}
+.reference-ui footer{display:block;border:0;max-width:none;margin:0}
+}
+
+/* Chart toolbar: shared content, compact controls in the customer layout. */
+.tinhluan-logo{display:block;width:190px;height:64px;object-fit:contain}
+@media screen {
+ .reference-ui .brand .tinhluan-logo{width:182px;height:62px;object-fit:contain}
+ .reference-ui .customer-chart-interactive .chart-period-controls{border:1px solid var(--line);border-radius:10px;background:var(--paper);padding:12px;margin-bottom:8px}
+ .reference-ui .customer-chart-interactive .sheet-year{display:flex;align-items:center;gap:8px;margin:0;padding:0;border:0;background:none;flex-wrap:nowrap}
+ .reference-ui .customer-chart-interactive .sheet-year label{display:flex;flex-direction:row;align-items:center;gap:10px;flex:1;margin:0;font-size:12px;min-width:0}
+ .reference-ui .customer-chart-interactive .sheet-year input{width:88px;height:38px;min-height:38px;padding:7px 9px;margin:0;font-size:15px;flex-shrink:0}
+ .reference-ui .customer-chart-interactive button{font:500 13px/1.3 'Be Vietnam Pro',sans-serif;padding:9px 12px;border:1px solid var(--border);border-radius:7px;background:var(--paper);color:var(--accent);cursor:pointer;min-height:40px;box-shadow:none;white-space:nowrap}
+ .reference-ui .customer-chart-interactive button:disabled{opacity:.5;cursor:wait}
+ .reference-ui .customer-chart-interactive .sheet-year button{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+ .reference-ui .customer-chart-interactive .sheet-actions{display:flex;gap:8px;flex-wrap:wrap;margin:0}
+ .reference-ui .customer-chart-interactive .chart-layer-options{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px;margin:10px 0 0;padding-top:7px;border-top:1px solid var(--line)}
+ .reference-ui .customer-chart-interactive .chart-layer-options label{display:flex;flex-direction:row;align-items:center;gap:7px;font-size:12px;font-weight:400;line-height:1.4;min-height:32px;margin:0;padding:0}
+ .reference-ui .customer-chart-interactive input[type=checkbox]{width:17px;height:17px;min-height:0;padding:0;margin:0;accent-color:var(--accent);flex-shrink:0}
+ .reference-ui .customer-chart-interactive .sheet-actions-compact{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:8px 0}
+ .reference-ui .customer-chart-interactive .sheet-actions-compact button{padding:9px 6px}
+ .reference-ui .customer-chart-interactive .sheet-actions-compact span{grid-column:1/-1;font-size:12px}
+ .reference-ui .customer-chart-interactive .sheet-block>p[role=alert]{display:block}
+ .reference-ui .customer-chart-interactive .sheet-block>details{display:block;font-size:11px;margin:0 0 8px;border-top:0}
+ .reference-ui .customer-chart-interactive .sheet-block>details summary{min-height:32px;font-size:11px}
+ .reference-ui .customer-chart-interactive .chart-period-controls p{font-size:12px;margin:8px 0 0}
+ @media(min-width:650px){.reference-ui .customer-chart-interactive .chart-layer-options{grid-template-columns:repeat(4,max-content);justify-content:start;gap:16px}.reference-ui .customer-chart-interactive .sheet-actions-compact{display:flex}.reference-ui .customer-chart-interactive .sheet-actions-compact button{min-width:112px;padding:9px 14px}}
+}
+
+/* Confirmation is a step in the existing form; inputs stay mounted when editing back. */
+.reference-ui .birth-confirm dl{margin:0 0 18px}
+.reference-ui .birth-confirm dl>div{padding:10px 0;border-bottom:1px solid var(--line)}
+.reference-ui .birth-confirm dt{font-size:12px;color:var(--muted)}
+.reference-ui .birth-confirm dd{margin:2px 0 0;font-weight:500;overflow-wrap:anywhere}
+.reference-ui .confirm-actions{display:grid;gap:10px}
+.reference-ui button:disabled{opacity:.65;cursor:wait}
+
+@media screen{.reference-ui .topic-nav>a{display:inline-flex;align-items:center}}
+.reference-ui .field-error{color:#9a3026;font-size:12px;line-height:1.5;margin:5px 0 0}.reference-ui [aria-invalid="true"]{border-color:#9a3026}.reference-ui .edit-birth{display:inline-flex;margin:6px 0 0;font-size:13px;text-decoration:underline}
+.reference-ui .trial-pdf{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px;margin:12px 0}.reference-ui .trial-pdf .button{width:auto;margin:0;min-height:44px;padding:9px 16px}.reference-ui .trial-pdf .hint{flex:1;min-width:170px;margin:0;font-size:12px}.reference-ui .trial-pdf .error{width:100%;margin:0}
+
+/* Versioned reading scope: server-projected content, never a CSS paywall. */
+.reference-ui .reading-access h2{font-size:1.15rem;margin:0 0 8px}
+.reference-ui .palace-access-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0}
+.reference-ui .palace-access-grid a{display:flex;flex-direction:column;gap:4px;border:1px solid #d8c9b6;border-radius:8px;padding:10px;color:#55483b;text-decoration:none;min-width:0;overflow-wrap:anywhere}
+.reference-ui .palace-access-grid span{font-size:12px;line-height:1.4}
+.reference-ui .palace-access-grid [data-palace-access=free]{background:#f6e5d2;border-color:#9d4035}
+.reference-ui .palace-access-grid [data-palace-access=empty]{color:#6e665c;background:#f5f1e9}
+@media(max-width:480px){.reference-ui .palace-access-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* G3: customer library and saved-reading navigation; no changes to print layout. */
+.reference-ui .library-tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin:20px 0 14px;padding-bottom:10px}
+.reference-ui .library-tabs a{padding:8px 12px;border-radius:7px;font-size:14px}
+.reference-ui .library-tabs a[aria-current=page]{background:#943b30;color:#fff9ed}
+.reference-ui .library-search label{display:block;font-size:14px;margin-bottom:6px}
+.reference-ui .library-search>div{display:flex;gap:8px}
+.reference-ui .library-search input{min-width:0;flex:1;width:100%;padding:10px;border:1px solid #cdb995;border-radius:7px;background:#fffdf7}
+.reference-ui .library-list{list-style:none;padding:0;margin:0}
+.reference-ui .library-list li{padding:16px 0;border-top:1px solid #dfcfb3;overflow-wrap:anywhere}
+.reference-ui .library-list h2{font-size:19px;margin:0 0 6px;line-height:1.4}
+.reference-ui .library-meta,.reference-ui .library-count{font-size:13px;color:#6e6254;margin:5px 0}
+.reference-ui .access-label{font-size:14px;color:#8a342e;font-weight:600;margin:6px 0}
+.reference-ui .library-actions{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:12px;font-size:14px}
+.reference-ui .library-pagination{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:18px 0;font-size:14px}
+.reference-ui .library-empty{padding:16px;background:#f5eddc;border-radius:8px}
+.reference-ui .library-link{margin:20px 0;font-size:14px}
+.reference-ui .customer-workspace{max-width:900px;margin:auto;padding:12px 16px 32px}
+.reference-ui .compact-profile{padding:14px 16px;margin:0 0 10px}
+.reference-ui .compact-profile h1{font-size:24px;line-height:1.25;margin:0 0 6px;overflow-wrap:anywhere}
+.reference-ui .compact-profile p{font-size:14px;margin:4px 0}
+.reference-ui .workspace-actions{display:flex;gap:12px;flex-wrap:wrap;font-size:13px;margin-top:8px}
+.reference-ui .workspace-nav{display:flex;justify-content:space-between;gap:6px;position:sticky;top:0;z-index:10;background:#f4ecd9;border-bottom:1px solid #cbb797;padding:10px 0;font-size:14px}
+.reference-ui .workspace-nav a{padding:6px 4px}
+.reference-ui .compact-disclosure{padding:10px 14px;margin:10px 0}
+.reference-ui .customer-workspace .reading-note{font-size:13px;line-height:1.6;color:#746655;margin:10px 0 14px}
+.reference-ui .palace-chapter{padding:14px 16px;margin:12px 0;scroll-margin-top:70px}
+.reference-ui .palace-chapter>.disclosure-toggle{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:21px;font-weight:600}
+.reference-ui .palace-badge{font:500 12px/1.4 Arial,sans-serif;white-space:nowrap;padding:5px 8px;border:1px solid #d3bd98;border-radius:16px;color:#744c37;background:#f8edd8}
+.reference-ui .palace-badge.locked{background:#eee5d7;color:#66594b}
+.reference-ui .palace-badge.empty{background:transparent;color:#746b5e}
+.reference-ui .palace-facts{font-size:13px;color:#74624e;line-height:1.6;margin:10px 0 14px}
+.reference-ui .customer-workspace section h2{font-size:21px;line-height:1.4;margin:22px 0 12px}
+.reference-ui .customer-workspace article h3{font-size:16px;line-height:1.5;margin:18px 0 7px}
+.reference-ui .customer-workspace article p{font-size:16px;line-height:1.85}
+.reference-ui .customer-workspace [id]{scroll-margin-top:80px;overflow-wrap:anywhere}
+.reference-ui .customer-workspace .reading-disclosure>[hidden]{display:none}
+.reference-ui .customer-workspace .access-message{font-size:15px;line-height:1.7;background:#f5eddc;padding:12px;border-radius:7px}
+.reference-ui .close-evidence{font-size:13px;margin-top:14px;padding:8px 12px}
+.reference-ui .customer-workspace #reading-options h2{margin-top:0}
+@media(min-width:760px){.reference-ui .customer-workspace{padding-top:18px}.reference-ui .workspace-nav{justify-content:flex-start;gap:30px}.reference-ui .palace-chapter{padding:22px 28px}.reference-ui .customer-workspace .compact-profile h1{font-size:28px}}
+@media(max-width:400px){.reference-ui .customer-workspace{padding-inline:10px}.reference-ui .palace-chapter{padding:12px}.reference-ui .library-tabs a{padding:8px;font-size:13px}}
+
+@media screen{.reference-ui .workspace-nav>a,.reference-ui .library-tabs>a,.reference-ui .library-pagination>a{display:inline-flex;align-items:center}.reference-ui .palace-access-grid>a{display:flex}}

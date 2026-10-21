@@ -1,0 +1,2 @@
+import {randomUUID} from 'node:crypto';import {loginVerifiedGoogle} from '../../lib/customer-auth/accounts';import {pool} from '../../lib/db';
+export async function testAdmin(){process.env.CUSTOMER_AUTH_ENABLED='true';const a=await loginVerifiedGoogle({subject:'admin-fixture-'+randomUUID(),name:'Admin fixture'});await pool.query("INSERT INTO admin_roles(user_id,role) VALUES($1,'admin')",[a.userId]);return a;}

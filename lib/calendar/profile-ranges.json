@@ -1,0 +1,32 @@
+{
+  "vn-utc7-midnight-v1": {
+    "min": "1976-01-01",
+    "max": "2050-12-31",
+    "label": "Lịch Việt Nam UTC+7",
+    "years": "1976–2050"
+  },
+  "cn-reference": {
+    "min": "1900-01-01",
+    "max": "2099-12-31",
+    "label": "Lịch Trung Quốc tham chiếu",
+    "years": "1900–2099"
+  },
+  "vn-unavailable": {
+    "min": "1976-01-01",
+    "max": "2050-12-31",
+    "label": "Profile chưa hỗ trợ",
+    "years": "1976–2050"
+  },
+  "tanbien-vn-trial-v1": {
+    "min": "1976-01-01",
+    "max": "2050-12-31",
+    "label": "Tân Biên — bản thử, có quy ước bổ sung",
+    "years": "1976–2050"
+  },
+  "tanbien-vn-trial-v2": {
+    "min": "1976-01-01",
+    "max": "2050-12-31",
+    "label": "Tân Biên v2 — bản thử, có quy ước bổ sung",
+    "years": "1976–2050"
+  }
+}

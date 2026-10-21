@@ -1,0 +1,31 @@
+.ency-shell{max-width:960px;margin:auto;padding:24px 20px 48px;color:#352b25}.ency-shell h1{font-size:clamp(25px,5vw,36px);line-height:1.25;margin:12px 0}.ency-shell h2{font-size:23px;line-height:1.4;margin:30px 0 12px;scroll-margin-top:20px}.ency-shell p{line-height:1.8}.ency-shell a{color:#943b2d}.ency-filters{display:grid;grid-template-columns:1fr 190px auto;gap:12px;align-items:end;margin:22px 0}.ency-filters label{display:grid;gap:6px;font-weight:600}.ency-shell input,.ency-shell select,.ency-shell textarea{width:100%;min-width:0;padding:12px;border:1px solid #c9bca5;border-radius:8px;background:#fffdf8;color:#352b25;font:inherit}.ency-shell button,.ency-button{border:1px solid #943b2d;background:#943b2d;color:#fff8ed!important;border-radius:8px;padding:12px 18px;font:inherit;cursor:pointer;display:inline-block;text-decoration:none}.ency-shell button:disabled{opacity:.6;cursor:wait}.ency-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.ency-card{background:#fffdf8;border:1px solid #dfd4bf;border-radius:12px;padding:20px;overflow-wrap:anywhere}.ency-card h2{margin:8px 0;font-size:23px}.ency-lead{color:#635444;font-size:18px}.ency-article{max-width:760px;overflow-wrap:anywhere;margin:24px auto}.ency-paragraph{white-space:pre-line}.ency-toc,.ency-sources{background:#f5eedf;border:1px solid #ded1b8;border-radius:10px;padding:16px;margin:24px 0}.ency-toc summary{font-weight:700;cursor:pointer}.ency-toc nav{display:grid;gap:10px;margin-top:12px}.ency-shell .ency-toc nav>a{display:block}.ency-sources p{font-size:15px}.ency-notice{padding:10px 14px;background:#f7edd1;border-left:3px solid #aa7b28}.ency-editor{display:grid;gap:18px}.ency-editor label{display:grid;gap:6px;font-weight:600}.ency-editor small{font-weight:400;color:#665b4b}.ency-editor textarea{resize:vertical;line-height:1.6}.ency-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.ency-tabs{display:flex;gap:16px;flex-wrap:wrap;margin:18px 0}.ency-shell .ency-tabs>a{display:inline-block}.ency-error{color:#9b2519}.ency-version{font-size:14px;color:#665b4b}.ency-shell :focus-visible{outline:3px solid #ba8d36;outline-offset:3px}@media(max-width:600px){.ency-shell{padding:18px 14px 36px}.ency-grid{grid-template-columns:1fr}.ency-filters{grid-template-columns:1fr auto}.ency-filters label:first-child{grid-column:1/-1}.ency-article{margin-top:18px}.ency-card{padding:16px}}
+
+.ency-editor fieldset{border:0;padding:0;margin:0;min-width:0}
+
+/* Shared article typography and bounded table scrolling, admin + public. */
+.ency-article,.ency-article #article-content{min-width:0;max-width:100%}
+.ency-article{width:100%;max-width:760px}
+.ency-shell h3{font-size:19px;line-height:1.5;margin:24px 0 10px;scroll-margin-top:20px}
+.ency-list{padding-left:1.6em;line-height:1.8;margin:16px 0}.ency-list li+li{margin-top:6px}
+.ency-table-region{margin:20px 0;min-width:0;max-width:100%}
+.ency-shell .ency-table-hint{font-size:13px;color:#665b4b;margin:0 0 8px;line-height:1.5}
+.ency-table-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;border:1px solid #d6c5a7;border-radius:8px;background:#fffdf8}
+.ency-table-scroll table{border-collapse:collapse;width:100%;min-width:600px;table-layout:fixed;margin:0;font-size:15px;line-height:1.65}
+.ency-table-scroll table[data-columns="2"]{min-width:0}
+.ency-table-scroll th,.ency-table-scroll td{padding:12px;vertical-align:top;overflow-wrap:anywhere;border-right:1px solid #dfd4bf;border-bottom:1px solid #dfd4bf}
+.ency-table-scroll th{background:#f1e5cc;color:#63382c;font-weight:700}.ency-table-scroll tr:nth-child(even) td{background:#faf5e9}
+.ency-table-scroll th:last-child,.ency-table-scroll td:last-child{border-right:0}.ency-table-scroll tbody tr:last-child td{border-bottom:0}
+.ency-review-nav{border-block:1px solid #dfd4bf;padding:14px 0;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;line-height:1.6}
+@media(max-width:600px){.ency-table-scroll th,.ency-table-scroll td{padding:10px}.ency-review-nav a{max-width:100%;overflow-wrap:anywhere}}
+
+/* Isolate article typography from the customer shell's display headings. */
+.ency-shell .ency-article{font-family:'Be Vietnam Pro',system-ui,sans-serif;font-size:16px;line-height:1.8;color:#352b25}
+.ency-shell .ency-article h1,.ency-shell .ency-article h2,.ency-shell .ency-article h3{font-family:inherit;font-weight:700;letter-spacing:normal;text-transform:none}
+.ency-shell .ency-article h1{font-size:clamp(25px,5vw,36px);line-height:1.25;margin:12px 0}
+.ency-shell .ency-article h2{font-size:23px;line-height:1.4;margin:30px 0 12px}
+.ency-shell .ency-article h3{font-size:19px;line-height:1.5;margin:24px 0 10px}
+.ency-shell .ency-article p{margin:0 0 16px;line-height:1.8}
+.ency-shell .ency-article .ency-lead{font-size:18px}.ency-shell .ency-article .ency-sources p{font-size:15px}
+.ency-shell .ency-article .ency-table-hint{font-size:13px;line-height:1.5;margin:0 0 8px}
+.ency-shell .ency-article ul.ency-list{list-style:disc}.ency-shell .ency-article ol.ency-list{list-style:decimal}
+.ency-shell .ency-article .eyebrow{font-size:10px;letter-spacing:1.7px;color:#65553e;display:block;margin-bottom:4px}

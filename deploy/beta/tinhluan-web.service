@@ -1,0 +1,24 @@
+[Unit]
+Description=Tinh Luan free beta web
+After=network-online.target postgresql.service
+Wants=network-online.target
+StartLimitIntervalSec=300
+StartLimitBurst=10
+[Service]
+Type=simple
+User=tinhluan
+Group=tinhluan
+Environment=HOME=/var/lib/tinhluan
+WorkingDirectory=/opt/tinhluan/current
+ExecStart=/usr/local/bin/node --env-file=/etc/tinhluan/beta.env deploy/beta/run.mjs web
+Restart=always
+RestartSec=5
+TimeoutStopSec=90
+KillMode=control-group
+UMask=0077
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+LimitNOFILE=65536
+[Install]
+WantedBy=multi-user.target

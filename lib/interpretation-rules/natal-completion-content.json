@@ -1,0 +1,375 @@
+[
+  {
+    "id": "no-table-abright-bbright",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "A+",
+    "no": "B+",
+    "page": 168,
+    "text": "Có lời về sự trợ giúp đắc lực, đông đảo và bạn bè khá giả.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-abright-bdim",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "A+",
+    "no": "B-",
+    "page": 168,
+    "text": "Sự trợ giúp được mô tả là ít hiệu quả; về sau dễ phân tán và ít bạn bè.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-abright-cbright",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "A+",
+    "no": "C+",
+    "page": 168,
+    "text": "Người trợ giúp được mô tả là có tài; bạn bè có địa vị và điều kiện vật chất.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-abright-cdim",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "A+",
+    "no": "C-",
+    "page": 168,
+    "text": "Sự trợ giúp ít hiệu quả, dễ phân tán và có lời oán trách; bạn bè gặp khó khăn về vật chất.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-adim-bbright",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "A-",
+    "no": "B+",
+    "page": 169,
+    "text": "Sự trợ giúp có mặt đắc lực nhưng cũng có sự lấn quyền người trên; bạn bè có khả năng nâng đỡ.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-adim-bdim",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "A-",
+    "no": "B-",
+    "page": 169,
+    "text": "Có lời về ít người trợ giúp, sự trợ giúp kém hiệu quả và bạn bè phân tán.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-adim-cbright",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "A-",
+    "no": "C+",
+    "page": 169,
+    "text": "Có lời về sự trợ giúp đắc lực và bạn bè khá giả.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-adim-cdim",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "A-",
+    "no": "C-",
+    "page": 169,
+    "text": "Có lời về sự trợ giúp ít hiệu quả và ít bạn bè.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-bbright-abright",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "B+",
+    "no": "A+",
+    "page": 170,
+    "text": "Việc tìm người trợ giúp được mô tả là trước khó sau dễ, bạn bè khá giả. Mặt khó vẫn còn: trên dưới không nhất trí, không hợp tính nên khó hài lòng.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-bbright-adim",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "B+",
+    "no": "A-",
+    "page": 170,
+    "text": "Sự trợ giúp ít hiệu quả và ngày càng phân tán; quan hệ trên dưới có lời nói xấu, còn bạn bè thường tìm đến nhờ cậy.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-bbright-cbright",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "B+",
+    "no": "C+",
+    "page": 170,
+    "text": "Có lời về điều kiện vật chất khá giả của người trợ giúp và bạn bè.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-bbright-cdim",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "B+",
+    "no": "C-",
+    "page": 170,
+    "text": "Có lời về sự trợ giúp hạn chế từ người giúp việc và bạn bè.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-bdim-abright",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "B-",
+    "no": "A+",
+    "page": 170,
+    "text": "Có lời về sự trợ giúp đông đảo, đắc lực, bạn bè khá giả và sự giúp đỡ trong lúc hoạn nạn.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-bdim-adim",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "B-",
+    "no": "A-",
+    "page": 170,
+    "text": "Có lời về rất ít người trợ giúp cũng như bạn bè.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-bdim-cbright",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "B-",
+    "no": "C+",
+    "page": 170,
+    "text": "Có lời về khả năng của người trợ giúp và bạn bè.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-bdim-cdim",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "B-",
+    "no": "C-",
+    "page": 170,
+    "text": "Có lời về ít người trợ giúp, ít bạn bè và sự oán trách từ người dưới.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-cbright-abright",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "C+",
+    "no": "A+",
+    "page": 171,
+    "text": "Có lời về điều kiện vật chất và khả năng của người trợ giúp, bạn bè.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-cbright-adim",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "C+",
+    "no": "A-",
+    "page": 171,
+    "text": "Sự trợ giúp được mô tả là ít hiệu quả; bạn bè có thiện chí nhưng điều kiện vật chất hạn chế.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-cbright-bbright",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "C+",
+    "no": "B+",
+    "page": 171,
+    "text": "Có lời về được nhiều người tùng phục và khả năng của người trợ giúp, bạn bè.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-cdim-abright",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "C-",
+    "no": "A+",
+    "page": 171,
+    "text": "Có lời về điều kiện vật chất và khả năng của người trợ giúp, bạn bè.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-cdim-adim",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "C-",
+    "no": "A-",
+    "page": 171,
+    "text": "Có lời về người trợ giúp và bạn bè thưa ít, sự trợ giúp hạn chế.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-cdim-bbright",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "C-",
+    "no": "B+",
+    "page": 171,
+    "text": "Có lời về khả năng của người trợ giúp và bạn bè khá giả.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "no-table-cdim-bdim",
+    "kind": "no-table",
+    "palace": "Nô Bộc",
+    "life": "C-",
+    "no": "B-",
+    "page": 171,
+    "text": "Có lời về sự trợ giúp hạn chế và điều kiện vật chất khó khăn của người trợ giúp, bạn bè.",
+    "section": "9.1",
+    "title": "Mệnh và Nô Bộc — sự trợ giúp và quan hệ bạn bè"
+  },
+  {
+    "id": "phuc-base-tu-ngo",
+    "kind": "phuc-base",
+    "palace": "Phúc Đức",
+    "stars": [
+      "Tử Vi"
+    ],
+    "branches": [
+      "Ngọ"
+    ],
+    "page": 132,
+    "section": "6.1.1",
+    "text": "Tử Vi đơn thủ tại Phúc Đức ở Ngọ có lời về hưởng phúc lâu dài và dòng họ có người hiển đạt.",
+    "title": "Phúc Đức — Tử Vi và sao đồng cung"
+  },
+  {
+    "id": "phuc-base-tu-ty",
+    "kind": "phuc-base",
+    "palace": "Phúc Đức",
+    "stars": [
+      "Tử Vi"
+    ],
+    "branches": [
+      "Tý"
+    ],
+    "page": 132,
+    "section": "6.1.1",
+    "text": "Tử Vi đơn thủ tại Phúc Đức ở Tý gắn với sự may mắn; dòng họ được mô tả là ít người nhưng khá giả.",
+    "title": "Phúc Đức — Tử Vi và sao đồng cung"
+  },
+  {
+    "id": "phuc-base-tu-phu",
+    "kind": "phuc-base",
+    "palace": "Phúc Đức",
+    "stars": [
+      "Tử Vi",
+      "Thiên Phủ"
+    ],
+    "branches": [],
+    "page": 132,
+    "section": "6.1.1",
+    "text": "Tử Vi–Thiên Phủ tại Phúc Đức có lời về được hưởng phúc, xứng ý toại lòng và dòng họ có nhiều người giàu sang.",
+    "title": "Phúc Đức — Tử Vi và sao đồng cung"
+  },
+  {
+    "id": "phuc-base-tu-tuong",
+    "kind": "phuc-base",
+    "palace": "Phúc Đức",
+    "stars": [
+      "Tử Vi",
+      "Thiên Tướng"
+    ],
+    "branches": [],
+    "page": 132,
+    "section": "6.1.1",
+    "text": "Tử Vi–Thiên Tướng tại Phúc Đức có lời về được hưởng phúc, xứng ý toại lòng và dòng họ có nhiều người giàu sang.",
+    "title": "Phúc Đức — Tử Vi và sao đồng cung"
+  },
+  {
+    "id": "phuc-base-tu-sat",
+    "kind": "phuc-base",
+    "palace": "Phúc Đức",
+    "stars": [
+      "Tử Vi",
+      "Thất Sát"
+    ],
+    "branches": [],
+    "page": 132,
+    "section": "6.1.1",
+    "text": "Tử Vi–Thất Sát tại Phúc Đức gắn với cảnh xa quê, bôn ba mới được hưởng phúc. Dòng họ có lời về người hiển đạt trong võ nghiệp nhưng sống xa quê hương.",
+    "title": "Phúc Đức — Tử Vi và sao đồng cung"
+  },
+  {
+    "id": "phuc-base-tu-pha",
+    "kind": "phuc-base",
+    "palace": "Phúc Đức",
+    "stars": [
+      "Tử Vi",
+      "Phá Quân"
+    ],
+    "branches": [],
+    "page": 132,
+    "section": "6.1.1",
+    "text": "Tử Vi–Phá Quân tại Phúc Đức gắn với sự lao tâm, khó yên thân và hoàn cảnh rời quê mới khá giả; họ hàng phân tán.",
+    "title": "Phúc Đức — Tử Vi và sao đồng cung"
+  },
+  {
+    "id": "phuc-base-tu-tham",
+    "kind": "phuc-base",
+    "palace": "Phúc Đức",
+    "stars": [
+      "Tử Vi",
+      "Tham Lang"
+    ],
+    "branches": [],
+    "page": 132,
+    "section": "6.1.1",
+    "text": "Tử Vi–Tham Lang tại Phúc Đức có lời về khó được xứng ý toại lòng và họ hàng phân tán.",
+    "title": "Phúc Đức — Tử Vi và sao đồng cung"
+  },
+  {
+    "id": "life-polarity-aligned",
+    "kind": "polarity",
+    "palace": "Mệnh",
+    "mode": "aligned",
+    "page": 107,
+    "section": "A.1a",
+    "title": "Âm dương tuổi và cung Mệnh",
+    "text": "Tuổi và cung Mệnh cùng tính âm hoặc cùng tính dương: phép xét gọi là thuận lý, tức hòa hợp về âm dương. Kết quả này chỉ đánh giá quan hệ tuổi–cung; chưa xác định nét tính cách, công việc hay tài sản."
+  },
+  {
+    "id": "life-polarity-opposed",
+    "kind": "polarity",
+    "palace": "Mệnh",
+    "mode": "opposed",
+    "page": 107,
+    "section": "A.1a",
+    "title": "Âm dương tuổi và cung Mệnh",
+    "text": "Tuổi và cung Mệnh khác tính âm dương: phép xét gọi là nghịch lý, tức đối chọi về âm dương. Kết quả này chỉ đánh giá quan hệ tuổi–cung; chưa xác định nét tính cách, công việc hay tài sản."
+  }
+]

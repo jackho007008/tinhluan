@@ -1,0 +1,6 @@
+import {it,expect}from'vitest';import{customerAppendix}from'../lib/internal-review/customer-appendix';import{freezeReading}from'../lib/internal-review/dynamic-reading';import samples from'../fixtures/customer-reading-samples.json';
+it('offline evidence preserves every source location and condition while reusing indices',()=>{
+ const x=samples[0],r=freezeReading(x.snapshot as any,x.receipt as any).customerReport!,before=JSON.stringify(r),a=customerAppendix(r),ps=r.sections.flatMap(s=>s.paragraphs);
+ expect(a.paragraphs).toHaveLength(ps.length);for(const [i,p]of ps.entries()){const ref=a.paragraphs[i];for(const m of p.members)for(const l of m.layers){for(const s of l.sources){const stored=a.sources.find(s=>ref.sourceKeys.includes(s.key)&&s.title===s.title);expect(a.sources.some(v=>ref.sourceKeys.includes(v.key)&&v.title===s.title&&v.locations.includes(s.location))).toBe(true);}for(const c of l.sourceConditions)expect(a.conditions.some(v=>ref.conditionKeys.includes(v.key)&&v.text.includes(c))).toBe(true);for(const limit of l.limits)expect(a.limits.some(v=>ref.limitKeys.includes(v.key)&&v.text.includes(limit))).toBe(true);}}
+ expect(new Set(a.sources.map(s=>s.title)).size).toBe(a.sources.length);expect(JSON.stringify(r)).toBe(before);
+});

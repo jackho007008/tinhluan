@@ -1,0 +1,896 @@
+{
+  "version": "demo-vu-phu-editorial-1.1.0",
+  "status": "draft",
+  "reviewer": null,
+  "sourceFile": "tong-quan-vu-phu-v01.html",
+  "sourceSha256": "1d14d213f2c53f8b48abca1801aa9531c1c2181200107f68e526a4493698e197",
+  "sample": "demo-wuqu-tianfu",
+  "editionId": "06ae9e54-067d-487c-933d-b9691cb263cf",
+  "snapshotResultId": "513e832b7d8fea007dcc266a3f592a29eb9b149b501b818de50c051ba550f9dc",
+  "snapshotSha256": "bc846d7af4591d997a87a0b6f717c3ac12faa206e350064ac7f0589908f070b3",
+  "oldReadingSha256": "7cd1f994108c59a4e87727f64edfef64c089d473be0708fcb1fa5f39619eaef7",
+  "articles": [
+    {
+      "title": "Bức tranh chung",
+      "paragraphs": [
+        {
+          "id": "paragraph-1",
+          "text": "Mẫu lá số này có Mệnh tại Tý, Vũ Khúc và Thiên Phủ đồng cung, cùng Văn Khúc; Vũ Khúc mang Hóa Quyền. Thân an tại Quan Lộc, nơi có Tử Vi và Thiên Tướng. Tài Bạch tại Thân có Liêm Trinh cùng Lộc Tồn. Đây là những dữ kiện tạo nên các chủ đề chính của phần Tổng quan: cách tổ chức công việc, học hỏi, chủ động quyết định và tạo dựng nguồn lực.",
+          "references": [
+            "F01",
+            "F02",
+            "F03",
+            "F04",
+            "R01",
+            "R02",
+            "R03",
+            "R04",
+            "R05",
+            "R06",
+            "R07"
+          ],
+          "originalText": "Mẫu lá số này có Mệnh tại Tý, Vũ Khúc và Thiên Phủ đồng cung, cùng Văn Khúc; Vũ Khúc mang Hóa Quyền. Thân an tại Quan Lộc, nơi có Tử Vi và Thiên Tướng. Tài Bạch tại Thân có Liêm Trinh cùng Lộc Tồn. Đây là những dữ kiện tạo nên các chủ đề chính của phần Tổng quan: cách tổ chức công việc, học hỏi, chủ động quyết định và tạo dựng nguồn lực. Việc chọn các chủ đề là bố cục biên tập dựa trên những nhận định bên dưới, không phải một cách cục mới. [F01–F04, R01–R07]",
+          "editorialNotes": [
+            "Việc chọn các chủ đề là bố cục biên tập dựa trên những nhận định bên dưới, không phải một cách cục mới."
+          ],
+          "selfReflection": false
+        },
+        {
+          "id": "paragraph-2",
+          "text": "Bản đọc sử dụng cách diễn giải truyền thống của Tân Biên làm nền. Bạn nên đối chiếu với trải nghiệm thực tế của mình; các mô tả không quyết định nghề nghiệp, mức thu nhập hay tương lai của bạn. Các yếu tố khác của toàn lá số có thể làm thay đổi cách luận.",
+          "references": [],
+          "originalText": "Bản đọc sử dụng cách diễn giải truyền thống của Tân Biên làm nền. Bạn nên đối chiếu với trải nghiệm thực tế của mình; các mô tả không quyết định nghề nghiệp, mức thu nhập hay tương lai của bạn. Các yếu tố khác của toàn lá số có thể làm thay đổi cách luận.",
+          "editorialNotes": [],
+          "selfReflection": false
+        }
+      ]
+    },
+    {
+      "title": "1. Cách hành động: quyết đoán và chú trọng tổ chức",
+      "paragraphs": [
+        {
+          "id": "paragraph-3",
+          "text": "Vũ Khúc tại Tý thuộc Vượng địa trong bảng của Tân Biên. Ở phần Vũ Khúc thủ Mệnh tại miếu, vượng hoặc đắc, tác giả đề cập sự quả quyết, cương nghị, khả năng tổ chức và khuynh hướng kinh doanh. Theo hướng đọc này, điều đáng chú ý là cách bạn biến ý định thành việc cần làm và giữ lập trường khi theo đuổi mục tiêu.",
+          "references": [
+            "F01",
+            "R01"
+          ],
+          "originalText": "Vũ Khúc tại Tý thuộc Vượng địa trong bảng của Tân Biên. Ở phần Vũ Khúc thủ Mệnh tại miếu, vượng hoặc đắc, tác giả đề cập sự quả quyết, cương nghị, khả năng tổ chức và khuynh hướng kinh doanh. Theo hướng đọc này, điều đáng chú ý là cách bạn biến ý định thành việc cần làm và giữ lập trường khi theo đuổi mục tiêu. Vế sau là diễn đạt hiện đại từ chủ đề tổ chức và quả quyết, không phải một quy tắc bổ sung. [F01, R01]",
+          "editorialNotes": [
+            "Vế sau là diễn đạt hiện đại từ chủ đề tổ chức và quả quyết, không phải một quy tắc bổ sung."
+          ],
+          "selfReflection": false
+        },
+        {
+          "id": "paragraph-4",
+          "text": "Mặt cần tự quan sát là sự hiếu thắng cũng được nguồn nhắc đến. Sự kiên định có thể được bạn trải nghiệm như một ưu điểm, nhưng câu hỏi hữu ích là: khi xuất hiện thông tin mới, mình có sẵn lòng sửa quyết định không?",
+          "references": [
+            "R01",
+            "E01"
+          ],
+          "originalText": "Mặt cần tự quan sát là sự hiếu thắng cũng được nguồn nhắc đến. Sự kiên định có thể được bạn trải nghiệm như một ưu điểm, nhưng câu hỏi hữu ích là: khi xuất hiện thông tin mới, mình có sẵn lòng sửa quyết định không? Đây là lời gợi mở, không khẳng định rằng bạn luôn cứng nhắc hoặc độc đoán. [R01, E01]",
+          "editorialNotes": [
+            "Đây là lời gợi mở, không khẳng định rằng bạn luôn cứng nhắc hoặc độc đoán."
+          ],
+          "selfReflection": true
+        }
+      ]
+    },
+    {
+      "title": "2. Cách cân nhắc: tìm phương án cho việc khó",
+      "paragraphs": [
+        {
+          "id": "paragraph-5",
+          "text": "Thiên Phủ tại Tý được Tân Biên xếp Miếu địa. Trong phần Thiên Phủ thủ Mệnh, sách mô tả khả năng suy tính và tìm cách giải quyết công việc khó khăn.",
+          "references": [
+            "F02",
+            "R03"
+          ],
+          "originalText": "Thiên Phủ tại Tý được Tân Biên xếp Miếu địa. Trong phần Thiên Phủ thủ Mệnh, sách mô tả khả năng suy tính và tìm cách giải quyết công việc khó khăn. Bản đọc giữ lại chủ đề đó để bạn đối chiếu với cách mình cân nhắc một vấn đề trước khi hành động. [F02, R03]",
+          "editorialNotes": [
+            "Bản đọc giữ lại chủ đề đó để bạn đối chiếu với cách mình cân nhắc một vấn đề trước khi hành động."
+          ],
+          "selfReflection": false
+        },
+        {
+          "id": "paragraph-6",
+          "text": "Vũ Khúc và Thiên Phủ cùng xuất hiện không tự chứng minh rằng bạn luôn cân bằng giữa nhanh và chậm, giữa quyết đoán và thận trọng. Đây là hai mạch mô tả riêng đang cùng cần xem xét. Bạn có thể nhận ra mình nghiêng về mạch nào trong từng hoàn cảnh, thay vì chấp nhận một nhãn tính cách bao trùm.",
+          "references": [
+            "E02"
+          ],
+          "originalText": "Vũ Khúc và Thiên Phủ cùng xuất hiện không tự chứng minh rằng bạn luôn cân bằng giữa nhanh và chậm, giữa quyết đoán và thận trọng. Đây là hai mạch mô tả riêng đang cùng cần xem xét. Bạn có thể nhận ra mình nghiêng về mạch nào trong từng hoàn cảnh, thay vì chấp nhận một nhãn tính cách bao trùm. [E02]",
+          "editorialNotes": [],
+          "selfReflection": true
+        }
+      ]
+    },
+    {
+      "title": "3. Học hỏi và phát triển năng lực",
+      "paragraphs": [
+        {
+          "id": "paragraph-7",
+          "text": "Điểm cụ thể của mẫu là Văn Khúc đồng cung Vũ Khúc tại Mệnh. Tân Biên gắn tổ hợp này với sự học rộng và nhiều khả năng khi Vũ Khúc ở trạng thái miếu, vượng hoặc đắc. Vị trí Tý của mẫu đáp ứng điều kiện Vượng trong chính bảng của sách.",
+          "references": [
+            "R02"
+          ],
+          "originalText": "Điểm cụ thể của mẫu là Văn Khúc đồng cung Vũ Khúc tại Mệnh. Tân Biên gắn tổ hợp này với sự học rộng và nhiều khả năng khi Vũ Khúc ở trạng thái miếu, vượng hoặc đắc. Vị trí Tý của mẫu đáp ứng điều kiện Vượng trong chính bảng của sách. [R02]",
+          "editorialNotes": [],
+          "selfReflection": false
+        },
+        {
+          "id": "paragraph-8",
+          "text": "Nội dung này có thể giúp mở đầu cuộc tự đối chiếu về quá trình học tập: bạn thích đào sâu một chuyên môn, học qua thực hành hay kết nối nhiều lĩnh vực? Những lựa chọn ấy không được lá số xác định sẵn. Nhận định của sách cũng không đủ để suy ra bằng cấp, điểm thi, trí thông minh hoặc một năng khiếu cụ thể.",
+          "references": [
+            "E03"
+          ],
+          "originalText": "Nội dung này có thể giúp mở đầu cuộc tự đối chiếu về quá trình học tập: bạn thích đào sâu một chuyên môn, học qua thực hành hay kết nối nhiều lĩnh vực? Những lựa chọn ấy không được lá số xác định sẵn. Nhận định của sách cũng không đủ để suy ra bằng cấp, điểm thi, trí thông minh hoặc một năng khiếu cụ thể. [E03]",
+          "editorialNotes": [],
+          "selfReflection": true
+        },
+        {
+          "id": "paragraph-9",
+          "text": "Vương Đình Chi có cách đánh giá khác về Vũ Khúc gặp sao Văn. Bản này theo Thái Thứ Lang; đây không phải quan điểm thống nhất của mọi tác giả.",
+          "references": [
+            "K01"
+          ],
+          "originalText": "Trong phần căn cứ, hệ thống ghi rõ có cách đánh giá khác về Vũ Khúc gặp sao Văn ở nguồn Vương Đình Chi. Bản này theo Thái Thứ Lang cho nhận định trên; không trình bày như quan điểm thống nhất của mọi tác giả. [K01]",
+          "editorialNotes": [
+            "Trong phần căn cứ, hệ thống ghi rõ có cách đánh giá khác về Vũ Khúc gặp sao Văn ở nguồn Vương Đình Chi."
+          ],
+          "selfReflection": false
+        }
+      ]
+    },
+    {
+      "title": "4. Sự chủ động và phạm vi trách nhiệm",
+      "paragraphs": [
+        {
+          "id": "paragraph-10",
+          "text": "Vũ Khúc của mẫu có Hóa Quyền ở lớp bản mệnh. Tân Biên mô tả Hóa Quyền theo hướng mạnh bạo, mau mắn và thiên về nắm quyền hành. Đây là ý nghĩa riêng của Hóa Quyền, chưa phải kết luận hoàn chỉnh cho tổ hợp Vũ Khúc–Thiên Phủ.",
+          "references": [
+            "R04"
+          ],
+          "originalText": "Vũ Khúc của mẫu có Hóa Quyền ở lớp bản mệnh. Tân Biên mô tả Hóa Quyền theo hướng mạnh bạo, mau mắn và thiên về nắm quyền hành. Đây là ý nghĩa riêng của Hóa Quyền, chưa phải kết luận hoàn chỉnh cho tổ hợp Vũ Khúc–Thiên Phủ. [R04]",
+          "editorialNotes": [],
+          "selfReflection": false
+        },
+        {
+          "id": "paragraph-11",
+          "text": "Gợi ý thực hành là xác định rõ việc nào mình được quyết định, việc nào cần trao đổi và việc nào nên giao cho người khác.  Điều này không có nghĩa lá số xác nhận bạn sẽ giữ chức vụ hay có quyền lực.",
+          "references": [
+            "E04"
+          ],
+          "originalText": "Gợi ý thực hành là xác định rõ việc nào mình được quyết định, việc nào cần trao đổi và việc nào nên giao cho người khác. Đó là cách người biên soạn chuyển chủ đề quyền hạn thành một câu hỏi có thể sử dụng trong đời sống; không có nghĩa lá số xác nhận bạn sẽ giữ chức vụ hay có quyền lực. [E04]",
+          "editorialNotes": [
+            "Đó là cách người biên soạn chuyển chủ đề quyền hạn thành một câu hỏi có thể sử dụng trong đời sống;"
+          ],
+          "selfReflection": true
+        }
+      ]
+    },
+    {
+      "title": "5. Công việc: khả năng tổ chức và ranh giới quyền hạn",
+      "paragraphs": [
+        {
+          "id": "paragraph-12",
+          "text": "Quan Lộc có Tử Vi–Thiên Tướng đồng cung. Trong mục riêng về Quan Lộc, Tân Biên liên hệ tổ hợp này với tài tổ chức; đồng thời có lời nhận xét về khuynh hướng lấn quyền cấp trên. Bản đọc sử dụng đây như chủ đề năng lực tổ chức và điều cần tự quan sát về ranh giới quyền hạn, không dùng nó để quy kết cách cư xử của người đọc.",
+          "references": [
+            "R05"
+          ],
+          "originalText": "Quan Lộc có Tử Vi–Thiên Tướng đồng cung. Trong mục riêng về Quan Lộc, Tân Biên liên hệ tổ hợp này với tài tổ chức; đồng thời có lời nhận xét về khuynh hướng lấn quyền cấp trên. Bản đọc sử dụng đây như chủ đề năng lực tổ chức và điều cần tự quan sát về ranh giới quyền hạn, không dùng nó để quy kết cách cư xử của người đọc. [R05]",
+          "editorialNotes": [],
+          "selfReflection": false
+        },
+        {
+          "id": "paragraph-13",
+          "text": "Để tự đối chiếu, hãy nhìn vào một công việc bạn từng tham gia: bạn có làm rõ được mục tiêu, sắp xếp đầu việc và phối hợp với người khác không? Khi muốn thay đổi cách làm, bạn trao đổi trước hay tự quyết?  Chúng giúp kiểm tra chủ đề của bản đọc bằng trải nghiệm, thay vì suy ra ngay rằng bạn phù hợp làm lãnh đạo.",
+          "references": [
+            "E05"
+          ],
+          "originalText": "Để tự đối chiếu, hãy nhìn vào một công việc bạn từng tham gia: bạn có làm rõ được mục tiêu, sắp xếp đầu việc và phối hợp với người khác không? Khi muốn thay đổi cách làm, bạn trao đổi trước hay tự quyết? Những câu hỏi này là gợi ý biên tập. Chúng giúp kiểm tra chủ đề của bản đọc bằng trải nghiệm, thay vì suy ra ngay rằng bạn phù hợp làm lãnh đạo. [E05]",
+          "editorialNotes": [
+            "Những câu hỏi này là gợi ý biên tập."
+          ],
+          "selfReflection": true
+        },
+        {
+          "id": "paragraph-14",
+          "text": "Thân cũng an tại Quan Lộc, nhưng vị trí ấy không đủ để quyết định bạn nên làm thuê, khởi nghiệp, làm quản lý hay theo một nghề cụ thể. Bản Tổng quan này chưa đưa ra dự báo thăng tiến hoặc mốc tuổi thành công.",
+          "references": [
+            "F03"
+          ],
+          "originalText": "Thân cũng an tại Quan Lộc, nhưng vị trí ấy không đủ để quyết định bạn nên làm thuê, khởi nghiệp, làm quản lý hay theo một nghề cụ thể. Bản Tổng quan này chưa đưa ra dự báo thăng tiến hoặc mốc tuổi thành công. [F03]",
+          "editorialNotes": [],
+          "selfReflection": false
+        }
+      ]
+    },
+    {
+      "title": "6. Tài chính: chủ đề cạnh tranh và tích lũy",
+      "paragraphs": [
+        {
+          "id": "paragraph-15",
+          "text": "Tài Bạch của mẫu có Liêm Trinh độc thủ tại Thân. “Độc thủ” ở đây là một chính tinh trong cung, không có nghĩa cung ấy không còn phụ tinh. Trong mục Tài Bạch, Tân Biên mô tả trường hợp Liêm Trinh ở Dần hoặc Thân theo hướng kiếm tiền qua cạnh tranh và quá trình tích lũy chậm. Bản đọc giữ lại chủ đề quá trình này, không chuyển lời phú thành lời đảm bảo giàu có.",
+          "references": [
+            "R06"
+          ],
+          "originalText": "Tài Bạch của mẫu có Liêm Trinh độc thủ tại Thân. “Độc thủ” ở đây là một chính tinh trong cung, không có nghĩa cung ấy không còn phụ tinh. Trong mục Tài Bạch, Tân Biên mô tả trường hợp Liêm Trinh ở Dần hoặc Thân theo hướng kiếm tiền qua cạnh tranh và quá trình tích lũy chậm. Bản đọc giữ lại chủ đề quá trình này, không chuyển lời phú thành lời đảm bảo giàu có. [R06]",
+          "editorialNotes": [],
+          "selfReflection": false
+        },
+        {
+          "id": "paragraph-16",
+          "text": "Lộc Tồn cũng được ghi nhận tại Tài Bạch. Sách xếp sao này vào chủ đề tài lộc, nhưng sự hiện diện của một sao chưa đủ kết luận toàn bộ đường tiền bạc. Tài Bạch còn có Tuần Không trong dữ liệu; các cung liên quan cũng cần được xét. Chính phần mở đầu mục Tài Bạch của Tân Biên yêu cầu đọc cùng Mệnh, Thân, Phúc Đức, Quan Lộc và Thiên Di.",
+          "references": [
+            "R07",
+            "M01",
+            "H01"
+          ],
+          "originalText": "Lộc Tồn cũng được ghi nhận tại Tài Bạch. Sách xếp sao này vào chủ đề tài lộc, nhưng sự hiện diện của một sao chưa đủ kết luận toàn bộ đường tiền bạc. Tài Bạch còn có Tuần Không trong dữ liệu; các cung liên quan cũng cần được xét. Chính phần mở đầu mục Tài Bạch của Tân Biên yêu cầu đọc cùng Mệnh, Thân, Phúc Đức, Quan Lộc và Thiên Di. [R07, M01, H01]",
+          "editorialNotes": [],
+          "selfReflection": false
+        },
+        {
+          "id": "paragraph-17",
+          "text": "Câu hỏi thực hành là: kết quả bạn mong muốn cần bao nhiêu thời gian để hình thành, và bạn đang theo dõi tiến độ bằng điều gì có thể quan sát?  Đây không phải khuyến nghị đầu tư hoặc dự báo thu nhập.",
+          "references": [
+            "E06"
+          ],
+          "originalText": "Câu hỏi thực hành là: kết quả bạn mong muốn cần bao nhiêu thời gian để hình thành, và bạn đang theo dõi tiến độ bằng điều gì có thể quan sát? Đây là câu hỏi suy ngẫm do người biên soạn đề xuất, không phải khuyến nghị đầu tư hoặc dự báo thu nhập. [E06]",
+          "editorialNotes": [
+            "Đây là câu hỏi suy ngẫm do người biên soạn đề xuất,"
+          ],
+          "selfReflection": true
+        }
+      ]
+    },
+    {
+      "title": "7. Các yếu tố làm bản đọc cần được cân nhắc thêm",
+      "paragraphs": [
+        {
+          "id": "paragraph-18",
+          "text": "Linh Tinh ở Thiên Di Ngọ, đối diện Mệnh Tý. Vì vậy, dù Mệnh không có bốn sao Kình Dương, Đà La, Hỏa Tinh, Linh Tinh trong danh sách đang lưu, không thể nói lá số “không gặp sát tinh”. Đồng cung và đối cung là hai quan hệ khác nhau, cũng không được dùng thay nhau khi áp điều kiện.",
+          "references": [
+            "F05"
+          ],
+          "originalText": "Linh Tinh ở Thiên Di Ngọ, đối diện Mệnh Tý. Vì vậy, dù Mệnh không có bốn sao Kình Dương, Đà La, Hỏa Tinh, Linh Tinh trong danh sách đang lưu, không thể nói lá số “không gặp sát tinh”. Đồng cung và đối cung là hai quan hệ khác nhau, cũng không được dùng thay nhau khi áp điều kiện. [F05]",
+          "editorialNotes": [],
+          "selfReflection": false
+        },
+        {
+          "id": "paragraph-19",
+          "text": "Hóa Lộc và Hóa Khoa nằm tại Phụ Mẫu Sửu, cạnh Mệnh. Văn Xương ở Phúc Đức Dần, còn Văn Khúc ở Mệnh Tý. Bản đọc không gom tất cả sao thuận lợi xuất hiện ở bất kỳ đâu thành một bộ hội chiếu cho Mệnh. Tương tự, vị trí Tuần Không và Triệt Lộ đã lưu chưa thay thế cho việc xác minh đầy đủ phạm vi án ngữ.",
+          "references": [
+            "F06",
+            "H01"
+          ],
+          "originalText": "Hóa Lộc và Hóa Khoa nằm tại Phụ Mẫu Sửu, cạnh Mệnh. Văn Xương ở Phúc Đức Dần, còn Văn Khúc ở Mệnh Tý. Bản đọc không gom tất cả sao thuận lợi xuất hiện ở bất kỳ đâu thành một bộ hội chiếu cho Mệnh. Tương tự, vị trí Tuần Không và Triệt Lộ đã lưu chưa thay thế cho việc xác minh đầy đủ phạm vi án ngữ. [F06, H01]",
+          "editorialNotes": [],
+          "selfReflection": false
+        }
+      ]
+    },
+    {
+      "title": "8. Điều có thể mang theo sau khi đọc",
+      "paragraphs": [
+        {
+          "id": "paragraph-20",
+          "text": "Các chủ đề có căn cứ rõ nhất trong bản này là sự quả quyết và tổ chức của Vũ Khúc, học hỏi trong tổ hợp Vũ Khúc–Văn Khúc theo Tân Biên, khả năng tổ chức của Tử Vi–Thiên Tướng tại Quan Lộc, cùng quá trình cạnh tranh và tích lũy ở Liêm Trinh tại Tài Bạch Thân.",
+          "references": [
+            "R01",
+            "R02",
+            "R05",
+            "R06"
+          ],
+          "originalText": "Các chủ đề có căn cứ rõ nhất trong bản này là sự quả quyết và tổ chức của Vũ Khúc, học hỏi trong tổ hợp Vũ Khúc–Văn Khúc theo Tân Biên, khả năng tổ chức của Tử Vi–Thiên Tướng tại Quan Lộc, cùng quá trình cạnh tranh và tích lũy ở Liêm Trinh tại Tài Bạch Thân. Đây là sự gom nhóm các nhận định đã nêu, không phải phép tính tổng mức tốt xấu. [R01, R02, R05, R06]",
+          "editorialNotes": [
+            "Đây là sự gom nhóm các nhận định đã nêu, không phải phép tính tổng mức tốt xấu."
+          ],
+          "selfReflection": false
+        },
+        {
+          "id": "paragraph-21",
+          "text": "Bạn có thể chọn một chủ đề thấy gần với trải nghiệm, ghi lại một ví dụ phù hợp và một ví dụ không phù hợp. Cách làm này để lại chỗ cho sự khác biệt của mỗi người, đồng thời giúp phản hồi về chất lượng bài đọc cụ thể hơn. Không cần tự ép mình khớp với mọi mô tả.",
+          "references": [
+            "E07"
+          ],
+          "originalText": "Bạn có thể chọn một chủ đề thấy gần với trải nghiệm, ghi lại một ví dụ phù hợp và một ví dụ không phù hợp. Cách làm này để lại chỗ cho sự khác biệt của mỗi người, đồng thời giúp phản hồi về chất lượng bài đọc cụ thể hơn. Không cần tự ép mình khớp với mọi mô tả. [E07]",
+          "editorialNotes": [],
+          "selfReflection": true
+        }
+      ]
+    }
+  ],
+  "intro": [
+    {
+      "kind": "p",
+      "text": "Trục biên soạn: Tử Vi Đẩu Số Tân Biên. Các mã trong ngoặc dẫn đến hồ sơ bên dưới; khi lên website có thể đặt trong nút “Xem căn cứ”. Những câu hỏi và đề xuất thực hành là nội dung biên tập, không phải lời dự đoán của sách.",
+      "links": []
+    },
+    {
+      "kind": "p",
+      "text": "Đây là bài đầy đủ của mục Tổng quan trong phạm vi đã nêu. Các ý nghĩa theo sách là diễn giải truyền thống, không phải kết quả thực nghiệm. Phần chuyên sâu về 12 cung, tình cảm, sức khỏe và vận hạn cần hồ sơ riêng; không suy thêm từ bản này.",
+      "links": []
+    }
+  ],
+  "records": [
+    {
+      "codes": [
+        "F01",
+        "F02"
+      ],
+      "cells": [
+        "F01–F02 Phân loại",
+        "Vũ Khúc ở Tý → Vượng; Thiên Phủ ở Tý → Miếu theo bảng Tân Biên. Không quy thành điểm.",
+        "[S1] tr.34–36; đã xem ảnh tr.35–36",
+        "Khớp hai nhãn engine trong mẫu này; không suy mọi nhãn engine đều cùng hệ sách."
+      ]
+    },
+    {
+      "codes": [
+        "R01"
+      ],
+      "cells": [
+        "R01 Ý nghĩa nền",
+        "Vũ Khúc thủ Mệnh, trạng thái thuộc miếu/vượng/đắc theo S1. Chỉ lấy mô tả quả quyết và tổ chức; không lấy dự đoán giàu sang, tuổi thọ.",
+        "[S1] tr.65, mục 4.2.4 Đại cương",
+        "Khớp điều kiện nền. Ngoại lệ tương tác toàn tổ hợp chưa đầy đủ; không phát hành như kết luận toàn lá số."
+      ]
+    },
+    {
+      "codes": [
+        "R02"
+      ],
+      "cells": [
+        "R02 Tổ hợp hai sao",
+        "Vũ Khúc thủ Mệnh, miếu/vượng/đắc theo S1 và Văn Khúc đồng cung. Không thay “đồng cung” bằng “ở đâu đó trong lá số”.",
+        "[S1] tr.67, mục Phú giải, đoạn Vũ Khúc–Văn Khúc",
+        "Khớp. Có khác biệt với W1; chỉ xuất dưới lựa chọn nguồn S1. Chưa có bộ ngoại lệ hoàn chỉnh."
+      ]
+    },
+    {
+      "codes": [
+        "R03"
+      ],
+      "cells": [
+        "R03 Ý nghĩa nền",
+        "Thiên Phủ thủ Mệnh. Nội dung giới hạn ở suy tính, giải quyết việc khó; không gán đạo đức hoặc tài sản.",
+        "[S1] tr.76, mục 4.2.7 Đại cương",
+        "Khớp hiện diện. Các đoạn tiếp theo còn điều kiện bất lợi: không dùng như nhận định kết thúc."
+      ]
+    },
+    {
+      "codes": [
+        "F03",
+        "F04"
+      ],
+      "cells": [
+        "F03–F04 Dữ kiện liên cung",
+        "Thân ở Quan Lộc; Mệnh Tý, Quan Thìn, Tài Thân; Lộc Tồn tại Thân; Thiên Tướng tại Thìn.",
+        "[D1]; quan hệ theo [S1] mục 9",
+        "Đủ dữ liệu để mô tả cấu trúc. Chưa đủ quy tắc suy ra nghề nghiệp."
+      ]
+    },
+    {
+      "codes": [
+        "F05"
+      ],
+      "cells": [
+        "F05 Dữ kiện đối cung",
+        "Linh Tinh ở Ngọ đối diện Mệnh Tý. Phải giữ riêng đồng cung và xung chiếu.",
+        "[D1]; quan hệ theo [S1] mục 9",
+        "Khớp. Không kích hoạt quy tắc yêu cầu Vũ Khúc–Linh Tinh đồng cung."
+      ]
+    },
+    {
+      "codes": [
+        "C01"
+      ],
+      "cells": [
+        "C01 Đối chiếu nguồn",
+        "Thiên Phủ ở Mệnh, Lộc Tồn trong tam hợp. Chưa có bộ điều kiện đủ để kết luận tài lộc.",
+        "[W2] I. Tổng luận, đoạn sao Lộc và Thiên Tướng",
+        "Có điều kiện hỗ trợ theo nguồn W2; chỉ ghi nghiên cứu, chưa gộp vào trục S1."
+      ]
+    },
+    {
+      "codes": [
+        "C02"
+      ],
+      "cells": [
+        "C02 Ứng viên",
+        "Vũ Khúc Hóa Quyền lớp origin. Cần xác nhận nguồn tác giả và điều kiện tổ hợp trước khi mở rộng thành khả năng đảm trách.",
+        "[W1] mục Sao Vũ Khúc tọa thủ cung Mệnh, đoạn Tứ Hóa",
+        "Dữ kiện có; tạm giữ lời diễn giải ngoài bản chính."
+      ]
+    },
+    {
+      "codes": [
+        "H01"
+      ],
+      "cells": [
+        "H01 Chờ xác minh",
+        "Tuần Không tại Thân; Triệt Lộ tại Ngọ chỉ là vị trí trường dữ liệu. Cần kiểm tra biểu diễn cặp cung và nghĩa “án ngữ” trước khi áp ngoại lệ.",
+        "[D1]; [S1] tr.17 và tr.76–77",
+        "Không coi vị trí sao trong JSON là đặc tả đầy đủ phạm vi tác động."
+      ]
+    },
+    {
+      "codes": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "cells": [
+        "E01–E03 Biên tập",
+        "Câu hỏi tự quan sát và hướng dẫn cách đọc; không phải dự đoán từ sách.",
+        "Người biên soạn",
+        "Phải giữ nhãn biên tập, không gắn nguồn cổ thư giả."
+      ]
+    },
+    {
+      "codes": [
+        "R04"
+      ],
+      "cells": [
+        "R04",
+        "Vũ Khúc tại Mệnh có mutagen Quyền, scope origin.",
+        "S1 tr.40 mục 3.24: ý nghĩa chung Hóa Quyền.",
+        "Dữ kiện khớp; chỉ dùng ý nghĩa riêng. Không tự biến thành quy tắc tổng hợp Vũ–Phủ Hóa Quyền. Ngoại lệ toàn tổ hợp chưa đủ."
+      ]
+    },
+    {
+      "codes": [
+        "R05"
+      ],
+      "cells": [
+        "R05",
+        "Tử Vi và Thiên Tướng đồng cung Quan Lộc.",
+        "S1 tr.158 mục 8.1; đối chiếu lặp lại tr.162 mục 8.11. Chọn phần tổ chức và vấn đề quyền hạn.",
+        "Khớp. Đoạn nguồn không đòi một nhãn brightness riêng; không thêm điều kiện “Đắc” của engine. Chưa tổng hợp toàn bộ sao hội chiếu. Không dùng các câu về thời điểm thành công làm dự báo."
+      ]
+    },
+    {
+      "codes": [
+        "R06"
+      ],
+      "cells": [
+        "R06",
+        "Tài Bạch tại Dần hoặc Thân; chính tinh duy nhất là Liêm Trinh.",
+        "S1 tr.190 mục 12.2; chọn mô tả cạnh tranh và tích lũy chậm.",
+        "Khớp Thân, majorStars có một sao. Nguồn có khẳng định kết quả mà bản đọc không giữ thành lời hứa. Tuần và ảnh hưởng các cung khác chưa được tổng hợp."
+      ]
+    },
+    {
+      "codes": [
+        "R07"
+      ],
+      "cells": [
+        "R07",
+        "Lộc Tồn tại Tài Bạch.",
+        "S1 tr.40 mục 3.20: chủ đề tài lộc.",
+        "Dữ kiện khớp; giải thích ý nghĩa sao, chưa kết luận có tiền hay giữ tiền tốt."
+      ]
+    },
+    {
+      "codes": [
+        "M01"
+      ],
+      "cells": [
+        "M01",
+        "Bất kỳ đoạn luận Tài Bạch.",
+        "S1 tr.190, đoạn mở đầu: xem thêm Mệnh, Thân, Phúc Đức, Quan Lộc, Thiên Di.",
+        "Ràng buộc về phạm vi. Bản hiện tại chưa đủ để kết luận tổng tài vận vì chưa hoàn tất luận các cung đó."
+      ]
+    },
+    {
+      "codes": [
+        "F06"
+      ],
+      "cells": [
+        "F06",
+        "Đọc vị trí cụ thể trong D1.",
+        "Phụ Mẫu Sửu: Hóa Lộc/Khoa; Phúc Đức Dần: Văn Xương; Mệnh Tý: Văn Khúc.",
+        "Dữ kiện. Không gán quan hệ tam hợp Mệnh cho Sửu/Dần."
+      ]
+    },
+    {
+      "codes": [
+        "K01"
+      ],
+      "cells": [
+        "K01",
+        "R02 được trình bày theo S1.",
+        "S1 tr.67 và W1 mục Vương Đình Chi.",
+        "Công bố khác biệt nguồn, không tự hòa giải và không tạo hai tính cách trái nhau để tăng độ bao phủ."
+      ]
+    },
+    {
+      "codes": [
+        "E04",
+        "E05",
+        "E06",
+        "E07"
+      ],
+      "cells": [
+        "E04–E07",
+        "Không có điều kiện huyền học.",
+        "Câu hỏi và thực hành do người biên soạn đề xuất.",
+        "Không ghi là trích sách; không để AI biến thành lời dự đoán."
+      ]
+    },
+    {
+      "codes": [
+        "S1"
+      ],
+      "cells": [
+        "Vũ–Phủ đồng cung Quan Lộc — S1 tr.159/160",
+        "Quan Lộc có Tử Vi–Thiên Tướng; Vũ–Phủ ở Mệnh.",
+        "Không khớp; không mượn đoạn để kết luận nghề tài chính."
+      ]
+    },
+    {
+      "codes": [
+        "S1"
+      ],
+      "cells": [
+        "Vũ–Phủ đồng cung Tài Bạch — S1 tr.191/192",
+        "Tài Bạch là Liêm Trinh.",
+        "Không khớp; không kết luận giàu và giữ của bền từ đoạn này."
+      ]
+    },
+    {
+      "codes": [
+        "S1"
+      ],
+      "cells": [
+        "Vũ Khúc tại Mệnh Dần/Thân gặp Lộc, Quyền — S1 tr.68",
+        "Mệnh ở Tý.",
+        "Không khớp vị trí; dừng trước khi xét kết quả."
+      ]
+    },
+    {
+      "codes": [
+        "S1"
+      ],
+      "cells": [
+        "Thiên Phủ gặp đủ Xương, Khúc, Lộc hội hợp — S1 tr.78",
+        "Văn Xương ở Dần, ngoài bộ Tý–Thìn–Thân và đối cung Ngọ.",
+        "Không đủ theo phạm vi tam phương tứ chính; chưa dùng. Nếu chọn quan hệ khác phải đặc tả riêng, không tự mở rộng “hội hợp”."
+      ]
+    }
+  ],
+  "dossiers": [
+    {
+      "kind": "p",
+      "text": "Trạng thái toàn bộ R01–R07: bản thảo có nguồn, chưa được chuyên gia duyệt. Những điều kiện dưới đây là điều kiện cục bộ của đoạn sách, không được coi là tập điều kiện đủ cho kết luận toàn lá số.",
+      "links": []
+    },
+    {
+      "kind": "p",
+      "text": "“Khớp” trong bảng chỉ nói về dữ kiện của DEMO và điều kiện đang xét. Không có rule nào trong tài liệu này được ghi là đã được chuyên gia duyệt.",
+      "links": []
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Mã / loại",
+          "Điều kiện và phạm vi",
+          "Căn cứ",
+          "Kết quả đối chiếu"
+        ],
+        [
+          "F01–F02 Phân loại",
+          "Vũ Khúc ở Tý → Vượng; Thiên Phủ ở Tý → Miếu theo bảng Tân Biên. Không quy thành điểm.",
+          "[S1] tr.34–36; đã xem ảnh tr.35–36",
+          "Khớp hai nhãn engine trong mẫu này; không suy mọi nhãn engine đều cùng hệ sách."
+        ],
+        [
+          "R01 Ý nghĩa nền",
+          "Vũ Khúc thủ Mệnh, trạng thái thuộc miếu/vượng/đắc theo S1. Chỉ lấy mô tả quả quyết và tổ chức; không lấy dự đoán giàu sang, tuổi thọ.",
+          "[S1] tr.65, mục 4.2.4 Đại cương",
+          "Khớp điều kiện nền. Ngoại lệ tương tác toàn tổ hợp chưa đầy đủ; không phát hành như kết luận toàn lá số."
+        ],
+        [
+          "R02 Tổ hợp hai sao",
+          "Vũ Khúc thủ Mệnh, miếu/vượng/đắc theo S1 và Văn Khúc đồng cung. Không thay “đồng cung” bằng “ở đâu đó trong lá số”.",
+          "[S1] tr.67, mục Phú giải, đoạn Vũ Khúc–Văn Khúc",
+          "Khớp. Có khác biệt với W1; chỉ xuất dưới lựa chọn nguồn S1. Chưa có bộ ngoại lệ hoàn chỉnh."
+        ],
+        [
+          "R03 Ý nghĩa nền",
+          "Thiên Phủ thủ Mệnh. Nội dung giới hạn ở suy tính, giải quyết việc khó; không gán đạo đức hoặc tài sản.",
+          "[S1] tr.76, mục 4.2.7 Đại cương",
+          "Khớp hiện diện. Các đoạn tiếp theo còn điều kiện bất lợi: không dùng như nhận định kết thúc."
+        ],
+        [
+          "F03–F04 Dữ kiện liên cung",
+          "Thân ở Quan Lộc; Mệnh Tý, Quan Thìn, Tài Thân; Lộc Tồn tại Thân; Thiên Tướng tại Thìn.",
+          "[D1]; quan hệ theo [S1] mục 9",
+          "Đủ dữ liệu để mô tả cấu trúc. Chưa đủ quy tắc suy ra nghề nghiệp."
+        ],
+        [
+          "F05 Dữ kiện đối cung",
+          "Linh Tinh ở Ngọ đối diện Mệnh Tý. Phải giữ riêng đồng cung và xung chiếu.",
+          "[D1]; quan hệ theo [S1] mục 9",
+          "Khớp. Không kích hoạt quy tắc yêu cầu Vũ Khúc–Linh Tinh đồng cung."
+        ],
+        [
+          "C01 Đối chiếu nguồn",
+          "Thiên Phủ ở Mệnh, Lộc Tồn trong tam hợp. Chưa có bộ điều kiện đủ để kết luận tài lộc.",
+          "[W2] I. Tổng luận, đoạn sao Lộc và Thiên Tướng",
+          "Có điều kiện hỗ trợ theo nguồn W2; chỉ ghi nghiên cứu, chưa gộp vào trục S1."
+        ],
+        [
+          "C02 Ứng viên",
+          "Vũ Khúc Hóa Quyền lớp origin. Cần xác nhận nguồn tác giả và điều kiện tổ hợp trước khi mở rộng thành khả năng đảm trách.",
+          "[W1] mục Sao Vũ Khúc tọa thủ cung Mệnh, đoạn Tứ Hóa",
+          "Dữ kiện có; tạm giữ lời diễn giải ngoài bản chính."
+        ],
+        [
+          "H01 Chờ xác minh",
+          "Tuần Không tại Thân; Triệt Lộ tại Ngọ chỉ là vị trí trường dữ liệu. Cần kiểm tra biểu diễn cặp cung và nghĩa “án ngữ” trước khi áp ngoại lệ.",
+          "[D1]; [S1] tr.17 và tr.76–77",
+          "Không coi vị trí sao trong JSON là đặc tả đầy đủ phạm vi tác động."
+        ],
+        [
+          "E01–E03 Biên tập",
+          "Câu hỏi tự quan sát và hướng dẫn cách đọc; không phải dự đoán từ sách.",
+          "Người biên soạn",
+          "Phải giữ nhãn biên tập, không gắn nguồn cổ thư giả."
+        ]
+      ]
+    },
+    {
+      "kind": "h3",
+      "text": "3.1. Hồ sơ bổ sung cho bản đầy đủ",
+      "links": []
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Mã",
+          "Điều kiện",
+          "Nguồn và nội dung được dùng",
+          "Giới hạn / trạng thái"
+        ],
+        [
+          "R04",
+          "Vũ Khúc tại Mệnh có mutagen Quyền, scope origin.",
+          "S1 tr.40 mục 3.24: ý nghĩa chung Hóa Quyền.",
+          "Dữ kiện khớp; chỉ dùng ý nghĩa riêng. Không tự biến thành quy tắc tổng hợp Vũ–Phủ Hóa Quyền. Ngoại lệ toàn tổ hợp chưa đủ."
+        ],
+        [
+          "R05",
+          "Tử Vi và Thiên Tướng đồng cung Quan Lộc.",
+          "S1 tr.158 mục 8.1; đối chiếu lặp lại tr.162 mục 8.11. Chọn phần tổ chức và vấn đề quyền hạn.",
+          "Khớp. Đoạn nguồn không đòi một nhãn brightness riêng; không thêm điều kiện “Đắc” của engine. Chưa tổng hợp toàn bộ sao hội chiếu. Không dùng các câu về thời điểm thành công làm dự báo."
+        ],
+        [
+          "R06",
+          "Tài Bạch tại Dần hoặc Thân; chính tinh duy nhất là Liêm Trinh.",
+          "S1 tr.190 mục 12.2; chọn mô tả cạnh tranh và tích lũy chậm.",
+          "Khớp Thân, majorStars có một sao. Nguồn có khẳng định kết quả mà bản đọc không giữ thành lời hứa. Tuần và ảnh hưởng các cung khác chưa được tổng hợp."
+        ],
+        [
+          "R07",
+          "Lộc Tồn tại Tài Bạch.",
+          "S1 tr.40 mục 3.20: chủ đề tài lộc.",
+          "Dữ kiện khớp; giải thích ý nghĩa sao, chưa kết luận có tiền hay giữ tiền tốt."
+        ],
+        [
+          "M01",
+          "Bất kỳ đoạn luận Tài Bạch.",
+          "S1 tr.190, đoạn mở đầu: xem thêm Mệnh, Thân, Phúc Đức, Quan Lộc, Thiên Di.",
+          "Ràng buộc về phạm vi. Bản hiện tại chưa đủ để kết luận tổng tài vận vì chưa hoàn tất luận các cung đó."
+        ],
+        [
+          "F06",
+          "Đọc vị trí cụ thể trong D1.",
+          "Phụ Mẫu Sửu: Hóa Lộc/Khoa; Phúc Đức Dần: Văn Xương; Mệnh Tý: Văn Khúc.",
+          "Dữ kiện. Không gán quan hệ tam hợp Mệnh cho Sửu/Dần."
+        ],
+        [
+          "K01",
+          "R02 được trình bày theo S1.",
+          "S1 tr.67 và W1 mục Vương Đình Chi.",
+          "Công bố khác biệt nguồn, không tự hòa giải và không tạo hai tính cách trái nhau để tăng độ bao phủ."
+        ],
+        [
+          "E04–E07",
+          "Không có điều kiện huyền học.",
+          "Câu hỏi và thực hành do người biên soạn đề xuất.",
+          "Không ghi là trích sách; không để AI biến thành lời dự đoán."
+        ]
+      ]
+    },
+    {
+      "kind": "h3",
+      "text": "3.2. Những điều kiện không khớp mẫu này",
+      "links": []
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Quy tắc dễ áp nhầm",
+          "Đối chiếu DEMO",
+          "Kết quả"
+        ],
+        [
+          "Vũ–Phủ đồng cung Quan Lộc — S1 tr.159/160",
+          "Quan Lộc có Tử Vi–Thiên Tướng; Vũ–Phủ ở Mệnh.",
+          "Không khớp; không mượn đoạn để kết luận nghề tài chính."
+        ],
+        [
+          "Vũ–Phủ đồng cung Tài Bạch — S1 tr.191/192",
+          "Tài Bạch là Liêm Trinh.",
+          "Không khớp; không kết luận giàu và giữ của bền từ đoạn này."
+        ],
+        [
+          "Vũ Khúc tại Mệnh Dần/Thân gặp Lộc, Quyền — S1 tr.68",
+          "Mệnh ở Tý.",
+          "Không khớp vị trí; dừng trước khi xét kết quả."
+        ],
+        [
+          "Thiên Phủ gặp đủ Xương, Khúc, Lộc hội hợp — S1 tr.78",
+          "Văn Xương ở Dần, ngoài bộ Tý–Thìn–Thân và đối cung Ngọ.",
+          "Không đủ theo phạm vi tam phương tứ chính; chưa dùng. Nếu chọn quan hệ khác phải đặc tả riêng, không tự mở rộng “hội hợp”."
+        ],
+        [
+          "Hỏa/Linh đồng cung Vũ Khúc",
+          "Linh tại đối cung Ngọ; Hỏa tại Tuất.",
+          "Không khớp đồng cung. Đây không phải khẳng định chúng hoàn toàn không ảnh hưởng."
+        ]
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "kind": "h3",
+      "text": "4.1. Văn Khúc đi cùng Vũ Khúc",
+      "links": []
+    },
+    {
+      "kind": "p",
+      "text": "S1 tr.67 mô tả thuận lợi về học hỏi. W1, mục Vương Đình Chi, lại bàn về sự do dự khi Vũ Khúc gặp sao Văn. Không tự kết luận nguồn nào đúng hơn. Cách xử lý: giữ hai hồ sơ, gắn phạm vi nguồn; không cộng thành “vừa quyết đoán vừa do dự” để tạo vẻ cá nhân hóa.",
+      "links": []
+    },
+    {
+      "kind": "h3",
+      "text": "4.2. Bảng trạng thái sao chưa thống nhất",
+      "links": []
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Vị trí",
+          "Snapshot",
+          "Nguồn đối chiếu",
+          "Xử lý"
+        ],
+        [
+          "Vũ Khúc tại Tý",
+          "Vượng",
+          "S1 tr.35: Vượng",
+          "Khớp trường hợp cụ thể"
+        ],
+        [
+          "Thiên Phủ tại Tý",
+          "Miếu",
+          "S1 tr.36: Miếu",
+          "Khớp trường hợp cụ thể"
+        ],
+        [
+          "Thái Dương tại Sửu",
+          "Bất",
+          "S1 tr.35: Đắc địa",
+          "Không tự quy nhãn Bất sang hệ S1"
+        ],
+        [
+          "Thái Âm tại Sửu",
+          "Miếu",
+          "S1 tr.36: Đắc địa",
+          "Sai khác rõ; chưa dùng engine brightness cho rule S1 tại vị trí này"
+        ],
+        [
+          "Thiên Tướng tại Thìn",
+          "Đắc",
+          "S3 tr.32, mục 11: Hãm địa",
+          "Đã xem ảnh PDF; lưu sai khác nguồn, không tự sửa engine"
+        ]
+      ]
+    },
+    {
+      "kind": "h3",
+      "text": "4.3. Bản chép cần đối chiếu",
+      "links": []
+    },
+    {
+      "kind": "p",
+      "text": "S1 tr.77: đoạn giải câu phú Vũ–Phủ tại Tý có diễn đạt chuyển ý thiếu rõ giữa thuận lợi, Tuần–Triệt và ngoại lệ tuổi. Ảnh trang cũng có vấn đề này. Tạm không sử dụng kết luận tốt/xấu của đoạn.",
+      "links": []
+    },
+    {
+      "kind": "p",
+      "text": "S1 tr.17: bảng Triệt ghi Ất/Canh ở Mùi–Ngọ, nhưng ví dụ ngay dưới lại ghi Canh Ngọ ở Thân–Dậu. Đây là mâu thuẫn nội bộ bản PDF cần đối chiếu bản khác. Không lấy một dòng đơn lẻ làm expected chuyên môn.",
+      "links": []
+    },
+    {
+      "kind": "h3",
+      "text": "4.4. Câu phú và ngữ cảnh",
+      "links": []
+    },
+    {
+      "kind": "p",
+      "text": "S2 tr.PDF 13–14, mục “Những câu phú nên thận trọng áp dụng”, bàn về việc không áp một câu phú giống nhau cho mọi cấu trúc có cùng sao. Bản thảo vận dụng nguyên tắc giữ điều kiện; không xem lập luận của tác giả là bằng chứng thực nghiệm xác nhận tử vi.",
+      "links": []
+    },
+    {
+      "kind": "p",
+      "text": "S3 tr.32 còn có đoạn về Tam Hóa dùng cách diễn đạt cần đối chiếu. Chưa đưa thành quy tắc Tứ Hóa cho mẫu. Không tuyên bố đã chuyển mã hay kiểm chứng toàn bộ cuốn S3.",
+      "links": []
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "list",
+      "items": [
+        "Tạo bản nội dung mới trong preview nội bộ; giữ nguyên edition và snapshot cũ. Không ghi đè báo cáo đã chốt.",
+        "Giữ vị trí sao của engine. Với quy tắc theo S1, tra trạng thái theo bảng nguồn riêng đã đối chiếu; không âm thầm thay nhãn engine. Nếu chưa có bảng nguồn cho vị trí cần xét, trả về “chưa xác định”.",
+        "Mỗi câu trong phần 2 phải liên kết được tới mã trong phần 3. Không biến bản thảo này thành bộ rule hoàn chỉnh cho mọi lá số.",
+        "R05 và R06 phải kiểm tra đúng cung trước khi đọc tổ hợp; xem các ca không khớp ở mục 3.2. R02 chỉ có phạm vi đã định: Vũ Khúc tại Mệnh, trạng thái hợp lệ theo S1, Văn Khúc đồng cung. Đổi Văn Khúc sang cung khác thì câu tổ hợp không còn khớp.",
+        "F05 là phản ví dụ bắt buộc: Mệnh không có Linh Tinh nhưng đối cung có. Không mở rộng thành “không có sát tinh hội chiếu”.",
+        "Nội dung chưa giải quyết khác biệt nguồn không được AI tự hòa giải. AI chỉ diễn đạt mệnh đề đã được chọn, không thêm nghề nghiệp, mức thu nhập, tuổi phát đạt hoặc điểm biểu đồ.",
+        "Chưa triển khai quy tắc án ngữ Tuần/Triệt trước khi kiểm tra biểu diễn upstream và quyết định phạm vi chuyên môn. Không dùng bản chép mâu thuẫn làm chuẩn kiểm thử.",
+        "Không đánh dấu chuyên gia đã duyệt; không mở thanh toán hay beta công khai từ tài liệu này."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "kind": "p",
+      "text": "D1. demo-wuqu-tianfu-review.json và bản Markdown đi kèm, xuất ngày 08/10/2026. Dùng snapshot.chart.palaces, provenance và storedReading; không chạy lại engine. SHA256 snapshot do bản xuất ghi: bc846d7af4591d997a87a0b6f717c3ac12faa206e350064ac7f0589908f070b3. Tài liệu này chưa tính lại hash.",
+      "links": []
+    },
+    {
+      "kind": "p",
+      "text": "S1. Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, bản PDF 277 trang do người dùng cung cấp, trang đầu ghi Sài Gòn 1956. Các trang dẫn trong tài liệu: 17–19, 34–40, 65–68, 76–78, 158–162, 190–192. Trang PDF và số in trùng ở các trang đã kiểm tra 35, 36, 67, 77. Đã xem ảnh trực tiếp các trang đó và trang 158, 190; các mục còn lại dùng lớp chữ. Nguồn trang 158 và 190 đã đối chiếu cả tiêu đề chương để tránh áp nhầm cung. Chưa xác minh bản PDF là bản sao chuẩn của ấn bản gốc.",
+      "links": []
+    },
+    {
+      "kind": "p",
+      "text": "S2. Thiên Lương, Tử Vi Nghiệm Lý Toàn Thư, PDF 186 trang. Dùng mục “Những câu phú nên thận trọng áp dụng”, trang PDF 13–14. Bản này có nhiều con số trong thân trang; dẫn theo thứ tự PDF để tránh nhầm. Chưa rà toàn sách.",
+      "links": []
+    },
+    {
+      "kind": "p",
+      "text": "S3. Nguyễn Phúc Ấm, Tử Vi Lập Thành và Phụ Đoán, PDF 120 trang. Trang PDF 32, mục 11 về Thiên Tướng được đọc trực tiếp từ ảnh; trang đầu xác nhận tiêu đề và tên tác giả. Lớp chữ dùng mã cũ, chưa chuyển mã toàn bộ.",
+      "links": []
+    },
+    {
+      "kind": "p",
+      "text": "W1. Cổ Học, Sao Vũ Khúc. Dùng riêng mục “Sao Vũ Khúc – Vương Đình Chi” và đoạn Tứ Hóa trong mục “Sao Vũ Khúc tọa thủ cung Mệnh”. Trang tổng hợp nhiều phần, cuối trang ghi theo Blog Tử Vi Tinh Quyết; không mặc định tất cả đoạn cùng tác giả. Truy cập 08/10/2026.",
+      "links": [
+        {
+          "label": "Sao Vũ Khúc",
+          "url": "https://tuvi.cohoc.net/sao-vu-khuc-nid-183.html"
+        }
+      ]
+    },
+    {
+      "kind": "p",
+      "text": "W2. Cổ Học, Sao Thiên Phủ, I. Tổng luận, đoạn sao Lộc và Thiên Tướng. Cuối bài ghi Trung Châu Tam Hợp Phái – Nguyễn Anh Vũ biên dịch. Truy cập 08/10/2026. Chỉ dùng nghiên cứu điều kiện, không trộn tự động với S1.",
+      "links": [
+        {
+          "label": "Sao Thiên Phủ",
+          "url": "https://tuvi.cohoc.net/sao-thien-phu-nid-4971.html"
+        }
+      ]
+    }
+  ],
+  "previousVersion": "demo-vu-phu-editorial-1.0.0"
+}

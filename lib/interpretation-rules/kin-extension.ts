@@ -1,0 +1,7 @@
+import raw from './kin-extension-content.json';
+import{kinAssessment,kinKey,makeKinRule,type KinBranch}from'./phu-tu';
+import type{ChartSnapshot}from'../tuvi-engine';import type{DerivedFact}from'./derived';
+export const KIN_EXTENSION_METHOD='tanbien-kin-independent-clauses-1.0.0';
+export const kinExtensionBranches: (KinBranch & {customer:string})[]=raw;
+export function kinExtensionFacts(s:ChartSnapshot):DerivedFact[]{return kinExtensionBranches.flatMap(r=>{const a=kinAssessment(s,r);return a.value===undefined?[]:[{id:'fact.'+kinKey(r),derivationId:kinKey(r),version:'1.0.0',value:a.value?'yes':'no',text:a.text,evidencePaths:a.paths,status:'engine-reported' as const,limitation:KIN_EXTENSION_METHOD+'; các mô tả sớm không được dùng như dữ kiện hôn nhân đã xác minh.'}];});}
+export const kinExtensionRules=kinExtensionBranches.map(r=>{const rule=makeKinRule(r);return {...rule,sourceReferences:rule.sourceReferences.map(s=>({...s,location:`Trang PDF${r.page} §${r.section}; ${r.id.startsWith('dong-luong')?'đối chiếu212§14.12; ':''}định nghĩa33; SHA2564d9a326d111ffca5290a93e19b238fb14a568afb0df7d6e44227410e27b4fabc.`,accessedOn:'2026-10-19'})),presentation:{...rule.presentation!,projectScope:[KIN_EXTENSION_METHOD,...(rule.presentation!.projectScope??[]).filter(s=>!s.includes('không áp chỉ dẫn')),'Đọc nguyên mô tả sớm khi câu không đặt nếu/mới; không giả định hồ sơ đã kết hôn hoặc đặt mốc tuổi.'],unknownConditions:[r.limit,'Chưa có phép tổng hợp toàn cung hoặc liên cung.']}};});

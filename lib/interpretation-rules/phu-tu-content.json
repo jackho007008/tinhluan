@@ -1,0 +1,1000 @@
+[
+  {
+    "palace": "Phu Thê",
+    "id": "tu-ngo",
+    "stars": [
+      "Tử Vi"
+    ],
+    "branches": [
+      "Ngọ"
+    ],
+    "text": "mô tả sự hòa hợp lâu bền đi cùng hoàn cảnh vật chất khá giả.",
+    "page": 208,
+    "section": "14.1",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "tu-phu",
+    "stars": [
+      "Tử Vi",
+      "Thiên Phủ"
+    ],
+    "branches": [],
+    "text": "mô tả sự hòa hợp lâu bền đi cùng hoàn cảnh vật chất khá giả.",
+    "page": 208,
+    "section": "14.1",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "tu-tuong",
+    "stars": [
+      "Tử Vi",
+      "Thiên Tướng"
+    ],
+    "branches": [],
+    "text": "mô tả hai bên đều cứng cỏi, hoàn cảnh khá giả; lời sách có cả sự hòa hợp ban đầu và những xích mích về sau.",
+    "page": 208,
+    "section": "14.1",
+    "mode": "exact",
+    "gender": null,
+    "limit": "Trình tự ban đầu/về sau là mô tả của sách, không phải xác định giai đoạn hôn nhân hiện tại hay thời điểm xảy ra sự việc.",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "tu-pha",
+    "stars": [
+      "Tử Vi",
+      "Phá Quân"
+    ],
+    "branches": [],
+    "text": "mô tả cuộc sống chung nhiều hờn giận, thiếu hòa thuận và có sự xa cách.",
+    "page": 208,
+    "section": "14.1",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "tu-tham",
+    "stars": [
+      "Tử Vi",
+      "Tham Lang"
+    ],
+    "branches": [],
+    "text": "nêu mặt bất hòa trong gia đình, kể cả sau lời bàn về kết hôn muộn.",
+    "page": 208,
+    "section": "14.1",
+    "mode": "exact",
+    "gender": null,
+    "limit": "Đoạn nguồn còn bàn về kết hôn muộn nhưng chưa có định nghĩa và dữ kiện để áp dụng phần điều chỉnh ấy; không kết luận đã tránh được bất hòa hay chia cách.",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "liem-tuong",
+    "stars": [
+      "Liêm Trinh",
+      "Thiên Tướng"
+    ],
+    "branches": [],
+    "text": "mô tả sự bất hòa và chia cách trong quan hệ vợ chồng.",
+    "page": 208,
+    "section": "14.2",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "liem-pha",
+    "stars": [
+      "Liêm Trinh",
+      "Phá Quân"
+    ],
+    "branches": [],
+    "text": "mô tả sự bất hòa, xa cách đi cùng khó khăn sinh kế.",
+    "page": 209,
+    "section": "14.2",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "dong-dau",
+    "stars": [
+      "Thiên Đồng"
+    ],
+    "branches": [
+      "Dậu"
+    ],
+    "text": "mô tả gia đình có bất hòa và sự xa cách giữa hai bên.",
+    "page": 209,
+    "section": "14.3",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "dong-ty",
+    "stars": [
+      "Thiên Đồng"
+    ],
+    "branches": [
+      "Tỵ"
+    ],
+    "text": "mô tả việc gặp gỡ dễ dàng nhưng quan hệ cũng dễ xa cách.",
+    "page": 209,
+    "section": "14.3",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "dong-thin-tuat",
+    "stars": [
+      "Thiên Đồng"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "mô tả sự cãi vã, bất hòa và chia cách trong cuộc sống chung.",
+    "page": 209,
+    "section": "14.3",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "dong-cu",
+    "stars": [
+      "Thiên Đồng",
+      "Cự Môn"
+    ],
+    "branches": [],
+    "text": "mô tả sự chia cách; đoạn nguồn còn nêu khả năng xa nhau lâu rồi mới đoàn tụ.",
+    "page": 209,
+    "section": "14.3",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "vu-phu",
+    "stars": [
+      "Vũ Khúc",
+      "Thiên Phủ"
+    ],
+    "branches": [],
+    "text": "mô tả hoàn cảnh vật chất sung túc đi cùng những lúc bất hòa, không phải chỉ có mặt thuận.",
+    "page": 209,
+    "section": "14.4",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "vu-tuong",
+    "stars": [
+      "Vũ Khúc",
+      "Thiên Tướng"
+    ],
+    "branches": [],
+    "text": "mô tả hai bên cứng cỏi, có mặt thuận về vật chất; lời sách đặt cạnh nhau sự hòa thuận lúc trẻ và những xích mích về sau.",
+    "page": 209,
+    "section": "14.4",
+    "mode": "exact",
+    "gender": null,
+    "limit": "Trình tự ban đầu/về sau là mô tả của sách, không phải xác định giai đoạn hôn nhân hiện tại hay thời điểm xảy ra sự việc.",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "sun-high",
+    "stars": [
+      "Thái Dương"
+    ],
+    "branches": [
+      "Mão",
+      "Thìn",
+      "Tỵ",
+      "Ngọ"
+    ],
+    "text": "mô tả sự hòa hợp lâu bền và hoàn cảnh sung túc, có vị thế.",
+    "page": 210,
+    "section": "14.5",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "sun-cu-dan",
+    "stars": [
+      "Thái Dương",
+      "Cự Môn"
+    ],
+    "branches": [
+      "Dần"
+    ],
+    "text": "mô tả quan hệ có bất hòa nhưng vẫn có mặt gắn bó lâu bền và hoàn cảnh vật chất thuận lợi.",
+    "page": 210,
+    "section": "14.5",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "co-low",
+    "stars": [
+      "Thiên Cơ"
+    ],
+    "branches": [
+      "Hợi",
+      "Tý",
+      "Sửu"
+    ],
+    "text": "nêu sự không hợp tính giữa hai bên.",
+    "page": 210,
+    "section": "14.6",
+    "mode": "exact",
+    "gender": null,
+    "limit": "Đoạn nguồn còn bàn về kết hôn muộn nhưng chưa có định nghĩa và dữ kiện để áp dụng phần điều chỉnh ấy; không kết luận đã tránh được bất hòa hay chia cách.",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "phu-ty-hoi",
+    "stars": [
+      "Thiên Phủ"
+    ],
+    "branches": [
+      "Tỵ",
+      "Hợi"
+    ],
+    "text": "mô tả sự hòa thuận lâu bền và hoàn cảnh khá giả.",
+    "page": 210,
+    "section": "14.7",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "phu-other",
+    "stars": [
+      "Thiên Phủ"
+    ],
+    "branches": [
+      "Sửu",
+      "Mùi",
+      "Mão",
+      "Dậu"
+    ],
+    "text": "mô tả cuộc sống sung túc nhưng có tranh cãi giữa hai bên.",
+    "page": 210,
+    "section": "14.7",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "am-low",
+    "stars": [
+      "Thái Âm"
+    ],
+    "branches": [
+      "Mão",
+      "Thìn",
+      "Tỵ"
+    ],
+    "text": "nêu sự bất hòa và những trở ngại trong việc cưới hỏi.",
+    "page": 211,
+    "section": "14.8",
+    "mode": "exact",
+    "gender": null,
+    "limit": "Đoạn nguồn còn bàn về kết hôn muộn nhưng chưa có định nghĩa và dữ kiện để áp dụng phần điều chỉnh ấy; không kết luận đã tránh được bất hòa hay chia cách.",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "cu-high",
+    "stars": [
+      "Cự Môn"
+    ],
+    "branches": [
+      "Tý",
+      "Ngọ",
+      "Hợi"
+    ],
+    "text": "mô tả mặt thuận về vị thế của hai bên đi cùng sự bất hòa.",
+    "page": 211,
+    "section": "14.10",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "tuong-low",
+    "stars": [
+      "Thiên Tướng"
+    ],
+    "branches": [
+      "Mão",
+      "Dậu"
+    ],
+    "text": "nêu những trở ngại trong việc cưới hỏi.",
+    "page": 212,
+    "section": "14.11",
+    "mode": "exact",
+    "gender": null,
+    "limit": "Đoạn nguồn còn bàn về kết hôn muộn nhưng chưa có định nghĩa và dữ kiện để áp dụng phần điều chỉnh ấy; không kết luận đã tránh được bất hòa hay chia cách.",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "luong-hoi",
+    "stars": [
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Hợi"
+    ],
+    "text": "mô tả việc gặp gỡ dễ dàng nhưng cũng dễ xa cách.",
+    "page": 212,
+    "section": "14.12",
+    "mode": "exact",
+    "gender": null,
+    "limit": "Chỉ dùng Hợi. Hai dòng Thiên Lương tại Tỵ trong cùng trang có mô tả khác nhau, chưa áp dụng Tỵ.",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "sun-luong-mao",
+    "stars": [
+      "Thái Dương",
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Mão"
+    ],
+    "text": "mô tả sự hòa hợp lâu bền trong hoàn cảnh vật chất và vị thế thuận lợi.",
+    "page": 212,
+    "section": "14.12",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "ky",
+    "stars": [
+      "Hóa Kỵ"
+    ],
+    "branches": [],
+    "text": "mô tả mặt bất hòa trong quan hệ vợ chồng.",
+    "page": 214,
+    "section": "14.22",
+    "mode": "minor",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "ma",
+    "stars": [
+      "Thiên Mã"
+    ],
+    "branches": [],
+    "text": "liên hệ việc nên duyên với hoàn cảnh gặp gỡ ở nơi xa.",
+    "page": 214,
+    "section": "14.24",
+    "mode": "minor",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "tue",
+    "stars": [
+      "Thái Tuế"
+    ],
+    "branches": [],
+    "text": "mô tả những xích mích trong gia đình.",
+    "page": 214,
+    "section": "14.25",
+    "mode": "minor",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "binh",
+    "stars": [
+      "Phục Binh"
+    ],
+    "branches": [],
+    "text": "mô tả hoàn cảnh đã quen biết, qua lại trước khi cưới.",
+    "page": 214,
+    "section": "14.26",
+    "mode": "minor",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "loc-male",
+    "stars": [
+      "Hóa Lộc"
+    ],
+    "branches": [],
+    "text": "liên hệ với hoàn cảnh người vợ có của cải.",
+    "page": 214,
+    "section": "14.19",
+    "mode": "minor",
+    "gender": "male",
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "loc-female",
+    "stars": [
+      "Hóa Lộc"
+    ],
+    "branches": [],
+    "text": "liên hệ với hoàn cảnh người chồng giàu sang.",
+    "page": 214,
+    "section": "14.19",
+    "mode": "minor",
+    "gender": "female",
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "quyen-male",
+    "stars": [
+      "Hóa Quyền"
+    ],
+    "branches": [],
+    "text": "mô tả nét nể vợ trong quan hệ vợ chồng.",
+    "page": 214,
+    "section": "14.20",
+    "mode": "minor",
+    "gender": "male",
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "quyen-female",
+    "stars": [
+      "Hóa Quyền"
+    ],
+    "branches": [],
+    "text": "liên hệ với vị thế của người chồng.",
+    "page": 214,
+    "section": "14.20",
+    "mode": "minor",
+    "gender": "female",
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "khoa-male",
+    "stars": [
+      "Hóa Khoa"
+    ],
+    "branches": [],
+    "text": "liên hệ với học vấn của người vợ.",
+    "page": 214,
+    "section": "14.21",
+    "mode": "minor",
+    "gender": "male",
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "khoa-female",
+    "stars": [
+      "Hóa Khoa"
+    ],
+    "branches": [],
+    "text": "liên hệ với danh chức của người chồng.",
+    "page": 214,
+    "section": "14.21",
+    "mode": "minor",
+    "gender": "female",
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "tuong-dao-hong-male",
+    "stars": [
+      "Thiên Tướng",
+      "Đào Hoa",
+      "Hồng Loan"
+    ],
+    "branches": [],
+    "text": "liên hệ với người vợ khá giả.",
+    "page": 215,
+    "section": "14.39",
+    "mode": "all-present",
+    "gender": "male",
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "tuong-dao-hong-female",
+    "stars": [
+      "Thiên Tướng",
+      "Đào Hoa",
+      "Hồng Loan"
+    ],
+    "branches": [],
+    "text": "liên hệ với vị thế của người chồng.",
+    "page": 215,
+    "section": "14.39",
+    "mode": "all-present",
+    "gender": "female",
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "tu-ngo",
+    "stars": [
+      "Tử Vi"
+    ],
+    "branches": [
+      "Ngọ"
+    ],
+    "text": "liên hệ với mặt thuận về vị thế của con cái khi trưởng thành.",
+    "page": 199,
+    "section": "13.2.1",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "tu-ty",
+    "stars": [
+      "Tử Vi"
+    ],
+    "branches": [
+      "Tý"
+    ],
+    "text": "liên hệ với hoàn cảnh vật chất khá giả của con cái về sau.",
+    "page": 199,
+    "section": "13.2.1",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "tu-sat",
+    "stars": [
+      "Tử Vi",
+      "Thất Sát"
+    ],
+    "branches": [],
+    "text": "mô tả sự xa cách nơi ở giữa cha mẹ và con cái về sau.",
+    "page": 199,
+    "section": "13.2.1",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "tu-pha",
+    "stars": [
+      "Tử Vi",
+      "Phá Quân"
+    ],
+    "branches": [],
+    "text": "mô tả sự xung khắc trong quan hệ giữa cha mẹ và con cái khi lớn lên.",
+    "page": 199,
+    "section": "13.2.1",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "liem-phu",
+    "stars": [
+      "Liêm Trinh",
+      "Thiên Phủ"
+    ],
+    "branches": [],
+    "text": "liên hệ với hoàn cảnh vật chất khá giả của con cái về sau.",
+    "page": 199,
+    "section": "13.2.2",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "dong-cu",
+    "stars": [
+      "Thiên Đồng",
+      "Cự Môn"
+    ],
+    "branches": [],
+    "text": "mô tả sự bất hòa và ly tán khi con cái lớn lên.",
+    "page": 200,
+    "section": "13.2.3",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "vu-phu",
+    "stars": [
+      "Vũ Khúc",
+      "Thiên Phủ"
+    ],
+    "branches": [],
+    "text": "liên hệ với mặt thuận về vị thế của con cái về sau.",
+    "page": 200,
+    "section": "13.2.4",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "sun-high",
+    "stars": [
+      "Thái Dương"
+    ],
+    "branches": [
+      "Thìn",
+      "Tỵ",
+      "Ngọ"
+    ],
+    "text": "liên hệ với mặt thuận về vị thế của con cái khi trưởng thành.",
+    "page": 200,
+    "section": "13.2.5",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "sun-cu-dan",
+    "stars": [
+      "Thái Dương",
+      "Cự Môn"
+    ],
+    "branches": [
+      "Dần"
+    ],
+    "text": "liên hệ với hoàn cảnh vật chất khá giả của con cái về sau.",
+    "page": 200,
+    "section": "13.2.5",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "sun-luong-mao",
+    "stars": [
+      "Thái Dương",
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Mão"
+    ],
+    "text": "liên hệ với hoàn cảnh vật chất khá giả của con cái về sau.",
+    "page": 200,
+    "section": "13.2.5",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "co-luong",
+    "stars": [
+      "Thiên Cơ",
+      "Thiên Lương"
+    ],
+    "branches": [],
+    "text": "liên hệ với hoàn cảnh khá giả và mặt thuận về vị thế của con cái.",
+    "page": 200,
+    "section": "13.3.6",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "am-low",
+    "stars": [
+      "Thái Âm"
+    ],
+    "branches": [
+      "Mão",
+      "Thìn",
+      "Tỵ"
+    ],
+    "text": "mô tả hoàn cảnh con cái không khá giả khi trưởng thành, đồng thời có sự xung khắc với cha mẹ.",
+    "page": 201,
+    "section": "13.3.8",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "tham-thin-tuat",
+    "stars": [
+      "Tham Lang"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "nêu sự xung khắc giữa cha mẹ và con cái.",
+    "page": 201,
+    "section": "13.3.9",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "tham-dan-than",
+    "stars": [
+      "Tham Lang"
+    ],
+    "branches": [
+      "Dần",
+      "Thân"
+    ],
+    "text": "nêu mặt thuận về vị thế của con cái nhưng đồng thời mô tả sự không hợp tính với cha mẹ.",
+    "page": 201,
+    "section": "13.3.9",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "cu-high",
+    "stars": [
+      "Cự Môn"
+    ],
+    "branches": [
+      "Hợi",
+      "Tý",
+      "Ngọ"
+    ],
+    "text": "mô tả hoàn cảnh con cái sớm ở xa cha mẹ.",
+    "page": 201,
+    "section": "13.3.10",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "cu-low",
+    "stars": [
+      "Cự Môn"
+    ],
+    "branches": [
+      "Tỵ",
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "mô tả mặt không thuận về vị thế của con cái khi lớn lên, có sự xung khắc với cha mẹ và thiếu hòa khí trong nhà.",
+    "page": 201,
+    "section": "13.3.10",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "pha-ty-ngo",
+    "stars": [
+      "Phá Quân"
+    ],
+    "branches": [
+      "Tý",
+      "Ngọ"
+    ],
+    "text": "mô tả con cái không hợp tính với cha mẹ và thường ở xa cha mẹ.",
+    "page": 202,
+    "section": "13.3.14",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "pha-thin-tuat",
+    "stars": [
+      "Phá Quân"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "mô tả sự không hợp tính và xa cách giữa cha mẹ với con cái.",
+    "page": 203,
+    "section": "13.3.14",
+    "mode": "exact",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "loc",
+    "stars": [
+      "Hóa Lộc"
+    ],
+    "branches": [],
+    "text": "liên hệ với hoàn cảnh con cái khá giả và sự hỗ trợ từ con về sau.",
+    "page": 203,
+    "section": "13.3.21",
+    "mode": "minor",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "ky",
+    "stars": [
+      "Hóa Kỵ"
+    ],
+    "branches": [],
+    "text": "mô tả sự xung khắc giữa cha mẹ và con cái.",
+    "page": 204,
+    "section": "13.3.24",
+    "mode": "minor",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "tu",
+    "stars": [
+      "Tử"
+    ],
+    "branches": [],
+    "text": "mô tả sự xung khắc với cha mẹ khi con cái lớn lên.",
+    "page": 204,
+    "section": "13.3.32",
+    "mode": "ring",
+    "gender": null,
+    "limit": "",
+    "excerpt": "",
+    "stateMethod": "none"
+  }
+]

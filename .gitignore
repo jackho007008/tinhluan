@@ -1,0 +1,66 @@
+# Secrets: only reviewed, secret-free examples may be versioned.
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+*service-account*.json
+cookies*.json
+cookies*.txt
+*storage-state*.json
+*storageState*.json
+*auth-state*.json
+tokens*.json
+
+# Runtime, customer reports, QA archives, source books and generated evidence.
+.local/
+/exports/
+/output/
+/release/
+/data/
+/backups/
+/reports/
+/readings/
+/docs/evidence/
+*.dump
+*.sql
+!/db/[0-9][0-9][0-9]_*.sql
+*.backup
+*.sql.gz
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.pdf
+*.epub
+*.docx
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.log
+
+# This fixture includes a named personal profile. Keep local until anonymized
+# with receipt/hash semantics reviewed; never change it merely to stage Git.
+/fixtures/customer-reading-samples.json
+
+# Dependencies, builds, test output, local tooling.
+node_modules/
+.next/
+/dist/
+/build/
+/coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+.DS_Store
+*.pid
+*.sock
+.vscode/
+.idea/
+.codex/
+.agents/

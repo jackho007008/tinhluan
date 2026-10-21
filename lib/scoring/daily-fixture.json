@@ -1,0 +1,219 @@
+[
+  {
+    "label": "1",
+    "solar": "1/10/2026",
+    "lunar": "21/8/2026 (Trung Quốc tham chiếu)",
+    "value": 48,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "2",
+    "solar": "2/10/2026",
+    "lunar": "22/8/2026 (Trung Quốc tham chiếu)",
+    "value": 62,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "3",
+    "solar": "3/10/2026",
+    "lunar": "23/8/2026 (Trung Quốc tham chiếu)",
+    "value": 55,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "4",
+    "solar": "4/10/2026",
+    "lunar": "24/8/2026 (Trung Quốc tham chiếu)",
+    "value": 71,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "5",
+    "solar": "5/10/2026",
+    "lunar": "25/8/2026 (Trung Quốc tham chiếu)",
+    "value": 43,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "6",
+    "solar": "6/10/2026",
+    "lunar": "26/8/2026 (Trung Quốc tham chiếu)",
+    "value": 66,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "7",
+    "solar": "7/10/2026",
+    "lunar": "27/8/2026 (Trung Quốc tham chiếu)",
+    "value": 58,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "8",
+    "solar": "8/10/2026",
+    "lunar": "28/8/2026 (Trung Quốc tham chiếu)",
+    "value": 73,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "9",
+    "solar": "9/10/2026",
+    "lunar": "29/8/2026 (Trung Quốc tham chiếu)",
+    "value": 51,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "10",
+    "solar": "10/10/2026",
+    "lunar": "1/9/2026 (Trung Quốc tham chiếu)",
+    "value": 64,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "11",
+    "solar": "11/10/2026",
+    "lunar": "2/9/2026 (Trung Quốc tham chiếu)",
+    "value": 46,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "12",
+    "solar": "12/10/2026",
+    "lunar": "3/9/2026 (Trung Quốc tham chiếu)",
+    "value": 60,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "13",
+    "solar": "13/10/2026",
+    "lunar": "4/9/2026 (Trung Quốc tham chiếu)",
+    "value": 48,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "14",
+    "solar": "14/10/2026",
+    "lunar": "5/9/2026 (Trung Quốc tham chiếu)",
+    "value": 62,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "15",
+    "solar": "15/10/2026",
+    "lunar": "6/9/2026 (Trung Quốc tham chiếu)",
+    "value": 55,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "16",
+    "solar": "16/10/2026",
+    "lunar": "7/9/2026 (Trung Quốc tham chiếu)",
+    "value": 71,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "17",
+    "solar": "17/10/2026",
+    "lunar": "8/9/2026 (Trung Quốc tham chiếu)",
+    "value": 43,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "18",
+    "solar": "18/10/2026",
+    "lunar": "9/9/2026 (Trung Quốc tham chiếu)",
+    "value": 66,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "19",
+    "solar": "19/10/2026",
+    "lunar": "10/9/2026 (Trung Quốc tham chiếu)",
+    "value": 58,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "20",
+    "solar": "20/10/2026",
+    "lunar": "11/9/2026 (Trung Quốc tham chiếu)",
+    "value": 73,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "21",
+    "solar": "21/10/2026",
+    "lunar": "12/9/2026 (Trung Quốc tham chiếu)",
+    "value": 51,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "22",
+    "solar": "22/10/2026",
+    "lunar": "13/9/2026 (Trung Quốc tham chiếu)",
+    "value": 64,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "23",
+    "solar": "23/10/2026",
+    "lunar": "14/9/2026 (Trung Quốc tham chiếu)",
+    "value": 46,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "24",
+    "solar": "24/10/2026",
+    "lunar": "15/9/2026 (Trung Quốc tham chiếu)",
+    "value": 60,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "25",
+    "solar": "25/10/2026",
+    "lunar": "16/9/2026 (Trung Quốc tham chiếu)",
+    "value": 48,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "26",
+    "solar": "26/10/2026",
+    "lunar": "17/9/2026 (Trung Quốc tham chiếu)",
+    "value": 62,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "27",
+    "solar": "27/10/2026",
+    "lunar": "18/9/2026 (Trung Quốc tham chiếu)",
+    "value": 55,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "28",
+    "solar": "28/10/2026",
+    "lunar": "19/9/2026 (Trung Quốc tham chiếu)",
+    "value": 71,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "29",
+    "solar": "29/10/2026",
+    "lunar": "20/9/2026 (Trung Quốc tham chiếu)",
+    "value": 43,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "30",
+    "solar": "30/10/2026",
+    "lunar": "21/9/2026 (Trung Quốc tham chiếu)",
+    "value": 66,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  },
+  {
+    "label": "31",
+    "solar": "31/10/2026",
+    "lunar": "22/9/2026 (Trung Quốc tham chiếu)",
+    "value": 58,
+    "evidence": "UI fixture v1 · không có căn cứ luận giải; không phát hành trong báo cáo"
+  }
+]

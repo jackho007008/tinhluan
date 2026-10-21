@@ -1,0 +1,9 @@
+[Unit]
+Description=Consistent Tinh Luan DB and report-store backup
+[Service]
+Type=oneshot
+User=tinhluan
+Group=tinhluan
+WorkingDirectory=/opt/tinhluan/current
+ExecStart=/bin/sh deploy/beta/backup.sh
+UMask=0077

@@ -1,0 +1,33 @@
+import {it,expect} from 'vitest';
+import samples from '../fixtures/customer-reading-samples.json';
+import {completionAssessment,completionBranches,completionRules,completionRuleId} from '../lib/interpretation-rules/natal-completion';
+import {executeRules} from '../lib/interpretation-rules/execute';
+import {PRINCIPAL_STARS} from '../lib/tuvi-engine/chart-integrity';
+import type {ChartSnapshot} from '../lib/tuvi-engine';
+const base=samples[0].snapshot as unknown as ChartSnapshot;
+const branch=(id:string)=>completionBranches.find(r=>r.id===id)!;
+// Predicate-only fixtures: assignments below are deliberately not engine witnesses.
+function fixture(life:string[],no:string[],phuc:string[]=[]){
+ const s=structuredClone(base),star=(name:string)=>({name,scope:'origin',type:'major',brightness:'',mutagen:''})as any;
+ for(const p of s.chart.palaces){p.majorStars=[];p.minorStars=[];p.adjectiveStars=[];}
+ for(const [name,stars]of [['Mệnh',life],['Nô Bộc',no],['Phúc Đức',phuc]]as const)s.chart.palaces.find(p=>p.name===name)!.majorStars=stars.map(star);
+ s.chart.palaces.find(p=>!['Mệnh','Nô Bộc','Phúc Đức'].includes(p.name))!.majorStars=PRINCIPAL_STARS.filter(n=>![...life,...no,...phuc].includes(n)).map(star);
+ const avoid=s.chart.palaces.filter(p=>['Mệnh','Nô Bộc','Phúc Đức'].includes(p.name)).map(p=>p.earthlyBranch),bs=s.chart.palaces.map(p=>p.earthlyBranch),free=bs.find((b,i)=>!avoid.includes(b)&&!avoid.includes(bs[(i+1)%12]))!,idx=bs.indexOf(free);
+ s.chart.tanBien!.voidRanges=[{name:'Tuần Không',branches:[free,bs[(idx+1)%12]]},{name:'Triệt Lộ',branches:[free,bs[(idx+1)%12]]}]as any;
+ return s;
+}
+function at(s:ChartSnapshot,name:string,b:string){const p=s.chart.palaces.find(p=>p.name===name)!,q=s.chart.palaces.find(p=>p.earthlyBranch===b)!;[p.earthlyBranch,q.earthlyBranch]=[q.earthlyBranch,p.earthlyBranch];}
+function clearVoids(s:ChartSnapshot){s.chart.tanBien!.voidRanges=[{name:'Tuần Không',branches:['Tuất','Hợi']},{name:'Triệt Lộ',branches:['Thân','Dậu']}]as any;}
+it('source example: Nhâm Thân/Mệnh Tý aligned; Quý Dậu reverses; sex is not age polarity',()=>{const s=structuredClone(base);at(s,'Mệnh','Tý');s.chart.tanBien!.inputs.yearStem='Nhâm';s.chart.tanBien!.inputs.yearBranch='Thân';expect(completionAssessment(s,branch('life-polarity-aligned')).value).toBe('yes');s.chart.tanBien!.inputs.yearStem='Quý';s.chart.tanBien!.inputs.yearBranch='Dậu';expect(completionAssessment(s,branch('life-polarity-opposed')).value).toBe('yes');s.chart.tanBien!.inputs.yearStem='Nhâm';expect(completionAssessment(s,branch('life-polarity-opposed')).cause).toBe('missing-data');});
+it('table A+ to B- retains ineffective help, dispersion and few friends, not moral accusations',()=>{const r=branch('no-table-abright-bdim'),s=fixture(['Thiên Cơ'],['Phá Quân']);at(s,'Mệnh','Thìn');at(s,'Nô Bộc','Dần');clearVoids(s);expect(completionAssessment(s,r).value).toBe('yes');expect(r.text).toMatch(/ít|không/);const run=executeRules(s,completionRules.filter(q=>q.id===completionRuleId(r)),'internal-draft');expect(run.previewClaims).toHaveLength(1);expect(run.previewClaims[0].text).not.toMatch(/phản bội|lừa đảo|mưu sát/);const n=s.chart.palaces.find(p=>p.name==='Nô Bộc')!.majorStars[0],other=s.chart.palaces.flatMap(p=>p.majorStars).find(st=>st.name==='Thiên Phủ')!;[n.name,other.name]=[other.name,n.name];expect(completionAssessment(s,r).value).toBe('no');});
+it('two majors are not reduced to whichever group favors a table cell; incomplete list is unknown',()=>{const r=branch('no-table-abright-bdim'),s=fixture(['Thiên Cơ','Vũ Khúc'],['Phá Quân']);expect(completionAssessment(s,r).cause).toBe('unsupported');s.chart.tanBien!.completeness.majorStars='unknown' as any;expect(completionAssessment(s,r).cause).toBe('missing-data');});
+it('Tử Ngọ Phúc baseline requires certified absence; Thiên Không is not Địa Không',()=>{const r=branch('phuc-base-tu-ngo'),s=fixture(['Thiên Cơ'],['Phá Quân'],['Tử Vi']);at(s,'Phúc Đức','Ngọ');clearVoids(s);expect(completionAssessment(s,r).value).toBe('yes');const p=s.chart.palaces.find(p=>p.name==='Phúc Đức')!;p.minorStars.push({name:'Thiên Không',scope:'origin'}as any);expect(completionAssessment(s,r).value).toBe('yes');p.minorStars[0].name='Kình Dương';expect(completionAssessment(s,r).cause).toBe('unresolved-adjustment');expect(completionAssessment(s,r).value).toBeUndefined();p.minorStars=[];s.chart.tanBien!.completeness.minorStars='unknown' as any;expect(completionAssessment(s,r).cause).toBe('missing-data');});
+it('direct void is unresolved, absent/other-palace voids differ from missing, both never cancel',()=>{const r=branch('phuc-base-tu-ngo'),s=fixture(['Thiên Cơ'],['Phá Quân'],['Tử Vi']);at(s,'Phúc Đức','Ngọ');clearVoids(s);expect(completionAssessment(s,r).value).toBe('yes');s.chart.tanBien!.voidRanges.forEach(v=>v.branches=['Ngọ','Mùi']);expect(completionAssessment(s,r).cause).toBe('unresolved-adjustment');delete(s.chart.tanBien as any).voidRanges;expect(completionAssessment(s,r).cause).toBe('missing-data');});
+it('natal integrity rejects annual replacements and never mutates source',()=>{const s=fixture(['Thiên Cơ'],['Phá Quân'],['Tử Vi']),before=JSON.stringify(s);completionBranches.forEach(r=>completionAssessment(s,r));expect(JSON.stringify(s)).toBe(before);(s.chart.palaces.find(p=>p.name==='Mệnh')!.majorStars[0]as any).scope='year';expect(completionAssessment(s,branch('life-polarity-aligned')).value).toBeUndefined();});
+it('every new branch stays draft with source, independent scope and no customer release',()=>{expect(completionRules).toHaveLength(32);for(const r of completionRules){expect(r.status).toBe('draft');expect(r.review).toBeNull();expect(r.sourceReferences[0].location).toMatch(/PDF/);expect(r.presentation?.knownExceptions.length).toBeGreaterThan(0);}});
+// Positions transcribed from the Tân Biên source tables (not inferred from predicate output).
+const tableCells:Record<string,[string,string]>={'A+':['Thiên Cơ','Thìn'],'A-':['Thiên Cơ','Hợi'],'B+':['Phá Quân','Ngọ'],'B-':['Phá Quân','Dần'],'C+':['Vũ Khúc','Sửu'],'C-':['Vũ Khúc','Tỵ']};
+for(const r of completionBranches.filter(r=>r.kind==='no-table'))it(`technical cell fixture ${r.life}→${r.no} keeps scope/draft and rejects direct barrier`,()=>{
+ const a=tableCells[r.life!],b=tableCells[r.no!],s=fixture([a[0]],[b[0]]);at(s,'Mệnh',a[1]);at(s,'Nô Bộc',b[1]);s.chart.tanBien!.voidRanges=[{name:'Tuần Không',branches:['Thân','Dậu']},{name:'Triệt Lộ',branches:['Thân','Dậu']}]as any;
+ expect(completionAssessment(s,r).value).toBe('yes');s.chart.tanBien!.voidRanges[0].branches=[b[1],s.chart.palaces[(s.chart.palaces.findIndex(p=>p.earthlyBranch===b[1])+1)%12].earthlyBranch];expect(completionAssessment(s,r).value).toBeUndefined();
+});

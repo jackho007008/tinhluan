@@ -1,0 +1,180 @@
+[
+  {
+    "palace": "Tử Nữ",
+    "id": "dong-ty-hoi-separation",
+    "stars": [
+      "Thiên Đồng"
+    ],
+    "branches": [
+      "Tỵ",
+      "Hợi"
+    ],
+    "text": "mô tả con cái về sau thường ly tán và phiêu bạt.",
+    "page": 199,
+    "section": "13.2.3",
+    "mode": "exact",
+    "gender": null,
+    "limit": "Chỉ câu riêng về ly tán/phiêu bạt; không chuyển số con, khả năng nuôi con hoặc lời quy kết phẩm hạnh thành nhận định quan hệ. Không xác nhận có con hoặc hoàn cảnh của người con thực tế.",
+    "excerpt": "",
+    "stateMethod": "none",
+    "customer": "Thiên Đồng đơn thủ tại Tử Nữ ở Tỵ hoặc Hợi mô tả con cái về sau thường ly tán và phiêu bạt. Lời này nói về sự phân tán, xa cách trong hoàn cảnh con cái; không xác định người con nào hay thời điểm xảy ra."
+  },
+  {
+    "palace": "Tử Nữ",
+    "id": "luong-ty-hoi-separation",
+    "stars": [
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Tỵ",
+      "Hợi"
+    ],
+    "text": "mô tả con cái về sau thường ly tán và phiêu bạt.",
+    "page": 202,
+    "section": "13.3.12",
+    "mode": "exact",
+    "gender": null,
+    "limit": "Chỉ câu riêng về ly tán/phiêu bạt; không chuyển số con, khả năng nuôi con hoặc lời quy kết phẩm hạnh thành nhận định quan hệ. Không xác nhận có con hoặc hoàn cảnh của người con thực tế.",
+    "excerpt": "",
+    "stateMethod": "none",
+    "customer": "Thiên Lương đơn thủ tại Tử Nữ ở Tỵ hoặc Hợi mô tả con cái về sau thường ly tán và phiêu bạt. Lời này nói về sự phân tán, xa cách trong hoàn cảnh con cái; không xác định người con nào hay thời điểm xảy ra."
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "dong-luong-early",
+    "stars": [
+      "Thiên Đồng",
+      "Thiên Lương"
+    ],
+    "branches": [],
+    "text": "mô tả sớm lập gia đình; hai người thường có họ với nhau, hoặc hai gia đình đã giao du thân mật từ lâu; vợ chồng đẹp đôi và giàu sang.",
+    "page": 209,
+    "section": "14.3",
+    "mode": "exact",
+    "gender": null,
+    "limit": "“Sớm” là nét mô tả trong đoạn nguồn, không phải điều kiện đã được kiểm bằng tuổi kết hôn. Không đặt mốc tuổi hoặc khẳng định lịch sử hôn nhân; không xuất khuyến nghị chọn thứ bậc trong gia đình.",
+    "excerpt": "",
+    "stateMethod": "none",
+    "customer": "Thiên Đồng–Thiên Lương tại Phu Thê gắn với việc lập gia đình sớm và hoàn cảnh hai người có họ với nhau, hoặc hai gia đình đã quen thân từ lâu. Tổ hợp còn được mô tả là đẹp đôi, giàu sang. “Sớm” ở đây chưa có mốc tuổi cụ thể; đây không phải xác nhận hoàn cảnh kết hôn của bạn."
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "co-high-early",
+    "stars": [
+      "Thiên Cơ"
+    ],
+    "branches": [
+      "Tỵ",
+      "Ngọ",
+      "Mùi"
+    ],
+    "text": "mô tả sớm lập gia đình; hai bên cương cường nhưng chung sống được, đều có tài và khá giả.",
+    "page": 210,
+    "section": "14.6",
+    "mode": "exact",
+    "gender": null,
+    "limit": "“Sớm” là nét mô tả trong đoạn nguồn, không phải điều kiện đã được kiểm bằng tuổi kết hôn. Không đặt mốc tuổi hoặc khẳng định lịch sử hôn nhân; không xuất khuyến nghị chọn thứ bậc trong gia đình.",
+    "excerpt": "",
+    "stateMethod": "none",
+    "customer": "Thiên Cơ đơn thủ tại Phu Thê ở Tỵ, Ngọ hoặc Mùi gắn với việc lập gia đình sớm. Hai bên có nét cương cường nhưng vẫn chung sống được; mô tả cũng có mặt tài năng và hoàn cảnh khá giả. Lời “sớm” chưa quy định mốc tuổi và không xác nhận tình trạng hôn nhân thực tế."
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "co-luong-early",
+    "stars": [
+      "Thiên Cơ",
+      "Thiên Lương"
+    ],
+    "branches": [],
+    "text": "mô tả sớm gặp gỡ, lấy nhau dễ dàng, làm ăn khá giả; thường là người quen trước hoặc có họ hàng xa, hòa hợp lâu bền.",
+    "page": 210,
+    "section": "14.6",
+    "mode": "exact",
+    "gender": null,
+    "limit": "“Sớm” là nét mô tả trong đoạn nguồn, không phải điều kiện đã được kiểm bằng tuổi kết hôn. Không đặt mốc tuổi hoặc khẳng định lịch sử hôn nhân; không xuất khuyến nghị chọn thứ bậc trong gia đình. Không chuyển lời phẩm hạnh/nhan sắc của người phối ngẫu thành sự thật cá nhân.",
+    "excerpt": "",
+    "stateMethod": "none",
+    "customer": "Thiên Cơ–Thiên Lương tại Phu Thê gắn với việc sớm gặp gỡ, lấy nhau dễ dàng và làm ăn khá giả. Người phối ngẫu được mô tả thường là người quen từ trước hoặc có họ hàng xa; lời về cuộc sống chung là hòa hợp lâu bền. “Sớm” chưa có mốc tuổi để áp vào lịch sử của một người cụ thể."
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "co-am-than-early-male",
+    "stars": [
+      "Thiên Cơ",
+      "Thái Âm"
+    ],
+    "branches": [
+      "Thân"
+    ],
+    "text": "mô tả hai bên có tài, khá giả và lấy nhau sớm; người chồng hay nể vợ.",
+    "page": 210,
+    "section": "14.6",
+    "mode": "exact",
+    "gender": "male",
+    "limit": "“Sớm” là nét mô tả trong đoạn nguồn, không phải điều kiện đã được kiểm bằng tuổi kết hôn. Không đặt mốc tuổi hoặc khẳng định lịch sử hôn nhân; không xuất khuyến nghị chọn thứ bậc trong gia đình.",
+    "excerpt": "",
+    "stateMethod": "none",
+    "customer": "Thiên Cơ–Thái Âm đồng cung Phu Thê tại Thân được mô tả qua tài năng, hoàn cảnh khá giả và việc lấy nhau sớm. Với hồ sơ nam, lời riêng còn nêu nét nể vợ. “Sớm” chưa được quy định bằng một độ tuổi; các nét này không xác nhận năng lực hoặc hôn nhân thực tế."
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "co-am-than-early-female",
+    "stars": [
+      "Thiên Cơ",
+      "Thái Âm"
+    ],
+    "branches": [
+      "Thân"
+    ],
+    "text": "mô tả hai bên có tài, khá giả và lấy nhau sớm.",
+    "page": 210,
+    "section": "14.6",
+    "mode": "exact",
+    "gender": "female",
+    "limit": "“Sớm” là nét mô tả trong đoạn nguồn, không phải điều kiện đã được kiểm bằng tuổi kết hôn. Không đặt mốc tuổi hoặc khẳng định lịch sử hôn nhân; không xuất khuyến nghị chọn thứ bậc trong gia đình.",
+    "excerpt": "",
+    "stateMethod": "none",
+    "customer": "Thiên Cơ–Thái Âm đồng cung Phu Thê tại Thân được mô tả qua tài năng, hoàn cảnh khá giả và việc lấy nhau sớm. “Sớm” chưa được quy định bằng một độ tuổi; các nét này không xác nhận năng lực hoặc hôn nhân thực tế."
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "luong-ngo-early",
+    "stars": [
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Ngọ"
+    ],
+    "text": "mô tả vợ chồng lấy nhau sớm và dễ dàng, cả hai đều quý hiển.",
+    "page": 212,
+    "section": "14.12",
+    "mode": "exact",
+    "gender": null,
+    "limit": "“Sớm” là nét mô tả trong đoạn nguồn, không phải điều kiện đã được kiểm bằng tuổi kết hôn. Không đặt mốc tuổi hoặc khẳng định lịch sử hôn nhân; không xuất khuyến nghị chọn thứ bậc trong gia đình. Chỉ Ngọ; không áp Tỵ vì hai dòng cùng trang khác chiều, không tự sửa Tỵ thành Tý.",
+    "excerpt": "",
+    "stateMethod": "none",
+    "customer": "Thiên Lương đơn thủ tại Phu Thê ở Ngọ gắn với việc lấy nhau sớm, dễ dàng và mặt thuận về vị thế của hai người. “Sớm” chưa có mốc tuổi cụ thể, còn lời về vị thế không xác nhận danh chức của người phối ngẫu."
+  },
+  {
+    "palace": "Phu Thê",
+    "id": "sun-low-obstacles",
+    "stars": [
+      "Thái Dương"
+    ],
+    "branches": [
+      "Dậu",
+      "Tuất",
+      "Hợi",
+      "Tý"
+    ],
+    "text": "mô tả việc cưới xin hay trắc trở. Lời tránh những sự chẳng lành trong cùng đoạn gắn với muộn đường hôn phối; chưa xác định điều kiện đó cho hồ sơ.",
+    "page": 210,
+    "section": "14.5",
+    "mode": "exact",
+    "gender": null,
+    "limit": "Giữ lời trắc trở độc lập. Không xuất kết quả tránh chẳng lành vô điều kiện; không có mốc tuổi định nghĩa muộn, không chuyển thành khuyên kết hôn hoặc dự đoán chia ly.",
+    "excerpt": "",
+    "stateMethod": "none",
+    "customer": "Thái Dương đơn thủ tại Phu Thê ở Dậu, Tuất, Hợi hoặc Tý gắn với những trắc trở trong việc cưới hỏi. Trong cùng đoạn, lời tránh những điều chẳng lành chỉ đi với điều kiện muộn đường hôn phối; chưa có mốc tuổi để xác định điều kiện ấy cho hồ sơ này."
+  }
+]

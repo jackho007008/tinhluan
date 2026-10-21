@@ -1,0 +1,30 @@
+{
+  "id": "awaiting-vn-independent-001",
+  "schemaVersion": "1.0.0",
+  "status": "awaiting-source",
+  "birth": {
+    "date": "2000-08-16",
+    "hour": 3,
+    "minute": 0,
+    "unknownTime": false,
+    "place": "Hà Nội",
+    "gender": "female",
+    "calendar": "solar",
+    "profile": "vn-utc7-midnight-v1",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "consent": true
+  },
+  "conventions": {
+    "profile": "vn-utc7-midnight-v1",
+    "school": "Chưa được chuyên gia chọn; profile kỹ thuật iztro default",
+    "timezone": "UTC+7-civil",
+    "dayBoundary": "00:00",
+    "leapMonth": "repeat-month-number"
+  },
+  "source": null,
+  "expected": [],
+  "notes": [
+    "Ngày mẫu công khai chỉ để hướng dẫn nhập. Không có người xác nhận hoặc expected độc lập.",
+    "Thêm expected theo path và confirmedScope sau khi tiếp nhận tài liệu có quyền dùng."
+  ]
+}

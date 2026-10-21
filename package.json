@@ -1,0 +1,56 @@
+{
+  "name": "tuvi",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "node --env-file=.env node_modules/vitest/vitest.mjs run",
+    "test:e2e": "playwright test",
+    "db:migrate": "node --env-file=.env --import tsx scripts/migrate.ts",
+    "worker": "node --env-file=.env --import tsx scripts/worker.ts",
+    "data:purge": "node --env-file=.env --import tsx scripts/data-maintenance.ts purge-expired",
+    "data:delete": "node --env-file=.env --import tsx scripts/data-maintenance.ts delete-order",
+    "reconcile": "node --env-file=.env --import tsx scripts/reconcile.ts",
+    "format": "prettier --write app components lib scripts tests *.ts *.json",
+    "chart:compare": "node --import tsx scripts/compare-chart.ts"
+  },
+  "dependencies": {
+    "astronomy-engine": "2.1.19",
+    "google-auth-library": "10.9.1",
+    "iztro": "2.6.1",
+    "lucide-react": "0.468.0",
+    "next": "15.5.27",
+    "nodemailer": "10.1.2",
+    "pg": "8.16.3",
+    "playwright-core": "1.56.1",
+    "qrcode": "1.5.4",
+    "react": "19.1.4",
+    "react-dom": "19.1.4",
+    "recharts": "2.15.4",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@tailwindcss/postcss": "4.1.14",
+    "@types/lodash": "4.17.20",
+    "@types/node": "22.19.0",
+    "@types/nodemailer": "8.0.2",
+    "@types/pg": "8.15.5",
+    "@types/qrcode": "1.5.5",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.0",
+    "prettier": "3.6.2",
+    "tailwindcss": "4.1.14",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vitest": "4.1.11"
+  },
+  "overrides": {
+    "postcss": "8.5.23",
+    "sharp": "0.35.5"
+  }
+}

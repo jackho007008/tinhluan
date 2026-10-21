@@ -1,0 +1,2482 @@
+{
+  "snapshot": {
+    "normalized": {
+      "date": "1981-01-15",
+      "hour": 1,
+      "minute": 0,
+      "unknownTime": false,
+      "place": "Hà Nội",
+      "gender": "male",
+      "calendar": "solar",
+      "profile": "tanbien-vn-trial-v2",
+      "timezone": "Asia/Ho_Chi_Minh",
+      "consent": true
+    },
+    "profile": {
+      "id": "tanbien-vn-trial-v2",
+      "system": "Tân Biên — bản thử có quy ước bổ sung",
+      "calendar": "Âm dương lịch Việt Nam theo quy ước thiên văn UTC+7; 1976–2050, loại ngày sát ranh giới chưa xác minh",
+      "timezone": "UTC+7 cố định; giờ dân sự Asia/Ho_Chi_Minh. Không hiệu chỉnh lịch sử hoặc giờ mặt trời.",
+      "leapMonth": "Tháng không trung khí đầu tiên sau tháng 11 trong chu kỳ 13 tháng là nhuận; an sao lặp số tháng suốt tháng nhuận (fixLeap=false).",
+      "dayBoundary": "00:00 đổi ngày; 23:00–00:59 là chi Tý nhưng 23:00 không đổi ngày âm",
+      "yearBoundary": "Mùng 1 tháng 1 âm lịch; không đổi năm tại Lập xuân",
+      "age": "Tuổi mụ normal của iztro; khoảng đại vận kỹ thuật, chưa kiểm duyệt chuyên môn",
+      "stars": "tanbien-trial-0.3.0; xem chart.tanBien.trace cho từng công thức và quy ước bổ sung",
+      "validationStatus": "source-formulas-tested; source-conflicts-open; not-expert-reviewed",
+      "sources": [
+        "https://www.xemamlich.uhm.vn/calrules_en.html",
+        "https://github.com/cosinekitty/astronomy",
+        "https://eclipse.gsfc.nasa.gov/phase/phase2001gmt.html",
+        "https://github.com/SylarLong/iztro/tree/v2.6.1"
+      ]
+    },
+    "versions": {
+      "engine": "tanbien-trial-0.3.0",
+      "dependency": "iztro@2.6.1",
+      "dependencies": {
+        "iztro": "2.6.1",
+        "lunar-lite": "0.2.8",
+        "lunar-typescript": "1.8.6",
+        "dayjs": "1.11.23",
+        "astronomy-engine": "2.1.19"
+      },
+      "rules": "facts-0.1.0",
+      "scoring": "unavailable-0.1.0",
+      "narration": "template-0.1.0",
+      "calendar": "vn-astronomical-1.0.0",
+      "bridge": "iztro-vn-bridge-1.0.0",
+      "rulerConvention": "quan-xuan-thinh-year-rulers-1.0.0",
+      "dataContract": "natal-transformations-1.0.0"
+    },
+    "chart": {
+      "solarDate": "1981-01-15",
+      "lunarDate": "1980-12-10",
+      "time": "Giờ sửu",
+      "timeRange": "01:00–02:59",
+      "soul": "Liêm Trinh",
+      "body": "Thiên Lương",
+      "fiveElementsClass": "Hỏa Lục Cục",
+      "earthlyBranchOfSoulPalace": "Tý",
+      "earthlyBranchOfBodyPalace": "Dần",
+      "palaces": [
+        {
+          "index": 0,
+          "name": "Phúc Đức",
+          "isBodyPalace": true,
+          "isOriginalPalace": false,
+          "heavenlyStem": "Mậu",
+          "earthlyBranch": "Dần",
+          "majorStars": [
+            {
+              "name": "Thái Dương",
+              "type": "major",
+              "scope": "origin",
+              "brightness": "Vượng",
+              "mutagen": "Lộc",
+              "originalBrightness": "Vượng",
+              "originalBranch": "Dần"
+            },
+            {
+              "name": "Cự Môn",
+              "type": "major",
+              "scope": "origin",
+              "brightness": "Vượng",
+              "originalBrightness": "Miếu",
+              "originalBranch": "Dần"
+            }
+          ],
+          "minorStars": [
+            {
+              "name": "Thiên Việt",
+              "type": "soft",
+              "scope": "origin",
+              "originalBrightness": "",
+              "originalBranch": "Mùi"
+            },
+            {
+              "name": "Thiên Mã",
+              "type": "tianma",
+              "scope": "origin",
+              "brightness": "Đắc",
+              "originalBrightness": "",
+              "originalBranch": "Dần"
+            }
+          ],
+          "adjectiveStars": [
+            {
+              "name": "Thiên Nguyệt",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Dần"
+            },
+            {
+              "name": "Niên Giải",
+              "type": "helper",
+              "scope": "origin",
+              "originalBranch": "Dần"
+            },
+            {
+              "name": "Phụng Các",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Dần"
+            },
+            {
+              "name": "Thiên Hư",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Dần"
+            },
+            {
+              "name": "Bát Tọa",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Dần"
+            },
+            {
+              "name": "Giải Thần",
+              "type": "helper",
+              "scope": "origin",
+              "originalBranch": "Ngọ"
+            },
+            {
+              "name": "Thiên Trù",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Dần"
+            }
+          ],
+          "changsheng12": "Tràng Sinh",
+          "boshi12": "Phi Liêm",
+          "jiangqian12": "Tuế Dịch",
+          "suiqian12": "Tuế Phá",
+          "decadal": {
+            "range": [
+              26,
+              35
+            ],
+            "heavenlyStem": "Mậu",
+            "earthlyBranch": "Dần"
+          },
+          "ages": [
+            5,
+            17,
+            29,
+            41,
+            53,
+            65,
+            77,
+            89,
+            101,
+            113
+          ]
+        },
+        {
+          "index": 1,
+          "name": "Điền Trạch",
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "heavenlyStem": "Kỷ",
+          "earthlyBranch": "Mão",
+          "majorStars": [
+            {
+              "name": "Thiên Tướng",
+              "type": "major",
+              "scope": "origin",
+              "brightness": "Hãm",
+              "originalBrightness": "Hạn",
+              "originalBranch": "Mão"
+            }
+          ],
+          "minorStars": [
+            {
+              "name": "Hỏa Tinh",
+              "type": "tough",
+              "scope": "origin",
+              "brightness": "Đắc",
+              "originalBrightness": "Lợi",
+              "originalBranch": "Mão"
+            },
+            {
+              "name": "Tả Phù",
+              "type": "soft",
+              "scope": "origin",
+              "originalBrightness": "",
+              "originalBranch": "Mão"
+            }
+          ],
+          "adjectiveStars": [
+            {
+              "name": "Phong Cáo",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Mão"
+            }
+          ],
+          "changsheng12": "Mộc Dục",
+          "boshi12": "Hỷ Thần",
+          "jiangqian12": "Tức Thần",
+          "suiqian12": "Long Đức",
+          "decadal": {
+            "range": [
+              36,
+              45
+            ],
+            "heavenlyStem": "Kỷ",
+            "earthlyBranch": "Mão"
+          },
+          "ages": [
+            6,
+            18,
+            30,
+            42,
+            54,
+            66,
+            78,
+            90,
+            102,
+            114
+          ]
+        },
+        {
+          "index": 2,
+          "name": "Quan Lộc",
+          "isBodyPalace": false,
+          "isOriginalPalace": true,
+          "heavenlyStem": "Canh",
+          "earthlyBranch": "Thìn",
+          "majorStars": [
+            {
+              "name": "Thiên Cơ",
+              "type": "major",
+              "scope": "origin",
+              "brightness": "Miếu",
+              "originalBrightness": "Lợi",
+              "originalBranch": "Thìn"
+            },
+            {
+              "name": "Thiên Lương",
+              "type": "major",
+              "scope": "origin",
+              "brightness": "Miếu",
+              "originalBrightness": "Miếu",
+              "originalBranch": "Thìn"
+            }
+          ],
+          "minorStars": [],
+          "adjectiveStars": [
+            {
+              "name": "Phi Liêm",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Thìn"
+            },
+            {
+              "name": "Âm Sát",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Thìn"
+            },
+            {
+              "name": "Quốc Ấn",
+              "scope": "origin"
+            },
+            {
+              "name": "Thiên La",
+              "scope": "origin"
+            },
+            {
+              "name": "Hoa Cái",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Thìn"
+            }
+          ],
+          "changsheng12": "Quan Đới",
+          "boshi12": "Bệnh Phù",
+          "jiangqian12": "Hoa Cái",
+          "suiqian12": "Bạch Hổ",
+          "decadal": {
+            "range": [
+              46,
+              55
+            ],
+            "heavenlyStem": "Canh",
+            "earthlyBranch": "Thìn"
+          },
+          "ages": [
+            7,
+            19,
+            31,
+            43,
+            55,
+            67,
+            79,
+            91,
+            103,
+            115
+          ]
+        },
+        {
+          "index": 3,
+          "name": "Nô Bộc",
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "heavenlyStem": "Tân",
+          "earthlyBranch": "Tỵ",
+          "majorStars": [
+            {
+              "name": "Tử Vi",
+              "type": "major",
+              "scope": "origin",
+              "brightness": "Miếu",
+              "originalBrightness": "Vượng",
+              "originalBranch": "Tỵ"
+            },
+            {
+              "name": "Thất Sát",
+              "type": "major",
+              "scope": "origin",
+              "brightness": "Vượng",
+              "originalBrightness": "Bình",
+              "originalBranch": "Tỵ"
+            }
+          ],
+          "minorStars": [
+            {
+              "name": "Văn Khúc",
+              "type": "soft",
+              "scope": "origin",
+              "brightness": "Đắc",
+              "originalBrightness": "Miếu",
+              "originalBranch": "Tỵ"
+            }
+          ],
+          "adjectiveStars": [
+            {
+              "name": "Ân Quang",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Tỵ"
+            },
+            {
+              "name": "Thiên Đức",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Tỵ"
+            },
+            {
+              "name": "Thiên Thương",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Tỵ"
+            },
+            {
+              "name": "Kiếp Sát",
+              "scope": "origin"
+            }
+          ],
+          "changsheng12": "Lâm Quan",
+          "boshi12": "Đại Hao",
+          "jiangqian12": "Kiếp Sát",
+          "suiqian12": "Phúc Đức",
+          "decadal": {
+            "range": [
+              56,
+              65
+            ],
+            "heavenlyStem": "Tân",
+            "earthlyBranch": "Tỵ"
+          },
+          "ages": [
+            8,
+            20,
+            32,
+            44,
+            56,
+            68,
+            80,
+            92,
+            104,
+            116
+          ]
+        },
+        {
+          "index": 4,
+          "name": "Thiên Di",
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "heavenlyStem": "Nhâm",
+          "earthlyBranch": "Ngọ",
+          "majorStars": [],
+          "minorStars": [
+            {
+              "name": "Thiên Khôi",
+              "type": "soft",
+              "scope": "origin",
+              "originalBrightness": "",
+              "originalBranch": "Sửu"
+            }
+          ],
+          "adjectiveStars": [
+            {
+              "name": "Địa Giải",
+              "scope": "origin"
+            },
+            {
+              "name": "Thiên Phúc",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Ngọ"
+            },
+            {
+              "name": "Triệt Lộ",
+              "scope": "origin",
+              "originalBranch": "Ngọ"
+            }
+          ],
+          "changsheng12": "Đế Vượng",
+          "boshi12": "Phục Binh",
+          "jiangqian12": "Tai Sát",
+          "suiqian12": "Điếu Khách",
+          "decadal": {
+            "range": [
+              66,
+              75
+            ],
+            "heavenlyStem": "Nhâm",
+            "earthlyBranch": "Ngọ"
+          },
+          "ages": [
+            9,
+            21,
+            33,
+            45,
+            57,
+            69,
+            81,
+            93,
+            105,
+            117
+          ]
+        },
+        {
+          "index": 5,
+          "name": "Tật Ách",
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "heavenlyStem": "Quý",
+          "earthlyBranch": "Mùi",
+          "majorStars": [],
+          "minorStars": [
+            {
+              "name": "Đà La",
+              "type": "tough",
+              "scope": "origin",
+              "brightness": "Đắc",
+              "originalBrightness": "Miếu",
+              "originalBranch": "Mùi"
+            },
+            {
+              "name": "Hồng Loan",
+              "type": "flower",
+              "scope": "origin",
+              "originalBranch": "Mùi"
+            }
+          ],
+          "adjectiveStars": [
+            {
+              "name": "Không Vong",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Mùi"
+            },
+            {
+              "name": "Thiên Giải",
+              "scope": "origin"
+            },
+            {
+              "name": "Đài Phụ",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Mùi"
+            },
+            {
+              "name": "Thiên Sứ",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Mùi"
+            },
+            {
+              "name": "Quả Tú",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Mùi"
+            },
+            {
+              "name": "Triệt Lộ",
+              "scope": "origin",
+              "originalBranch": "Ngọ"
+            }
+          ],
+          "changsheng12": "Suy",
+          "boshi12": "Quan Phù",
+          "jiangqian12": "Thiên Sát",
+          "suiqian12": "Trực Phù",
+          "decadal": {
+            "range": [
+              76,
+              85
+            ],
+            "heavenlyStem": "Quý",
+            "earthlyBranch": "Mùi"
+          },
+          "ages": [
+            10,
+            22,
+            34,
+            46,
+            58,
+            70,
+            82,
+            94,
+            106,
+            118
+          ]
+        },
+        {
+          "index": 6,
+          "name": "Tài Bạch",
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "heavenlyStem": "Giáp",
+          "earthlyBranch": "Thân",
+          "majorStars": [],
+          "minorStars": [
+            {
+              "name": "Lộc Tồn",
+              "type": "lucun",
+              "scope": "origin",
+              "originalBrightness": "",
+              "originalBranch": "Thân"
+            }
+          ],
+          "adjectiveStars": [
+            {
+              "name": "Thiên Hình",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Thân",
+              "brightness": "Đắc"
+            },
+            {
+              "name": "Thiên Tài",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Thân"
+            },
+            {
+              "name": "Lưu Hà",
+              "scope": "origin"
+            }
+          ],
+          "changsheng12": "Bệnh",
+          "boshi12": "Bác Sỹ",
+          "jiangqian12": "Chỉ Bối",
+          "suiqian12": "Thái Tuế",
+          "decadal": {
+            "range": [
+              86,
+              95
+            ],
+            "heavenlyStem": "Giáp",
+            "earthlyBranch": "Thân"
+          },
+          "ages": [
+            11,
+            23,
+            35,
+            47,
+            59,
+            71,
+            83,
+            95,
+            107,
+            119
+          ]
+        },
+        {
+          "index": 7,
+          "name": "Tử Nữ",
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "heavenlyStem": "Ất",
+          "earthlyBranch": "Dậu",
+          "majorStars": [
+            {
+              "name": "Liêm Trinh",
+              "type": "major",
+              "scope": "origin",
+              "brightness": "Hãm",
+              "originalBrightness": "Bình",
+              "originalBranch": "Dậu"
+            },
+            {
+              "name": "Phá Quân",
+              "type": "major",
+              "scope": "origin",
+              "brightness": "Hãm",
+              "originalBrightness": "Hạn",
+              "originalBranch": "Dậu"
+            }
+          ],
+          "minorStars": [
+            {
+              "name": "Kình Dương",
+              "type": "tough",
+              "scope": "origin",
+              "originalBrightness": "Hạn",
+              "originalBranch": "Dậu"
+            },
+            {
+              "name": "Linh Tinh",
+              "type": "tough",
+              "scope": "origin",
+              "originalBrightness": "Lợi",
+              "originalBranch": "Hợi"
+            },
+            {
+              "name": "Văn Xương",
+              "type": "soft",
+              "scope": "origin",
+              "originalBrightness": "Miếu",
+              "originalBranch": "Dậu"
+            },
+            {
+              "name": "Đào Hoa",
+              "scope": "origin"
+            }
+          ],
+          "adjectiveStars": [
+            {
+              "name": "Hàm Trì",
+              "type": "flower",
+              "scope": "origin",
+              "originalBranch": "Dậu"
+            },
+            {
+              "name": "Thiên Quý",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Sửu"
+            },
+            {
+              "name": "Thiên Không",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Dậu"
+            },
+            {
+              "name": "Phá Toái",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Dậu"
+            }
+          ],
+          "changsheng12": "Tử",
+          "boshi12": "Lực Sỹ",
+          "jiangqian12": "Hàm Trì",
+          "suiqian12": "Thiếu Dương",
+          "decadal": {
+            "range": [
+              96,
+              105
+            ],
+            "heavenlyStem": "Ất",
+            "earthlyBranch": "Dậu"
+          },
+          "ages": [
+            12,
+            24,
+            36,
+            48,
+            60,
+            72,
+            84,
+            96,
+            108,
+            120
+          ]
+        },
+        {
+          "index": 8,
+          "name": "Phu Thê",
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "heavenlyStem": "Bính",
+          "earthlyBranch": "Tuất",
+          "majorStars": [],
+          "minorStars": [
+            {
+              "name": "Địa Không",
+              "type": "tough",
+              "scope": "origin",
+              "originalBrightness": "",
+              "originalBranch": "Tuất"
+            }
+          ],
+          "adjectiveStars": [
+            {
+              "name": "Thiên Khốc",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Tuất"
+            },
+            {
+              "name": "Thiên Thọ",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Tuất"
+            },
+            {
+              "name": "Địa Võng",
+              "scope": "origin"
+            },
+            {
+              "name": "Đẩu Quân",
+              "scope": "origin"
+            }
+          ],
+          "changsheng12": "Mộ",
+          "boshi12": "Thanh Long",
+          "jiangqian12": "Nguyệt Sát",
+          "suiqian12": "Tang Môn",
+          "decadal": {
+            "range": [
+              106,
+              115
+            ],
+            "heavenlyStem": "Bính",
+            "earthlyBranch": "Tuất"
+          },
+          "ages": [
+            1,
+            13,
+            25,
+            37,
+            49,
+            61,
+            73,
+            85,
+            97,
+            109
+          ]
+        },
+        {
+          "index": 9,
+          "name": "Huynh Đệ",
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "heavenlyStem": "Đinh",
+          "earthlyBranch": "Hợi",
+          "majorStars": [
+            {
+              "name": "Thiên Phủ",
+              "type": "major",
+              "scope": "origin",
+              "brightness": "Đắc",
+              "originalBrightness": "Đắc",
+              "originalBranch": "Hợi"
+            }
+          ],
+          "minorStars": [
+            {
+              "name": "Hữu Bật",
+              "type": "soft",
+              "scope": "origin",
+              "originalBrightness": "",
+              "originalBranch": "Hợi"
+            }
+          ],
+          "adjectiveStars": [
+            {
+              "name": "Thiên Vu",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Hợi"
+            },
+            {
+              "name": "Thiên Quan",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Hợi"
+            },
+            {
+              "name": "Cô Thần",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Hợi"
+            },
+            {
+              "name": "Văn Tinh",
+              "scope": "origin"
+            }
+          ],
+          "changsheng12": "Tuyệt",
+          "boshi12": "Tiểu Hao",
+          "jiangqian12": "Vong Thần",
+          "suiqian12": "Thiếu Âm",
+          "decadal": {
+            "range": [
+              116,
+              125
+            ],
+            "heavenlyStem": "Đinh",
+            "earthlyBranch": "Hợi"
+          },
+          "ages": [
+            2,
+            14,
+            26,
+            38,
+            50,
+            62,
+            74,
+            86,
+            98,
+            110
+          ]
+        },
+        {
+          "index": 10,
+          "name": "Mệnh",
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "heavenlyStem": "Mậu",
+          "earthlyBranch": "Tý",
+          "majorStars": [
+            {
+              "name": "Thiên Đồng",
+              "type": "major",
+              "scope": "origin",
+              "brightness": "Vượng",
+              "mutagen": "Kỵ",
+              "originalBrightness": "Vượng",
+              "originalBranch": "Tý"
+            },
+            {
+              "name": "Thái Âm",
+              "type": "major",
+              "scope": "origin",
+              "brightness": "Vượng",
+              "mutagen": "Khoa",
+              "originalBrightness": "Miếu",
+              "originalBranch": "Tý"
+            }
+          ],
+          "minorStars": [
+            {
+              "name": "Địa Kiếp",
+              "type": "tough",
+              "scope": "origin",
+              "originalBrightness": "",
+              "originalBranch": "Tý"
+            }
+          ],
+          "adjectiveStars": [
+            {
+              "name": "Long Trì",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Tý"
+            },
+            {
+              "name": "Tam Thai",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Tý"
+            },
+            {
+              "name": "Thiên Diêu",
+              "type": "flower",
+              "scope": "origin",
+              "originalBranch": "Tý"
+            },
+            {
+              "name": "Thiên Y",
+              "scope": "origin"
+            },
+            {
+              "name": "Tuần Không",
+              "scope": "origin",
+              "originalBranch": "Tý"
+            }
+          ],
+          "changsheng12": "Thai",
+          "boshi12": "Tướng Quân",
+          "jiangqian12": "Tướng Tinh",
+          "suiqian12": "Quan Phù",
+          "decadal": {
+            "range": [
+              6,
+              15
+            ],
+            "heavenlyStem": "Mậu",
+            "earthlyBranch": "Tý"
+          },
+          "ages": [
+            3,
+            15,
+            27,
+            39,
+            51,
+            63,
+            75,
+            87,
+            99,
+            111
+          ]
+        },
+        {
+          "index": 11,
+          "name": "Phụ Mẫu",
+          "isBodyPalace": false,
+          "isOriginalPalace": false,
+          "heavenlyStem": "Kỷ",
+          "earthlyBranch": "Sửu",
+          "majorStars": [
+            {
+              "name": "Vũ Khúc",
+              "type": "major",
+              "scope": "origin",
+              "brightness": "Miếu",
+              "mutagen": "Quyền",
+              "originalBrightness": "Miếu",
+              "originalBranch": "Sửu"
+            },
+            {
+              "name": "Tham Lang",
+              "type": "major",
+              "scope": "origin",
+              "brightness": "Miếu",
+              "originalBrightness": "Miếu",
+              "originalBranch": "Sửu"
+            }
+          ],
+          "minorStars": [
+            {
+              "name": "Thiên Hỷ",
+              "type": "flower",
+              "scope": "origin",
+              "originalBranch": "Sửu"
+            }
+          ],
+          "adjectiveStars": [
+            {
+              "name": "Nguyệt Đức",
+              "type": "adjective",
+              "scope": "origin",
+              "originalBranch": "Sửu"
+            },
+            {
+              "name": "Đường Phù",
+              "scope": "origin"
+            },
+            {
+              "name": "Tuần Không",
+              "scope": "origin",
+              "originalBranch": "Tý"
+            }
+          ],
+          "changsheng12": "Dưỡng",
+          "boshi12": "Tấu Thư",
+          "jiangqian12": "Phan Án",
+          "suiqian12": "Tử Phù",
+          "decadal": {
+            "range": [
+              16,
+              25
+            ],
+            "heavenlyStem": "Kỷ",
+            "earthlyBranch": "Sửu"
+          },
+          "ages": [
+            4,
+            16,
+            28,
+            40,
+            52,
+            64,
+            76,
+            88,
+            100,
+            112
+          ]
+        }
+      ],
+      "lunar": {
+        "lunarYear": 1980,
+        "lunarMonth": 12,
+        "lunarDay": 10,
+        "isLeap": false
+      },
+      "calendarEvidence": {
+        "lunarYear": 1980,
+        "lunarMonth": 12,
+        "lunarDay": 10,
+        "isLeap": false,
+        "monthLength": 30,
+        "monthStart": "1981-01-06",
+        "nextMonthStart": "1981-02-05",
+        "newMoonUtc": "1981-01-06T07:24:41.244Z",
+        "nextNewMoonUtc": "1981-02-04T22:14:24.652Z",
+        "principalTerms": [
+          "1981-01-20T03:36:03.703Z"
+        ],
+        "boundaryRisks": [],
+        "provider": "astronomy-engine@2.1.19",
+        "calendarVersion": "vn-astronomical-1.0.0",
+        "bridgeCalls": {
+          "getHeavenlyStemAndEarthlyBranchBySolarDate": 17,
+          "solar2lunar": 11,
+          "getTotalDaysOfLunarMonth": 1,
+          "getSignExcluded": 1,
+          "getZodiac": 1
+        },
+        "cnCalendarAccess": "blocked",
+        "timeIndex": 1,
+        "dayBoundary": "00:00",
+        "leapStarMonth": "repeat-month-number"
+      },
+      "tanBien": {
+        "version": "tanbien-trial-0.3.0",
+        "sourceEdition": "Tác phẩm Sài Gòn1956; ebook đánh máy 2014 (PDF277trang), người đánh máy không rõ; chưa đối chiếu bản in1956",
+        "status": "experimental-partial",
+        "review": null,
+        "inputs": {
+          "lunar": {
+            "lunarYear": 1980,
+            "lunarMonth": 12,
+            "lunarDay": 10,
+            "isLeap": false
+          },
+          "yearStem": "Canh",
+          "yearBranch": "Thân",
+          "polarity": "Dương",
+          "gender": "male",
+          "hourIndex": 1
+        },
+        "trace": [
+          {
+            "id": "life-body",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 6–7, §5–6",
+            "status": "source-formula",
+            "input": {
+              "month": 12,
+              "hourIndex": 1
+            },
+            "result": {
+              "life": "Tý",
+              "body": "Dần"
+            },
+            "note": "Thứ tự 12 cung kế thừa iztro; văn trang 6 bỏ Phụ Mẫu, ví dụ đại hạn trang20 có Phụ Mẫu."
+          },
+          {
+            "id": "cuc",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 7, §7",
+            "status": "source-formula",
+            "input": {
+              "yearStem": "Canh",
+              "life": "Tý"
+            },
+            "result": 6
+          },
+          {
+            "id": "star.Tử Vi",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 7–8, §8.1",
+            "status": "source-formula",
+            "input": {
+              "cuc": 6,
+              "day": 10,
+              "ziwei": "Tỵ"
+            },
+            "result": "Tỵ"
+          },
+          {
+            "id": "star.Liêm Trinh",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 7–8, §8.1",
+            "status": "source-formula",
+            "input": {
+              "cuc": 6,
+              "day": 10,
+              "ziwei": "Tỵ"
+            },
+            "result": "Dậu"
+          },
+          {
+            "id": "star.Thiên Đồng",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 7–8, §8.1",
+            "status": "source-formula",
+            "input": {
+              "cuc": 6,
+              "day": 10,
+              "ziwei": "Tỵ"
+            },
+            "result": "Tý"
+          },
+          {
+            "id": "star.Vũ Khúc",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 7–8, §8.1",
+            "status": "source-formula",
+            "input": {
+              "cuc": 6,
+              "day": 10,
+              "ziwei": "Tỵ"
+            },
+            "result": "Sửu"
+          },
+          {
+            "id": "star.Thái Dương",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 7–8, §8.1",
+            "status": "source-formula",
+            "input": {
+              "cuc": 6,
+              "day": 10,
+              "ziwei": "Tỵ"
+            },
+            "result": "Dần"
+          },
+          {
+            "id": "star.Thiên Cơ",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 7–8, §8.1",
+            "status": "source-formula",
+            "input": {
+              "cuc": 6,
+              "day": 10,
+              "ziwei": "Tỵ"
+            },
+            "result": "Thìn"
+          },
+          {
+            "id": "star.Thiên Phủ",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 9, §8.2",
+            "status": "source-formula",
+            "input": {
+              "ziwei": "Tỵ",
+              "phu": "Hợi"
+            },
+            "result": "Hợi"
+          },
+          {
+            "id": "star.Thái Âm",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 9, §8.2",
+            "status": "source-formula",
+            "input": {
+              "ziwei": "Tỵ",
+              "phu": "Hợi"
+            },
+            "result": "Tý"
+          },
+          {
+            "id": "star.Tham Lang",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 9, §8.2",
+            "status": "source-formula",
+            "input": {
+              "ziwei": "Tỵ",
+              "phu": "Hợi"
+            },
+            "result": "Sửu"
+          },
+          {
+            "id": "star.Cự Môn",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 9, §8.2",
+            "status": "source-formula",
+            "input": {
+              "ziwei": "Tỵ",
+              "phu": "Hợi"
+            },
+            "result": "Dần"
+          },
+          {
+            "id": "star.Thiên Tướng",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 9, §8.2",
+            "status": "source-formula",
+            "input": {
+              "ziwei": "Tỵ",
+              "phu": "Hợi"
+            },
+            "result": "Mão"
+          },
+          {
+            "id": "star.Thiên Lương",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 9, §8.2",
+            "status": "source-formula",
+            "input": {
+              "ziwei": "Tỵ",
+              "phu": "Hợi"
+            },
+            "result": "Thìn"
+          },
+          {
+            "id": "star.Thất Sát",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 9, §8.2",
+            "status": "source-formula",
+            "input": {
+              "ziwei": "Tỵ",
+              "phu": "Hợi"
+            },
+            "result": "Tỵ"
+          },
+          {
+            "id": "star.Phá Quân",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 9, §8.2",
+            "status": "source-formula",
+            "input": {
+              "ziwei": "Tỵ",
+              "phu": "Hợi"
+            },
+            "result": "Dậu"
+          },
+          {
+            "id": "star.Lộc Tồn",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 9, §8.4",
+            "status": "source-formula",
+            "input": {
+              "yearStem": "Canh"
+            },
+            "result": "Thân"
+          },
+          {
+            "id": "star.Kình Dương",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 10, §8.6.1",
+            "status": "source-formula",
+            "input": {
+              "loc": "Thân"
+            },
+            "result": "Dậu"
+          },
+          {
+            "id": "star.Đà La",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 10, §8.6.1",
+            "status": "source-formula",
+            "input": {
+              "loc": "Thân"
+            },
+            "result": "Mùi"
+          },
+          {
+            "id": "star.Địa Kiếp",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 10, §8.6.2",
+            "status": "source-formula",
+            "input": {
+              "hourIndex": 1
+            },
+            "result": "Tý"
+          },
+          {
+            "id": "star.Địa Không",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 10, §8.6.2",
+            "status": "source-formula",
+            "input": {
+              "hourIndex": 1
+            },
+            "result": "Tuất"
+          },
+          {
+            "id": "star.Hỏa Tinh",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 10–11, §8.6.3",
+            "status": "source-formula",
+            "input": {
+              "yearBranch": "Thân",
+              "gender": "male",
+              "hourIndex": 1,
+              "direction": 1,
+              "walk": [
+                {
+                  "hour": "Tý",
+                  "branch": "Dần"
+                },
+                {
+                  "hour": "Sửu",
+                  "branch": "Mão"
+                }
+              ]
+            },
+            "result": "Mão"
+          },
+          {
+            "id": "star.Linh Tinh",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 10–11, §8.6.3",
+            "status": "source-formula",
+            "input": {
+              "yearBranch": "Thân",
+              "gender": "male",
+              "hourIndex": 1,
+              "direction": -1,
+              "walk": [
+                {
+                  "hour": "Tý",
+                  "branch": "Tuất"
+                },
+                {
+                  "hour": "Sửu",
+                  "branch": "Dậu"
+                }
+              ]
+            },
+            "result": "Dậu"
+          },
+          {
+            "id": "star.Tả Phù",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 11, §8.7",
+            "status": "source-formula",
+            "input": {
+              "month": 12
+            },
+            "result": "Mão"
+          },
+          {
+            "id": "star.Hữu Bật",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 11, §8.7",
+            "status": "source-formula",
+            "input": {
+              "month": 12
+            },
+            "result": "Hợi"
+          },
+          {
+            "id": "star.Văn Xương",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 11, §8.8",
+            "status": "source-formula",
+            "input": {
+              "hourIndex": 1
+            },
+            "result": "Dậu"
+          },
+          {
+            "id": "star.Văn Khúc",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 11, §8.8",
+            "status": "source-formula",
+            "input": {
+              "hourIndex": 1
+            },
+            "result": "Tỵ"
+          },
+          {
+            "id": "star.Long Trì",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 11, §8.9",
+            "status": "source-formula",
+            "input": {
+              "yearBranch": "Thân"
+            },
+            "result": "Tý"
+          },
+          {
+            "id": "star.Phụng Các",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 11, §8.9",
+            "status": "source-formula",
+            "input": {
+              "yearBranch": "Thân"
+            },
+            "result": "Dần"
+          },
+          {
+            "id": "star.Thiên Khôi",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 11, §8.10",
+            "status": "source-formula",
+            "input": {
+              "yearStem": "Canh"
+            },
+            "result": "Ngọ"
+          },
+          {
+            "id": "star.Thiên Việt",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 11, §8.10",
+            "status": "source-formula",
+            "input": {
+              "yearStem": "Canh"
+            },
+            "result": "Dần"
+          },
+          {
+            "id": "star.Thiên Khốc",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 11–12, §8.11",
+            "status": "source-formula",
+            "input": {
+              "yearBranch": "Thân"
+            },
+            "result": "Tuất"
+          },
+          {
+            "id": "star.Thiên Hư",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12, §8.11",
+            "status": "source-formula",
+            "input": {
+              "yearBranch": "Thân"
+            },
+            "result": "Dần"
+          },
+          {
+            "id": "star.Tam Thai",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12, §8.12",
+            "status": "source-formula",
+            "input": {
+              "ta": "Mão",
+              "day": 10
+            },
+            "result": "Tý"
+          },
+          {
+            "id": "star.Bát Tọa",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12, §8.12",
+            "status": "source-formula",
+            "input": {
+              "huu": "Hợi",
+              "day": 10
+            },
+            "result": "Dần"
+          },
+          {
+            "id": "star.Ân Quang",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12, §8.13",
+            "status": "source-formula",
+            "input": {
+              "xuong": "Dậu",
+              "day": 10
+            },
+            "result": "Tỵ"
+          },
+          {
+            "id": "star.Thiên Quý",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12,272–275, §8.13/phụ lục",
+            "status": "source-formula",
+            "input": {
+              "khuc": "Tỵ",
+              "day": 10,
+              "steps": 9,
+              "finalStep": "quay lại một cung sau đếm nghịch"
+            },
+            "result": "Dậu",
+            "note": "Đọc ô cố định theo trang5, không dùng chữ chi lưu niên trong sơ đồ: bốn ví dụ cho Dậu/Mão/Dần/Dần. Đính chính hồ sơ đối chiếu cũ; chưa phê duyệt chuyên môn."
+          },
+          {
+            "id": "star.Thiên Đức",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12, §8.14",
+            "status": "source-formula",
+            "input": {
+              "month": 12,
+              "yearBranch": "Thân"
+            },
+            "result": "Tỵ"
+          },
+          {
+            "id": "star.Nguyệt Đức",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12, §8.14",
+            "status": "source-formula",
+            "input": {
+              "month": 12,
+              "yearBranch": "Thân"
+            },
+            "result": "Sửu"
+          },
+          {
+            "id": "star.Thiên Hình",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12, §8.15",
+            "status": "source-formula",
+            "input": {
+              "month": 12,
+              "yearBranch": "Thân"
+            },
+            "result": "Thân"
+          },
+          {
+            "id": "star.Thiên Diêu",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12, §8.15",
+            "status": "source-formula",
+            "input": {
+              "month": 12,
+              "yearBranch": "Thân"
+            },
+            "result": "Tý"
+          },
+          {
+            "id": "star.Thiên Y",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12, §8.15",
+            "status": "source-formula",
+            "input": {
+              "month": 12,
+              "yearBranch": "Thân"
+            },
+            "result": "Tý"
+          },
+          {
+            "id": "star.Quốc Ấn",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12–13, §8.17",
+            "status": "source-formula",
+            "input": {
+              "loc": "Thân",
+              "month": 12,
+              "hourIndex": 1,
+              "yearBranch": "Thân",
+              "life": "Tý",
+              "body": "Dần"
+            },
+            "result": "Thìn"
+          },
+          {
+            "id": "star.Đường Phù",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12–13, §8.17",
+            "status": "source-formula",
+            "input": {
+              "loc": "Thân",
+              "month": 12,
+              "hourIndex": 1,
+              "yearBranch": "Thân",
+              "life": "Tý",
+              "body": "Dần"
+            },
+            "result": "Sửu"
+          },
+          {
+            "id": "star.Thiên Giải",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12–13, §8.18",
+            "status": "source-formula",
+            "input": {
+              "loc": "Thân",
+              "month": 12,
+              "hourIndex": 1,
+              "yearBranch": "Thân",
+              "life": "Tý",
+              "body": "Dần"
+            },
+            "result": "Mùi"
+          },
+          {
+            "id": "star.Địa Giải",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12–13, §8.18",
+            "status": "source-formula",
+            "input": {
+              "loc": "Thân",
+              "month": 12,
+              "hourIndex": 1,
+              "yearBranch": "Thân",
+              "life": "Tý",
+              "body": "Dần"
+            },
+            "result": "Ngọ"
+          },
+          {
+            "id": "star.Giải Thần",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12–13, §8.18",
+            "status": "source-formula",
+            "input": {
+              "loc": "Thân",
+              "month": 12,
+              "hourIndex": 1,
+              "yearBranch": "Thân",
+              "life": "Tý",
+              "body": "Dần"
+            },
+            "result": "Dần"
+          },
+          {
+            "id": "star.Đài Phụ",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12–13, §8.19",
+            "status": "source-formula",
+            "input": {
+              "loc": "Thân",
+              "month": 12,
+              "hourIndex": 1,
+              "yearBranch": "Thân",
+              "life": "Tý",
+              "body": "Dần"
+            },
+            "result": "Mùi"
+          },
+          {
+            "id": "star.Phong Cáo",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12–13, §8.19",
+            "status": "source-formula",
+            "input": {
+              "loc": "Thân",
+              "month": 12,
+              "hourIndex": 1,
+              "yearBranch": "Thân",
+              "life": "Tý",
+              "body": "Dần"
+            },
+            "result": "Mão"
+          },
+          {
+            "id": "star.Thiên Tài",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12–13, §8.20",
+            "status": "source-formula",
+            "input": {
+              "loc": "Thân",
+              "month": 12,
+              "hourIndex": 1,
+              "yearBranch": "Thân",
+              "life": "Tý",
+              "body": "Dần"
+            },
+            "result": "Thân"
+          },
+          {
+            "id": "star.Thiên Thọ",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12–13, §8.20",
+            "status": "source-formula",
+            "input": {
+              "loc": "Thân",
+              "month": 12,
+              "hourIndex": 1,
+              "yearBranch": "Thân",
+              "life": "Tý",
+              "body": "Dần"
+            },
+            "result": "Tuất"
+          },
+          {
+            "id": "star.Hồng Loan",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12, §8.16",
+            "status": "supplement",
+            "input": {
+              "yearBranch": "Thân"
+            },
+            "result": "Mùi",
+            "note": "Điểm khởi năm Tý tại Mão kế thừa iztro; câu sách ghi năm sinh hai lần, chưa coi đã xác minh."
+          },
+          {
+            "id": "star.Thiên Hỷ",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 12, §8.16",
+            "status": "supplement",
+            "input": {
+              "yearBranch": "Thân"
+            },
+            "result": "Sửu"
+          },
+          {
+            "id": "star.Thiên Thương",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 13, §8.21",
+            "status": "source-formula",
+            "input": {
+              "palace": "Nô Bộc"
+            },
+            "result": "Tỵ"
+          },
+          {
+            "id": "star.Thiên Sứ",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 13, §8.21",
+            "status": "source-formula",
+            "input": {
+              "palace": "Tật Ách"
+            },
+            "result": "Mùi"
+          },
+          {
+            "id": "star.Thiên La",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 13, §8.22",
+            "status": "source-formula",
+            "input": {},
+            "result": "Thìn"
+          },
+          {
+            "id": "star.Địa Võng",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 13, §8.22",
+            "status": "source-formula",
+            "input": {},
+            "result": "Tuất"
+          },
+          {
+            "id": "star.Thiên Quan",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 14, §8.24",
+            "status": "source-formula",
+            "input": {
+              "yearStem": "Canh"
+            },
+            "result": "Hợi"
+          },
+          {
+            "id": "star.Thiên Phúc",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 14, §8.24",
+            "status": "source-formula",
+            "input": {
+              "yearStem": "Canh"
+            },
+            "result": "Ngọ"
+          },
+          {
+            "id": "star.Cô Thần",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 14, §8.25",
+            "status": "source-formula",
+            "input": {
+              "yearBranch": "Thân"
+            },
+            "result": "Hợi"
+          },
+          {
+            "id": "star.Quả Tú",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 14, §8.25",
+            "status": "source-formula",
+            "input": {
+              "yearBranch": "Thân"
+            },
+            "result": "Mùi"
+          },
+          {
+            "id": "star.Đào Hoa",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 14–15, §8.26",
+            "status": "source-formula",
+            "input": {
+              "yearBranch": "Thân"
+            },
+            "result": "Dậu"
+          },
+          {
+            "id": "star.Thiên Mã",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 15, §8.27",
+            "status": "source-formula",
+            "input": {
+              "yearBranch": "Thân"
+            },
+            "result": "Dần"
+          },
+          {
+            "id": "star.Kiếp Sát",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 15, §8.28",
+            "status": "source-formula",
+            "input": {
+              "yearBranch": "Thân"
+            },
+            "result": "Tỵ"
+          },
+          {
+            "id": "star.Phá Toái",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 15, §8.29",
+            "status": "source-formula",
+            "input": {
+              "yearBranch": "Thân"
+            },
+            "result": "Dậu",
+            "note": "v2 sửa ánh xạ hai nhóm chi của v1 theo bảng trang15; đối chiếu phụ lục272–275. Không sửa bản v1."
+          },
+          {
+            "id": "star.Hoa Cái",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 15, §8.30",
+            "status": "source-formula",
+            "input": {
+              "yearBranch": "Thân"
+            },
+            "result": "Thìn"
+          },
+          {
+            "id": "star.Lưu Hà",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 16, §8.31",
+            "status": "source-formula",
+            "input": {
+              "yearStem": "Canh"
+            },
+            "result": "Thân"
+          },
+          {
+            "id": "star.Thiên Trù",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 16, §8.32",
+            "status": "source-formula",
+            "input": {
+              "yearStem": "Canh"
+            },
+            "result": "Dần"
+          },
+          {
+            "id": "star.Văn Tinh",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 16, §8.33",
+            "status": "source-formula",
+            "input": {
+              "yearStem": "Canh"
+            },
+            "result": "Hợi"
+          },
+          {
+            "id": "star.Đẩu Quân",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 16, §8.35",
+            "status": "source-formula",
+            "input": {
+              "yearBranch": "Thân",
+              "month": 12,
+              "hourIndex": 1
+            },
+            "result": "Tuất"
+          },
+          {
+            "id": "star.Thiên Không",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 16, §8.36",
+            "status": "source-formula",
+            "input": {
+              "yearBranch": "Thân"
+            },
+            "result": "Dậu"
+          },
+          {
+            "id": "void-pairs",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 16–17, §8.37",
+            "status": "source-conflict",
+            "input": {
+              "yearStem": "Canh",
+              "yearBranch": "Thân",
+              "cycleStart": "Dần"
+            },
+            "result": {
+              "tuan": [
+                0,
+                1
+              ],
+              "triet": [
+                6,
+                7
+              ],
+              "cycleStart": "Dần"
+            },
+            "note": "Dùng bảng và sơ đồ Triệt; ví dụ Canh Ngọ ghi Thân/Dậu trái bảng Ngọ/Mùi. Quyết định bản thử, chưa hòa giải nguồn."
+          },
+          {
+            "id": "mutagens",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 13–14, §8.23",
+            "status": "source-formula",
+            "input": {
+              "yearStem": "Canh"
+            },
+            "result": [
+              "Thái Dương",
+              "Vũ Khúc",
+              "Thái Âm",
+              "Thiên Đồng"
+            ],
+            "note": "Tân can Quyền=Thiên Lương đúng bảng đã đọc, khác bảng upstream; không tự sửa để giống nguồn khác."
+          },
+          {
+            "id": "rings",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 9–10,16,50, §8.3–8.5/8.34/3.79",
+            "status": "source-conflict",
+            "input": {
+              "yearBranch": "Thân",
+              "loc": "Thân",
+              "cuc": 6,
+              "direction": 1
+            },
+            "result": {
+              "thaiTue": [
+                "Thái Tuế",
+                "Thiếu Dương",
+                "Tang Môn",
+                "Thiếu Âm",
+                "Quan Phù",
+                "Tử Phù",
+                "Tuế Phá",
+                "Long Đức",
+                "Bạch Hổ",
+                "Phúc Đức",
+                "Điếu Khách",
+                "Trực Phù"
+              ],
+              "bacSy": [
+                "Bác Sỹ",
+                "Lực Sỹ",
+                "Thanh Long",
+                "Tiểu Hao",
+                "Tướng Quân",
+                "Tấu Thư",
+                "Phi Liêm",
+                "Hỷ Thần",
+                "Bệnh Phù",
+                "Đại Hao",
+                "Phục Binh",
+                "Quan Phù"
+              ],
+              "trangSinh": [
+                "Tràng Sinh",
+                "Mộc Dục",
+                "Quan Đới",
+                "Lâm Quan",
+                "Đế Vượng",
+                "Suy",
+                "Bệnh",
+                "Tử",
+                "Mộ",
+                "Tuyệt",
+                "Thai",
+                "Dưỡng"
+              ]
+            },
+            "note": "Tràng Sinh dùng Suy từ §3.79 để hoàn thành 12 bước; vòng Tướng trước giữ iztro, chưa có đặc tả Tân Biên."
+          },
+          {
+            "id": "periods",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 20–23, §10.1/10.3",
+            "status": "source-formula",
+            "input": {
+              "cuc": 6,
+              "life": "Tý",
+              "gender": "male",
+              "direction": 1,
+              "annualStart": "Tuất"
+            },
+            "result": "Đại hạn cách 1; tiểu hạn khởi tuổi 1, chu kỳ12; không tính lớp lưu năm xem"
+          },
+          {
+            "id": "aliases",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 11–13, §8.7/8.9/8.15/8.19",
+            "status": "supplement",
+            "input": {},
+            "result": {
+              "Tả Phụ": "Tả Phù",
+              "Phượng Các": "Phụng Các",
+              "Thiên Riêu": "Thiên Diêu",
+              "Thai Phụ": "Đài Phụ"
+            },
+            "note": "Ánh xạ nhãn sách sang tên vi-VN iztro để giữ hợp đồng facts; không an hai sao do khác cách gọi."
+          },
+          {
+            "id": "supplemental",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in —, §quy ước dự án",
+            "status": "supplement",
+            "input": {
+              "dependency": "iztro@2.6.1"
+            },
+            "result": [
+              "Thiên Nguyệt",
+              "Niên Giải",
+              "Phi Liêm",
+              "Âm Sát",
+              "Không Vong",
+              "Hàm Trì",
+              "Thiên Vu"
+            ],
+            "note": "Giữ các sao ngoài danh mục đã đặc tả; Mệnh chủ theo chi Mệnh, Thân chủ theo chi năm, can cung theo iztro; lịch VN UTC+7, nhuận lặp tháng, đổi ngày00:00 là quy ước dự án."
+          },
+          {
+            "id": "palace-stems",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 29, §11.4.4",
+            "status": "supplement",
+            "input": {
+              "yearStem": "Canh"
+            },
+            "result": [
+              {
+                "branch": "Dần",
+                "stem": "Mậu"
+              },
+              {
+                "branch": "Mão",
+                "stem": "Kỷ"
+              },
+              {
+                "branch": "Thìn",
+                "stem": "Canh"
+              },
+              {
+                "branch": "Tỵ",
+                "stem": "Tân"
+              },
+              {
+                "branch": "Ngọ",
+                "stem": "Nhâm"
+              },
+              {
+                "branch": "Mùi",
+                "stem": "Quý"
+              },
+              {
+                "branch": "Thân",
+                "stem": "Giáp"
+              },
+              {
+                "branch": "Dậu",
+                "stem": "Ất"
+              },
+              {
+                "branch": "Tuất",
+                "stem": "Bính"
+              },
+              {
+                "branch": "Hợi",
+                "stem": "Đinh"
+              },
+              {
+                "branch": "Tý",
+                "stem": "Mậu"
+              },
+              {
+                "branch": "Sửu",
+                "stem": "Kỷ"
+              }
+            ],
+            "note": "Kiểm tra từng can cung kế thừa iztro bằng bảng can tháng và đếm thuận; việc áp bảng tháng cho can cung là quy ước bổ sung, không gọi là phép an cung đã nêu riêng trong sách."
+          },
+          {
+            "id": "childhood-palaces",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 239, §21.2",
+            "status": "source-formula",
+            "input": {
+              "life": "Tý"
+            },
+            "result": [
+              {
+                "age": 1,
+                "palace": "Mệnh",
+                "branch": "Tý"
+              },
+              {
+                "age": 2,
+                "palace": "Tài Bạch",
+                "branch": "Thân"
+              },
+              {
+                "age": 3,
+                "palace": "Tật Ách",
+                "branch": "Mùi"
+              },
+              {
+                "age": 4,
+                "palace": "Phu Thê",
+                "branch": "Tuất"
+              },
+              {
+                "age": 5,
+                "palace": "Phúc Đức",
+                "branch": "Dần"
+              },
+              {
+                "age": 6,
+                "palace": "Quan Lộc",
+                "branch": "Thìn"
+              },
+              {
+                "age": 7,
+                "palace": "Nô Bộc",
+                "branch": "Tỵ"
+              },
+              {
+                "age": 8,
+                "palace": "Thiên Di",
+                "branch": "Ngọ"
+              },
+              {
+                "age": 9,
+                "palace": "Tử Nữ",
+                "branch": "Dậu"
+              },
+              {
+                "age": 10,
+                "palace": "Huynh Đệ",
+                "branch": "Hợi"
+              },
+              {
+                "age": 11,
+                "palace": "Phụ Mẫu",
+                "branch": "Sửu"
+              },
+              {
+                "age": 12,
+                "palace": "Điền Trạch",
+                "branch": "Mão"
+              }
+            ],
+            "note": "Chỉ vị trí cung tuổi1–12, không triển khai phán đoán sức khỏe/tử vong trong phần luận tuổi trẻ."
+          },
+          {
+            "id": "birth-element",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 241–242, §22",
+            "status": "source-formula",
+            "input": {
+              "yearStem": "Canh",
+              "yearBranch": "Thân"
+            },
+            "result": {
+              "value": "Thạch Lựu Mộc",
+              "version": "tanbien-nap-am-1.0.0",
+              "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 241–242, §22",
+              "note": "Giữ tên trong ebook (Lò Trung, Phú Đăng, Đại Dịch); không suy tác động."
+            }
+          }
+        ],
+        "states": {
+          "Thái Dương@Dần": {
+            "value": "Vượng",
+            "version": "1.0.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 35, §3.5"
+          },
+          "Cự Môn@Dần": {
+            "value": "Vượng",
+            "version": "1.0.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 37, §3.10"
+          },
+          "Thiên Mã@Dần": {
+            "value": "Đắc",
+            "version": "tanbien-secondary-states-0.1.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 42, §3.30"
+          },
+          "Thiên Hư@Dần": {
+            "version": "tanbien-secondary-states-0.1.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 42, §3.29"
+          },
+          "Thiên Tướng@Mão": {
+            "value": "Hãm",
+            "version": "1.0.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 37, §3.11"
+          },
+          "Hỏa Tinh@Mão": {
+            "value": "Đắc",
+            "version": "tanbien-secondary-states-0.1.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 39, §3.16"
+          },
+          "Thiên Cơ@Thìn": {
+            "value": "Miếu",
+            "version": "1.0.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 35, §3.6"
+          },
+          "Thiên Lương@Thìn": {
+            "value": "Miếu",
+            "version": "1.0.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 38, §3.12"
+          },
+          "Bạch Hổ@Thìn": {
+            "version": "tanbien-secondary-states-0.2.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 41, §3.28"
+          },
+          "Tử Vi@Tỵ": {
+            "value": "Miếu",
+            "version": "1.0.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 33, §3.1"
+          },
+          "Thất Sát@Tỵ": {
+            "value": "Vượng",
+            "version": "1.0.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 38, §3.13"
+          },
+          "Văn Khúc@Tỵ": {
+            "value": "Đắc",
+            "version": "tanbien-secondary-states-0.1.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 39, §3.17"
+          },
+          "Đại Hao@Tỵ": {
+            "version": "tanbien-secondary-states-0.2.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 41, §3.27"
+          },
+          "Đà La@Mùi": {
+            "value": "Đắc",
+            "version": "tanbien-secondary-states-0.1.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 39, §3.14"
+          },
+          "Thiên Hình@Thân": {
+            "value": "Đắc",
+            "version": "tanbien-secondary-states-0.1.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 42, §3.31"
+          },
+          "Liêm Trinh@Dậu": {
+            "value": "Hãm",
+            "version": "1.0.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 34, §3.2"
+          },
+          "Phá Quân@Dậu": {
+            "value": "Hãm",
+            "version": "1.0.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 38, §3.14"
+          },
+          "Kình Dương@Dậu": {
+            "version": "tanbien-secondary-states-0.1.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 39, §3.14"
+          },
+          "Linh Tinh@Dậu": {
+            "version": "tanbien-secondary-states-0.1.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 39, §3.16"
+          },
+          "Văn Xương@Dậu": {
+            "version": "tanbien-secondary-states-0.1.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 39, §3.17"
+          },
+          "Địa Không@Tuất": {
+            "version": "tanbien-secondary-states-0.1.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 40, §3.21"
+          },
+          "Thiên Khốc@Tuất": {
+            "version": "tanbien-secondary-states-0.1.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 42, §3.29"
+          },
+          "Tang Môn@Tuất": {
+            "version": "tanbien-secondary-states-0.2.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 41, §3.28"
+          },
+          "Thiên Phủ@Hợi": {
+            "value": "Đắc",
+            "version": "tanbien-phu-state-1.0.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 36, §3.7"
+          },
+          "Tiểu Hao@Hợi": {
+            "version": "tanbien-secondary-states-0.2.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 41, §3.27"
+          },
+          "Thiên Đồng@Tý": {
+            "value": "Vượng",
+            "version": "1.0.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 34, §3.3"
+          },
+          "Hóa Kỵ@Tý": {
+            "version": "tanbien-secondary-states-0.2.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 41, §3.26"
+          },
+          "Thái Âm@Tý": {
+            "value": "Vượng",
+            "version": "1.0.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 36, §3.8"
+          },
+          "Địa Kiếp@Tý": {
+            "version": "tanbien-secondary-states-0.1.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 40, §3.21"
+          },
+          "Thiên Diêu@Tý": {
+            "version": "tanbien-secondary-states-0.1.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 43, §3.32"
+          },
+          "Vũ Khúc@Sửu": {
+            "value": "Miếu",
+            "version": "1.1.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF 34–35 / trang in 34–35, mục 3.4."
+          },
+          "Tham Lang@Sửu": {
+            "value": "Miếu",
+            "version": "1.0.0",
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 37, §3.9"
+          }
+        },
+        "voidRanges": [
+          {
+            "name": "Tuần Không",
+            "branches": [
+              "Tý",
+              "Sửu"
+            ],
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 16–17, §8.37.1"
+          },
+          {
+            "name": "Triệt Lộ",
+            "branches": [
+              "Ngọ",
+              "Mùi"
+            ],
+            "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 17, §8.37.2"
+          }
+        ],
+        "completeness": {
+          "majorStars": "complete",
+          "minorStars": "complete-with-declared-supplements",
+          "adjectiveStars": "complete-with-declared-supplements"
+        },
+        "supplementalStars": [
+          "Thiên Nguyệt",
+          "Niên Giải",
+          "Phi Liêm",
+          "Âm Sát",
+          "Không Vong",
+          "Hàm Trì",
+          "Thiên Vu"
+        ],
+        "limitations": [
+          "Thiên Quý theo §8.13, đã đối chiếu lại vị trí ô bốn ví dụ; chưa phê duyệt chuyên môn.",
+          "Kim cục ngày21/24 giữ Tử Vi upstream vì bảng mâu thuẫn/thiếu.",
+          "Triệt dùng bảng/sơ đồ, ví dụ Canh Ngọ trái bảng.",
+          "Hỏa nhóm Hợi/Mão/Mùi dùng khởi Dần theo bảng; ví dụ273/275 khác bảng, chưa chốt.",
+          "Lịch, Mệnh chủ/Thân chủ, can cung và vòng Tướng trước là quy ước bổ sung.",
+          "Tứ Hóa can Tân: bảng và hai ví dụ phụ lục mâu thuẫn; bản thử giữ bảng trang14.",
+          "Sao lưu chỉ có khi chọn năm âm xem; tách khỏi sao bản mệnh. Nhật/thời hạn tính khi chọn ngày giờ xem hợp lệ; chưa đặc tả tháng nhuận xem.",
+          "Chưa được chuyên gia phê duyệt; phạm vi đối chiếu độc lập được ghi riêng trong danh mục."
+        ],
+        "decadal": {
+          "version": "supplemental-iztro-decadal-1.0.0",
+          "status": "unavailable",
+          "stars": [],
+          "issues": [
+            "Chưa chọn năm xem."
+          ],
+          "source": "Tân Biên tr.20–21 §10.1 (khoảng tuổi); bổ sung iztro@2.6.1 lib/astro/FunctionalAstrolabe.js decadalList, lib/star/horoscopeStar.js, lib/star/location.js, lib/data/heavenlyStems.js"
+        },
+        "childhood": [
+          {
+            "age": 1,
+            "palace": "Mệnh",
+            "branch": "Tý"
+          },
+          {
+            "age": 2,
+            "palace": "Tài Bạch",
+            "branch": "Thân"
+          },
+          {
+            "age": 3,
+            "palace": "Tật Ách",
+            "branch": "Mùi"
+          },
+          {
+            "age": 4,
+            "palace": "Phu Thê",
+            "branch": "Tuất"
+          },
+          {
+            "age": 5,
+            "palace": "Phúc Đức",
+            "branch": "Dần"
+          },
+          {
+            "age": 6,
+            "palace": "Quan Lộc",
+            "branch": "Thìn"
+          },
+          {
+            "age": 7,
+            "palace": "Nô Bộc",
+            "branch": "Tỵ"
+          },
+          {
+            "age": 8,
+            "palace": "Thiên Di",
+            "branch": "Ngọ"
+          },
+          {
+            "age": 9,
+            "palace": "Tử Nữ",
+            "branch": "Dậu"
+          },
+          {
+            "age": 10,
+            "palace": "Huynh Đệ",
+            "branch": "Hợi"
+          },
+          {
+            "age": 11,
+            "palace": "Phụ Mẫu",
+            "branch": "Sửu"
+          },
+          {
+            "age": 12,
+            "palace": "Điền Trạch",
+            "branch": "Mão"
+          }
+        ],
+        "inheritance": {
+          "version": "tanbien-inheritance-0.2.0",
+          "checked": [
+            "Lịch VN và cầu nối lịch riêng; không đổi quy ước",
+            "Can cung bảng can tháng §11.4.4 p29 (áp sang can cung là quy ước bổ sung); chặn nếu khác",
+            "Thứ tự cung/vị trí Mệnh-Thân §5–6 p6–7"
+          ],
+          "supplements": [
+            "Mệnh chủ theo chi Mệnh, Thân chủ theo chi năm (iztro2.6.1; sách chưa tìm thấy phép an)",
+            "isOriginalPalace, chỉ số cung, scope/type và tên alias là metadata upstream",
+            "Vòng Tướng trước (jiangqian12) chưa có phép an trong sách",
+            "Can/chi đại hạn đi theo can/chi cung, không phải sao lưu",
+            "UTC+7, đổi ngày00:00, tháng nhuận lặp tháng, đầu vào dương1976–2050"
+          ],
+          "supplementalStars": [
+            "Thiên Nguyệt",
+            "Niên Giải",
+            "Phi Liêm",
+            "Âm Sát",
+            "Không Vong",
+            "Hàm Trì",
+            "Thiên Vu"
+          ]
+        },
+        "birthElement": {
+          "value": "Thạch Lựu Mộc",
+          "version": "tanbien-nap-am-1.0.0",
+          "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 241–242, §22",
+          "note": "Giữ tên trong ebook (Lò Trung, Phú Đăng, Đại Dịch); không suy tác động."
+        }
+      },
+      "rulers": {
+        "body": {
+          "starId": "tianliangMaj",
+          "method": "birth-year-branch",
+          "previous": {
+            "value": "Thiên Lương",
+            "implementation": "iztro@2.6.1/algorithm=default"
+          }
+        },
+        "version": "quan-xuan-thinh-year-rulers-1.0.0",
+        "method": "birth-year-branch",
+        "birthYearBranchId": "shenEarthly",
+        "starId": "lianzhenMaj",
+        "inputPath": "chart.tanBien.inputs.lunar.lunarYear",
+        "source": "Quy ước sản phẩm theo đoạn trích người dùng cung cấp, ghi nguồn Số Tử vi kinh nghiệm, quyển thượng — Quản Xuân Thịnh. Chưa đối chiếu bản gốc; không gán cho Tân Biên.",
+        "status": "computed",
+        "previous": {
+          "value": "Tham Lang",
+          "method": "life-palace-branch",
+          "implementation": "iztro@2.6.1/algorithm=default"
+        }
+      },
+      "natalTransformations": {
+        "version": "natal-transformations-1.0.0",
+        "scope": "origin",
+        "status": "complete",
+        "method": "tanbien-trial-0.3.0",
+        "source": "Vân Đằng Thái Thứ Lang, Tử Vi Đẩu Số Tân Biên, PDF/trang in 13–14, §8.23",
+        "sourceStatus": "source-formula",
+        "entries": [
+          {
+            "kind": "Lộc",
+            "star": "Thái Dương",
+            "palace": "Phúc Đức",
+            "branch": "Dần",
+            "path": "chart.palaces.0.majorStars.0"
+          },
+          {
+            "kind": "Quyền",
+            "star": "Vũ Khúc",
+            "palace": "Phụ Mẫu",
+            "branch": "Sửu",
+            "path": "chart.palaces.11.majorStars.0"
+          },
+          {
+            "kind": "Khoa",
+            "star": "Thái Âm",
+            "palace": "Mệnh",
+            "branch": "Tý",
+            "path": "chart.palaces.10.majorStars.1"
+          },
+          {
+            "kind": "Kỵ",
+            "star": "Thiên Đồng",
+            "palace": "Mệnh",
+            "branch": "Tý",
+            "path": "chart.palaces.10.majorStars.0"
+          }
+        ]
+      }
+    },
+    "warnings": [
+      "Thiên Quý theo §8.13, đã đối chiếu lại vị trí ô bốn ví dụ; chưa phê duyệt chuyên môn.",
+      "Kim cục ngày21/24 giữ Tử Vi upstream vì bảng mâu thuẫn/thiếu.",
+      "Triệt dùng bảng/sơ đồ, ví dụ Canh Ngọ trái bảng.",
+      "Hỏa nhóm Hợi/Mão/Mùi dùng khởi Dần theo bảng; ví dụ273/275 khác bảng, chưa chốt.",
+      "Lịch, Mệnh chủ/Thân chủ, can cung và vòng Tướng trước là quy ước bổ sung.",
+      "Tứ Hóa can Tân: bảng và hai ví dụ phụ lục mâu thuẫn; bản thử giữ bảng trang14.",
+      "Sao lưu chỉ có khi chọn năm âm xem; tách khỏi sao bản mệnh. Nhật/thời hạn tính khi chọn ngày giờ xem hợp lệ; chưa đặc tả tháng nhuận xem.",
+      "Chưa được chuyên gia phê duyệt; phạm vi đối chiếu độc lập được ghi riêng trong danh mục."
+    ],
+    "validationStatus": "software-only",
+    "resultId": "a065d146ac344063f75a2b35fc1c7db2e79fb40204a494d4feb2b81f122253a9"
+  },
+  "receipt": {
+    "version": "engine-list-receipt-1",
+    "resultId": "a065d146ac344063f75a2b35fc1c7db2e79fb40204a494d4feb2b81f122253a9",
+    "chartHash": "056e134bffb29f6b12fa74c9bf627af8682cf354ed9e6ce111e973cc7159f72d",
+    "status": "adapter-complete",
+    "sourceHashes": {
+      "formula": "73d94f2610754c764acdb7b7114812944dac72212482191d36d7330d301532f2",
+      "runner": "7f051f36b933866e72c11c12d3ac36a3ddb0d6b45ef8ddf7d26d485283c35d5c",
+      "rulerAdapter": "075a77868d4cbfb1b51282f73faa0505ee19e9a623f627dddfcbb670337bfc0c",
+      "adapter": "61dc3f0d77d9c957d2f544c911552f5a6c6fe5c0333b434b91e205a5a21de24a"
+    },
+    "source": "Server calculate → isolated engine/engine-vn.cjs → entire a.palaces; iztro@2.6.1, no UI filtering. Completeness only within this adapter contract, not expert validation."
+  },
+  "provenance": "Synthetic birth input 1981-01-15 01:00; calculated through calculateInternal, not a real person; unchanged engine snapshot and receipt. Search 145 of max1440 births."
+}

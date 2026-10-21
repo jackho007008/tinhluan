@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS birth_profile_snapshots(id uuid PRIMARY KEY, data jsonb NOT NULL, created_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS chart_snapshots(id uuid PRIMARY KEY, birth_id uuid REFERENCES birth_profile_snapshots(id), result_id text NOT NULL, data jsonb NOT NULL, created_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS packages(id text PRIMARY KEY,data jsonb NOT NULL);
+CREATE TABLE IF NOT EXISTS orders(id uuid PRIMARY KEY, code text UNIQUE NOT NULL,email text NOT NULL, chart_id uuid REFERENCES chart_snapshots(id), amount integer NOT NULL CHECK(amount>0), currency text NOT NULL DEFAULT 'VND', payment_status text NOT NULL DEFAULT 'pending', report_status text NOT NULL DEFAULT 'waiting', email_status text NOT NULL DEFAULT 'waiting', demo boolean NOT NULL, scope jsonb NOT NULL, expires_at timestamptz NOT NULL, paid_at timestamptz, created_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS order_items(id uuid PRIMARY KEY,order_id uuid REFERENCES orders(id), package_snapshot jsonb NOT NULL);
+CREATE TABLE IF NOT EXISTS payment_events(id text PRIMARY KEY,order_id uuid, payload jsonb NOT NULL, disposition text NOT NULL,created_at timestamptz DEFAULT now());
+CREATE TABLE IF NOT EXISTS payment_transactions(id text PRIMARY KEY,order_id uuid REFERENCES orders(id), amount integer NOT NULL,currency text NOT NULL, recipient text NOT NULL,created_at timestamptz DEFAULT now());
+CREATE TABLE IF NOT EXISTS report_jobs(id uuid PRIMARY KEY,order_id uuid UNIQUE REFERENCES orders(id), status text NOT NULL DEFAULT 'pending',attempts integer NOT NULL DEFAULT 0,run_after timestamptz DEFAULT now(),locked_at timestamptz,last_error text,created_at timestamptz DEFAULT now());
+CREATE TABLE IF NOT EXISTS reports(id uuid PRIMARY KEY,order_id uuid UNIQUE REFERENCES orders(id),data jsonb NOT NULL,created_at timestamptz DEFAULT now());
+CREATE TABLE IF NOT EXISTS email_deliveries(id uuid PRIMARY KEY,order_id uuid UNIQUE REFERENCES orders(id),status text NOT NULL DEFAULT 'pending',attempts integer NOT NULL DEFAULT 0,run_after timestamptz DEFAULT now(),locked_at timestamptz,last_error text,created_at timestamptz DEFAULT now());
+CREATE TABLE IF NOT EXISTS access_tokens(hash text PRIMARY KEY,order_id uuid REFERENCES orders(id),purpose text NOT NULL,expires_at timestamptz NOT NULL,revoked_at timestamptz, created_at timestamptz DEFAULT now());
+CREATE TABLE IF NOT EXISTS rate_limits(key text PRIMARY KEY,count integer NOT NULL,expires_at timestamptz NOT NULL);
+CREATE INDEX IF NOT EXISTS jobs_pending ON report_jobs(status,run_after);
+CREATE INDEX IF NOT EXISTS email_pending ON email_deliveries(status,run_after);

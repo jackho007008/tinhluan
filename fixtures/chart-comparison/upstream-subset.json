@@ -1,0 +1,77 @@
+{
+  "id": "upstream-iztro-2000-subset",
+  "schemaVersion": "1.0.0",
+  "status": "upstream-example",
+  "birth": {
+    "date": "2000-08-16",
+    "hour": 3,
+    "minute": 0,
+    "unknownTime": false,
+    "place": "Hà Nội",
+    "gender": "female",
+    "calendar": "solar",
+    "profile": "cn-reference",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "consent": true
+  },
+  "conventions": {
+    "profile": "cn-reference",
+    "school": "iztro default, ví dụ upstream; không độc lập",
+    "timezone": "UTC+7-civil",
+    "dayBoundary": "23:00-forward",
+    "leapMonth": "half-month-upstream"
+  },
+  "source": {
+    "title": "iztro quick-start, bySolar 2000-8-16 timeIndex2 female",
+    "reference": "https://docs.iztro.com/quick-start",
+    "location": "palaces[0]: 財帛, 寅, 武曲, 天相; chỉ tập con trường tên sao/vị trí",
+    "rights": "Chỉ dữ kiện mẫu và attribution; không sao chép đoạn văn dài.",
+    "comparedOn": "2026-10-07",
+    "confirmedBy": null,
+    "confirmationRecord": null,
+    "confirmedScope": [
+      "chart.palaces.0.name",
+      "chart.palaces.0.earthlyBranch",
+      "chart.palaces.0.majorStars.0.name",
+      "chart.palaces.0.majorStars.1.name"
+    ]
+  },
+  "expected": [
+    {
+      "path": "chart.palaces.0.name",
+      "expected": "Tài Bạch",
+      "resolution": {
+        "status": "unresolved",
+        "note": "Chỉ đối chiếu tập con upstream; không xác nhận chuyên gia."
+      }
+    },
+    {
+      "path": "chart.palaces.0.earthlyBranch",
+      "expected": "Dần",
+      "resolution": {
+        "status": "unresolved",
+        "note": "Chỉ đối chiếu tập con upstream; không xác nhận chuyên gia."
+      }
+    },
+    {
+      "path": "chart.palaces.0.majorStars.0.name",
+      "expected": "Vũ Khúc",
+      "resolution": {
+        "status": "unresolved",
+        "note": "Chỉ đối chiếu tập con upstream; không xác nhận chuyên gia."
+      }
+    },
+    {
+      "path": "chart.palaces.0.majorStars.1.name",
+      "expected": "Thiên Tướng",
+      "resolution": {
+        "status": "unresolved",
+        "note": "Chỉ đối chiếu tập con upstream; không xác nhận chuyên gia."
+      }
+    }
+  ],
+  "notes": [
+    "Nguồn không pin output toàn bộ2.6.1, có khác biệt Thiên Mã/range; không so các trường đó.",
+    "Không độc lập với engine và không có chuyên gia xác nhận."
+  ]
+}

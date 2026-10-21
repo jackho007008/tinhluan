@@ -1,0 +1,1496 @@
+[
+  {
+    "palace": "Phụ Mẫu",
+    "id": "tu-ngo",
+    "stars": [
+      "Tử Vi"
+    ],
+    "branches": [
+      "Ngọ"
+    ],
+    "text": "liên hệ với điều kiện vật chất khá giả và vị thế của cha mẹ.",
+    "page": 125,
+    "section": "5.2.1",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "tu-ty",
+    "stars": [
+      "Tử Vi"
+    ],
+    "branches": [
+      "Tý"
+    ],
+    "text": "liên hệ với hoàn cảnh cha mẹ khá giả.",
+    "page": 125,
+    "section": "5.2.1",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "tu-phu",
+    "stars": [
+      "Tử Vi",
+      "Thiên Phủ"
+    ],
+    "branches": [],
+    "text": "liên hệ với hoàn cảnh cha mẹ giàu sang và phần của cải để lại cho con.",
+    "page": 125,
+    "section": "5.2.1",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "tu-tuong",
+    "stars": [
+      "Tử Vi",
+      "Thiên Tướng"
+    ],
+    "branches": [],
+    "text": "mô tả gia đình yên vui, cha mẹ có vị thế và phúc lộc.",
+    "page": 125,
+    "section": "5.2.1",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "tu-sat",
+    "stars": [
+      "Tử Vi",
+      "Thất Sát"
+    ],
+    "branches": [],
+    "text": "mô tả mặt vật chất thuận lợi đi cùng sự bất hòa, không hợp tính giữa cha mẹ và con, và sự xa cách trong gia đình.",
+    "page": 125,
+    "section": "5.2.1",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "tu-pha",
+    "stars": [
+      "Tử Vi",
+      "Phá Quân"
+    ],
+    "branches": [],
+    "text": "mô tả hoàn cảnh khá giả nhưng thiếu hòa khí và có sự xa cách trong gia đình.",
+    "page": 125,
+    "section": "5.2.1",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "tu-tham",
+    "stars": [
+      "Tử Vi",
+      "Tham Lang"
+    ],
+    "branches": [],
+    "text": "mô tả hoàn cảnh cha mẹ bình thường, đồng thời nêu sự xa cách giữa con và cha mẹ.",
+    "page": 125,
+    "section": "5.2.1",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "liem",
+    "stars": [
+      "Liêm Trinh"
+    ],
+    "branches": [
+      "Dần",
+      "Thân"
+    ],
+    "text": "mô tả điều kiện vật chất khó khăn và sự xa cách giữa con với cha mẹ.",
+    "page": 125,
+    "section": "5.2.2",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "liem-phu",
+    "stars": [
+      "Liêm Trinh",
+      "Thiên Phủ"
+    ],
+    "branches": [],
+    "text": "mô tả cha mẹ có của cải nhưng gia đình bất hòa, cha mẹ và con không hợp tính.",
+    "page": 125,
+    "section": "5.2.2",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "liem-tuong",
+    "stars": [
+      "Liêm Trinh",
+      "Thiên Tướng"
+    ],
+    "branches": [],
+    "text": "mô tả sự vất vả và khó chung sống gần gũi giữa cha mẹ và con.",
+    "page": 125,
+    "section": "5.2.2",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "liem-sat",
+    "stars": [
+      "Liêm Trinh",
+      "Thất Sát"
+    ],
+    "branches": [],
+    "text": "mô tả sự bất hòa trong gia đình và khó chung sống giữa cha mẹ và con.",
+    "page": 125,
+    "section": "5.2.2",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "liem-tham",
+    "stars": [
+      "Liêm Trinh",
+      "Tham Lang"
+    ],
+    "branches": [],
+    "text": "mô tả hoàn cảnh thiếu thốn và sự xa cách trong gia đình.",
+    "page": 125,
+    "section": "5.2.2",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "dong-mao",
+    "stars": [
+      "Thiên Đồng"
+    ],
+    "branches": [
+      "Mão"
+    ],
+    "text": "liên hệ với hoàn cảnh cha mẹ khá giả, phần lợi được sách nói nghiêng về mẹ.",
+    "page": 125,
+    "section": "5.2.3",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "dong-dau",
+    "stars": [
+      "Thiên Đồng"
+    ],
+    "branches": [
+      "Dậu"
+    ],
+    "text": "mô tả hoàn cảnh cha mẹ bình thường.",
+    "page": 125,
+    "section": "5.2.3",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "dong-ty-hoi",
+    "stars": [
+      "Thiên Đồng"
+    ],
+    "branches": [
+      "Tỵ",
+      "Hợi"
+    ],
+    "text": "mô tả gia đình sung túc nhưng cha mẹ và con thường xa cách.",
+    "page": 126,
+    "section": "5.2.3",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "dong-thin-tuat",
+    "stars": [
+      "Thiên Đồng"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "mô tả thiếu hòa khí và khó chung sống lâu dài trong gia đình.",
+    "page": 126,
+    "section": "5.2.3",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "dong-luong",
+    "stars": [
+      "Thiên Đồng",
+      "Thiên Lương"
+    ],
+    "branches": [],
+    "text": "liên hệ với hoàn cảnh cha mẹ khá giả.",
+    "page": 126,
+    "section": "5.2.3",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "dong-am-ty",
+    "stars": [
+      "Thiên Đồng",
+      "Thái Âm"
+    ],
+    "branches": [
+      "Tý"
+    ],
+    "text": "liên hệ với vị thế và của cải của cha mẹ.",
+    "page": 126,
+    "section": "5.2.3",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "dong-am-ngo",
+    "stars": [
+      "Thiên Đồng",
+      "Thái Âm"
+    ],
+    "branches": [
+      "Ngọ"
+    ],
+    "text": "mô tả thiếu hòa khí và sự xa cách trong gia đình.",
+    "page": 126,
+    "section": "5.2.3",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "dong-cu",
+    "stars": [
+      "Thiên Đồng",
+      "Cự Môn"
+    ],
+    "branches": [],
+    "text": "mô tả thiếu hòa khí và sự xa cách giữa con với cha mẹ.",
+    "page": 126,
+    "section": "5.2.3",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "vu",
+    "stars": [
+      "Vũ Khúc"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "liên hệ với hoàn cảnh cha mẹ khá giả.",
+    "page": 126,
+    "section": "5.2.4",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "vu-phu",
+    "stars": [
+      "Vũ Khúc",
+      "Thiên Phủ"
+    ],
+    "branches": [],
+    "text": "liên hệ với của cải và vị thế của cha mẹ.",
+    "page": 126,
+    "section": "5.2.4",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "vu-tuong",
+    "stars": [
+      "Vũ Khúc",
+      "Thiên Tướng"
+    ],
+    "branches": [],
+    "text": "liên hệ với quyền thế và của cải của cha mẹ.",
+    "page": 126,
+    "section": "5.2.4",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "vu-tham",
+    "stars": [
+      "Vũ Khúc",
+      "Tham Lang"
+    ],
+    "branches": [],
+    "text": "mô tả cha mẹ có của nhưng không hợp tính con, gia đình thiếu hòa khí.",
+    "page": 126,
+    "section": "5.2.4",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "vu-pha",
+    "stars": [
+      "Vũ Khúc",
+      "Phá Quân"
+    ],
+    "branches": [],
+    "text": "mô tả bất hòa, không hợp tính giữa cha mẹ và con, và sự xa cách trong gia đình.",
+    "page": 126,
+    "section": "5.2.4",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "sun-high",
+    "stars": [
+      "Thái Dương"
+    ],
+    "branches": [
+      "Dần",
+      "Mão",
+      "Thìn",
+      "Tỵ",
+      "Ngọ"
+    ],
+    "text": "liên hệ với của cải và vị thế của cha mẹ; phần lợi được sách nói nghiêng về cha.",
+    "page": 126,
+    "section": "5.2.5",
+    "mode": "presence",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "sun-low",
+    "stars": [
+      "Thái Dương"
+    ],
+    "branches": [
+      "Thân",
+      "Dậu",
+      "Tuất",
+      "Hợi",
+      "Tý"
+    ],
+    "text": "mô tả sự vất vả của cha mẹ.",
+    "page": 126,
+    "section": "5.2.5",
+    "mode": "presence",
+    "wealth": false
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "sun-moon",
+    "stars": [
+      "Thái Dương",
+      "Thái Âm"
+    ],
+    "branches": [
+      "Sửu",
+      "Mùi"
+    ],
+    "text": "mô tả cha mẹ khá giả nhưng bất hòa, khó sống gần con.",
+    "page": 126,
+    "section": "5.2.5",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "co-high",
+    "stars": [
+      "Thiên Cơ"
+    ],
+    "branches": [
+      "Tỵ",
+      "Ngọ",
+      "Mùi"
+    ],
+    "text": "liên hệ với hoàn cảnh cha mẹ khá giả.",
+    "page": 126,
+    "section": "5.2.6",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "co-low",
+    "stars": [
+      "Thiên Cơ"
+    ],
+    "branches": [
+      "Hợi",
+      "Tý",
+      "Sửu"
+    ],
+    "text": "mô tả hoàn cảnh bình thường và sự không hợp tính giữa cha mẹ với con.",
+    "page": 126,
+    "section": "5.2.6",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "co-am-than",
+    "stars": [
+      "Thiên Cơ",
+      "Thái Âm"
+    ],
+    "branches": [
+      "Thân"
+    ],
+    "text": "liên hệ với hoàn cảnh cha mẹ khá giả.",
+    "page": 126,
+    "section": "5.2.6",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "co-am-dan",
+    "stars": [
+      "Thiên Cơ",
+      "Thái Âm"
+    ],
+    "branches": [
+      "Dần"
+    ],
+    "text": "mô tả cha mẹ có của nhưng có sự xa cách; phần liên hệ với mẹ được sách đánh giá bất lợi.",
+    "page": 127,
+    "section": "5.2.6",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "co-luong",
+    "stars": [
+      "Thiên Cơ",
+      "Thiên Lương"
+    ],
+    "branches": [],
+    "text": "liên hệ với của cải và vị thế của cha mẹ.",
+    "page": 127,
+    "section": "5.2.6",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "co-cu",
+    "stars": [
+      "Thiên Cơ",
+      "Cự Môn"
+    ],
+    "branches": [],
+    "text": "mô tả thiếu hòa khí và sự xa cách giữa con với cha mẹ.",
+    "page": 127,
+    "section": "5.2.6",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "phu-ty-hoi",
+    "stars": [
+      "Thiên Phủ"
+    ],
+    "branches": [
+      "Tỵ",
+      "Hợi"
+    ],
+    "text": "liên hệ với hoàn cảnh khá giả và danh chức của cha mẹ.",
+    "page": 127,
+    "section": "5.2.7",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "phu-other",
+    "stars": [
+      "Thiên Phủ"
+    ],
+    "branches": [
+      "Sửu",
+      "Mùi",
+      "Mão",
+      "Dậu"
+    ],
+    "text": "mô tả cha mẹ có của và vị thế nhưng có sự xa cách với con.",
+    "page": 127,
+    "section": "5.2.7",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "am-high",
+    "stars": [
+      "Thái Âm"
+    ],
+    "branches": [
+      "Dậu",
+      "Tuất",
+      "Hợi"
+    ],
+    "text": "liên hệ với hoàn cảnh giàu sang; phần lợi được sách nói nghiêng về mẹ.",
+    "page": 127,
+    "section": "5.2.8",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "am-low",
+    "stars": [
+      "Thái Âm"
+    ],
+    "branches": [
+      "Mão",
+      "Thìn",
+      "Tỵ"
+    ],
+    "text": "mô tả sự vất vả của cha mẹ.",
+    "page": 127,
+    "section": "5.2.8",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "tham-thin-tuat",
+    "stars": [
+      "Tham Lang"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "mô tả cha mẹ có của nhưng con không được thừa hưởng, gia đình thiếu hòa khí và có sự xa cách.",
+    "page": 127,
+    "section": "5.2.9",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "tham-dan-than",
+    "stars": [
+      "Tham Lang"
+    ],
+    "branches": [
+      "Dần",
+      "Thân"
+    ],
+    "text": "mô tả thiếu thốn, bất hòa và xa cách; cha mẹ và con không hợp tính.",
+    "page": 127,
+    "section": "5.2.9",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "tham-ty-ngo",
+    "stars": [
+      "Tham Lang"
+    ],
+    "branches": [
+      "Tý",
+      "Ngọ"
+    ],
+    "text": "mô tả hoàn cảnh bình thường, thiếu hòa khí và sự xa cách trong gia đình.",
+    "page": 127,
+    "section": "5.2.9",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "cu-high",
+    "stars": [
+      "Cự Môn"
+    ],
+    "branches": [
+      "Hợi",
+      "Tý",
+      "Ngọ"
+    ],
+    "text": "mô tả cha mẹ khá giả nhưng không hợp tính con; phần chung của mục còn nêu bất hòa và tranh chấp.",
+    "page": 128,
+    "section": "5.2.10",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "cu-ty",
+    "stars": [
+      "Cự Môn"
+    ],
+    "branches": [
+      "Tỵ"
+    ],
+    "text": "mô tả sự xa cách, bất hòa và tranh chấp trong gia đình.",
+    "page": 128,
+    "section": "5.2.10",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "tuong-high",
+    "stars": [
+      "Thiên Tướng"
+    ],
+    "branches": [
+      "Tỵ",
+      "Hợi",
+      "Sửu",
+      "Mùi"
+    ],
+    "text": "mô tả hoàn cảnh cha mẹ khá giả nhưng hay bất hòa.",
+    "page": 128,
+    "section": "5.2.11",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "tuong-low",
+    "stars": [
+      "Thiên Tướng"
+    ],
+    "branches": [
+      "Mão",
+      "Dậu"
+    ],
+    "text": "mô tả hoàn cảnh cha mẹ bình thường.",
+    "page": 128,
+    "section": "5.2.11",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "luong-ngo",
+    "stars": [
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Ngọ"
+    ],
+    "text": "liên hệ với hoàn cảnh cha mẹ giàu sang.",
+    "page": 128,
+    "section": "5.2.12",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "luong-suu-mui",
+    "stars": [
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Sửu",
+      "Mùi"
+    ],
+    "text": "mô tả hoàn cảnh bình thường và thiếu hòa khí trong gia đình.",
+    "page": 128,
+    "section": "5.2.12",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "luong-hoi",
+    "stars": [
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Hợi"
+    ],
+    "text": "mô tả bất hòa, xa cách và khó chung sống lâu dài giữa cha mẹ với con.",
+    "page": 129,
+    "section": "5.2.12",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "sat-dan-than",
+    "stars": [
+      "Thất Sát"
+    ],
+    "branches": [
+      "Dần",
+      "Thân"
+    ],
+    "text": "liên hệ với vị thế của cha mẹ, đồng thời phần chung của mục nêu bất hòa hoặc không hợp tính giữa cha mẹ và con.",
+    "page": 129,
+    "section": "5.2.13",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "sat-ngo",
+    "stars": [
+      "Thất Sát"
+    ],
+    "branches": [
+      "Ngọ"
+    ],
+    "text": "mô tả hoàn cảnh khá giả nhưng có sự xa cách, bất hòa hoặc không hợp tính trong gia đình.",
+    "page": 129,
+    "section": "5.2.13",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "pha-ty-ngo",
+    "stars": [
+      "Phá Quân"
+    ],
+    "branches": [
+      "Tý",
+      "Ngọ"
+    ],
+    "text": "mô tả hoàn cảnh cha mẹ khá giả nhưng thiếu hòa khí và có sự xa cách.",
+    "page": 129,
+    "section": "5.2.14",
+    "mode": "exact",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "pha-dan-than",
+    "stars": [
+      "Phá Quân"
+    ],
+    "branches": [
+      "Dần",
+      "Thân"
+    ],
+    "text": "mô tả bất hòa và sự xa cách trong gia đình.",
+    "page": 129,
+    "section": "5.2.14",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "pha-thin-tuat",
+    "stars": [
+      "Phá Quân"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "mô tả sự vất vả, không hợp tính giữa cha mẹ với con và sự xa cách.",
+    "page": 129,
+    "section": "5.2.14",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "loc",
+    "stars": [
+      "Lộc Tồn"
+    ],
+    "branches": [],
+    "text": "mô tả cha mẹ có của nhưng phần của cải dễ bị tiêu tán bởi con, đồng thời cha mẹ và con không hợp tính.",
+    "page": 130,
+    "section": "5.2.21",
+    "mode": "minor",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "hoa-loc",
+    "stars": [
+      "Hóa Lộc"
+    ],
+    "branches": [],
+    "text": "liên hệ với của cải của cha mẹ.",
+    "page": 130,
+    "section": "5.2.22",
+    "mode": "minor",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "hoa-quyen",
+    "stars": [
+      "Hóa Quyền"
+    ],
+    "branches": [],
+    "text": "liên hệ với quyền thế của cha mẹ.",
+    "page": 130,
+    "section": "5.2.23",
+    "mode": "minor",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "hoa-khoa",
+    "stars": [
+      "Hóa Khoa"
+    ],
+    "branches": [],
+    "text": "liên hệ với danh chức của cha mẹ; không dùng phần mô tả trí tuệ, phẩm hạnh làm đánh giá người thật.",
+    "page": 130,
+    "section": "5.2.24",
+    "mode": "minor",
+    "wealth": true
+  },
+  {
+    "palace": "Phụ Mẫu",
+    "id": "ky",
+    "stars": [
+      "Hóa Kỵ"
+    ],
+    "branches": [],
+    "text": "mô tả bất hòa giữa cha mẹ, hoặc sự không hợp tính giữa cha mẹ và con.",
+    "page": 131,
+    "section": "5.2.25",
+    "mode": "ky-base",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "tu-ngo",
+    "stars": [
+      "Tử Vi"
+    ],
+    "branches": [
+      "Ngọ"
+    ],
+    "text": "liên hệ với hoàn cảnh anh chị em khá giả.",
+    "page": 218,
+    "section": "15.2.1",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "tu-ty",
+    "stars": [
+      "Tử Vi"
+    ],
+    "branches": [
+      "Tý"
+    ],
+    "text": "mô tả sự xa cách giữa anh chị em.",
+    "page": 218,
+    "section": "15.2.1",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "tu-phu",
+    "stars": [
+      "Tử Vi",
+      "Thiên Phủ"
+    ],
+    "branches": [],
+    "text": "liên hệ với vị thế của anh chị em.",
+    "page": 218,
+    "section": "15.2.1",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "tu-tuong",
+    "stars": [
+      "Tử Vi",
+      "Thiên Tướng"
+    ],
+    "branches": [],
+    "text": "mô tả mặt vật chất khá giả nhưng thiếu hòa khí giữa anh chị em.",
+    "page": 218,
+    "section": "15.2.1",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "tu-sat",
+    "stars": [
+      "Tử Vi",
+      "Thất Sát"
+    ],
+    "branches": [],
+    "text": "liên hệ với điều kiện vật chất và vị thế thuận lợi của anh chị em.",
+    "page": 218,
+    "section": "15.2.1",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "tu-pha",
+    "stars": [
+      "Tử Vi",
+      "Phá Quân"
+    ],
+    "branches": [],
+    "text": "mô tả sự xa cách và thiếu hòa khí giữa anh chị em.",
+    "page": 218,
+    "section": "15.2.1",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "tu-tham",
+    "stars": [
+      "Tử Vi",
+      "Tham Lang"
+    ],
+    "branches": [],
+    "text": "mô tả sự ly tán và vất vả của anh chị em.",
+    "page": 218,
+    "section": "15.2.1",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "liem-phu",
+    "stars": [
+      "Liêm Trinh",
+      "Thiên Phủ"
+    ],
+    "branches": [],
+    "text": "mô tả hoàn cảnh khá giả nhưng không hợp tính giữa anh chị em.",
+    "page": 218,
+    "section": "15.2.2",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "liem-tuong",
+    "stars": [
+      "Liêm Trinh",
+      "Thiên Tướng"
+    ],
+    "branches": [],
+    "text": "liên hệ với vị thế của anh chị em.",
+    "page": 218,
+    "section": "15.2.2",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "liem-tham",
+    "stars": [
+      "Liêm Trinh",
+      "Tham Lang"
+    ],
+    "branches": [],
+    "text": "mô tả hoàn cảnh khó khăn, xa cách và bất hòa, có tranh cãi giữa anh chị em.",
+    "page": 218,
+    "section": "15.2.2",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "dong-dau",
+    "stars": [
+      "Thiên Đồng"
+    ],
+    "branches": [
+      "Dậu"
+    ],
+    "text": "mô tả sự xa cách giữa anh chị em.",
+    "page": 218,
+    "section": "15.2.3",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "dong-ty-hoi",
+    "stars": [
+      "Thiên Đồng"
+    ],
+    "branches": [
+      "Tỵ",
+      "Hợi"
+    ],
+    "text": "mô tả sự xa cách giữa anh chị em.",
+    "page": 218,
+    "section": "15.2.3",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "dong-thin-tuat",
+    "stars": [
+      "Thiên Đồng"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "mô tả sự phiêu bạt, khó khăn hoặc cô đơn trong quan hệ anh chị em.",
+    "page": 218,
+    "section": "15.2.3",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "dong-luong",
+    "stars": [
+      "Thiên Đồng",
+      "Thiên Lương"
+    ],
+    "branches": [],
+    "text": "liên hệ với hoàn cảnh anh chị em khá giả.",
+    "page": 218,
+    "section": "15.2.3",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "dong-am-ty",
+    "stars": [
+      "Thiên Đồng",
+      "Thái Âm"
+    ],
+    "branches": [
+      "Tý"
+    ],
+    "text": "mô tả sự thuận hòa và hoàn cảnh khá giả của anh chị em.",
+    "page": 218,
+    "section": "15.2.3",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "dong-am-ngo",
+    "stars": [
+      "Thiên Đồng",
+      "Thái Âm"
+    ],
+    "branches": [
+      "Ngọ"
+    ],
+    "text": "mô tả bất hòa và xa cách giữa anh chị em.",
+    "page": 218,
+    "section": "15.2.3",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "dong-cu",
+    "stars": [
+      "Thiên Đồng",
+      "Cự Môn"
+    ],
+    "branches": [],
+    "text": "mô tả thiếu hòa khí và sự xa cách giữa anh chị em.",
+    "page": 219,
+    "section": "15.2.3",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "vu",
+    "stars": [
+      "Vũ Khúc"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "mô tả hoàn cảnh khá giả nhưng không hợp tính giữa anh chị em.",
+    "page": 219,
+    "section": "15.2.4",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "vu-phu",
+    "stars": [
+      "Vũ Khúc",
+      "Thiên Phủ"
+    ],
+    "branches": [],
+    "text": "liên hệ với của cải và vị thế của anh chị em.",
+    "page": 219,
+    "section": "15.2.4",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "vu-pha",
+    "stars": [
+      "Vũ Khúc",
+      "Phá Quân"
+    ],
+    "branches": [],
+    "text": "mô tả xung đột và sự xa cách giữa anh chị em.",
+    "page": 219,
+    "section": "15.2.4",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "sun-high",
+    "stars": [
+      "Thái Dương"
+    ],
+    "branches": [
+      "Thìn",
+      "Tỵ",
+      "Ngọ"
+    ],
+    "text": "liên hệ với vị thế của anh chị em.",
+    "page": 219,
+    "section": "15.2.5",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "sun-low",
+    "stars": [
+      "Thái Dương"
+    ],
+    "branches": [
+      "Tuất",
+      "Hợi",
+      "Tý"
+    ],
+    "text": "mô tả bất hòa giữa anh chị em.",
+    "page": 219,
+    "section": "15.2.5",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "sun-cu-dan",
+    "stars": [
+      "Thái Dương",
+      "Cự Môn"
+    ],
+    "branches": [
+      "Dần"
+    ],
+    "text": "liên hệ với hoàn cảnh anh chị em khá giả.",
+    "page": 219,
+    "section": "15.2.5",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "sun-cu-than",
+    "stars": [
+      "Thái Dương",
+      "Cự Môn"
+    ],
+    "branches": [
+      "Thân"
+    ],
+    "text": "mô tả bất hòa và xa cách giữa anh chị em.",
+    "page": 219,
+    "section": "15.2.5",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "sun-luong",
+    "stars": [
+      "Thái Dương",
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Mão"
+    ],
+    "text": "liên hệ với vị thế của anh chị em.",
+    "page": 219,
+    "section": "15.2.5",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "sun-moon",
+    "stars": [
+      "Thái Dương",
+      "Thái Âm"
+    ],
+    "branches": [
+      "Sửu",
+      "Mùi"
+    ],
+    "text": "mô tả hoàn cảnh khá giả nhưng thiếu hòa khí giữa anh chị em.",
+    "page": 219,
+    "section": "15.2.5",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "co-luong",
+    "stars": [
+      "Thiên Cơ",
+      "Thiên Lương"
+    ],
+    "branches": [],
+    "text": "mô tả hoàn cảnh khá giả và thuận hòa giữa anh chị em.",
+    "page": 219,
+    "section": "15.2.6",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "co-cu",
+    "stars": [
+      "Thiên Cơ",
+      "Cự Môn"
+    ],
+    "branches": [],
+    "text": "mô tả hoàn cảnh khá giả nhưng không hợp tính giữa anh chị em.",
+    "page": 219,
+    "section": "15.2.6",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "phu",
+    "stars": [
+      "Thiên Phủ"
+    ],
+    "branches": [
+      "Sửu",
+      "Mùi",
+      "Mão",
+      "Dậu"
+    ],
+    "text": "mô tả thiếu hòa khí trong gia đình.",
+    "page": 219,
+    "section": "15.2.7",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "am-high",
+    "stars": [
+      "Thái Âm"
+    ],
+    "branches": [
+      "Dậu",
+      "Tuất",
+      "Hợi"
+    ],
+    "text": "liên hệ với hoàn cảnh anh chị em khá giả.",
+    "page": 220,
+    "section": "15.2.8",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "cu-high",
+    "stars": [
+      "Cự Môn"
+    ],
+    "branches": [
+      "Hợi",
+      "Tý",
+      "Ngọ"
+    ],
+    "text": "mô tả bất hòa giữa anh chị em.",
+    "page": 220,
+    "section": "15.2.10",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "luong-ty-ngo",
+    "stars": [
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Tý",
+      "Ngọ"
+    ],
+    "text": "mô tả hoàn cảnh khá giả và thuận hòa giữa anh chị em.",
+    "page": 221,
+    "section": "15.2.12",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "luong-ty-hoi",
+    "stars": [
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Tỵ",
+      "Hợi"
+    ],
+    "text": "mô tả sự xa cách giữa anh chị em.",
+    "page": 221,
+    "section": "15.2.12",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "sat-dan-than",
+    "stars": [
+      "Thất Sát"
+    ],
+    "branches": [
+      "Dần",
+      "Thân"
+    ],
+    "text": "mô tả hoàn cảnh khá giả nhưng thiếu hòa khí giữa anh chị em.",
+    "page": 221,
+    "section": "15.2.13",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "sat-ty-ngo",
+    "stars": [
+      "Thất Sát"
+    ],
+    "branches": [
+      "Tý",
+      "Ngọ"
+    ],
+    "text": "mô tả thiếu hòa khí trong gia đình.",
+    "page": 221,
+    "section": "15.2.13",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "pha-ty-ngo",
+    "stars": [
+      "Phá Quân"
+    ],
+    "branches": [
+      "Tý",
+      "Ngọ"
+    ],
+    "text": "mô tả hoàn cảnh khá giả nhưng thiếu hòa khí và xa cách giữa anh chị em.",
+    "page": 221,
+    "section": "15.2.14",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "pha-thin-tuat",
+    "stars": [
+      "Phá Quân"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "mô tả khó sống gần nhau giữa anh chị em.",
+    "page": 221,
+    "section": "15.2.14",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "ky",
+    "stars": [
+      "Hóa Kỵ"
+    ],
+    "branches": [],
+    "text": "mô tả bất hòa và xa cách giữa anh chị em.",
+    "page": 222,
+    "section": "15.2.21",
+    "mode": "minor",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "ma",
+    "stars": [
+      "Thiên Mã"
+    ],
+    "branches": [],
+    "text": "mô tả hoàn cảnh anh chị em khá giả nhưng không sống gần nhau.",
+    "page": 222,
+    "section": "15.2.23",
+    "mode": "minor",
+    "wealth": false
+  },
+  {
+    "palace": "Huynh Đệ",
+    "id": "tu",
+    "stars": [
+      "Tử"
+    ],
+    "branches": [],
+    "text": "mô tả bất hòa giữa anh chị em.",
+    "page": 223,
+    "section": "15.2.32",
+    "mode": "ring",
+    "wealth": false
+  }
+]

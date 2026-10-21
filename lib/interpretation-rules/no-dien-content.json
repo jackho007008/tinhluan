@@ -1,0 +1,1109 @@
+[
+  {
+    "id": "tu-ngo",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Tử Vi"
+    ],
+    "branches": [
+      "Ngọ"
+    ],
+    "text": "liên hệ với cơ nghiệp nhà đất lớn, việc tự tạo dựng có chiều hướng tăng thêm. Mục Tử Vi cũng nêu một phần lớn cơ nghiệp do tiền nhân để lại.",
+    "page": 149,
+    "section": "7.1",
+    "kind": "major"
+  },
+  {
+    "id": "tu-ty",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Tử Vi"
+    ],
+    "branches": [
+      "Tý"
+    ],
+    "text": "mô tả cơ nghiệp ở mức thông thường và phần thừa hưởng tương đối ổn định.",
+    "page": 149,
+    "section": "7.1",
+    "kind": "major"
+  },
+  {
+    "id": "tu-phu",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Tử Vi",
+      "Thiên Phủ"
+    ],
+    "branches": [],
+    "text": "liên hệ với cơ nghiệp nhà đất lớn và khả năng tạo dựng thêm.",
+    "page": 149,
+    "section": "7.1",
+    "kind": "major"
+  },
+  {
+    "id": "tu-tuong",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Tử Vi",
+      "Thiên Tướng"
+    ],
+    "branches": [],
+    "text": "liên hệ với cơ nghiệp nhà đất lớn và khả năng tạo dựng thêm.",
+    "page": 149,
+    "section": "7.1",
+    "kind": "major"
+  },
+  {
+    "id": "tu-sat",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Tử Vi",
+      "Thất Sát"
+    ],
+    "branches": [],
+    "text": "mô tả cơ nghiệp tổ tiên lớn nhưng khó giữ được.",
+    "page": 149,
+    "section": "7.1",
+    "kind": "major"
+  },
+  {
+    "id": "tu-pha",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Tử Vi",
+      "Phá Quân"
+    ],
+    "branches": [],
+    "text": "mô tả việc mất hoặc rời phần cơ nghiệp thừa hưởng; về sau mới tự tạo dựng ổn định ở xa.",
+    "page": 149,
+    "section": "7.1",
+    "kind": "major"
+  },
+  {
+    "id": "tu-tham",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Tử Vi",
+      "Tham Lang"
+    ],
+    "branches": [],
+    "text": "mô tả việc khó giữ cơ nghiệp thừa hưởng và chiều hướng suy giảm về sau.",
+    "page": 149,
+    "section": "7.1",
+    "kind": "major"
+  },
+  {
+    "id": "liem",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Liêm Trinh"
+    ],
+    "branches": [
+      "Dần",
+      "Thân"
+    ],
+    "text": "mô tả việc không nhận được hoặc mất phần cơ nghiệp thừa hưởng, kèm những lo phiền về nhà đất.",
+    "page": 149,
+    "section": "7.2",
+    "kind": "major"
+  },
+  {
+    "id": "liem-phu",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Liêm Trinh",
+      "Thiên Phủ"
+    ],
+    "branches": [],
+    "text": "mô tả có phần thừa hưởng nhưng về sau suy giảm, khó ổn định.",
+    "page": 149,
+    "section": "7.2",
+    "kind": "major"
+  },
+  {
+    "id": "liem-tuong",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Liêm Trinh",
+      "Thiên Tướng"
+    ],
+    "branches": [],
+    "text": "mô tả quá trình từ ít nhà đất đến tạo dựng được thêm về sau.",
+    "page": 149,
+    "section": "7.2",
+    "kind": "major"
+  },
+  {
+    "id": "liem-sat",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Liêm Trinh",
+      "Thất Sát"
+    ],
+    "branches": [],
+    "text": "mô tả tự tạo dựng qua nhiều biến động, khởi đầu khó và về già mới có nơi ở ổn định.",
+    "page": 149,
+    "section": "7.2",
+    "kind": "major"
+  },
+  {
+    "id": "liem-pha",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Liêm Trinh",
+      "Phá Quân"
+    ],
+    "branches": [],
+    "text": "mô tả khởi đầu tạo dựng khó thành, về sau mới ổn định.",
+    "page": 149,
+    "section": "7.2",
+    "kind": "major"
+  },
+  {
+    "id": "liem-tham",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Liêm Trinh",
+      "Tham Lang"
+    ],
+    "branches": [],
+    "text": "mô tả tổ tiên có cơ nghiệp lớn nhưng không được thừa hưởng, đến tuổi già nhà ở vẫn khó ổn định.",
+    "page": 149,
+    "section": "7.2",
+    "kind": "major"
+  },
+  {
+    "id": "dong-mao",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Đồng"
+    ],
+    "branches": [
+      "Mão"
+    ],
+    "text": "liên hệ với cơ nghiệp tự tạo dựng ngày càng tăng.",
+    "page": 149,
+    "section": "7.3",
+    "kind": "major"
+  },
+  {
+    "id": "dong-am-ty",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Đồng",
+      "Thái Âm"
+    ],
+    "branches": [
+      "Tý"
+    ],
+    "text": "liên hệ với cơ nghiệp tự tạo dựng ngày càng tăng.",
+    "page": 149,
+    "section": "7.3",
+    "kind": "major"
+  },
+  {
+    "id": "dong-dau",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Đồng"
+    ],
+    "branches": [
+      "Dậu"
+    ],
+    "text": "mô tả nhà đất biến động, về già mới có nơi nương náu.",
+    "page": 149,
+    "section": "7.3",
+    "kind": "major"
+  },
+  {
+    "id": "dong-am-ngo",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Đồng",
+      "Thái Âm"
+    ],
+    "branches": [
+      "Ngọ"
+    ],
+    "text": "mô tả nhà đất biến động, về già mới có nơi nương náu.",
+    "page": 149,
+    "section": "7.3",
+    "kind": "major"
+  },
+  {
+    "id": "dong-ti-hoi",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Đồng"
+    ],
+    "branches": [
+      "Tỵ",
+      "Hợi"
+    ],
+    "text": "mô tả nhà đất ít, thường có sự mua bán hoặc đổi chỗ ở.",
+    "page": 149,
+    "section": "7.3",
+    "kind": "major"
+  },
+  {
+    "id": "dong-thin-tuat",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Đồng"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "mô tả ít hoặc không có cơ nghiệp nhà đất và có sự tranh chấp liên quan.",
+    "page": 149,
+    "section": "7.3",
+    "kind": "major"
+  },
+  {
+    "id": "dong-luong",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Đồng",
+      "Thiên Lương"
+    ],
+    "branches": [],
+    "text": "mô tả lúc đầu ít nhà đất, về sau tạo dựng được thêm.",
+    "page": 149,
+    "section": "7.3",
+    "kind": "major"
+  },
+  {
+    "id": "dong-cu",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Đồng",
+      "Cự Môn"
+    ],
+    "branches": [],
+    "text": "mô tả khó có cơ nghiệp; ngay cả trường hợp thuận hơn cũng chỉ có nơi ở khiêm tốn về sau. Mục Cự Môn còn nêu thị phi, tranh chấp về nhà đất; chưa có phép hợp nhất vế này với các ý cùng cung.",
+    "page": 150,
+    "section": "7.3",
+    "kind": "major"
+  },
+  {
+    "id": "vu",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Vũ Khúc"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "liên hệ với cơ nghiệp thừa hưởng lớn và tiếp tục tăng thêm.",
+    "page": 150,
+    "section": "7.4",
+    "kind": "major"
+  },
+  {
+    "id": "vu-phu",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Vũ Khúc",
+      "Thiên Phủ"
+    ],
+    "branches": [],
+    "text": "liên hệ với việc giữ được phần thừa hưởng và tạo dựng thêm.",
+    "page": 150,
+    "section": "7.4",
+    "kind": "major"
+  },
+  {
+    "id": "vu-tuong",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Vũ Khúc",
+      "Thiên Tướng"
+    ],
+    "branches": [],
+    "text": "mô tả mua bán, thay đổi lúc đầu rồi về sau mới có nhiều cơ nghiệp.",
+    "page": 150,
+    "section": "7.4",
+    "kind": "major"
+  },
+  {
+    "id": "vu-tham",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Vũ Khúc",
+      "Tham Lang"
+    ],
+    "branches": [],
+    "text": "mô tả phần thừa hưởng ít và chủ yếu tự tạo dựng; sách gắn phần ổn định với giai đoạn sau ba mươi tuổi. Đây là điều kiện thời gian của lời nguồn, không phải thời điểm mua bán được hệ thống dự báo.",
+    "page": 150,
+    "section": "7.4",
+    "kind": "major"
+  },
+  {
+    "id": "vu-pha",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Vũ Khúc",
+      "Phá Quân"
+    ],
+    "branches": [],
+    "text": "mô tả có nhà đất rồi lại hao mất, về sau mới có nơi ở ổn định.",
+    "page": 150,
+    "section": "7.4",
+    "kind": "major"
+  },
+  {
+    "id": "vu-sat",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Vũ Khúc",
+      "Thất Sát"
+    ],
+    "branches": [],
+    "text": "mô tả ít hoặc không có cơ nghiệp, về già mới có nơi ở nhỏ.",
+    "page": 150,
+    "section": "7.4",
+    "kind": "major"
+  },
+  {
+    "id": "sun-high",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thái Dương"
+    ],
+    "branches": [
+      "Thìn",
+      "Tỵ",
+      "Ngọ"
+    ],
+    "text": "mô tả phần cơ nghiệp thừa hưởng lớn nhưng về sau suy giảm.",
+    "page": 150,
+    "section": "7.5",
+    "kind": "major"
+  },
+  {
+    "id": "sun-low",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thái Dương"
+    ],
+    "branches": [
+      "Tuất",
+      "Hợi",
+      "Tý"
+    ],
+    "text": "mô tả không có nhà đất, về sau cũng chỉ tạo dựng được ít.",
+    "page": 150,
+    "section": "7.5",
+    "kind": "major"
+  },
+  {
+    "id": "sun-cu-dan",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thái Dương",
+      "Cự Môn"
+    ],
+    "branches": [
+      "Dần"
+    ],
+    "text": "liên hệ với việc giữ được cơ nghiệp thừa hưởng và tạo dựng thêm. Mục Cự Môn còn nêu thị phi, tranh chấp về nhà đất; chưa có phép hợp nhất vế này với các ý cùng cung.",
+    "page": 150,
+    "section": "7.5",
+    "kind": "major"
+  },
+  {
+    "id": "sun-luong-mao",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thái Dương",
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Mão"
+    ],
+    "text": "liên hệ với việc giữ được cơ nghiệp thừa hưởng và tạo dựng thêm.",
+    "page": 150,
+    "section": "7.5",
+    "kind": "major"
+  },
+  {
+    "id": "sun-cu-than",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thái Dương",
+      "Cự Môn"
+    ],
+    "branches": [
+      "Thân"
+    ],
+    "text": "mô tả mất phần cơ nghiệp thừa hưởng, về sau tạo dựng được ít. Mục Cự Môn còn nêu thị phi, tranh chấp về nhà đất; chưa có phép hợp nhất vế này với các ý cùng cung.",
+    "page": 150,
+    "section": "7.5",
+    "kind": "major"
+  },
+  {
+    "id": "sun-luong-dau",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thái Dương",
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Dậu"
+    ],
+    "text": "mô tả mất phần cơ nghiệp thừa hưởng, về sau tạo dựng được ít.",
+    "page": 150,
+    "section": "7.5",
+    "kind": "major"
+  },
+  {
+    "id": "sun-moon",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thái Dương",
+      "Thái Âm"
+    ],
+    "branches": [],
+    "text": "liên hệ với cả phần thừa hưởng lẫn tự tạo dựng khá nhiều.",
+    "page": 150,
+    "section": "7.5",
+    "kind": "major"
+  },
+  {
+    "id": "co-high",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Cơ"
+    ],
+    "branches": [
+      "Tỵ",
+      "Ngọ",
+      "Mùi"
+    ],
+    "text": "mô tả không có phần thừa hưởng nhưng tự tạo dựng được nhiều.",
+    "page": 150,
+    "section": "7.6",
+    "kind": "major"
+  },
+  {
+    "id": "co-low",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Cơ"
+    ],
+    "branches": [
+      "Hợi",
+      "Tý",
+      "Sửu"
+    ],
+    "text": "mô tả cơ nghiệp nhà đất ở mức thông thường.",
+    "page": 150,
+    "section": "7.6",
+    "kind": "major"
+  },
+  {
+    "id": "co-luong",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Cơ",
+      "Thiên Lương"
+    ],
+    "branches": [],
+    "text": "mô tả cơ nghiệp tự tạo dựng và tăng thêm về sau.",
+    "page": 150,
+    "section": "7.6",
+    "kind": "major"
+  },
+  {
+    "id": "co-am-than",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Cơ",
+      "Thái Âm"
+    ],
+    "branches": [
+      "Thân"
+    ],
+    "text": "liên hệ với cơ nghiệp nhà đất nhiều.",
+    "page": 150,
+    "section": "7.6",
+    "kind": "major"
+  },
+  {
+    "id": "co-am-dan",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Cơ",
+      "Thái Âm"
+    ],
+    "branches": [
+      "Dần"
+    ],
+    "text": "mô tả cơ nghiệp nhà đất ở mức thông thường.",
+    "page": 150,
+    "section": "7.6",
+    "kind": "major"
+  },
+  {
+    "id": "co-cu-mao",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Cơ",
+      "Cự Môn"
+    ],
+    "branches": [
+      "Mão"
+    ],
+    "text": "liên hệ với cơ nghiệp nhiều, có phần do thừa hưởng. Mục Cự Môn còn nêu thị phi, tranh chấp về nhà đất; chưa có phép hợp nhất vế này với các ý cùng cung.",
+    "page": 150,
+    "section": "7.6",
+    "kind": "major"
+  },
+  {
+    "id": "co-cu-dau",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Cơ",
+      "Cự Môn"
+    ],
+    "branches": [
+      "Dậu"
+    ],
+    "text": "mô tả mất hoặc rời phần thừa hưởng, việc tự tạo dựng chỉ ở mức khiêm tốn. Mục Cự Môn còn nêu thị phi, tranh chấp về nhà đất; chưa có phép hợp nhất vế này với các ý cùng cung.",
+    "page": 150,
+    "section": "7.6",
+    "kind": "major"
+  },
+  {
+    "id": "phu",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Phủ"
+    ],
+    "branches": [
+      "Sửu",
+      "Mùi",
+      "Mão",
+      "Dậu"
+    ],
+    "text": "mô tả cơ nghiệp thừa hưởng ở mức thông thường.",
+    "page": 151,
+    "section": "7.7",
+    "kind": "major"
+  },
+  {
+    "id": "moon-high",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thái Âm"
+    ],
+    "branches": [
+      "Dậu",
+      "Tuất",
+      "Hợi"
+    ],
+    "text": "mô tả phần thừa hưởng ít nhưng tự tạo dựng ngày càng tăng.",
+    "page": 151,
+    "section": "7.8 Thái Âm",
+    "kind": "major"
+  },
+  {
+    "id": "moon-low",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thái Âm"
+    ],
+    "branches": [
+      "Mão",
+      "Thìn",
+      "Tỵ"
+    ],
+    "text": "mô tả không có nhà đất; trường hợp thuận hơn cũng chỉ về sau mới có nhà đất.",
+    "page": 151,
+    "section": "7.8 Thái Âm",
+    "kind": "major"
+  },
+  {
+    "id": "tham-mo",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Tham Lang"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "mô tả mất hoặc rời phần cơ nghiệp thừa hưởng, về sau mới tạo dựng tăng thêm.",
+    "page": 151,
+    "section": "7.8 Tham Lang",
+    "kind": "major"
+  },
+  {
+    "id": "tham-other",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Tham Lang"
+    ],
+    "branches": [
+      "Dần",
+      "Thân",
+      "Tý",
+      "Ngọ"
+    ],
+    "text": "mô tả mất hoặc không nhận phần thừa hưởng, tự tạo dựng khó; trường hợp thuận hơn đến tuổi già mới ổn định.",
+    "page": 151,
+    "section": "7.8 Tham Lang",
+    "kind": "major"
+  },
+  {
+    "id": "cu-high",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Cự Môn"
+    ],
+    "branches": [
+      "Hợi",
+      "Tý",
+      "Ngọ"
+    ],
+    "text": "mô tả không nhận được cơ nghiệp thừa hưởng, tự tạo dựng ở xa và về sau mới tăng thêm. Mục Cự Môn còn nêu thị phi, tranh chấp về nhà đất; chưa có phép hợp nhất vế này với các ý cùng cung.",
+    "page": 151,
+    "section": "7.9",
+    "kind": "major"
+  },
+  {
+    "id": "cu-low",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Cự Môn"
+    ],
+    "branches": [
+      "Tỵ",
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "mô tả ít hoặc không có cơ nghiệp nhà đất. Mục Cự Môn còn nêu thị phi, tranh chấp về nhà đất; chưa có phép hợp nhất vế này với các ý cùng cung.",
+    "page": 152,
+    "section": "7.9",
+    "kind": "major"
+  },
+  {
+    "id": "tuong-high",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Tướng"
+    ],
+    "branches": [
+      "Sửu",
+      "Mùi",
+      "Tỵ",
+      "Hợi"
+    ],
+    "text": "liên hệ với việc tạo lập nhà đất dễ dàng.",
+    "page": 152,
+    "section": "7.10",
+    "kind": "major"
+  },
+  {
+    "id": "tuong-low",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Tướng"
+    ],
+    "branches": [
+      "Mão",
+      "Dậu"
+    ],
+    "text": "mô tả cơ nghiệp thông thường; nếu có thừa hưởng thì khó giữ và phải tạo dựng lại.",
+    "page": 152,
+    "section": "7.10",
+    "kind": "major"
+  },
+  {
+    "id": "luong-high",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Tý",
+      "Ngọ"
+    ],
+    "text": "liên hệ với cơ nghiệp thừa hưởng và tạo dựng thêm.",
+    "page": 152,
+    "section": "7.11",
+    "kind": "major"
+  },
+  {
+    "id": "luong-mid",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Sửu",
+      "Mùi"
+    ],
+    "text": "mô tả nhà đất ở mức thông thường nhưng nơi ở ít phải lo.",
+    "page": 152,
+    "section": "7.11",
+    "kind": "major"
+  },
+  {
+    "id": "luong-low",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Lương"
+    ],
+    "branches": [
+      "Tỵ",
+      "Hợi"
+    ],
+    "text": "mô tả cơ nghiệp ít và có nhiều thay đổi, mua bán.",
+    "page": 152,
+    "section": "7.11",
+    "kind": "major"
+  },
+  {
+    "id": "sat-dan-than",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thất Sát"
+    ],
+    "branches": [
+      "Dần",
+      "Thân"
+    ],
+    "text": "mô tả phần thừa hưởng ít, chủ yếu tự tạo dựng rồi tăng thêm.",
+    "page": 152,
+    "section": "7.13",
+    "kind": "major"
+  },
+  {
+    "id": "sat-ty-ngo",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thất Sát"
+    ],
+    "branches": [
+      "Tý",
+      "Ngọ"
+    ],
+    "text": "mô tả mua bán, thay đổi; phần thừa hưởng khó giữ, về sau tự tạo dựng mới ổn định.",
+    "page": 152,
+    "section": "7.13",
+    "kind": "major"
+  },
+  {
+    "id": "sat-thin-tuat",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thất Sát"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "mô tả ít hoặc không có cơ nghiệp, phần nhà đất ít ỏi vẫn có điều phiền nhiễu.",
+    "page": 153,
+    "section": "7.13",
+    "kind": "major"
+  },
+  {
+    "id": "pha-ty-ngo",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Phá Quân"
+    ],
+    "branches": [
+      "Tý",
+      "Ngọ"
+    ],
+    "text": "mô tả tạo lập nhanh nhưng về già suy giảm; phần cơ nghiệp thừa hưởng khó ổn định.",
+    "page": 153,
+    "section": "7.14 Phá Quân",
+    "kind": "major"
+  },
+  {
+    "id": "pha-dan-than",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Phá Quân"
+    ],
+    "branches": [
+      "Dần",
+      "Thân"
+    ],
+    "text": "mô tả việc khó có cơ nghiệp nhà đất.",
+    "page": 153,
+    "section": "7.14 Phá Quân",
+    "kind": "major"
+  },
+  {
+    "id": "pha-thin-tuat",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Phá Quân"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất"
+    ],
+    "text": "mô tả có nhà đất rồi hao mất, trải qua biến động trước khi có nơi ở ổn định về sau.",
+    "page": 153,
+    "section": "7.14 Phá Quân",
+    "kind": "major"
+  },
+  {
+    "id": "da",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Đà La"
+    ],
+    "branches": [],
+    "text": "mô tả không có cơ nghiệp; nếu có phần thừa hưởng thì mất hoặc phải rời bỏ.",
+    "page": 153,
+    "section": "7.16",
+    "kind": "minor"
+  },
+  {
+    "id": "loc",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Lộc Tồn"
+    ],
+    "branches": [],
+    "text": "mô tả phần thừa hưởng ít, cơ nghiệp chủ yếu do tự tạo dựng.",
+    "page": 154,
+    "section": "7.22",
+    "kind": "minor"
+  },
+  {
+    "id": "quyen",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Hóa Quyền"
+    ],
+    "branches": [],
+    "text": "liên hệ với nhà cửa có quy mô lớn, theo hình ảnh nhà cửa và dinh thự trong sách; không xác định giá trị hay số lượng tài sản.",
+    "page": 154,
+    "section": "7.24",
+    "kind": "minor"
+  },
+  {
+    "id": "ky",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Hóa Kỵ"
+    ],
+    "branches": [],
+    "text": "mô tả cơ nghiệp nhà đất được giữ ổn định.",
+    "page": 154,
+    "section": "7.25",
+    "kind": "minor"
+  },
+  {
+    "id": "ma",
+    "palace": "Điền Trạch",
+    "stars": [
+      "Thiên Mã"
+    ],
+    "branches": [],
+    "text": "liên hệ với việc tạo lập nhà đất ở xa nơi quê quán.",
+    "page": 154,
+    "section": "7.26",
+    "kind": "minor"
+  },
+  {
+    "id": "both-void",
+    "palace": "Điền Trạch",
+    "stars": [],
+    "branches": [],
+    "text": "mô tả không có phần cơ nghiệp thừa hưởng, tự tạo dựng qua nhiều thăng trầm và đổi chỗ ở; về già mới có chỗ ở khiêm tốn. Đây là nhánh riêng khi cả Tuần lẫn Triệt trực tiếp cùng cung, không phải phép đảo tốt thành xấu cho từng sao.",
+    "page": 155,
+    "section": "7.33",
+    "kind": "both-void"
+  },
+  {
+    "id": "loc",
+    "palace": "Nô Bộc",
+    "stars": [
+      "Lộc Tồn"
+    ],
+    "branches": [],
+    "kind": "minor",
+    "text": "mô tả việc khó tìm người trợ giúp và ít bạn bè.",
+    "page": 172,
+    "section": "9.2.3"
+  },
+  {
+    "id": "ky",
+    "palace": "Nô Bộc",
+    "stars": [
+      "Hóa Kỵ"
+    ],
+    "branches": [],
+    "kind": "minor",
+    "text": "mô tả quan hệ với người trợ giúp và bạn bè dễ nảy sinh bất hòa, lời qua tiếng lại. Đây là mô tả quan hệ trong nguồn, không xác định ai có ý đồ xấu.",
+    "page": 172,
+    "section": "9.2.5"
+  },
+  {
+    "id": "tuong-quan",
+    "palace": "Nô Bộc",
+    "stars": [
+      "Tướng Quân"
+    ],
+    "branches": [],
+    "kind": "minor",
+    "text": "mô tả người thuộc quyền có xu hướng lấn quyền; không tự chuyển ý này thành nhận định về mọi bạn bè hay cộng sự.",
+    "page": 172,
+    "section": "9.2.8"
+  },
+  {
+    "id": "void",
+    "palace": "Nô Bộc",
+    "stars": [],
+    "branches": [],
+    "kind": "void",
+    "text": "mô tả lúc đầu khó tìm người trợ giúp, sau dễ hơn nhưng khó duy trì lâu dài. Không dùng đoạn này để kết luận phẩm hạnh của một người cụ thể.",
+    "page": 173,
+    "section": "9.2.11"
+  },
+  {
+    "id": "tl-tu-ngo",
+    "palace": "Nô Bộc",
+    "stars": [],
+    "branches": [],
+    "kind": "tl-example",
+    "text": "mô tả sự trợ giúp từ Nô đắc lực hơn Bào, nhưng Nô vẫn bị Bào lấn át. Bào ở đây là quan hệ anh chị em; Nô là quan hệ người trợ giúp/bạn hữu trong đoạn nguồn, không chỉ đích danh một người.",
+    "page": 157,
+    "section": "Giây liên lạc Bào với Nô, ví dụ 1",
+    "config": [
+      {
+        "palace": "Mệnh",
+        "branch": "Ngọ",
+        "stars": [
+          "Tử Vi"
+        ]
+      },
+      {
+        "palace": "Huynh Đệ",
+        "branch": "Tỵ",
+        "stars": [
+          "Thiên Cơ"
+        ]
+      },
+      {
+        "palace": "Nô Bộc",
+        "branch": "Hợi",
+        "stars": [
+          "Thái Âm"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tl-tu-phu-dan",
+    "palace": "Nô Bộc",
+    "stars": [],
+    "branches": [],
+    "kind": "tl-example",
+    "text": "mô tả Bào và Nô đều thực lòng trợ giúp Mệnh, nhưng Bào ở vai trò điều khiển. Đây là mô tả quan hệ giữa các cung của ví dụ, không xác nhận động cơ người thân hay bạn bè.",
+    "page": 157,
+    "section": "Giây liên lạc Bào với Nô, ví dụ 5",
+    "config": [
+      {
+        "palace": "Mệnh",
+        "branch": "Dần",
+        "stars": [
+          "Tử Vi",
+          "Thiên Phủ"
+        ]
+      },
+      {
+        "palace": "Huynh Đệ",
+        "branch": "Sửu",
+        "stars": [
+          "Thiên Cơ"
+        ]
+      },
+      {
+        "palace": "Nô Bộc",
+        "branch": "Mùi",
+        "stars": [
+          "Thiên Lương"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tl-tu-ty",
+    "palace": "Nô Bộc",
+    "stars": [],
+    "branches": [],
+    "kind": "tl-example",
+    "text": "mô tả sự trợ giúp từ Bào và Nô kém hiệu quả, dễ có lời trách móc và phân tán. Không dùng cách gọi hạ thấp năng lực trong nguyên văn để đánh giá người thật.",
+    "page": 157,
+    "section": "Giây liên lạc Bào với Nô, ví dụ 7",
+    "config": [
+      {
+        "palace": "Mệnh",
+        "branch": "Tý",
+        "stars": [
+          "Tử Vi"
+        ]
+      },
+      {
+        "palace": "Huynh Đệ",
+        "branch": "Hợi",
+        "stars": [
+          "Thiên Cơ"
+        ]
+      },
+      {
+        "palace": "Nô Bộc",
+        "branch": "Tỵ",
+        "stars": [
+          "Thái Âm"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tl-tu-phu-than",
+    "palace": "Nô Bộc",
+    "stars": [],
+    "branches": [],
+    "kind": "tl-example",
+    "text": "mô tả cả Bào và Nô là chỗ trợ lực, nhưng Nô không phục Bào. Vế bất đồng vẫn được giữ cùng vế trợ giúp; không tự cộng thành kết luận quan hệ thuận lợi hoàn toàn.",
+    "page": 158,
+    "section": "Giây liên lạc Bào với Nô, ví dụ 11",
+    "config": [
+      {
+        "palace": "Mệnh",
+        "branch": "Thân",
+        "stars": [
+          "Tử Vi",
+          "Thiên Phủ"
+        ]
+      },
+      {
+        "palace": "Huynh Đệ",
+        "branch": "Mùi",
+        "stars": [
+          "Thiên Cơ"
+        ]
+      },
+      {
+        "palace": "Nô Bộc",
+        "branch": "Sửu",
+        "stars": [
+          "Thiên Lương"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+[Unit]
+Description=Tinh Luan operational health check (no public diagnostics)
+After=tinhluan-web.service tinhluan-worker.service
+[Service]
+Type=oneshot
+User=tinhluan
+Group=tinhluan
+WorkingDirectory=/opt/tinhluan/current
+ExecStart=/usr/local/bin/node --env-file=/etc/tinhluan/beta.env deploy/beta/health.mjs
+UMask=0077
