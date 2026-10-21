@@ -1,18 +1,18 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-Cập nhật21/10/2026 sau lô Nô–Điền–Phúc (1.58.0). Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
+Cập nhật21/10/2026 sau lô Quan–Tài (1.59.0). Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
 
 Đọc tiếp: [hợp đồng sản phẩm](BUSINESS_RULES.md), [sổ quyết định](DECISIONS.md), [đầu mối bàn giao](HANDOFF.md).
 
 ## 1. Bản nào đang phục vụ khách?
 
-- Trình bày **1.58.0**, catalog **interpretation-1.55.0**. Đã có trong luồng khách tạo mới, không chỉ bản nghiệm thu nội bộ.
-- QA chính: `http://127.0.0.1:3062`; checkout phục vụ `/Volumes/DATA/TINHLUAN/.local/no-dien-phuc-20261021/qa-final`.
+- Trình bày **1.59.0**, catalog **interpretation-1.56.0**. Đã có trong luồng khách tạo mới, không chỉ bản nghiệm thu nội bộ.
+- QA chính: `http://127.0.0.1:3062`; checkout phục vụ `/Volumes/DATA/TINHLUAN/.local/quan-tai-20261021/qa-final`.
 - URL tunnel tại lần nghiệm thu gần nhất: https://61ac-171-246-109-226.ngrok-free.app/lap-la-so . Tunnel có thể đổi; không coi là tên miền triển khai ổn định.
-- Nguồn làm việc: `/Volumes/DATA/TINHLUAN`. Checkout trước để đối chiếu/quay lại: `.local/kin-approved-20261021/qa-final` (1.57.0/1.54.0). QA3070 giữ riêng, không hợp dữ liệu thử của nó vào kho chính.
+- Nguồn làm việc: `/Volumes/DATA/TINHLUAN`. Checkout trước để đối chiếu/quay lại: `.local/no-dien-phuc-20261021/qa-final` (1.58.0/1.55.0). QA3070 giữ riêng, không hợp dữ liệu thử của nó vào kho chính.
 - Policy bản mới: `menh-free-1.0.0`; continuous report: `continuous-report-1.6.1`. P1/P2/M05/M07 và các phép ND01/ND04 đã khép tiếp tục dùng chung pipeline.
 - **Beta, chưa mở bán; SePay Live tắt.** Quy tắc luận vẫn `draft`, `review=null`. Chủ dự án duyệt giao diện hoặc nội dung Toàn thư không đồng nghĩa duyệt chuyên môn toàn báo cáo.
-- Đã xác minh web/worker cùng checkout và API tạo mới QA3062 trong lô này; code commit `3bff73c`, baseline `0613901` sạch. [Danh tính phục vụ](../.local/kin-approved-20261021/serving-code.json), [đích DB/kho](../.local/kin-approved-20261021/runtime-target.json), [bảo toàn](../.local/kin-approved-20261021/preservation.json). QA3070 giữ PID94421. Tunnel ở dòng trên là lần nghiệm thu cũ, không xác minh lại tunnel trong lô này.
+- Đã xác minh web81341/worker81345 cùng checkout và API tạo mới QA3062; code `bb230d5`, baseline `e9fdbbd` sạch. [Danh tính phục vụ](../.local/quan-tai-20261021/serving-code.json), [đích DB/kho](../.local/quan-tai-20261021/runtime-target.json), [bảo toàn](../.local/quan-tai-20261021/preservation.json). QA3070 giữ PID94421. Tunnel phía trên là bằng chứng cũ, không xác minh lại tunnel trong lô này.
 
 ## 2. Những gì đã triển khai
 
@@ -49,10 +49,10 @@ Cập nhật21/10/2026 sau lô Nô–Điền–Phúc (1.58.0). Hướng Tật Á
 
 ## 3. Độ phủ thực tế: bộ 192, không phải mọi lá số
 
-Theo [đối chiếu192 lô Nô–Điền–Phúc với1.57](../.local/no-dien-phuc-20261021/impact192.json), số cung **chưa có nhận định** (tách chú giải có điều kiện):
+Theo [đối chiếu192 lô Quan–Tài với1.58](../.local/quan-tai-20261021/impact192.json), số cung **chưa có nhận định** (tách chú giải có điều kiện):
 
 - Mệnh **0**; Phụ Mẫu **54**; Phúc Đức **36**; Điền Trạch **43**.
-- Quan Lộc **28**; Nô Bộc **71**; Thiên Di **14**; Tật Ách **192**.
+- Quan Lộc **24**; Nô Bộc **71**; Thiên Di **14**; Tật Ách **192**.
 - Tài Bạch **21**; Tử Nữ **76**; Phu Thê **51** (2 chỉ có chú giải điều kiện,49 chưa có cả chú giải); Huynh Đệ **44**.
 
 ND04:38 snapshot có43 claim mới; Phụ16 cung mới có lời/2 bổ sung, Huynh20 mới/5 bổ sung. Các cung khác giữ nguyên;192/192 vẫn có ít nhất một cung thiếu lời (Tật). Có một đoạn không chứng minh đầy đủ chủ đề.33 nhánh có fixture;15 có mẫu engine trong192 hoặc tìm hữu hạn1.440 đầu vào ngoài bộ,18 chưa chứng minh khả đạt.14 đầu vào ngoài bộ chứng kiến15 nhánh, không đếm trùng snapshot. ND03 trước đó chỉ biên tập, không giảm cung trống.
@@ -67,7 +67,15 @@ ND04:38 snapshot có43 claim mới; Phụ16 cung mới có lời/2 bổ sung, Hu
 - **Kiểm thử ND03:**27/27 tại5file; G2 riêng6/6; typecheck/build cuối đạt. Expected cơ bản cũ đã được đối chiếu hợp đồng nguyên nhóm1.1 và khép; không phải toàngate xanh. [TESTING](TESTING.md#5-lỗi-mở-và-kết-quả-cũ-còn-giới-hạn).
 - **Bảo toàn:**112file báo cáo/98ID khác nhau,31file phiên cũ giữ hash; quyền/binding/link cũ và34bài công khai giữ nguyên.4bản/4đơn mock QA mới qua2lượt, chỉ2cấu trúc engine. [File](../.local/nd03-20261020/file-preservation.json), [DB](../.local/nd03-20261020/db-after.json), [UI](../.local/nd03-20261020/public-acceptance.json).
 
-## 5. Task vừa hoàn tất — Nô–Điền–Phúc
+## 5. Task vừa hoàn tất — Quan–Tài
+
+1.59/catalog1.56, code `bb230d5` đã vào QA3062. Ba nhánh giữ toàn thời đoạn nguồn: Vũ–Tham/Quan “từ30”, Nhật–Cự/Thân “về già”, Vũ–Tham/Tài “ngoài30”. Không xác nhận người đọc đã đạt mốc hoặc kết quả, không tính tuổi hiện tại/chọn nghề. Quan28→24 trống (4 mới có nhận định/1 bổ sung); Tài21→21 (0 mới/2 bổ sung);7snapshot đổi. Không thêm cung chỉ chú giải có điều kiện, không gọi4cung mới là hoàn chỉnh.
+
+284 kiểm nội dung tại10file đạt;39 kiểm lại phần nhãn phương diện đạt (nằm trong tập284, không cộng trùng).6G2DBriêng,6PDFmock, typecheck/build cuối đạt. Ba mẫu qua form ở mỗiQA3085/3062, trong đó2ngoài192; full chỉ qua thanh toánmock ởDBriêng. Lưu/mở/mobile360/390/quyền đạt; PDFthật8trang khớp17đoạnfrozen.186file lịch sử và token/binding/link cũ,34bài công khai nguyên; Livefalse, QA3070 nguyên, QA3085đãtắt.
+
+Phần đủ đặc tả trong ma trận Quan45mục/Tài103hàng đã rà đã hết; không tuyên bố hết sách. VCD, bất nhất văn bản, lượng từ/định danh và phép phối hợp còn chặn riêng. [Nguồn Quan](CAREER-CLOSE-1.0.0.md), [nguồn Tài](FINANCE-ASSETS-1.37.0.md), [toàn văn mẫu/cách tạo/thời gian](../.local/quan-tai-20261021/ban-giao.md); backlog duy nhấtND15/16 đã cập nhật.
+
+### Mốc trước — Nô–Điền–Phúc
 
 1.58/catalog1.55, code `e7bd1e4` đã vào QA3062, checkout `.local/no-dien-phuc-20261021/qa-final`; web76459/worker76463 cùng checkout, QA3070pid94421 giữ nguyên. Baseline `main` sạch9f8d407/code3bff73c;192 báo cáo dựng lại khớp. Chín nhánh mới:2Điền,7Phúc;33snapshot nhận thêm lời. Nô71→71 (0 mới/0 bổ sung), Điền59→43 (16 mới/4 bổ sung), Phúc43→36 (7 mới/8 bổ sung). Không có cung mới chỉ chú giải có điều kiện; không gọi23 cung có nhận định mới là hoàn chỉnh.
 

@@ -60,3 +60,8 @@ QA3062 đang1.57/catalog1.54, code3bff73c; [trạng thái](CURRENT_STATUS.md), [
 ## Lô Nô–Điền–Phúc — 1.58.0
 
 QA3062 đang1.58/catalog1.55, code `e7bd1e4`, checkout `.local/no-dien-phuc-20261021/qa-final`. Đọc [trạng thái](CURRENT_STATUS.md), ND04/08/09/10 trong [backlog duy nhất](V1-DELIVERY-PLAN.md), [Nô–Điền](NO-DIEN-1.31.0.md), [Phúc–Di](PHUC-DI-1.0.0.md), [bàn giao và cách tạo mẫu](../.local/no-dien-phuc-20261021/ban-giao.md). Không còn nhánh đủ đặc tả chưa triển khai trong phạm vi đã rà; không tuyên bố hết sách. Giữ riêng2nhánh chỉfixture, lịch sử/G2/QA3070/Livefalse.
+
+
+## Lô Quan–Tài — 1.59.0
+
+QA3062 đang1.59/catalog1.56, code `bb230d5`, checkout `.local/quan-tai-20261021/qa-final`. Đọc [trạng thái](CURRENT_STATUS.md), ND15/16 trong [backlog duy nhất](V1-DELIVERY-PLAN.md), [nguồn Quan](CAREER-CLOSE-1.0.0.md), [nguồn Tài](FINANCE-ASSETS-1.37.0.md), [toàn văn mẫu và bàn giao](../.local/quan-tai-20261021/ban-giao.md). Ba nhánh toàn thời đoạn đã vào luồng Lập lá số; phần đủ đặc tả trong ma trận đã rà đã hết. Không tuyên bố hết sách; giữ VCD/bất nhất/lượng từ/phối hợp riêng, G2/lịch sử/Livefalse không đổi.

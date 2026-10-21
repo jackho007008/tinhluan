@@ -86,3 +86,8 @@ Không có sổ quyết định có chữ ký/permalink độc lập cho toàn b
 ## 21/10/2026 — lô Nô–Điền–Phúc 1.58
 
 Căn cứ yêu cầu trực tiếp trong phiên: chuyển các câu độc lập đủ điều kiện từ audit hiện có sang pipeline khách khi bấm “Lập lá số”, giữ đúng phương diện quan hệ/nguồn gốc/tạo dựng/duy trì; không tự mở loại nội dung hoặc áp duyệt bốn mẫu Tử–Phu cho cung khác. Đã thực hiện9nhánh tại codee7bd1e4. Phân biệt các cổng TT, vắng Riêu/Đà/Kỵ hoặc Không/Kiếp là giới hạn triển khai khi điều chỉnh chưa giải; không nhận chúng là điều kiện nguyên văn hoặc tự bỏ để tăng độ phủ. Bỏ chặn toàn mục VCDĐiền khi câu đầu độc lập; DươngPhúc dùng tọa thủ đúng nguồn. Chưa phê duyệt chuyên môn toàn báo cáo, rule vẫn draft/review=null. Nhóm ngoài phạm vi giữ riêng theoND19; lịch sử/G2/Livefalse không đổi. Đặc tả chi tiết ở NO-DIEN-1.31.0 và PHUC-DI-1.0.0.
+
+
+## 21/10/2026 — Quan–Tài giữ toàn thời đoạn, 1.59
+
+U trực tiếp giao hoàn thiện lô Quan–Tài, giữ điều kiện tuổi/chi/tổ hợp/ngoại lệ, không đổi công danh thành thu nhập hoặc giữ tiền thành giàu có. Triển khai3nhánh tại `bb230d5`: Vũ–Tham/Quan, Nhật–Cự Thân/Quan, Vũ–Tham/Tài. Thay giới hạn triển khai phải tính tuổi hiện tại/chọn giai đoạn bằng việc giữ nguyên toàn diễn tiến nguồn; không xác nhận thời đoạn hoặc kết quả đã xảy ra, không tự định nghĩa tuổi mụ/dương hay tuổi “già”. Phân biệt “từ30” và “ngoài30”. Đây là ủy quyền trong task, không phải phê duyệt chuyên môn hoặc mở tất cả chú giải nếu/mới. ND03/G2/lịch sử/Livefalse giữ nguyên, không mở Tật Ách. Chi tiết nguồn ở CAREER-CLOSE-1.0.0 và FINANCE-ASSETS-1.37.0.

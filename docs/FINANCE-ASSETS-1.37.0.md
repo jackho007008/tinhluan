@@ -31,3 +31,21 @@ Mệnh/Thân/Phúc/Di: TB190 yêu cầu xét trước; NPL241–242,254–257 ch
 - Lượng tạo của so với hao tán Cơ–Lương/Kỵ: chưa có phép cân đối hay thay thế; không cần chặn trình bày song song.
 - Ngưỡng/phương pháp liên cung Mệnh–Thân–Phúc–Di và trạng thái hỗn hợp; không áp những chữ “nhiều”,“tốt”,“xấu” như boolean toàn cung.
 - NPL254 không định lượng được “vừa đủ” sao giữ của; không triển khai ngưỡng2. NPL262–265 phần quy kết đạo đức, hình ngục/biến cố không đưa vào sản phẩm. Không thêm nhánh vận.
+
+
+## Lô Quan–Tài 1.59.0 / catalog1.56.0 — 21/10/2026
+
+Code `bb230d5` bổ sung `tanbien.finance-vu-tham-sequence`: Vũ Khúc–Tham Lang bản mệnh đồng cung Tài; PDF191§12.4 và192§12.9 ghi đúng “từ ngoài 30 trở đi, mới giàu”. Không đổi thành “từ30” của Quan, không tính tuổi hiện tại hoặc khẳng định đã qua mốc/đã giàu, không suy trước mốc phải nghèo. Giới hạn cũ phải chọn thời đoạn hiện tại được bỏ cho việc trình bày nguyên câu; chưa giải quy ước tuổi để chạy dự báo theo năm. Không lấy câu Quan để bổ sung thu nhập cho câu Tài.
+
+ND03 giữ nguyên. Nhánh mới ở **Tiền bạc**, không phân thành Nguồn thu hoặc Giữ của vì câu nguồn chỉ nói diễn tiến mức tài chính. Không thêm quan hệ cân đối/ưu tiên hoặc kết luận ròng. Lịch sử đọc đúng frozen cũ; G2 không đổi. Bộ192: Tài21→21 trống,0 mới có nhận định/2 cung có lời được bổ sung. Mẫu engine ngoài192: nữ05/05/1988 dương lịch giờTỵ, đã tạo qua form Lập lá số.
+
+Rà đủ103 hàng ma trận finance-expand: các nhánh A có ID đã nằm trong code; câu Vũ–Tham là phần thời đoạn vừa triển khai. Thái Dương tọa thủ có cổng đơn thủ do dự án chống trùng: các cặp Nhật–Cự/Nhật–Lương/Nhật–Nguyệt đã có lời riêng, không cần thêm claim trùng; không mở cổng tọa thủ để bỏ qua ngoại lệ Nhật–Nguyệt. Không xem cổng đó là điều kiện nguyên văn.
+
+Còn chặn cụ thể:
+
+- Kình–Đà/Hỏa–Linh/Không–Kiếp: lượng từ và cách chọn khi trạng thái khác nhau; Xương–Khúc/Riêu–Y/TT: “nhiều” và phối hợp chưa định nghĩa. Khôi–Việt/Tả–Hữu/Lộc–Khoa–Quyền/Cô–Quả/Quang–Quý thiếu toán tử; không chọn AND/OR từ dấu phẩy.
+- Lộc–Mã/Hồng/Hao/Tang–Đà/Không–Kiếp và các nhóm Song Hao: định danh Lộc/Hao, quan hệ và phạm vi áp dụng chưa đủ. Tử195§12.31 “có của chôn giấu” chưa có đặc tả nhận dạng/áp dụng đã chốt; không tự đổi thành giữ tiền hoặc giàu có. Các vế quy kết hành vi/bạo lực ngoài phạm vi không chuyển thành lời nhẹ hơn.
+- VCD197§12.56: chỉ dẫn mượn đi kèm giới hạn không “giàu to lớn” và hai ngoại lệ TT, Nhật–Nguyệt cùng sáng xung/hợp. Bản in là “hợp chiến”; không tự sửa. Chưa có phép gắn giới hạn vào các lời đối cung và xử lý ngoại lệ, không mượn toàn catalog hoặc chép một câu giàu có rồi thêm cảnh báo chung.
+- Liêm–Phủ/Thiên Không và Cơ–Lương/Kỵ vẫn giữ song song; chưa có phép xác định lời giữ/tạo tiền thắng hao tán. Không đổi bố cục thành kết luận tổng hợp.
+
+Phần đủ đặc tả trong ma trận đã rà đã hết sau lô này; không tuyên bố hết sách. Backlog duy nhất ND15/16 và phần VCD ND04; [toàn văn mẫu và kiểm](../.local/quan-tai-20261021/ban-giao.md).

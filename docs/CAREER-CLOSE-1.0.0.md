@@ -19,3 +19,21 @@ Phân loại loại trừ nhau: bị chặn nguồn vị trí; có lời chính 
 
 ## Expected kiểm thử nguồn
 22ca kỹ thuật đúngsao/chi/độc thủ=>1claim tươngứng; bỏtừngsao, saicung, di chuyển sao sang đối cung, layerlưu=>khôngclaim; thiếu list và bằngchứng=>unknown; thêm chính tinh khiđộc thủ=>false. Không yêu cầubrightness nênunknowntrạngthái khôngchặn. Chỉ mộtclaimcho tổhợp đối xứng (Đồng–Lương, Cơ–Lương...). Không ngầm dùng ngoại lệTuần/Triệt củaNhật–Nguyệt cho nhánh khác. Kháchhàng0draft. Giữhashengine vàlịchsử.
+
+
+## Lô Quan–Tài 1.59.0 / catalog1.56.0 — 21/10/2026
+
+Baseline thực tế `main` sạch `e9fdbbd`, code `e7bd1e4`; dựng lại192 báo cáo khớp1.58. Dùng ma trận45 mục Quan và103 hàng Tài đã audit, không đọc lại chương. Chỉ đối chiếu câu Quan159§8.4/5 (ảnh), văn đối xứng161§8.9/10–162; Tài191§12.4 (ảnh)/192§12.9; câu VCD166–167/197 (ảnh197). Code `bb230d5`, module `quan-tai.ts`, dùng evaluator/facts/renderer chung; draft/review=null.
+
+Hai giới hạn triển khai cũ được thay trong phạm vi câu toàn thời đoạn:
+
+- **Vũ–Tham tại Quan**, PDF159§8.4/161§8.9: “Lúc thiếu thời mọi sự chẳng được hành thông, từ 30 tuổi trở đi, mới được xứng ý toại lòng.” Cả câu kinh doanh, điều kiện “nếu có danh chức” và diễn tiến được giữ cùng nhau. Không cần tính tuổi hiện tại để xuất nguyên nhận định; không chọn vế thuận rồi coi đã áp. Không suy trước30 là mọi việc thất bại, không quyết định tuổi mụ/dương hoặc dùng năm xem. Cấu trúc: đủ hai chính tinh bản mệnh đồng cung Quan; không thêm chi/độ sáng/giới tính/TT mà câu không đặt.
+- **Nhật–Cự tại Quan/Thân**, PDF159§8.5/161–162§8.10: “công danh thăng giáng thất thường, hay mắc thị phi quân sự. Về già mới được xứng ý toại lòng.” Giữ cả diễn tiến và phạm vi quân sự; không xác định tuổi “già”, không tư vấn nghề hoặc dự báo sự kiện. Cổng Thân giữ nguyên, không mở sang Dần.
+
+Đây là triển khai yêu cầu giữ điều kiện tuổi/thời đoạn của task; không áp cơ chế chú giải cưới/sinh được duyệt riêng ở Tử–Phu. Nhận định mới không xác nhận thời đoạn đã đến hoặc kết quả đã xảy ra. Văn toàn đoạn và cách tạo ở [bàn giao](../.local/quan-tai-20261021/ban-giao.md).
+
+Bộ192: Quan28→24 trống,4 mới có nhận định/1 cung đã có được bổ sung. Vũ–Tham khớp4, Nhật–Cự/Thân khớp1. Mẫu engine ngoài192: nam20/02/1978, giờTỵ; Nhật–Cự/Thân kiểm form bằng mẫu trong192 nam06/05/2008 giờSửu. Fixture chỉ dùng kiểm cấu trúc/near-miss, không thay bằng chứng engine.
+
+**Điểm còn chặn:** DươngTý có hai lời trái nhau và Thìn dẫn chiếu; Cơ–Âm ghiThìn không phù hợp cấu trúc engine, chữ “về khoa” và nhánhDần “như trên” chưa rõ; Tử–Tham phụ thuộc “công danh rực rỡ” chưa có tiêu chí; Liêm–Tham/SátThìnTuất không có câu nghề độc lập đủ phạm vi để bỏ hình ngục/binh thương. §8.14–44 còn nhóm thiếu lượng từ, định danh hoặc quan hệ như ma trận; Sát–Quyền vẫn không tương thích profile hiện hành, không tìm hàng loạt ngày để né chứng minh đó.
+
+**VCD166–167§8.45:** sau chỉ dẫn mượn là giới hạn “công danh không thể hiển đạt”, chức vị bình thường, rồi ngoại lệ TT và Nhật–Nguyệt cùng sáng. Chưa có phép áp giới hạn vào từng lời cặp nêu hiển đạt/phú quý và phân vị trí/trạng thái/ngoại lệ. Không thể chỉ bỏ điều kiện tính trạng thái để chép nguyên cặp từ đối cung hoặc tự chọn lời thắng. Đây là thiếu cách áp nguồn, khác giới hạn tính tuổi vừa bỏ. Trong phạm vi ma trận đã rà, không còn câu đủ đặc tả bị treo coding sau lô này; không tuyên bố đã khai thác hết sách.
