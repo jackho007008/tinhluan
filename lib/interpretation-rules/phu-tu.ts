@@ -11,7 +11,7 @@ export const kinCondition=(r:KinBranch)=>r.stars.join('–')+(r.mode==='exact'?(
 // Reuse the certified major/minor/mutagen contract. No natal computation or inferred metadata.
 export function kinAssessment(s:ChartSnapshot,r:KinBranch):FamilyAssessment{
  const assess=(stars:string[],mode:string)=>familyAssessment(s,{...r,stars,mode,wealth:false});
- const ringField=r.stars[0]==='Thái Tuế'?'suiqian12':r.stars[0]==='Phục Binh'?'boshi12':null;
+ const ringField=['Thái Tuế','Tang Môn'].includes(r.stars[0])?'suiqian12':r.stars[0]==='Phục Binh'?'boshi12':null;
  const a=ringField?(()=>{
   const check=assess([], 'presence');if(check.value===undefined)return check;
   const cycle=ringField==='suiqian12'?['Thái Tuế','Thiếu Dương','Tang Môn','Thiếu Âm','Quan Phù','Tử Phù','Tuế Phá','Long Đức','Bạch Hổ','Phúc Đức','Điếu Khách','Trực Phù']:['Bác Sỹ','Lực Sỹ','Thanh Long','Tiểu Hao','Tướng Quân','Tấu Thư','Phi Liêm','Hỷ Thần','Bệnh Phù','Đại Hao','Phục Binh','Quan Phù'];

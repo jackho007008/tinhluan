@@ -1,3 +1,4 @@
+import {localPalaceBranches,localPalaceAssessment} from '../interpretation-rules/no-dien-phuc';
 import {approvedKinBranches} from '../interpretation-rules/kin-approved';
 import {kinExtensionBranches} from '../interpretation-rules/kin-extension';
 import {childrenVcdBranches,childrenVcdFacts} from '../interpretation-rules/children-vcd';
@@ -215,6 +216,7 @@ const factLabels: Record<string, string> = {
   "fact.wealth-minor-stars": "phụ tinh tại Tài Bạch",
 };
 export function conditionText(c: Condition): string {
+ const local=localPalaceBranches.find(r=>c.fact==='fact.'+r.id);if(local)return local.title;
   const children=childrenVcdBranches.slice(6).find(r=>c.fact==='fact.children-vcd-'+r.id);if(children)return `Tử Nữ không có chính tinh; đúng cặp ${children.stars.join('–')} tại Điền Trạch xung chiếu, không chuyển phụ tinh.`;
   const vcd=familyVcdBranches.find(r=>c.fact==='fact.'+familyVcdKey(r));if(vcd)return `${vcd.palace} không có chính tinh; đúng cả cặp ${vcd.stars.join('–')} bản mệnh xung chiếu.`;
   if(c.fact === "fact.life-literary-m05")return "Nam mệnh; Vũ miếu/vượng/đắc tọa Mệnh, Xương hoặc Khúc đồng cung theo Tân Biên.";
@@ -272,6 +274,7 @@ export function conditionText(c: Condition): string {
     : `Điều kiện về ${label}: ${c.value}.`;
 }
 export function factEvidence(s: ChartSnapshot, id: string): ReadingEvidence {
+ const local=localPalaceBranches.find(r=>id==='fact.'+r.id);if(local){const a=localPalaceAssessment(s,local);return item(a.text,a.paths,a.cause==='unresolved-adjustment'?'editorial':'snapshot');}
  const children=childrenVcdBranches.slice(6).find(r=>id==='fact.children-vcd-'+r.id);if(children){const f=childrenVcdFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,'snapshot'):item('Chưa đủ dữ kiện chính tinh và quan hệ xung chiếu để kiểm tra nhánh Tử Nữ này.');}
  const vcd=familyVcdBranches.find(r=>id==='fact.'+familyVcdKey(r));if(vcd){const a=familyVcdAssessment(s,vcd);return item(a.text,a.paths,a.cause==='unresolved-adjustment'?'editorial':'snapshot');}
  if(id.startsWith("fact.life-literary-")){const f=lifeLiteraryFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện nhất quán để kiểm tra nhánh văn tinh/Tứ Hóa tại Mệnh.");}
