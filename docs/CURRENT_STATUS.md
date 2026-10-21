@@ -1,6 +1,6 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-Cập nhật21/10/2026 sau lô Quan–Tài (1.59.0). Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
+Cập nhật21/10/2026 sau gói bảng quyết định12cung (chỉ tài liệu; ứng dụng vẫn1.59.0). Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
 
 Đọc tiếp: [hợp đồng sản phẩm](BUSINESS_RULES.md), [sổ quyết định](DECISIONS.md), [đầu mối bàn giao](HANDOFF.md).
 
@@ -67,7 +67,18 @@ ND04:38 snapshot có43 claim mới; Phụ16 cung mới có lời/2 bổ sung, Hu
 - **Kiểm thử ND03:**27/27 tại5file; G2 riêng6/6; typecheck/build cuối đạt. Expected cơ bản cũ đã được đối chiếu hợp đồng nguyên nhóm1.1 và khép; không phải toàngate xanh. [TESTING](TESTING.md#5-lỗi-mở-và-kết-quả-cũ-còn-giới-hạn).
 - **Bảo toàn:**112file báo cáo/98ID khác nhau,31file phiên cũ giữ hash; quyền/binding/link cũ và34bài công khai giữ nguyên.4bản/4đơn mock QA mới qua2lượt, chỉ2cấu trúc engine. [File](../.local/nd03-20261020/file-preservation.json), [DB](../.local/nd03-20261020/db-after.json), [UI](../.local/nd03-20261020/public-acceptance.json).
 
-## 5. Task vừa hoàn tất — Quan–Tài
+## 5. Task vừa hoàn tất — bảng quyết định12 cung, chỉ tài liệu
+
+Đã tổng hợp ngay trong [backlog duy nhất](V1-DELIVERY-PLAN.md#bảng-quyết-định-cuối-gói-tài-liệu--21102026):7 nhóm nguyên nhân, nguồn/audit/code, người chịu trách nhiệm, thứ tự gói và giờ công tách triển khai–biên tập–nghiệm thu–thẩm định/chờ. Không tạo backlog khác hoặc coi đề xuất đã duyệt.
+
+- **Còn lại:** hợp đồng VCD; lượng từ/vị trí/định danh/điều kiện; ô nguồn thiếu/bất nhất; phép điều chỉnh và phối hợp; xác nhận phạm vi sản phẩm; Tật cá nhân cho mọi cấu trúc; bằng chứng khả đạt và nghiệm thu bài hoàn chỉnh. Phần đủ đặc tả của các ma trận vừa rà đã triển khai hết, không có lô rule sẵn sàng được xác nhận mới trong phiên này.
+- **Tật:** hai mẫu chỉ giải cách chọn/diễn đạt hai đoạn nguồn; chưa giải lời từng sao, cứu/tác, Mệnh–Thân–Phúc hoặc các cấu trúc khác. Chưa duyệt mẫu/publish;192/192 vẫn thiếu luận Tật. Hiện chưa có đường hoàn thành Tật trong phạm vi sản phẩm được chứng minh đầy đủ.
+- **Cần chủ dự án chốt:** người thẩm định/tiêu chí Tật; danh sách loại trừ ND19; bài theo phương diện không ép kết quả ròng nhưng vẫn đủ ngoại lệ; đề xuất giữ nguyên ND02/G2. Giá/hạn/quyền nguồn và vận hành thương mại chốt sau cổng nội dung. Không yêu cầu chủ dự án đoán AND/OR, trạng thái hoặc chọn lời thắng.
+- **Gói kế tiếp đề xuất:** khóa phạm vi ND18/19/02/17 và hồ sơ thẩm định đúng2 mẫu Tật, chưa code/publish. Dự toán7–14 giờ Codex +4–8 giờ thẩm định; thời gian chờ chưa biết. Các gói tiếp sau chỉ thực hiện khi có đặc tả/phê duyệt và yêu cầu giao việc; chưa có tổng thời gian hoàn thành12 cung đáng tin cậy.
+- **Baseline kiểm trực tiếp:** `main@bfcdb2b` sạch đầu phiên; code `bb230d5`,1.59/catalog1.56.8 file receipt trùng root/checkoutQA3062; cwd PID81341/81345 đúng `.local/quan-tai-20261021/qa-final`. Không nghiệm thu lại HTTP/DB/tunnel, không chạy test/build hoặc thao tácQA3070. Giữ nguyên ứng dụng, G2, lịch sử, Live tắt.
+
+### Mốc trước — Quan–Tài1.59
+
 
 1.59/catalog1.56, code `bb230d5` đã vào QA3062. Ba nhánh giữ toàn thời đoạn nguồn: Vũ–Tham/Quan “từ30”, Nhật–Cự/Thân “về già”, Vũ–Tham/Tài “ngoài30”. Không xác nhận người đọc đã đạt mốc hoặc kết quả, không tính tuổi hiện tại/chọn nghề. Quan28→24 trống (4 mới có nhận định/1 bổ sung); Tài21→21 (0 mới/2 bổ sung);7snapshot đổi. Không thêm cung chỉ chú giải có điều kiện, không gọi4cung mới là hoàn chỉnh.
 

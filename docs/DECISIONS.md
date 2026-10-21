@@ -91,3 +91,8 @@ Căn cứ yêu cầu trực tiếp trong phiên: chuyển các câu độc lập
 ## 21/10/2026 — Quan–Tài giữ toàn thời đoạn, 1.59
 
 U trực tiếp giao hoàn thiện lô Quan–Tài, giữ điều kiện tuổi/chi/tổ hợp/ngoại lệ, không đổi công danh thành thu nhập hoặc giữ tiền thành giàu có. Triển khai3nhánh tại `bb230d5`: Vũ–Tham/Quan, Nhật–Cự Thân/Quan, Vũ–Tham/Tài. Thay giới hạn triển khai phải tính tuổi hiện tại/chọn giai đoạn bằng việc giữ nguyên toàn diễn tiến nguồn; không xác nhận thời đoạn hoặc kết quả đã xảy ra, không tự định nghĩa tuổi mụ/dương hay tuổi “già”. Phân biệt “từ30” và “ngoài30”. Đây là ủy quyền trong task, không phải phê duyệt chuyên môn hoặc mở tất cả chú giải nếu/mới. ND03/G2/lịch sử/Livefalse giữ nguyên, không mở Tật Ách. Chi tiết nguồn ở CAREER-CLOSE-1.0.0 và FINANCE-ASSETS-1.37.0.
+
+
+## 21/10/2026 — bảng quyết định hoàn thành12 cung, chỉ tài liệu
+
+**U trực tiếp trong phiên:** “Mục tiêu là khép các quyết định còn ngăn hoàn thành báo cáo 12 cung có thể thu phí, áp dụng chung cho mọi khách hàng.”; yêu cầu lập bảng từ audit hiện có, cập nhật kế hoạch/CURRENT_STATUS, chưa thêm rule hoặc sửa ứng dụng, giữ G2/lịch sử/Live tắt. Mục tiêu này xác nhận Q01, không cho phép hạ thành12 tiêu đề hoặc chỉ bán cấu trúc mẫu. [Bảng quyết định trong backlog duy nhất](V1-DELIVERY-PLAN.md#bảng-quyết-định-cuối-gói-tài-liệu--21102026) là **đề xuất chưa duyệt**: tiêu chí Tật, xác nhận loại trừND19, mức đầy đủ theo phương diện và giữ ND02 hiện hành. Không coi việc tổng hợp là chủ dự án đã duyệt hai mẫu Tật, phương pháp chuyên môn hoặc cho phép publish. Không thay Q02/Q06 và các phê duyệt hữu hạn trước đó.
