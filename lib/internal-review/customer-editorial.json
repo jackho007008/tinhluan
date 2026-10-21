@@ -5689,15 +5689,15 @@
       "Không mượn chính tinh, phụ tinh hoặc lời của đối cung; không kết luận toàn cung hay cân đối tài sản ròng."
     ]
   },
-  "tanbien.di-dong-am-receiver-void": {
-    "text": "Thiên Di không có chính tinh, nhận Thiên Đồng–Thái Âm từ Mệnh xung chiếu. Khi Tuần hoặc Triệt án ngay tại Thiên Di, lời riêng về yếu tố này nói đến việc ra ngoài thường gặp nhiều phiền lòng. Nhận định này nói về yếu tố án ngữ, chưa đánh giá kết quả chung của mọi sao trong cung.",
-    "sourceTemplate": "Thiên Di không có chính tinh, nhận Thiên Đồng–Thái Âm từ Mệnh xung chiếu. Khi Tuần hoặc Triệt án ngay tại Thiên Di, lời riêng về yếu tố này nói đến việc ra ngoài thường gặp nhiều phiền lòng. Nhận định này nói về yếu tố án ngữ, chưa đánh giá kết quả chung của mọi sao trong cung.",
+  "tanbien.di-direct-void": {
+    "text": "Tuần hoặc Triệt án tại Thiên Di gắn với việc ra ngoài thường gặp nhiều phiền lòng. Đây là nhận định riêng về yếu tố án ngữ, chưa phải kết luận chung của cung.",
+    "sourceTemplate": "Tuần hoặc Triệt án tại Thiên Di gắn với việc ra ngoài thường gặp nhiều phiền lòng. Đây là nhận định riêng về yếu tố án ngữ, chưa phải kết luận chung của cung.",
     "sourceVersion": "0.1.0",
-    "catalogHash": "7eb4cf951611a07df03c3e8265d4f0e1d14659c44b83e6cf237ff64f7c60ebf7",
+    "catalogHash": "e926c5a82b17bc40a845d0f1e61677c3a440127890c6f45018dfd9c23f1445b5",
     "strategy": "explicit-rule-prose",
     "movedToEvidence": [
-      "Chỉ phiền lòng khi ra ngoài, không dự báo tai nạn, sinh tử hoặc khuyên di chuyển.",
-      "Không xuất lời nền Đồng–Âm chưa giải; không đảo, xóa hoặc tổng hợp các nhận định khác."
+      "TB179§10.27 áp cả có chính tinh/VCD; không cổng cặp sao.",
+      "Chỉ phiền lòng; loại sinh tử/tai nạn, không đảo/xóa lời khác hoặc mở nền Đồng–Âm."
     ]
   }
 }

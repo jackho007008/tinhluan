@@ -123,3 +123,23 @@ Không thêm cổng phải vắng Không/Kỵ/Hóa Khoa hay độ sáng để d�
 **Ba ứng viên192:**34 và127 TT trực tiếp ở Mệnh nhưng không ở Di, không nhận claim mới; nền Tý vẫn chưa áp.139 có Triệt tại DiTý, nhận **chỉ lời phiền lòng độc lập**, không nhận nền Ngọ hoặc đoạn thẩm định. So192 thực tế: **1Di mới có nhận định,0bổ sung,14→13 chưa có nhận định**, không phải cung hoàn chỉnh. Không tăng độ phủ từ các mẫu tìm ngoài192. [Bằng chứng và bàn giao](../.local/dong-am-di-20261021/ban-giao.md).
 
 Điểm dừng: nhánh TTDi có căn cứ đã vào pipeline dùng chung; chưa giải nền Đồng–Âm dưới TT/các điều chỉnh khác. Không tạo thêm đoạn unknown để lấp cung. G2/lịch sử/Tật/hai mẫu chưa duyệt/Livefalse giữ nguyên; NPA120/DDSN898 vẫn chưa đọc.
+
+## TTDi dùng chung — thay giới hạn Đồng–Âm,21/10/2026
+
+Theo yêu cầu trực tiếp của chủ dự án nối `ca75881`, quy tắc TB179§10.27 được mở đúng phạm vi nguồn, thay tập con1.61. Đây không phải mở lời nền Đồng–Âm hoặc đổi hợp đồng phối hợp chọn chi. [Module dùng chung](../lib/interpretation-rules/di-void.ts) thay module hẹp; `tanbien.di-dong-am-receiver-void` rời catalog mới, không cùng chạy với `tanbien.di-direct-void`. Bản lưu cũ giữ văn/metadata đã đóng băng.
+
+**Nguồn:** tiêu đề “Tuần, Triệt án ngữ” thuộc chương Thiên Di; dòng đầu có vế phiền lòng và vế chết xa nhà. Vế phiền lòng độc lập không giới hạn chính tinh/VCD, cặp sao, địa chi, sáng–mờ, tuổi hoặc giới. Chỉ TT trực tiếp tại Di; TT chỉ ở Mệnh/đối cung không đủ. Một trong hai hoặc cả hai cùng án đều tạo một lời. Đây là áp dụng trực tiếp TB179; không cần phép mượn hay phối hợp Hàm Số để chọn chi.
+
+**Ngoại lệ liên quan đã đối chiếu từ hồ sơ/kho chữ:** các dòng Tham/Phá, Tướng Quân/Thiên Tướng, Mã trong §10.27 không viết rằng vế phiền lòng mất hiệu lực; chúng thêm phương diện tai nạn/sinh tử, không xuất trong gói này. Mã chung §10.24 vẫn bị chặn khi TT trực tiếp, không dùng vế phiền lòng thay cho việc giải lời Mã. Nhật–Nguyệt tại §10.5/10.8 có vế tăng rực rỡ riêng; chữ “Tuần, Tuần” giữ nguyên, không tự sửa thành Triệt. Nguồn không nói tăng rực rỡ xóa phiền lòng; cũng không dùng phiền lòng đảo/xóa lời chính tinh. Chưa giải vế tăng cho sao xung chiếu. Hóa Kỵ tại Di giữ ngoại lệ Nhật–Nguyệt hiện có, không vì TTDi mà mở lại nhánh bị loại. Các tác giả nói VCDTT thuận không được nhập để hủy vế TB179.
+
+**Kiểm tính hợp lệ dữ liệu, không phải điều kiện sách:** profile Tân Biên có vị trí nguồn; danh sách12cung/14chính tinh bản mệnh complete, duy nhất và hợp lệ; Mệnh–Di định danh đối cung; hai cặp Tuần/Triệt duy nhất, kề nhau theo helper hiện có. Thiếu/bất nhất là unknown, không xuất. Không yêu cầu phụ tinh/Tứ Hóa/sáng–mờ đầy đủ để phát hành chính vế này. Cổng toàn vẹn dùng chung bảo vệ tính nhất quán snapshot; không biến chính tinh thành điều kiện chuyên môn.
+
+**Giới hạn dự án:** chỉ vế phiền lòng độc lập; loại sinh tử/tai nạn vì phạm vi sản phẩm hiện hành. Không kết luận ròng, không tự điều chỉnh/xóa các lời khác. Nền Đồng–Âm và ba đoạn thẩm định chưa mở vì quan hệ điều chỉnh từng vế còn thiếu. Không mở Tật Ách/G2/Live. Rule vẫn draft, review=null; kiểm kỹ thuật không là phê duyệt chuyên môn cho nội dung khác.
+
+**Chống trùng:** một fact/rule chung cho mọi cấu trúc, không sao chép theo cặp; cả hai TT chỉ một claim. Rule hẹp bị thay thế, không giữ song song. Hóa Kỵ cùng có chữ phiền lòng nhưng thêm thị phi và có căn cứ khác; giữ nguyên toàn lời đó, không xóa căn cứ hoặc nhập thành kết luận tổng hợp. Các lời chính tinh đã có không sửa. So192 xác nhận mọi fact/rule/trace/claim/đoạn khác và quan hệ/G2 giữ nguyên.
+
+**Văn mới:**
+
+> Tuần hoặc Triệt án tại Thiên Di gắn với việc ra ngoài thường gặp nhiều phiền lòng. Đây là nhận định riêng về yếu tố án ngữ, chưa phải kết luận chung của cung.
+
+So với1.61:59mẫu khớp (52có chính tinh,7VCD),58được thêm lời:3Di mới có nhận định/55bổ sung, mẫu139 thay lời TTDi cũ. Di13→10chưa có nhận định, không coi cung hoàn chỉnh. [Bằng chứng/toàn văn trước-sau](../.local/di-void-shared-20261021/ban-giao.md). Không thay các mốc lịch sử phía trên.
