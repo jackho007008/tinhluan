@@ -8,6 +8,13 @@
 4. Xác minh cwd, file/symbol thực tế và checkout phục vụ; không lấy phiên bản hoặc bàn giao làm bằng chứng code hiện hành. Nếu có Git, ghi HEAD/status/diff; nếu không có, nói rõ và lưu diff tài liệu/file trong phạm vi task.
 5. Nêu lô hữu hạn, file dự kiến tác động và điểm dừng. Giữ thay đổi hợp lệ của thread khác; không tự mở task/thread hoặc gửi việc cho thread khác.
 
+## Tra nguồn bền vững
+
+- Đọc [SOURCE-LIBRARY](docs/SOURCE-LIBRARY.md); tra kho chữ, hồ sơ kiến thức và audit đã có trước. Chỉ mở PDF đúng đoạn khi thiếu ngữ cảnh, nghi OCR hoặc cần kiểm ảnh/bảng/ký hiệu.
+- Sách/toàn văn/ảnh giữ trong `.local/source-library`, ngoài Git/phần công khai; không thay ignore. Phân biệt đã trích, đã đọc, đã kiểm ảnh, đã đặc tả; tái dùng nhật ký có chứng cứ, không đọc lại chỉ để tạo nhật ký.
+- Chủ dự án và Codex thực hiện, không có người thẩm định bên ngoài. Codex khảo cứu và đề xuất cách hiểu có lập luận, giữ riêng từng tác giả và điều chưa biết; không yêu cầu chủ dự án đoán toán tử/chọn câu nguồn thắng. Đề xuất không tự trở thành quyết định hoặc quyền publish.
+- Task khảo cứu toàn sách21/10 thay hạn chế đọc hẹp trước đó trong phạm vi nghiên cứu; theo từng chương, lưu checkpoint và điểm tiếp tục chính xác. Triển khai vẫn chỉ theo backlog V1 và task được giao.
+
 ## Ràng buộc
 
 - Dùng lại engine, evaluator, renderer, quyền, queue và kho hiện có. Không dựng pipeline riêng cho mẫu nghiệm thu.

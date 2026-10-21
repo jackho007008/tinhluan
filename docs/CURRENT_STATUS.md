@@ -1,6 +1,6 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-Cập nhật21/10/2026 sau gói bảng quyết định12cung (chỉ tài liệu; ứng dụng vẫn1.59.0). Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
+Cập nhật21/10/2026 sau checkpoint kho nguồn (chỉ tài liệu; ứng dụng vẫn1.59.0). Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
 
 Đọc tiếp: [hợp đồng sản phẩm](BUSINESS_RULES.md), [sổ quyết định](DECISIONS.md), [đầu mối bàn giao](HANDOFF.md).
 
@@ -67,7 +67,16 @@ ND04:38 snapshot có43 claim mới; Phụ16 cung mới có lời/2 bổ sung, Hu
 - **Kiểm thử ND03:**27/27 tại5file; G2 riêng6/6; typecheck/build cuối đạt. Expected cơ bản cũ đã được đối chiếu hợp đồng nguyên nhóm1.1 và khép; không phải toàngate xanh. [TESTING](TESTING.md#5-lỗi-mở-và-kết-quả-cũ-còn-giới-hạn).
 - **Bảo toàn:**112file báo cáo/98ID khác nhau,31file phiên cũ giữ hash; quyền/binding/link cũ và34bài công khai giữ nguyên.4bản/4đơn mock QA mới qua2lượt, chỉ2cấu trúc engine. [File](../.local/nd03-20261020/file-preservation.json), [DB](../.local/nd03-20261020/db-after.json), [UI](../.local/nd03-20261020/public-acceptance.json).
 
-## 5. Task vừa hoàn tất — bảng quyết định12 cung, chỉ tài liệu
+## 5. Task hiện hành — kho nguồn, checkpoint có thể tiếp tục
+
+- [Đầu mối danh mục/tra cứu](SOURCE-LIBRARY.md), [kho riêng](../.local/source-library/README.md), [kết quả điểm chặn](../.local/source-library/blocker-results.md).8PDF Tử Vi/7nhóm nhan đề,2.468trang trích xuất;45trang OCR bổ sung. Không coi mọi bảng/chữ đã sạch hoặc đã đọc toàn kho. TOEIC ngoài phạm vi; hai bản TL giữ riêng.
+- Kế thừa đọc toàn TB277/TH442/HS237 và7trang TL298 chọn lọc có chứng cứ; đọc mới TL18625trang và thuật ngữ10trang, kiểm ảnh mới17trang.64hồ sơ gồm55nhóm NPL kế thừa+9hồ sơ mới; chưa đặc tả toàn sách.
+- Chưa đóng điểm chặn lớn hoặc thêm rule. Có định nghĩa cục bộ TL về bộ/tam hợp/xung và TT; khác biệt nguồn giữ riêng. Phần Tật mới là đối chiếu bản khác của nội dung đã audit, chưa giải lời từng sao/cứu–tác/Mệnh–Thân–Phúc; hai mẫu vẫn chưa duyệt/publish.
+- Chủ dự án xác nhận không có người thẩm định bên ngoài: Codex tiếp tục khảo cứu và đề xuất có lập luận, chủ dự án quyết định sản phẩm/phát hành; không đẩy toán tử hoặc chọn câu thắng sang chủ dự án. Các yêu cầu chọn người thẩm định và dự toán chờ bên ngoài phía dưới là lịch sử, đã được thay.
+- Tiếp **TL186 PDF17–25 (Lộc bắt đầu16), rồi26–35**, lưu checkpoint mỗi chương; sau đó TL298/NPA/DDSN. Không đọc lại phần có bằng chứng đủ chỉ để ghi nhật ký. Backlog triển khai vẫn ND01–ND19, không tự code/publish.
+- Baseline đầu phiên `main@cee0647` sạch;8file receipt codebb230d5 trùng root/checkoutQA3062 khi kiểm tĩnh. Không kiểm lại HTTP/DB/tunnel hoặc chạy test/build; ứng dụng/G2/lịch sử/Live giữ nguyên.
+
+### Mốc trước — bảng quyết định12 cung, chỉ tài liệu
 
 Đã tổng hợp ngay trong [backlog duy nhất](V1-DELIVERY-PLAN.md#bảng-quyết-định-cuối-gói-tài-liệu--21102026):7 nhóm nguyên nhân, nguồn/audit/code, người chịu trách nhiệm, thứ tự gói và giờ công tách triển khai–biên tập–nghiệm thu–thẩm định/chờ. Không tạo backlog khác hoặc coi đề xuất đã duyệt.
 

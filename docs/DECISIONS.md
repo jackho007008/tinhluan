@@ -96,3 +96,10 @@ U trực tiếp giao hoàn thiện lô Quan–Tài, giữ điều kiện tuổi/
 ## 21/10/2026 — bảng quyết định hoàn thành12 cung, chỉ tài liệu
 
 **U trực tiếp trong phiên:** “Mục tiêu là khép các quyết định còn ngăn hoàn thành báo cáo 12 cung có thể thu phí, áp dụng chung cho mọi khách hàng.”; yêu cầu lập bảng từ audit hiện có, cập nhật kế hoạch/CURRENT_STATUS, chưa thêm rule hoặc sửa ứng dụng, giữ G2/lịch sử/Live tắt. Mục tiêu này xác nhận Q01, không cho phép hạ thành12 tiêu đề hoặc chỉ bán cấu trúc mẫu. [Bảng quyết định trong backlog duy nhất](V1-DELIVERY-PLAN.md#bảng-quyết-định-cuối-gói-tài-liệu--21102026) là **đề xuất chưa duyệt**: tiêu chí Tật, xác nhận loại trừND19, mức đầy đủ theo phương diện và giữ ND02 hiện hành. Không coi việc tổng hợp là chủ dự án đã duyệt hai mẫu Tật, phương pháp chuyên môn hoặc cho phép publish. Không thay Q02/Q06 và các phê duyệt hữu hạn trước đó.
+
+
+## 21/10/2026 — kho nguồn bền vững, thay quy trình thẩm định bên ngoài
+
+**U trực tiếp:** “Dự án TINHLUAN hiện do tôi và Codex thực hiện, không có người thẩm định bên ngoài”; yêu cầu đọc/hệ thống hóa toàn bộ sách đang có, kho chữ đầy đủ ngoài Git/phần công khai, kế thừa audit, đọc theo chương/checkpoint; phiên này chưa sửa logic/publish. Đây là ủy quyền khảo cứu toàn sách, thay hạn chế chỉ đọc đoạn thiếu và đề xuất phải chọn người thẩm định ngoài trong bảng quyết định trước. Không coi kế hoạch cũ là yêu cầu chủ dự án phải tuyển người hoặc đoán AND/OR/chọn câu nguồn thắng.
+
+Codex tra cứu, đối chiếu, giữ riêng phương pháp tác giả, đề xuất cách hiểu có lập luận và ghi chưa biết; chủ dự án giữ quyết định sản phẩm/phát hành. Không tự ghi cách hiểu là đã duyệt. Không thay G2, quyền/lịch sử, các loại trừ sản phẩm hoặc quyền phát hành; hai mẫu Tật vẫn chưa duyệt/publish. [Kho/checkpoint](SOURCE-LIBRARY.md) mới có35trang đọc thêm; chưa xác nhận đọc hết mọi sách hoặc giải các điểm chặn lớn. Backlog V1 tiếp tục là nơi theo dõi triển khai duy nhất.

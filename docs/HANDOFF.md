@@ -1,6 +1,10 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-Cập nhật20/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
+Cập nhật21/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
+
+## Kho nguồn — checkpoint21/10/2026
+
+Đọc [SOURCE-LIBRARY](SOURCE-LIBRARY.md) trước khi tra sách:8PDF/2.468trang đã trích;35trang đọc mới,64hồ sơ kiến thức kế thừa/mới. Kho riêng ngoài Git; chưa đọc hết mọi sách. Tiếp TL186 PDF17–25 từ mục Lộc; tra chữ/audit trước, chỉ mở PDF khi thiếu ngữ cảnh/nghi OCR/cần kiểm ảnh. Chủ dự án và Codex thực hiện, không chờ thẩm định bên ngoài. Baseline task `cee0647`; ứng dụng1.59/catalog1.56/codebb230d5 giữ nguyên, chưa publish Tật.
 
 ## Sáu tài liệu và thứ tự đọc
 
