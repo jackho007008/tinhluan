@@ -2,7 +2,11 @@
 
 Cập nhật21/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
-## Lô hiện hành — Tài VCD1.60,21/10/2026
+## Lô hiện hành — Đồng–Âm/Di: TT tại cung nhận1.61,21/10/2026
+
+QA3062 đang1.61/catalog1.58, code `a57bb76`, checkout `.local/dong-am-di-20261021/qa-final`. [Trạng thái](CURRENT_STATUS.md), ND04 trong [backlog duy nhất](V1-DELIVERY-PLAN.md), [nguồn/ba mức/đặc tả](PHUC-DI-1.0.0.md), [bàn giao](../.local/dong-am-di-20261021/ban-giao.md). Nguyên tắc chọn chi đã duyệt; chỉ lời TTDi về phiền lòng được triển khai, không nền/ba đoạn thẩm định.480đầu vào cho13cấu trúc,6khôngTTcảhai cung; chưa có phép áp toàn nền.1Di mới có nhận định/0bổ sung,14→13thiếu; không coi cung hoàn chỉnh. G2/lịch sử/Tật/Live/QA3070 giữ nguyên. Dừng nhóm này.
+
+## Mốc trước — Tài VCD1.60,21/10/2026
 
 QA3062 đang1.60/catalog1.57, code `48683ce`, checkout `.local/finance-vcd-20261021/qa-final`. [Trạng thái](CURRENT_STATUS.md), ND04/16 trong [backlog duy nhất](V1-DELIVERY-PLAN.md), [đặc tả và phân loại điểm chặn](FINANCE-ASSETS-1.37.0.md), [bàn giao/toàn văn mẫu](../.local/finance-vcd-20261021/ban-giao.md). Một nhóm TT trực tiếp ở Tài VCD:1cung mới có nhận định/3bổ sung, Tài21→20trống. Chưa giải phép mượn chung. Dừng mở sách; NPA120/DDSN898 vẫn chưa đọc. G2/lịch sử/Tật/Live/QA3070 giữ nguyên. Checkpoint kho nguồn dưới đây là mốc trước lô triển khai, không dùng identity1.59 thay trạng thái hiện hành.
 

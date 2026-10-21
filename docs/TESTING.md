@@ -147,3 +147,17 @@ Baseline `main@80d9232` sạch, code `48683ce`; không chạy toàn gate. Bằng
 - QA3062 tích hợp ba bản mới đúng1.60/catalog1.57 qua form/reload, chỉ quyền miễn phí; không đơn mock trên DB chính. Web13354/worker13359 cùng checkout `.local/finance-vcd-20261021/qa-final`; tám file code/test đổi trùng hash commit.192file báo cáo/phiên cũ,26token/23binding/18link và34bài công khai nguyên. Livefalse; QA3070pid94421/cwd nguyên. QA3086 đã tắt, không worker thử chồng. Không kiểm provider ngoài/tunnel hoặc migration/restore QA.
 
 Lượt commit đầu bị sandbox chặn `.git/index.lock` trước stage; chạy lại với quyền ghi Git đạt, không đổi branch/remote/push. Không đổi expected nguồn/lịch sử để xanh. Hạn chế chuyên môn còn mở ở FINANCE-ASSETS; kiểm kỹ thuật không chứng minh đủ12cung.
+
+
+## Đồng–Âm/Di — TT tại cung nhận1.61,21/10/2026
+
+Baseline code48683ce, tám tài liệu lô trước đã khép riênga0b4396; codea57bb76. [Bằng chứng lô](../.local/dong-am-di-20261021/ban-giao.md).
+
+- `dong-am-di`, `di-vcd`, `di-vcd-sun-moon`, `phuc-di`, `customer-editorial-catalog`, `customer-topic-editorial`, `continuous-report`: lượt đầu373/373; thêm fixture chiềuMệnhTý/DiNgọ (không chứng kiến engine), lượt cuối **374/374 tại7file**, không fail/skip. Kiểm TT cung cho/nhận/cảhai/khôngbênnào; một/cảTT; danh sách thiếu/trùng/lưu; sai cặp/đối cung; toàn văn/căn cứ/G2. Không lây điều chỉnh của nền cặp sang xóa vếTTDi độc lập.
+- So192 dựng lại1.60 khớp,1snapshot139 thêm đúngclaimTTDi.1Di mới có nhận định/0bổ sung;14→13thiếu. Facts/rules/traces/claims/P2/relations/văn/member cũ vàG2 nguyên.34/127 không nhận lời mới; nền Đồng–Âm chưa xuất.
+- Engine tìm hữu hạn480 đầu vào hợp lệ,0lỗi,13cấu trúc,6khôngTTcảhai cung. Hai mẫu khôngTT ban đầu kiểm như đối chứng không khớp ruleTTDi. Hai mẫu eligible:192#139 và nam06/11/1982giờThìn đã nằm trong480; tính lại qua engine rồi quaform. Không cộng tìm kiếm vào test hoặc độphủ192.
+- 6/6`reading-scope` DB mới `tinhluan_dong_am_di_1792579279779`;6/6`stored-customer-pdf` với renderer giả. Typecheck đầu/cuối và productionbuild đạt; lượt cuối chỉ thêm fixturetest, không sửaapp saubuild. Không sửaexpectednguồn/lịch sử hoặc chạytoàngate.
+- QA3087 riêng:2bản/2đơnmock, fullAPI/DOM và reload đúngfrozen; freekhônglộpayload/DOM, PDF403, chéophiênđọc/PDF404; mobile360/390 vàcăncứđạt. PDFthật8trang15đoạn khớpfrozen; xemcontactmọitrang/căn cứmobile. Đãđọc toànvăn2mẫu. Mock không phảiSePaythật. QA3087đãtắt, khôngworkerthử.
+- QA3062:2bản mới đúng1.61/catalog1.58 quaform/reload chỉfree, khôngđơnmock trênDBchính. Web21700/worker21704đúngcheckout `.local/dong-am-di-20261021/qa-final`;8filecode/testđổi trùnghashcommit.199filebáocáo/phiêncũ và26token/23binding/18link/34bài côngkhai nguyên. Livefalse,QA3070pid94421/cwdnguyên. Không kiểmprovider/tunnelngoài, migration/restoreQA.
+
+Dừng nhánh TTDi đã có nguồn. Các phương diện lời nền Đồng–Âm còn chặn được ghi đúng trong PHUC-DI, không coi test kỹ thuật là phê duyệt chuyên môn.

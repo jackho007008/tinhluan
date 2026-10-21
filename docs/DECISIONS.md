@@ -61,6 +61,12 @@ U gói recovery yêu cầu hash token, hạn, dùng một lần, chỉ tiêu th�
 
 **Thực thi trong phạm vi task, không phải duyệt chuyên môn của chủ dự án:** [TàiVCD–TT trực tiếp](FINANCE-ASSETS-1.37.0.md), code48683ce. Gỡ cổng đòi giải toàn phép mượn cho riêng câuTT đã rõ; vẫn giới hạn khi Nhật–Nguyệt không cùng sáng để không chạm ngoại lệ chưa rõ. Không cho phép tự sửa “hợp chiến”, mượn mọi lời, mởND19 hoặc phát hànhTật.
 
+### Q13 — Đồng–Âm/Di: duyệt nguyên tắc chọn chi, chưa duyệt nền/ngoại lệ
+
+**U trực tiếp:** chủ dự án đồng ý “Giữ chi thật của cặp sao tại Mệnh”, dùng lời Thiên Di tương ứng của Tân Biên và ghi rõ phối hợp dự án với nguyên tắc không dời sao từ Hàm Số; **không phải công thức nguyên văn Tân Biên**, chưa duyệt xuất ba đoạn thẩm định hoặc bỏ điều chỉnh Tuần/Triệt. Thay trạng thái chờ chọn phương pháp trong PHUC-DI; không dùng sự đồng ý để biến giả thuyết thành kết luận của sách.
+
+**U task tiếp theo:** đối chiếu TT ở cung cho/nhận theo từng phương diện; phân biệt thay lời/thêm lời/chưa rõ; không bắt buộc tỷ lệ hoặc kết luận chung; tìm engine hữu hạn và triển khai tập con đủ căn cứ. D/C: [đặc tả và kết quả](PHUC-DI-1.0.0.md), codea57bb76, chỉ lời phiền lòngTTDi độc lập theoTB179. Nền Đồng–Âm chưa được xuất. Engine480có6mẫu khôngTTcảhai là chứng kiến tồn tại, không chứng minh mọi điều chỉnh khác đã giải. Không mở Tật/G2/lịch sử/Live.
+
 ## Đề xuất chưa duyệt hoặc chưa xác định nguồn quyết định
 
 - **ND02:** mở nguyên ba nhóm vai trò Mệnh–Thân miễn phí, hai nhóm Thân cư Quan/Tài chi tiết. D: mục phân quyền5rule trong kế hoạch; **chưa thấy U duyệt thay policy**. Giữ G2.
