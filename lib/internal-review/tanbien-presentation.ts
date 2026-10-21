@@ -1,3 +1,4 @@
+import {dongAmDiAssessment} from '../interpretation-rules/dong-am-di';
 import {financeVcdAssessment} from '../interpretation-rules/finance-vcd';
 import {quanTaiBranches,quanTaiAssessment} from '../interpretation-rules/quan-tai';
 import {localPalaceBranches,localPalaceAssessment} from '../interpretation-rules/no-dien-phuc';
@@ -218,6 +219,7 @@ const factLabels: Record<string, string> = {
   "fact.wealth-minor-stars": "phụ tinh tại Tài Bạch",
 };
 export function conditionText(c: Condition): string {
+ if(c.fact==='fact.di-dong-am-receiver-void')return 'Thiên Di vô chính diệu nhận Đồng–Âm từ Mệnh; Tuần/Triệt trực tiếp ở Di.';
  if(c.fact==='fact.finance-vcd-direct-void')return 'Tài Bạch không chính tinh, Tuần/Triệt trực tiếp, Nhật–Nguyệt không cùng sáng.';
  const qt=quanTaiBranches.find(r=>c.fact==='fact.'+r.id);if(qt)return qt.stars.join('–')+' đồng cung '+qt.palace+(qt.branches.length?' tại '+qt.branches.join('/'):'');
  const local=localPalaceBranches.find(r=>c.fact==='fact.'+r.id);if(local)return local.title;
@@ -278,6 +280,7 @@ export function conditionText(c: Condition): string {
     : `Điều kiện về ${label}: ${c.value}.`;
 }
 export function factEvidence(s: ChartSnapshot, id: string): ReadingEvidence {
+ if(id==='fact.di-dong-am-receiver-void'){const a=dongAmDiAssessment(s);return item(a.text,a.paths,'source');}
  if(id==='fact.finance-vcd-direct-void'){const a=financeVcdAssessment(s);return item(a.text,a.paths,'source');}
  const qt=quanTaiBranches.find(r=>id==='fact.'+r.id);if(qt){const a=quanTaiAssessment(s,qt);return item(a.text,a.paths,'snapshot');}
  const local=localPalaceBranches.find(r=>id==='fact.'+r.id);if(local){const a=localPalaceAssessment(s,local);return item(a.text,a.paths,a.cause==='unresolved-adjustment'?'editorial':'snapshot');}

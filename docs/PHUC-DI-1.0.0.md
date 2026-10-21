@@ -99,3 +99,27 @@ Cặp thật ởMệnhTý chiếuDiNgọ phải theo vếTý: quý nhân giúp �
 **Phương án giữ nguyên:** chỉ dùng TB trong các nhánhDi hiện hành; không ghépHS52 để chọn câu phụ thuộc chi. Ví dụ đầu ra cho cùng cấu trúc: “Thiên Di chưa có nhận định cho cấu trúc này”, kèm dữ kiện thật ở phần tra cứu; không tạo đoạn lành/dữ chung để lấp. Không tăng độ phủ, nhưng chưa đưa một phép phối hợp tác giả vào sản phẩm.
 
 **Tác động đo được, chưa phải kết quả triển khai:** lọc hình học từ192snapshot đã lưu có3ứngviên34/127/139, cả3Di trước chưa cóđoạn;2cặp ởMệnhTý,1ởMệnhNgọ. Nếu duyệt, đây là tối đa3cung mới có nhận định trong tập con đó trước kiểm ngoại lệ, không hứa giảm đủ3hoặc giải6DiVCDcòn lại. [Danh sách ứng viên cục bộ](../.local/finance-vcd-20261021/di-method-candidates.json). Không có yêu cầu thẩm định bên ngoài; chủ dự án quyết định hợp đồng sản phẩm sau lập luận của Codex. **Chưa duyệt/chưa triển khai** phương án này.
+
+## Đồng–Âm/Di — nguyên tắc đã duyệt và kết quả giải TT,21/10/2026
+
+**Thay trạng thái “chờ quyết định chọn chi” phía trên:** U trực tiếp đã duyệt giữ chi thật của cặp tại Mệnh, chọn lời Di tương ứng của Tân Biên, ghi rõ nguyên tắc không dời sao từ Hàm Số là phần phối hợp của dự án. Không phải công thức nguyên văn TB; chưa duyệt ba đoạn thẩm định hoặc bỏ điều chỉnh TT. Task tiếp theo cho giải nguồn/tìm engine hữu hạn và triển khai đúng tập con đủ căn cứ, không bắt buộc tỷ lệ hoặc kết luận tốt–xấu chung.
+
+**Phân loại theo phương diện, tái dùng kho nguồn:**
+
+- **Loại1 — nguồn nói rõ có thay đổi:** TB36§3.8: Âm miếu/vượng gặp TT trực tiếp thành mờ; Âm hãm gặp TT thành sáng. Giữ chi thật nên xét điều này tại Mệnh chứa sao. Không được bỏ điều chỉnh bắt buộc hoặc coi cả hai TT tự triệt tiêu. **Loại3 còn lại:** chưa có đoạn nối sự đổi trạng thái đó với từng vế quý nhân, kính trọng, phát tài hay cạnh tranh, ghen ghét, bất lợi của cặp xung chiếu. Chưa tự đảo lời hoặc giữ nguyên toàn nền. Vấn đề thiếu là quan hệ định tính giữa điều chỉnh và phương diện, không phải thiếu một tỷ lệ.
+- **Loại2 — lời thêm độc lập:** TB179§10.27 nói TT án tại Di: “Ra ngoài hay gặp nhiều sự phiền lòng, lúc chết ở xa nhà”. Vế phiền lòng có nghĩa độc lập; vế sinh tử không phát hành theo phạm vi hiện hành. Mục này không nói xóa hay thay các vế của lời cặp. Có thể giữ lời phiền lòng cùng nền **khi nền đã đủ điều kiện**; không cần chọn kết quả chung. Lượt này chỉ triển khai lời TTDi, chưa xuất nền. Không coi TT tại Di là án trực tiếp Thái Âm ở Mệnh.
+- **Loại3 — chưa đủ xác định quan hệ:** TB36 còn có tăng/giảm vẻ rực rỡ với Riêu/Đà/Kỵ/Kình/Không/Kiếp và Đào/Hồng/Hỷ; phạm vi “gặp”, lượng từ nhóm và phép chuyển sang từng vế cặp chưa khép. Không tự coi chỉ đồng cung hoặc tự mở thành mọi sao chiếu. TH89 và HS225–227 nói giảm/đảo/tương tác khác nhau; TH91 giới hạn đảo sao đồng cung. Đây là đối chiếu, không nhập toàn phương pháp TT của NPL để chọn thắng TB179. Hướng thuận của VCDTT ở HS51/226 không tự xóa lời phiền lòng của TB.
+
+**Tập con thực thi — 1.61.0/catalog1.58.0:** rule `tanbien.di-dong-am-receiver-void`, module [dong-am-di.ts](../lib/interpretation-rules/dong-am-di.ts), dùng facts/evaluator/renderer hiện có. Di thật trống; Mệnh đúng hai sao Đồng–Âm tạiTý/Ngọ đối sáu chi; danh sách chính tinh complete/toàn vẹn/bản mệnh; hai cặp TT duy nhất/kề nhau hợp lệ; ít nhất một cặp án **Di**. TT chỉ ở Mệnh không khớp; TT ở cả hai cung không nhân đôi/xóa lời TTDi. Thiếu/bất nhất giữ unknown. Cặp Đồng–Âm là giới hạn task, nguồn TTDi rộng hơn; không gán cặp thành điều kiện sách.
+
+Không thêm cổng phải vắng Không/Kỵ/Hóa Khoa hay độ sáng để dùng chính vế TTDi: nguồn không đặt những ngoại lệ đó cho lời phiền lòng. Điều này không bỏ điều chỉnh của **nền Đồng–Âm**, vì nền chưa được xuất. Không chọn lời theo mẫu/ngày/giới/tuổi; không chuyển sao, lời Mệnh, phụ tinh hoặc Tứ Hóa sang Di. Rule vẫn draft/review=null.
+
+**Văn khách hàng đầy đủ của nhánh mới:**
+
+> Thiên Di không có chính tinh, nhận Thiên Đồng–Thái Âm từ Mệnh xung chiếu. Khi Tuần hoặc Triệt án ngay tại Thiên Di, lời riêng về yếu tố này nói đến việc ra ngoài thường gặp nhiều phiền lòng. Nhận định này nói về yếu tố án ngữ, chưa đánh giá kết quả chung của mọi sao trong cung.
+
+**Engine hữu hạn:** định trước480 đầu vào (1980–1999 ×18/05,06/11 ×12giờ lẻ1..23, nam).239lượt đầu tìm được hai chiều không TT; xét điều kiện còn lại bằng241lượt còn lại cùng lưới. Tổng480 hợp lệ,0lỗi,13cấu trúc Đồng–Âm/DiVCD,6 không TT ở cảhai cung. Đã chứng minh **có thể xảy ra**, không suy bất khả đạt. Sáu trường hợp:18/05/1987 giờHợi;06/11/1989 giờHợi;06/11/1991 giờTỵ;06/11/1992 giờHợi;18/05/1994 giờTỵ;18/05/1997 giờTỵ. Các ảnh hưởng khác như Hỷ hoặc ĐịaKhông ở Mệnh/Di vẫn cần giải phạm vi, không xem vắng TT là đủ để áp toàn nền. [Kết quả từng lượt/đầu vào](../.local/dong-am-di-20261021/search-complete.json).
+
+**Ba ứng viên192:**34 và127 TT trực tiếp ở Mệnh nhưng không ở Di, không nhận claim mới; nền Tý vẫn chưa áp.139 có Triệt tại DiTý, nhận **chỉ lời phiền lòng độc lập**, không nhận nền Ngọ hoặc đoạn thẩm định. So192 thực tế: **1Di mới có nhận định,0bổ sung,14→13 chưa có nhận định**, không phải cung hoàn chỉnh. Không tăng độ phủ từ các mẫu tìm ngoài192. [Bằng chứng và bàn giao](../.local/dong-am-di-20261021/ban-giao.md).
+
+Điểm dừng: nhánh TTDi có căn cứ đã vào pipeline dùng chung; chưa giải nền Đồng–Âm dưới TT/các điều chỉnh khác. Không tạo thêm đoạn unknown để lấp cung. G2/lịch sử/Tật/hai mẫu chưa duyệt/Livefalse giữ nguyên; NPA120/DDSN898 vẫn chưa đọc.
