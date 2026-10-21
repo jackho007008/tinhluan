@@ -4,7 +4,9 @@
 
 Kiểm trước khởi tạo: root `/Volumes/DATA/TINHLUAN` chưa có Git; `.git` không có ở `/Volumes/DATA`, `/Volumes`, `/`; Git discovery qua ranh giới filesystem cũng không tìm repository. Quét toàn cây thực không theo symlink, không có repository lồng nhau, không lỗi đọc. Symlink phụ thuộc/checkout ngoài cây không được nhập vào repository.
 
-Branch khởi tạo: `main`. **Chưa có commit** vì chưa cấu hình `user.name` và `user.email`. Không tự dùng danh tính hệ điều hành, không tạo remote/push. `user.useConfigOnly=true` ngăn Git tự đoán tác giả. 597 file được stage tường minh sau kiểm; xem `git diff --cached --stat` và `git diff --cached --name-only`. Staged snapshot chưa thay thế baseline commit bất biến.
+Branch: `main`. Baseline commit **`0c5461a1d6fe2bbba9522e99dbeebd8fab67eb98`**, thông điệp `chore: establish Tinh Luan baseline and handoff docs`. Danh tính đã được chủ dự án cấu hình cục bộ; giữ `user.useConfigOnly=true`. Không tạo remote/push.
+
+Trước commit đã kiểm đủ597 đường dẫn và SHA-256 của staged blobs khớp manifest được rà ở lượt chuẩn bị; không có thay đổi unstaged/untracked ngoài ignore. Năm lỗi khoảng trắng có sẵn giữ nguyên. Không stage thêm file vào baseline. Bản cập nhật trạng thái này được lưu bằng commit tài liệu riêng sau baseline.
 
 ## Phạm vi được quản lý
 
@@ -31,17 +33,15 @@ Kết quả cuối:597 file staged khớp byte với manifest đã rà; đối c
 
 Không chạy test/build ứng dụng, không migration/restart QA, không thay nội dung báo cáo/quyền/engine/catalog hoặc dữ liệu. Git không bao gồm bản sao DB; không thể dùng commit để phục hồi dữ liệu runtime.
 
-## Thông tin còn cần để tạo commit
-
-Chủ dự án cấu hình danh tính thật muốn ghi vào lịch sử, chỉ tại repository nếu không muốn đổi toàn máy:
+## Tra cứu baseline
 
 ```sh
-cd /Volumes/DATA/TINHLUAN
-git config --local user.name "TÊN_TÁC_GIẢ_CỦA_BẠN"
-git config --local user.email "EMAIL_GIT_CỦA_BẠN"
+git show --stat 0c5461a1d6fe2bbba9522e99dbeebd8fab67eb98
+git log -2 --oneline
+git status --short
 ```
 
-Đây là tên/email tác giả Git, không phải credential; không dùng nguyên placeholder. Sau đó kiểm lại branch/status, staged diff và quét lại nếu file đã thay đổi rồi mới `git commit -m "chore: establish local Tinh Luan baseline"`. Không khuyến nghị tự commit khi đã có thay đổi mới của thread khác chưa rà. Task này dừng ở chuẩn bị nếu chưa có danh tính.
+Danh tính Git đã đủ, không còn chặn tạo baseline. Giới hạn dữ liệu riêng và khả năng dựng lại trên máy mới ở trên vẫn giữ nguyên. Không chạy test/build, sửa whitespace, QA hoặc migration trong lượt commit.
 
 ## Quy trình thread
 

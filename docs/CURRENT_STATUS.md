@@ -67,6 +67,6 @@ ND03 giữ nguyên tất cả số cung trống, **0 cung mới có lời, 0 cla
 
 ND03 đã hoàn thành và dừng. Luồng công khai tạo1.54.0, catalog1.51.0; G2 giữ nguyên. Mobile360/390, lưu/mở lại và một PDF8trang đã kiểm. Không publish Tật Ách, không mở G6/Zalo/Live. Toàn văn mẫu và cách tạo lại tại [bàn giao ND03](../.local/nd03-20261020/ban-giao.md); chỉ một backlog tại [V1-DELIVERY-PLAN](V1-DELIVERY-PLAN.md). Không hứa ngày đủ12cung khi phương pháp còn mở.
 
-## Chuẩn bị Git — 21/10/2026
+## Baseline Git — 21/10/2026
 
-Đã chuẩn bị quản lý mã/tài liệu cục bộ theo [GIT-BASELINE](GIT-BASELINE.md). Chưa có baseline commit khi thiếu danh tính Git được chủ dự án cấu hình; không coi staged files là commit. Gói Git không xác minh lại hoặc thay runtime1.54.0/catalog1.51.0, không restart QA/test/build/migration.
+Đã chuẩn bị quản lý mã/tài liệu cục bộ theo [GIT-BASELINE](GIT-BASELINE.md). Đã có baseline commit `0c5461a1d6fe2bbba9522e99dbeebd8fab67eb98` trên branch `main`, từ597 file đã rà; cập nhật bàn giao bằng commit tài liệu riêng. Không có remote/push. Gói Git không xác minh lại hoặc thay runtime1.54.0/catalog1.51.0, không restart QA/test/build/migration.
