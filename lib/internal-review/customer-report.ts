@@ -4,7 +4,7 @@ import type {ChartSnapshot} from '../tuvi-engine';
 import type {ContinuousReport} from './continuous-report';
 import {CUSTOMER_COPY} from './customer-copy';
 import EDITORIAL from './customer-editorial.json';
-export const CUSTOMER_VERSION='1.55.0';
+export const CUSTOMER_VERSION='1.55.1';
 type Group=ContinuousReport['palaces'][number]['groups'][number];
 export type CustomerParagraph={id:string;title:string;text:string;claimIds:string[];sentences:{text:string;claimIds:string[];kind:'paraphrase'|'editorial-transition'|'source-relation'}[];original:string;members:Group['members'];relations:unknown[];movedToEvidence:string[];review:'editorial-checked'|'pending-editorial'};
 export type CustomerSection={id:string;title:string;palaces:string[];intro:string|null;paragraphs:CustomerParagraph[];notices:{text:string;reason:unknown}[]};
@@ -64,7 +64,7 @@ const GROUP_COPY:Record<string,string>={
  ...Object.fromEntries(Object.entries(CUSTOMER_COPY).filter(([k])=>k.includes('|'))),
  'tanbien.life-wu-literary-male|tanbien.r02':'Vũ Khúc sáng cùng Văn Khúc gắn với sự học rộng và nhiều khả năng. Ở nam mệnh, cấu trúc này còn có cách gọi “tài kiêm văn võ”. Cách gọi truyền thống ấy không xác định nghề nghiệp, bằng cấp hoặc năng lực thực tế.',
  'tanbien.children-tu|tanbien.children-tu-pha':'Tử Vi–Phá Quân và sao Tử thuộc vòng Tràng Sinh tại Tử Nữ cùng có lời về xung khắc giữa cha mẹ và con khi con lớn lên. Lời này chỉ nói về quan hệ giữa cha mẹ và con, chưa xác định hoàn cảnh gia đình thực tế.',
- 'tanbien.parents-co-cu|tanbien.parents-ky':'Thiên Cơ–Cự Môn tại Phụ Mẫu gắn với thiếu hòa khí và xa cách giữa con với cha mẹ. Hóa Kỵ còn có hai cách mô tả: bất hòa giữa cha mẹ với nhau, hoặc không hợp tính giữa cha mẹ và con. Hai mối quan hệ này được giữ riêng, chưa có căn cứ chọn một hoàn cảnh thực tế.',
+ 'tanbien.parents-co-cu|tanbien.parents-ky':'Thiên Cơ–Cự Môn đồng cung Phụ Mẫu được mô tả là trong nhà thiếu hòa khí. Hóa Kỵ còn có hai cách mô tả: bất hòa giữa cha mẹ với nhau, hoặc không hợp tính giữa cha mẹ và con. Hai mối quan hệ này được giữ riêng, chưa có căn cứ chọn một hoàn cảnh thực tế.',
  'tanbien.parents-hoa-loc|tanbien.parents-loc':'Lộc Tồn và Hóa Lộc tại Phụ Mẫu cùng gắn với của cải của cha mẹ. Riêng Lộc Tồn còn có mặt khó: phần của cải dễ bị tiêu tán bởi con, và cha mẹ–con không hợp tính. Lời thuận về của cải không xóa hai vế hạn chế này.'
 };
 export function makeCustomerParagraph(g:Group,r:ContinuousReport,s:ChartSnapshot):CustomerParagraph{

@@ -43,3 +43,7 @@ Baseline Git đã tạo: `0c5461a1d6fe2bbba9522e99dbeebd8fab67eb98` (`main`), `c
 ## Cập nhật sau ND04 Phụ/Huynh — 21/10/2026
 
 QA3062 phục vụ1.55.0/catalog1.52.0. Đọc [trạng thái hiện hành](CURRENT_STATUS.md), [ND04 trong backlog](V1-DELIVERY-PLAN.md), [đặc tả nguồn Phụ/Huynh](PHU-HUYNH-1.32.0.md) và [toàn văn/bằng chứng](../.local/vcd-20261021/ban-giao.md). Tập con này đã tích hợp luồng khách; không phải phương pháp mượn chung hoặc đủ12cung. QA3070, G2, lịch sử và Tật chưa publish giữ nguyên.
+
+## Sửa chính xác hai câu tọa thủ — 21/10/2026
+
+QA3062 hiện1.55.1/catalog1.52.1; mục1.55 phía trên là mốc trước sửa. [Trạng thái](CURRENT_STATUS.md), [ND11/14 trong backlog](V1-DELIVERY-PLAN.md), [nguồn](PHU-HUYNH-1.32.0.md), [trước/sau và kiểm](../.local/family-accuracy-20261021/ban-giao.md). Chỉ bỏ dự báo xa cách bị suy rộng ở Cơ–Cự/Phụ và Đồng–Cự/Huynh, không đổi predicate hoặc mở nhánh VCD mới.

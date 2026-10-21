@@ -1,3 +1,4 @@
+import {buildTanBienReading} from '../lib/internal-review/tanbien-reading';
 import type {InternalReading} from '../lib/internal-review/reading-store';
 import {it,expect} from 'vitest';import fs from 'node:fs';
 import{buildContinuousReport,coordinate,PALACE_ORDER}from'../lib/internal-review/continuous-report';
@@ -6,7 +7,14 @@ const read=(i:number)=>buildContinuousReport(records[i].snapshot,records[i].froz
 it('all eight use same exact 12-palace order, body is a location only',()=>{for(let i=0;i<8;i++){const r=read(i);expect(r.palaces.map(p=>p.name)).toEqual(PALACE_ORDER);expect(r.palaces.length).toBe(12);expect(r.body?.palace).toBe(records[i].snapshot.chart.palaces.find(p=>p.isBodyPalace)!.name);}});
 it('every old paragraph is represented exactly once including finance-extra',()=>{for(let i=0;i<8;i++){const r=read(i),ids=r.palaces.flatMap(p=>p.groups.flatMap(g=>g.claimIds));expect(r.unbound).toEqual([]);expect(ids.sort()).toEqual(records[i].frozen.reading.sections.flatMap(s=>s.paragraphs.map(p=>p.claim.id)).sort());expect(new Set(ids).size).toBe(ids.length);}});
 it('children same-object same-time meaning merged with two complete evidence chains',()=>{const p=read(2).palaces.find(p=>p.name==='Tử Nữ')!;const g=p.groups.find(g=>g.members.some(m=>m.claim.rules.some(r=>r.id==='tanbien.children-tu-pha')))!;expect(g.members.length).toBe(2);expect(g.text).toContain('khi con lớn lên');expect(g.members.every(m=>m.layers.length&&m.facts.length&&m.traces.length)).toBe(true);});
-it('parents merge never equates parents with one another and parent-child',()=>{const p=read(7).palaces.find(p=>p.name==='Phụ Mẫu')!,g=p.groups.find(g=>g.members.some(m=>m.claim.rules.some(r=>r.id==='tanbien.parents-ky')))!;expect(g.members.length).toBe(2);expect(g.text).toContain('giữa cha mẹ với nhau, hoặc');expect(g.text).toContain('giữa con với cha mẹ');expect(g.text).toContain('xa cách');});
+// Current source correction is tested on a NEW evaluation of this input;
+// the historical fixture and its old claim remain byte-for-byte unchanged.
+it('new parents merge retains Kỵ alternatives without unconditional separation',()=>{
+ const historical=JSON.stringify(records[7]),s=records[7].snapshot;
+ const p=buildContinuousReport(s,buildTanBienReading(s),true).palaces.find(p=>p.name==='Phụ Mẫu')!,g=p.groups.find(g=>g.members.some(m=>m.claim.rules.some(r=>r.id==='tanbien.parents-ky')))!;
+ expect(g.members.length).toBe(2);expect(g.text).toContain('giữa cha mẹ với nhau, hoặc');expect(g.text).toContain('không hợp tính giữa cha mẹ và con');expect(g.text).toContain('trong nhà thiếu hòa khí');expect(g.text).not.toContain('xa cách');
+ expect(JSON.stringify(records[7])).toBe(historical);
+});
 it('wealth merge preserves only Loc Ton additional limits',()=>{const p=read(2).palaces.find(p=>p.name==='Phụ Mẫu')!,g=p.groups.find(g=>g.members.some(m=>m.claim.rules.some(r=>r.id==='tanbien.parents-loc')))!;expect(g.members.length).toBe(2);expect(g.text).toContain('Riêng nhánh Lộc Tồn');expect(g.text).toContain('tiêu tán bởi con');});
 it('four unresolved relations are visible only when both claims actually match',()=>{const all=records.flatMap((_,i)=>read(i).palaces.flatMap(p=>p.relations));expect([...new Set(all.map(d=>d.id))].sort()).toEqual(['A','B','C','D']);expect(all.every(d=>d.status==='unresolved'&&d.claimIds.length>=2)).toBe(true);});
 // Technical paragraph/metadata fixtures below, not engine-produced charts.

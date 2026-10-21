@@ -3053,12 +3053,14 @@
     "movedToEvidence": []
   },
   "tanbien.parents-co-cu": {
-    "text": "Thiên Cơ–Cự Môn tại Phụ Mẫu được mô tả qua thiếu hòa khí và sự xa cách giữa con với cha mẹ.",
-    "sourceTemplate": "Theo Tân Biên, Thiên Cơ–Cự Môn đồng cung Phụ Mẫu, sách mô tả thiếu hòa khí và sự xa cách giữa con với cha mẹ.",
-    "sourceVersion": "0.1.0",
-    "catalogHash": "bf38f0a0d2b75dc74a8d838ad7545807e2ed63216eff0341a4bae54f1969a9d3",
-    "strategy": "structured-subject-and-meaning",
-    "movedToEvidence": []
+    "text": "Thiên Cơ–Cự Môn đồng cung Phụ Mẫu được mô tả là trong nhà thiếu hòa khí.",
+    "sourceTemplate": "Theo Tân Biên, Thiên Cơ–Cự Môn đồng cung Phụ Mẫu, sách mô tả trong nhà thiếu hòa khí.",
+    "sourceVersion": "0.1.1",
+    "catalogHash": "d846b4c416e9e09396ea905f98666da6859d9e2eec0406907a0eb5d9184a6922",
+    "strategy": "source-correction: independent harmony clause; no unconditional separation",
+    "movedToEvidence": [
+      "Không xuất phần khuyên/điều kiện xa cách gắn tránh hình khắc hoặc toàn vẹn; không biến nội dung ngoài phạm vi thành một dự báo quan hệ."
+    ]
   },
   "tanbien.parents-phu-ty-hoi": {
     "text": "Thiên Phủ tại Phụ Mẫu gắn với hoàn cảnh khá giả và danh chức của cha mẹ.",
@@ -3381,12 +3383,14 @@
     "movedToEvidence": []
   },
   "tanbien.siblings-dong-cu": {
-    "text": "Thiên Đồng–Cự Môn tại Huynh Đệ gắn với thiếu hòa khí và sự xa cách giữa anh chị em.",
-    "sourceTemplate": "Theo Tân Biên, Thiên Đồng–Cự Môn đồng cung Huynh Đệ, sách mô tả thiếu hòa khí và sự xa cách giữa anh chị em.",
-    "sourceVersion": "0.1.0",
-    "catalogHash": "6546f33f859ef9014eb70fd4c081e2553d6f28d97679586c20109b7341f5ffcb",
-    "strategy": "explicit-rule-prose",
-    "movedToEvidence": []
+    "text": "Thiên Đồng–Cự Môn đồng cung Huynh Đệ được mô tả là trong nhà thiếu hòa khí.",
+    "sourceTemplate": "Theo Tân Biên, Thiên Đồng–Cự Môn đồng cung Huynh Đệ, sách mô tả trong nhà thiếu hòa khí.",
+    "sourceVersion": "0.1.1",
+    "catalogHash": "3f5546e8496beec89ac6fd9280b4e555e55e861912adeaf20bdc8a3db898c5ab",
+    "strategy": "source-correction: independent harmony clause; no unconditional separation",
+    "movedToEvidence": [
+      "Không xuất phần khuyên/điều kiện xa cách gắn tránh hình khắc hoặc toàn vẹn; không biến nội dung ngoài phạm vi thành một dự báo quan hệ."
+    ]
   },
   "tanbien.siblings-vu": {
     "text": "Vũ Khúc tại Huynh Đệ được mô tả qua hoàn cảnh khá giả nhưng không hợp tính giữa anh chị em.",

@@ -1,18 +1,18 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-Cập nhật21/10/2026 sau ND04 Phụ Mẫu/Huynh Đệ (1.55.0). Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
+Cập nhật21/10/2026 sau sửa chính xác hai câu tọa thủ (1.55.1). Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
 
 Đọc tiếp: [hợp đồng sản phẩm](BUSINESS_RULES.md), [sổ quyết định](DECISIONS.md), [đầu mối bàn giao](HANDOFF.md).
 
 ## 1. Bản nào đang phục vụ khách?
 
-- Trình bày **1.55.0**, catalog **interpretation-1.52.0**. Đã có trong luồng khách tạo mới, không chỉ bản nghiệm thu nội bộ.
-- QA chính: `http://127.0.0.1:3062`; checkout phục vụ `/Volumes/DATA/TINHLUAN/.local/vcd-20261021/qa-final`.
+- Trình bày **1.55.1**, catalog **interpretation-1.52.1**. Đã có trong luồng khách tạo mới, không chỉ bản nghiệm thu nội bộ.
+- QA chính: `http://127.0.0.1:3062`; checkout phục vụ `/Volumes/DATA/TINHLUAN/.local/family-accuracy-20261021/qa-final`.
 - URL tunnel tại lần nghiệm thu gần nhất: https://61ac-171-246-109-226.ngrok-free.app/lap-la-so . Tunnel có thể đổi; không coi là tên miền triển khai ổn định.
-- Nguồn làm việc: `/Volumes/DATA/TINHLUAN`. Checkout trước để đối chiếu/quay lại: `.local/nd03-20261020/qa-final` (1.54.0/1.51.0). QA3070 giữ riêng, không hợp dữ liệu thử của nó vào kho chính.
-- Policy bản mới: `menh-free-1.0.0`; continuous report: `continuous-report-1.6.0`. P1/P2/M05/M07 và các phép ND01/ND04 đã khép tiếp tục dùng chung pipeline.
+- Nguồn làm việc: `/Volumes/DATA/TINHLUAN`. Checkout trước để đối chiếu/quay lại: `.local/vcd-20261021/qa-final` (1.55.0/1.52.0). QA3070 giữ riêng, không hợp dữ liệu thử của nó vào kho chính.
+- Policy bản mới: `menh-free-1.0.0`; continuous report: `continuous-report-1.6.1`. P1/P2/M05/M07 và các phép ND01/ND04 đã khép tiếp tục dùng chung pipeline.
 - **Beta, chưa mở bán; SePay Live tắt.** Quy tắc luận vẫn `draft`, `review=null`. Chủ dự án duyệt giao diện hoặc nội dung Toàn thư không đồng nghĩa duyệt chuyên môn toàn báo cáo.
-- Đã xác minh process/build/API tạo mới/tunnel tại lô21/10. Git đầu lô `main@1fa0829`, sạch; xem `git log -1` cho commit kết thúc. [Hash code phục vụ](../.local/vcd-20261021/serving-code.json), [bảo toàn kho](../.local/vcd-20261021/preservation.json). Web/worker cùng checkout, không chạy chồng; QA3070 giữ nguyên.
+- Đã xác minh process/build/API tạo mới/tunnel tại lô21/10. Git đầu lô sửa chính xác `main@1d6caa3`, sạch; xem `git log -1` cho commit kết thúc. [Hash code phục vụ](../.local/family-accuracy-20261021/serving-code.json), [bảo toàn kho](../.local/family-accuracy-20261021/preservation.json). Web/worker cùng checkout, không chạy chồng; QA3070 giữ nguyên.
 
 ## 2. Những gì đã triển khai
 
@@ -67,13 +67,11 @@ ND04:38 snapshot có43 claim mới; Phụ16 cung mới có lời/2 bổ sung, Hu
 
 ## 5. Task hiện tại
 
-ND04 Phụ/Huynh đã khép tập con nguồn rõ và dừng. Luồng khách tạo1.55.0/catalog1.52.0; G2 không đổi.679/679 kiểm tại8file, G2 riêng6/6, typecheck/build đạt; hai hồ sơ ngoài bộ qua form, lưu/mở lại/mobile360/390/căn cứ; một PDF8trang đủ18đoạn, đã xem ảnh mọi trang. [Bàn giao và toàn văn mẫu](../.local/vcd-20261021/ban-giao.md).
+Đã khép hai lỗi diễn đạt có bằng chứng: Cơ–Cự/Phụ (PDF127/128) và Đồng–Cự/Huynh (PDF219/220). Không phải lỗi predicate; sửa claim và văn/mẫu ghép gây suy rộng “xa cách”, giữ câu thiếu hòa khí và các vế Kỵ độc lập. Trình bày1.55.1/catalog1.52.1/rule0.1.1; continuous1.6.1.3/192 bản tạo mới đổi văn, số cung trống và toàn bộ33VCD/facts/tập khớp/relations/G2 giữ nguyên.18nhánh chỉfixture vẫn chưa có mẫu engine, không tìm thêm.
 
-Đã ghi cả lỗi đầu: input fixture thiếu nơi sinh; test xóa thuộc tính bắt buộc gây typecheck; bộ tìm mẫu chọn năm ngoài miền; phép so phát hiện thêm metadata vào quan hệ B cũ, đã tách B-vcd và giữ B cũ nguyên vẹn. Không sửa expected nguồn/lịch sử. Không chạy lại toàngate.
+663/663 test cuối tại5file; typecheck/build đạt. Hai hồ sơ qua form khách, hai đơn mock QA để kiểm bản đầy đủ; lưu/mở lại nguyên văn, mobile360/390/căn cứ và chặn quyền chéo đạt. PDF chỉ kiểm quyền403/404, không xuất lại vì không đổi layout.120file báo cáo,37file phiên,14filecode bảo vệ và các dòng quyền/binding/link cũ không đổi;34bài Toàn thư giữ nguyên. [Bàn giao](../.local/family-accuracy-20261021/ban-giao.md).
 
-Bảo toàn117file báo cáo/103ID,35file phiên trước lô; quyền/binding/link và34bài công khai cũ không đổi. Hai báo cáo/hai đơn mock QA mới phục vụ nghiệm thu, không Live. [Hash file](../.local/vcd-20261021/preservation.json), [hash DB](../.local/vcd-20261021/db-after.json).
-
-Cần thẩm định: TT tác động ở cung cho/nhận và cách đổi lời giàu nghèo của Phụ; vị trí xét cho các câu phụ thuộc trạng thái; phép phối hợp Phúc–Huynh. Không mở lại9Di cùng nguồn. Tật chưa duyệt mẫu/publish; chưa đủ12cung, chưa mở bán.
+Đã ghi lỗi đầu: mẫu ghép còn chữ sai được so192 bắt; hai expected cũ đòi xa cách sửa theo nguồn, không sửa fixture lịch sử; lần setup thiếuenv dừng trước build, sau nạp đúng đã build. Không chạy toàngate. Câu hỏi TT/vị trí trạng thái/Phúc–Huynh còn ở ND04/11/14; Tật chưa duyệt mẫu/publish. Dừng sau gói sửa chính xác, Live tắt.
 
 ## Baseline Git — 21/10/2026
 

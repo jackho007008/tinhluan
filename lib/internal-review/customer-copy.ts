@@ -79,7 +79,7 @@ export const CUSTOMER_COPY:Record<string,string>={
  'tanbien.spouse-loc-male':'Hóa Lộc tại Phu Thê trong nam mệnh có lời về người vợ có của cải. Đây không phải xác nhận tình trạng hôn nhân hoặc tài sản của một người cụ thể.',
  'tanbien.spouse-ky':'Hóa Kỵ tại Phu Thê gắn với mặt bất hòa trong quan hệ vợ chồng. Chú giải này không xác định tình trạng hôn nhân hoặc một kết quả ly hôn.',
  'tanbien.siblings-dong-ty-hoi':'Thiên Đồng tại Huynh Đệ gắn với sự xa cách giữa anh chị em.',
- 'tanbien.siblings-dong-cu':'Thiên Đồng–Cự Môn tại Huynh Đệ gắn với thiếu hòa khí và sự xa cách giữa anh chị em.',
+ 'tanbien.siblings-dong-cu':'Thiên Đồng–Cự Môn đồng cung Huynh Đệ được mô tả là trong nhà thiếu hòa khí.',
  'tanbien.siblings-cu-high':'Cự Môn tại Huynh Đệ gắn với bất hòa giữa anh chị em.',
  'tanbien.siblings-tu-ngo':'Tử Vi tại Huynh Đệ gắn với hoàn cảnh anh chị em khá giả.',
  'tanbien.siblings-pha-thin-tuat':'Phá Quân tại Huynh Đệ có lời về khó sống gần nhau giữa anh chị em.',

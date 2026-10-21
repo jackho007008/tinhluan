@@ -82,3 +82,11 @@ Baseline `main@1fa0829`, đầu lô sạch. Code cuối phục vụ từ `.local
 - Hai phiên khách qua form → lưu/mở lại; fullPDF403 trước grant, chéo đọc/PDF404; hai đơn **mock** nội bộ để kiểm toàn bài. Mobile360/390/căn cứ; PDF8trang,18đoạn đúng bản lưu, đã xem đủ ảnh. Không báo mock là SePay thật. [Bằng chứng](../.local/vcd-20261021/public-acceptance.json), [PDF](../.local/vcd-20261021/pdf-check.json).
 
 Không chạy toàngate, bộPDF hoặc nghiệm thu provider. Lượt cuối các file đã chạy không fail/skip; phần chưa chạy không được tuyên bố đạt. Bảo toàn117file báo cáo/103ID,35file phiên,14filecode bảo vệ và các dòng quyền/link/binding cũ;34bài công khai không đổi. [Manifest](../.local/vcd-20261021/preservation.json).
+
+## Sửa chính xác hai câu tọa thủ — 21/10/2026
+
+Baseline `1d6caa3`, working tree sạch. Chạy Vitest tại5file: `phu-huynh`, `family-vcd`, `customer-editorial-catalog`, `customer-topic-editorial`, `continuous-report`. Lượt đầu662/662 nhưng so192 bắt mẫu ghép Cơ–Cự/Kỵ còn lời sai; sửa mẫu ghép. Lượt tiếp661đạt/2lỗi: expected cũ yêu cầu “xa cách” và quy đối tượng con–cha mẹ cho câu hòa khí chung. Đối chiếu PDF127/128 rồi thay bằng kiểm câu độc lập và đủ hai khả năng Kỵ; kiểm dữ liệu fixture lịch sử nguyên vẹn, không đổi expected bản lưu. Lượt cuối **663/663,5file**, không skip.
+
+`node --import tsx .local/family-accuracy-20261021/compare.ts`:192 mẫu, chỉ hai rule đổi claim/căn cứ/văn; tập khớp, facts, relations và tất cả33VCD không đổi. Không tìm mẫu cho18fixture-only. Chuẩn bị/typecheck/build ban đầu thiếuenv, runtime báo Invalid URL trước chạy npm; sau nạp cấu hình đúng typecheck/build đạt. Sau chỉnh test chạy typecheck cuối đạt, không đổi app sau build. Không chạy toàngate.
+
+Hai hồ sơ qua form công khai, reload và full grant mock trả đúng bản lưu; G2 không lộ lời khóa, PDF403 khi thiếu full, chéo phiên đọc/PDF404; mobile360/390 và căn cứ đạt. Không xuất PDF mới hoặc báo đã kiểm lại tệp PDF. [Log/đầu ra](../.local/family-accuracy-20261021/ban-giao.md). Bảo toàn120file báo cáo/37file phiên/14filecode và các dòng quyền cũ;34bài công khai không đổi. QA3070 giữ nguyên.

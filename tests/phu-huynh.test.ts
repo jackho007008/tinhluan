@@ -1,3 +1,7 @@
+import {buildTanBienReading} from '../lib/internal-review/tanbien-reading';
+import {buildContinuousReport} from '../lib/internal-review/continuous-report';
+import {buildCustomerReport} from '../lib/internal-review/customer-report';
+import {RULESET_VERSION} from '../lib/interpretation-rules/catalog';
 import {describe,it,expect} from 'vitest';
 import {calculate} from '../lib/tuvi-engine';
 import {PRINCIPAL_STARS,CHART_BRANCHES} from '../lib/tuvi-engine/chart-integrity';
@@ -57,3 +61,40 @@ it('valid transformation absence versus missing and inconsistent certificate',()
 });
 it('source adverse statements are retained without converting counts into claims',()=>{expect(familyBranches.find(r=>r.id==='tu-tuong'&&r.palace==='Huynh Đệ')!.text).toContain('thiếu hòa khí');expect(familyBranches.find(r=>r.id==='tu-sat'&&r.palace==='Phụ Mẫu')!.text).toContain('bất hòa');expect(familyBranches.every(r=>!/[0-9]+ người/.test(r.text))).toBe(true);});
 it('unrecognized Tràng Sinh label is unknown, not negative',()=>{const r=familyBranches.find(r=>r.mode==='ring')!,s=fixture(r);(s.chart.palaces.find(p=>p.name===r.palace)! as any).changsheng12='invalid';expect(familyAssessment(s,r).value).toBeUndefined();});
+
+// Source correction: PDF127/128 and219/220. These are technical predicate
+// fixtures, not engine witnesses or facts about real families.
+describe('conditional separation is not an unconditional relationship claim',()=>{
+ for(const [palace,id]of [['Phụ Mẫu','co-cu'],['Huynh Đệ','dong-cu']])it(palace+' retains the independent harmony clause only',()=>{
+  const r=familyBranches.find(r=>r.palace===palace&&r.id===id)!,rule=familyRules.find(q=>q.id===`tanbien.${palace==='Phụ Mẫu'?'parents':'siblings'}-${id}`)!;
+  const s=fixture(r),p=s.chart.palaces.find(p=>p.name===palace)!;
+  expect(rule.version).toBe('0.1.1');expect(rule.claimTemplate).toContain('trong nhà thiếu hòa khí');
+  expect(rule.claimTemplate).not.toMatch(/xa cách|xa nhau|ly tán|hình khắc|toàn vẹn/);
+  expect(executeRules(s,[rule],'internal-draft').previewClaims).toHaveLength(1);
+  // No source condition about brightness, gender, age or absence of voids
+  // may be introduced to rescue the erroneous separation statement.
+  p.majorStars.forEach(st=>(st as any).brightness='hãm');s.normalized.gender='female';
+  delete(s.chart.tanBien as any).voidRanges;expect(familyAssessment(s,r).value).toBe(true);
+  const other=s.chart.palaces.find(q=>q!==p)!;other.majorStars.push(p.majorStars.pop()!);
+  expect(familyAssessment(s,r).value).toBe(false);
+  p.majorStars.push(other.majorStars.pop()!);delete(s.chart.tanBien!.completeness as any).majorStars;
+  expect(familyAssessment(s,r).cause).toBe('missing-data');
+ });
+ it('preserves independently asserted separation in a different source clause',()=>{
+  const other=familyRules.find(r=>r.id==='tanbien.parents-dong-cu')!;
+  expect(other.claimTemplate).toContain('xa cách');expect(other.version).toBe('0.1.0');
+ });
+});
+
+it('Cơ–Cự with Kỵ preserves both Kỵ alternatives without reviving separation',()=>{
+ const r=familyBranches.find(r=>r.palace==='Phụ Mẫu'&&r.id==='co-cu')!,s=fixture(r),p=s.chart.palaces.find(p=>p.name==='Phụ Mẫu')!;
+ p.majorStars[0].mutagen='Kỵ';
+ const reading=buildTanBienReading(s),continuous=buildContinuousReport(s,reading,true),customer=buildCustomerReport(s,continuous,RULESET_VERSION);
+ const group=continuous.palaces.find(p=>p.name==='Phụ Mẫu')!.groups.find(g=>g.members.some(m=>m.claim.rules.some(r=>r.id==='tanbien.parents-co-cu')))!;
+ expect(group.members.some(m=>m.claim.rules.some(r=>r.id==='tanbien.parents-ky'))).toBe(true);
+ expect(group.text).not.toContain('xa cách');
+ const para=customer.sections.flatMap(s=>s.paragraphs).find(p=>p.members.some(m=>m.claim.rules.some(r=>r.id==='tanbien.parents-co-cu')))!;
+ expect(para.text).toContain('trong nhà thiếu hòa khí');expect(para.text).not.toContain('xa cách');
+ expect(para.text).toContain('bất hòa giữa cha mẹ với nhau, hoặc không hợp tính giữa cha mẹ và con');
+ expect(new Set(para.claimIds).size).toBe(2);expect(para.review).toBe('editorial-checked');
+});

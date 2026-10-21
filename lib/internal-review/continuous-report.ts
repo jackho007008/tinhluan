@@ -7,7 +7,7 @@ import type { buildTanBienReading } from './tanbien-reading';
 import { subjectOf } from '../exploration/model';
 import { evidenceLayers } from './tanbien-presentation';
 import {reportGap,readerHeading,readerPlace} from './report-editorial';
-export const CONTINUOUS_VERSION = 'continuous-report-1.6.0';
+export const CONTINUOUS_VERSION = 'continuous-report-1.6.1';
 export const PALACE_ORDER = ['Mệnh','Phụ Mẫu','Phúc Đức','Điền Trạch','Quan Lộc','Nô Bộc','Thiên Di','Tật Ách','Tài Bạch','Tử Nữ','Phu Thê','Huynh Đệ'];
 type Reading = ReturnType<typeof buildTanBienReading>;
 type Paragraph = Reading['sections'][number]['paragraphs'][number];
@@ -37,7 +37,7 @@ export function coordinate(palace:string, ps:Paragraph[]) {
  }
  if(palace==='Tử Nữ')merge(['tanbien.children-tu-pha','tanbien.children-tu'],'Theo Tân Biên, hai nhánh Tử Vi–Phá Quân đồng cung và sao Tử thuộc vòng Tràng Sinh tại Tử Nữ cùng mô tả sự xung khắc giữa cha mẹ và con cái khi con lớn lên.','Gộp cùng đối tượng, khía cạnh và thời gian; hai căn cứ không làm tăng độ chắc chắn.');
  // Hóa Kỵ also concerns parents with each other: keep this alternative explicit.
- if(palace==='Phụ Mẫu')merge(['tanbien.parents-co-cu','tanbien.parents-ky'],'Theo Tân Biên, nhánh Thiên Cơ–Cự Môn nói về thiếu hòa khí và xa cách giữa con với cha mẹ. Hóa Kỵ có thêm cách mô tả bất hòa giữa cha mẹ với nhau, hoặc không hợp tính giữa cha mẹ và con. Phần liên quan cha mẹ–con có nét trùng nhau; hai đối tượng quan hệ không được đồng nhất.','Gom cùng đoạn để tránh nhắc hai lần; giữ riêng đối tượng và phép “hoặc” của Hóa Kỵ. Không tạo kết luận chung mới.');
+ if(palace==='Phụ Mẫu')merge(['tanbien.parents-co-cu','tanbien.parents-ky'],'Theo Tân Biên, nhánh Thiên Cơ–Cự Môn nói về tình trạng trong nhà thiếu hòa khí. Hóa Kỵ có thêm cách mô tả bất hòa giữa cha mẹ với nhau, hoặc không hợp tính giữa cha mẹ và con. Lời về không khí gia đình và hai đối tượng quan hệ của Hóa Kỵ không được đồng nhất.','Gom cùng đoạn để tránh nhắc hai lần; giữ riêng đối tượng và phép “hoặc” của Hóa Kỵ. Không tạo kết luận chung mới.');
  if(palace==='Phụ Mẫu')merge(['tanbien.parents-loc','tanbien.parents-hoa-loc'],'Theo Tân Biên, Lộc Tồn và Hóa Lộc tại Phụ Mẫu cùng có ý liên hệ với của cải của cha mẹ. Riêng nhánh Lộc Tồn còn mô tả phần của cải dễ bị tiêu tán bởi con và cha mẹ–con không hợp tính.','Gộp ý của cải; giữ vế hạn chế chỉ thuộc Lộc Tồn. Không cộng mức giàu hoặc độ chắc chắn.');
  for(const p of ps){if(used.has(p.claim.id))continue;const g=groups.find(g=>g.text===p.display.text);if(g){g.members.push(p);g.editorial='Cùng nguyên văn, cùng cung; giữ tất cả căn cứ, không tăng độ mạnh.';}else groups.push({text:p.display.text,members:[p],editorial:null});}
  return {groups,relations:COORDINATION_DECISIONS.filter(d=>d.palace===palace&&ps.some(p=>has(p,d.left))&&ps.some(p=>has(p,d.right))).map(d=>({...d,claimIds:ps.filter(p=>has(p,[...d.left,...d.right])).map(p=>p.claim.id),status:'unresolved' as const}))};

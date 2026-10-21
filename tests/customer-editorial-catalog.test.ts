@@ -45,8 +45,8 @@ describe('Customer catalog coverage and compositional safety',()=>{
  });
  it('same-object grouping retains the adverse alternative and does not merge parent-parent with parent-child',()=>{
   const g=groupFor(['tanbien.parents-co-cu','tanbien.parents-ky'].map(id=>active.find(r=>r.id===id)!));g.editorial='existing specified relation' as never;
-  const p=makeCustomerParagraph(g,continuous,x.snapshot);for(const phrase of ['xa cách','giữa cha mẹ với nhau','hoặc không hợp tính giữa cha mẹ và con'])expect(p.text).toContain(phrase);
-  expect(p.claimIds).toHaveLength(2);
+  const p=makeCustomerParagraph(g,continuous,x.snapshot);for(const phrase of ['trong nhà thiếu hòa khí','giữa cha mẹ với nhau','hoặc không hợp tính giữa cha mẹ và con'])expect(p.text).toContain(phrase);
+  expect(p.text).not.toContain('xa cách');expect(p.claimIds).toHaveLength(2);
  });
 });
 it('an empty Điền subsection does not label the whole financial topic empty',async()=>{
