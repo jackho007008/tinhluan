@@ -51,3 +51,7 @@ QA3062 hiện1.55.1/catalog1.52.1; mục1.55 phía trên là mốc trước sử
 ## Lô Tử–Phu — 21/10/2026
 
 QA3062 phục vụ1.56.0/catalog1.53.0 từ `.local/kin-batch-20261021/qa-final`, code `8776d6e`. Đọc [CURRENT_STATUS](CURRENT_STATUS.md), [ND04/12/13 trong backlog duy nhất](V1-DELIVERY-PLAN.md), [đặc tả nguồn cập nhật](PHU-TU-1.33.0.md) và [bàn giao](../.local/kin-batch-20261021/ban-giao.md). Tử97→93trống, Phu67→51;16nhánh mới, còn2nhánh chỉfixture. G2/lịch sử/QA3070 giữ nguyên, Live tắt; không tự triển khai câu hỏi còn mở.
+
+## Bốn mẫu Tử–Phu đã duyệt — 1.57.0
+
+QA3062 đang1.57/catalog1.54, code3bff73c; [trạng thái](CURRENT_STATUS.md), [toàn văn/bàn giao](PHU-TU-1.33.0.md), ND12/13/19 trong [backlog duy nhất](V1-DELIVERY-PLAN.md).17Tử mới có nhận định,2Phu chỉ chú giải có điều kiện chưa xác định; không tính là cung hoàn chỉnh. Lịch sử/G2/Live giữ nguyên.

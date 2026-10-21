@@ -149,3 +149,24 @@ Chỉ xin duyệt văn mẫu1–2 và hai loại nội dung cụ thể ở mẫu
 So192 với bản1.55.1: Tử trống97→93 (4 mới/5 bổ sung); Phu67→51 (16 mới/12 bổ sung);37snapshot có37claim mới. Mười cung khác và tất cả claims/facts/traces/relations/văn cũ giữ nguyên, G2 bằng nhau. 13/16 nhánh mới có mẫu trong192; hai đầu vào mới có chủ đích (không quét): nữ06/08/1983 giờSửu chứng kiến thêm Vũ/Phu nữ; nam06/08/1988 giờTỵ chứng kiến TửVCD Liêm–Tham. Còn Nhật–Lương Dậu/Phu và Liêm–Phá/TửVCD chỉ fixture, chưa chứng kiến engine; bốn nhánh VCD cũ chưa có engine vẫn giữ trạng thái cũ.
 
 Bằng chứng, bài đầy đủ và kiểm thực thi ở `.local/kin-batch-20261021/`; không đưa dữ liệu riêng vào Git. Backlog duy nhất là ND04/12/13/19 trong V1-DELIVERY-PLAN, không coi phụ lục này là backlog mới.
+
+## Bốn nội dung đã duyệt — 1.57.0/catalog1.54.0, 21/10/2026
+
+Yêu cầu trực tiếp tiếp nối gói bốn mẫu đã duyệt triển khai cả bốn, cho biên tập gọn và đưa vào luồng khách; thay trạng thái “chưa duyệt/chưa triển khai” của gói mẫu ở trên đối với đúng bốn nội dung. Không mở các loại khác. Đây là duyệt phạm vi/văn, không phải xác nhận điều kiện thời gian hoặc phê duyệt chuyên môn toàn catalog.
+
+Code `3bff73c`, baseline `0613901` sạch. `kin-approved.ts` dùng lại `kinAssessment/makeKinRule`, catalog/derived, continuous/customer renderer, frozen store và G2 chung. Hai nhánh Phu chỉ khớp cấu trúc để chọn chú giải; lưu `conditionalAssessment: {condition, status: "unknown", outcomeApplied: false}` trong rule và đoạn khách. Không tính tuổi, hỏi thêm, suy kết quả ngược hoặc cho điều kiện đã thỏa. Tiêu đề khách/PDF: “Chú giải có điều kiện — chưa xác định”. Hai nhánh Tử giữ riêng thông minh/khéo tay; không mở Hóa Quyền, số lượng, sinh tử, phẩm hạnh hoặc nghề nghiệp. Chỉ dùng hồ sơ audit sẵn có, không đọc lại chương.
+
+**Toàn văn phục vụ:**
+
+- **Đồng/Mão — Phu, TB209§14.3:** Thiên Đồng đơn thủ tại Mão ở Phu Thê có lời luận: chậm cưới mới thuận lợi trong hôn nhân và chung sống lâu bền. “Chậm cưới” chưa được xác định đối với bạn; đây là chú giải có điều kiện, chưa kết luận hôn nhân sẽ lâu bền và không phải lời khuyên cưới muộn.
+- **Đồng–Âm/Ngọ — Phu, TB209§14.3:** Thiên Đồng–Thái Âm đồng cung tại Ngọ ở Phu Thê có lời luận: muộn lập gia đình mới tránh được chia ly. Điều kiện “muộn lập gia đình” chưa được xác định đối với bạn, nên chưa kết luận bạn đã tránh được chia ly. Đây không phải lời khuyên về thời điểm kết hôn, cũng không có nghĩa kết hôn sớm sẽ chia ly.
+- **Hóa Khoa — Tử, TB203§13.3.23:** Hóa Khoa tại cung Tử Nữ được nguồn luận gắn với nét thông minh của con. Đây là mô tả theo cấu trúc lá số, chưa phải đánh giá trí thông minh của một người con cụ thể.
+- **Hồng Loan — Tử, TB205§13.3.44:** Hồng Loan tại cung Tử Nữ được nguồn luận gắn với nét khéo tay của con. Đây là mô tả theo cấu trúc lá số, chưa xác nhận kỹ năng thực tế của một người con cụ thể.
+
+**Trước/sau bộ192:** Tử93→76 cung chưa có nhận định:17 mới có nhận định,22 đã có được bổ sung. Phu51 cung chưa có nhận định vẫn là51: trong đó2 nay chỉ có chú giải có điều kiện và49 chưa có cả chú giải. Không gọi2 chú giải là2 kết quả đã áp dụng hoặc cộng17+2 thành cung hoàn chỉnh.41 snapshot đổi,41 đoạn mới (Khoa23, Hồng Loan16, Đồng1, Đồng–Âm1); không mẫu trùng hai nhánh mới trong bộ này. Mười cung khác, mọi facts/rules/traces/claims/văn/relations cũ và policy G2 bằng baseline. Bốn nhánh đều có engine witness192; fixture kỹ thuật chỉ kiểm phản ví dụ, không thay chứng kiến engine.
+
+**Tự tạo trên luồng khách QA3062:** mở `/lap-la-so`, chọn Dương lịch, giờTỵ09:00–10:59 trừ mẫu Khoa dùng giờSửu01:00–02:59; nơi sinh mặc định, UTC+7. Nữ06/11/1993: Đồng/Mão; nữ06/02/2013: Đồng–Âm/Ngọ; nam06/02/1978 giờSửu: Hóa Khoa/Tử; nam18/05/1978 giờTỵ: Hồng Loan/Tử. Bấm “Lập lá số” (nhãn nút thực tế) để tạo bản đọc mới. Hai cung vẫn theo quyền G2: cần quyền chi tiết để xem; không gửi lời khóa trong bản miễn phí. Không đổi quyền hoặc cập nhật bản cũ để xem nội dung mới.
+
+**Kiểm:**447/447 tại6file nội dung; G2 riêng6/6; PDFmock6/6; typecheck/build đạt. Bốn mẫu engine qua form→lưu→mở lại, mobile360/390, căn cứ, freePDF403 và chéo đọc/PDF404. Full grant là bốn đơn mock trong DB QA3083 riêng, không phải SePay thật. PDF đại diện Đồng/Mão8trang/17đoạn khớp frozen, đã kiểm ảnh đủ8trang và trang nội dung mới. Lỗi công cụ: runtimePython không có fitz; dùng Poppler/pypdf sẵn có, không sửa ứng dụng hoặc rerun test vì lỗi này. Không có test fail/skip trong tập đã chạy; không chạy toàn gate hoặc provider thật.
+
+QA3062 đã phục vụ checkout `.local/kin-approved-20261021/qa-final`, web72303/worker72307;4bản mới qua form trên QA chính đúng1.57/catalog1.54, free/reload/G2 đạt, không tạo đơn mock ở QA chính. DB/kho giữ nguyên;181file lịch sử/phiên/code được chụp giữ hash; quyền/binding/link và34bài công khai giữ nguyên. QA3070 PID94421 không đổi; Livefalse. Bằng chứng/bản trước-sau ở `.local/kin-approved-20261021/`. Không nghiệm thu lại tunnel/Google/SePay/SMTP.

@@ -77,3 +77,7 @@ Không có sổ quyết định có chữ ký/permalink độc lập cho toàn b
 ## Q11 — Lô Tử–Phu21/10/2026
 
 **U trực tiếp trong task:** hoàn thiện toàn lô đủ căn cứ hai cung, xử lý giới hạn code đặt thêm khi chứng minh không phải điều kiện nguồn; giữ loại trừ/G2/lịch sử/Live tắt. Đây là ủy quyền triển khai, không phải duyệt chuyên môn hoặc mở ND19. D/C: [bảng câu và điều kiện](PHU-TU-1.33.0.md), commit8776d6e;14nhánh tọa thủ +2TửVCD. Giữ nguyên các điều kiện nếu/mới ở câu có chúng; chữ sớm mô tả hoặc lời khuyên đứng riêng không tự trở thành gate tuổi của câu độc lập. Những phân định cụ thể thay ô chặn rộng trong ma trận cũ, không thay quy tắc nguồn chung hoặc quyền lịch sử.
+
+## 21/10/2026 — duyệt đúng bốn mẫu Tử–Phu
+
+**U trực tiếp:** chủ dự án duyệt triển khai hai chú giải Đồng/Mão, Đồng–Âm/Ngọ tại Phu và hai đặc tính Hóa Khoa, Hồng Loan tại Tử; cho biên tập gọn, pipeline chung và luồng khách. Thay trạng thái đề xuất chưa duyệt của đúng bốn mẫu trong [Phu–Tử](PHU-TU-1.33.0.md). ND19 chỉ mở thông minh/khéo tay theo câu độc lập, không Hóa Quyền hoặc loại khác. Hai mẫu Phu bắt buộc điều kiện unknown, outcomeApplied=false; không đặt tuổi/hỏi thêm/suy ngược. Độ phủ tách nhận định với chú giải, không gọi đầy đủ cung. D/C:3bff73c,1.57/catalog1.54; G2/lịch sử/Live giữ nguyên.
