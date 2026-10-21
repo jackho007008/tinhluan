@@ -108,6 +108,42 @@ Chỉ tổng hợp kết quả audit/đặc tả đã có; không mở lại PDF
 
 Hai nhánh mới Nhật–Lương Dậu/Phu và Liêm–Phá/TửVCD đã có code; còn thiếu chứng kiến engine ngoài fixture. Các câu chỉ đặc tính/số lượng bị loại thuộc câu hỏi phạm vi ở nhóm5, không được ghi thành hàng đợi coding đã được phép. ND04/12/13 còn mở ở mức điều kiện/bằng chứng; ND19 còn mở ở mức phạm vi. Các phương án đề xuất ở trên chưa phải quyết định được duyệt.
 
+### Gói bốn mẫu để duyệt — chưa triển khai hoặc publish
+
+Chuẩn bị từ hồ sơ đã audit tại `.local/phu-tu-20261013/matrix.json` (§14.3, §13.3.23, §13.3.44) và kết luận lô1.56; không đọc lại PDF/chương. Đây là đề xuất văn và phạm vi, chưa phải phê duyệt chuyên môn, rule mới hoặc lời đã áp cho hồ sơ khách. Hai mẫu đầu chỉ đề xuất cách trình bày nhận định có điều kiện trong chủ đề quan hệ hiện hành; không xác nhận điều kiện đã thỏa. Hai mẫu cuối xin phép bổ sung đúng loại đặc tính được nêu, chưa mở phạm vi khi chưa duyệt.
+
+**Mẫu 1 — Nhận định có điều kiện: Đồng tại Mão**
+
+- **Cấu trúc áp dụng:** Phu Thê có Thiên Đồng bản mệnh đơn thủ tại Mão; không áp sang Đồng–Âm hoặc các chi khác.
+- **Câu nguồn và trang:** Tân Biên PDF209, §14.3, trích phần quan hệ: “chậm cưới mới được dễ dàng mọi sự và chung sống với nhau đến lúc bạc đầu”. Phần nhan sắc/phẩm hạnh và chỉ dẫn ở sau không nằm trong mẫu đề xuất.
+- **Văn khách hàng đề xuất:** “Với Thiên Đồng đơn thủ tại Mão ở cung Phu Thê, nguồn luận đặt điều kiện ‘chậm cưới’ trước nhận định về sự thuận lợi trong hôn nhân và chung sống lâu bền: chậm cưới mới có lời luận thuận này. Bản đọc chưa xác định ‘chậm cưới’ ứng với hoàn cảnh của bạn, nên chưa kết luận điều kiện đã thỏa hoặc hôn nhân sẽ lâu bền.”
+- **Đã biết / chưa biết / không được kết luận:** đã rõ cấu trúc và sự ràng buộc bằng chữ ‘mới’; chưa có định nghĩa vận dụng ‘chậm cưới’ và chưa biết hoàn cảnh thực tế. Mẫu không xác nhận khách đã kết hôn, không đặt tuổi, không khuyên cưới muộn, không suy cưới sớm tất bất lợi và không bảo đảm kết quả ngay cả khi sau này xác định được điều kiện.
+
+**Mẫu 2 — Nhận định có điều kiện: Đồng–Âm tại Ngọ**
+
+- **Cấu trúc áp dụng:** Phu Thê có Thiên Đồng và Thái Âm bản mệnh đồng cung tại Ngọ; không áp sang Đồng–Âm tại Tý đang bất nhất.
+- **Câu nguồn và trang:** Tân Biên PDF209, §14.3: “Nguyệt đồng cung tại Ngọ: muộn lập gia đình mới tránh được chia ly.”
+- **Văn khách hàng đề xuất:** “Với Thiên Đồng và Thái Âm đồng cung tại Ngọ ở cung Phu Thê, nguồn luận chỉ nêu khả năng tránh chia ly trong điều kiện ‘muộn lập gia đình’. Điều kiện này chưa được xác định đối với bạn, vì vậy bản đọc chưa kết luận rằng bạn đã tránh được chia ly. Đây là nhận định có điều kiện của nguồn, không phải lời khuyên về thời điểm kết hôn.”
+- **Đã biết / chưa biết / không được kết luận:** đã rõ đúng cặp sao, chi Ngọ và điều kiện ‘muộn…mới’; chưa có định nghĩa vận dụng ‘muộn’ hoặc xác nhận hoàn cảnh khách. Mẫu không đặt tuổi, không kết luận khách sẽ chia ly nếu kết hôn sớm, không hứa kết hôn muộn sẽ bảo đảm bền lâu và không xác nhận tình trạng hôn nhân.
+
+**Mẫu 3 — Đặc tính con: trí thông minh**
+
+- **Cấu trúc áp dụng:** Hóa Khoa bản mệnh tọa Tử Nữ; không tự mở sang xung chiếu/hội chiếu hoặc sao lưu. Câu nguồn không đặt điều kiện chính tinh đơn thủ hay địa chi.
+- **Câu nguồn và trang:** Tân Biên PDF203, §13.3.23, Hóa Khoa: “Con thông minh.” Ma trận ghi câu độc lập, bị loại vì ngoài phạm vi biên tập gói quan hệ.
+- **Văn khách hàng đề xuất:** “Hóa Khoa tại cung Tử Nữ được nguồn luận gắn với nét thông minh của con. Đây là mô tả theo cấu trúc lá số, chưa phải đánh giá trí thông minh của một người con cụ thể.”
+- **Đã biết / chưa biết / không được kết luận:** đã rõ sao, cung và nội dung độc lập; chưa biết năng lực thực tế của con, chưa có quyết định cho phép loại nội dung này. Mẫu không xác nhận khách có con, không suy mọi người con đều như vậy, không suy điểm số, thành tích, nghề nghiệp hoặc thời điểm thành công.
+- **Phạm vi xin chủ dự án cho phép:** nhận định truyền thống về **đặc tính trí thông minh của con**, với giới hạn như văn mẫu; không phải đo lường hay xếp hạng trí tuệ.
+
+**Mẫu 4 — Đặc tính con: khéo tay**
+
+- **Cấu trúc áp dụng:** Hồng Loan bản mệnh tọa Tử Nữ; không tự mở sang xung chiếu/hội chiếu hoặc sao lưu. Câu nguồn không đặt điều kiện chính tinh đơn thủ hay địa chi.
+- **Câu nguồn và trang:** Tân Biên PDF205, §13.3.44, Hồng Loan: “Con khéo tay.” Ma trận ghi câu độc lập, bị loại vì ngoài phạm vi biên tập gói quan hệ.
+- **Văn khách hàng đề xuất:** “Hồng Loan tại cung Tử Nữ được nguồn luận gắn với nét khéo tay của con. Đây là mô tả theo cấu trúc lá số, chưa xác nhận kỹ năng thực tế của một người con cụ thể.”
+- **Đã biết / chưa biết / không được kết luận:** đã rõ sao, cung và nội dung độc lập; chưa biết kỹ năng thực tế của con, chưa có quyết định cho phép loại nội dung này. Mẫu không xác nhận khách có con, không suy mọi người con đều như vậy, không suy nghề thủ công, năng khiếu nghệ thuật hoặc thành công nghề nghiệp.
+- **Phạm vi xin chủ dự án cho phép:** nhận định truyền thống về **đặc tính khéo tay của con**, với giới hạn như văn mẫu; không mở sang dự báo nghề nghiệp.
+
+Chỉ xin duyệt văn mẫu1–2 và hai loại nội dung cụ thể ở mẫu3–4. Không gộp số con, thứ bậc, bệnh, sinh tử hoặc quy kết phẩm hạnh vào đề xuất. Không chọn Hóa Quyền vì ‘con sớm hiển đạt’ còn là nhận định thành tựu/thời gian, vượt hai đặc tính hẹp đang xin duyệt. Duyệt văn không xác lập định nghĩa ‘chậm/muộn’ hoặc chứng minh điều kiện đã thỏa; duyệt phạm vi không tự cấp phép publish. Cả bốn mẫu chưa vào code, không tính lấp cung trống/hoàn chỉnh cung; số đã kiểm vẫn Tử93 và Phu51 trống trên192. ND12/13/19 giữ trạng thái chờ quyết định tương ứng; không tạo backlog mới.
+
 ### Kết quả kỹ thuật
 
 So192 với bản1.55.1: Tử trống97→93 (4 mới/5 bổ sung); Phu67→51 (16 mới/12 bổ sung);37snapshot có37claim mới. Mười cung khác và tất cả claims/facts/traces/relations/văn cũ giữ nguyên, G2 bằng nhau. 13/16 nhánh mới có mẫu trong192; hai đầu vào mới có chủ đích (không quét): nữ06/08/1983 giờSửu chứng kiến thêm Vũ/Phu nữ; nam06/08/1988 giờTỵ chứng kiến TửVCD Liêm–Tham. Còn Nhật–Lương Dậu/Phu và Liêm–Phá/TửVCD chỉ fixture, chưa chứng kiến engine; bốn nhánh VCD cũ chưa có engine vẫn giữ trạng thái cũ.

@@ -77,6 +77,8 @@ Lỗi đầu đã ghi: assertion Tử áp nhầm nhánh Phu do chuỗi ID; sandb
 
 Khép bàn giao1.56 bằng tài liệu: không còn nhóm Tử–Phu đủ đặc tả trong phạm vi hiện hành chưa triển khai. Năm nhóm câu hỏi, phương án và người cần quyết định đã ghi trực tiếp trong [đặc tả](PHU-TU-1.33.0.md); phần chuyên môn do người thẩm định, phạm viND19 do chủ dự án. Đây không phải xác nhận khai thác hết sách hoặc phê duyệt phương án mới. Không sửa ứng dụng/chạy test/build trong bước khép này.
 
+Đã chuẩn bị [bốn mẫu toàn văn để duyệt](PHU-TU-1.33.0.md#gói-bốn-mẫu-để-duyệt--chưa-triển-khai-hoặc-publish): hai mẫu quan hệ giữ điều kiện chậm/muộn và hai mẫu xin mở riêng đặc tính thông minh/khéo tay của con. Chưa duyệt, chưa code/publish; không tính lấp cung trống hoặc hoàn chỉnh cung.
+
 ## Baseline Git — 21/10/2026
 
 Đã chuẩn bị quản lý mã/tài liệu cục bộ theo [GIT-BASELINE](GIT-BASELINE.md). Đã có baseline commit `0c5461a1d6fe2bbba9522e99dbeebd8fab67eb98` trên branch `main`, từ597 file đã rà; cập nhật bàn giao bằng commit tài liệu riêng. Không có remote/push. Gói Git không xác minh lại hoặc thay runtime1.54.0/catalog1.51.0, không restart QA/test/build/migration.
