@@ -161,3 +161,14 @@ Baseline code48683ce, tám tài liệu lô trước đã khép riênga0b4396; co
 - QA3062:2bản mới đúng1.61/catalog1.58 quaform/reload chỉfree, khôngđơnmock trênDBchính. Web21700/worker21704đúngcheckout `.local/dong-am-di-20261021/qa-final`;8filecode/testđổi trùnghashcommit.199filebáocáo/phiêncũ và26token/23binding/18link/34bài côngkhai nguyên. Livefalse,QA3070pid94421/cwdnguyên. Không kiểmprovider/tunnelngoài, migration/restoreQA.
 
 Dừng nhánh TTDi đã có nguồn. Các phương diện lời nền Đồng–Âm còn chặn được ghi đúng trong PHUC-DI, không coi test kỹ thuật là phê duyệt chuyên môn.
+
+
+## TTDi dùng chung1.62 —21/10/2026
+
+Code `daee8c2`, nối ca75881/a57bb76; [bằng chứng](../.local/di-void-shared-20261021/ban-giao.md). Chỉ gói chungTB179§10.27, khôngtoàngate.
+
+- Sáu file: `di-void`, `phuc-di`, `no-dien-phuc`, `customer-editorial-catalog`, `customer-topic-editorial`, `customer-basic-selection`: lượt đầu389/389; thêm8ca phạm vi engine/profile có1lỗi vì fixture gán `engineProfile` thay `profile.id`. Sửa trường đúng, không đổi expected;29/29filedi-void đạt,5file368đạt không sửa. Tổng397ca đã đạt. [Lỗi đầu](../.local/di-void-shared-20261021/tests-final.log), [lượt sửa](../.local/di-void-shared-20261021/tests-corrected.log). Typecheck/build cuối đạt, không đổi code sau build.
+- So192: đối chiếu sâu mọi fact/rule/trace/claim/văn khác, P2/relations/G2 nguyên; chỉ loại rule/fact TT hẹp bị thay, xác nhận không còn active và TT mới tối đa1claim.3Di mới/55bổsung/1thayđoạn,13→10thiếu; không tăng phủ cung khác.
+- `reading-scope.test.ts`6/6 trongDBmới `tinhluan_di_void_*`,kho riêng; `stored-customer-pdf.test.ts`6/6mock, không gọi mocklàPDFthật. [G2](../.local/di-void-shared-20261021/g2-tests.log), [PDFmock](../.local/di-void-shared-20261021/pdf-tests.log).
+- Sáu engine87/169/32/159/63/139: có chính tinh/VCD/HóaKỵ/Nhật–Nguyệt/xung chiếu/Đồng–Âm quaform3088, free/fullthử bằng ordermock trongDBriêng, lưu/mở lại đúng frozen,khóa server403 vàchéophiên404; mobile360/390 khôngtràn,căn cứmở/đóng. PDFthật từendpoint8trang16đoạn đủvăn,đãxemcontactvàtrang6. [UI](../.local/di-void-shared-20261021/public-acceptance.json), [PDF](../.local/di-void-shared-20261021/pdf-check.json). Sáu bản tạoQA3062chỉfree, khôngđơn/mock/provider ởDBchính.
+- 204filelịch sử cũgiữhash;quyền/binding/link và34bàicôngkhai nguyên. QA3062web26158/worker26162;QA3070PID94421cwdcũ giữnguyên. Livefalse;QA3088tắt. Khôngkiểmprovider ngoài/tunnel/toàngate,khôngmigration/restartchỉvìtài liệu.

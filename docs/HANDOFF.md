@@ -2,7 +2,11 @@
 
 Cập nhật21/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
-## Lô hiện hành — Đồng–Âm/Di: TT tại cung nhận1.61,21/10/2026
+## Lô hiện hành — TTDi dùng chung1.62,21/10/2026
+
+QA3062 đang1.62/catalog1.59, code `daee8c2`, checkout `.local/di-void-shared-20261021/qa-final`. Baseline ca75881/a57bb76 đã xác minh. [Trạng thái](CURRENT_STATUS.md), ND04 trong [backlog duy nhất](V1-DELIVERY-PLAN.md), [đặc tả](PHUC-DI-1.0.0.md), [bàn giao/toàn văn trước-sau](../.local/di-void-shared-20261021/ban-giao.md). Một rule TTDi thay rulehẹpĐồng–Âm, áp có chính tinh/VCD; chỉ phiền lòng. So192:3Di mới có nhận định/55bổsung/1thayđoạn;13→10thiếu, khôngcung hoànchỉnh.397ca nội dung/6G2/6PDFmock/typecheck/build;6engine form/lưu/mở/mobile/quyền;PDF8trang16đoạn.204filelịch sử/quyền cũ nguyên; G2/Tật/Live/QA3070 giữ. Dừng gói, không mở nềnĐồng–Âm.
+
+## Mốc trước — Đồng–Âm/Di: TT tại cung nhận1.61,21/10/2026
 
 QA3062 đang1.61/catalog1.58, code `a57bb76`, checkout `.local/dong-am-di-20261021/qa-final`. [Trạng thái](CURRENT_STATUS.md), ND04 trong [backlog duy nhất](V1-DELIVERY-PLAN.md), [nguồn/ba mức/đặc tả](PHUC-DI-1.0.0.md), [bàn giao](../.local/dong-am-di-20261021/ban-giao.md). Nguyên tắc chọn chi đã duyệt; chỉ lời TTDi về phiền lòng được triển khai, không nền/ba đoạn thẩm định.480đầu vào cho13cấu trúc,6khôngTTcảhai cung; chưa có phép áp toàn nền.1Di mới có nhận định/0bổ sung,14→13thiếu; không coi cung hoàn chỉnh. G2/lịch sử/Tật/Live/QA3070 giữ nguyên. Dừng nhóm này.
 

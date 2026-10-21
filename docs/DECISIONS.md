@@ -67,6 +67,12 @@ U gói recovery yêu cầu hash token, hạn, dùng một lần, chỉ tiêu th�
 
 **U task tiếp theo:** đối chiếu TT ở cung cho/nhận theo từng phương diện; phân biệt thay lời/thêm lời/chưa rõ; không bắt buộc tỷ lệ hoặc kết luận chung; tìm engine hữu hạn và triển khai tập con đủ căn cứ. D/C: [đặc tả và kết quả](PHUC-DI-1.0.0.md), codea57bb76, chỉ lời phiền lòngTTDi độc lập theoTB179. Nền Đồng–Âm chưa được xuất. Engine480có6mẫu khôngTTcảhai là chứng kiến tồn tại, không chứng minh mọi điều chỉnh khác đã giải. Không mở Tật/G2/lịch sử/Live.
 
+### Q14 — TTDi dùng chung,21/10/2026
+
+**U trực tiếp:** nối1.61/catalog1.58/a57bb76/ca75881, chủ dự án yêu cầu bỏ giới hạn Đồng–Âm không có trong nguồn; hoàn thiện quy tắc chung cả có chính tinh/VCD, chỉ vế phiền lòng độc lập, tránh trùng, không xóa/đảo chính tinh hoặc mở nền Đồng–Âm. Không đổi G2/lịch sử/QA3070/Live/Tật; kiểm tập trung.
+
+**D/C:** TB179§10.27 đặt điều kiện TT án trực tiếpDi, không cặp sao/chính tinh. [Đặc tả](PHUC-DI-1.0.0.md) tách điều kiện sách, tính hợp lệ snapshot và giới hạn sản phẩm. Một rule chung thay rulehẹp, code `daee8c2`,1.62/catalog1.59. Các dòng sao sau tiêu đề không viết hủy phiền lòng; không tự nhập phương pháp tác giả khác để hủy/đảo lời. Chỉ mở phạm vi câu đã được giao; Q13 về nền/cách chọn chi không đổi.3cung mới có nhận định/55bổsung không phải hoàn chỉnh cung.
+
 ## Đề xuất chưa duyệt hoặc chưa xác định nguồn quyết định
 
 - **ND02:** mở nguyên ba nhóm vai trò Mệnh–Thân miễn phí, hai nhóm Thân cư Quan/Tài chi tiết. D: mục phân quyền5rule trong kế hoạch; **chưa thấy U duyệt thay policy**. Giữ G2.
