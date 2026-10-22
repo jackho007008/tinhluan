@@ -140,3 +140,12 @@ Utrựctiếp yêu cầu kiểm mapping mẫu50 và toànregistry, chỉ gọi t
 **U trực tiếp:** giao giải PDF131§5.2.30/155§7.32–33, triển khai toàn tập con đủ căn cứ qua pipeline chung, giữ G2/lịch sử/QA3070/Tật/Live. Khi Codex trình bày thiếu bảng đối ứng, U trả lời **“Đồng ý; triển khai phần chắc và bàn giao phép đảo còn thiếu”**. Đây là quyền triển khai vế độc lập có căn cứ, chưa duyệt ánh xạ nghịch đảo chi tiết hoặc toàn bộ chuyên môn.
 
 D/C: [Phụ](PHU-HUYNH-1.32.0.md), [Điền](NO-DIEN-1.31.0.md), `parentUnadjustedAssessment` dùng lại hai evaluator có sẵn; VCDĐiền giữ câu nguồn gốc khi mộtTT, cảhai dùng§7.33 đã có. Tách quan hệ/thừa hưởng/tiêután/trungtính khỏi phần giàu nghèo/sanghèn; không tự chuyển phép đảo tọa thủ sang sao xungchiếu. Thay cổng giữ nguyên cả câu ghép trong đúng34nhánhPhụ và cổng mộtTT của câu nguồn gốcĐiền, không bỏ cổng phần vậtchất chưa giải. Vế trungtính được giữ vì không có hướng tốt/xấu để đảo; đây là cách áp dụng có lập luận của dự án. Không mở loại trừND19 hoặc phê duyệt mẫuTật/Live.
+
+
+## 22/10/2026 — rà Tật theo phạm vi đã duyệt, nối b6ca831
+
+**U trực tiếp:** ưu tiên Tật; không suy bệnh/sinh tử/chẩn đoán/điều trị; hai mẫu chưa duyệt không tự publish. Chỉ triển khai nhóm đủ đặc tả và đã được phép; nếu cần đổi phạm vi phải có đề xuất, toàn văn mẫu và quyết định cụ thể. Không yêu cầu người thẩm định bên ngoài, không mặc định thêm vòng nghiên cứu. Đây không phải duyệt mẫu hoặc mở phạm vi mới.
+
+**Kết quả D/C:** chưa xác nhận nhánh đã được phép nhưng thiếu code; lớp dữ kiện đã hoạt động. Hai mẫu đủ điều kiện tra đoạn nhưng chưa đủ điều kiện áp kết quả cá nhân, có yếu tố cứu/tác cụ thể được ghi tại [Tật Ách](TAT-ACH-1.34.0.md). Chưa thêm code hoặc thay ứng dụng1.64.1/catalog1.60.
+
+**Đề xuất chờ quyết định, không phải đã chốt:** giữ các cấm/hai mẫu chưa publish và sửa tiêu chí V1 sang tra cứu12cung, luận theo những phần đã được triển khai, Tật chỉ dữ kiện. [Toàn văn và câu hỏi duyệt](BUSINESS_RULES.md). Mục tiêu “luận cá nhân đủ12cung” tiếp tục có hiệu lực và chưa đạt cho tới khi chủ dự án quyết định khác. Những dòng kế hoạch cũ nhắc chỉ định người thẩm định không được dùng để bắt chủ dự án tìm người ngoài; phần đối chiếu thuộc Codex, phần phạm vi/phát hành thuộc chủ dự án.

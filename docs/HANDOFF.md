@@ -2,6 +2,10 @@
 
 Cập nhật21/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
+## Tật: rà phần được phép và quyết định phạm vi — 22/10/2026
+
+Baseline `main@b6ca831` sạch; app1.64.1/catalog1.60/code1b8c1c1 giữ. [Phân loại và hai mẫu](TAT-ACH-1.34.0.md), [đề xuất nguyên văn chưa duyệt](BUSINESS_RULES.md), [bàn giao](../.local/tat-scope-review-20261022/ban-giao.md). Không có nhánh đã được phép và đủ đặc tả còn thiếu code;0 mới/0 bổ sung, Tật192/192 vẫn chưa luận cá nhân theo số lô192trước. Bản43 có Hóa Quyền/Tả–Hữu/TT;83 có Hóa Khoa và yếu tố khác, chưa có phép sửa trực tiếp câu đang xét. Không đòi kết luận ròng toàn cung. Đề xuất đổi tiêu chí/lời hứa V1 có toàn văn, chưa tự áp; hai mẫu chưa publish. Không mở nghiên cứu mặc định/không yêu cầu người ngoài. Chỉ tài liệu, không test/UI/PDF/restart/DB; G2/lịch sử/QA3070/Live giữ.
+
 ## Đối chiếu cách áp TT Nô–Tử —22/10/2026, nối23c8906
 
 Chỉ xét toán tử Tử205 và phép điều chỉnh bảng Nô168–173; [bằng chứng/bàn giao](../.local/no-tu-void-method-20261022/ban-giao.md), [Tử](PHU-TU-1.33.0.md), [Nô](NO-DIEN-1.31.0.md). Tử nghiêng về một TT nhờ đối chiếu nhưng chưa có cầu nối trực tiếp cho lời quan hệ205; Nô loại đảo từng lời và miễn quan hệ, chưa đủ chọn phép đổi ô/vị trí.0nhánh/0mới/0bổ sung, giữ1.64.1/catalog1.60/code1b8c1c1, Nô71/Tử76thiếu theo 192 lô trước.12 file code vàcheckoutQA3062khớp; không chạy192/UI/PDFmới hoặc đổiDB/runtime. Dừng đúng hai câu hỏi, khôngquaylại ràcâuđộclập;G2/lịch sử/QA3070/Tật/Live giữ.

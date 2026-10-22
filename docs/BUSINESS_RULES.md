@@ -121,3 +121,18 @@ Nguồn chung: Vân Đằng Thái Thứ Lang, *Tử Vi Đẩu Số Tân Biên*, 
 4. Danh sách loại trừ mở rộng được đề nghị: khẳng định cơ quan yếu/tật/sinh sản, nguyên nhân y khoa, bảo đảm khỏi bệnh/thoát nạn, nhân quả gia đình gây bệnh, dự báo tự sát/cách chết. Đây là đề xuất, không ghi nhầm đã được duyệt toàn bộ. Các cấm chẩn đoán/thời điểm tử vong/điều trị của chủ dự án vẫn có hiệu lực ngay.
 
 Chấp thuận mẫu sau này vẫn không tự cho phép publish; cần quyết định xuất bản rõ, điều kiện áp dụng, kiểm thử và nghiệm thu riêng. Phiên này giữ nguyên ứng dụng và dữ liệu.
+
+
+## 6. Đề xuất phạm vi sau rà Tật — 22/10/2026, chưa duyệt
+
+Chỉ đạo hiện tại vẫn cấm suy bệnh, sinh tử, chẩn đoán hoặc điều trị từ lá số; hai mẫu ở mục5 chưa được duyệt/publish. Codex và chủ dự án thực hiện đối chiếu/quyết định, không đặt người thẩm định bên ngoài làm cổng. [Kết quả theo từng loại chặn và hai bản chứng kiến](TAT-ACH-1.34.0.md) không tìm được nhóm nhận định cá nhân Tật vừa đủ đặc tả vừa đã được phép.
+
+**Đề xuất duy nhất của lượt này:** giữ các giới hạn và chưa xuất bản hai mẫu; đổi tiêu chí nội dung V1 từ “luận cá nhân đủ12cung” sang “tra cứu dữ kiện12cung và đọc các nhận định đã triển khai khi đủ điều kiện; Tật chỉ dữ kiện”. Không xin mở lại cấm y khoa/sinh tử, không dùng lời khuyên hoặc hai chú giải để tính là đã luận cá nhân. Đây là đề xuất sửa mục tiêu, **chưa có hiệu lực**.
+
+**Toàn văn mẫu thông báo phạm vi để chủ dự án duyệt:**
+
+> Bản thử nghiệm Tinh Luận cho phép tra cứu dữ kiện lá số ở 12 cung và đọc các nhận định đã được triển khai khi đủ điều kiện áp dụng. Tật Ách hiện chỉ trình bày dữ kiện lá số, chưa có luận cá nhân. Một số cấu trúc ở các cung khác cũng chưa có nhận định. Không cam kết luận cá nhân đầy đủ 12 cung hoặc đưa ra kết luận về sức khỏe từ lá số.
+
+**Điều kiện nếu được duyệt:** nội dung này mô tả đúng bản thử hiện hành, không hứa mọi cấu trúc của11cung còn lại đã đủ. Tật và mọi cấu trúc thiếu phải còn hiển thị thiếu; hai mẫu chưa duyệt tiếp tục không xuất. Mọi nhận định vẫn cần điều kiện/ngoại lệ và quyền máy chủ G2; bản lưu/quyền cũ bất biến. Chỉ áp nội dung phạm vi mới vào điểm giới thiệu và bản tạo mới trong một thay đổi được giao sau quyết định; không sửa văn hoặc hạn của lịch sử. Các cổng thanh toán, chất lượng và vận hành giữ riêng; duyệt câu này không cho phép thu tiền thật, bật Live hoặc deploy.
+
+**Chính xác điều chủ dự án cần quyết định:** có đồng ý thay tiêu chí V1 nêu trên và dùng nguyên văn thông báo này hay không? Đây là quyết định phạm vi sản phẩm, không phải yêu cầu chọn toán tử, mức cứu giải hoặc câu nguồn thắng. Nếu không đồng ý, giữ mục tiêu luận cá nhân đủ12cung và ghi ND18 chưa đạt; không tự xuất hai mẫu hoặc tạo vòng nghiên cứu mới. Quyết định không cần gọi thêm người thẩm định bên ngoài.
