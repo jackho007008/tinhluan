@@ -21,7 +21,7 @@ it('unresolved participants are in one context with all evidence; broad boundary
  const r=freezeReading(samples[0].snapshot,samples[0].receipt).customerReport!,a=r.sections.find(s=>s.id==='assets')!;
  const context=a.paragraphs.find(p=>p.context?.ids.includes('money-retention'))!;
  expect(context).toBeDefined();expect(context.context?.methodResolved).toBe(false);
- expect(context.text).toContain('chưa thể kết luận');
+ expect(context.text).toContain('chưa có căn cứ');
  expect(context.relations).toEqual(expect.arrayContaining([expect.objectContaining({kind:'unresolved'})]));
  for(const id of context.claimIds)expect(context.members.some(m=>m.claim.id===id)).toBe(true);
  expect(a.paragraphs.some(p=>p.id==='customer-relation-retention-unresolved')).toBe(false);
