@@ -160,6 +160,28 @@ Tất cả số trang sau là **trang PDF** của đúng tệp đã định danh
 
 
 
+<a id="buu-dinh-import-20261022"></a>
+
+### Nhập Bửu Đình7phần — cập nhật ND03/04/08/13/17/18,22/10/2026
+
+Baseline `main@a2df8e7`; chỉ thư mục bàn giao chưa theo dõi, không có diff code. App khai báo1.64.1/catalog1.60; năm tệp nội dung/quyền đại diện khớp checkout QA3062 đã bàn giao, không tái xác minh process. Đã nhập611tệp/14.402.480byte vào [kho riêng](../.local/source-library/knowledge/buu-dinh-7parts/README.md), so byte toàn tệp; `python3 search.py --verify`579trang/0sai hash, lượt đầu đạt. [Receipt](../.local/source-library/verifications/buu-dinh-20261022-import.json), [câu nguồn, điều kiện, ngoại lệ và các ô còn thiếu](../.local/source-library/knowledge/buu-dinh-7parts/_integration/20261022-review.md). Mức đọc OCR579/579,16ảnh,14thẻ là **bàn giao kế thừa**, không xác minh mọi chữ/bảng;0OCR mới, chỉ xem lại3ảnh đã có. Gói không kèm7PDF gốc. Không lập backlog khác.
+
+- **ND08/BD03 — có căn cứ phân biệt, chưa đóng chặn:** P5/PDF84 và P6/PDF5–6 ghi riêng PhúcVCD cần Tuần/kỵ Triệt, Không tú được giải là Tuần. Không được áp ngược thành toán tử hay phương pháp TB142§6.1.61. Chưa có cầu nối từ cần/kỵ sang quan hệ họ hàng/hưởng phúc cụ thể; nhóm Sinh–Hình–Kỵ–Việt thiếu định danh Sinh, vị trí/lượng từ, phạm vi kết quả; còn trường hợp cảhaiTT/chính tinh chiếu. Không xuất chú giải cần/kỵ để tính luận cá nhân.
+- **ND13/BD04 — phương pháp riêng, chưa giải điều kiện TB:** P7/PDF32 gọi trước đại hạn Phu/Phúc là sớm, sau là muộn trong ví dụ hạn23–32; có ảnh xác nhận. Chưa giải hai chiều hạn, giai đoạn giữa hai mốc/lần vòng và không có cầu nối tới nếu/mới của TB. Không lấy23/30/32 làm tuổi chung, không suy sự kiện kết hôn, không mở vận hoặc áp sang muộn sinh.
+- **ND04/09/12/17 — có cấu trúc cục bộ, không thay định nghĩa cũ:** BD01/P1/58,P6/17 phân vị trí TT đối với Tử Vi; BD02 có bài VCD riêng chủ yếu Mệnh; BD05/P7/58–59 tách bản/tam/xung trong ví dụ hạn. Chưa giải bảng nghịch đảo Nô TB hoặc toán tử Tử205; không gỡ cổng Đồng–Âm/Di, không mượn mọi lời tọa thủ và không lấy điểm/hạn Bửu Đình làm phép tổng hợp bản mệnh. BD06/07 tách phương diện là đầu mối, chưa phép chọn lời thắng. **ND18/BD12:** thêm ví dụ, chưa đủ cứu/tác và phạm vi hợp lệ; hai mẫu Tật giữ chưa publish.
+
+**Chốt đúng một gói ứng viên tiếp theo, ND03/17: BD01 — Tử Vi–Tuần trực tiếp, riêng quyền hạn/hoạt động.** Chọn vì có lời đời sống cụ thể hơn hai ứng viên Phúc/sớm–muộn hiện chưa đủ; không ưu tiên tăng câu hoặc hứa lấp cung. P1/PDF57–58 nói Tử Vi tọa Mệnh ngộ Tuần, quyền hạn/hoạt động giới hạn trong vòng cho phép, phải tuân theo sự sai khiến; nhiều cát tinh vẫn có thể được trọng vọng là phương diện khác. Ảnh58 xác nhận Tuần cùng Tử Vi khác Tuần cùng Liêm/Vũ. Không tự thêm điều kiện độ sáng/địa chi; không chuyển tam hợp thành tọa thủ. Cung nhận là Mệnh, không tự nhân thành Quan/Tài/Phúc. Mệnh đã0trống trong192, gói này nhằm bổ sung đúng phương diện, không đóng cung thiếu hay ND08.
+
+Toàn văn ứng viên **chưa duyệt/publish**: “Theo cách luận của Bửu Đình, khi Tử Vi tọa Mệnh gặp Tuần trực tiếp, quyền hạn và hoạt động được mô tả là chịu sự ràng buộc, phải làm trong phạm vi cho phép và theo sự điều phối của người khác.” Không suy mất chức/nghề/thu nhập hoặc tổng tốt/xấu. Chưa thêm vế được trọng dụng vì còn lượng từ cát/quyền tinh.
+
+**Chưa ready coding toàn nhánh:** P1/38 OCR đổi tên Địa Không thành Thiên Không, P1/58 và P6/17 có ngoại lệ Triệt/Không–Kiếp/Kỵ–Hình. Cần chốt đúng alias và vị trí tác động, rồi chứng minh từng ngoại lệ thay hay không thay vế quyền hạn; chưa được miễn điều chỉnh hoặc đặt cờ ANY toàn lá số. Chưa có PDF/ảnh38 trong gói để xác nhận dòng OCR trước khi dùng làm predicate. Nhánh cảhaiTT giữ ngoài gói cho tới khi giải; đây là giới hạn tập con dự án, không điều kiện nguồn bắt buộc vắng Triệt. Không thay engine/snapshot để khớp sách.
+
+**Quyết định phối hợp cần chốt trước triển khai:** bổ sung riêng một nhận định ghi rõ phương pháp Bửu Đình bên cạnh nguồn hiện có, không làm định nghĩa thay TB/NPL hoặc chọn nguồn thắng. Việc nhập kho chưa là duyệt phương án này. Đồng ý phương pháp không giải alias/vị trí/ngoại lệ hộ Codex. Nếu không chọn bổ sung riêng, giữ hồ sơ và0rule; không chuyển sang thêm văn chung để tính độ phủ.
+
+**Tiêu chí hoàn thành:** khép các ô alias/vị trí/ngoại lệ trong phạm vi P1/38,57–59 và P6/15–17; đủ bảng khớp/không khớp/unknown mới làm một nhóm dùng chung qua evaluator–catalog–bản frozen. Giữ vế nguồn, so tránh trùng/cùng phương diện với lời Mệnh hiện có; nếu không chốt được thì dừng đúng ô và ghi câu thiếu, không mở vòng đọc toàn sách. Khi có đầu ra mới: kiểm điều kiện và ngoại lệ, so192 một lượt, mẫu engine tạo–lưu–mở/quyền/G2/mobile/PDF đại diện, tách nhánh chỉfixture; giữ bản/quyền cũ và QA3070/Live/Tật. Không hứa số cung mới/bổ sung trước đo.
+
+**Ước lượng có điều kiện:**60–90phút khép bảng chuyên môn để quyết định đi/dừng; nếu đủ và được giao coding, thêm3–5giờ triển khai/kiểm phần ảnh hưởng, tổng4–6,5giờ làm việc. Nếu các đoạn giới hạn vẫn thiếu mắt xích, kết quả là bảng ô chặn, chưa có cơ sở ước lượng phát hành nhánh đó. Không phải ngày hẹn đủ12cung. Phiên nhập kho chỉ tài liệu:0rule/0mới/0bổ sung, không chạy192/test/build/UI/PDF/runtime/DB; app/G2/lịch sử/quyền cũ/QA3070/Tật chưa publish/Live tắt giữ. Mục tiêu báo cáo đủ chủ đề12cung, đủ giá trị thu phí vẫn chưa đạt.
+
 <a id="beta-release-decisions-20261022"></a>
 
 ### Bảng quyết định hiện hành — beta và mục tiêu trả phí, 22/10/2026
