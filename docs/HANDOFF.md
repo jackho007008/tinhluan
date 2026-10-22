@@ -2,6 +2,10 @@
 
 Cập nhật21/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
+## Rà Nô–Tử theo từng vế —22/10/2026
+
+Giữ1.64.1/catalog1.60/code1b8c1c1; baseline `main@c5fe112` sạch,processQA3062 đúngcheckoutv2. [Nô](NO-DIEN-1.31.0.md), [Tử](PHU-TU-1.33.0.md), [toàn đoạn và bàn giao](../.local/no-tu-clause-review-20261022/ban-giao.md). Dựng lại192khớp sâu, Nô71/Tử76thiếu;0mới/0bổsung/0gỡcổng. TửTT có vếquan hệ tách khỏi sốcon nhưng lượngtừ ánngữ chưa giải; NôXương–Khúc–Khôi–Việt có câu riêng nhưng chưa rõ tập sao/vịtrí. Không có tậpcon mới đủtriểnkhai; dừng theo yêu cầu, không gói chỉnhvăn. QA3070/G2/lịch sử/Tậtchưa publish/Live tắt giữ; khôngrestart/migration/UI/PDFmới.
+
 ## Lô hiện hành — TT Phụ–Điền theo phương diện1.64,22/10/2026
 
 QA3062phục vụ1.64.1/catalog1.60, code `1b8c1c1`, checkout `.local/parent-property-void-20261022/qa-final-v2`. [Phụ](PHU-HUYNH-1.32.0.md), [Điền](NO-DIEN-1.31.0.md), [bàn giao/toàn đoạn](../.local/parent-property-void-20261022/ban-giao.md), ND10/11 trong [backlog duy nhất](V1-DELIVERY-PLAN.md).34nhánhPhụ giữ vế độc lập, không đảo giàunghèo:27mới có nhận định/5bổsung;ĐiềnVCD16bổsung/0mới;48bài54claim. CảTTĐiền tái dùng§7.33. Chưa giải bảngđảo/vịtríVCD; U đồngý làmphầnchắc, bàn giao phầnthiếu. G2/lịch sử/QA3070/Tậtchưapublish/Livefalse giữ. Dừng gói này.

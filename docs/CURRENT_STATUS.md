@@ -4,6 +4,8 @@ Cập nhật22/10/2026 sau TT Phụ–Điền1.64, code1b8c1c1, nối02e6ce3/13a
 
 Đọc tiếp: [hợp đồng sản phẩm](BUSINESS_RULES.md), [sổ quyết định](DECISIONS.md), [đầu mối bàn giao](HANDOFF.md).
 
+Rà Nô–Tử22/10 nối c5fe112: xác minh process/checkoutQA3062 và12filecode liên quan trùngroot; dựng lại192khớp sâu reading/continuous/customer/G2. **Nô71, Tử76 thiếu giữ nguyên;0mới/0bổsung.** Có vế độc lập về nghĩa nhưng còn lượng từ/ngoại lệ chưa giải, không có tậpcon mới đủcode. [Nô](NO-DIEN-1.31.0.md), [Tử](PHU-TU-1.33.0.md), [bằngchứng/bàn giao](../.local/no-tu-clause-review-20261022/ban-giao.md). Chỉ cậpnhật audit, không đổi app/restart/DB; không nghiệmthu lạiUI/PDF. Dừng gói theo yêu cầu.
+
 ## 1. Bản nào đang phục vụ khách?
 
 - Trình bày **1.64.1**, catalog **interpretation-1.60.0**. Đã có trong luồng khách tạo mới, không chỉ bản nghiệm thu nội bộ.
