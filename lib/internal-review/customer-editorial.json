@@ -5937,5 +5937,23 @@
     "sourceVersion": "0.1.0",
     "strategy": "source-independent-facet",
     "movedToEvidence": []
+  },
+  "tanbien.phuc-base-tu-pha-dispersal": {
+    "text": "Tử Vi–Phá Quân đồng cung Phúc Đức có lời riêng về sự phân tán của họ hàng.",
+    "sourceTemplate": "Theo Tân Biên, Tử Vi–Phá Quân bản mệnh đồng cung Phúc Đức có lời riêng về sự phân tán của họ hàng.",
+    "sourceVersion": "0.1.0",
+    "strategy": "Giữ riêng câu ly tán TB132; không phục hồi toàn nền hoặc đảo lời theo sát/TT.",
+    "movedToEvidence": [
+      "TB132§6.1.1, đối chiếu140§6.1.36–37; chỉ cùng phương diện phân tán."
+    ]
+  },
+  "tanbien.phuc-base-tu-tham-dispersal": {
+    "text": "Tử Vi–Tham Lang đồng cung Phúc Đức có lời riêng về sự phân tán của họ hàng.",
+    "sourceTemplate": "Theo Tân Biên, Tử Vi–Tham Lang bản mệnh đồng cung Phúc Đức có lời riêng về sự phân tán của họ hàng.",
+    "sourceVersion": "0.1.0",
+    "strategy": "Giữ riêng câu ly tán TB132; không phục hồi toàn nền hoặc đảo lời theo sát/TT.",
+    "movedToEvidence": [
+      "TB132§6.1.1, đối chiếu140§6.1.36–37; chỉ cùng phương diện phân tán."
+    ]
   }
 }

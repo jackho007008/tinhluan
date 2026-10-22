@@ -5,7 +5,7 @@ import type {ChartSnapshot} from '../tuvi-engine';
 import type {ContinuousReport} from './continuous-report';
 import {CUSTOMER_COPY} from './customer-copy';
 import EDITORIAL from './customer-editorial.json';
-export const CUSTOMER_VERSION='1.64.1';
+export const CUSTOMER_VERSION='1.65.0';
 type Group=ContinuousReport['palaces'][number]['groups'][number];
 export type CustomerParagraph={context?:{version:string;ids:string[];kind:'unresolved'|'distinct-aspects';sourceGroupIds:string[];methodResolved:false};conditionalAssessment?:{condition:string;status:'unknown';outcomeApplied:false}[];id:string;title:string;text:string;claimIds:string[];sentences:{text:string;claimIds:string[];kind:'paraphrase'|'editorial-transition'|'source-relation'}[];original:string;members:Group['members'];relations:unknown[];movedToEvidence:string[];review:'editorial-checked'|'pending-editorial'};
 export type CustomerSection={id:string;title:string;palaces:string[];intro:string|null;paragraphs:CustomerParagraph[];notices:{text:string;reason:unknown}[]};
@@ -62,6 +62,7 @@ export const CUSTOMER_EDITORIAL=EDITORIAL as Record<string,{text:string;sourceTe
 // Only these five relationships were already specified by continuous-report.
 // They are consumed as units; any additional members are rendered independently.
 const GROUP_COPY:Record<string,string>={
+ ...Object.fromEntries(['tu-pha','tu-tham'].map(id=>['tanbien.phuc-base-'+id+'-dispersal|tanbien.phuc-hoa-ky',CUSTOMER_EDITORIAL['tanbien.phuc-hoa-ky'].text])),
  ...Object.fromEntries(Object.entries(CUSTOMER_COPY).filter(([k])=>k.includes('|'))),
  'tanbien.life-wu-literary-male|tanbien.r02':'Vũ Khúc sáng cùng Văn Khúc gắn với sự học rộng và nhiều khả năng. Ở nam mệnh, cấu trúc này còn có cách gọi “tài kiêm văn võ”. Cách gọi truyền thống ấy không xác định nghề nghiệp, bằng cấp hoặc năng lực thực tế.',
  'tanbien.children-tu|tanbien.children-tu-pha':'Tử Vi–Phá Quân và sao Tử thuộc vòng Tràng Sinh tại Tử Nữ cùng có lời về xung khắc giữa cha mẹ và con khi con lớn lên. Lời này chỉ nói về quan hệ giữa cha mẹ và con, chưa xác định hoàn cảnh gia đình thực tế.',

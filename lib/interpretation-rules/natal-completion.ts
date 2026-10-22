@@ -14,9 +14,11 @@ const groups=[['Tử Vi','Thiên Phủ','Cự Môn','Thái Dương','Thiên Cơ'
 const stems=['Giáp','Ất','Bính','Đinh','Mậu','Kỷ','Canh','Tân','Nhâm','Quý'];
 export const COMPLETION_SAT=['Kình Dương','Đà La','Hỏa Tinh','Linh Tinh','Địa Không','Địa Kiếp'];
 /** Only predicates over a saved natal chart and versioned source tables; never an astrology engine. */
-export function completionAssessment(s:ChartSnapshot,r:CompletionBranch):CompletionAssessment{
+export function completionAssessment(s:ChartSnapshot,r:CompletionBranch,facet?:'phuc-dispersal'):CompletionAssessment{
  const paths=['chart.palaces','chart.tanBien.completeness'];
  const result=(value:CompletionAssessment['value'],text:string,cause?:CompletionAssessment['cause']):CompletionAssessment=>({value,text,cause,paths:[...paths]});
+ const dispersal=facet==='phuc-dispersal'&&r.kind==='phuc-base'&&r.palace==='Phúc Đức'&&['phuc-base-tu-pha','phuc-base-tu-tham'].includes(r.id);
+ if(facet&&!dispersal)return result('no','Vế ly tán chỉ được đặc tả cho Tử–Phá/Tử–Tham tọa Phúc Đức.','unsupported');
  if(s.chart.tanBien?.completeness?.majorStars!=='complete'||!principalIntegrity(s.chart).valid)return result(undefined,'Danh sách chính tinh chưa đầy đủ hoặc không hợp lệ.','missing-data');
  const p=s.chart.palaces.find(p=>p.name===r.palace),life=s.chart.palaces.find(p=>p.name==='Mệnh');
  if(!p||!life)return result(undefined,'Chưa xác định duy nhất cung cần xét.','missing-data');
@@ -54,12 +56,13 @@ export function completionAssessment(s:ChartSnapshot,r:CompletionBranch):Complet
   const all=fields.flatMap(f=>p[f].map(st=>st.name));
   if(new Set(all).size!==all.length)return result(undefined,'Danh sách phụ tinh trùng, chưa thể xác nhận vắng sát tinh.','missing-data');
   const sat=all.filter(n=>COMPLETION_SAT.includes(n));
-  if(sat.length)return result(undefined,`Có ${sat.join(', ')} tại Phúc Đức; chưa chốt lượng từ và tác động của §6.1.37. Không xuất lời nền chưa điều chỉnh.`,'unresolved-adjustment');
-  structure=`${names.join('–')} tại Phúc Đức ${p.earthlyBranch}; danh sách đầy đủ xác nhận không có sáu sát tinh thuộc §8.6 đồng cung.`;
+  if(sat.length&&!dispersal)return result(undefined,`Có ${sat.join(', ')} tại Phúc Đức; chưa chốt lượng từ và tác động của §6.1.37. Không xuất lời nền chưa điều chỉnh.`,'unresolved-adjustment');
+  structure=dispersal?`${names.join('–')} bản mệnh cùng tọa Phúc Đức ${p.earthlyBranch}; chỉ xét vế họ hàng ly tán của TB132§6.1.1.`:`${names.join('–')} tại Phúc Đức ${p.earthlyBranch}; danh sách đầy đủ xác nhận không có sáu sát tinh thuộc §8.6 đồng cung.`;
  }
  paths.push('chart.tanBien.voidRanges');
  const ranges=s.chart.tanBien?.voidRanges,targets=r.kind==='no-table'?[life,p]:[p];
  if(!ranges||ranges.length!==2||new Set(ranges.map(v=>v.name)).size!==2||!ranges.some(v=>v.name==='Tuần Không')||!ranges.some(v=>v.name==='Triệt Lộ')||targets.some(q=>ranges.some(v=>voidMembership(q.earthlyBranch,v.branches)===undefined)))return result(undefined,'Cặp Tuần/Triệt thiếu hoặc chưa hợp lệ.','missing-data');
+ if(dispersal)return result('yes',structure+' TB140§6.1.36–37 không đảo vế phân tán thành tụ họp; khá giả là phương diện khác. Không khôi phục các vế hưởng phúc, xứng ý, khá giả, xa quê hoặc sinh tử.');
  if(targets.some(q=>ranges.some(v=>v.branches.includes(q.earthlyBranch))))return result(undefined,'Có Tuần/Triệt trực tiếp tại cung đang xét; chưa đặc tả điều chỉnh của bảng/lời nền này.','unresolved-adjustment');
  return result('yes',structure+' Không có Tuần/Triệt trực tiếp tại cung đang xét; đây là giới hạn triển khai.');
 }
