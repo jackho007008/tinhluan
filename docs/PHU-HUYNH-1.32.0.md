@@ -96,3 +96,7 @@ Một Tuần, một Triệt, cả hai trực tiếp: cùng giữ vế nằm ngo�
 - **Ngoại lệ Kỵ/Nhật–Nguyệt, Lương Tỵ và phối hợp liên cung:** chưa giải trong gói này. Không dùng vế quan hệ mới để nhận toàn cung hoặc toàn12cung hoàn chỉnh.
 
 So192: Phụ **27mới có nhận định/5bổ sung**,54→27chưa có nhận định; Điền **0mới/16bổ sung**,43→43trống.48bài thêm54claim;18/34nhánh Phụ có witness engine192,16nhánh còn chỉfixture. Không tìm mẫu hàng loạt hoặc gọi fixture là lá số engine thật. [Toàn đoạn trước/sau](../.local/parent-property-void-20261022/full-before-after.txt), [đối chiếu](../.local/parent-property-void-20261022/impact192.json), [bàn giao](../.local/parent-property-void-20261022/ban-giao.md).
+
+## 1.66 — câu quan hệ chung và câuÂmHuynh,22/10/2026
+
+[Lượt rà12cung](V1-DELIVERY-PLAN.md#coverage-repair-166-20261022) bổ sungTB129§5.2.13/14 câu chung củaSát/Phá tạiPhụ bằng`familyAssessment(presence,wealth=false)`, không buộc theođơnthủ/chi của lời vậtchất; giữ “nếu không” củaSát. `coveredBy` chỉ chốngtrùng nhánh đã có kể cảcompanion1.64/Kỵ, không bắt sao khác phải được giải hoặc vắng; không phục hồi nền của cải khiTT. TB220§15.2.8 có câu độc lập anh chị em không thể chung sống lâu dài ởÂm đơnMão/Thìn/Tỵ, tách khỏi số người/bệnh câu trước. Phụ8mới, Huynh4mới/1bổsung; bảng và kiểm tập trung ởbacklog, không mở số lượng/sinh tử/phẩm hạnh.

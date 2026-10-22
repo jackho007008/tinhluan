@@ -1,8 +1,16 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-Cập nhật22/10/2026 sau ND08 Phúc1.65.0/catalog1.61.0, code89f9c91, nối5abdedc/1b8c1c1. Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
+Cập nhật22/10/2026: app **1.66.0/catalog1.62.0**, code **c6f9c5c**, nối4ae65d6/ND08. Beta/Live tắt; mục tiêu trả phí đầy đủ chủ đề12cung chưa đạt. Backlog duy nhất tại [V1-DELIVERY-PLAN](V1-DELIVERY-PLAN.md).
 
 Đọc tiếp: [hợp đồng sản phẩm](BUSINESS_RULES.md), [sổ quyết định](DECISIONS.md), [đầu mối bàn giao](HANDOFF.md).
+
+**Lô rà12cung hiện hành đã tích hợpQA3062:** [bảng trước/sau và nguyên nhân](V1-DELIVERY-PLAN.md#coverage-repair-166-20261022), [so192](../.local/coverage-repair-20261022/impact192.json), [bàn giao/căn cứ](../.local/coverage-repair-20261022/source-spec.md). Baseline4ae65d6 sạch tracked, dựng192khớp sâu trước sửa.14nhánh chung:35lượt cung trống trong33mẫu có nhận định đầu tiên/10lượt cung bổ sung/43báo cáo đổi văn;28lượt chốngtrùng. A27/B8/C0/D293/E266 trên594lượt thiếu banđầu/397cấu trúc, không gọiE là sách thiếu nội dung. Phụ27→19, Phúc36→29, Quan24→16, Di10→7, Tài20→15, Huynh44→40; các cung khác giữ. Tật192vẫn chỉdữkiện; không đánh dấu cung nào hoàn chỉnh bằng sốcâu. NhánhLươngPhúcTý/Ngọ chỉfixture0/192.
+
+QA chính `.local/coverage-repair-20261022/qa`, [codeidentity](../.local/coverage-repair-20261022/serving-code.json), [formtạo–lưu–mở cuối trênmain](../.local/coverage-repair-20261022/main-smoke.json).1.236ca nội dung+12G2/PDFmock DBriêng/typecheck/build;2engineUI/fullTestlocal/mobile360/390;1PDF9trang17đoạn, finalsource táidựng nguyênparagraph/căncứ của caPDF. Khôngtoàngate/providerngoài. Lịch sử/quyền/34bài/QA3070/Livefalse/engine giữ, khôngmockđơn ởmain. [Bảo toàn kho](../.local/coverage-repair-20261022/preservation.json), [quyền/bài](../.local/coverage-repair-20261022/db-after.json).
+
+**Checkpoint chính xác:** bản đồ nhóm chưa có nhận định đã có; [48nhómruntimegate ở cung đã có thành phần,5nhómMệnh/2nhómngũhành](../.local/coverage-repair-20261022/partial-checkpoint.json) chưa phải rà từng vế hết mọi chủ đề. Không dùng chưa tổng hợp toàn cung để chặn thành phần, không tự gán việc chưa rà vàoE. Gói tiếp hữu hạn là25lượtVCDTài/Quan còn thiếu: quan hệNhật–Nguyệt cùng sáng/TT ởTB166–167/197 vàđịnhnghĩa33/35–36, khôngmở sáchmới/khônghứa lấp hết. Dừng gói đã tích hợp; bước tiếp chưa được tự triển khai. Thời gian toàn phiên: khoảng 107 phút, từ 16:55 đến 18:42 ngày 22/10/2026 (ICT; gồm khảo sát, sửa code, kiểm và tích hợp QA, tài liệu bàn giao).
+
+Các mốc trước dưới đây giữ để truy vết, không phải phiên bản đang phục vụ.
 
 **ND08 đã vào luồng khách QA:** chỉ vế ly tán của PhúcTử–Phá/Tham qua cổngsát/TT; không khôi phục toàn nền. So192:3mẫu cóý mới/1mẫu gộp HóaKỵ giữ đủ căn cứ,0cung mới,Phúc36trống giữ; mọi cung khác/G2/lịch sử nguyên.108ca/typecheck/build đạt;1engineform→lưu→mở/mobile360/390/quyền,1PDF8trang17đoạn đã kiểm. [Backlog/kết quả ND08 và ND10](V1-DELIVERY-PLAN.md#nd08-delivery-165-20261022), [toàn đoạn](../.local/nd08-phuc-20261022/full-before-after.txt), [bàn giao](../.local/nd08-phuc-20261022/ban-giao.md). Đối chiếu sau ND08 là mốc cũ cho3Điền trống; kết luận hẹp riêng141 và phân loại lại cổng nằm ởND10 ngay dưới, chưa córuleBửuĐình. QA3070/270tệplịch sử/quyềncũ/34bài/Livefalse/Tật chưapublish giữ.
 

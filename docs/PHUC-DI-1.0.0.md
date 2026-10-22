@@ -143,3 +143,9 @@ Theo yêu cầu trực tiếp của chủ dự án nối `ca75881`, quy tắc TB
 > Tuần hoặc Triệt án tại Thiên Di gắn với việc ra ngoài thường gặp nhiều phiền lòng. Đây là nhận định riêng về yếu tố án ngữ, chưa phải kết luận chung của cung.
 
 So với1.61:59mẫu khớp (52có chính tinh,7VCD),58được thêm lời:3Di mới có nhận định/55bổ sung, mẫu139 thay lời TTDi cũ. Di13→10chưa có nhận định, không coi cung hoàn chỉnh. [Bằng chứng/toàn văn trước-sau](../.local/di-void-shared-20261021/ban-giao.md). Không thay các mốc lịch sử phía trên.
+
+## 1.66 — các vế độc lập còn thiếu,22/10/2026
+
+[Lượt rà12cung](V1-DELIVERY-PLAN.md#coverage-repair-166-20261022): PhúcĐồng đơnThìn/Tuất vàTỵ/Hợi(TB133§6.1.3); Lương đơnTý/Ngọ vàTỵ/Hợi(136§6.1.12); Cự đơnTỵ/Thìn/Tuất chỉcâu họ thườngtranhchấp(135§6.1.10). Dùng`localPalaceAssessment(exact)`, giữ cổngTT; không biến ly tổ tránh hại thành dự báo, không chọn dòng giàu nghèo thắng giữa phần bất nhất. Cự không lặp khi nhánh cùngcung đãcó bất hòa/tranhchấp, không đòi vắng mọi sao. LươngTý/Ngọ0/192, chỉfixture. Phúc36→29thiếu,7mới/5bổsung.
+
+DiLương đơnTỵ/Hợi(TB177§10.12) có vế “nay đây mai đó” độc lập, không có nếu/mới để tránh hại; loại sinh tử. TT179§10.27 vẫn có câuphiềnlòng riêng, tiểu mụcTham/Phá/Tướng/Mã không hủy vếLương. Dùng`phucDiFacts` hiện có,3Dimới10→7thiếu; không mở bảyDiVCD. Chữ/ảnh và đặc tả theo [hồ sơvếnguồn](../.local/coverage-repair-20261022/source-spec.md).

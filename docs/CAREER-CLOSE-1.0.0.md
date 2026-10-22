@@ -37,3 +37,9 @@ Bộ192: Quan28→24 trống,4 mới có nhận định/1 cung đã có được
 **Điểm còn chặn:** DươngTý có hai lời trái nhau và Thìn dẫn chiếu; Cơ–Âm ghiThìn không phù hợp cấu trúc engine, chữ “về khoa” và nhánhDần “như trên” chưa rõ; Tử–Tham phụ thuộc “công danh rực rỡ” chưa có tiêu chí; Liêm–Tham/SátThìnTuất không có câu nghề độc lập đủ phạm vi để bỏ hình ngục/binh thương. §8.14–44 còn nhóm thiếu lượng từ, định danh hoặc quan hệ như ma trận; Sát–Quyền vẫn không tương thích profile hiện hành, không tìm hàng loạt ngày để né chứng minh đó.
 
 **VCD166–167§8.45:** sau chỉ dẫn mượn là giới hạn “công danh không thể hiển đạt”, chức vị bình thường, rồi ngoại lệ TT và Nhật–Nguyệt cùng sáng. Chưa có phép áp giới hạn vào từng lời cặp nêu hiển đạt/phú quý và phân vị trí/trạng thái/ngoại lệ. Không thể chỉ bỏ điều kiện tính trạng thái để chép nguyên cặp từ đối cung hoặc tự chọn lời thắng. Đây là thiếu cách áp nguồn, khác giới hạn tính tuổi vừa bỏ. Trong phạm vi ma trận đã rà, không còn câu đủ đặc tả bị treo coding sau lô này; không tuyên bố đã khai thác hết sách.
+
+## 1.66 — tách vị trí và câuVCD riêng,22/10/2026
+
+[Lượt rà12cung](V1-DELIVERY-PLAN.md#coverage-repair-166-20261022) chốtNgọ vàThìn ởTB159§8.5: bất nhấtTý không làmNgọ bất nhất; “cũng như trên” củaThìn trỏ dòng ngay trước, giữ cảghen ghét/bóbuộc côngviệc. Không mởTý, không đổi thànhchi khác hoặc đặt tuổi. ThamTý/Ngọ161§8.9 giữ chứcvịnhỏ/thănggiáng, loại nhãnphẩmhạnh đi sau. Ba nhánh dùng`careerClosingFacts`,3Quan mới.
+
+QuanVCD166–167§8.45 có câu mức hiển đạt riêng khi loại được cảhai ngoại lệ: khôngTT trực tiếp vàNhật–Nguyệt chắc chắn khôngcùngsáng tại chi thật. `careerVcdScaleFacts` dùng chung kiểm vớiTài, kết quả riêng đúngQuan, không giảiTTQuan từcodeTài.7khớp/5mới/2bổsung. Quan24→16thiếu; các diễn tiến ngoại lệTT/cùngsáng vàCơ–Âm/SátThìnTuất còn giữ. Không coi24nhánh có từtrước là đặc tả hếtmọicâu.

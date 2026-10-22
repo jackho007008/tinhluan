@@ -75,3 +75,7 @@ Tra `books/<id>/full.txt` hoặc `pages/NNNN.txt` trước; `pages.json` chỉ b
 Các nhóm Lộc/lục sát/VCD/nhị hợp–xung/giáp/TT không thêm điều kiện đủ đóng ND lớn. TânTí53/TânTỵ289, TamKhông chính văn119/phụ luận280, TứHóa247/267/270 và KhôiViệt252–253 giữ riêng; không dùng bản298 chọn bên thắng. [Kết quả có bằng chứng âm tính](../.local/source-library/blocker-results-tl298-complete.md). ThiênLương không thay cách luận TânBiên/NPL; Tật vẫn chưa đủ phép cá nhân, hai mẫu chưa duyệt/publish.
 
 Không còn chương TL186/TL298 đang dở. Phần còn thiếu là hiệu đính hình/chữ chưa kiểm và đặc tả sâu từng mệnh đề; chưa tự bắt đầu sách khác. TB/NPL/HS dùng audit cũ, không đọc lại chỉ để tạo nhật ký. Backlog duy nhất vẫn [V1](V1-DELIVERY-PLAN.md); ứng dụng/G2/lịch sử/Live giữ nguyên.
+
+## Rà vếnguồn phục vụ1.66 —22/10/2026
+
+[Đặc tả14nhánh và giới hạn](../.local/coverage-repair-20261022/source-spec.md), [backlog duy nhất](V1-DELIVERY-PLAN.md#coverage-repair-166-20261022). Tái dùngTB và12hồsơNPL củaTH/HS (01/03/07/22/25/27/28/39/44/46/47/52), không đọc lại toàncuốn/khôngOCR/không nhậpKiếnGiảimới. Xem lại10ảnhTBcó sẵn129/133/135/159/161/166/167/177/197/220 để xác nhận ranhcâu/dẫnchiếu/ngoạilệ; không tăng sốtrangảnh khácnhau hoặc ghi đãhiệuđính toànkho. TB136 dùng chữ/audit cũ. Tất cả14nhánh mới riêngTânBiên; không dùng khái niệmNPL/BửuĐình thayđịnhnghĩa nguồn. Các trạng thái đọcHàmSố/bảyphầnBửuĐình vàKiếnGiải không đổi.

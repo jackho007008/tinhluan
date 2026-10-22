@@ -1,6 +1,12 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-Cập nhật21/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
+Cập nhật22/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
+
+## Hiện hành — rà12cung1.66,22/10/2026
+
+App1.66.0/catalog1.62.0, code `c6f9c5c`, QA3062 `.local/coverage-repair-20261022/qa`. [Backlog/bảng12cung/nguyên nhân/điểm dừng](V1-DELIVERY-PLAN.md#coverage-repair-166-20261022), [CURRENT_STATUS](CURRENT_STATUS.md), [toàn văn trước/sau](../.local/coverage-repair-20261022/full-before-after.txt).14nhánh chung;35cung trống mới có thành phần/10bổsung/43báo cáo, khôngcunghoànchỉnh. A27/B8/C0/D293/E266 trong594lượt banđầu;28lượt chốngtrùng. Bộ192/1.236ca+12DBriêng/typecheck/build/2engineUI/mobile/1PDF đạt, [smokeQA chính](../.local/coverage-repair-20261022/main-smoke.json); G2/lịch sử/quyền/34bài/QA3070/Tật/Livefalse giữ. Khép bảnđồ594/397; checkpoint48gatepartial/5life/2ngũhành, chưa rà từng vế hết mọi chủ đề. Bước tiếp25lượtVCDTài/Quan, câu hỏi cụ thể ởbacklog; không tự mở nghiên cứu/sách/gói tiếp. NhánhLươngPhúcTý/Ngọ chỉfixture.
+
+Các mốc dưới là lịch sử.
 
 ## Beta và mục tiêu trả phí — quyết định22/10/2026
 
