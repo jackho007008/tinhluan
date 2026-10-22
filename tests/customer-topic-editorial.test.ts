@@ -13,15 +13,18 @@ it('shared finance lives under the palace with content, with historical placemen
 });
 it('retains every original claim, adjustment and exception in the topic evidence',()=>{
  for(const sample of samples){const f=freezeReading(sample.snapshot,sample.receipt),r=f.customerReport!;
-  for(const name of ['Quan Lộc','Tài Bạch','Điền Trạch'])for(const g of f.continuousReport!.palaces.find(p=>p.name===name)!.groups){const p=r.sections.flatMap(s=>s.paragraphs).find(p=>p.id===g.id)!;expect(p).toBeDefined();expect(p.members).toEqual(g.members);expect(p.original).toEqual(g.text);expect(p.claimIds).toEqual(g.claimIds);expect(new Set(p.sentences.flatMap(s=>s.claimIds))).toEqual(new Set(p.claimIds));}
+  for(const name of ['Quan Lộc','Tài Bạch','Điền Trạch'])for(const g of f.continuousReport!.palaces.find(p=>p.name===name)!.groups){const p=r.sections.flatMap(s=>s.paragraphs).find(p=>p.id===g.id||p.context?.sourceGroupIds.includes(g.id))!;expect(p).toBeDefined();for(const m of g.members)expect(p.members.find(n=>n.claim.id===m.claim.id)).toEqual(m);expect(p.original).toContain(g.text);for(const id of g.claimIds)expect(p.claimIds).toContain(id);expect(new Set(p.sentences.flatMap(s=>s.claimIds))).toEqual(new Set(p.claimIds));}
   const ids=r.sections.flatMap(s=>s.paragraphs.map(p=>p.id));expect(new Set(ids).size).toBe(ids.length);
  }
 });
-it('local contrasts follow all participants, broad boundary stays after the topics',()=>{
+it('unresolved participants are in one context with all evidence; broad boundary stays last',()=>{
  const r=freezeReading(samples[0].snapshot,samples[0].receipt).customerReport!,a=r.sections.find(s=>s.id==='assets')!;
- const note=a.paragraphs.find(p=>p.id==='customer-relation-retention-unresolved')!;
- expect(note).toBeDefined();for(const id of note.claimIds){const base=a.paragraphs.findIndex(p=>!p.id.startsWith('customer-')&&p.claimIds.includes(id));expect(base).toBeGreaterThanOrEqual(0);expect(base).toBeLessThan(a.paragraphs.indexOf(note));}
- expect(note.relations).toEqual(expect.arrayContaining([expect.objectContaining({kind:'unresolved'})]));
+ const context=a.paragraphs.find(p=>p.context?.ids.includes('money-retention'))!;
+ expect(context).toBeDefined();expect(context.context?.methodResolved).toBe(false);
+ expect(context.text).toContain('chưa thể kết luận');
+ expect(context.relations).toEqual(expect.arrayContaining([expect.objectContaining({kind:'unresolved'})]));
+ for(const id of context.claimIds)expect(context.members.some(m=>m.claim.id===id)).toBe(true);
+ expect(a.paragraphs.some(p=>p.id==='customer-relation-retention-unresolved')).toBe(false);
  const end=a.paragraphs.slice(-2).map(p=>p.id);expect(end).toContain('customer-relation-money-property');expect(end).toContain('customer-relation-work-income-boundary');
 });
 it('unseen mixtures are not split, renamed as single-facet, dropped or given an invented relation',()=>{
