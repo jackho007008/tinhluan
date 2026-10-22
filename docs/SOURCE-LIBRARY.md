@@ -12,6 +12,8 @@ Kho sách, chữ đầy đủ, ảnh và hồ sơ dài ở `/Volumes/DATA/TINHLU
 
 **Đối chiếu hẹp sau ND08,22/10:** đã tìm lại bảnPDFgốc Bửu Đình **phần2**, hashkhớp manifest nhập, giữ bản riêng và [5ảnhPDF52–56đãkiểm](../.local/source-library/knowledge/buu-dinh-7parts/_integration/nd08-followup/identity.json). Cộng16ảnh kế thừa thành21trang khác nhau; không thay nhật ký bàn giao hoặc nhận đã kiểm sạch579trang. [Kết quả giữ/tạo/TT/HóaLộc/LộcTồn](../.local/nd08-phuc-20261022/buu-dien-review.md); chưa córuleBửuĐình. Các dòng nói gói ban đầu không chứaPDF vẫn là mô tả lúc nhập, không là trạng thái thiếu bản gốc phần2hiện tại. Không nhập/đọc lại toàn7PDF.
 
+**ND10 nối b091314,22/10:** tái dùng hồ sơ/ảnh trên, chỉ kiểm mới **P1/PDF59** để xác nhận đoạn nối Tử Vi–Triệt nói về hành động/nhiệm vụ; [PDFhash/trang ảnh](../.local/nd10-pha-loc-20261022/image-identity.json), [kết luận nguồn riêng từng vế](../.local/nd10-pha-loc-20261022/review.md). Tổng ảnh khác nhau22 (=16kế thừa+5ND08+1ND10), không nâng mức hiệu đính toàn579trang. Phạm vi điều kiện Tuần–Triệt P2/55 với câu PháHóaLộc tạiĐiềnP2/53 chưa khóa; không có rule/publish BửuĐình. Không đọc lại toàn sách hoặc thay kho bàn giao gốc.
+
 | ID | Tài liệu | Tác giả theo tài liệu | Trang PDF | Trạng thái đọc |
 |---|---|---|---:|---|
 | `tb` | [Tử Vi Đẩu Số Tân Biên](../.local/source-library/books/tb/INDEX.md) | Vân Đằng Thái Thứ Lang | 277 | Đọc hết lớp chữ theo nhật ký gốc1–277; ≥173trang kiểm ảnh có ghi nhận; phân tích phương pháp chưa đầy đủ |
