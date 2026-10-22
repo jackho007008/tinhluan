@@ -188,7 +188,7 @@ export const phucDiRules = data.map((r) => {
         title: "Vân Đằng Thái Thứ Lang — Tử Vi Đẩu Số Tân Biên",
         url: "/internal/editorial/demo-wuqu-tianfu#source-list",
         location: isVuTuMo(r) ? "Trang PDF236 §20.12, gạch cuối; ngữ cảnh235–236; đối chiếu175 §10.4 và176 §10.9. Tân Biên bản277 trang, SHA256 4d9a326d111ffca5290a93e19b238fb14a568afb0df7d6e44227410e27b4fabc. Định nghĩa tọa thủ PDF33; Tứ Mộ: Thìn/Tuất/Sửu/Mùi." : `PDF/trang in ${r.page}, §${r.section}; toàn mục ${r.palace === "Phúc Đức" ? "6 (132–148)" : "10 (174–180)"}. Định nghĩa tọa thủ/đơn thủ/đồng cung: PDF33 §2.6–2.8.`,
-        accessedOn: isVuTuMo(r) ? "2026-10-19" : "2026-10-13",
+        accessedOn: r.id === "luong-ty-hoi-movement" ? "2026-10-22" : isVuTuMo(r) ? "2026-10-19" : "2026-10-13",
         rights: "pending",
         rightsNote:
           "Đối chiếu văn bản và ảnh; chú giải biên soạn, không phải phê duyệt chuyên môn.",

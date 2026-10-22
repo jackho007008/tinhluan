@@ -3,6 +3,12 @@ import { type CareerBranch, independentCareerFacts, makeIndependentCareerRules }
 // Source specification fixed before validation: docs/CAREER-CLOSE-1.0.0.md.
 const row=(id:string,stars:string[],branches:string[],page:string,section:string,meaning:string):CareerBranch=>({id:'closing-'+id,stars:stars.map(n=>[n]),branches,page,section,alone:stars.length===1,majorOnly:true,title:stars.join('–')+(stars.length===1?' độc thủ':' đồng cung')+' tại Quan Lộc'+(branches.length?' '+branches.join('/') : ''),text:'Theo Tân Biên, '+meaning});
 export const careerClosingBranches:CareerBranch[]=[
+ // PDF161 §8.9: the career clause precedes an excluded moral label, not a condition.
+ row('tham-ty-ngo',['Tham Lang'],['Tý','Ngọ'],'161','8.9; chỉ vế công danh','Tham Lang độc thủ tại Quan Lộc ở Tý hoặc Ngọ được mô tả là chức vị nhỏ thấp và thăng giáng thất thường.'),
+ // PDF159: Tý is internally inconsistent; Ngọ is not. “Cũng như trên”
+ // at Thìn refers to the immediately preceding line, with both adverse clauses kept.
+ row('sun-ngo',['Thái Dương'],['Ngọ'],'159','8.5; chỉ Ngọ của dòng Tý/Ngọ','Thái Dương độc thủ tại Quan Lộc ở Ngọ được mô tả là công danh sớm đạt, văn võ kiêm toàn. “Sớm” là mô tả định tính, không xác định tuổi hoặc chức vụ hiện tại.'),
+ row('sun-thin',['Thái Dương'],['Thìn'],'159','8.5; dòng Thìn “cũng như trên”','Thái Dương độc thủ tại Quan Lộc ở Thìn được mô tả là công danh sớm đạt, văn võ kiêm toàn, nhưng thường bị nhiều người ghen ghét và bó buộc vào công việc không hợp chí hướng. Giữ cả mặt thuận và vế trở ngại; không xác định tuổi hoặc chức vụ hiện tại.'),
  row('phu-ty-hoi',['Thiên Phủ'],['Tỵ','Hợi'],'160','8.7','Thiên Phủ độc thủ tại Tỵ hoặc Hợi được mô tả là công danh bền vững nhưng không hiển hách. Hai vế ổn định và mức độ hiển đạt được giữ cùng nhau.'),
  row('phu-suu-mui-mao-dau',['Thiên Phủ'],['Sửu','Mùi','Mão','Dậu'],'160','8.7','Thiên Phủ độc thủ tại Sửu, Mùi, Mão hoặc Dậu được liên hệ với kinh doanh, buôn bán thành công; nếu có danh chức thì sách mô tả chỉ giữ trong thời gian ngắn, không phải lời hứa về sự ổn định chức vụ.'),
  row('tu-phu',['Tử Vi','Thiên Phủ'],[],'158,160','8.1; §8.7','Tử Vi–Thiên Phủ đồng cung được mô tả bằng công danh hiển hách và phú quý. Đây là ý riêng về tổ hợp, chưa kết hợp các yếu tố điều chỉnh khác ở Quan Lộc.'),
@@ -27,4 +33,4 @@ export const careerClosingBranches:CareerBranch[]=[
  row('am-tuat',['Thái Âm'],['Tuất'],'160','8.8','Thái Âm độc thủ tại Tuất được mô tả là công danh sớm đạt, văn võ kiêm toàn, nhưng thường bị ghen ghét và bó buộc vào công việc không hợp chí hướng. Giữ cả mặt giới hạn của đoạn, không xác nhận thái độ của người xung quanh đối với bạn.'),
 ];
 export const careerClosingFacts=(s:ChartSnapshot)=>independentCareerFacts(s,careerClosingBranches);
-export const careerClosingRules=makeIndependentCareerRules(careerClosingBranches).map(r=>({...r,presentation:{...r.presentation!,projectScope:[...(r.presentation?.projectScope||[]),'career-close/1.0.0; nhánh cục bộ bản mệnh. Không có ngưỡng tuổi/năm; từ sớm/muộn chỉ là lời định tính trong nguồn.']}}));
+export const careerClosingRules=makeIndependentCareerRules(careerClosingBranches).map(r=>({...r,...(['tanbien.career-closing-sun-ngo','tanbien.career-closing-sun-thin','tanbien.career-closing-tham-ty-ngo'].includes(r.id)?{sourceReferences:r.sourceReferences.map(s=>({...s,accessedOn:'2026-10-22'}))}:{}),presentation:{...r.presentation!,projectScope:[...(r.presentation?.projectScope||[]),'career-close/1.0.0; nhánh cục bộ bản mệnh. Không có ngưỡng tuổi/năm; từ sớm/muộn chỉ là lời định tính trong nguồn.']}}));

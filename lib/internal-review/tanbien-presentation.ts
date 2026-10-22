@@ -42,7 +42,7 @@ import {
   tanBienTable,
   tanBienLifeTables,
 } from "../interpretation-rules/tanbien-source";
-export const PRESENTATION_VERSION = "1.15.0";
+export const PRESENTATION_VERSION = "1.16.0";
 export type ReadingEvidence = {
   text: string;
   kind: "snapshot" | "geometry" | "source" | "editorial";
@@ -225,6 +225,8 @@ export function conditionText(c: Condition): string {
  const stable=parentUnadjustedBranches.find(b=>c.fact==='fact.'+parentUnadjustedKey(b));
  if(stable)return (stable.vcd?'Phụ Mẫu không có chính tinh; đúng cả cặp '+stable.row.stars.join('–')+' xung chiếu.':familyCondition(stable.row)+'.')+' Chỉ giữ vế độc lập ngoài giàu nghèo/sang hèn khi câu đầy đủ chưa xuất.';
  if(c.fact==='fact.di-direct-void')return 'Tuần hoặc Triệt án trực tiếp tại Thiên Di; không giới hạn chính tinh/VCD.';
+ if(c.fact==='fact.career-vcd-scale-limit')return 'Quan Lộc không chính tinh, không Tuần/Triệt trực tiếp, Nhật–Nguyệt không cùng sáng; chỉ mức hiển đạt.';
+ if(c.fact==='fact.finance-vcd-scale-limit')return 'Tài Bạch không chính tinh, không Tuần/Triệt trực tiếp, Nhật–Nguyệt không cùng sáng; chỉ giới hạn quy mô.';
  if(c.fact==='fact.finance-vcd-direct-void')return 'Tài Bạch không chính tinh, Tuần/Triệt trực tiếp, Nhật–Nguyệt không cùng sáng.';
  const qt=quanTaiBranches.find(r=>c.fact==='fact.'+r.id);if(qt)return qt.stars.join('–')+' đồng cung '+qt.palace+(qt.branches.length?' tại '+qt.branches.join('/'):'');
  const local=localPalaceBranches.find(r=>c.fact==='fact.'+r.id);if(local)return local.title;
@@ -288,6 +290,8 @@ export function factEvidence(s: ChartSnapshot, id: string): ReadingEvidence {
  const phuc=phucUnadjustedBranches.find(r=>id==='fact.'+phucUnadjustedKey(r));if(phuc){const a=phucUnadjustedAssessment(s,phuc);return item(a.text,a.paths,'source');}
  const stable=parentUnadjustedBranches.find(b=>id==='fact.'+parentUnadjustedKey(b));if(stable){const a=parentUnadjustedAssessment(s,stable);return item(a.text,a.paths,'snapshot');}
  if(id==='fact.di-direct-void'){const a=diVoidAssessment(s);return item(a.text,a.paths,'source');}
+ if(id==='fact.career-vcd-scale-limit'){const a=financeVcdAssessment(s,'scale-limit','Quan Lộc');return item(a.text,a.paths,'source');}
+ if(id==='fact.finance-vcd-scale-limit'){const a=financeVcdAssessment(s,'scale-limit');return item(a.text,a.paths,'source');}
  if(id==='fact.finance-vcd-direct-void'){const a=financeVcdAssessment(s);return item(a.text,a.paths,'source');}
  const qt=quanTaiBranches.find(r=>id==='fact.'+r.id);if(qt){const a=quanTaiAssessment(s,qt);return item(a.text,a.paths,'snapshot');}
  const local=localPalaceBranches.find(r=>id==='fact.'+r.id);if(local){const a=localPalaceAssessment(s,local);return item(a.text,a.paths,a.cause==='unresolved-adjustment'?'editorial':'snapshot');}

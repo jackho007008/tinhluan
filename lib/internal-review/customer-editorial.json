@@ -5955,5 +5955,145 @@
     "movedToEvidence": [
       "TB132§6.1.1, đối chiếu140§6.1.36–37; chỉ cùng phương diện phân tán."
     ]
+  },
+  "tanbien.finance-vcd-scale-limit": {
+    "text": "Tài Bạch không có chính tinh, không có Tuần hoặc Triệt án ngữ trực tiếp và Nhật–Nguyệt không cùng sáng. Với cấu trúc này, lời luận đặt giới hạn “không thể giàu to lớn”, kể cả khi có nhiều sao tốt hội hợp. Đây là nhận định riêng về quy mô tài lộc, không xác định mức thu nhập hay tài sản hiện có.",
+    "sourceTemplate": "Tài Bạch không có chính tinh, không có Tuần hoặc Triệt án ngữ trực tiếp và Nhật–Nguyệt không cùng sáng. Với cấu trúc này, lời luận đặt giới hạn “không thể giàu to lớn”, kể cả khi có nhiều sao tốt hội hợp. Đây là nhận định riêng về quy mô tài lộc, không xác định mức thu nhập hay tài sản hiện có.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "669d94f34374cb92234937c6db6aebf2fb37e7e1e65879c09ae8ee24ccd9761b",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Điều kiện, ngoại lệ và phạm vi chỉ nhận định thành phần; không suy số người, bệnh/sinh tử hoặc kết quả thực tế."
+    ]
+  },
+  "tanbien.siblings-am-low-cohabitation": {
+    "text": "Thái Âm đơn thủ tại Huynh Đệ ở Mão, Thìn hoặc Tỵ có lời riêng về anh chị em không thể chung sống với nhau lâu dài.",
+    "sourceTemplate": "Theo Tân Biên, Thái Âm đơn thủ Huynh Đệ tại Mão/Thìn/Tỵ, sách mô tả anh chị em không thể chung sống với nhau lâu dài.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "37fbdd19012d77dc7aecd72658e9fcb7d88d51e508dfb565e4bded82e9d91366",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Điều kiện, ngoại lệ và phạm vi chỉ nhận định thành phần; không suy số người, bệnh/sinh tử hoặc kết quả thực tế."
+    ]
+  },
+  "tanbien.career-closing-sun-ngo": {
+    "text": "Thái Dương độc thủ tại Quan Lộc ở Ngọ được mô tả là công danh sớm đạt, văn võ kiêm toàn. “Sớm” là mô tả định tính, không xác định tuổi hoặc chức vụ hiện tại.",
+    "sourceTemplate": "Theo Tân Biên, Thái Dương độc thủ tại Quan Lộc ở Ngọ được mô tả là công danh sớm đạt, văn võ kiêm toàn. “Sớm” là mô tả định tính, không xác định tuổi hoặc chức vụ hiện tại.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "d48e1cd8fe2da1158ee9eace91f955ee730fcd9889af103e24654d5185fcd9d5",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Điều kiện, ngoại lệ và phạm vi chỉ nhận định thành phần; không suy số người, bệnh/sinh tử hoặc kết quả thực tế."
+    ]
+  },
+  "tanbien.career-closing-sun-thin": {
+    "text": "Thái Dương độc thủ tại Quan Lộc ở Thìn được mô tả là công danh sớm đạt, văn võ kiêm toàn, nhưng thường bị nhiều người ghen ghét và bó buộc vào công việc không hợp chí hướng. Giữ cả mặt thuận và vế trở ngại; không xác định tuổi hoặc chức vụ hiện tại.",
+    "sourceTemplate": "Theo Tân Biên, Thái Dương độc thủ tại Quan Lộc ở Thìn được mô tả là công danh sớm đạt, văn võ kiêm toàn, nhưng thường bị nhiều người ghen ghét và bó buộc vào công việc không hợp chí hướng. Giữ cả mặt thuận và vế trở ngại; không xác định tuổi hoặc chức vụ hiện tại.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "6504e76a519c490d4936cffd64fbf7288b8c8d61f4f6e727b8b23a0895efe8b3",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Điều kiện, ngoại lệ và phạm vi chỉ nhận định thành phần; không suy số người, bệnh/sinh tử hoặc kết quả thực tế."
+    ]
+  },
+  "tanbien.phuc-dong-thin-tuat-local": {
+    "text": "Thiên Đồng đơn thủ tại Phúc Đức ở Thìn hoặc Tuất được mô tả là suốt đời vui ít buồn nhiều, hay vướng lời qua tiếng lại và kiện cáo; họ hàng phân tán, thường tranh chấp lẫn nhau.",
+    "sourceTemplate": "Thiên Đồng đơn thủ tại Phúc Đức ở Thìn hoặc Tuất được mô tả là suốt đời vui ít buồn nhiều, hay vướng lời qua tiếng lại và kiện cáo; họ hàng phân tán, thường tranh chấp lẫn nhau.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "e9dca1d22308323389bfd07fc77b53865826370015572151c7db9df6e11986f6",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Điều kiện, ngoại lệ và phạm vi chỉ nhận định thành phần; không suy số người, bệnh/sinh tử hoặc kết quả thực tế."
+    ]
+  },
+  "tanbien.phuc-dong-ty-hoi-local": {
+    "text": "Thiên Đồng đơn thủ tại Phúc Đức ở Tỵ hoặc Hợi được mô tả là suốt đời sung sướng, trong khi họ hàng ly tán, phiêu bạt. Hai nét nói về bản thân và dòng họ được giữ riêng.",
+    "sourceTemplate": "Thiên Đồng đơn thủ tại Phúc Đức ở Tỵ hoặc Hợi được mô tả là suốt đời sung sướng, trong khi họ hàng ly tán, phiêu bạt. Hai nét nói về bản thân và dòng họ được giữ riêng.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "6bbfdfcae82af16aa810eb02af585da9bac3cb62fe106ec5431c37d34d040444",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Điều kiện, ngoại lệ và phạm vi chỉ nhận định thành phần; không suy số người, bệnh/sinh tử hoặc kết quả thực tế."
+    ]
+  },
+  "tanbien.phuc-luong-ty-ngo-local": {
+    "text": "Thiên Lương đơn thủ tại Phúc Đức ở Tý hoặc Ngọ được mô tả là hưởng phúc, thanh nhàn và sung sướng; trong họ có nhiều người có danh giá và tiếng tăm.",
+    "sourceTemplate": "Thiên Lương đơn thủ tại Phúc Đức ở Tý hoặc Ngọ được mô tả là hưởng phúc, thanh nhàn và sung sướng; trong họ có nhiều người có danh giá và tiếng tăm.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "8541557ec1b095328978bf0451c69e678e75d5fc75ddb3948f61b0727ec58037",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Điều kiện, ngoại lệ và phạm vi chỉ nhận định thành phần; không suy số người, bệnh/sinh tử hoặc kết quả thực tế."
+    ]
+  },
+  "tanbien.phuc-luong-ty-hoi-local": {
+    "text": "Thiên Lương đơn thủ tại Phúc Đức ở Tỵ hoặc Hợi được mô tả là thường phải sớm xa gia đình, nay đây mai đó, hay thay đổi công việc và chí hướng; họ hàng ngày càng sa sút, phân tán.",
+    "sourceTemplate": "Thiên Lương đơn thủ tại Phúc Đức ở Tỵ hoặc Hợi được mô tả là thường phải sớm xa gia đình, nay đây mai đó, hay thay đổi công việc và chí hướng; họ hàng ngày càng sa sút, phân tán.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "b2addb4be0a930a35e643c962e246dbb7ac795933f74cc8bea9dca0f85e76ce4",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Điều kiện, ngoại lệ và phạm vi chỉ nhận định thành phần; không suy số người, bệnh/sinh tử hoặc kết quả thực tế."
+    ]
+  },
+  "tanbien.parents-pha-common-discord": {
+    "text": "Phá Quân tọa Phụ Mẫu có lời riêng về tình trạng trong nhà thiếu hòa khí.",
+    "sourceTemplate": "Theo Tân Biên, Phá Quân tọa thủ Phụ Mẫu, sách mô tả riêng trong nhà thiếu hòa khí.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "65a43bfc9e35905108728d7a4967d91ffbfdfcf287edca99b64bd99d9ee5c5ee",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "TB129: câu chung mọi vị trí. Chỉ vế quan hệ; không tuổi thọ/hình khắc. Nếu nhánh hẹp đã có cùng ý thì không thêm; điều chỉnh vật chất TB131 không áp lên vế này."
+    ]
+  },
+  "tanbien.parents-sat-common-discord": {
+    "text": "Thất Sát tọa Phụ Mẫu được mô tả là cha mẹ bất hòa; nếu không, cha mẹ và con cũng không hợp tính nhau.",
+    "sourceTemplate": "Theo Tân Biên, Thất Sát tọa thủ Phụ Mẫu, sách mô tả cha mẹ bất hòa; nếu không, cha mẹ và con cũng không hợp tính nhau.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "c2e1e9ef03a7d639a6a0eea8bc91fd32aecbc72cf765a7a5d459f908d72ba4e4",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "TB129: câu chung mọi vị trí. Chỉ vế quan hệ; không tuổi thọ/hình khắc. Nếu nhánh hẹp đã có cùng ý thì không thêm; điều chỉnh vật chất TB131 không áp lên vế này."
+    ]
+  },
+  "tanbien.career-vcd-scale-limit": {
+    "text": "Quan Lộc không có chính tinh, không có Tuần hoặc Triệt án ngữ trực tiếp và Nhật–Nguyệt không cùng sáng. Với cấu trúc này, công danh được mô tả là không thể hiển đạt, chức vị bình thường, dù có nhiều sao tốt phối chiếu. Đây là lời riêng về mức hiển đạt, không xác định nghề nghiệp hoặc chức vụ hiện có.",
+    "sourceTemplate": "Quan Lộc không có chính tinh, không có Tuần hoặc Triệt án ngữ trực tiếp và Nhật–Nguyệt không cùng sáng. Với cấu trúc này, công danh được mô tả là không thể hiển đạt, chức vị bình thường, dù có nhiều sao tốt phối chiếu. Đây là lời riêng về mức hiển đạt, không xác định nghề nghiệp hoặc chức vụ hiện có.",
+    "sourceVersion": "0.1.0",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Hai ngoại lệ đã được loại; không mượn lời đối cung."
+    ],
+    "catalogHash": "872b6392f5ab15c605c669b701bdaaa9f2024a28043a524dcdd58595826df101"
+  },
+  "tanbien.career-closing-tham-ty-ngo": {
+    "text": "Tham Lang độc thủ tại Quan Lộc ở Tý hoặc Ngọ được mô tả là chức vị nhỏ thấp và thăng giáng thất thường.",
+    "sourceTemplate": "Theo Tân Biên, Tham Lang độc thủ tại Quan Lộc ở Tý hoặc Ngọ được mô tả là chức vị nhỏ thấp và thăng giáng thất thường.",
+    "sourceVersion": "0.1.0",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "PDF161§8.9: chỉ vế chức vị/thăng giáng, không xuất quy kết phẩm hạnh; không biến kết quả công danh thành thu nhập."
+    ],
+    "catalogHash": "784adb64d05903bcd2bbe05c1177c734e7ac5b8012c62681a7caf7193d94f8f0"
+  },
+  "tanbien.di-luong-ty-hoi-movement": {
+    "text": "Thiên Lương đơn thủ tại Thiên Di ở Tỵ hoặc Hợi được mô tả bằng việc nay đây mai đó. Nhận định này chỉ nói về sự di chuyển trong môi trường bên ngoài.",
+    "sourceTemplate": "Theo Tân Biên, Thiên Lương đơn thủ Thiên Di tại Tỵ/Hợi được mô tả bằng việc nay đây mai đó. Đây là nét về sự di chuyển trong môi trường bên ngoài.",
+    "sourceVersion": "0.1.0",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "PDF177§10.12: chỉ vế di chuyển; không xuất sinh tử. TT179§10.27 có lời phiền lòng riêng, không phải ngoại lệ hủy vế di chuyển của Lương. Không dùng mục lặp lời Dương để suy tài lộc của cấu trúc này."
+    ],
+    "catalogHash": "66605fead81998bcd316fecaa4128ef5887a2e6f1f21096850419be2cbad33af"
+  },
+  "tanbien.phuc-cu-low-dispute": {
+    "text": "Cự Môn đơn thủ tại Phúc Đức ở Tỵ, Thìn hoặc Tuất có lời riêng về những tranh chấp thường xảy ra trong họ.",
+    "sourceTemplate": "Cự Môn đơn thủ tại Phúc Đức ở Tỵ, Thìn hoặc Tuất có lời riêng về những tranh chấp thường xảy ra trong họ.",
+    "sourceVersion": "0.1.0",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "PDF135§6.1.10: chỉ câu họ hàng thường tranh chấp, không chọn phần giàu nghèo giữa các dòng bất nhất, không biến lời khuyên sớm xa nhà thành dự báo. Nếu Cự–Kỵ/Hỏa đã có quan hệ bất hòa, giữ nhánh cũ; TT giữ cổng dự án chưa giải."
+    ],
+    "catalogHash": "c9316af4e3227590b76b70d1f29b7266997aad8cb2c69afc1200d6307c2e8db1"
   }
 }

@@ -1492,5 +1492,63 @@
     "section": "15.2.32",
     "mode": "ring",
     "wealth": false
+  },
+  {
+    "id": "am-low-cohabitation",
+    "palace": "Huynh Đệ",
+    "stars": [
+      "Thái Âm"
+    ],
+    "branches": [
+      "Mão",
+      "Thìn",
+      "Tỵ"
+    ],
+    "text": "mô tả anh chị em không thể chung sống với nhau lâu dài.",
+    "page": 220,
+    "section": "15.2.8; câu độc lập cuối dòng Mão/Thìn/Tỵ",
+    "mode": "exact",
+    "wealth": false
+  },
+  {
+    "id": "pha-common-discord",
+    "palace": "Phụ Mẫu",
+    "stars": [
+      "Phá Quân"
+    ],
+    "branches": [],
+    "text": "mô tả riêng trong nhà thiếu hòa khí.",
+    "page": 129,
+    "section": "5.2.14; câu chung mọi vị trí, chỉ câu độc lập thiếu hòa khí",
+    "mode": "presence",
+    "wealth": false,
+    "coveredBy": [
+      "tu-pha",
+      "vu-pha",
+      "pha-ty-ngo",
+      "pha-dan-than",
+      "pha-thin-tuat",
+      "ky"
+    ]
+  },
+  {
+    "id": "sat-common-discord",
+    "palace": "Phụ Mẫu",
+    "stars": [
+      "Thất Sát"
+    ],
+    "branches": [],
+    "text": "mô tả cha mẹ bất hòa; nếu không, cha mẹ và con cũng không hợp tính nhau.",
+    "page": 129,
+    "section": "5.2.13; câu chung mọi vị trí, giữ phép nếu không",
+    "mode": "presence",
+    "wealth": false,
+    "coveredBy": [
+      "tu-sat",
+      "liem-sat",
+      "sat-dan-than",
+      "sat-ngo",
+      "ky"
+    ]
   }
 ]
