@@ -1,18 +1,18 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-Cập nhật22/10/2026 sau rà nghĩa1.63 bằng bản vá1.63.1, nối6c80bc6/7452913. Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
+Cập nhật22/10/2026 sau TT Phụ–Điền1.64, code1b8c1c1, nối02e6ce3/13a7f3d. Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
 
 Đọc tiếp: [hợp đồng sản phẩm](BUSINESS_RULES.md), [sổ quyết định](DECISIONS.md), [đầu mối bàn giao](HANDOFF.md).
 
 ## 1. Bản nào đang phục vụ khách?
 
-- Trình bày **1.63.1**, catalog **interpretation-1.59.0**. Đã có trong luồng khách tạo mới, không chỉ bản nghiệm thu nội bộ.
-- QA chính: `http://127.0.0.1:3062`; checkout phục vụ `/Volumes/DATA/TINHLUAN/.local/context-review-20261022/qa-final`.
+- Trình bày **1.64.1**, catalog **interpretation-1.60.0**. Đã có trong luồng khách tạo mới, không chỉ bản nghiệm thu nội bộ.
+- QA chính: `http://127.0.0.1:3062`; checkout phục vụ `/Volumes/DATA/TINHLUAN/.local/parent-property-void-20261022/qa-final-v2`.
 - URL tunnel tại lần nghiệm thu gần nhất: https://61ac-171-246-109-226.ngrok-free.app/lap-la-so . Tunnel có thể đổi; không coi là tên miền triển khai ổn định.
-- Nguồn làm việc: `/Volumes/DATA/TINHLUAN`. Checkout trước để đối chiếu/quay lại: `.local/opposing-20261022/qa-final` (1.63.0/1.59.0). QA3070 giữ riêng, không hợp dữ liệu thử của nó vào kho chính.
+- Nguồn làm việc: `/Volumes/DATA/TINHLUAN`. Checkout trước để đối chiếu/quay lại: `.local/context-review-20261022/qa-final` (1.63.1/1.59.0). QA3070 giữ riêng, không hợp dữ liệu thử của nó vào kho chính.
 - Policy bản mới: `menh-free-1.0.0`; continuous report: `continuous-report-1.6.1`. P1/P2/M05/M07 và các phép ND01/ND04 đã khép tiếp tục dùng chung pipeline.
 - **Beta, chưa mở bán; SePay Live tắt.** Quy tắc luận vẫn `draft`, `review=null`. Chủ dự án duyệt giao diện hoặc nội dung Toàn thư không đồng nghĩa duyệt chuyên môn toàn báo cáo.
-- Đã xác minh web47730/worker47734 cùng checkout, code `13a7f3d`;6form/reload1.63.1. [Danh tính](../.local/context-review-20261022/serving-code.json), [đích DB/kho](../.local/context-review-20261022/runtime-target.json), [bảo toàn](../.local/context-review-20261022/preservation.json), [bàn giao](../.local/context-review-20261022/ban-giao.md). QA3070PID94421cwdcũ nguyên.
+- Đã xác minh code/checkout theo commit `1b8c1c1`;7mẫu quaform/lưu/mở1.64.1. [Danh tính](../.local/parent-property-void-20261022/serving-code.json), [đích](../.local/parent-property-void-20261022/runtime-target.json), [bảo toàn](../.local/parent-property-void-20261022/preservation.json), [bàn giao](../.local/parent-property-void-20261022/ban-giao.md). QA3070PID94421cwdcũ nguyên.
 
 ## 2. Những gì đã triển khai
 
@@ -49,9 +49,9 @@ Cập nhật22/10/2026 sau rà nghĩa1.63 bằng bản vá1.63.1, nối6c80bc6/7
 
 ## 3. Độ phủ thực tế: bộ 192, không phải mọi lá số
 
-Theo [đối chiếu192 TTDi dùng chung với1.61](../.local/di-void-shared-20261021/impact192.json), số cung **chưa có nhận định** (tách chú giải có điều kiện):
+Theo [đối chiếu192 TT Phụ–Điền1.64](../.local/parent-property-void-20261022/impact192.json), số cung **chưa có nhận định** (tách chú giải có điều kiện):
 
-- Mệnh **0**; Phụ Mẫu **54**; Phúc Đức **36**; Điền Trạch **43**.
+- Mệnh **0**; Phụ Mẫu **27**; Phúc Đức **36**; Điền Trạch **43**.
 - Quan Lộc **24**; Nô Bộc **71**; Thiên Di **10**; Tật Ách **192**.
 - Tài Bạch **20**; Tử Nữ **76**; Phu Thê **51** (2 chỉ có chú giải điều kiện,49 chưa có cả chú giải); Huynh Đệ **44**.
 
@@ -67,7 +67,15 @@ ND04:38 snapshot có43 claim mới; Phụ16 cung mới có lời/2 bổ sung, Hu
 - **Kiểm thử ND03:**27/27 tại5file; G2 riêng6/6; typecheck/build cuối đạt. Expected cơ bản cũ đã được đối chiếu hợp đồng nguyên nhóm1.1 và khép; không phải toàngate xanh. [TESTING](TESTING.md#5-lỗi-mở-và-kết-quả-cũ-còn-giới-hạn).
 - **Bảo toàn:**112file báo cáo/98ID khác nhau,31file phiên cũ giữ hash; quyền/binding/link cũ và34bài công khai giữ nguyên.4bản/4đơn mock QA mới qua2lượt, chỉ2cấu trúc engine. [File](../.local/nd03-20261020/file-preservation.json), [DB](../.local/nd03-20261020/db-after.json), [UI](../.local/nd03-20261020/public-acceptance.json).
 
-## 5. Task hiện hành — khép rà nghĩa1.63 bằng1.63.1
+## 5. Task hiện hành — TT Phụ–Điền theo phương diện1.64
+
+34nhánhPhụ (26tọa/8VCD) giữ quan hệ/thừa hưởng/tiêután/trungtính khi cảcâu bị cổng vậtchất giữ. Không lặp với câu đầyđủ; không tự đảo “bìnhthường”, khágiả/quyềnthế.ĐiềnVCDgiữ vế nguồn gốc với mộtTT; cảhai táidùng§7.33. Không đảo tọathủ sang sao xungchiếu. [Phạmvi/câu nguồn/mắt xích thiếu](PHU-HUYNH-1.32.0.md), [Điền](NO-DIEN-1.31.0.md), [toànđoạn/bàn giao](../.local/parent-property-void-20261022/ban-giao.md).
+
+So192:27Phụmới có nhậnđịnh/5bổsung,54→27thiếu;0Điềnmới/16bổsung,43vẫnthiếu.48bài54claim, khôngcung hoànchỉnh.18/34nhánhPhụcóengine192;16chỉfixture.1.234kiểm nội dung/9file,6G2DBriêng/6PDFmock, typecheck/build đạt.7mẫuengineform/fullmockriêng/lưu–mở/mobile/quyền;2PDFthật8trang16/17đoạnkhớpfrozenđãkiểmảnh.14bảnmớiQA3062qua2lượt/7cấutrúc,chỉfree. Lịch sử/quyền/34bài/G2/QA3070/Tậtchưapublish/Livefalsegiữ; khôngproviderthật/toàngate.
+
+U đồngý triểnkhaiphầnchắc và bàn giaophépđảocònthiếu. Còn ánhxạ chi tiếtgiàunghèo/sanghèn, vịtríTTcungcho/nhậnVCD, đảo từngvếĐiền, lượngtừ/phốihợp. Khônglấylời bổsung làm kếtquảđảonghịch hoặc lời camkết đủ12cung. Dừng đúnggói.
+
+### Mốc trước — khép rà nghĩa1.63 bằng1.63.1
 
 Đã sửa mapping chung: Điền50/131/143 phân diện thay nhãn trái chiều; Tài49/85/130 phân tíchlũy–giữlâu,22/110 phân giữcủa–dòngtiền,137 phân thờiđoạn. Rà8nhóm/105lượt thànhviên; các nhánh có thật câu không giữ/suygiảm giữ chưa giải. Không suy tranhchấp/muabán/quymô thành mấttài sản. Nguồn KỵĐiền154§7.25, không§7.29. Bỏ wrapper tríchlặp, chỉ1câu giới hạn mới/cụm; toàn câu/điều kiện/căn cứ cũ nguyên.
 

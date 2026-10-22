@@ -2,7 +2,11 @@
 
 Cập nhật21/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
-## Lô hiện hành — khép rà nghĩa1.63 bằng1.63.1,22/10/2026
+## Lô hiện hành — TT Phụ–Điền theo phương diện1.64,22/10/2026
+
+QA3062phục vụ1.64.1/catalog1.60, code `1b8c1c1`, checkout `.local/parent-property-void-20261022/qa-final-v2`. [Phụ](PHU-HUYNH-1.32.0.md), [Điền](NO-DIEN-1.31.0.md), [bàn giao/toàn đoạn](../.local/parent-property-void-20261022/ban-giao.md), ND10/11 trong [backlog duy nhất](V1-DELIVERY-PLAN.md).34nhánhPhụ giữ vế độc lập, không đảo giàunghèo:27mới có nhận định/5bổsung;ĐiềnVCD16bổsung/0mới;48bài54claim. CảTTĐiền tái dùng§7.33. Chưa giải bảngđảo/vịtríVCD; U đồngý làmphầnchắc, bàn giao phầnthiếu. G2/lịch sử/QA3070/Tậtchưapublish/Livefalse giữ. Dừng gói này.
+
+## Mốc trước — khép rà nghĩa1.63 bằng1.63.1,22/10/2026
 
 QA3062phục vụ1.63.1/catalog1.59, code `13a7f3d`, checkout `.local/context-review-20261022/qa-final`. [Rà và sửa mapping](OPPOSING-CLAIMS-1.63.0.md#rà-nghĩa-và-khép163-bằng-bản-vá1631), [bàn giao ngắn/toàn đoạn](../.local/context-review-20261022/ban-giao.md). Đồng–Cự/Kỵ và2cụmĐiền chuyển phân diện; tíchlũy/dòngtiền/thờiđoạn không mặc định đối lập giữcủa. Bỏ khuôn tríchlặp,1câu giới hạn mới/cụm.40bài đổi văn,0claim/độphủmới; không giải phươngpháp.228filelịch sử/G2/QA3070/Tật/Livefalse giữ. Dừng, không mởrule/toàncatalog.
 

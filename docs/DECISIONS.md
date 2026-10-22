@@ -133,3 +133,10 @@ Codex tra cứu, đối chiếu, giữ riêng phương pháp tác giả, đề x
 ### Q15 — rà và khép1.63 bằng1.63.1
 
 Utrựctiếp yêu cầu kiểm mapping mẫu50 và toànregistry, chỉ gọi trái chiều khi cùngđốitượng/phươngdiện/thờiđoạn sosánhđược; không suy tranhchấp/muabán/khótạolập thành mấttàisản, bỏ khuôn tríchlặp và hạnchế chung trùng. D/C: [rà nghĩa1.63.1](OPPOSING-CLAIMS-1.63.0.md#rà-nghĩa-và-khép163-bằng-bản-vá1631), code13a7f3d. Đây là sửa lỗi phânloại và biên tập lớp gom, khôngthay phươngphápnguồn, khôngphêduyệt toànbài hoặc mởrule/Tật/G2/Live. Bảnlưu1.63 giữnguyên.
+
+
+## Q16 — TT Phụ–Điền theo phương diện,22/10/2026
+
+**U trực tiếp:** giao giải PDF131§5.2.30/155§7.32–33, triển khai toàn tập con đủ căn cứ qua pipeline chung, giữ G2/lịch sử/QA3070/Tật/Live. Khi Codex trình bày thiếu bảng đối ứng, U trả lời **“Đồng ý; triển khai phần chắc và bàn giao phép đảo còn thiếu”**. Đây là quyền triển khai vế độc lập có căn cứ, chưa duyệt ánh xạ nghịch đảo chi tiết hoặc toàn bộ chuyên môn.
+
+D/C: [Phụ](PHU-HUYNH-1.32.0.md), [Điền](NO-DIEN-1.31.0.md), `parentUnadjustedAssessment` dùng lại hai evaluator có sẵn; VCDĐiền giữ câu nguồn gốc khi mộtTT, cảhai dùng§7.33 đã có. Tách quan hệ/thừa hưởng/tiêután/trungtính khỏi phần giàu nghèo/sanghèn; không tự chuyển phép đảo tọa thủ sang sao xungchiếu. Thay cổng giữ nguyên cả câu ghép trong đúng34nhánhPhụ và cổng mộtTT của câu nguồn gốcĐiền, không bỏ cổng phần vậtchất chưa giải. Vế trungtính được giữ vì không có hướng tốt/xấu để đảo; đây là cách áp dụng có lập luận của dự án. Không mở loại trừND19 hoặc phê duyệt mẫuTật/Live.

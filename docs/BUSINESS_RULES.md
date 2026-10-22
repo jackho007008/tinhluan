@@ -36,7 +36,7 @@ Căn cứ phân loại quyết định: [DECISIONS](DECISIONS.md) ghi lời ch�
 
 - Chỉ trình bày dữ kiện Tật Ách và “chưa chọn nhánh luận nào” là kết quả audit/phạm vi triển khai; **không phải sách không có nội dung Tật Ách**.
 - Loại số con/số anh chị em, thứ bậc/giới tính, một số câu số lần hôn nhân, âm phần: là các giới hạn biên tập đang áp dụng trong hồ sơ cũ. Không gán toàn bộ thành quyết định thương mại cuối đã được chủ dự án phê chuẩn; cũng không tự mở lại khi chưa có chỉ đạo.
-- Cổng bảo thủ khi chưa biết cách điều chỉnh không có nghĩa sách yêu cầu “không có sao đó”. Ví dụ Phụ Mẫu §5.2.30 yêu cầu xét lại giàu/nghèo dưới Tuần/Triệt; chưa có phép đổi đúng từng lời nên hệ thống giữ nhánh chưa xác định. Không suy thành mọi quan hệ cha mẹ đều bị đảo.
+- Cổng bảo thủ khi chưa biết cách điều chỉnh không có nghĩa sách yêu cầu “không có sao đó”. Ví dụ Phụ Mẫu §5.2.30 yêu cầu xét lại giàu/nghèo dưới Tuần/Triệt; chưa có phép đổi đúng từng lời nên hệ thống giữ nhánh chưa xác định. Không suy thành mọi quan hệ cha mẹ đều bị đảo. Lô1.64 đã tách34nhánh vế độc lập và gỡ cổng mộtTT cho nguồn gốcĐiềnVCD; phần giàu/nghèo/sang/hèn chưa có bảng đảo vẫn giữ, xem PHU-HUYNH/NO-DIEN.
 - Việc từng chặn mọi trường hợp Nô có hai chính tinh hoặc chặn Vũ–Tham/Huynh do chữ “sau” là giới hạn cũ của dự án. Các phần đã được chứng minh và thay trong 1.52/1.53 không được thread mới phục hồi nhầm thành điều kiện sách.
 
 ### Đề xuất còn chờ duyệt
@@ -67,7 +67,7 @@ Mã dưới đây trỏ về ND hiện có, không tạo backlog song song. “C
 - **ND08 — Phúc:** “nhiều sát tinh”, nhóm sáng/mờ và cứu giải được định nghĩa ra sao? Với Tử Vi, VCD, Âm–Riêu–Đà–Kỵ, Cơ–Cự–Kỵ, điều kiện nào đổi lời riêng? TB132–142§6. Không đặt ngưỡng số sao hoặc phát biểu toàn dòng họ từ dữ kiện riêng.
 - **ND09 — Nô:** các ô còn thiếu của bảng Mệnh–Nô và các chính tinh rơi vào nhiều nhóm/trạng thái xử lý thế nào? Tuần/Triệt đổi kết quả nào? TB168–173, TL155–159. Sự nhất trí trong một ô đã triển khai không giải phép phối hợp nhiều ô.
 - **ND10/16 — Điền, Tài/Quan:** Nhánh diễn tiến kiếm tiền TT/TàiVCD đã khép1.60 trong tập con trên; ngoại lệ cùng sáng và tổng hợp chưa giải. Tuần/Triệt đổi tạo dựng, thừa hưởng hay giữ tài sản cụ thể ra sao? Khi lời giữ tiền gặp hao tán, nguồn có phép điều chỉnh hay chỉ hai lời khác phương diện? TB149–157,191/195; TH241–245/257/264–265. Không tự lấy kết quả ròng.
-- **ND11 — Phụ:** §5.2.30 đổi giàu/nghèo/sang/hèn ở đâu, có đổi quan hệ không? Lương Tỵ ở PDF128/129 khác nhau; Kỵ cùng Nhật–Nguyệt Sửu/Mùi là thay lời hay giữ các mặt khác nhau? Không sửa chữ hoặc đảo toàn nền.
+- **ND11 — Phụ:** §5.2.30 chỉ đích giàu/nghèo/sang/hèn của cha mẹ;1.64 đã giữ vế quan hệ độc lập. Còn bảng đối ứng từng mức và vị trí áp khi VCD. Lương Tỵ ở PDF128/129 khác nhau; Kỵ cùng Nhật–Nguyệt Sửu/Mùi là thay lời hay giữ các mặt khác nhau? Không sửa chữ hoặc đảo toàn nền.
 - **ND12/13 — Tử/Phu:** điều kiện “muộn”, “nếu/mới”, một/cả Tuần–Triệt và lượng từ hội hợp được xác định thế nào? TB198–216, nhất là201/205/207/210/212. Câu chỉ số lượng, khó nuôi, sinh tử hoặc phẩm hạnh có lời quan hệ độc lập hay không? Không tự tạo lời nhẹ hơn.
 - **ND14 — Huynh:** các nhóm phụ tinh, VCD và yêu cầu xem Phúc/Mệnh/Bào/Nô cho phép kết luận phối hợp gì? TB217–224, TL155–159. Vũ–Tham đã khép; không tiếp tục yêu cầu tuổi cho chính câu “sau đều giàu có nhưng sớm xa nhau”.
 - **ND15 — Quan:** Vũ–Tham gắn mốc30tuổi, Cơ–Âm ghi chi khác cấu trúc engine, Sát có vế đao nghiệp/binh thương; đâu là điều kiện đủ để xuất một lời trong phạm vi? TB158–167. Không bỏ tuổi, đổi chi hoặc đổi tai họa thành nghề nghiệp thuận.

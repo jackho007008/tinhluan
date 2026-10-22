@@ -71,3 +71,28 @@ Sửa đúng hai claim `tanbien.parents-co-cu`, `tanbien.siblings-dong-cu`, vers
 Expected trước chạy: đủ cả cặp đúng cung và danh sách hợp lệ → chỉ câu thiếu hòa khí; thiếu một sao/sai cung/ở đối cung → rule tọa thủ không khớp; thiếu chứng nhận hoặc sao lưu → không xác định/không xuất; Tuần/Triệt, độ sáng và giới tính không làm câu độc lập thành lời xa cách. Lời xa cách độc lập đúng nguồn ở **nhánh khác** (ví dụ Đồng–Cự/Phụ, PDF126) giữ nguyên; không dùng regex xóa toàn bộ từ “xa cách”. Bộ192 chỉ cho phép hai rule đổi claim/căn cứ/văn; facts, tập khớp, các rule khác, VCD và quyền G2 phải không đổi.
 
 Kết quả: so192 phát hiện thêm mẫu ghép Cơ–Cự/Kỵ trong `coordinate` và `GROUP_COPY` còn lời cũ; đã sửa cùng nguyên nhân, giữ đủ hai đối tượng/vế “hoặc” của Kỵ. `CUSTOMER_COPY` Đồng–Cự cũng đồng bộ. Bộ192 chỉ3snapshot đổi văn (2Phụ/1Huynh),33VCD nguyên vẹn; không thêm claim hay giảm cung trống.663/663 test cuối, typecheck/build, hai ca khách lưu/mở lại đạt.18nhánh chỉfixture giữ mức bằng chứng cũ. Chi tiết lỗi đầu và các lượt kiểm tại TESTING và bàn giao cục bộ.
+
+
+## Tuần/Triệt theo phương diện — 1.64.1,22/10/2026
+
+Baseline `main@02e6ce3` sạch; code bàn giao `13a7f3d`/catalog1.59 đã kiểm hash checkout phục vụ. Phạm vi được giao là PDF131§5.2.30 và155§7.32–33; dùng lại audit/kho chữ hiện có, không đọc sách mới. Chủ dự án đã đồng ý triển khai phần chắc và bàn giao phép đảo còn thiếu. Đây là phân tích và triển khai của Codex trong phạm vi giao việc, không phải phê duyệt chuyên môn toàn bài.
+
+### Câu nguồn và phạm vi đã giải
+
+PDF131§5.2.30: “Phải nhận định nghịch đảo ảnh hưởng của những sao tọa thủ: tốt hóa xấu, xấu thành tốt, để luận đoán sự giàu nghèo, sang hèn của cha mẹ.” Đích là **giàu nghèo/vị thế của cha mẹ**. Không có câu yêu cầu đảo hòa khí, cha mẹ–con, sự thừa hưởng của con hay việc con tiêu tán tài sản. Vế sinh tử/xa cách/làm con nuôi ngay trước đó không được dùng để tạo một kết luận quan hệ thay thế. Câu tọa thủ chưa tự xác lập vị trí án khi cặp chính tinh ở đối cung, dù§5.2.31 cho xét cặp xung chiếu.
+
+Cổng `familyAssessment` vốn chỉ đặt cho hàng `wealth`, nhưng hàng ghép vẫn giữ cả quan hệ và thừa hưởng. `familyVcdAssessment` còn giữ cả hàng khi TT ở Phụ hoặc Tật. Giữ các cổng này cho phần giàu nghèo/sang hèn chưa giải; thêm **vế độc lập**, qua chính hai evaluator vị trí sẵn có với `wealth:false`. Vế tách chỉ xuất nếu câu đầy đủ chưa xuất; không hai claim lặp nghĩa trên lá số không TT. Không thêm pipeline hoặc quyết định theo tên/ID/ngày sinh khách.
+
+26nhánh tọa thủ +8nhánh VCD, khai báo rõ từng câu tại [parent-unadjusted.ts](../lib/interpretation-rules/parent-unadjusted.ts). Bao gồm quan hệ, thừa hưởng/không thừa hưởng, tiêu tán bởi con và mô tả trung tính “bình thường”. Với “bình thường”, nguồn không nêu hướng tốt/xấu để đảo: giữ trung tính, không biến thành giàu hay nghèo. Đây là cách áp dụng có lập luận của dự án, không câu công thức mới trong sách. Lợi ích nghiêng cha/mẹ, phúc lộc, hoặc mức vật chất/vị thế không rõ tách biệt vẫn không được lấp bằng một kết quả suy diễn.
+
+Các câu quan hệ có điều kiện gắn sinh tử/lời khuyên không được cắt thành khẳng định xa cách: Tử–Phá chỉ giữ bất hòa; Tử–Tham chỉ giữ bình thường; Tham Thìn/Tuất giữ không thừa hưởng và thiếu hòa khí; Tham Tý/Ngọ giữ bình thường và thiếu hòa khí; Phá Tý/Ngọ giữ thiếu hòa khí; Sát Tỵ/Ngọ giữ bất hòa **hoặc** không hợp tính. Các lời cũ ở nhánh khôngTT không bị sửa trong gói này.
+
+Một Tuần, một Triệt, cả hai trực tiếp: cùng giữ vế nằm ngoài phạm vi đảo; không xem cảhai tự triệt tiêu. VCD: giữ câu quan hệ/nguồn gốc của **Phụ**, không dùng lời Tật; TT ở cung cho hoặc nhận chỉ giữ cổng phần vật chất chưa giải. Không áp nghịch đảo tọa thủ sang sao xung chiếu. Thiếu TT vẫn có thể giữ vế độc lập khi cấu trúc sao đầy đủ; thiếu/bất nhất chính tinh, sai cung/chi, sao lưu, cặp thiếu thì không khớp/unknown theo evaluator chung.
+
+### Phần còn chặn và phương án để quyết định
+
+- **Ánh xạ giàu/nghèo/sang/hèn:** nguồn có hướng nghịch đảo, nhưng không cho mức đối ứng của khá giả, bình thường, nhiều của, quyền thế/danh chức; không có phép gộp khi nhiều sao nói khác chiều. Phương án đề xuất: trước hết duyệt một bảng câu hữu hạn chỉ đổi cực định tính giàu↔nghèo, sang↔hèn ở đúng câu nguồn rõ hai cực; giữ riêng các vế khác. Không mặc định khá giả→nghèo, quyền thế→hèn hoặc tự chọn kết quả ròng. **Chưa triển khai**, theo phạm vi chủ dự án vừa chốt.
+- **Vị trí VCD:**§5.2.31 nói “Coi Chính diệu xung chiếu như Chính diệu tọa thủ”, nhưng không nói chuyển TT, và§5.2.30 không chỉ rõ án ở cung nhận/cho. Phương án: nếu cần mở phần đảo VCD, đặc tả riêng theo TT tại Phụ và TT tại Tật; giữ chi thật, không dựng cung giả; cần căn cứ nối để chọn trường hợp áp. Chưa coi hai câu là chứng minh tự truyền TT.
+- **Ngoại lệ Kỵ/Nhật–Nguyệt, Lương Tỵ và phối hợp liên cung:** chưa giải trong gói này. Không dùng vế quan hệ mới để nhận toàn cung hoặc toàn12cung hoàn chỉnh.
+
+So192: Phụ **27mới có nhận định/5bổ sung**,54→27chưa có nhận định; Điền **0mới/16bổ sung**,43→43trống.48bài thêm54claim;18/34nhánh Phụ có witness engine192,16nhánh còn chỉfixture. Không tìm mẫu hàng loạt hoặc gọi fixture là lá số engine thật. [Toàn đoạn trước/sau](../.local/parent-property-void-20261022/full-before-after.txt), [đối chiếu](../.local/parent-property-void-20261022/impact192.json), [bàn giao](../.local/parent-property-void-20261022/ban-giao.md).
