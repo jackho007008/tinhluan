@@ -53,10 +53,15 @@ Hai nguyên văn ở BUSINESS_RULES vẫn là **bản thẩm định, chưa duy�
 
 Hai bản trên là **chứng kiến cấu trúc engine đã lưu**, không phải lần chạy engine mới và không phải bằng chứng bệnh/sự kiện đã xảy ra. Chúng không đại diện mọi cấu trúc Tật/VCD. Hồ sơ TL Phụ–Ách và NPL Phúc–Mệnh–Thân–Tật không bổ sung một phép tính đủ dùng cho hai câu TB; không trộn tác giả hoặc nhân quả gia đình thành nhận định sức khỏe.
 
-### Kết quả và một quyết định sản phẩm cụ thể
+### Kết quả và đề xuất tại48877fe — phần hạ mục tiêu cuối không được duyệt
 
 **Không triển khai rule hay văn khách mới:** 0 nhóm đã được phép và đủ đặc tả; 0 Tật mới có nhận định, 0 bổ sung. Số Tật192/192 chưa có luận cá nhân được giữ theo đối chiếu đã lưu, không chạy lại bộ192 trong phiên chỉ tài liệu. Không chạy test/build/tạo–lưu–mở/mobile/PDF vì đầu ra ứng dụng không đổi. Không quay lại Nô–Tử.
 
 Với nguồn và phạm vi **đã được chứng minh hiện nay**, yêu cầu “luận cá nhân đủ 12 cung” chưa đáp ứng ở chính cung Tật: dữ kiện có, nhưng chưa có mệnh đề cá nhân nào vừa được phép vừa giữ đúng điều kiện/điều chỉnh. Phê duyệt hai chú giải văn bản không tự sửa được điều đó, kể cả có đưa chúng vào giao diện. Các cung khác cũng còn cấu trúc thiếu; không tuyên bố 11 cung đã hoàn chỉnh. Đây không phải kết luận đã hết mọi khả năng của mọi nguồn, nhưng hiện **chưa có đường hoàn thành tiêu chí 12 cung được chứng minh**. Không mở vòng nghiên cứu mặc định hoặc yêu cầu người thẩm định bên ngoài.
 
-**Đề xuất cụ thể, chưa duyệt:** giữ các cấm và hai mẫu chưa publish; sửa tiêu chí/lời hứa V1 từ “luận cá nhân đầy đủ 12 cung” sang “tra cứu dữ kiện 12 cung và đọc những nhận định đã được triển khai trong phạm vi hỗ trợ; Tật chỉ dữ kiện”. Toàn văn mẫu, điều kiện dùng và câu hỏi quyết định ở [BUSINESS_RULES — đề xuất phạm vi sau rà Tật](BUSINESS_RULES.md). Đây là thay đổi thật về mục tiêu sản phẩm, không phải đổi tên để coi Tật đã hoàn thành. Chưa có đồng ý thì mục tiêu cũ và trạng thái chưa đạt vẫn giữ. Đồng ý đổi tiêu chí cũng không tự cấp quyền mở bán, đổi G2, bật Live hoặc bỏ các cổng còn lại.
+**Mốc đề xuất48877fe, phần hạ mục tiêu cuối không được chấp nhận:** giữ các cấm và hai mẫu chưa publish; sửa tiêu chí/lời hứa V1 từ “luận cá nhân đầy đủ 12 cung” sang “tra cứu dữ kiện 12 cung và đọc những nhận định đã được triển khai trong phạm vi hỗ trợ; Tật chỉ dữ kiện”. Toàn văn mẫu, điều kiện dùng và câu hỏi quyết định ở [BUSINESS_RULES — đề xuất phạm vi sau rà Tật](BUSINESS_RULES.md). Đây là thay đổi thật về mục tiêu sản phẩm, không phải đổi tên để coi Tật đã hoàn thành. Chưa có đồng ý thì mục tiêu cũ và trạng thái chưa đạt vẫn giữ. Đồng ý đổi tiêu chí cũng không tự cấp quyền mở bán, đổi G2, bật Live hoặc bỏ các cổng còn lại.
+
+
+## Quyết định sau48877fe — thông báo beta không thay mục tiêu cuối
+
+Chủ dự án đã duyệt thông báo giới hạn để mô tả trung thực beta; **không duyệt phần đề xuất hạ mục tiêu V1/trả phí** ở mục trước. Mục tiêu báo cáo cá nhân đầy đủ các chủ đề12cung, có giá trị thu phí và tiêu chí nghiệm thu cuối giữ nguyên, hiện chưa đạt. Hai mẫu Tật tiếp tục chưa duyệt/publish; dữ kiện/chú giải không tính là luận cá nhân hoàn chỉnh. [Bảng quyết định trong backlog](V1-DELIVERY-PLAN.md#beta-release-decisions-20261022) phân biệt phần phạm vi có thể quyết định với phần điều kiện nguồn không thể giải bằng đồng ý. Không nghiên cứu/rule hoặc thay nội dung khách trong phiên tài liệu này.

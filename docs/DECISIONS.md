@@ -148,4 +148,13 @@ D/C: [Phụ](PHU-HUYNH-1.32.0.md), [Điền](NO-DIEN-1.31.0.md), `parentUnadjust
 
 **Kết quả D/C:** chưa xác nhận nhánh đã được phép nhưng thiếu code; lớp dữ kiện đã hoạt động. Hai mẫu đủ điều kiện tra đoạn nhưng chưa đủ điều kiện áp kết quả cá nhân, có yếu tố cứu/tác cụ thể được ghi tại [Tật Ách](TAT-ACH-1.34.0.md). Chưa thêm code hoặc thay ứng dụng1.64.1/catalog1.60.
 
-**Đề xuất chờ quyết định, không phải đã chốt:** giữ các cấm/hai mẫu chưa publish và sửa tiêu chí V1 sang tra cứu12cung, luận theo những phần đã được triển khai, Tật chỉ dữ kiện. [Toàn văn và câu hỏi duyệt](BUSINESS_RULES.md). Mục tiêu “luận cá nhân đủ12cung” tiếp tục có hiệu lực và chưa đạt cho tới khi chủ dự án quyết định khác. Những dòng kế hoạch cũ nhắc chỉ định người thẩm định không được dùng để bắt chủ dự án tìm người ngoài; phần đối chiếu thuộc Codex, phần phạm vi/phát hành thuộc chủ dự án.
+**Mốc đề xuất48877fe — phần hạ mục tiêu cuối không được chấp nhận; chỉ thông báo beta được duyệt tại quyết định kế tiếp:** giữ các cấm/hai mẫu chưa publish và sửa tiêu chí V1 sang tra cứu12cung, luận theo những phần đã được triển khai, Tật chỉ dữ kiện. [Toàn văn và câu hỏi duyệt](BUSINESS_RULES.md). Mục tiêu “luận cá nhân đủ12cung” tiếp tục có hiệu lực và chưa đạt cho tới khi chủ dự án quyết định khác. Những dòng kế hoạch cũ nhắc chỉ định người thẩm định không được dùng để bắt chủ dự án tìm người ngoài; phần đối chiếu thuộc Codex, phần phạm vi/phát hành thuộc chủ dự án.
+
+
+## 22/10/2026 — duyệt thông báo beta, giữ mục tiêu trả phí đầy đủ12cung
+
+**U trực tiếp, thay cách hiểu đề xuất tại48877fe:** “Tôi đồng ý dùng thông báo giới hạn đề xuất để mô tả trung thực bản beta hiện tại”; “Không đồng ý thay mục tiêu sản phẩm cuối: báo cáo cá nhân đầy đủ các chủ đề của12cung, có nội dung đủ giá trị để thu phí.”
+
+**Đã chốt:** beta tra cứu12cung/luận phần đã triển khai, chưa bán dưới lời hứa đầy đủ; mục tiêu phát hành trả phí và tiêu chí nghiệm thu cuối giữ nguyên, hiện chưa đạt. Chỉ nội dung thông báo được duyệt; phần đề xuất hạ mục tiêu ở48877fe không được chấp nhận. Không có phép đưa thông báo lênUI/bản khách trong task này. Q01 được tái xác nhận, Q02/G2/lịch sử/quyền cũ/QA3070/Live tắt giữ.
+
+**Phạm vi phiên:** chỉ tài liệu; từ hồ sơ có sẵn lập bảng ngay trong backlog, phân biệt giới hạn sản phẩm đã xác nhận/đề xuất, thiếu điều kiện nguồn và cổng dự án có bằng chứng. Không nghiên cứu mới, thêm rule, mở mẫu Tật, thay nghiệm thu cuối, giao diện/nội dung khách hoặc mở bán. [Bảng và hai quyết định còn hỏi](V1-DELIVERY-PLAN.md#beta-release-decisions-20261022), [hai mốc sản phẩm](BUSINESS_RULES.md). Các phương án mở nội dung trong bảng **chưa được duyệt**; chúng không giải phương pháp bằng sự đồng ý và không dùng miễn trừ để vượt điều kiện nguồn.

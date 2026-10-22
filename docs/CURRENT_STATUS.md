@@ -8,7 +8,9 @@ Rà Nô–Tử22/10 nối c5fe112: xác minh process/checkoutQA3062 và12filecod
 
 Đối chiếu phépTT nối23c8906: chưa khóa toán tử của lời quan hệTử205 hoặc phép đổi ô bảng Nô173. Đã xác định phần sách nói và cổng dự án thêm; [kết quả/bằng chứng](../.local/no-tu-void-method-20261022/ban-giao.md).0nhánh/0mới/0bổ sung, app giữ1.64.1/catalog1.60; Nô71/Tử76 là số lô192 trước, không chạy 192 mới. Chỉ tài liệu; dừng đúng hai câu hỏi.
 
-Rà Tật nối b6ca831: **chưa có nhóm nhận định cá nhân đủ đặc tả và đã được phép để triển khai**; dữ kiện đã có, không phải lỗi mất sao.0 Tật mới có nhận định/0 bổ sung;192/192 còn thiếu theo số đối chiếu trước, không chạy192mới. [Phân loại và phụ thuộc cụ thể của hai mẫu](TAT-ACH-1.34.0.md), [đề xuất sửa tiêu chí V1 chưa duyệt](BUSINESS_RULES.md). Mục tiêu luận cá nhân đủ12cung chưa đáp ứng; không dùng chú giải để tính hoàn thành. Giữ hai mẫu chưa publish, app1.64.1/catalog1.60/G2/quyền cũ/QA3070/Live tắt. Không tự mở vòng nghiên cứu hoặc cần người thẩm định bên ngoài.
+Rà Tật nối b6ca831: **chưa có nhóm nhận định cá nhân đủ đặc tả và đã được phép để triển khai**; dữ kiện đã có, không phải lỗi mất sao.0 Tật mới có nhận định/0 bổ sung;192/192 còn thiếu theo số đối chiếu trước, không chạy192mới. [Phân loại và phụ thuộc cụ thể của hai mẫu](TAT-ACH-1.34.0.md), [mốc đề xuất48877fe, đã được làm rõ trong quyết định mới nhất](BUSINESS_RULES.md). Mục tiêu luận cá nhân đủ12cung chưa đáp ứng; không dùng chú giải để tính hoàn thành. Giữ hai mẫu chưa publish, app1.64.1/catalog1.60/G2/quyền cũ/QA3070/Live tắt. Không tự mở vòng nghiên cứu hoặc cần người thẩm định bên ngoài.
+
+**Quyết định hiện hành sau48877fe:** thông báo giới hạn đã được duyệt **chỉ mô tả beta**; phần đề xuất hạ mục tiêu không được chấp nhận. Beta tra cứu12cung/luận phần đã triển khai, chưa bán dưới lời hứa đầy đủ. Mục tiêu trả phí vẫn là báo cáo cá nhân đầy đủ các chủ đề12cung, đủ giá trị để thu phí; **hiện chưa đạt**. [Bảng quyết định hiện hành](V1-DELIVERY-PLAN.md#beta-release-decisions-20261022), [quyết định gốc](DECISIONS.md). Phiên này chỉ sửa tài liệu, chưa đưa thông báo lênUI/bản khách, không nghiên cứu hoặc thêm rule.
 
 ## 1. Bản nào đang phục vụ khách?
 

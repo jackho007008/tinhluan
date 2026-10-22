@@ -2,9 +2,13 @@
 
 Cập nhật21/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
-## Tật: rà phần được phép và quyết định phạm vi — 22/10/2026
+## Beta và mục tiêu trả phí — quyết định22/10/2026
 
-Baseline `main@b6ca831` sạch; app1.64.1/catalog1.60/code1b8c1c1 giữ. [Phân loại và hai mẫu](TAT-ACH-1.34.0.md), [đề xuất nguyên văn chưa duyệt](BUSINESS_RULES.md), [bàn giao](../.local/tat-scope-review-20261022/ban-giao.md). Không có nhánh đã được phép và đủ đặc tả còn thiếu code;0 mới/0 bổ sung, Tật192/192 vẫn chưa luận cá nhân theo số lô192trước. Bản43 có Hóa Quyền/Tả–Hữu/TT;83 có Hóa Khoa và yếu tố khác, chưa có phép sửa trực tiếp câu đang xét. Không đòi kết luận ròng toàn cung. Đề xuất đổi tiêu chí/lời hứa V1 có toàn văn, chưa tự áp; hai mẫu chưa publish. Không mở nghiên cứu mặc định/không yêu cầu người ngoài. Chỉ tài liệu, không test/UI/PDF/restart/DB; G2/lịch sử/QA3070/Live giữ.
+Baseline `main@48877fe` sạch. Chủ dự án duyệt thông báo để mô tả beta, **không chấp nhận hạ mục tiêu cuối**. Beta tra cứu12cung/luận phần đã triển khai, chưa bán dưới lời hứa đầy đủ; mục tiêu trả phí vẫn đầy đủ các chủ đề12cung/đủ giá trị thu phí, hiện chưa đạt. [Bảng quyết định ngay trong backlog](V1-DELIVERY-PLAN.md#beta-release-decisions-20261022), [quyết định gốc](DECISIONS.md), [thông báo và hai mốc](BUSINESS_RULES.md). Chỉ tài liệu; không đưa thông báo lênUI, không nghiên cứu/rule/test/PDF/runtime/DB. App1.64.1/catalog1.60/code1b8c1c1, G2/lịch sử/quyền cũ/QA3070/Live tắt giữ; hai mẫu Tật chưa duyệt/publish. Bảng phân cổng đã có bằng chứng, không gọi mọi cổng dự án là thừa; cuối bảng chỉ còn hai lựa chọn sản phẩm cụ thể, chưa duyệt.
+
+## Mốc48877fe — rà Tật, trước quyết định tách beta/trả phí
+
+Baseline `main@b6ca831` sạch; app1.64.1/catalog1.60/code1b8c1c1 giữ. [Phân loại và hai mẫu](TAT-ACH-1.34.0.md), [mốc đề xuất nguyên văn, đã được quyết định lại](BUSINESS_RULES.md), [bàn giao](../.local/tat-scope-review-20261022/ban-giao.md). Không có nhánh đã được phép và đủ đặc tả còn thiếu code;0 mới/0 bổ sung, Tật192/192 vẫn chưa luận cá nhân theo số lô192trước. Bản43 có Hóa Quyền/Tả–Hữu/TT;83 có Hóa Khoa và yếu tố khác, chưa có phép sửa trực tiếp câu đang xét. Không đòi kết luận ròng toàn cung. Đề xuất đổi tiêu chí/lời hứa V1 có toàn văn, chưa tự áp; hai mẫu chưa publish. Không mở nghiên cứu mặc định/không yêu cầu người ngoài. Chỉ tài liệu, không test/UI/PDF/restart/DB; G2/lịch sử/QA3070/Live giữ.
 
 ## Đối chiếu cách áp TT Nô–Tử —22/10/2026, nối23c8906
 

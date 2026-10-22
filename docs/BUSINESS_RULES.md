@@ -123,7 +123,9 @@ Nguồn chung: Vân Đằng Thái Thứ Lang, *Tử Vi Đẩu Số Tân Biên*, 
 Chấp thuận mẫu sau này vẫn không tự cho phép publish; cần quyết định xuất bản rõ, điều kiện áp dụng, kiểm thử và nghiệm thu riêng. Phiên này giữ nguyên ứng dụng và dữ liệu.
 
 
-## 6. Đề xuất phạm vi sau rà Tật — 22/10/2026, chưa duyệt
+## 6. Mốc đề xuất48877fe — chỉ thông báo beta được duyệt, không hạ mục tiêu cuối
+
+**Cập nhật quyết định trực tiếp:** chủ dự án đồng ý dùng nguyên văn thông báo dưới đây để mô tả beta, **không đồng ý đổi mục tiêu sản phẩm cuối**. Các đoạn “đề xuất duy nhất”, “đổi tiêu chí” và câu hỏi duyệt phía dưới là lịch sử của48877fe; phần hạ mục tiêu không được chấp thuận. Phiên này chỉ sửa tài liệu, chưa đưa thông báo vào giao diện/bản khách.
 
 Chỉ đạo hiện tại vẫn cấm suy bệnh, sinh tử, chẩn đoán hoặc điều trị từ lá số; hai mẫu ở mục5 chưa được duyệt/publish. Codex và chủ dự án thực hiện đối chiếu/quyết định, không đặt người thẩm định bên ngoài làm cổng. [Kết quả theo từng loại chặn và hai bản chứng kiến](TAT-ACH-1.34.0.md) không tìm được nhóm nhận định cá nhân Tật vừa đủ đặc tả vừa đã được phép.
 
@@ -136,3 +138,11 @@ Chỉ đạo hiện tại vẫn cấm suy bệnh, sinh tử, chẩn đoán hoặ
 **Điều kiện nếu được duyệt:** nội dung này mô tả đúng bản thử hiện hành, không hứa mọi cấu trúc của11cung còn lại đã đủ. Tật và mọi cấu trúc thiếu phải còn hiển thị thiếu; hai mẫu chưa duyệt tiếp tục không xuất. Mọi nhận định vẫn cần điều kiện/ngoại lệ và quyền máy chủ G2; bản lưu/quyền cũ bất biến. Chỉ áp nội dung phạm vi mới vào điểm giới thiệu và bản tạo mới trong một thay đổi được giao sau quyết định; không sửa văn hoặc hạn của lịch sử. Các cổng thanh toán, chất lượng và vận hành giữ riêng; duyệt câu này không cho phép thu tiền thật, bật Live hoặc deploy.
 
 **Chính xác điều chủ dự án cần quyết định:** có đồng ý thay tiêu chí V1 nêu trên và dùng nguyên văn thông báo này hay không? Đây là quyết định phạm vi sản phẩm, không phải yêu cầu chọn toán tử, mức cứu giải hoặc câu nguồn thắng. Nếu không đồng ý, giữ mục tiêu luận cá nhân đủ12cung và ghi ND18 chưa đạt; không tự xuất hai mẫu hoặc tạo vòng nghiên cứu mới. Quyết định không cần gọi thêm người thẩm định bên ngoài.
+
+
+## 7. Hai mốc sản phẩm đã được xác nhận — 22/10/2026
+
+- **Beta hiện tại:** tra cứu12cung, luận phần đã triển khai; thông báo giới hạn ở mục6 được duyệt để mô tả trung thực beta. Chưa bán dưới lời hứa luận đầy đủ.
+- **Mục tiêu phát hành trả phí:** giữ nguyên báo cáo cá nhân đầy đủ các chủ đề12cung, có nội dung đủ giá trị để thu phí. Hiện chưa đạt; không hạ tiêu chí nghiệm thu cuối, không gọi dữ kiện hoặc chú giải chưa áp dụng là luận cá nhân hoàn chỉnh.
+
+Hai mẫu Tật chưa duyệt/publish; không có phép mở sức khỏe/sinh tử/điều trị. Không dùng miễn trừ để hợp thức hóa nhận định thiếu căn cứ. Các giới hạn do biên tập chưa có quyết định trực tiếp được phân biệt với cấm đã xác nhận trong [bảng quyết định hiện hành tại backlog](V1-DELIVERY-PLAN.md#beta-release-decisions-20261022). Chỉ hai lựa chọn sản phẩm ở bảng đó còn được hỏi trong lượt này; không tự mở nghiên cứu, thêm rule, sửa nội dung khách/giao diện/quyền hoặc bán hàng.
