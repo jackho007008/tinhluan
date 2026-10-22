@@ -11,6 +11,10 @@ Cập nhật 20/10/2026. [BUSINESS_RULES](BUSINESS_RULES.md) diễn giải hợp
 
 ## Những quyết định có xác nhận trực tiếp
 
+### Q16 — ND08: giữ vế ly tán qua cổng sát/TT,22/10/2026
+
+**U đã giao triển khai:** “Đồng ý triển khai gói ND08 đã chốt tại commit5abdedc”, chỉ vế họ hàng ly tán của PhúcTử–Phá/Tham, dùng pipeline chung, chống trùng HóaKỵ và giữ G2/lịch sử/Live. Đã yêu cầu đưa bản đạt kiểm vào QA hiện hành; không phải duyệt toàn bộ Phúc hoặc báo cáo đủ12cung. Sau đó chỉ đối chiếu hẹp Bửu Đình–PháĐiền, **chưa triển khai nhánh Bửu Đình** khi chưa chốt cách áp độc lập và quan hệ lời cũ. [Kết quả](V1-DELIVERY-PLAN.md#nd08-delivery-165-20261022), [hồ sơ Điền](../.local/nd08-phuc-20261022/buu-dien-review.md). Không mở vận, y khoa/sinh tử hoặc loại nội dung khác.
+
 ### Q01 — Mục tiêu đủ 12 cung, beta và điều kiện mở bán
 
 **Đã chốt.** U, task tiếp tục từ1.52: “Tôi giữ mục tiêu báo cáo đầy đủ12 cung”; task G2: “Chưa mở bán hoặc bật SePay Live”. U mới nhất giữ baseline1.53/catalog1.51, Live tắt. [D: kế hoạch V1-4/V1-7](V1-DELIVERY-PLAN.md), [CURRENT_STATUS](CURRENT_STATUS.md). Không suy đủ tiêu đề/đoạn hoặc test đạt là hoàn chỉnh chuyên môn. Không cam kết ngày đủ12cung.

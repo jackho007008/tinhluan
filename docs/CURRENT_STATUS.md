@@ -1,8 +1,10 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-Cập nhật22/10/2026 sau TT Phụ–Điền1.64, code1b8c1c1, nối02e6ce3/13a7f3d. Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
+Cập nhật22/10/2026 sau ND08 Phúc1.65.0/catalog1.61.0, code89f9c91, nối5abdedc/1b8c1c1. Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
 
 Đọc tiếp: [hợp đồng sản phẩm](BUSINESS_RULES.md), [sổ quyết định](DECISIONS.md), [đầu mối bàn giao](HANDOFF.md).
+
+**ND08 đã vào luồng khách QA:** chỉ vế ly tán của PhúcTử–Phá/Tham qua cổngsát/TT; không khôi phục toàn nền. So192:3mẫu cóý mới/1mẫu gộp HóaKỵ giữ đủ căn cứ,0cung mới,Phúc36trống giữ; mọi cung khác/G2/lịch sử nguyên.108ca/typecheck/build đạt;1engineform→lưu→mở/mobile360/390/quyền,1PDF8trang17đoạn đã kiểm. [Backlog/kết quả ND08 và ND10](V1-DELIVERY-PLAN.md#nd08-delivery-165-20261022), [toàn đoạn](../.local/nd08-phuc-20261022/full-before-after.txt), [bàn giao](../.local/nd08-phuc-20261022/ban-giao.md). Đối chiếu riêng Bửu ĐìnhPDF2/52–56: phân giữdi sản/tựtạo, chỉ141cóPháHóaLộc; chưa đủ ánh xạTT/LộcTồn/đồngchínhdiệu cho3Điềntrống, chưa córuleBửuĐình. QA3070/270tệplịch sử/quyềncũ/34bài/Livefalse/Tật chưapublish giữ.
 
 Rà Nô–Tử22/10 nối c5fe112: xác minh process/checkoutQA3062 và12filecode liên quan trùngroot; dựng lại192khớp sâu reading/continuous/customer/G2. **Nô71, Tử76 thiếu giữ nguyên;0mới/0bổsung.** Có vế độc lập về nghĩa nhưng còn lượng từ/ngoại lệ chưa giải, không có tậpcon mới đủcode. [Nô](NO-DIEN-1.31.0.md), [Tử](PHU-TU-1.33.0.md), [bằngchứng/bàn giao](../.local/no-tu-clause-review-20261022/ban-giao.md). Chỉ cậpnhật audit, không đổi app/restart/DB; không nghiệmthu lạiUI/PDF. Dừng gói theo yêu cầu.
 
@@ -14,13 +16,13 @@ Rà Tật nối b6ca831: **chưa có nhóm nhận định cá nhân đủ đặc
 
 ## 1. Bản nào đang phục vụ khách?
 
-- Trình bày **1.64.1**, catalog **interpretation-1.60.0**. Đã có trong luồng khách tạo mới, không chỉ bản nghiệm thu nội bộ.
-- QA chính: `http://127.0.0.1:3062`; checkout phục vụ `/Volumes/DATA/TINHLUAN/.local/parent-property-void-20261022/qa-final-v2`.
+- Trình bày **1.65.0**, catalog **interpretation-1.61.0**. Đã có trong luồng khách tạo mới, không chỉ bản nghiệm thu nội bộ.
+- QA chính: `http://127.0.0.1:3062`; checkout phục vụ `/Volumes/DATA/TINHLUAN/.local/nd08-phuc-20261022/qa`.
 - URL tunnel tại lần nghiệm thu gần nhất: https://61ac-171-246-109-226.ngrok-free.app/lap-la-so . Tunnel có thể đổi; không coi là tên miền triển khai ổn định.
 - Nguồn làm việc: `/Volumes/DATA/TINHLUAN`. Checkout trước để đối chiếu/quay lại: `.local/context-review-20261022/qa-final` (1.63.1/1.59.0). QA3070 giữ riêng, không hợp dữ liệu thử của nó vào kho chính.
-- Policy bản mới: `menh-free-1.0.0`; continuous report: `continuous-report-1.6.1`. P1/P2/M05/M07 và các phép ND01/ND04 đã khép tiếp tục dùng chung pipeline.
+- Policy bản mới: `menh-free-1.0.0`; continuous report: `continuous-report-1.6.2`. P1/P2/M05/M07 và các phép ND01/ND04 đã khép tiếp tục dùng chung pipeline; checkout trước ND08 là `.local/parent-property-void-20261022/qa-final-v2` (1.64.1/1.60).
 - **Beta, chưa mở bán; SePay Live tắt.** Quy tắc luận vẫn `draft`, `review=null`. Chủ dự án duyệt giao diện hoặc nội dung Toàn thư không đồng nghĩa duyệt chuyên môn toàn báo cáo.
-- Đã xác minh code/checkout theo commit `1b8c1c1`;7mẫu quaform/lưu/mở1.64.1. [Danh tính](../.local/parent-property-void-20261022/serving-code.json), [đích](../.local/parent-property-void-20261022/runtime-target.json), [bảo toàn](../.local/parent-property-void-20261022/preservation.json), [bàn giao](../.local/parent-property-void-20261022/ban-giao.md). QA3070PID94421cwdcũ nguyên.
+- Đã xác minh code/checkout theo commit `89f9c91`;1mẫu quaform/lưu/mở1.65.0. [Danh tính](../.local/nd08-phuc-20261022/serving-code.json), [đích](../.local/nd08-phuc-20261022/runtime-target.json), [bảo toàn](../.local/nd08-phuc-20261022/preservation.json), [bàn giao](../.local/nd08-phuc-20261022/ban-giao.md). QA3070PID94421cwdcũ nguyên; mốc7mẫu1.64.1giữ ở bàn giao trước.
 
 ## 2. Những gì đã triển khai
 
