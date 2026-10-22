@@ -1,5 +1,7 @@
 # Các lời khác chiều trong báo cáo khách — 1.63.0
 
+**Đã rà lại và thay phân loại bằng bản1.63.1 ngày22/10.** Các số/nhãn1.63 bên dưới là kết quả trước sửa; không dùng nhận định cũ rằng Đồng–Cự/Kỵ ởmẫu50 đối lập về giữcủa. [Bàn giao ngắn và toàn đoạn trước/sau](../.local/context-review-20261022/ban-giao.md), [rà8nhóm/105lượt thành viên](../.local/context-review-20261022/registry-audit.json).
+
 Ngày22/10/2026, nối baseline thực `main@7ab01c5`, code phục vụ `daee8c2`,1.62/catalog1.59. Đây là đặc tả và kết quả của task hữu hạn trong ND03/ND10/ND11/ND12/ND16, không phải backlog mới. Không mở rộng TTDi, tìm câu lấp cung hoặc đọc sách mới.
 
 ## Ba loại kết quả
@@ -32,3 +34,18 @@ Dùng audit [Phu–Tử](PHU-TU-1.33.0.md), [Phụ–Huynh](PHU-HUYNH-1.32.0.md)
 [Khảo sát mọi tổ hợp192](../.local/opposing-20261022/survey.json), [so192/các nhóm và toàn đối tượng trước-sau](../.local/opposing-20261022/impact192.json), [toàn đoạn trước-sau của mọi ngữ cảnh thay đổi](../.local/opposing-20261022/full-before-after.txt), [bàn giao nghiệm thu](../.local/opposing-20261022/ban-giao.md). Kho riêng/ngoài Git, không chứa sách hoặc dữ liệu khách trong commit.
 
 So192 dựng lại reading/continuous khớp sâu với baseline; toàn claim/rule/fact/trace/quan hệ nguồn không đổi. Mọi đoạn không gom giữ nguyên đối tượng; đoạn gom giữ đủ lời khách và member căn cứ cũ. `captureReadingPolicy` bằng baseline đủ192. Không lấy các phép so này làm bằng chứng phương pháp tổng hợp đã giải hoặc bài đã hoàn chỉnh.
+
+
+## Rà nghĩa và khép1.63 bằng bản vá1.63.1
+
+Baseline `main@6c80bc6` sạch, codephụcvụ7452913. Đọc lại đúng khochữ TB149–155/190–195 và audit đã có; khôngmởPDF/sáchmới, khôngthêmrule hoặc biên tập toàncatalog. Mỗi lời vẫn đi qua evaluator và giữ nguyên claim/fact/trace/layers/điều kiện; chỉ sửa registry/lớp trìnhbày. Nguồn KỵĐiền sửa đúng **PDF154§7.25**, không phải§7.29(Cô–Quả).
+
+- **Kỵ/Điền:** giữ nhóm chưa giải cho các câu thật sự nói không giữ/suy giảm cơ nghiệp đang có: Liêm–Phủ, Tử–Sát, Tử–Tham, Dươngsáng, PháTý/Ngọ. Không mặc định có di sản; giữ cả điều kiện/thờiđoạn nguồn.13nhánh còn lại chuyển phân diện/điều kiện/thờiđoạn: Liêm đơn, Liêm–Tham, Vũ–Phá, ThamThìn/Tuất vàThamkhác, PháThìn/Tuất, Đà, Tướngthấp, ĐồngDậu, Đồng–ÂmNgọ, ĐồngTỵ/Hợi, Lươngthấp, Đồng–Cự. Không suy vắng quyền thừa hưởng, nơi nương thân, thành bại, mua bán, tranh chấp hoặc quy mô nhỏ thành khônggiữđược. Mẫu50/131/143 đều là **khácphươngdiện**, không phải đã giải mâu thuẫn.
+- **Tài/giữcủa:** chỉ giữ đối chiếu cùng nghĩa giữlâudài: Liêm–Phủ/Liêm–Tướng/Vũ–Phủ/PhủTỵHợi/ĐẩuQuân đối ThiênKhông hoặc Đồng/LươngTỵHợi (hai câu nguồn TB190/193 ghi rõ khônggiữđượccủa). Tử–Phủ chỉ nhiềucủa/coikho; Tử/Tướng/Vũ/tíchlũy khác giữlâudài. Hao/dòngtiền/chi tiêu và sinhkế cũng không tự là phủđịnh giữcủa.3mẫu49/85/130 chuyển tíchlũy–giữlâu;2mẫu22/110 chuyển giữcủa–dòngtiền. Nhóm thật sự chưa giải có2mẫu157/160;0mẫuKỵĐiền thuộc5nhánh còn lại trong192, chỉfixture chứkhôngchứngkiếnengine.
+- **Diễn tiến tiền:** mẫu137 giữ mốc ngoài30 nhưng chưa có khoảngthời gian haođểsánh, chuyển phânthờiđoạn/phươngdiện, không gán haochotrước30. Các lời tạo tiền/sinhkế/hao vẫn khác nghĩa; không nhânquả hoặc kếtluậnròng.
+- **Cơnghiệp/Đà:** chỉ so khẳngđịnh có cơnghiệp/quymô với khôngcónhàđất. Các nhánh chỉ tựtạovềsau hoặc phầnthừahưởng/tựtạo (Cơcao/Cơ–CựDậu/Cơ–Lương, Âmcao, Tướngcao, Nhật–LươngMão/Dậu) tách nguồn gốc/thờiđoạn.4chứngkiến trong192 của nhómcơnghiệp/Đà khôngđổi loại.
+- **Tử/Phụ:** giữ phânloại thật sự cùngđốitượng/vậtchất; không gán trước/sau khácnhau hoặc chọnLộc thắng. Phụthừahưởng vẫn khácngườisởhữuvàngườinhận.
+
+Bỏ toàn khuôn “Một lời riêng nêu/Lời khác nêu”, khôngthêm lời dẫn chung. Giữ nguyên các câu nhận định và câu giới hạn cósẵn từtrước1.63; lớp gom mới chỉ thêm **một câu** phânnghĩa hoặc chưa cókếtluậnchung. Căncứ quan hệ chỉ gắn đúng participant của từng cặp, không gán mọi claim trong cụmliênthông cho từngquan hệ. Metadata1.0.1 vẫn methodResolved=false.40/192bài đổi văn baongoài;0claim/độphủmới;G2đủ192nguyên. Lịch sử1.63 đọc frozen cũ; bảnmới1.63.1/catalog1.59.
+
+[Toànđoạn trước/sau40bài](../.local/context-review-20261022/full-before-after.txt), [so192](../.local/context-review-20261022/impact192.json).38kiểm/5file,6G2DBriêng,6PDFmock, typecheck/build đạt.6enginequaform/lưu/mở/mobile/căncứ/quyền;2PDFthật9trang19đoạn và8trang13đoạn đủfrozen, kiểmảnhmọitrang và5/6. Lỗiđầu1assertionmẫu50 lấy nhầm ghichú tiền–nhàđất chung làm thànhviên; sửa filtertestgiữghichúriêng, khôngsửaexpectednguồn. Khôngtoàngate/providerngoài. Runtime/bảotoàn/codeidentity trongbàngiao. Không gọi việc sửaphânloại là giải phươngpháp.

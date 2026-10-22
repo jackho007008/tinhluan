@@ -2,7 +2,11 @@
 
 Cập nhật21/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
-## Lô hiện hành — ngữ cảnh khác chiều1.63,22/10/2026
+## Lô hiện hành — khép rà nghĩa1.63 bằng1.63.1,22/10/2026
+
+QA3062phục vụ1.63.1/catalog1.59, code `13a7f3d`, checkout `.local/context-review-20261022/qa-final`. [Rà và sửa mapping](OPPOSING-CLAIMS-1.63.0.md#rà-nghĩa-và-khép163-bằng-bản-vá1631), [bàn giao ngắn/toàn đoạn](../.local/context-review-20261022/ban-giao.md). Đồng–Cự/Kỵ và2cụmĐiền chuyển phân diện; tíchlũy/dòngtiền/thờiđoạn không mặc định đối lập giữcủa. Bỏ khuôn tríchlặp,1câu giới hạn mới/cụm.40bài đổi văn,0claim/độphủmới; không giải phươngpháp.228filelịch sử/G2/QA3070/Tật/Livefalse giữ. Dừng, không mởrule/toàncatalog.
+
+## Mốc trước — ngữ cảnh khác chiều1.63,22/10/2026
 
 QA3062phục vụ1.63/catalog1.59, code `7452913`, checkout `.local/opposing-20261022/qa-final`; nối7ab01c5/code daee8c2. [Phân loại theo nguồn](OPPOSING-CLAIMS-1.63.0.md), [trạng thái](CURRENT_STATUS.md), [toàn đoạn trước/sau40mẫu](../.local/opposing-20261022/full-before-after.txt), [bàn giao/kiểm/runtime](../.local/opposing-20261022/ban-giao.md). Tử/Phụ/giữ tiền/Điền gom lời đối lập cùng ngữ cảnh, ghi chưa có kết luận chung; phân biệt tạo tiền–hao tiền và của cha mẹ–con thừa hưởng. **0phép giải phương pháp mới**, không thêm claim/độ phủ, không hoàn chỉnh bài. G2/lịch sử/QA3070/Tật chưa publish/Livefalse giữ nguyên. Dừng task, không mởTTDi hoặc tìm câu lấp trống.
 

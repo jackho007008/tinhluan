@@ -128,3 +128,8 @@ Codex tra cứu, đối chiếu, giữ riêng phương pháp tác giả, đề x
 **U trực tiếp:** xử lý nhóm quy tắc Tử Nữ/Phụ Mẫu/Tài–Điền trong bộ192, dùng kho đã có; triển khai phần rõ bằng pipeline chung. Với nhóm chưa giải, xuất cùng ngữ cảnh và nói chưa có kết luận chung; đây là cải thiện trung thực, không phải giải phương pháp. Không chọn sao thắng, tạo trọng số, suy thời đoạn hoặc AI dung hòa. Không mởTTDi/lấp cung/sách mới/backlog mới. Áp luồngLập lá số, giữ lịch sử/G2/QA3070/Tật/Live.
 
 **D/C trong phạm vi ủy quyền:** [1.63](OPPOSING-CLAIMS-1.63.0.md), registry nghĩa và gom đoạn sau evaluator. Phân loại thật sự trùng phương diện với khác đối tượng/phương diện/điều kiện; mọi cụm `methodResolved:false`. Không có phép điều chỉnh mới đủ chứng minh; ngoại lệ đã có không triển khai trùng. Lô này thay cách trình bày song song cũ ở ND03 cho các nhóm đã rà, không thay nguồn, claim hoặc quyền; không phê duyệt chuyên môn toàn bài hoặc mở phạm vi sản phẩm.
+
+
+### Q15 — rà và khép1.63 bằng1.63.1
+
+Utrựctiếp yêu cầu kiểm mapping mẫu50 và toànregistry, chỉ gọi trái chiều khi cùngđốitượng/phươngdiện/thờiđoạn sosánhđược; không suy tranhchấp/muabán/khótạolập thành mấttàisản, bỏ khuôn tríchlặp và hạnchế chung trùng. D/C: [rà nghĩa1.63.1](OPPOSING-CLAIMS-1.63.0.md#rà-nghĩa-và-khép163-bằng-bản-vá1631), code13a7f3d. Đây là sửa lỗi phânloại và biên tập lớp gom, khôngthay phươngphápnguồn, khôngphêduyệt toànbài hoặc mởrule/Tật/G2/Live. Bảnlưu1.63 giữnguyên.
