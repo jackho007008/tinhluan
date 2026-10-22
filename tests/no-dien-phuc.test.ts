@@ -32,7 +32,7 @@ for(const r of localPalaceBranches){const rule=localPalaceRules.find(q=>q.id==='
  it(r.id+' rejects missing/annual evidence, wrong palace and direct void; other-palace void does not block',()=>{
   const s=localFixture(r),p=s.chart.palaces.find(p=>p.name===r.palace)!,q=s.chart.palaces.find(p=>p.name==='Mệnh')!;
   if(r.mode==='empty'){q.majorStars.push(s.chart.palaces.flatMap(p=>p.majorStars)[0]);s.chart.palaces.find(p=>p!==q&&p.majorStars.length)!.majorStars.shift();}for(const field of ['majorStars','minorStars','adjectiveStars']as const)[p[field],q[field]]=[q[field],p[field]];expect(localPalaceAssessment(s,r).value).not.toBe(true);
-  const t=localFixture(r);t.chart.tanBien!.voidRanges[0].branches=[t.chart.palaces.find(p=>p.name===r.palace)!.earthlyBranch,CHART_BRANCHES[(CHART_BRANCHES.indexOf(t.chart.palaces.find(p=>p.name===r.palace)!.earthlyBranch)+1)%12]];expect(localPalaceAssessment(t,r).cause).toBe('unresolved-adjustment');
+  const t=localFixture(r);t.chart.tanBien!.voidRanges[0].branches=[t.chart.palaces.find(p=>p.name===r.palace)!.earthlyBranch,CHART_BRANCHES[(CHART_BRANCHES.indexOf(t.chart.palaces.find(p=>p.name===r.palace)!.earthlyBranch)+1)%12]];if(r.id==='dien-vcd-inheritance')expect(localPalaceAssessment(t,r).value).toBe(true);else expect(localPalaceAssessment(t,r).cause).toBe('unresolved-adjustment');
   const u=localFixture(r);for(const p of u.chart.palaces)for(const st of [...p.majorStars,...p.minorStars,...p.adjectiveStars])(st as any).scope='year';expect(localPalaceAssessment(u,r).value).not.toBe(true);
   delete(u.chart.tanBien as any).completeness;expect(localPalaceAssessment(u,r).value).toBeUndefined();
  });

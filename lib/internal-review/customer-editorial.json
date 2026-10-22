@@ -5549,7 +5549,7 @@
   "tanbien.dien-vcd-inheritance": {
     "text": "Điền Trạch không có chính tinh tọa thủ được nguồn mô tả là không thừa hưởng tổ nghiệp, phải tự gây dựng. Nhận định này chỉ nói về nguồn gốc cơ nghiệp; chưa xác định quy mô, diễn tiến hoặc tài sản thực tế. Các nhánh phối hợp Nhật–Nguyệt và Tuần/Triệt trong cùng mục chưa được áp dụng.",
     "sourceTemplate": "Điền Trạch không có chính tinh tọa thủ được nguồn mô tả là không thừa hưởng tổ nghiệp, phải tự gây dựng. Nhận định này chỉ nói về nguồn gốc cơ nghiệp; chưa xác định quy mô, diễn tiến hoặc tài sản thực tế. Các nhánh phối hợp Nhật–Nguyệt và Tuần/Triệt trong cùng mục chưa được áp dụng.",
-    "sourceVersion": "0.1.0",
+    "sourceVersion": "0.1.1",
     "catalogHash": "8a117cfcd2b612352cbc9fc123994e32544565499a734ff052fb685184adc93e",
     "strategy": "explicit-rule-prose",
     "movedToEvidence": [
@@ -5699,5 +5699,243 @@
       "TB179§10.27 áp cả có chính tinh/VCD; không cổng cặp sao.",
       "Chỉ phiền lòng; loại sinh tử/tai nạn, không đảo/xóa lời khác hoặc mở nền Đồng–Âm."
     ]
+  },
+  "tanbien.parents-tu-phu-unadjusted": {
+    "text": "Tử Vi–Thiên Phủ đồng cung Phụ Mẫu có lời về con được thừa hưởng phần của cải cha mẹ để lại.",
+    "sourceTemplate": "Theo Tân Biên, Tử Vi–Thiên Phủ đồng cung Phụ Mẫu, sách mô tả con được thừa hưởng phần của cải cha mẹ để lại.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-tu-tuong-unadjusted": {
+    "text": "Tử Vi–Thiên Tướng đồng cung Phụ Mẫu có lời về gia đình yên vui.",
+    "sourceTemplate": "Theo Tân Biên, Tử Vi–Thiên Tướng đồng cung Phụ Mẫu, sách mô tả gia đình yên vui.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-tu-sat-unadjusted": {
+    "text": "Tử Vi–Thất Sát đồng cung Phụ Mẫu có lời về sự bất hòa, không hợp tính giữa cha mẹ và con, và gia đình ly tán.",
+    "sourceTemplate": "Theo Tân Biên, Tử Vi–Thất Sát đồng cung Phụ Mẫu, sách mô tả sự bất hòa, không hợp tính giữa cha mẹ và con, và gia đình ly tán.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-tu-pha-unadjusted": {
+    "text": "Tử Vi–Phá Quân đồng cung Phụ Mẫu có lời về trong nhà hay có sự bất hòa.",
+    "sourceTemplate": "Theo Tân Biên, Tử Vi–Phá Quân đồng cung Phụ Mẫu, sách mô tả trong nhà hay có sự bất hòa.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-tu-tham-unadjusted": {
+    "text": "Tử Vi–Tham Lang đồng cung Phụ Mẫu có lời về hoàn cảnh cha mẹ bình thường.",
+    "sourceTemplate": "Theo Tân Biên, Tử Vi–Tham Lang đồng cung Phụ Mẫu, sách mô tả hoàn cảnh cha mẹ bình thường.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-liem-unadjusted": {
+    "text": "Liêm Trinh đơn thủ Phụ Mẫu tại Dần/Thân có lời về con sớm xa cách cha mẹ.",
+    "sourceTemplate": "Theo Tân Biên, Liêm Trinh đơn thủ Phụ Mẫu tại Dần/Thân, sách mô tả con sớm xa cách cha mẹ.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-liem-phu-unadjusted": {
+    "text": "Liêm Trinh–Thiên Phủ đồng cung Phụ Mẫu có lời về cha mẹ bất hòa, cha mẹ và con không hợp tính.",
+    "sourceTemplate": "Theo Tân Biên, Liêm Trinh–Thiên Phủ đồng cung Phụ Mẫu, sách mô tả cha mẹ bất hòa, cha mẹ và con không hợp tính.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-liem-tham-unadjusted": {
+    "text": "Liêm Trinh–Tham Lang đồng cung Phụ Mẫu có lời về sự xa cách trong gia đình, con sớm lìa cha mẹ.",
+    "sourceTemplate": "Theo Tân Biên, Liêm Trinh–Tham Lang đồng cung Phụ Mẫu, sách mô tả sự xa cách trong gia đình, con sớm lìa cha mẹ.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-dong-dau-unadjusted": {
+    "text": "Thiên Đồng đơn thủ Phụ Mẫu tại Dậu có lời về hoàn cảnh cha mẹ bình thường.",
+    "sourceTemplate": "Theo Tân Biên, Thiên Đồng đơn thủ Phụ Mẫu tại Dậu, sách mô tả hoàn cảnh cha mẹ bình thường.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-dong-ty-hoi-unadjusted": {
+    "text": "Thiên Đồng đơn thủ Phụ Mẫu tại Tỵ/Hợi có lời về cha mẹ xa cách nhau, con thường phải xa cha mẹ.",
+    "sourceTemplate": "Theo Tân Biên, Thiên Đồng đơn thủ Phụ Mẫu tại Tỵ/Hợi, sách mô tả cha mẹ xa cách nhau, con thường phải xa cha mẹ.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-vu-tham-unadjusted": {
+    "text": "Vũ Khúc–Tham Lang đồng cung Phụ Mẫu có lời về cha mẹ và con không hợp tính, trong nhà thiếu hòa khí.",
+    "sourceTemplate": "Theo Tân Biên, Vũ Khúc–Tham Lang đồng cung Phụ Mẫu, sách mô tả cha mẹ và con không hợp tính, trong nhà thiếu hòa khí.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-sun-moon-unadjusted": {
+    "text": "Thái Dương–Thái Âm đồng cung Phụ Mẫu tại Sửu/Mùi có lời về cha mẹ bất hòa, con khó sống gần cha mẹ.",
+    "sourceTemplate": "Theo Tân Biên, Thái Dương–Thái Âm đồng cung Phụ Mẫu tại Sửu/Mùi, sách mô tả cha mẹ bất hòa, con khó sống gần cha mẹ.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-co-low-unadjusted": {
+    "text": "Thiên Cơ đơn thủ Phụ Mẫu tại Hợi/Tý/Sửu có lời về hoàn cảnh cha mẹ bình thường, cha mẹ và con không hợp tính.",
+    "sourceTemplate": "Theo Tân Biên, Thiên Cơ đơn thủ Phụ Mẫu tại Hợi/Tý/Sửu, sách mô tả hoàn cảnh cha mẹ bình thường, cha mẹ và con không hợp tính.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-co-am-dan-unadjusted": {
+    "text": "Thiên Cơ–Thái Âm đồng cung Phụ Mẫu tại Dần có lời về con sớm xa cách cha mẹ.",
+    "sourceTemplate": "Theo Tân Biên, Thiên Cơ–Thái Âm đồng cung Phụ Mẫu tại Dần, sách mô tả con sớm xa cách cha mẹ.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-phu-other-unadjusted": {
+    "text": "Thiên Phủ đơn thủ Phụ Mẫu tại Sửu/Mùi/Mão/Dậu có lời về con sớm xa cách cha mẹ.",
+    "sourceTemplate": "Theo Tân Biên, Thiên Phủ đơn thủ Phụ Mẫu tại Sửu/Mùi/Mão/Dậu, sách mô tả con sớm xa cách cha mẹ.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-tham-thin-tuat-unadjusted": {
+    "text": "Tham Lang đơn thủ Phụ Mẫu tại Thìn/Tuất có lời về con không được thừa hưởng của cha mẹ, trong nhà thiếu hòa khí.",
+    "sourceTemplate": "Theo Tân Biên, Tham Lang đơn thủ Phụ Mẫu tại Thìn/Tuất, sách mô tả con không được thừa hưởng của cha mẹ, trong nhà thiếu hòa khí.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-tham-dan-than-unadjusted": {
+    "text": "Tham Lang đơn thủ Phụ Mẫu tại Dần/Thân có lời về cha mẹ bất hòa, hay xa cách nhau và không hợp tính con.",
+    "sourceTemplate": "Theo Tân Biên, Tham Lang đơn thủ Phụ Mẫu tại Dần/Thân, sách mô tả cha mẹ bất hòa, hay xa cách nhau và không hợp tính con.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-tham-ty-ngo-unadjusted": {
+    "text": "Tham Lang đơn thủ Phụ Mẫu tại Tý/Ngọ có lời về hoàn cảnh cha mẹ bình thường, trong nhà thiếu hòa khí.",
+    "sourceTemplate": "Theo Tân Biên, Tham Lang đơn thủ Phụ Mẫu tại Tý/Ngọ, sách mô tả hoàn cảnh cha mẹ bình thường, trong nhà thiếu hòa khí.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-cu-high-unadjusted": {
+    "text": "Cự Môn đơn thủ Phụ Mẫu tại Hợi/Tý/Ngọ có lời về cha mẹ không hợp tính con; phần chung của mục còn nêu bất hòa và tranh chấp.",
+    "sourceTemplate": "Theo Tân Biên, Cự Môn đơn thủ Phụ Mẫu tại Hợi/Tý/Ngọ, sách mô tả cha mẹ không hợp tính con; phần chung của mục còn nêu bất hòa và tranh chấp.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-tuong-high-unadjusted": {
+    "text": "Thiên Tướng đơn thủ Phụ Mẫu tại Tỵ/Hợi/Sửu/Mùi có lời về cha mẹ hay bất hòa.",
+    "sourceTemplate": "Theo Tân Biên, Thiên Tướng đơn thủ Phụ Mẫu tại Tỵ/Hợi/Sửu/Mùi, sách mô tả cha mẹ hay bất hòa.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-tuong-low-unadjusted": {
+    "text": "Thiên Tướng đơn thủ Phụ Mẫu tại Mão/Dậu có lời về hoàn cảnh cha mẹ bình thường.",
+    "sourceTemplate": "Theo Tân Biên, Thiên Tướng đơn thủ Phụ Mẫu tại Mão/Dậu, sách mô tả hoàn cảnh cha mẹ bình thường.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-luong-suu-mui-unadjusted": {
+    "text": "Thiên Lương đơn thủ Phụ Mẫu tại Sửu/Mùi có lời về hoàn cảnh cha mẹ bình thường, trong nhà thiếu hòa khí.",
+    "sourceTemplate": "Theo Tân Biên, Thiên Lương đơn thủ Phụ Mẫu tại Sửu/Mùi, sách mô tả hoàn cảnh cha mẹ bình thường, trong nhà thiếu hòa khí.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-sat-dan-than-unadjusted": {
+    "text": "Thất Sát đơn thủ Phụ Mẫu tại Dần/Thân có lời về cha mẹ bất hòa hoặc cha mẹ và con không hợp tính.",
+    "sourceTemplate": "Theo Tân Biên, Thất Sát đơn thủ Phụ Mẫu tại Dần/Thân, sách mô tả cha mẹ bất hòa hoặc cha mẹ và con không hợp tính.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-sat-ngo-unadjusted": {
+    "text": "Thất Sát đơn thủ Phụ Mẫu tại Ngọ có lời về cha mẹ bất hòa hoặc cha mẹ và con không hợp tính.",
+    "sourceTemplate": "Theo Tân Biên, Thất Sát đơn thủ Phụ Mẫu tại Ngọ, sách mô tả cha mẹ bất hòa hoặc cha mẹ và con không hợp tính.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-pha-ty-ngo-unadjusted": {
+    "text": "Phá Quân đơn thủ Phụ Mẫu tại Tý/Ngọ có lời về trong nhà thiếu hòa khí.",
+    "sourceTemplate": "Theo Tân Biên, Phá Quân đơn thủ Phụ Mẫu tại Tý/Ngọ, sách mô tả trong nhà thiếu hòa khí.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-loc-unadjusted": {
+    "text": "Lộc Tồn tọa thủ Phụ Mẫu có lời về con làm tiêu tán phần của cải cha mẹ, cha mẹ và con không hợp tính.",
+    "sourceTemplate": "Theo Tân Biên, Lộc Tồn tọa thủ Phụ Mẫu, sách mô tả con làm tiêu tán phần của cải cha mẹ, cha mẹ và con không hợp tính.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-vcd-tu-phu-unadjusted": {
+    "text": "Phụ Mẫu vô chính diệu, Tử Vi–Thiên Phủ xung chiếu có lời về con được thừa hưởng phần của cải cha mẹ để lại.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu, Tử Vi–Thiên Phủ xung chiếu, sách mô tả con được thừa hưởng phần của cải cha mẹ để lại.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-vcd-tu-tuong-unadjusted": {
+    "text": "Phụ Mẫu vô chính diệu, Tử Vi–Thiên Tướng xung chiếu có lời về gia đình yên vui.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu, Tử Vi–Thiên Tướng xung chiếu, sách mô tả gia đình yên vui.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-vcd-tu-sat-unadjusted": {
+    "text": "Phụ Mẫu vô chính diệu, Tử Vi–Thất Sát xung chiếu có lời về sự bất hòa, không hợp tính giữa cha mẹ và con, và gia đình ly tán.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu, Tử Vi–Thất Sát xung chiếu, sách mô tả sự bất hòa, không hợp tính giữa cha mẹ và con, và gia đình ly tán.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-vcd-tu-pha-unadjusted": {
+    "text": "Phụ Mẫu vô chính diệu, Tử Vi–Phá Quân xung chiếu có lời về trong nhà hay có sự bất hòa.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu, Tử Vi–Phá Quân xung chiếu, sách mô tả trong nhà hay có sự bất hòa.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-vcd-tu-tham-unadjusted": {
+    "text": "Phụ Mẫu vô chính diệu, Tử Vi–Tham Lang xung chiếu có lời về hoàn cảnh cha mẹ bình thường.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu, Tử Vi–Tham Lang xung chiếu, sách mô tả hoàn cảnh cha mẹ bình thường.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-vcd-liem-phu-unadjusted": {
+    "text": "Phụ Mẫu vô chính diệu, Liêm Trinh–Thiên Phủ xung chiếu có lời về cha mẹ bất hòa, cha mẹ và con không hợp tính.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu, Liêm Trinh–Thiên Phủ xung chiếu, sách mô tả cha mẹ bất hòa, cha mẹ và con không hợp tính.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-vcd-liem-tham-unadjusted": {
+    "text": "Phụ Mẫu vô chính diệu, Liêm Trinh–Tham Lang xung chiếu có lời về sự xa cách trong gia đình, con sớm lìa cha mẹ.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu, Liêm Trinh–Tham Lang xung chiếu, sách mô tả sự xa cách trong gia đình, con sớm lìa cha mẹ.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
+  },
+  "tanbien.parents-vcd-vu-tham-unadjusted": {
+    "text": "Phụ Mẫu vô chính diệu, Vũ Khúc–Tham Lang xung chiếu có lời về cha mẹ và con không hợp tính, trong nhà thiếu hòa khí.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu, Vũ Khúc–Tham Lang xung chiếu, sách mô tả cha mẹ và con không hợp tính, trong nhà thiếu hòa khí.",
+    "sourceVersion": "0.1.0",
+    "strategy": "source-independent-facet",
+    "movedToEvidence": []
   }
 }

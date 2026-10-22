@@ -1,3 +1,4 @@
+import {parentUnadjustedFacts} from './parent-unadjusted';
 import {diVoidFacts} from './di-void';
 import {financeVcdFacts} from './finance-vcd';
 import {quanTaiFacts} from './quan-tai';
@@ -98,7 +99,7 @@ export function careerSourceGate(snapshot: ChartSnapshot) {
   };
 }
 export function deriveFacts(snapshot: ChartSnapshot): DerivedFact[] {
-  const quyenFacts = [...completionFacts(snapshot),...lifeLiteraryFacts(snapshot),...nplLocalFacts(snapshot),...nplFoundationFacts(snapshot),...nplTwoV2Facts(snapshot),...nplTwoFacts(snapshot), ...lifeBodyFacts(snapshot), ...retentionFacts(snapshot), ...voidFacts(snapshot), ...childrenVcdFacts(snapshot), ...kinExtensionFacts(snapshot), ...approvedKinFacts(snapshot), ...localPalaceFacts(snapshot), ...quanTaiFacts(snapshot), ...financeVcdFacts(snapshot), ...diVoidFacts(snapshot), ...kinFacts(snapshot), ...familyFacts(snapshot), ...familyVcdFacts(snapshot), ...familyExtensionFacts(snapshot), ...noDienFacts(snapshot),...phucDiFacts(snapshot),...lifeQuyenFact(snapshot), ...lifeContentFacts(snapshot), ...careerQuyenFact(snapshot), ...careerKyFacts(snapshot), ...independentCareerFacts(snapshot), ...occupationalCareerFacts(snapshot), ...careerClosingFacts(snapshot), ...financeSupplementFacts(snapshot)];
+  const quyenFacts = [...completionFacts(snapshot),...lifeLiteraryFacts(snapshot),...nplLocalFacts(snapshot),...nplFoundationFacts(snapshot),...nplTwoV2Facts(snapshot),...nplTwoFacts(snapshot), ...lifeBodyFacts(snapshot), ...retentionFacts(snapshot), ...voidFacts(snapshot), ...childrenVcdFacts(snapshot), ...kinExtensionFacts(snapshot), ...approvedKinFacts(snapshot), ...localPalaceFacts(snapshot), ...quanTaiFacts(snapshot), ...financeVcdFacts(snapshot), ...diVoidFacts(snapshot), ...parentUnadjustedFacts(snapshot), ...kinFacts(snapshot), ...familyFacts(snapshot), ...familyVcdFacts(snapshot), ...familyExtensionFacts(snapshot), ...noDienFacts(snapshot),...phucDiFacts(snapshot),...lifeQuyenFact(snapshot), ...lifeContentFacts(snapshot), ...careerQuyenFact(snapshot), ...careerKyFacts(snapshot), ...independentCareerFacts(snapshot), ...occupationalCareerFacts(snapshot), ...careerClosingFacts(snapshot), ...financeSupplementFacts(snapshot)];
   // Natal matching never consumes an explicitly annual/decadal star.
   // Undefined legacy scopes remain compatible; completeness is independently
   // guarded by server receipts and the new saved career assessment.
