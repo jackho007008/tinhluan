@@ -172,3 +172,13 @@ Code `daee8c2`, nối ca75881/a57bb76; [bằng chứng](../.local/di-void-shared
 - `reading-scope.test.ts`6/6 trongDBmới `tinhluan_di_void_*`,kho riêng; `stored-customer-pdf.test.ts`6/6mock, không gọi mocklàPDFthật. [G2](../.local/di-void-shared-20261021/g2-tests.log), [PDFmock](../.local/di-void-shared-20261021/pdf-tests.log).
 - Sáu engine87/169/32/159/63/139: có chính tinh/VCD/HóaKỵ/Nhật–Nguyệt/xung chiếu/Đồng–Âm quaform3088, free/fullthử bằng ordermock trongDBriêng, lưu/mở lại đúng frozen,khóa server403 vàchéophiên404; mobile360/390 khôngtràn,căn cứmở/đóng. PDFthật từendpoint8trang16đoạn đủvăn,đãxemcontactvàtrang6. [UI](../.local/di-void-shared-20261021/public-acceptance.json), [PDF](../.local/di-void-shared-20261021/pdf-check.json). Sáu bản tạoQA3062chỉfree, khôngđơn/mock/provider ởDBchính.
 - 204filelịch sử cũgiữhash;quyền/binding/link và34bàicôngkhai nguyên. QA3062web26158/worker26162;QA3070PID94421cwdcũ giữnguyên. Livefalse;QA3088tắt. Khôngkiểmprovider ngoài/tunnel/toàngate,khôngmigration/restartchỉvìtài liệu.
+
+
+## Ngữ cảnh khác chiều1.63 —22/10/2026
+
+Baseline7ab01c5 sạch, codephụcvụdaee8c2. [Đặc tả](OPPOSING-CLAIMS-1.63.0.md), [bàn giao và log](../.local/opposing-20261022/ban-giao.md). Kiểm tập trung, khôngtoàngate.
+
+- 35ca/5file `customer-contexts`, `customer-topic-editorial`, `finance-presentation`, `customer-editorial-catalog`, `continuous-report`;78ca/3file `finance-assets`, `tanbien-finance`, `customer-basic-selection`. Tổng113ca riêng biệt, không cộng lượt chạy lại. Chốt ngữ nghĩa, đủ vế/điều kiện/căn cứ, nhóm chưa biết không tạo xung đột, tên/ngày không chọn lời, gom chạy lại không lặp, kiểm ngoại lệ nguồn đã có. Test dùng bộ cục bộ giữ ngoàiGit theoGIT-BASELINE.
+- So192 sâu reading/continuous nguyên, G2policy bằngbaseline;40bài gom lại, mọi đoạn khác nguyên. Mỗi câu khách gốc trong cụm còn nguyên; mỗi member/layers/fact/trace/rule nguyên. Không gọi đếm test/đoạn là đầy đủ bài.
+- G2integration6/6 DBriêng `tinhluan_opposing_*`,PDFmock6/6; typecheck/build đạtcheckoutriêng. Sáumẫu engine192quaform/lưu/mở/fullmockriêng/freePDF403/chéophiên404/mobile360/390/căncứ. HaiPDFthật8trang,13và18đoạnfrozenđủ, kiểmảnh mọi trang và trang6/5 có đoạn mới. Không providerthật, không worker thử. Thông tin lượt cuối/codeidentity/phụcvụ/bảotoàn trong bàngiao.
+- Lỗi đầu:2assertioncũ đòi đoạn riêng, cập nhật kiểm đủmember/nguyênvăn trong cụm;1lỗi gom lầnhai gây lặp, sửa bỏ qua cụmđãđánhdấu; không thay expected nguồn/lịch sử. Setupenvthiếu gâyInvalidURL trước typecheck/build/DB, nạpđúngenv; sandboxEPERM DB trước tạoDB, chạy lại có quyềnloopbackriêng. Rà nội dung cuối táchPhụcBinh khỏi xungđộtgiữcủa (cảnhbáo chưa phảisựkiện); sửa sốtrang căn cứVũ–Tham192→191, vănkháchkhôngđổi. Rerunđúngphầnảnhhưởng, không sửa lịch sử cho xanh.

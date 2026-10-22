@@ -2,7 +2,11 @@
 
 Cập nhật21/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
-## Lô hiện hành — TTDi dùng chung1.62,21/10/2026
+## Lô hiện hành — ngữ cảnh khác chiều1.63,22/10/2026
+
+QA3062phục vụ1.63/catalog1.59, code `7452913`, checkout `.local/opposing-20261022/qa-final`; nối7ab01c5/code daee8c2. [Phân loại theo nguồn](OPPOSING-CLAIMS-1.63.0.md), [trạng thái](CURRENT_STATUS.md), [toàn đoạn trước/sau40mẫu](../.local/opposing-20261022/full-before-after.txt), [bàn giao/kiểm/runtime](../.local/opposing-20261022/ban-giao.md). Tử/Phụ/giữ tiền/Điền gom lời đối lập cùng ngữ cảnh, ghi chưa có kết luận chung; phân biệt tạo tiền–hao tiền và của cha mẹ–con thừa hưởng. **0phép giải phương pháp mới**, không thêm claim/độ phủ, không hoàn chỉnh bài. G2/lịch sử/QA3070/Tật chưa publish/Livefalse giữ nguyên. Dừng task, không mởTTDi hoặc tìm câu lấp trống.
+
+## Mốc trước — TTDi dùng chung1.62,21/10/2026
 
 QA3062 đang1.62/catalog1.59, code `daee8c2`, checkout `.local/di-void-shared-20261021/qa-final`. Baseline ca75881/a57bb76 đã xác minh. [Trạng thái](CURRENT_STATUS.md), ND04 trong [backlog duy nhất](V1-DELIVERY-PLAN.md), [đặc tả](PHUC-DI-1.0.0.md), [bàn giao/toàn văn trước-sau](../.local/di-void-shared-20261021/ban-giao.md). Một rule TTDi thay rulehẹpĐồng–Âm, áp có chính tinh/VCD; chỉ phiền lòng. So192:3Di mới có nhận định/55bổsung/1thayđoạn;13→10thiếu, khôngcung hoànchỉnh.397ca nội dung/6G2/6PDFmock/typecheck/build;6engine form/lưu/mở/mobile/quyền;PDF8trang16đoạn.204filelịch sử/quyền cũ nguyên; G2/Tật/Live/QA3070 giữ. Dừng gói, không mở nềnĐồng–Âm.
 

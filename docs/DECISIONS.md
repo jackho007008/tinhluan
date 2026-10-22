@@ -121,3 +121,10 @@ U trực tiếp giao hoàn thiện lô Quan–Tài, giữ điều kiện tuổi/
 **U trực tiếp:** “Dự án TINHLUAN hiện do tôi và Codex thực hiện, không có người thẩm định bên ngoài”; yêu cầu đọc/hệ thống hóa toàn bộ sách đang có, kho chữ đầy đủ ngoài Git/phần công khai, kế thừa audit, đọc theo chương/checkpoint; phiên này chưa sửa logic/publish. Đây là ủy quyền khảo cứu toàn sách, thay hạn chế chỉ đọc đoạn thiếu và đề xuất phải chọn người thẩm định ngoài trong bảng quyết định trước. Không coi kế hoạch cũ là yêu cầu chủ dự án phải tuyển người hoặc đoán AND/OR/chọn câu nguồn thắng.
 
 Codex tra cứu, đối chiếu, giữ riêng phương pháp tác giả, đề xuất cách hiểu có lập luận và ghi chưa biết; chủ dự án giữ quyết định sản phẩm/phát hành. Không tự ghi cách hiểu là đã duyệt. Không thay G2, quyền/lịch sử, các loại trừ sản phẩm hoặc quyền phát hành; hai mẫu Tật vẫn chưa duyệt/publish. [Kho/checkpoint](SOURCE-LIBRARY.md) mới có35trang đọc thêm; chưa xác nhận đọc hết mọi sách hoặc giải các điểm chặn lớn. Backlog V1 tiếp tục là nơi theo dõi triển khai duy nhất.
+
+
+## Q15 — lời khác chiều cùng ngữ cảnh,22/10/2026
+
+**U trực tiếp:** xử lý nhóm quy tắc Tử Nữ/Phụ Mẫu/Tài–Điền trong bộ192, dùng kho đã có; triển khai phần rõ bằng pipeline chung. Với nhóm chưa giải, xuất cùng ngữ cảnh và nói chưa có kết luận chung; đây là cải thiện trung thực, không phải giải phương pháp. Không chọn sao thắng, tạo trọng số, suy thời đoạn hoặc AI dung hòa. Không mởTTDi/lấp cung/sách mới/backlog mới. Áp luồngLập lá số, giữ lịch sử/G2/QA3070/Tật/Live.
+
+**D/C trong phạm vi ủy quyền:** [1.63](OPPOSING-CLAIMS-1.63.0.md), registry nghĩa và gom đoạn sau evaluator. Phân loại thật sự trùng phương diện với khác đối tượng/phương diện/điều kiện; mọi cụm `methodResolved:false`. Không có phép điều chỉnh mới đủ chứng minh; ngoại lệ đã có không triển khai trùng. Lô này thay cách trình bày song song cũ ở ND03 cho các nhóm đã rà, không thay nguồn, claim hoặc quyền; không phê duyệt chuyên môn toàn bài hoặc mở phạm vi sản phẩm.

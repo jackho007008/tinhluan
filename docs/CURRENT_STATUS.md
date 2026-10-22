@@ -1,18 +1,18 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-Cập nhật21/10/2026 sau lô TTDi dùng chung1.62.0, nối a57bb76/ca75881. Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
+Cập nhật22/10/2026 sau lô ngữ cảnh khác chiều1.63.0, nối7ab01c5/daee8c2. Hướng Tật Ách vẫn chỉ được thẩm định, chưa publish. Đây là bản tóm tắt để chuyển thread, **không thay thế backlog 19 việc** tại [V1-DELIVERY-PLAN.md](V1-DELIVERY-PLAN.md).
 
 Đọc tiếp: [hợp đồng sản phẩm](BUSINESS_RULES.md), [sổ quyết định](DECISIONS.md), [đầu mối bàn giao](HANDOFF.md).
 
 ## 1. Bản nào đang phục vụ khách?
 
-- Trình bày **1.62.0**, catalog **interpretation-1.59.0**. Đã có trong luồng khách tạo mới, không chỉ bản nghiệm thu nội bộ.
-- QA chính: `http://127.0.0.1:3062`; checkout phục vụ `/Volumes/DATA/TINHLUAN/.local/di-void-shared-20261021/qa-final`.
+- Trình bày **1.63.0**, catalog **interpretation-1.59.0**. Đã có trong luồng khách tạo mới, không chỉ bản nghiệm thu nội bộ.
+- QA chính: `http://127.0.0.1:3062`; checkout phục vụ `/Volumes/DATA/TINHLUAN/.local/opposing-20261022/qa-final`.
 - URL tunnel tại lần nghiệm thu gần nhất: https://61ac-171-246-109-226.ngrok-free.app/lap-la-so . Tunnel có thể đổi; không coi là tên miền triển khai ổn định.
-- Nguồn làm việc: `/Volumes/DATA/TINHLUAN`. Checkout trước để đối chiếu/quay lại: `.local/dong-am-di-20261021/qa-final` (1.61.0/1.58.0). QA3070 giữ riêng, không hợp dữ liệu thử của nó vào kho chính.
+- Nguồn làm việc: `/Volumes/DATA/TINHLUAN`. Checkout trước để đối chiếu/quay lại: `.local/di-void-shared-20261021/qa-final` (1.62.0/1.59.0). QA3070 giữ riêng, không hợp dữ liệu thử của nó vào kho chính.
 - Policy bản mới: `menh-free-1.0.0`; continuous report: `continuous-report-1.6.1`. P1/P2/M05/M07 và các phép ND01/ND04 đã khép tiếp tục dùng chung pipeline.
 - **Beta, chưa mở bán; SePay Live tắt.** Quy tắc luận vẫn `draft`, `review=null`. Chủ dự án duyệt giao diện hoặc nội dung Toàn thư không đồng nghĩa duyệt chuyên môn toàn báo cáo.
-- Đã xác minh web26158/worker26162 cùng checkout và sáu bản tạo mới QA3062; code `daee8c2`, baseline codea57bb76, bàn giao trước ca75881. [Danh tính phục vụ](../.local/di-void-shared-20261021/serving-code.json), [đích DB/kho](../.local/di-void-shared-20261021/runtime-target.json), [bảo toàn](../.local/di-void-shared-20261021/preservation.json). QA3070 giữ PID94421/cwd cũ; không kiểm lại tunnel/provider ngoài.
+- Đã xác minh web42123/worker42125 cùng checkout, code `7452913`;6bản mới quaform/reload1.63/catalog1.59. Runtime và bảo toàn: [bàn giao hiện hành](../.local/opposing-20261022/ban-giao.md), [danh tính phục vụ](../.local/opposing-20261022/serving-code.json), [đích DB/kho](../.local/opposing-20261022/runtime-target.json). Mốcweb26158/worker26162 là runtime1.62 đầu phiên; không dùng làm bằng chứng tiến trình mới.
 
 ## 2. Những gì đã triển khai
 
@@ -67,7 +67,15 @@ ND04:38 snapshot có43 claim mới; Phụ16 cung mới có lời/2 bổ sung, Hu
 - **Kiểm thử ND03:**27/27 tại5file; G2 riêng6/6; typecheck/build cuối đạt. Expected cơ bản cũ đã được đối chiếu hợp đồng nguyên nhóm1.1 và khép; không phải toàngate xanh. [TESTING](TESTING.md#5-lỗi-mở-và-kết-quả-cũ-còn-giới-hạn).
 - **Bảo toàn:**112file báo cáo/98ID khác nhau,31file phiên cũ giữ hash; quyền/binding/link cũ và34bài công khai giữ nguyên.4bản/4đơn mock QA mới qua2lượt, chỉ2cấu trúc engine. [File](../.local/nd03-20261020/file-preservation.json), [DB](../.local/nd03-20261020/db-after.json), [UI](../.local/nd03-20261020/public-acceptance.json).
 
-## 5. Task hiện hành — TTDi dùng chung1.62.0
+## 5. Task hiện hành — ngữ cảnh khác chiều1.63.0
+
+Baseline `main@7ab01c5` sạch; xác minhQA3062web26158/worker26162 đúngcheckout1.62/code daee8c2 trước thay. Bản mới1.63/catalog1.59 chỉ thay lớp trình bày qua `buildCustomerReport`; evaluator/claim/fact/trace/continuous/G2 đủ192 khớp baseline.
+
+**40/192 báo cáo đổi:**4Tử khá giả/khôngkhágiả,5Phụ thiếu/cócủa,7giữtiền/hao,1diễntiến/hao,4cơnghiệp/Đà,3duytrìĐiền;19tạotiền/hao phânphươngdiện,1củachamẹ/thừahưởng phânđốitượng (các nhóm giao nhau). Từng cụm giữ toàn lời và căn cứ, ghi giới hạn ngay cùng đoạn; không hai khẳng định đối lập đứng riêng như kết quả cuối. **Không có phép điều chỉnh mới được giải**; các ngoại lệ nguồn Nhật–Nguyệt/Kỵ/cảTT đã có được xác minh, không tính thành kết quả mới. Không claim mới, không giảm cung trống, không hoàn chỉnh cung/báo cáo.
+
+[Đặc tả/phân loại ba mức](OPPOSING-CLAIMS-1.63.0.md), [toàn văn trước/sau](../.local/opposing-20261022/full-before-after.txt), [bàn giao và phạm vi kiểm](../.local/opposing-20261022/ban-giao.md). Không mở sách/TTDi/Tật hoặcbacklogmới. G2, lịch sử,QA3070,Livefalse giữ. Dừng đúng task.
+
+### Mốc trước — TTDi dùng chung1.62.0
 
 Đã xác minh đầu phiên main@ca75881 sạch, code phục vụa57bb76,1.61/catalog1.58; root/checkout nguồn khớp commit. Theo yêu cầu chủ dự án, thay rule hẹp bằng **một** rule `tanbien.di-direct-void`, áp TT trực tiếp Di cho cả có chính tinh vàVCD, không điều kiện cặp sao. [Đặc tả/phân biệt nguồn–dữ liệu–giới hạn](PHUC-DI-1.0.0.md), [Q14](DECISIONS.md). Chỉ phiền lòng; không sinh tử/tai nạn, không đảo/xóa lời khác, không mở nền Đồng–Âm.
 
