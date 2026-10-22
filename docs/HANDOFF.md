@@ -2,6 +2,10 @@
 
 Cập nhật21/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
+## Đối chiếu cách áp TT Nô–Tử —22/10/2026, nối23c8906
+
+Chỉ xét toán tử Tử205 và phép điều chỉnh bảng Nô168–173; [bằng chứng/bàn giao](../.local/no-tu-void-method-20261022/ban-giao.md), [Tử](PHU-TU-1.33.0.md), [Nô](NO-DIEN-1.31.0.md). Tử nghiêng về một TT nhờ đối chiếu nhưng chưa có cầu nối trực tiếp cho lời quan hệ205; Nô loại đảo từng lời và miễn quan hệ, chưa đủ chọn phép đổi ô/vị trí.0nhánh/0mới/0bổ sung, giữ1.64.1/catalog1.60/code1b8c1c1, Nô71/Tử76thiếu theo 192 lô trước.12 file code vàcheckoutQA3062khớp; không chạy192/UI/PDFmới hoặc đổiDB/runtime. Dừng đúng hai câu hỏi, khôngquaylại ràcâuđộclập;G2/lịch sử/QA3070/Tật/Live giữ.
+
 ## Rà Nô–Tử theo từng vế —22/10/2026
 
 Giữ1.64.1/catalog1.60/code1b8c1c1; baseline `main@c5fe112` sạch,processQA3062 đúngcheckoutv2. [Nô](NO-DIEN-1.31.0.md), [Tử](PHU-TU-1.33.0.md), [toàn đoạn và bàn giao](../.local/no-tu-clause-review-20261022/ban-giao.md). Dựng lại192khớp sâu, Nô71/Tử76thiếu;0mới/0bổsung/0gỡcổng. TửTT có vếquan hệ tách khỏi sốcon nhưng lượngtừ ánngữ chưa giải; NôXương–Khúc–Khôi–Việt có câu riêng nhưng chưa rõ tập sao/vịtrí. Không có tậpcon mới đủtriểnkhai; dừng theo yêu cầu, không gói chỉnhvăn. QA3070/G2/lịch sử/Tậtchưa publish/Live tắt giữ; khôngrestart/migration/UI/PDFmới.
