@@ -1,3 +1,4 @@
+import {parentUnadjustedBranches,parentUnadjustedKey,parentUnadjustedAssessment} from '../interpretation-rules/parent-unadjusted';
 import {diVoidAssessment} from '../interpretation-rules/di-void';
 import {financeVcdAssessment} from '../interpretation-rules/finance-vcd';
 import {quanTaiBranches,quanTaiAssessment} from '../interpretation-rules/quan-tai';
@@ -40,7 +41,7 @@ import {
   tanBienTable,
   tanBienLifeTables,
 } from "../interpretation-rules/tanbien-source";
-export const PRESENTATION_VERSION = "1.14.0";
+export const PRESENTATION_VERSION = "1.14.1";
 export type ReadingEvidence = {
   text: string;
   kind: "snapshot" | "geometry" | "source" | "editorial";
@@ -219,6 +220,8 @@ const factLabels: Record<string, string> = {
   "fact.wealth-minor-stars": "phụ tinh tại Tài Bạch",
 };
 export function conditionText(c: Condition): string {
+ const stable=parentUnadjustedBranches.find(b=>c.fact==='fact.'+parentUnadjustedKey(b));
+ if(stable)return (stable.vcd?'Phụ Mẫu không có chính tinh; đúng cả cặp '+stable.row.stars.join('–')+' xung chiếu.':familyCondition(stable.row)+'.')+' Chỉ giữ vế độc lập ngoài giàu nghèo/sang hèn khi câu đầy đủ chưa xuất.';
  if(c.fact==='fact.di-direct-void')return 'Tuần hoặc Triệt án trực tiếp tại Thiên Di; không giới hạn chính tinh/VCD.';
  if(c.fact==='fact.finance-vcd-direct-void')return 'Tài Bạch không chính tinh, Tuần/Triệt trực tiếp, Nhật–Nguyệt không cùng sáng.';
  const qt=quanTaiBranches.find(r=>c.fact==='fact.'+r.id);if(qt)return qt.stars.join('–')+' đồng cung '+qt.palace+(qt.branches.length?' tại '+qt.branches.join('/'):'');
@@ -280,6 +283,7 @@ export function conditionText(c: Condition): string {
     : `Điều kiện về ${label}: ${c.value}.`;
 }
 export function factEvidence(s: ChartSnapshot, id: string): ReadingEvidence {
+ const stable=parentUnadjustedBranches.find(b=>id==='fact.'+parentUnadjustedKey(b));if(stable){const a=parentUnadjustedAssessment(s,stable);return item(a.text,a.paths,'snapshot');}
  if(id==='fact.di-direct-void'){const a=diVoidAssessment(s);return item(a.text,a.paths,'source');}
  if(id==='fact.finance-vcd-direct-void'){const a=financeVcdAssessment(s);return item(a.text,a.paths,'source');}
  const qt=quanTaiBranches.find(r=>id==='fact.'+r.id);if(qt){const a=quanTaiAssessment(s,qt);return item(a.text,a.paths,'snapshot');}

@@ -9,6 +9,7 @@ import {noDienAssessment,noDienBranches} from '../lib/interpretation-rules/no-di
 import {buildTanBienReading} from '../lib/internal-review/tanbien-reading';
 import {buildContinuousReport} from '../lib/internal-review/continuous-report';
 import {buildCustomerReport} from '../lib/internal-review/customer-report';
+import {conditionText,factEvidence} from '../lib/internal-review/tanbien-presentation';
 import {RULESET_VERSION} from '../lib/interpretation-rules/catalog';
 import {captureReadingPolicy,projectReading} from '../lib/trial/reading-policy';
 const base=await calculate({date:'1992-08-07',hour:16,minute:0,unknownTime:false,gender:'male',calendar:'solar',profile:'tanbien-vn-trial-v2',place:'Hà Nội',timezone:'Asia/Ho_Chi_Minh',consent:true});
@@ -37,6 +38,8 @@ for(const b of parentUnadjustedBranches)describe(parentUnadjustedKey(b),()=>{
    const x=structuredClone(s),pair=pairs.find(q=>q.includes(t.earthlyBranch))!;
    for(const i of indexes)x.chart.tanBien!.voidRanges[i].branches=pair;
    expect(old(x,b.row).cause).toBe('unresolved-adjustment');expect(parentUnadjustedAssessment(x,b).value).toBe(true);
+   expect(factEvidence(x,'fact.'+parentUnadjustedKey(b)).text).not.toMatch(/chưa có ánh xạ|fact\.parents/);
+   expect(conditionText({fact:'fact.'+parentUnadjustedKey(b),op:'eq',value:'yes'})).toContain('vế độc lập');
    const r=parentUnadjustedRules.find(r=>r.id==='tanbien.'+parentUnadjustedKey(b))!;
    expect(r.claimTemplate).not.toMatch(/giàu sang|khá giả|có quyền|có vị thế|thiếu thốn|túng thiếu|nghèo/);
   }
