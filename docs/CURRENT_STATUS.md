@@ -1,12 +1,10 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-## 23/10 — đang đọc ba sách được giao
+## 23/10 — tiếp tục hai phần Tứ Hóa, chưa hoàn tất
 
-[Hồ sơ và checkpoint](../.local/source-library/knowledge/three-books-20261023/README.md) · [Backlog duy nhất](V1-DELIVERY-PLAN.md#full-report-gaps-169-20261023). Nối `main@b7e77f0`: Toàn Thư giữ170/170 lớp chữ,22ảnh; Tứ Hóa1 đọc liên tục1–254/824,khép chương1–4,chương5§5.1 đang dở,92trang ảnh gồm kiểm lỗi. Tứ Hóa2 chưa bắt đầu đọc liên tục/817,5ảnh giữ. **Chưa hoàn tất task; tiếp Tứ Hóa1 PDF255**, câu so Kị năm sinhPhu và Mệnh phiKị→Phu. Đã lưu vùng giấyche227/mất nối cuối135/150; giữ lỗi593–599 và không suy điền.
+**Nghiên cứu hai phần Tứ Hóa — checkpoint nối `main@3c92bfd`, chưa hoàn tất:** [hồ sơ/điểm nối](../.local/source-library/knowledge/three-books-20261023/README.md), [ghi chép lượt mới](../.local/source-library/knowledge/three-books-20261023/thp1-ch5-resume-3c92bfd.md). Đọc mới139trang PDF255–393, kiểm43ảnh mới; TứHóa1 tổng1–393/824 và135ảnh. Chương1–4 kếthừa; đã khép§5.1–4/5.5.1–6, **chương5 chưa khép**. Tiếp **PDF394, §5.5.7(1), DiLộc→Tài**;393 đã đọcLộc→Mệnh/Huynh/Phu/Tử. ToànThư170/170,22ảnh giữ; phần2 chưa đọc liên tục/5ảnh giữ. U27/U39/U40/U41 thêm điều kiện/ngoại lệ phương pháp riêng,0Ukhép/0rule;U34/U42 giữ. Lưu khácphạmvi5.1/5.5, chi lưuHứaDiệuHỗn324, hình14PDF313 sai khácQuýHợi/Tuất và câu381khácchiều; không tự sửa/gộp. Giữ lỗi135/150/227/593–599; không nhập/OCR lại. Chưa có ứng viên lời mới đủ triển khai được xác nhận; cấu trúc quan hệ đã rõ hơn vẫn cần profile/kíchhoạt/ngoạilệ. Giữ ứngdụng1.69/catalog1.65/code1e6ab7c,N1–N13/G2/lịch sử/quyền/hạn/QA3070/34bài/Tậtchưa publish/Livefalse; không test/build/runtime.
 
-U27/U39/U40/U41 có điều kiện và ngoại lệ mới thuộc phương pháp THP độc lập;0Ukhép/0rule/0đầu ra ứng dụng đổi. U34/U42 giữ ứng viênToànThư, không nâng ready. Dữ kiện can cung/profile bảng hóa/nguồn–đích/kích hoạt/thái cực cần đối chiếu engine trước đặc tả; chưa audit code trong lượt đọc. Không chạy test/build/192/DB/worker/restart/QA. App1.69/catalog1.65/code1e6ab7c là identity kế thừa, không xác minh lại runtime.
-
-Phiên nối bắt đầu15:27 ICT23/10/2026; checkpoint do giới hạn ngữ cảnh, khoảng26phút đến15:53 (gồm đọc, kiểm ảnh và lưu hồ sơ). Hồ sơ dài ở kho riêng ngoàiGit; commit chỉ lưu chỉ mục/trạng thái/backlog.
+Checkpoint do giới hạn ngữ cảnh; hồ sơ dài ở kho riêng ngoàiGit. Commit chỉ lưu đầu mối/trạng thái/backlog. Không xác minh lại runtime.
 
 Cập nhật23/10/2026: app **1.69.0/catalog1.65.0**, code **1e6ab7c**, đã vàoQA3062;48/48nhóm gốc đã rà,phạm viD đã chốt. Beta/Live tắt; mục tiêu trả phí đủ chủ đề12cung chưa đạt. Backlog duy nhất tại [V1-DELIVERY-PLAN](V1-DELIVERY-PLAN.md).
 

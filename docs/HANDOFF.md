@@ -1,12 +1,12 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-## Ba sách mới23/10 — checkpoint, chưa hoàn tất
+## Hai phần Tứ Hóa — checkpoint393, chưa hoàn tất
 
-[Hồ sơ và checkpoint](../.local/source-library/knowledge/three-books-20261023/README.md) · [Backlog duy nhất](V1-DELIVERY-PLAN.md#full-report-gaps-169-20261023). Nối `b7e77f0`: ToànThư170/170 lớp chữ,22ảnh giữ; TứHóa1 đọc1–254/824,khép chương1–4,chương5§5.1 đang dở,92trang ảnh; TứHóa2 chưa đọc liên tục/817,5ảnh giữ. **Tiếp Tứ Hóa1 PDF255**, câu cuối254 đang so Kị năm sinhPhu với Mệnh phiKị→Phu. Không nhập/OCR lại. Giấyche227/mất nối cuối135/150 đã lưu; lỗi593–599 giữ, không offset toàn cuốn.
+[Hồ sơ/điểm nối](../.local/source-library/knowledge/three-books-20261023/README.md) · [Ghi chép lượt mới](../.local/source-library/knowledge/three-books-20261023/thp1-ch5-resume-3c92bfd.md) · [Backlog duy nhất](V1-DELIVERY-PLAN.md#full-report-gaps-169-20261023). Nối `main@3c92bfd`: đọc mới PDF255–393 (139 trang), kiểm43 ảnh mới; phần1 tổng393/824 trang chữ,135 ảnh. Chương5 chưa khép, đã qua§5.5.6;393 mở Di Lộc→Mệnh/Huynh/Phu/Tử. **Tiếp PDF394, §5.5.7(1), Di Lộc→Tài**; đọc hết phần1 rồi mới phần2. Toàn Thư170/170,22 ảnh giữ, không đọc lại; phần2 chưa đọc liên tục,5 ảnh giữ.
 
-Mới ở U27/U39/U40/U41: điều kiện cứu/giữ và phân loại hóa thuộc phương pháp riêng;0Ukhép/0rule. U34/U42 giữ ứng viênToànThư. Không có nhánh mới đủ căn cứ triển khai đã xác nhận ở checkpoint; phần1/2 còn chưa đọc, task vẫn chưa hoàn tất. Giữ ứng dụng1.69/catalog1.65/code1e6ab7c, N1–N13/G2/lịch sử/quyền/hạn/QA3070/34bài/Tậtchưa publish/Livefalse; không test/build/runtime.
+U27/U39/U40/U41 thêm điều kiện, ngoại lệ và phân biệt hóa; **0U khép/0rule**, U34/U42 giữ. Lưu riêng khác phạm vi5.1/5.5, chi lưu Hứa Diệu Hỗn324, hình14 PDF313 chú giải Quý Hợi khác Tuất và câu381 khác chiều; không tự sửa. Lỗi135/150/227/593–599 giữ. [Receipt](../.local/source-library/verifications/three-books-20261023-resume-3c92bfd.json) ghi trang/ảnh/điểm nối; checkpoint do ngữ cảnh, chưa hoàn tất task.
 
-Phiên nối khoảng26phút (15:27–15:53 ICT23/10/2026), checkpoint do giới hạn ngữ cảnh. Kho riêng có nhật ký trang/ảnh, lỗi, điều kiện/ngoại lệ/phụ thuộc và receipt; Git chỉ chứa tài liệu đầu mối.
+Chỉ tài liệu/kho riêng ngoài Git; giữ app1.69/catalog1.65/code1e6ab7c, N1–N13/G2/lịch sử/quyền/hạn/QA3070/34bài/Tật chưa publish/Livefalse; không test/build/runtime. Không nhập/OCR/kiểm kê lại sách.
 
 Cập nhật23/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
