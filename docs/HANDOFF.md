@@ -1,14 +1,12 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-## Hai phần Tứ Hóa — checkpoint624, chưa hoàn tất
+## Hai phần Tứ Hóa — THP1 kết thúc scan, THP2 checkpoint55
 
-[checkpoint624→625](../.local/source-library/knowledge/three-books-20261023/checkpoint-624.md) · [ghi chép394–624](../.local/source-library/knowledge/three-books-20261023/thp1-resume-62e3635.md) · [Backlog duy nhất](V1-DELIVERY-PLAN.md#full-report-gaps-169-20261023). Kế thừa `main@62e3635`, đọc mới231 vị trí PDF394–624, gồm2scan lặp và vùng che được ghi riêng; kiểm60ảnh mới duy nhất/5kiểm lại. Phần1 tổng624/824,195ảnh; chương1–6khép, chương7§7.9.2sauý(2) còn dở. **Tiếp PDF625**, sau “Cung phu thê phi Hóa Kị nhập cung tật ách”; khép phần1 rồi đọc phần2. Toàn Thư170/170 không đọc lại; phần2 chưa đọc liên tục.
+[Checkpoint55→56](../.local/source-library/knowledge/three-books-20261023/checkpoint-thp2-55.md) · [Ứng viên hữu hạn](../.local/source-library/knowledge/three-books-20261023/candidates-243f786.md) · [Backlog duy nhất](V1-DELIVERY-PLAN.md#full-report-gaps-169-20261023). Kế thừa `main@243f786`: đọc nối THP1 PDF625–824 (200 vị trí), sau đó THP2 PDF1–55. THP1 chương7–11 khép theo chữ nhìn được,263ảnh; THP2 chương1§1.8.5 dở,27ảnh. Kiểm92lượt/90ảnh mới/2kiểm lại. Toàn Thư170/170 giữ. **Tiếp THP2 PDF56**, nối ý Nô Bộc của Tài là Phụ Mẫu; không đọc lại toàn lịch sử.
 
-U27/U39/U40/U41 thêm hồ sơ phương pháp riêng;0Ukhép/0rule,U34/U42 giữ. Tách Khâm Thiên môn chương7; quan hệ đã rõ khác đủ lời khách. [Receipt](../.local/source-library/verifications/three-books-20261023-resume-62e3635.json) ghi trang/ảnh/lỗi/điểm nối. Không suy điền scan thiếu; giữ nguyên phạm vi ứng dụng/QA/quyền/lịch sử/Tật chưa publish/Live tắt.
+U27/U39/U40/U41 thêm bằng chứng phương pháp riêng;0Ukhép/0rule,U34/U42 giữ. Một số điều kiện loại trừ, traceKị và hoán vị giữ vai đủ đặc tả đầu ra hẹp; dữ liệu/cơ chế/nhánh nghĩa khác còn mở, chưa thành lời khách. [Receipt](../.local/source-library/verifications/three-books-20261023-resume-243f786.json) · [THP1](../.local/source-library/knowledge/three-books-20261023/thp1-resume-243f786.md) · [THP2](../.local/source-library/knowledge/three-books-20261023/thp2-resume-243f786.md). Không suy điền lỗi cũ hoặc727che/THP2 thiếu nối; không gọi đi hết scan là đọc được chữ mất.
 
-Chỉ tài liệu/kho riêng ngoài Git; giữ app1.69/catalog1.65/code1e6ab7c,N1–N13/G2/lịch sử/quyền/hạn/QA3070/34bài/Tật chưa publish/Livefalse; không test/build/runtime. Không nhập/OCR/kiểm kê lại.
-
-Cập nhật23/10/2026 tại `/Volumes/DATA/TINHLUAN`; đây là đầu mối, không phải backlog mới.
+Chỉ tài liệu và kho riêng ngoài Git; giữ app1.69/catalog1.65/code1e6ab7c,N1–N13/G2/quyền/lịch sử/phạm vi/QA/Tật chưa publish/Live tắt; không test/build/runtime. Chưa audit schema hoặc xác minh runtime. Không OCR/nhập/kiểm kê lại. Cập nhật23/10/2026 tại `/Volumes/DATA/TINHLUAN`.
 
 ## Kiểm U01 với nguồn web — 23/10/2026
 
