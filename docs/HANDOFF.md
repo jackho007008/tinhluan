@@ -1,14 +1,14 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-## Hai phần Tứ Hóa — checkpoint393, chưa hoàn tất
+## Hai phần Tứ Hóa — checkpoint624, chưa hoàn tất
 
-[Hồ sơ/điểm nối](../.local/source-library/knowledge/three-books-20261023/README.md) · [Ghi chép lượt mới](../.local/source-library/knowledge/three-books-20261023/thp1-ch5-resume-3c92bfd.md) · [Backlog duy nhất](V1-DELIVERY-PLAN.md#full-report-gaps-169-20261023). Nối `main@3c92bfd`: đọc mới PDF255–393 (139 trang), kiểm43 ảnh mới; phần1 tổng393/824 trang chữ,135 ảnh. Chương5 chưa khép, đã qua§5.5.6;393 mở Di Lộc→Mệnh/Huynh/Phu/Tử. **Tiếp PDF394, §5.5.7(1), Di Lộc→Tài**; đọc hết phần1 rồi mới phần2. Toàn Thư170/170,22 ảnh giữ, không đọc lại; phần2 chưa đọc liên tục,5 ảnh giữ.
+[checkpoint624→625](../.local/source-library/knowledge/three-books-20261023/checkpoint-624.md) · [ghi chép394–624](../.local/source-library/knowledge/three-books-20261023/thp1-resume-62e3635.md) · [Backlog duy nhất](V1-DELIVERY-PLAN.md#full-report-gaps-169-20261023). Kế thừa `main@62e3635`, đọc mới231 vị trí PDF394–624, gồm2scan lặp và vùng che được ghi riêng; kiểm60ảnh mới duy nhất/5kiểm lại. Phần1 tổng624/824,195ảnh; chương1–6khép, chương7§7.9.2sauý(2) còn dở. **Tiếp PDF625**, sau “Cung phu thê phi Hóa Kị nhập cung tật ách”; khép phần1 rồi đọc phần2. Toàn Thư170/170 không đọc lại; phần2 chưa đọc liên tục.
 
-U27/U39/U40/U41 thêm điều kiện, ngoại lệ và phân biệt hóa; **0U khép/0rule**, U34/U42 giữ. Lưu riêng khác phạm vi5.1/5.5, chi lưu Hứa Diệu Hỗn324, hình14 PDF313 chú giải Quý Hợi khác Tuất và câu381 khác chiều; không tự sửa. Lỗi135/150/227/593–599 giữ. [Receipt](../.local/source-library/verifications/three-books-20261023-resume-3c92bfd.json) ghi trang/ảnh/điểm nối; checkpoint do ngữ cảnh, chưa hoàn tất task.
+U27/U39/U40/U41 thêm hồ sơ phương pháp riêng;0Ukhép/0rule,U34/U42 giữ. Tách Khâm Thiên môn chương7; quan hệ đã rõ khác đủ lời khách. [Receipt](../.local/source-library/verifications/three-books-20261023-resume-62e3635.json) ghi trang/ảnh/lỗi/điểm nối. Không suy điền scan thiếu; giữ nguyên phạm vi ứng dụng/QA/quyền/lịch sử/Tật chưa publish/Live tắt.
 
-Chỉ tài liệu/kho riêng ngoài Git; giữ app1.69/catalog1.65/code1e6ab7c, N1–N13/G2/lịch sử/quyền/hạn/QA3070/34bài/Tật chưa publish/Livefalse; không test/build/runtime. Không nhập/OCR/kiểm kê lại sách.
+Chỉ tài liệu/kho riêng ngoài Git; giữ app1.69/catalog1.65/code1e6ab7c,N1–N13/G2/lịch sử/quyền/hạn/QA3070/34bài/Tật chưa publish/Livefalse; không test/build/runtime. Không nhập/OCR/kiểm kê lại.
 
-Cập nhật23/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
+Cập nhật23/10/2026 tại `/Volumes/DATA/TINHLUAN`; đây là đầu mối, không phải backlog mới.
 
 ## Kiểm U01 với nguồn web — 23/10/2026
 
