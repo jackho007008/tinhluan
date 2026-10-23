@@ -35,7 +35,7 @@ for(const r of approvedKinBranches){
  });
  it(r.id+' keeps source limits in customer text, serialized state and G2',()=>{
   const s=fixture(r),reading=buildTanBienReading(s),continuous=buildContinuousReport(s,reading,true),report=buildCustomerReport(s,continuous,RULESET_VERSION),para=report.sections.flatMap(s=>s.paragraphs).find(p=>p.members.some(m=>m.claim.rules.some(q=>q.id===rule.id)))!;
-  expect(para).toBeDefined();expect(para.review).toBe('editorial-checked');expect(para.text).toContain(r.condition??(r.id.startsWith('khoa')?'thông minh':'khéo tay'));
+  expect(para).toBeDefined();expect(para.review).toBe('editorial-checked');expect(para.text).toContain(r.condition??(r.id.startsWith('khoa')?'thông minh':r.id.startsWith('quyen')?'sớm hiển đạt':'khéo tay'));
   if(r.condition){expect(para.conditionalAssessment).toEqual([{condition:r.condition,status:'unknown',outcomeApplied:false}]);expect(para.text).toContain('chưa');expect(para.title).toContain('chưa xác định');expect(rule.presentation!.applicability).toContain('không xác nhận');}else expect(para.conditionalAssessment).toBeUndefined();
   const record:any={snapshot:s,frozen:{customerReport:report,continuousReport:continuous}};record.accessPolicy=captureReadingPolicy(record);expect(JSON.stringify(projectReading(record))).not.toContain(para.text);expect(record.accessPolicy.freeParagraphIds).not.toContain(para.id);
   expect(JSON.parse(JSON.stringify(report)).sections.flatMap((x:any)=>x.paragraphs).find((x:any)=>x.id===para.id)).toEqual(para);

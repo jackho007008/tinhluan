@@ -79,7 +79,7 @@
       "Phá Quân"
     ],
     "branches": [],
-    "text": "mô tả hoàn cảnh khá giả nhưng thiếu hòa khí và có sự xa cách trong gia đình.",
+    "text": "mô tả hoàn cảnh khá giả nhưng trong nhà hay có sự bất hòa.",
     "page": 125,
     "section": "5.2.1",
     "mode": "exact",
@@ -592,7 +592,7 @@
       "Thìn",
       "Tuất"
     ],
-    "text": "mô tả cha mẹ có của nhưng con không được thừa hưởng, gia đình thiếu hòa khí và có sự xa cách.",
+    "text": "mô tả cha mẹ có của nhưng con không được thừa hưởng, trong nhà thiếu hòa khí.",
     "page": 127,
     "section": "5.2.9",
     "mode": "exact",
@@ -624,7 +624,7 @@
       "Tý",
       "Ngọ"
     ],
-    "text": "mô tả hoàn cảnh bình thường, thiếu hòa khí và sự xa cách trong gia đình.",
+    "text": "mô tả hoàn cảnh cha mẹ bình thường, trong nhà thiếu hòa khí.",
     "page": 127,
     "section": "5.2.9",
     "mode": "exact",
@@ -783,7 +783,7 @@
       "Tý",
       "Ngọ"
     ],
-    "text": "mô tả hoàn cảnh cha mẹ khá giả nhưng thiếu hòa khí và có sự xa cách.",
+    "text": "mô tả hoàn cảnh cha mẹ khá giả, trong nhà thiếu hòa khí.",
     "page": 129,
     "section": "5.2.14",
     "mode": "exact",

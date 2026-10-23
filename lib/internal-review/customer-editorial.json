@@ -2829,11 +2829,11 @@
     "movedToEvidence": []
   },
   "tanbien.parents-tu-pha": {
-    "text": "Tử Vi–Phá Quân tại Phụ Mẫu được mô tả qua hoàn cảnh khá giả nhưng thiếu hòa khí và có sự xa cách trong gia đình.",
-    "sourceTemplate": "Theo Tân Biên, Tử Vi–Phá Quân đồng cung Phụ Mẫu, sách mô tả hoàn cảnh khá giả nhưng thiếu hòa khí và có sự xa cách trong gia đình.",
-    "sourceVersion": "0.1.0",
-    "catalogHash": "d9914527073f3160f4c72e303df4e50abe26345f96e311e140af114bb5b4edf9",
-    "strategy": "structured-subject-and-meaning",
+    "text": "Tử Vi–Phá Quân đồng cung Phụ Mẫu: mô tả hoàn cảnh khá giả nhưng trong nhà hay có sự bất hòa.",
+    "sourceTemplate": "Theo Tân Biên, Tử Vi–Phá Quân đồng cung Phụ Mẫu, sách mô tả hoàn cảnh khá giả nhưng trong nhà hay có sự bất hòa.",
+    "sourceVersion": "0.1.1",
+    "catalogHash": "d4cef159b4e86a6299b86f2bcee6e4c57ff93d4cb1186d69b1ee89d99a1177c4",
+    "strategy": "explicit-rule-prose",
     "movedToEvidence": []
   },
   "tanbien.parents-tu-tham": {
@@ -3095,11 +3095,11 @@
     "movedToEvidence": []
   },
   "tanbien.parents-tham-thin-tuat": {
-    "text": "Tham Lang tại Phụ Mẫu được mô tả qua cha mẹ có của nhưng con không được thừa hưởng, gia đình thiếu hòa khí và có sự xa cách.",
-    "sourceTemplate": "Theo Tân Biên, Tham Lang đơn thủ Phụ Mẫu tại Thìn/Tuất, sách mô tả cha mẹ có của nhưng con không được thừa hưởng, gia đình thiếu hòa khí và có sự xa cách.",
-    "sourceVersion": "0.1.0",
-    "catalogHash": "0af2a1a07a5febfc344cbe01b458f79ca2e52f46e431efbae28ac487503d0e96",
-    "strategy": "structured-subject-and-meaning",
+    "text": "Tham Lang đơn thủ Phụ Mẫu tại Thìn/Tuất: mô tả cha mẹ có của nhưng con không được thừa hưởng, trong nhà thiếu hòa khí.",
+    "sourceTemplate": "Theo Tân Biên, Tham Lang đơn thủ Phụ Mẫu tại Thìn/Tuất, sách mô tả cha mẹ có của nhưng con không được thừa hưởng, trong nhà thiếu hòa khí.",
+    "sourceVersion": "0.1.1",
+    "catalogHash": "0c3bea57f69888205ca3979070cd3928e4455f82ed50269254310efe479d67df",
+    "strategy": "explicit-rule-prose",
     "movedToEvidence": []
   },
   "tanbien.parents-tham-dan-than": {
@@ -3111,11 +3111,11 @@
     "movedToEvidence": []
   },
   "tanbien.parents-tham-ty-ngo": {
-    "text": "Tham Lang tại Phụ Mẫu được mô tả qua hoàn cảnh bình thường, thiếu hòa khí và sự xa cách trong gia đình.",
-    "sourceTemplate": "Theo Tân Biên, Tham Lang đơn thủ Phụ Mẫu tại Tý/Ngọ, sách mô tả hoàn cảnh bình thường, thiếu hòa khí và sự xa cách trong gia đình.",
-    "sourceVersion": "0.1.0",
-    "catalogHash": "145e1bfb07160cbf9cd3f230228b3e478aab713a9fc942e470ee6035b86cb024",
-    "strategy": "structured-subject-and-meaning",
+    "text": "Tham Lang đơn thủ Phụ Mẫu tại Tý/Ngọ: mô tả hoàn cảnh cha mẹ bình thường, trong nhà thiếu hòa khí.",
+    "sourceTemplate": "Theo Tân Biên, Tham Lang đơn thủ Phụ Mẫu tại Tý/Ngọ, sách mô tả hoàn cảnh cha mẹ bình thường, trong nhà thiếu hòa khí.",
+    "sourceVersion": "0.1.1",
+    "catalogHash": "ae854b743490b80f6f80a8d67b0638133631861aeba2c797686fd2457dca5a32",
+    "strategy": "explicit-rule-prose",
     "movedToEvidence": []
   },
   "tanbien.parents-cu-high": {
@@ -3191,11 +3191,11 @@
     "movedToEvidence": []
   },
   "tanbien.parents-pha-ty-ngo": {
-    "text": "Phá Quân tại Phụ Mẫu được mô tả qua hoàn cảnh cha mẹ khá giả nhưng thiếu hòa khí và có sự xa cách.",
-    "sourceTemplate": "Theo Tân Biên, Phá Quân đơn thủ Phụ Mẫu tại Tý/Ngọ, sách mô tả hoàn cảnh cha mẹ khá giả nhưng thiếu hòa khí và có sự xa cách.",
-    "sourceVersion": "0.1.0",
-    "catalogHash": "008b93aa34c940f4ae637a7b793e54bf303377912edf1c91f229fdb1a1184deb",
-    "strategy": "structured-subject-and-meaning",
+    "text": "Phá Quân đơn thủ Phụ Mẫu tại Tý/Ngọ: mô tả hoàn cảnh cha mẹ khá giả, trong nhà thiếu hòa khí.",
+    "sourceTemplate": "Theo Tân Biên, Phá Quân đơn thủ Phụ Mẫu tại Tý/Ngọ, sách mô tả hoàn cảnh cha mẹ khá giả, trong nhà thiếu hòa khí.",
+    "sourceVersion": "0.1.1",
+    "catalogHash": "fa567321f530e9b692df22e5359cde5e6e9ecd33a255feb867a388ae896e9775",
+    "strategy": "explicit-rule-prose",
     "movedToEvidence": []
   },
   "tanbien.parents-pha-dan-than": {
@@ -6154,5 +6154,21 @@
     "movedToEvidence": [
       "Câu nguồn riêng và đối chiếu Tuần/Triệt140§6.1.36; chỉ giữ phương diện phân tán, không khôi phục toàn lời nền."
     ]
+  },
+  "tanbien.children-quyen-early-attainment": {
+    "text": "Hóa Quyền tại Tử Nữ được nguồn luận gắn với nét con sớm hiển đạt. Chữ “sớm” được giữ theo nguồn, không đặt mốc tuổi hoặc xác nhận một người con thực tế đã hay sẽ thành công.",
+    "sourceTemplate": "Hóa Quyền tại Tử Nữ được nguồn luận gắn với nét con sớm hiển đạt. Chữ “sớm” được giữ theo nguồn, không đặt mốc tuổi hoặc xác nhận một người con thực tế đã hay sẽ thành công.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "e96c5b61815d7439482bc49089a54f8c90355c93719e9f6e49dcc1161335463f",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": []
+  },
+  "tanbien.spouse-cu-low-relation": {
+    "text": "Cự Môn đơn thủ Phu Thê ở Thìn/Tuất/Tỵ: có lời riêng về việc vợ chồng bỏ nhau. Nguồn còn nêu Mệnh, Thân, Phúc Đức sáng sủa tốt đẹp thường giải trừ được khá nhiều cảnh chia ly; chưa có cách áp mức cứu giảm này để kết luận hôn nhân thực tế. Đây là nhận định thành phần, không xác nhận hai người sẽ chia tay hoặc số lần lập gia đình.",
+    "sourceTemplate": "Theo Tân Biên, với Cự Môn đơn thủ Phu Thê ở Thìn/Tuất/Tỵ, sách có lời riêng về việc vợ chồng bỏ nhau. Nguồn còn nêu Mệnh, Thân, Phúc Đức sáng sủa tốt đẹp thường giải trừ được khá nhiều cảnh chia ly; chưa có cách áp mức cứu giảm này để kết luận hôn nhân thực tế. Đây là nhận định thành phần, không xác nhận hai người sẽ chia tay hoặc số lần lập gia đình.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "859378e666b8f032f8196feec5d402991de5189e53a66cba503705864c35accf",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": []
   }
 }

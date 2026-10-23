@@ -996,5 +996,25 @@
     "limit": "",
     "excerpt": "",
     "stateMethod": "none"
+  },
+  {
+    "id": "cu-low-relation",
+    "palace": "Phu Thê",
+    "stars": [
+      "Cự Môn"
+    ],
+    "branches": [
+      "Thìn",
+      "Tuất",
+      "Tỵ"
+    ],
+    "mode": "exact",
+    "page": 212,
+    "section": "14.10; cứu giảm PDF208 mở mục14; TT215§14.34; Cự–Hỏa–Linh215§14.36",
+    "gender": null,
+    "stateMethod": "none",
+    "excerpt": "Đơn thủ tại Thìn, Tuất, Tỵ: vợ chồng bỏ nhau, trai hay gái đều hai hay ba lần lập gia đình.",
+    "limit": "Chỉ nhận định thành phần Cự Môn tọa Phu, không tổng hợp toàn cung. PDF208: Mệnh, Thân, Phúc sáng sủa tốt đẹp thường giải trừ được khá nhiều cảnh chia ly; chưa đặc tả mức cứu giảm, không coi vế địa phương là kết quả hôn nhân thực tế. Không xuất số lần; TT215 là câu riêng không đảo lời này; Cự–Hỏa–Linh nói khó tìm hôn phối, không xóa quan hệ đã lập.",
+    "text": "có lời riêng về việc vợ chồng bỏ nhau. Nguồn còn nêu Mệnh, Thân, Phúc Đức sáng sủa tốt đẹp thường giải trừ được khá nhiều cảnh chia ly; chưa có cách áp mức cứu giảm này để kết luận hôn nhân thực tế. Đây là nhận định thành phần, không xác nhận hai người sẽ chia tay hoặc số lần lập gia đình."
   }
 ]
