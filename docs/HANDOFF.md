@@ -2,9 +2,11 @@
 
 ## Ba sách mới23/10 — checkpoint, chưa hoàn tất
 
-[Hồ sơ và checkpoint](../.local/source-library/knowledge/three-books-20261023/README.md) · [Backlog duy nhất](V1-DELIVERY-PLAN.md#full-report-gaps-169-20261023). Toàn Thư:170/170 trang lớp chữ,22 ảnh; Tứ Hóa 1:đọc1–7/824,13 ảnh; Tứ Hóa 2:chưa đọc liên tục/817,5 ảnh. OCR1.641/1.641 không là đã đọc. Nối đủ45 U,0 U khép/0 rule. Tứ Hóa 1 có scan trùng/che chữ vùng593–599. **Tiếp Tứ Hóa 1 PDF8**; quyền làm tiếp task vẫn giữ. App1.69/catalog1.65/code1e6ab7c không đổi, chỉ nghiên cứu/tài liệu.
+[Hồ sơ và checkpoint](../.local/source-library/knowledge/three-books-20261023/README.md) · [Backlog duy nhất](V1-DELIVERY-PLAN.md#full-report-gaps-169-20261023). Nối `b7e77f0`: ToànThư170/170 lớp chữ,22ảnh giữ; TứHóa1 đọc1–254/824,khép chương1–4,chương5§5.1 đang dở,92trang ảnh; TứHóa2 chưa đọc liên tục/817,5ảnh giữ. **Tiếp Tứ Hóa1 PDF255**, câu cuối254 đang so Kị năm sinhPhu với Mệnh phiKị→Phu. Không nhập/OCR lại. Giấyche227/mất nối cuối135/150 đã lưu; lỗi593–599 giữ, không offset toàn cuốn.
 
-Thời gian toàn phiên đến checkpoint: khoảng30phút (14:48ước tính–15:19ICT,23/10/2026).
+Mới ở U27/U39/U40/U41: điều kiện cứu/giữ và phân loại hóa thuộc phương pháp riêng;0Ukhép/0rule. U34/U42 giữ ứng viênToànThư. Không có nhánh mới đủ căn cứ triển khai đã xác nhận ở checkpoint; phần1/2 còn chưa đọc, task vẫn chưa hoàn tất. Giữ ứng dụng1.69/catalog1.65/code1e6ab7c, N1–N13/G2/lịch sử/quyền/hạn/QA3070/34bài/Tậtchưa publish/Livefalse; không test/build/runtime.
+
+Phiên nối khoảng26phút (15:27–15:53 ICT23/10/2026), checkpoint do giới hạn ngữ cảnh. Kho riêng có nhật ký trang/ảnh, lỗi, điều kiện/ngoại lệ/phụ thuộc và receipt; Git chỉ chứa tài liệu đầu mối.
 
 Cập nhật23/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
