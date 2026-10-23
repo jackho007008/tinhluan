@@ -32,7 +32,7 @@ import {lifeContentRules,lifeExpansionRules,refineLifeRules} from "./tanbien-lif
 import { tanBienRules } from "./tanbien";
 import { derivations } from "./derived";
 import { ruleSchema, type Rule } from "./schema";
-export const RULESET_VERSION = "interpretation-1.63.0";
+export const RULESET_VERSION = "interpretation-1.64.0";
 const base = {
   version: "1.0.0",
   origin: "catalog" as const,

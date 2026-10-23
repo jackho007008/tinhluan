@@ -19,6 +19,14 @@ export const COORDINATION_DECISIONS = [
  {id:'D',palace:'Quan Lộc',left:['tanbien.career-occupation-sat-ty-ngo','tanbien.career-occupation-sat-dan-than'],right:['tanbien.career-kinh-luc'],title:'Những mô tả công việc chưa được hợp nhất',text:'Nhánh Thất Sát có mô tả về công danh theo vị trí, còn Kình–Lực nói đến trắc trở và sự khó bền lâu. Giữ cả giới hạn trong từng đoạn; chưa có quy tắc xác định kết quả chung, mức độ hoặc giai đoạn ứng với từng ý.',source:'Tân Biên PDF/trang in 162–163 §8.13;165–166 §8.32. Thiên Lương PDF60–62 về Mệnh/hạn không được chuyển thành phép điều chỉnh Quan Lộc.'},
 ] as const;
 const has=(p:Paragraph,ids:readonly string[])=>p.claim.rules.some(r=>ids.includes(r.id));
+export function phucDispersalCopy(ids:string[]){
+ const gradual=ids.some(id=>id==='tanbien.phuc-sun-low-local-dispersal'||id==='tanbien.phuc-luong-ty-hoi-local-dispersal');
+ if(ids.includes('tanbien.phuc-loc-ton')){
+  const named=ids.includes('tanbien.phuc-sun-low-local-dispersal')?'Thái Dương':ids.includes('tanbien.phuc-luong-ty-hoi-local-dispersal')?'Thiên Lương':'các tổ hợp đã khớp';
+  return 'Lộc Tồn tại Phúc Đức được liên hệ với hưởng phúc; họ hàng hiếm người, khá giả nhưng dễ tranh chấp. Lời về sự phân tán trong họ được giữ chung với '+named+(gradual?', trong đó '+named+' mô tả chiều hướng ngày càng phân tán.':'.')+(ids.includes('tanbien.phuc-hoa-ky')?' Hóa Kỵ cũng có lời về tranh chấp trong họ.':'')+' Các căn cứ không xác nhận hoàn cảnh thực tế hoặc làm tăng mức độ của nhận định.';
+ }
+ return 'Các tổ hợp đã khớp tại Phúc Đức cùng có lời về họ hàng '+(gradual?'ngày càng phân tán.':'phân tán.')+(ids.includes('tanbien.phuc-hoa-ky')?' Hóa Kỵ còn có lời về tranh chấp trong họ.':'')+' Các căn cứ được giữ chung, không cộng mức độ hoặc kết luận hoàn cảnh thực tế của gia đình.';
+}
 export function coordinate(palace:string, ps:Paragraph[]) {
  const used=new Set<string>();
  const groups:{text:string;members:Paragraph[];editorial:string|null}[]=[];
@@ -36,9 +44,17 @@ export function coordinate(palace:string, ps:Paragraph[]) {
   }
  }
  if(palace==='Tử Nữ')merge(['tanbien.children-tu-pha','tanbien.children-tu'],'Theo Tân Biên, hai nhánh Tử Vi–Phá Quân đồng cung và sao Tử thuộc vòng Tràng Sinh tại Tử Nữ cùng mô tả sự xung khắc giữa cha mẹ và con cái khi con lớn lên.','Gộp cùng đối tượng, khía cạnh và thời gian; hai căn cứ không làm tăng độ chắc chắn.');
+ if(palace==='Phúc Đức'){
+  const pure=['tanbien.phuc-base-tu-pha-dispersal','tanbien.phuc-base-tu-tham-dispersal','tanbien.phuc-fire-tang-relation','tanbien.phuc-sun-low-local-dispersal','tanbien.phuc-luong-ty-hoi-local-dispersal','tanbien.phuc-hoa-ky','tanbien.phuc-loc-ton'];
+  const present=pure.filter(id=>ps.some(p=>has(p,[id])));
+  if(present.length>1&&present.some(id=>id.includes('-local-dispersal')||id==='tanbien.phuc-fire-tang-relation')){
+   merge(present,phucDispersalCopy(present),'Gộp đúng vế họ hàng phân tán đã thực sự xuất; giữ mọi claim, điều kiện và căn cứ. Giữ ngày càng nếu nguồn của nhánh khớp có vế này; giữ riêng tranh chấp của Hóa Kỵ, không cộng mức độ.');
+  }else{
  if(palace==='Phúc Đức')for(const id of ['tanbien.phuc-base-tu-pha-dispersal','tanbien.phuc-base-tu-tham-dispersal']){
   const ky=ps.find(p=>has(p,['tanbien.phuc-hoa-ky']));
   if(ky)merge([id,'tanbien.phuc-hoa-ky'],ky.display.text,'Gộp riêng ý họ hàng ly tán, giữ lời tranh chấp của Hóa Kỵ và đầy đủ điều kiện/căn cứ của cả hai cấu trúc. Không cộng mức độ hoặc mở các vế khác của Tử Vi.');
+ }
+  }
  }
  // Hóa Kỵ also concerns parents with each other: keep this alternative explicit.
  if(palace==='Phụ Mẫu')merge(['tanbien.parents-co-cu','tanbien.parents-ky'],'Theo Tân Biên, nhánh Thiên Cơ–Cự Môn nói về tình trạng trong nhà thiếu hòa khí. Hóa Kỵ có thêm cách mô tả bất hòa giữa cha mẹ với nhau, hoặc không hợp tính giữa cha mẹ và con. Lời về không khí gia đình và hai đối tượng quan hệ của Hóa Kỵ không được đồng nhất.','Gom cùng đoạn để tránh nhắc hai lần; giữ riêng đối tượng và phép “hoặc” của Hóa Kỵ. Không tạo kết luận chung mới.');

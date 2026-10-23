@@ -5615,12 +5615,11 @@
   "tanbien.phuc-fire-tang-relation": {
     "text": "Hỏa Tinh hoặc Linh Tinh đồng cung với Tang Môn tại Phúc Đức có lời riêng về sự phân tán của họ hàng. Đây là mô tả truyền thống về Phúc Đức và dòng họ, không xác nhận hoàn cảnh của người thân hoặc kết luận toàn cung.",
     "sourceTemplate": "Hỏa Tinh hoặc Linh Tinh đồng cung với Tang Môn tại Phúc Đức có lời riêng về sự phân tán của họ hàng. Đây là mô tả truyền thống về Phúc Đức và dòng họ, không xác nhận hoàn cảnh của người thân hoặc kết luận toàn cung.",
-    "sourceVersion": "0.1.0",
-    "catalogHash": "783c38dd230171e3ddb4869d2ae401ebf6fd9fd455e11c9e59c0af9a8706ede8",
+    "sourceVersion": "0.1.1",
+    "catalogHash": "3e041b7be76a2aebaec82b326ee22048d302813c815a496abed65910b706a2a4",
     "strategy": "explicit-rule-prose",
     "movedToEvidence": [
-      "Không xác nhận tài sản, quan hệ người thân hoặc sự kiện thực tế; không suy bệnh, sinh tử, phẩm hạnh.",
-      "Các lời khác cùng cung được giữ riêng; chưa có phép tổng hợp hoặc chọn bên thắng."
+      "Câu nguồn riêng và đối chiếu Tuần/Triệt140§6.1.36; chỉ giữ phương diện phân tán, không khôi phục toàn lời nền."
     ]
   },
   "tanbien.phuc-ky-kinh-da-relation": {
@@ -6134,6 +6133,26 @@
     "strategy": "explicit-rule-prose",
     "movedToEvidence": [
       "Điều kiện ánh sáng, quan hệ chiếu, án ngữ tại sao/cung nhận và cổng dự án nằm trong căn cứ."
+    ]
+  },
+  "tanbien.phuc-sun-low-local-dispersal": {
+    "text": "Thái Dương tọa Phúc Đức tại Thân/Dậu/Tuất/Hợi/Tý có lời riêng về họ hàng ngày càng phân tán.",
+    "sourceTemplate": "Thái Dương tọa Phúc Đức tại Thân/Dậu/Tuất/Hợi/Tý có lời riêng về họ hàng ngày càng phân tán.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "c1ac81568203f5fcdaaa2692ee6d63a76d31e2af52d8815ff7432c9a39a944b2",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Câu nguồn riêng và đối chiếu Tuần/Triệt140§6.1.36; chỉ giữ phương diện phân tán, không khôi phục toàn lời nền."
+    ]
+  },
+  "tanbien.phuc-luong-ty-hoi-local-dispersal": {
+    "text": "Thiên Lương đơn thủ Phúc Đức tại Tỵ/Hợi có lời riêng về họ hàng ngày càng phân tán.",
+    "sourceTemplate": "Thiên Lương đơn thủ Phúc Đức tại Tỵ/Hợi có lời riêng về họ hàng ngày càng phân tán.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "e925a511648c694ba95899d8d26fec4735313aa572da03312931b7ac52dae891",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Câu nguồn riêng và đối chiếu Tuần/Triệt140§6.1.36; chỉ giữ phương diện phân tán, không khôi phục toàn lời nền."
     ]
   }
 }
