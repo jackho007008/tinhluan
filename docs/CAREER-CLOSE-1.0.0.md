@@ -43,3 +43,7 @@ Bộ192: Quan28→24 trống,4 mới có nhận định/1 cung đã có được
 [Lượt rà12cung](V1-DELIVERY-PLAN.md#coverage-repair-166-20261022) chốtNgọ vàThìn ởTB159§8.5: bất nhấtTý không làmNgọ bất nhất; “cũng như trên” củaThìn trỏ dòng ngay trước, giữ cảghen ghét/bóbuộc côngviệc. Không mởTý, không đổi thànhchi khác hoặc đặt tuổi. ThamTý/Ngọ161§8.9 giữ chứcvịnhỏ/thănggiáng, loại nhãnphẩmhạnh đi sau. Ba nhánh dùng`careerClosingFacts`,3Quan mới.
 
 QuanVCD166–167§8.45 có câu mức hiển đạt riêng khi loại được cảhai ngoại lệ: khôngTT trực tiếp vàNhật–Nguyệt chắc chắn khôngcùngsáng tại chi thật. `careerVcdScaleFacts` dùng chung kiểm vớiTài, kết quả riêng đúngQuan, không giảiTTQuan từcodeTài.7khớp/5mới/2bổsung. Quan24→16thiếu; các diễn tiến ngoại lệTT/cùngsáng vàCơ–Âm/SátThìnTuất còn giữ. Không coi24nhánh có từtrước là đặc tả hếtmọicâu.
+
+## VCD Tài/Quan1.67 —23/10/2026
+
+[Lô25 trong backlog duy nhất](V1-DELIVERY-PLAN.md#vcd-finance-career-167-20261023). Quan33/133ít nhất một sao khôngchiếu→mức hiển đạt166–167;26/68/75đãcólờitổchức/họchỏi được bổsung mứcchức vị, khôngchọnthắng.6đủNNđồngPhuSửuđắc/cảhaiTTtạisao/xungQuanMùi/không nhómgiảmsáng chưa phối→côngdanhrựcrỡ/uyquyềnhiểnhách167.3mới/3bổsung,Quan16→13thiếu,VCD10→7. BothTTtạisao làtậpcon dựán,khôngnguồnbắtbuộc.7VCDcòn tăng/giảmánh sáng cầnphốiriêng, khôngđòitoànQuan.

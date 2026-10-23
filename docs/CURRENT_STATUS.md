@@ -1,10 +1,13 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-Cập nhật22/10/2026: app **1.66.0/catalog1.62.0**, code **c6f9c5c**, nối4ae65d6/ND08. Beta/Live tắt; mục tiêu trả phí đầy đủ chủ đề12cung chưa đạt. Backlog duy nhất tại [V1-DELIVERY-PLAN](V1-DELIVERY-PLAN.md).
+Cập nhật23/10/2026: app **1.67.0/catalog1.63.0**, code **11b1a92**, nối cdecc98/1.66. Beta/Live tắt; mục tiêu trả phí đầy đủ chủ đề12cung chưa đạt. Backlog duy nhất tại [V1-DELIVERY-PLAN](V1-DELIVERY-PLAN.md).
 
 Đọc tiếp: [hợp đồng sản phẩm](BUSINESS_RULES.md), [sổ quyết định](DECISIONS.md), [đầu mối bàn giao](HANDOFF.md).
 
-**Lô rà12cung hiện hành đã tích hợpQA3062:** [bảng trước/sau và nguyên nhân](V1-DELIVERY-PLAN.md#coverage-repair-166-20261022), [so192](../.local/coverage-repair-20261022/impact192.json), [bàn giao/căn cứ](../.local/coverage-repair-20261022/source-spec.md). Baseline4ae65d6 sạch tracked, dựng192khớp sâu trước sửa.14nhánh chung:35lượt cung trống trong33mẫu có nhận định đầu tiên/10lượt cung bổ sung/43báo cáo đổi văn;28lượt chốngtrùng. A27/B8/C0/D293/E266 trên594lượt thiếu banđầu/397cấu trúc, không gọiE là sách thiếu nội dung. Phụ27→19, Phúc36→29, Quan24→16, Di10→7, Tài20→15, Huynh44→40; các cung khác giữ. Tật192vẫn chỉdữkiện; không đánh dấu cung nào hoàn chỉnh bằng sốcâu. NhánhLươngPhúcTý/Ngọ chỉfixture0/192.
+**VCD Tài/Quan1.67 đã tích hợpQA3062:** [bảng25/căn cứ/19điểmchặn/toànvăn](V1-DELIVERY-PLAN.md#vcd-finance-career-167-20261023).15Tài/10Quan: **3+3mới/0bổsung trong25/19chặn**; commonrule còn3Quan bổsung,9báo cáo đổi. Tài15→12thiếu;Quan16→13 (VCD10→7); cungkhác giữ.4nhánh TB riêng, khôngsửa hợpchiến/ghéptácgiả/mượn hoặcđòi toàncung. Khôngcungnào hoànchỉnh.
+QA chính .local/vcd-finance-career-20261023/qa, code11b1a92; [hash/đích](../.local/vcd-finance-career-20261023/serving-code.json), [mainform–lưu–mở/G2](../.local/vcd-finance-career-20261023/main-smoke.json).72ca/192/typecheck/build,2engineUI/mobile,1PDF8trang18đoạnfrozen đủ; cả4nhánh cóenginewitness.244tệpcũ nguyênbyte,2trialfile đãhếthạn đượcretentioncũdọn,backupkhớphash; [bảo toàn](../.local/vcd-finance-career-20261023/preservation.json), [quyền/34bài](../.local/vcd-finance-career-20261023/db-after.json). G2/hạn/history/engine/QA3070/Tật/Livefalsegiữ.19mắtxích đãghi, dừngsaugói khôngtựnghiêncứu/chuyểnnhóm. Thời gian toàn phiên: khoảng 35 phút, từ 10:08 đến 10:43 ngày23/10/2026 (ICT; gồm xác minh, nguồn, code, kiểm, tích hợp QA và tài liệu).
+
+**Mốc1.66 trước đây:** [bảng trước/sau và nguyên nhân](V1-DELIVERY-PLAN.md#coverage-repair-166-20261022), [so192](../.local/coverage-repair-20261022/impact192.json), [bàn giao/căn cứ](../.local/coverage-repair-20261022/source-spec.md). Baseline4ae65d6 sạch tracked, dựng192khớp sâu trước sửa.14nhánh chung:35lượt cung trống trong33mẫu có nhận định đầu tiên/10lượt cung bổ sung/43báo cáo đổi văn;28lượt chốngtrùng. A27/B8/C0/D293/E266 trên594lượt thiếu banđầu/397cấu trúc, không gọiE là sách thiếu nội dung. Phụ27→19, Phúc36→29, Quan24→16, Di10→7, Tài20→15, Huynh44→40; các cung khác giữ. Tật192vẫn chỉdữkiện; không đánh dấu cung nào hoàn chỉnh bằng sốcâu. NhánhLươngPhúcTý/Ngọ chỉfixture0/192.
 
 QA chính `.local/coverage-repair-20261022/qa`, [codeidentity](../.local/coverage-repair-20261022/serving-code.json), [formtạo–lưu–mở cuối trênmain](../.local/coverage-repair-20261022/main-smoke.json).1.236ca nội dung+12G2/PDFmock DBriêng/typecheck/build;2engineUI/fullTestlocal/mobile360/390;1PDF9trang17đoạn, finalsource táidựng nguyênparagraph/căncứ của caPDF. Khôngtoàngate/providerngoài. Lịch sử/quyền/34bài/QA3070/Livefalse/engine giữ, khôngmockđơn ởmain. [Bảo toàn kho](../.local/coverage-repair-20261022/preservation.json), [quyền/bài](../.local/coverage-repair-20261022/db-after.json).
 
@@ -26,8 +29,8 @@ Rà Tật nối b6ca831: **chưa có nhóm nhận định cá nhân đủ đặc
 
 ## 1. Bản nào đang phục vụ khách?
 
-- Trình bày **1.65.0**, catalog **interpretation-1.61.0**. Đã có trong luồng khách tạo mới, không chỉ bản nghiệm thu nội bộ.
-- QA chính: `http://127.0.0.1:3062`; checkout phục vụ `/Volumes/DATA/TINHLUAN/.local/nd08-phuc-20261022/qa`.
+- Trình bày **1.67.0**, catalog **interpretation-1.63.0**. Đã có trong luồng khách tạo mới, không chỉ bản nghiệm thu nội bộ.
+- QA chính: `http://127.0.0.1:3062`; checkout phục vụ `/Volumes/DATA/TINHLUAN/.local/vcd-finance-career-20261023/qa`.
 - URL tunnel tại lần nghiệm thu gần nhất: https://61ac-171-246-109-226.ngrok-free.app/lap-la-so . Tunnel có thể đổi; không coi là tên miền triển khai ổn định.
 - Nguồn làm việc: `/Volumes/DATA/TINHLUAN`. Checkout trước để đối chiếu/quay lại: `.local/context-review-20261022/qa-final` (1.63.1/1.59.0). QA3070 giữ riêng, không hợp dữ liệu thử của nó vào kho chính.
 - Policy bản mới: `menh-free-1.0.0`; continuous report: `continuous-report-1.6.2`. P1/P2/M05/M07 và các phép ND01/ND04 đã khép tiếp tục dùng chung pipeline; checkout trước ND08 là `.local/parent-property-void-20261022/qa-final-v2` (1.64.1/1.60).

@@ -75,3 +75,7 @@ Lô hữu hạn nối baseline `main@80d9232` sạch; chỉ một nhánh `tanbie
 ## 1.66 — TàiVCD, câu giới hạn quy mô,22/10/2026
 
 [Lượt rà12cung](V1-DELIVERY-PLAN.md#coverage-repair-166-20261022) thêm`financeVcdScaleFacts`: TB197§12.56 cócâu “Dù có nhiều…cũng không thể giàu to lớn…ngoại trừ hai trường hợp”. “Dù…cũng” không đòi đếm saotốt hoặc chờgiải phép mượn; phải loại cảhai ngoại lệTTvàNhật–Nguyệt cùngsáng. Tập con chỉkhôngTT trực tiếp/khôngcùngsáng theoTB35–36 tại chi thật; cảhai sángở bất kỳquan hệ nào vẫnngoài phạmvi đểkhông tự sửa “hợp chiến”. Không suy nghèo/mấtcủa, không gộpquymô vớitạotiền/giữtiền/thừahưởng/địa vị.7khớp,5mới/2bổsung,20→15thiếu; không đổi nhánhTT diễn tiến cũ. Quan166–167 có câu riêng với cùng kiểu kiểm, không lấy câuTài luậnQuan.
+
+## VCD Tài/Quan1.67 —23/10/2026
+
+[Lô25 trong backlog duy nhất](V1-DELIVERY-PLAN.md#vcd-finance-career-167-20261023). Tài15→12thiếu:92/164Nguyệtmiếu/vượng cóTTtại sao, không tăngsáng chưa phối trong tập con, khôngTTTài→giới hạn quy mô.162TuầnTàiNgọ/NguyệtTýTriệt→đủ diễn tiến kiếmtiền.3mới/0bổsung. Hợpchiến không sửa;34/134có tăngsáng+TT,158xungđãrõ nhưngRiêu/phốiánh sáng cònchặn;9Tàikhác cònquan hệ/điều kiệnNNđồngMệnh. Cổng đúngphươngdiện, khôngmọisao/toàncung.

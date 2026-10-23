@@ -79,3 +79,7 @@ Không còn chương TL186/TL298 đang dở. Phần còn thiếu là hiệu đí
 ## Rà vếnguồn phục vụ1.66 —22/10/2026
 
 [Đặc tả14nhánh và giới hạn](../.local/coverage-repair-20261022/source-spec.md), [backlog duy nhất](V1-DELIVERY-PLAN.md#coverage-repair-166-20261022). Tái dùngTB và12hồsơNPL củaTH/HS (01/03/07/22/25/27/28/39/44/46/47/52), không đọc lại toàncuốn/khôngOCR/không nhậpKiếnGiảimới. Xem lại10ảnhTBcó sẵn129/133/135/159/161/166/167/177/197/220 để xác nhận ranhcâu/dẫnchiếu/ngoạilệ; không tăng sốtrangảnh khácnhau hoặc ghi đãhiệuđính toànkho. TB136 dùng chữ/audit cũ. Tất cả14nhánh mới riêngTânBiên; không dùng khái niệmNPL/BửuĐình thayđịnhnghĩa nguồn. Các trạng thái đọcHàmSố/bảyphầnBửuĐình vàKiếnGiải không đổi.
+
+## VCD Tài/Quan1.67 —23/10/2026
+
+[Lô25 trong backlog duy nhất](V1-DELIVERY-PLAN.md#vcd-finance-career-167-20261023). Tái dùng khoTB/TH/HS vàauditvịtrí/TT, khôngphốiNPLsửaTB; xemlạiđúng5ảnhTB35/36/124/167/197,33/166/18–19/46/71–72/230dùngchữ/audit.124chỉđốichiếu toántửsáng/mờ,khôngpublishsinh tử.197hợpchiến/167hợpchiếugiữkhácnhau. KhôngnhậpKiếnGiải/sáchmới/OCR hoặcghiđãhiệuđínhmọiảnh; khôngtăngkhốngsốtrangđọcmới.

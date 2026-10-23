@@ -162,6 +162,97 @@ Tất cả số trang sau là **trang PDF** của đúng tệp đã định danh
 
 <a id="content-package-selection-20261022"></a>
 
+<a id="vcd-finance-career-167-20261023"></a>
+### VCD Tài/Quan1.67 —23/10/2026
+
+**Khép gói25lượt, không hoàn chỉnh cung.** Baseline main@cdecc98, codec6f9c5c/app1.66/catalog1.62; tracked/index sạch, giữ archive Bửu Đình. QA3062 đúng PID/cwd và15hash1.66 nguyên;192 dựng lại khớp sâu baseline. Code mới **11b1a92**, app **1.67.0/catalog1.63.0**, evidence1.17/derivation1.19, continuous1.6.2. Đã vào pipeline khách QA3062 tại .local/vcd-finance-career-20261023/qa; [commit/hash/đích](../.local/vcd-finance-career-20261023/serving-code.json), [tạo–lưu–mở/G2 cuối trênQA chính](../.local/vcd-finance-career-20261023/main-smoke.json).
+
+**Đúng25lượt:** Tài15: **3mới/0bổsung/12chặn**; Quan10: **3mới/0bổsung/7chặn**. Tổng **6mới/0bổsung/19chặn**, sáu mẫu khác nhau6Quan/33Quan/92Tài/133Quan/162Tài/164Tài. Cùng predicate còn bổ sung3Quan vốn có lời (26ThiênMã,68LộcTồn,75Hổ–Tấu); không đổi tổ chức/học hỏi thành chức vị. Toàn192: **9báo cáo đổi văn/6cung có nhận định đầu tiên/3bổsung**. Tài trống15→12, Quan16→13 (còn7VCD+6cấu trúc khác); các cung khác giữ. Tổng2304lượt: chỉdữkiện557→551; chỉchúgiải2→2; có thànhphần1745→1751. Không tính Điền chung mụcTài sản thànhTài hoặc gọi cung hoàn chỉnh.
+
+**Bảng cấu trúc thật25lượt:** trạng thái dưới đây là ô vị trí gốc35–36, chưa tự coi đó là ánh sáng sau mọi điều chỉnh. “Khác” là không tam/xung; TTchiếu chỉ ghi hình học, không truyền tác dụng. [JSON đầy đủ sao, điều chỉnh, cổng/trace và kết quả](../.local/vcd-finance-career-20261023/inventory25.json).
+
+| Mẫu | Cung nhận | Nhật: chi / trạng thái / quan hệ; TT tại sao | Nguyệt: chi / trạng thái / quan hệ; TT tại sao | TT: cặp chi và quan hệ tới cung nhận | Cổng1.66 đang giữ | Kết quả |
+|---:|---|---|---|---|---|---|
+|2|Quan Lộc Thân|Dần/Vượng/xung;Triệt Lộ|Tý/Vượng/tam hợp;Tuần Không|Tuần Không:Tý(tam),Sửu(khác);Triệt Lộ:Dần(xung),Mão(khác)|tanbien.career-vcd-scale-limit|còn chặn|
+|3|Tài Bạch Dậu|Sửu/Đắc/tam hợp;Tuần Không+Triệt Lộ|Sửu/Đắc/tam hợp;Tuần Không+Triệt Lộ|Tuần Không:Tý(khác),Sửu(tam);Triệt Lộ:Tý(khác),Sửu(tam)|tanbien.finance-vcd-scale-limit|còn chặn|
+|6|Quan Lộc Mùi|Sửu/Đắc/xung;Tuần Không+Triệt Lộ|Sửu/Đắc/xung;Tuần Không+Triệt Lộ|Tuần Không:Tý(khác),Sửu(xung);Triệt Lộ:Tý(khác),Sửu(xung)|tanbien.career-vcd-scale-limit|mới có nhận định (tanbien.vcd-light-career-bright)|
+|33|Quan Lộc Thân|Thìn/Vượng/tam hợp|Tuất/Miếu/khác|Tuần Không:Tý(tam),Sửu(khác);Triệt Lộ:Tý(tam),Sửu(khác)|tanbien.career-vcd-scale-limit|mới có nhận định (tanbien.vcd-light-career-scale)|
+|34|Tài Bạch Thân|Dần/Vượng/xung|Tý/Vượng/tam hợp;Tuần Không+Triệt Lộ|Tuần Không:Tý(tam),Sửu(khác);Triệt Lộ:Tý(tam),Sửu(khác)|tanbien.finance-vcd-scale-limit|còn chặn|
+|41|Tài Bạch Mùi|Mão/Vượng/tam hợp|Hợi/Miếu/tam hợp|Tuần Không:Tý(khác),Sửu(xung);Triệt Lộ:Tý(khác),Sửu(xung)|tanbien.finance-vcd-scale-limit|còn chặn|
+|51|Tài Bạch Dậu|Sửu/Đắc/tam hợp;Triệt Lộ|Sửu/Đắc/tam hợp;Triệt Lộ|Tuần Không:Tuất(khác),Hợi(khác);Triệt Lộ:Tý(khác),Sửu(tam)|tanbien.finance-vcd-scale-limit|còn chặn|
+|63|Tài Bạch Mão|Mùi/Đắc/tam hợp|Mùi/Đắc/tam hợp|Tuần Không:Tuất(khác),Hợi(tam);Triệt Lộ:Tý(khác),Sửu(khác)|tanbien.finance-vcd-scale-limit|còn chặn|
+|64|Quan Lộc Mùi|Sửu/Đắc/xung;Triệt Lộ|Sửu/Đắc/xung;Triệt Lộ|Tuần Không:Tuất(khác),Hợi(tam);Triệt Lộ:Tý(khác),Sửu(xung)|tanbien.career-vcd-scale-limit|còn chặn|
+|67|Quan Lộc Dậu|Sửu/Đắc/tam hợp;Triệt Lộ|Sửu/Đắc/tam hợp;Triệt Lộ|Tuần Không:Tuất(khác),Hợi(khác);Triệt Lộ:Tý(khác),Sửu(tam)|tanbien.career-vcd-scale-limit|còn chặn|
+|72|Tài Bạch Dậu|Sửu/Đắc/tam hợp;Triệt Lộ|Sửu/Đắc/tam hợp;Triệt Lộ|Tuần Không:Tuất(khác),Hợi(khác);Triệt Lộ:Tý(khác),Sửu(tam)|tanbien.finance-vcd-scale-limit|còn chặn|
+|74|Quan Lộc Dậu|Sửu/Đắc/tam hợp;Triệt Lộ|Sửu/Đắc/tam hợp;Triệt Lộ|Tuần Không:Tuất(khác),Hợi(khác);Triệt Lộ:Tý(khác),Sửu(tam)|tanbien.career-vcd-scale-limit|còn chặn|
+|77|Quan Lộc Dậu|Sửu/Đắc/tam hợp;Triệt Lộ|Sửu/Đắc/tam hợp;Triệt Lộ|Tuần Không:Tuất(khác),Hợi(khác);Triệt Lộ:Tý(khác),Sửu(tam)|tanbien.career-vcd-scale-limit|còn chặn|
+|87|Tài Bạch Mão|Ngọ/Miếu/khác|Thân/Vượng/khác|Tuần Không:Tuất(khác),Hợi(tam);Triệt Lộ:Tý(khác),Sửu(khác)|tanbien.finance-vcd-scale-limit|còn chặn|
+|92|Tài Bạch Dậu|Mão/Vượng/xung|Hợi/Miếu/khác;Tuần Không|Tuần Không:Tuất(khác),Hợi(khác);Triệt Lộ:Tý(khác),Sửu(tam)|tanbien.finance-vcd-scale-limit|mới có nhận định (tanbien.vcd-light-finance-scale)|
+|96|Tài Bạch Dậu|Mão/Vượng/xung|Hợi/Miếu/khác|Tuần Không:Thân(khác),Dậu(trực tiếp);Triệt Lộ:Tý(khác),Sửu(tam)|tanbien.finance-vcd-direct-void|còn chặn|
+|133|Quan Lộc Mùi|Dần/Vượng/khác|Tý/Vượng/khác;Triệt Lộ|Tuần Không:Thân(khác),Dậu(khác);Triệt Lộ:Tý(khác),Sửu(xung)|tanbien.career-vcd-scale-limit|mới có nhận định (tanbien.vcd-light-career-scale)|
+|134|Tài Bạch Mùi|Dần/Vượng/khác|Tý/Vượng/khác;Triệt Lộ|Tuần Không:Thân(khác),Dậu(khác);Triệt Lộ:Tý(khác),Sửu(xung)|tanbien.finance-vcd-scale-limit|còn chặn|
+|147|Tài Bạch Dậu|Sửu/Đắc/tam hợp;Triệt Lộ|Sửu/Đắc/tam hợp;Triệt Lộ|Tuần Không:Ngọ(khác),Mùi(khác);Triệt Lộ:Tý(khác),Sửu(tam)|tanbien.finance-vcd-scale-limit|còn chặn|
+|154|Tài Bạch Thân|Thìn/Vượng/tam hợp|Tuất/Miếu/khác|Tuần Không:Ngọ(khác),Mùi(khác);Triệt Lộ:Tý(tam),Sửu(khác)|tanbien.finance-vcd-scale-limit|còn chặn|
+|158|Tài Bạch Mùi|Sửu/Đắc/xung;Triệt Lộ|Sửu/Đắc/xung;Triệt Lộ|Tuần Không:Ngọ(khác),Mùi(trực tiếp);Triệt Lộ:Tý(khác),Sửu(xung)|tanbien.finance-vcd-direct-void|còn chặn|
+|161|Quan Lộc Mão|Mùi/Đắc/tam hợp;Tuần Không|Mùi/Đắc/tam hợp;Tuần Không|Tuần Không:Ngọ(khác),Mùi(tam);Triệt Lộ:Tý(khác),Sửu(khác)|tanbien.career-vcd-scale-limit|còn chặn|
+|162|Tài Bạch Ngọ|Dần/Vượng/tam hợp|Tý/Vượng/xung;Triệt Lộ|Tuần Không:Ngọ(trực tiếp),Mùi(khác);Triệt Lộ:Tý(xung),Sửu(khác)|tanbien.finance-vcd-direct-void|mới có nhận định (tanbien.vcd-light-finance-direct)|
+|164|Tài Bạch Tuất|Dần/Vượng/tam hợp|Tý/Vượng/khác;Triệt Lộ|Tuần Không:Ngọ(tam),Mùi(khác);Triệt Lộ:Tý(khác),Sửu(khác)|tanbien.finance-vcd-scale-limit|mới có nhận định (tanbien.vcd-light-finance-scale)|
+|189|Quan Lộc Dần|Ngọ/Miếu/tam hợp;Tuần Không|Thân/Vượng/xung|Tuần Không:Ngọ(tam),Mùi(khác);Triệt Lộ:Tý(khác),Sửu(khác)|tanbien.career-vcd-scale-limit|còn chặn|
+
+**Nguồn rõ / cách áp đã chốt / phần chưa rõ:**
+- TB166–167§8.45 ghi cả Nhật và Nguyệt cùng sáng, xung hoặc **hợp chiếu** Quan. TB18–19/33 cho tam/xung; ví dụ71/230 có hai sao cùng phía đối diện hoặc hai cungtam chiếu. Một sao khôngchiếu đủ loại ngoại lệ Quan, không phải giải hết ánh sáng hay mượn chính tinh trước.
+- TB197§12.56 ảnh thật ghi **hợp chiến**. Không sửa bằng Quan/Điền/NPL; không dùng một sao khôngchiếu để loại ngoại lệ Tài. Tài chỉ được loại ngoại lệ khi chứng minh điều kiện cần “cùng sáng” sai.
+- TB35/36: miếu/vượng gặpTT tại chi sao thànhmờ; không đảo sangđắc. Âmđắc cầnTT tăng sáng. TB124§5.1.1–2 viết rõ “Tuần **hay** Triệt” khi phân sáng/mờ từng sao tại đúng nhómchi trên toàn12cung: đối chiếu toán tử của35–36, **không chuyển lời sinh tử/phép tổng hợpPhụ sang Tài/Quan**. TàiTT trực tiếp đã chốtOR1.60; trong25có3TàiTT trực tiếp96/158/162, **khôngQuanTT trực tiếp**, không mở ngoại lệQuanTT từcodeTài.
+- Cổng1.66 giữ mọi vị trí hai ô cùngsáng là **cổng tập con dự án**, không phải nguồn cấm xuất lời khi sao sáng. Lô này thêm predicate fallback chung qua deriveFacts→executeRules→continuous→customer; không thay riêng mẫu hoặc giảiquyết toàncung mới giữ thànhphần.
+- Tái dùng khoTB/TH/HS và hồ sơNPL vị trí/TT/phươngdiện; **không có công thức phối tác giả mới**. Xem lại đúng5ảnhTB35/36/124/167/197;33/166/18–19/46/71–72/230 dùng chữ/audit. Không đọc lại sách/nhậpKiếnGiải/OCR hoặc nhận hiệu đính hết ảnh.
+
+**Bốn nhánh chung** trong lib/interpretation-rules/vcd-light-exceptions.ts, các symbol vcdLightAssessment/vcdLightFacts/vcdLightRules:
+1. **career-scale**: khôngTT tạiQuan, một sao khôngchiếu hoặc đủ chứng minh bịTT làm mờ → mức hiển đạt/chức vị166–167. Khớp192:5 (33/133mới;26/68/75bổsung). Không nói sao khôngsáng khi chỉ saiquan hệ.
+2. **finance-scale**: khôngTT tạiTài, một sao miếu/vượng cóTT trực tiếptạisao làm mờ, không tăngsáng chưa phối trong tập con → giới hạn quy mô197. Khớp2 (92/164mới):92NguyệtHợi–Tuần,164NguyệtTý–Triệt. Không phải giải mọi yếu tố củaNhật để biết cặp không cùngsáng; không suy nghèo/mấtcủa/thu nhập ròng.
+3. **finance-direct**: cóTT trực tiếpTài, loại ngoại lệ cùngsáng bằng cách trên → nguyên diễn tiến buổiđầukhó/vềsaudễ/càngvềgiàcàngsungtúc. Khớp1 (162mới):Tuần tạiTàiNgọ khácTriệt tạiNguyệtTý; không truyềnTT qua chiếu.
+4. **career-bright**: chỉNNđồngSửu/Mùi, đềuđắc tại chi thật, cảhaiTT tạiNN, mỗi sao chiếuQuan, khôngTT tạiQuan và không nhómgiảmsáng chưa giải trong vùngkiểm → riêng côngdanhrựcrỡ/uyquyềnhiểnhách167. Khớp1 (6mới):QuanMùi, NN tạiPhuSửu, cảhaiTTtạiSửu. **CảhaiTT tạiNN là cổng bảo thủ dự án, không phải sách bắtbuộc.** Không mởNN tạiMệnh/Thân có điều kiện giảmquang71–72, không áp miếu/vượngTTthànhmờ lênđắc; không xuất “vềsau tất…” khi chưa áp “nên chuyên…”, câu côngdanh trước không phụthuộc lời khuyên sau.
+
+Cổng ánhsáng chỉ xét các yếu tố nguồn nêu đúng phươngdiện, không mọi sao:35/36 ghiĐào/Hồng/Hỷ (Nhật thêmHỏa/Linh) tăng vẻ; Riêu/Đà/Kỵ/Không/Kiếp (Nguyệt thêmKình) giảm vẻ;46ThiênTài rõ **đồng cung**. Cổng dựán giữ ngoài tập con khi nhóm tăng/giảm còn phối hợp chưa giải tại tọa/tam/xung; **không khẳng định “gặp” luôn nghĩa hội hợp**, không mởThiênTài sangchiếu. Không tự chọn phía thắng hoặc đặt ngưỡng/tỷlệ. Chứng nhận phụ tinh/TứHóa chỉ cần khi khẳng định vắng điều chỉnh; Quan saiquan hệ không phải chờ. [Đặc tả nguồn/cổng](../.local/vcd-finance-career-20261023/spec.md).
+
+Chốngtrùng: ID đầy đủ là tanbien.vcd-light- cộng tên nhánh. Fallback không xuất nếu câuVCD cùngphươngdiện1.60/1.66 đã có.192không có hai claim trùng câu;0pendingeditorial/0claim thấtlạc/0unbound. Tổ chức/học hỏi và mức chức vị giữ riêng. Claim/rule/điều kiện/vănkhách cũ nguyên; chỉ metadatafactkỹthuật1.18→1.19 được comparator chuẩn hóa đúngtrườngversion củaobjectcóderivationId, không giátrị/nguồn/điều kiện.183bản chỉ thay version/diagnostic/notice không tính tăng nội dung. Engine/snapshot/receipt/G2freeIDs giữ.
+
+**Toàn khối đại diện6, trước:**
+> Quan Lộc tại Mùi: không có chính tinh tọa thủ.
+>
+> Sự nghiệp và cách làm việc.
+>
+> Những lời dưới đây nói về công việc, công danh và điều kiện đi kèm. Liên hệ với một ngành nghề trong cách đọc truyền thống không phải đề nghị chọn nghề.
+>
+> Phần này hiện chưa có luận giải.
+
+**Sau:**
+> Quan Lộc tại Mùi: không có chính tinh tọa thủ.
+>
+> Sự nghiệp và cách làm việc.
+>
+> Những lời dưới đây nói về công việc, công danh và điều kiện đi kèm. Liên hệ với một ngành nghề trong cách đọc truyền thống không phải đề nghị chọn nghề.
+>
+> Quan Lộc không có chính tinh, nhận Nhật–Nguyệt cùng sáng chiếu tới. Với cấu trúc này, công danh được mô tả là rực rỡ, uy quyền hiển hách. Đây là nhận định riêng về công danh, chưa xác định chức vụ hiện có.
+>
+> Phần này còn những cấu trúc chưa có luận giải.
+
+[Toànvăn9khối trước/sau gồmintro/dữkiện/notice vàĐiền đi kèm](../.local/vcd-finance-career-20261023/full-before-after.txt), [claim/paragraph](../.local/vcd-finance-career-20261023/before-after.json). CâuTài162mới nguyênvăn: “Tài Bạch không có chính tinh và có Tuần hoặc Triệt án ngữ trực tiếp. Việc kiếm tiền được mô tả là khó khăn lúc đầu, về sau dễ dàng hơn, càng về già càng sung túc. Các vế nói về một diễn tiến, chưa xác định bạn đang ở giai đoạn nào.”
+
+**19lượt còn chặn, đúng mắt xích:**
+- Tài3/41/51/63/72/87/96/147/154 (9): khi hai ô vị trí còn sáng, **hợp chiến197 là quan hệ nào**?87cảhai khôngtam/xung;96cóTTTài nhưng chỉNhật xung,Nguyệtkhác. Không sửa bằngQuan để xuất diễn tiến; nhómNN tạiMệnhSửu/Mùi còn giảmquang71–72, không coiĐắc là ánhsáng cuối.
+- Tài34/134 (2):NguyệtTýTT vàĐào/Hồng tọa/chiếu tăngsáng.35–36 chưa cho cách áp hai tácđộng vào điều kiện cùngsáng; không tựTTthắng hoặcĐào/Hồngthắng, không cần toànTài/phầntrăm.
+- Tài158 (1): **xung đã rõ, không chặn vì hợp chiến**. NNSửuđắc/Triệt tại sao,TuầnTàiMùi; RiêuMùi chiếuNN. Còn phạmvi “gặp” giảm vẻ35–36 và phối vớiÂmđắcTTtăngsáng; không giữ mọi sao hoặc dùng câuTT1.60 khi chưa loại ngoại lệ.
+- Quan2/189 (2):TT tạiNhật/Nguyệt miếu/vượng đồng thờiĐào/Hồng/Hỷ tọa/chiếu tăngsáng (2ĐàoNgọ/HồngTuất/HỷThìn;189ĐàoNgọ/HồngTuất). Chưa có cách phối cùngphươngdiện; không tự bảnggốc thắng để rựcrỡ hoặcTTthắng để giới hạn.
+- Quan64/67 (2):NNđắcSửu/mộtTriệt vàRiêuMùi xung hoặcDậu tamchiếu;74/77 (2):Kình/Riêu ngayNN;161 (1):Riêu ngayNNđắcMùi/mộtTuần. Cần phạmvi tácđộng và cách giữ/mất điều kiện cùngsáng khiÂmđắcTTtăngsáng. **Giảmvẻ không tựbằnghãm**; mộtTT không là cổng nguồn cấm xuất, bothTT chỉ cổng tậpcon dựán. Không đòi giải mọi sao hoặc tổnghợp toànQuan.
+
+**Kiểmcuối:**72ca/4file (vcd-light-exceptions,finance-vcd,coverage-repair,customer-editorial-catalog);24ca filemới kiểm lại sauoptionalguard, không cộngrerun thành96. Hai fixtuređầu dựng sai (cònTTtạisao/đặtchínhtinhvàocungnhận) được sửa cáchdựng, giữexpectednguồn. Typecheckđầu bắtbookState cóthểundefined, đã thêmguard; typecheck/buildcuối đạt. [Logcuối](../.local/vcd-finance-career-20261023/tests-final.log), [24ca](../.local/vcd-finance-career-20261023/tests-after-typefix.log), [192](../.local/vcd-finance-career-20261023/impact192.json), [typecheck](../.local/vcd-finance-career-20261023/typecheck-final.log), [build](../.local/vcd-finance-career-20261023/build-final.log). Fixture kỹthuật không làengine; **cả4nhánh có enginewitness192**, không nhánh chỉfixture.
+
+UIengine6và162 quaform→lưu→mở/free khôngvănkhóa/PDF403/chéophiên404/fullTestmocklocal/mobile360/390 khôngtràn. ChỉrunReportJob đúngorderDBriêng tinhluan_vcd_*, khôngworkerphụ/providerngoài. **1PDFthật6:8trang18đoạnfrozen đủ**, xemcontact/trang5;162khôngPDFthứhai. [UI6](../.local/vcd-finance-career-20261023/ui-6/ui.json), [UI162](../.local/vcd-finance-career-20261023/ui-162/ui.json), [PDF](../.local/vcd-finance-career-20261023/ui-6/pdf-check.json). QA3062saucutover tạoengine6mới, đúngversion/catalog/nhánh/G2/lưu–mở, khôngorder/mock trênmain.8file root/QA trùngSHA; mộtweb/mộtworker3062, QA3070PID94421/cwdgiữ; máy thử3093đãdừng.
+
+**Bảo toàn có ngoại lệ retention:**246tệp chụp trước,244tệp còn lại nguyênbyte/0tệp sửa;2tệp (một phiêntrial vàreadingđikèm) đãhếthạn10:11:42 ngày23/10, cơchếretentiontrial **có sẵn không đổi** dọn khi tạo phiênmới. BackupG2 của cảhai khớpSHA chụptrước; khôngrestore/giảihạn/đổi mốc so đểche. Không nói246tệp đều còn. Rowquyền/hạn/binding/link/Toànthư nguyên,34bàipublic giữ; internalhistory khôngbackfill. [Kho](../.local/vcd-finance-career-20261023/preservation.json), [expiry/hash](../.local/vcd-finance-career-20261023/retention-proof.json), [DB](../.local/vcd-finance-career-20261023/db-after.json). G2/engine/Livefalse/Tậtchưaduyệtgiữ. Khôngtoàngate/sáchmới/OCR.
+
+**Dừng sau gói:**4nhánh chung đủđặc tả đã vàoQA khách;25lượt có6mới/19chặn, không hoànchỉnh cung.19câu hỏi trên là checkpoint, **không tựmở vòngnghiêncứu hoặc gói khác**. [Biênbảnkiểm](../.local/vcd-finance-career-20261023/checks.json). Thời gian toàn phiên: khoảng 35 phút, từ 10:08 đến 10:43 ngày23/10/2026 (ICT; gồm xác minh, nguồn, code, kiểm, tích hợp QA và tài liệu).
+
 <a id="coverage-repair-166-20261022"></a>
 ### Rà nguyên nhân thiếu 12 cung và triển khai1.66 —22/10/2026
 

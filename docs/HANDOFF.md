@@ -1,8 +1,13 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-Cập nhật22/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
+Cập nhật23/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
-## Hiện hành — rà12cung1.66,22/10/2026
+## Hiện hành — VCD Tài/Quan1.67,23/10/2026
+
+**VCD Tài/Quan1.67 đã tích hợpQA3062:** [bảng25/căn cứ/19điểmchặn/toànvăn](V1-DELIVERY-PLAN.md#vcd-finance-career-167-20261023).15Tài/10Quan: **3+3mới/0bổsung trong25/19chặn**; commonrule còn3Quan bổsung,9báo cáo đổi. Tài15→12thiếu;Quan16→13 (VCD10→7); cungkhác giữ.4nhánh TB riêng, khôngsửa hợpchiến/ghéptácgiả/mượn hoặcđòi toàncung. Khôngcungnào hoànchỉnh.
+QA chính .local/vcd-finance-career-20261023/qa, code11b1a92; [hash/đích](../.local/vcd-finance-career-20261023/serving-code.json), [mainform–lưu–mở/G2](../.local/vcd-finance-career-20261023/main-smoke.json).72ca/192/typecheck/build,2engineUI/mobile,1PDF8trang18đoạnfrozen đủ; cả4nhánh cóenginewitness.244tệpcũ nguyênbyte,2trialfile đãhếthạn đượcretentioncũdọn,backupkhớphash; [bảo toàn](../.local/vcd-finance-career-20261023/preservation.json), [quyền/34bài](../.local/vcd-finance-career-20261023/db-after.json). G2/hạn/history/engine/QA3070/Tật/Livefalsegiữ.19mắtxích đãghi, dừngsaugói khôngtựnghiêncứu/chuyểnnhóm. Thời gian toàn phiên: khoảng 35 phút, từ 10:08 đến 10:43 ngày23/10/2026 (ICT; gồm xác minh, nguồn, code, kiểm, tích hợp QA và tài liệu).
+
+## Mốc trước — rà12cung1.66,22/10/2026
 
 App1.66.0/catalog1.62.0, code `c6f9c5c`, QA3062 `.local/coverage-repair-20261022/qa`. [Backlog/bảng12cung/nguyên nhân/điểm dừng](V1-DELIVERY-PLAN.md#coverage-repair-166-20261022), [CURRENT_STATUS](CURRENT_STATUS.md), [toàn văn trước/sau](../.local/coverage-repair-20261022/full-before-after.txt).14nhánh chung;35cung trống mới có thành phần/10bổsung/43báo cáo, khôngcunghoànchỉnh. A27/B8/C0/D293/E266 trong594lượt banđầu;28lượt chốngtrùng. Bộ192/1.236ca+12DBriêng/typecheck/build/2engineUI/mobile/1PDF đạt, [smokeQA chính](../.local/coverage-repair-20261022/main-smoke.json); G2/lịch sử/quyền/34bài/QA3070/Tật/Livefalse giữ. Khép bảnđồ594/397; checkpoint48gatepartial/5life/2ngũhành, chưa rà từng vế hết mọi chủ đề. Bước tiếp25lượtVCDTài/Quan, câu hỏi cụ thể ởbacklog; không tự mở nghiên cứu/sách/gói tiếp. NhánhLươngPhúcTý/Ngọ chỉfixture.
 
