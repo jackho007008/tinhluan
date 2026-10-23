@@ -149,3 +149,8 @@ So với1.61:59mẫu khớp (52có chính tinh,7VCD),58được thêm lời:3Di 
 [Lượt rà12cung](V1-DELIVERY-PLAN.md#coverage-repair-166-20261022): PhúcĐồng đơnThìn/Tuất vàTỵ/Hợi(TB133§6.1.3); Lương đơnTý/Ngọ vàTỵ/Hợi(136§6.1.12); Cự đơnTỵ/Thìn/Tuất chỉcâu họ thườngtranhchấp(135§6.1.10). Dùng`localPalaceAssessment(exact)`, giữ cổngTT; không biến ly tổ tránh hại thành dự báo, không chọn dòng giàu nghèo thắng giữa phần bất nhất. Cự không lặp khi nhánh cùngcung đãcó bất hòa/tranhchấp, không đòi vắng mọi sao. LươngTý/Ngọ0/192, chỉfixture. Phúc36→29thiếu,7mới/5bổsung.
 
 DiLương đơnTỵ/Hợi(TB177§10.12) có vế “nay đây mai đó” độc lập, không có nếu/mới để tránh hại; loại sinh tử. TT179§10.27 vẫn có câuphiềnlòng riêng, tiểu mụcTham/Phá/Tướng/Mã không hủy vếLương. Dùng`phucDiFacts` hiện có,3Dimới10→7thiếu; không mở bảyDiVCD. Chữ/ảnh và đặc tả theo [hồ sơvếnguồn](../.local/coverage-repair-20261022/source-spec.md).
+
+
+## Rà cổng Phúc1.68 —23/10/2026
+
+[Đặc tả,9nhóm, toàn văn trước/sau và checkpoint duy nhất](V1-DELIVERY-PLAN.md#partial-gates-168-20261023). Thu hẹpTT đúng vế phân tán của Dương thấp133, LươngđơnTỵ/Hợi136 và Hỏa(hayLinh)–Tang141–142, so trực tiếp140§6.1.36; không miễn toàn quan hệ hoặc phục hồi sa sút/hưởng phúc/địa vị/thời đoạn.3mới/7bổsung/0rút/3gộpLộcTồn trong192,10bài đổi văn; mọi claim/căn cứ và “ngày càng” giữ. Hai nhánhND08 nguyên;4nhómPhúc còn câu hỏi điều chỉnh cụ thể ởbacklog.39nhóm gốc khác chưa rà;Mệnh/ngũhành/Dchưa mở. Code5ad5749, QA3062app1.68/catalog1.64; không coi bổ sung là đủ cung.

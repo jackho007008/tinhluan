@@ -162,6 +162,45 @@ Tất cả số trang sau là **trang PDF** của đúng tệp đã định danh
 
 <a id="content-package-selection-20261022"></a>
 
+<a id="partial-gates-168-20261023"></a>
+### Rà cổng ở cung đã có lời — checkpoint9/48, bản1.68 (23/10/2026)
+
+Baseline thực tế `main@0be75bb`, tracked/index sạch, giữ `buu-dinh-7parts/` chưa theo dõi; app1.67/catalog1.63/code11b1a92,8hash root/QA khớp. Hai gói gần nhất là VCD Tài/Quan1.67 và chuẩn hóa D0be75bb; **không có phê duyệt N7 hoặc phạm vi D mới**. Lô hiện tại chỉ dùng phạm vi quan hệ đã được giao, không thêm loại số lượng/giới tính/quý tử/sinh tử/phẩm hạnh. Code **5ad5749**, app1.68/catalog1.64 đã vào QA3062 `.local/gate-partial-20261023/qa`; [đích và hash](../.local/gate-partial-20261023/serving-code.json).
+
+**Số nhóm:** checkpoint coverage-repair có48; runtime1.67 có50 (thêm `vcd-light-career-bright/scale`). Đã rà **9nhóm Phúc**, không tuyên bố rà hết48. Sửa3; giữ6 gồm2vế Tử–Phá/Tham đã triển khai ND08 và4nhóm chưa giải toàn lời. **39nhóm gốc còn nguyên hàng chờ**,2nhánh Quan mới ghi riêng. Runtime sau lô còn49nhóm bị giữ; đây là số nhóm còn hiện diện, không phải số đã thẩm định. [Danh sách từng nhóm, mẫu, câu nguồn→điều kiện→cổng→lời xuất/giữ và điểm tiếp tục](../.local/gate-partial-20261023/review-checkpoint.json). Nhóm tiếp theo chính xác: **`tanbien.no-ky`**; không tự mở gói ngoài checkpoint.
+
+**Ba sửa đủ căn cứ:**
+
+- `phuc-sun-low-local`: TB133§6.1.5, Thái Dương tọa Phúc Thân/Dậu/Tuất/Hợi/Tý, câu họ hàng “càng ngày càng sa sút ly tán”. Chỉ tách **ngày càng phân tán**, giữ cổng Riêu/Đà/Kỵ và chứng nhận/vị trí; toàn vế khó toại lòng/sa sút vẫn giữ khiTT.
+- `phuc-luong-ty-hoi-local`: TB136§6.1.12, Lương **đơn thủ** Tỵ/Hợi, câu họ hàng “càng ngày càng sa sút ly tán”. Chỉ giữ ngày càng phân tán; không khôi phục sớm xa gia đình, đổi công việc/chí hướng hoặc sa sút. Không dùng đoạn tọa thủ khác ngay dưới để mở địa chi.
+- `phuc-fire-tang-relation`: TB141tiêu đề§6.1.51 có chữ **Hỏa(hayLinh), Tang đồng cung**, câu TB142 “Họ hàng ly tán”. Chứng nhận Tang theo vòng Thái Tuế và điều kiện(Hỏa hoặcLinh)+Tang giữ nguyên; đoạn xuất vốn chỉ có phân tán nên thu hẹp cổngTT trực tiếp đúng đoạn này.
+
+Căn cứ riêng của cả ba: TB140§6.1.36 có vế họ hàng ly tán và trong nhánh nhiều sao sáng có “càng ngày càng ly tán lụn bại”; nhánh mờ nói **khá giả**, không nói tụ họp hoặc đảo phân tán thành đoàn tụ. Đủ giữ cùng phương diện phân tán; **không đủ miễnTT cho mọi quan hệ hoặc khôi phục mọi nét của nền**. Không chốt toán tử TT/ngưỡng nhiều/sát để chạy một lời khác. Cổng nguồn là phải xét điều chỉnh; giữ cả hàng là cổng dự án, chỉ thu hẹp phạm vi vừa chứng minh. Cơ chế chung `localPalaceAssessment`, companion có điều kiệnTT và chống lặp khi nền đầy đủ xuất; không theoID mẫu.
+
+**Rà chiều đang xuất:**9nhóm đã kiểm câu/chi/đơnthủ–tọathủ/“mới”/lượng từ/đối tượng. Chưa tìm thêm lỗi đủ căn cứ buộc rút lời trong9nhóm; đây không phải kết luận cho39nhóm còn lại. Tử–Sát giữ “xa quê, bôn ba **mới** được hưởng phúc” và đối tượng dòng họ; TửNgọ/LươngTýNgọ giữ nhiều người có danh giá, không đồng nhất với tài sản. Kỵ–Kình(hayĐà) giữ tranh chấp/sa sút và mức may ít rủi nhiều, không rút vế khó bằng đồng ý phạm vi. Hai vếND08 giữ ly tán nhưng không khôi phục toàn nền.
+
+**Còn thiếu cụ thể trong4nhóm giữ:** Tử–Sát cần cách TT/sát tác động đúng vế điều kiện hưởng phúc và hiển đạt võ nghiệp ở xa; TửNgọ/LươngTýNgọ cần cách đổi hưởng phúc và danh giá dưới từng điều kiện140, không lấy khá giả thay danh tiếng; Kỵ–Kình/Đà cần biết TT tác động vào tranh chấp/sa sút/lo toan thế nào, chưa có dẫn cho miễn điều chỉnh tranh chấp. Không bắt giải toàn cung; cũng không coi không thấy câu sửa là đủ xóa cổng.
+
+**So192:**10báo cáo đổi văn;3Phúc mới có nhận định (66/132/139),7bổ sung,0rút lời; Phúc29→26thiếu, tổng553→550, các cung khác nguyên. Tậpcon chung còn mở3cung trước trống ngoài các witness có lời trong checkpoint, không viết rule theoID. Hai fragment có5và2engine witness, Hỏa/Linh–Tang3; **0nhánh chỉfixture**.3mẫu38/93/186 gộp với Lộc Tồn, giữ mọi claim/căn cứ cùng hưởng phúc/hiếm người/khá giả/dễ tranh chấp và “ngày càng”. Thiên Mã nói họ hàng không ở gần nhau được giữ riêng: không tự gộp vị trí địa lý thành cùng nghĩa hoặc coi khá giả đối lập phân tán. Rule/fact/trace/condition và quan hệ ngoài phần đổi giữ; metadata/version Hỏa–Tang thay có chủ đích. [So192](../.local/gate-partial-20261023/impact192.json), [toàn văn10mẫu](../.local/gate-partial-20261023/full-before-after.txt), [đầu ra và không mất nội dung](../.local/gate-partial-20261023/after-audit.json).
+
+**Mẫu38 — toàn văn phần nhận định Phúc trước:**
+
+> Lộc Tồn tại Phúc Đức được liên hệ với hưởng phúc, đồng thời mô tả họ hàng hiếm người, khá giả nhưng dễ tranh chấp và ly tán; không xác nhận những điều này là hoàn cảnh thực tế của gia đình.
+
+**Sau:**
+
+> Lộc Tồn tại Phúc Đức được liên hệ với hưởng phúc; họ hàng hiếm người, khá giả nhưng dễ tranh chấp. Lời về sự phân tán trong họ được giữ chung với Thái Dương, trong đó Thái Dương mô tả chiều hướng ngày càng phân tán. Các căn cứ không xác nhận hoàn cảnh thực tế hoặc làm tăng mức độ của nhận định.
+
+Dữ kiện “Phúc Đức tại Tý: Thái Dương” và thông báo còn cấu trúc chưa có lời giữ nguyên. Không gọi thêm một ý là hoàn chỉnh cung.
+
+**Kiểm và tích hợp:**146ca/6file nội dung cuối đạt,6G2 DBriêng +6PDFmock; typecheck/build cuối đạt.1engine38 quaform→lưu→full bằng đơn **mock trên DBriêng**→mở/mobile360/390/căn cứ; PDF thật8trang15đoạn khớp frozen, đã xem bố cục và trang6. Hai lượt cùng PDF đại diện vì lượt đầu bắt trùng ý Lộc Tồn; đã gộp và kiểm lại đúng phần sửa, không nhiều PDF khác. MainQA3062 tạoengine132 mới đúng phiên bản/nhánh,free không lộ lời khóa/PDF403/chéo404/reload giữhash; không mockorder trên main. [UI/G2](../.local/gate-partial-20261023/ui-38/ui.json), [PDF](../.local/gate-partial-20261023/ui-38/pdf-check.json), [main smoke](../.local/gate-partial-20261023/main-smoke.json).247tệp cũ chụp hash:243còn nguyênbyte,4trial đã hết hạn trước baseline do retention cũ dọn, cóbackup khớp byte; không restore/backfill. [Bảo toàn](../.local/gate-partial-20261023/preservation.json), [quyền/34bài](../.local/gate-partial-20261023/db-after.json). QA3070/engine/quyền/hạn/G2/Tậtchưa duyệt/Livefalse giữ.
+
+Lỗi đầu được giữ trong log:8assertion fixture/hợp đồng cổng cũ (Tang phải kiểm vòng, không sao rời; fragment cầnTT); thiếuenv dừng trướcprepare/typecheck;1TS optionalprojectScope trong test; script compare nhầm evidence với văn(45 so10),nhầm trace key/metadata Hỏa–Tang; smoke main cònID Quan sao chép, sửa đúng nhánh rồi đạt. Không sửa expected lịch sử hoặc chạy toàngate/provider ngoài.
+
+**Chưa mở Mệnh/ngũ hành:** giữ5nhóm Mệnh(57chưa phối toàn sao;2Nhật–Nguyệt;2Vũ–Phủ/Tý;31VCDchưa có nhánh chiếu;1Vũ–Tướng) và2nhóm ngũ hành(63mộtchính tinh ngoài ôTH109;20VCDngoài chiều đã có lời). Đây là số checkpoint, có thểtrùng, không cộng thành khách hoặc tự suy ô đối xứng. Mắt xích gồm điều kiện cứu/tác53–54, phần chữGiáp/Đinh77đứt, câu tổ hợpVũ–Tướng riêng, các chiều ngũ hành ngoài ô nguồn và phép nối với tính sao; chưa tự mở gói. Phạm viD283vẫn chờ theo bảngduyệt, các4A/ND13không được kéo sang lô này. Báo cáo trả phí đủ chủ đề12cung **chưa đạt**, không hạ tiêu chí.
+
+Thời gian toàn phiên: **khoảng 19 phút (11:21–11:40 ICT, 23/10/2026)**. Dừng tại9/48; tiếp tục khi được giao, dùng đúng39ID đã lưu, không quay lại nghiên cứu toàn sách.
+
 <a id="scope-d-review-20261023"></a>
 ### Chuẩn hóa nhómD sau1.67 —23/10/2026, chờ duyệt phạm vi
 
