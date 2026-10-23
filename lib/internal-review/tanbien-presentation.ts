@@ -1,3 +1,4 @@
+import {vcdLightAssessment,VCD_LIGHT_BRANCHES,vcdLightFactId} from '../interpretation-rules/vcd-light-exceptions';
 import {phucUnadjustedBranches,phucUnadjustedKey,phucUnadjustedAssessment} from '../interpretation-rules/phuc-unadjusted';
 import {parentUnadjustedBranches,parentUnadjustedKey,parentUnadjustedAssessment} from '../interpretation-rules/parent-unadjusted';
 import {diVoidAssessment} from '../interpretation-rules/di-void';
@@ -42,7 +43,7 @@ import {
   tanBienTable,
   tanBienLifeTables,
 } from "../interpretation-rules/tanbien-source";
-export const PRESENTATION_VERSION = "1.16.0";
+export const PRESENTATION_VERSION = "1.17.0";
 export type ReadingEvidence = {
   text: string;
   kind: "snapshot" | "geometry" | "source" | "editorial";
@@ -221,6 +222,7 @@ const factLabels: Record<string, string> = {
   "fact.wealth-minor-stars": "phụ tinh tại Tài Bạch",
 };
 export function conditionText(c: Condition): string {
+ const vcdBranch=VCD_LIGHT_BRANCHES.find(r=>vcdLightFactId(r)===c.fact);if(vcdBranch)return vcdBranch.palace+' vô chính diệu; ngoại lệ Nhật–Nguyệt/TT đã được kiểm riêng theo đúng quan hệ và trạng thái ở chi thật; không tổng hợp toàn cung.';
  const phuc=phucUnadjustedBranches.find(r=>c.fact==='fact.'+phucUnadjustedKey(r));if(phuc)return phuc.stars!.join('–')+' cùng tọa Phúc Đức; chỉ vế họ hàng ly tán, không mở toàn nền.';
  const stable=parentUnadjustedBranches.find(b=>c.fact==='fact.'+parentUnadjustedKey(b));
  if(stable)return (stable.vcd?'Phụ Mẫu không có chính tinh; đúng cả cặp '+stable.row.stars.join('–')+' xung chiếu.':familyCondition(stable.row)+'.')+' Chỉ giữ vế độc lập ngoài giàu nghèo/sang hèn khi câu đầy đủ chưa xuất.';
@@ -290,6 +292,7 @@ export function factEvidence(s: ChartSnapshot, id: string): ReadingEvidence {
  const phuc=phucUnadjustedBranches.find(r=>id==='fact.'+phucUnadjustedKey(r));if(phuc){const a=phucUnadjustedAssessment(s,phuc);return item(a.text,a.paths,'source');}
  const stable=parentUnadjustedBranches.find(b=>id==='fact.'+parentUnadjustedKey(b));if(stable){const a=parentUnadjustedAssessment(s,stable);return item(a.text,a.paths,'snapshot');}
  if(id==='fact.di-direct-void'){const a=diVoidAssessment(s);return item(a.text,a.paths,'source');}
+ const lightBranch=VCD_LIGHT_BRANCHES.find(r=>vcdLightFactId(r)===id);if(lightBranch){const a=vcdLightAssessment(s,lightBranch);return item(a.text,a.paths,'source');}
  if(id==='fact.career-vcd-scale-limit'){const a=financeVcdAssessment(s,'scale-limit','Quan Lộc');return item(a.text,a.paths,'source');}
  if(id==='fact.finance-vcd-scale-limit'){const a=financeVcdAssessment(s,'scale-limit');return item(a.text,a.paths,'source');}
  if(id==='fact.finance-vcd-direct-void'){const a=financeVcdAssessment(s);return item(a.text,a.paths,'source');}

@@ -1,3 +1,4 @@
+import {vcdLightFacts} from './vcd-light-exceptions';
 import {phucUnadjustedFacts} from './phuc-unadjusted';
 import {parentUnadjustedFacts} from './parent-unadjusted';
 import {diVoidFacts} from './di-void';
@@ -34,7 +35,7 @@ import { financeBranches } from "./tanbien-finance-content";
 import { tanBienTable, tanBienLifeTables } from "./tanbien-source";
 import type { ChartSnapshot } from "../tuvi-engine";
 import { readPath } from "./schema";
-export const DERIVATION_VERSION = "1.18.0";
+export const DERIVATION_VERSION = "1.19.0";
 export type DerivedFact = {
   id: string;
   derivationId: string;
@@ -100,7 +101,7 @@ export function careerSourceGate(snapshot: ChartSnapshot) {
   };
 }
 export function deriveFacts(snapshot: ChartSnapshot): DerivedFact[] {
-  const quyenFacts = [...completionFacts(snapshot),...lifeLiteraryFacts(snapshot),...nplLocalFacts(snapshot),...nplFoundationFacts(snapshot),...nplTwoV2Facts(snapshot),...nplTwoFacts(snapshot), ...lifeBodyFacts(snapshot), ...retentionFacts(snapshot), ...voidFacts(snapshot), ...childrenVcdFacts(snapshot), ...kinExtensionFacts(snapshot), ...approvedKinFacts(snapshot), ...localPalaceFacts(snapshot), ...quanTaiFacts(snapshot), ...financeVcdFacts(snapshot), ...financeVcdScaleFacts(snapshot), ...careerVcdScaleFacts(snapshot), ...diVoidFacts(snapshot), ...parentUnadjustedFacts(snapshot), ...phucUnadjustedFacts(snapshot), ...kinFacts(snapshot), ...familyFacts(snapshot), ...familyVcdFacts(snapshot), ...familyExtensionFacts(snapshot), ...noDienFacts(snapshot),...phucDiFacts(snapshot),...lifeQuyenFact(snapshot), ...lifeContentFacts(snapshot), ...careerQuyenFact(snapshot), ...careerKyFacts(snapshot), ...independentCareerFacts(snapshot), ...occupationalCareerFacts(snapshot), ...careerClosingFacts(snapshot), ...financeSupplementFacts(snapshot)];
+  const quyenFacts = [...vcdLightFacts(snapshot),...completionFacts(snapshot),...lifeLiteraryFacts(snapshot),...nplLocalFacts(snapshot),...nplFoundationFacts(snapshot),...nplTwoV2Facts(snapshot),...nplTwoFacts(snapshot), ...lifeBodyFacts(snapshot), ...retentionFacts(snapshot), ...voidFacts(snapshot), ...childrenVcdFacts(snapshot), ...kinExtensionFacts(snapshot), ...approvedKinFacts(snapshot), ...localPalaceFacts(snapshot), ...quanTaiFacts(snapshot), ...financeVcdFacts(snapshot), ...financeVcdScaleFacts(snapshot), ...careerVcdScaleFacts(snapshot), ...diVoidFacts(snapshot), ...parentUnadjustedFacts(snapshot), ...phucUnadjustedFacts(snapshot), ...kinFacts(snapshot), ...familyFacts(snapshot), ...familyVcdFacts(snapshot), ...familyExtensionFacts(snapshot), ...noDienFacts(snapshot),...phucDiFacts(snapshot),...lifeQuyenFact(snapshot), ...lifeContentFacts(snapshot), ...careerQuyenFact(snapshot), ...careerKyFacts(snapshot), ...independentCareerFacts(snapshot), ...occupationalCareerFacts(snapshot), ...careerClosingFacts(snapshot), ...financeSupplementFacts(snapshot)];
   // Natal matching never consumes an explicitly annual/decadal star.
   // Undefined legacy scopes remain compatible; completeness is independently
   // guarded by server receipts and the new saved career assessment.

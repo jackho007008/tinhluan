@@ -6095,5 +6095,45 @@
       "PDF135§6.1.10: chỉ câu họ hàng thường tranh chấp, không chọn phần giàu nghèo giữa các dòng bất nhất, không biến lời khuyên sớm xa nhà thành dự báo. Nếu Cự–Kỵ/Hỏa đã có quan hệ bất hòa, giữ nhánh cũ; TT giữ cổng dự án chưa giải."
     ],
     "catalogHash": "c9316af4e3227590b76b70d1f29b7266997aad8cb2c69afc1200d6307c2e8db1"
+  },
+  "tanbien.vcd-light-finance-scale": {
+    "text": "Tài Bạch không có chính tinh. Với cấu trúc này, lời luận đặt giới hạn “không thể giàu to lớn”, kể cả khi có nhiều sao tốt hội hợp. Nhận định này chỉ nói về quy mô tài lộc, không xác định thu nhập hay tài sản hiện có.",
+    "sourceTemplate": "Tài Bạch không có chính tinh. Với cấu trúc này, lời luận đặt giới hạn “không thể giàu to lớn”, kể cả khi có nhiều sao tốt hội hợp. Nhận định này chỉ nói về quy mô tài lộc, không xác định thu nhập hay tài sản hiện có.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "da514cb907b7641b8c412cb76d10204d76c8c7395d87688fd2acdea3a02632f5",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Điều kiện ánh sáng, quan hệ chiếu, án ngữ tại sao/cung nhận và cổng dự án nằm trong căn cứ."
+    ]
+  },
+  "tanbien.vcd-light-career-scale": {
+    "text": "Quan Lộc không có chính tinh. Với cấu trúc này, công danh được mô tả là không thể hiển đạt, chức vị bình thường, dù có nhiều sao tốt phối chiếu. Đây là lời riêng về mức hiển đạt, không xác định nghề nghiệp hoặc chức vụ hiện có.",
+    "sourceTemplate": "Quan Lộc không có chính tinh. Với cấu trúc này, công danh được mô tả là không thể hiển đạt, chức vị bình thường, dù có nhiều sao tốt phối chiếu. Đây là lời riêng về mức hiển đạt, không xác định nghề nghiệp hoặc chức vụ hiện có.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "c1d50f20cfdda6469990daa7a83729b621aa273c802c94e00bfb9f8c3e785caa",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Điều kiện ánh sáng, quan hệ chiếu, án ngữ tại sao/cung nhận và cổng dự án nằm trong căn cứ."
+    ]
+  },
+  "tanbien.vcd-light-finance-direct": {
+    "text": "Tài Bạch không có chính tinh và có Tuần hoặc Triệt án ngữ trực tiếp. Việc kiếm tiền được mô tả là khó khăn lúc đầu, về sau dễ dàng hơn, càng về già càng sung túc. Các vế nói về một diễn tiến, chưa xác định bạn đang ở giai đoạn nào.",
+    "sourceTemplate": "Tài Bạch không có chính tinh và có Tuần hoặc Triệt án ngữ trực tiếp. Việc kiếm tiền được mô tả là khó khăn lúc đầu, về sau dễ dàng hơn, càng về già càng sung túc. Các vế nói về một diễn tiến, chưa xác định bạn đang ở giai đoạn nào.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "837163eec1b1f3c95e0320a20a5eea16cb96d5e18dcf0d80e670e59e5ba88f1a",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Điều kiện ánh sáng, quan hệ chiếu, án ngữ tại sao/cung nhận và cổng dự án nằm trong căn cứ."
+    ]
+  },
+  "tanbien.vcd-light-career-bright": {
+    "text": "Quan Lộc không có chính tinh, nhận Nhật–Nguyệt cùng sáng chiếu tới. Với cấu trúc này, công danh được mô tả là rực rỡ, uy quyền hiển hách. Đây là nhận định riêng về công danh, chưa xác định chức vụ hiện có.",
+    "sourceTemplate": "Quan Lộc không có chính tinh, nhận Nhật–Nguyệt cùng sáng chiếu tới. Với cấu trúc này, công danh được mô tả là rực rỡ, uy quyền hiển hách. Đây là nhận định riêng về công danh, chưa xác định chức vụ hiện có.",
+    "sourceVersion": "0.1.0",
+    "catalogHash": "1ee40d4545598f9b1b3e2b98c096c860e52d755dd6b4f293b79d9d379a34a843",
+    "strategy": "explicit-rule-prose",
+    "movedToEvidence": [
+      "Điều kiện ánh sáng, quan hệ chiếu, án ngữ tại sao/cung nhận và cổng dự án nằm trong căn cứ."
+    ]
   }
 }
