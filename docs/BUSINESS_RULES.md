@@ -6,6 +6,8 @@ Căn cứ phân loại quyết định: [DECISIONS](DECISIONS.md) ghi lời ch�
 
 **Chỉ đạo21/10 nối80d9232:** dừng mở thêm sách; NPA120/DDSN898 giữ chưa đọc. Dùng kiến thức đã lưu để hoàn thiện báo cáo; chủ dự án và Codex thực hiện, không yêu cầu người thẩm định bên ngoài như cổng bắt buộc. Có lựa chọn phương pháp thì Codex trình phương án/căn cứ/tác động, không tự ghép hoặc chọn câu thắng. [Quyết định Q12](DECISIONS.md).
 
+**Ngoại lệ theo task23/10 đang có hiệu lực:** chủ dự án giao đọc đủ ba PDF ToànThư/TứHóaPhái1–2 và triển khai phần đủ căn cứ trong phạm vi đã duyệt. Điều này thay lệnh dừng mở sách phía trên chỉ với ba PDF; phương pháp độc lập cần đặc tả/văn mẫu để quyết định, chưa tự trộn vào catalog. N1–N13, Tật chưa publish, G2/lịch sử/quyền/hạn/Livefalse giữ. [Quyết định và giới hạn](DECISIONS.md#23102026--giao-đọc-ba-sách-mới-và-triển-khai-phần-đủ-căn-cứ).
+
 ## 1. Mục tiêu và những điều đã được chủ dự án chốt
 
 1. Báo cáo cá nhân hóa, có căn cứ, đủ **12 cung** vẫn là mục tiêu V1 trước mở bán. Dữ kiện, tên cung, văn chung hoặc một đoạn không chứng minh chủ đề hoàn chỉnh. Không tự giảm lời hứa thành 11 cung.

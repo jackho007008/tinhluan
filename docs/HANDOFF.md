@@ -1,5 +1,11 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Ba sách mới23/10 — checkpoint, chưa hoàn tất
+
+[Hồ sơ và checkpoint](../.local/source-library/knowledge/three-books-20261023/README.md) · [Backlog duy nhất](V1-DELIVERY-PLAN.md#full-report-gaps-169-20261023). Toàn Thư:170/170 trang lớp chữ,22 ảnh; Tứ Hóa 1:đọc1–7/824,13 ảnh; Tứ Hóa 2:chưa đọc liên tục/817,5 ảnh. OCR1.641/1.641 không là đã đọc. Nối đủ45 U,0 U khép/0 rule. Tứ Hóa 1 có scan trùng/che chữ vùng593–599. **Tiếp Tứ Hóa 1 PDF8**; quyền làm tiếp task vẫn giữ. App1.69/catalog1.65/code1e6ab7c không đổi, chỉ nghiên cứu/tài liệu.
+
+Thời gian toàn phiên đến checkpoint: khoảng30phút (14:48ước tính–15:19ICT,23/10/2026).
+
 Cập nhật23/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
 ## Kiểm U01 với nguồn web — 23/10/2026

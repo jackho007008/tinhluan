@@ -8,6 +8,19 @@ Kho sách, chữ đầy đủ, ảnh và hồ sơ dài ở `/Volumes/DATA/TINHLU
 
 **Nhập bổ sung22/10, nối `a2df8e7`:** theo yêu cầu mới, đã nhập riêng [Tử Vi Ứng Dụng — Bửu Đình,7phần](../.local/source-library/knowledge/buu-dinh-7parts/README.md). Chỉ tái dùng kho được giao, không mở đợt đọc sách khác. [Kiểm nhập/hash](../.local/source-library/verifications/buu-dinh-20261022-import.json), [đối chiếu nguồn và đặc tả ứng viên](../.local/source-library/knowledge/buu-dinh-7parts/_integration/20261022-review.md); công việc vẫn tại [ND03/04/08/13/17/18 trong backlog duy nhất](V1-DELIVERY-PLAN.md#buu-dinh-import-20261022). Chưa có rule, quyền publish hoặc độ phủ mới.
 
+
+## Ba sách mới23/10/2026 — đang đọc theo yêu cầu mới
+
+Yêu cầu hiện tại thay hạn chế không mở sách Q12 **chỉ trong ba PDF được giao**. [Hồ sơ/checkpoint](../.local/source-library/knowledge/three-books-20261023/README.md), [phương pháp và ứng viên](../.local/source-library/knowledge/three-books-20261023/methods.md), [nhật ký từng khoảng/ảnh](../.local/source-library/journals/three-books-20261023.json). Đã nối phát hiện vào **đúng45dòngU hiện có**, chưa khépU hoặc thêm rule.
+
+- **Toàn Thư — Vũ Tài Lục dịch/bình chú:**170trang PDF; đọc liên tục lớp chữ1–170,kiểm22ảnh. Là bản dịch có lược và bổ sung nhiều nguồn theo lời đầu1–2/15, không phải toàn nguyên bản Hán. Phú hợp tập151–167 không thành nhiều xác nhận độc lập. Header trích1–170;22mốc ảnh khớp trang in, chưa hiệu đính mọi chữ/bảng.
+- **Tứ Hóa1 — Nguyễn Anh Vũ, phần Khâm Thiên Bí Nghi:**824trang scan; OCR824,đọc phần đầu1–7,kiểm13ảnh gồm5ảnh kiểm lỗi vùng593–599. Mục lục816–822 và bản quyền823; nộp lưu chiểu quýI/2013 theo ảnh. Hai cặp scan593=597/594=598 trùng;593/597 bị giấy che chữ, nghi thiếu trang in598–599. Không gọi đủ824tệp là sách hoàn chỉnh.
+- **Tứ Hóa2 — Nguyễn Anh Vũ, phần Thiên Cơ Luận:**817trang scan; OCR817,**chưa đọc liên tục**,kiểm5ảnh nhận diện/chất lượng. Mục lục811–817,nhan đề3ghi2012; trang6trắng đã xem. Chưa xác minh đủ số trang in/thiếu–trùng toàn cuốn.
+
+[Hash/danh tính nhập](../.local/source-library/verifications/three-books-20261023-import.json), [chất lượng/số trang in ứng viên/scan trùng](../.local/source-library/verifications/three-books-20261023-quality.json), [đối chiếu trùng chữ ứng viên máy](../.local/source-library/verifications/three-books-20261023-overlap.json). Không trùngbyte cảPDF với inventory cũ; kiểm trùng phần chỉ là bước máy và đoạn trích đã nhận diện, chưa xác minh toàn quan hệ văn bản. Chữ Hán trong hai sách scan chưa được OCR/hiệu đính chắc chắn. Công cụ `tools/search_three_books.py` trong kho riêng tra chữ có/không dấu và kiểmhash;1811tệp ưu tiên+3PDFkhớp. Không ghiOCRthànhđãđọc.
+
+**Tiếp tại TứHóa1PDF8** sau trang thuậtngữ7, không đọc lại ToànThư để tạo nhật ký. Bộ ba **chưa hoàn tất**; các điểm chưa giải/ảnh chưa kiểm ghi trong hồ sơ. NPA/DDSN và các nguồn cũ giữ mức đọc cũ. Những con số8PDF/2468trang ở phần lịch sử bên dưới chưa bao gồm3PDF/1811trang mới; không cộng lẫn BửuĐình nhập riêng.
+
 ## Danh mục và mức đọc thực tế
 
 **Đối chiếu hẹp sau ND08,22/10:** đã tìm lại bảnPDFgốc Bửu Đình **phần2**, hashkhớp manifest nhập, giữ bản riêng và [5ảnhPDF52–56đãkiểm](../.local/source-library/knowledge/buu-dinh-7parts/_integration/nd08-followup/identity.json). Cộng16ảnh kế thừa thành21trang khác nhau; không thay nhật ký bàn giao hoặc nhận đã kiểm sạch579trang. [Kết quả giữ/tạo/TT/HóaLộc/LộcTồn](../.local/nd08-phuc-20261022/buu-dien-review.md); chưa córuleBửuĐình. Các dòng nói gói ban đầu không chứaPDF vẫn là mô tả lúc nhập, không là trạng thái thiếu bản gốc phần2hiện tại. Không nhập/đọc lại toàn7PDF.
