@@ -4,6 +4,10 @@ Cập nhật23/10/2026: app **1.69.0/catalog1.65.0**, code **1e6ab7c**, đã và
 
 Đọc tiếp: [hợp đồng sản phẩm](BUSINESS_RULES.md), [sổ quyết định](DECISIONS.md), [đầu mối bàn giao](HANDOFF.md).
 
+## Kiểm nguồn web U01 — 23/10/2026
+
+[Hồ sơ ba ứng viên](U01-WEB-PARENTS-REVIEW-20261023.md): **0 rule, 0 mẫu đổi**, U01 vẫn 13 ca. Không ca nào có cả Nhật–Nguyệt tam hợp; ba ca có TT ngay Phụ nhưng chưa đủ căn cứ cho kết quả trợ giúp. TH/HS có điều kiện sáng và ngoại lệ, chưa nối đủ câu web; lưu riêng chưa publish. Chỉ tài liệu và đọc JSON cũ, không test/build/runtime/DB. App1.69.0/catalog1.65.0/code1e6ab7c không đổi; dừng gói.
+
 **Danh sách thiếu toàn báo cáo đã hợp nhất theo1.69:** [bảng trong backlog duy nhất](V1-DELIVERY-PLAN.md#full-report-gaps-169-20261023), [cause-map540khóa](../.local/report-gap-inventory-20261023/cause-map-169.json).540/540có việc chính,0khóa mồcôi;538dữ kiện+2chúgiải;E262/D278/A0.13lượt đã lấp từ1.67được giữ tronglịch sử,không cộngvào540.45mãUchỉ là phần việc trongND01–19,không lập backlogkhác. R1–R9không còn đại diện toàn bộ phần thiếu.
 
 Tách riêng phần đã có lời:49nhóm runtime/117lượt;5nhómMệnh93+2ngũhành83,giao20→156Mệnh,không cộng trùng. Một gói đềxuất U42/ND03–04–17: đặc tả nhánhMệnhSửu–NhậtTỵ–NguyệtDậu ở miềncóchính tinh, theo căn cứ gói1.29và2engine116/123đãlưu1.69. Chưađượctínhready/coding/publish.48vàN1–N13giữ,khôngmở lại. Phiên này chỉđốisoátJSON/tài liệu và đối chiếu byte các file mã;khôngđọc sách/tínhengine/test/build/DB/UI/runtime.

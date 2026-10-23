@@ -2,6 +2,10 @@
 
 Cập nhật23/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
+## Kiểm U01 với nguồn web — 23/10/2026
+
+[Ba ứng viên và đủ 13 ca](U01-WEB-PARENTS-REVIEW-20261023.md), [dòng U01 duy nhất](V1-DELIVERY-PLAN.md#gap-u01). **0 rule, 0 mẫu đổi, 0 ca khép**; không ca nào có cả Nhật–Nguyệt tam hợp, ba ca có TT trực tiếp Phụ chỉ khớp cấu trúc. Câu trợ giúp chưa nối đủ nguồn/phương pháp; lưu riêng chưa publish. App1.69/catalog1.65/code1e6ab7c giữ; 10 file root/checkout QA khớp, chưa xác minh process trực tiếp. Dừng đúng ba ứng viên.
+
 ## Hiện hành — danh sách thiếu toàn báo cáo tại1.69
 
 **Ứng dụng vẫn1.69.0/catalog1.65.0/code1e6ab7c; phiên này chỉ tài liệu.** [Bảng thiếu hợp nhất trong backlog duy nhất](V1-DELIVERY-PLAN.md#full-report-gaps-169-20261023) thay việc xemR1–R9là toàn bộ phần thiếu. [Bằng chứng từng lượt](../.local/report-gap-inventory-20261023/cause-map-169.json).
