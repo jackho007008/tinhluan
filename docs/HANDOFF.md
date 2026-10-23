@@ -2,11 +2,17 @@
 
 Cập nhật23/10/2026; làm việc tại `/Volumes/DATA/TINHLUAN`. Đây chỉ là chỉ mục, không phải backlog thứ hai.
 
-## Hiện hành — lô9/48 cổng Phúc Đức1.68, dừng ở checkpoint
+## Hiện hành — khép48/48, phạm viD đã chốt,1.69
+
+**QA3062 đang phục vụ1.69.0/catalog1.65.0,code1e6ab7c** từ `.local/gate-close-20261023/qa`. [Backlog/kết quả](V1-DELIVERY-PLAN.md#gate-close-169-20261023) · [bảng48+2Quan,12cung,toàn văn và danh sách còn thiếu duy nhất](GATE-CHECKPOINT-48-1.69.0.md) · [N1–N13đã chốt](PRODUCT-SCOPE-D-REVIEW.md#quyết-định-hiện-hành--phiên-khép-checkpoint48).
+
+Đã rà48/48=9kế thừa+39mới;4sửaPhụ trong phiên,35giữ;2Quan riêng. N7 vàPhuA4 đã triển khai:10lượt cung mới/18bổ sung/4sửa–rútvế,30báo cáo đổi; chưa gọi cung hoặc báo cáo hoàn chỉnh.999ca+12G2/PDFmock/typecheck/build/2engineUI/mobile/1PDFthật đạt; main168/G2 đạt.247file cũ và quyền/hạn/34bài/QA3070/engine nguyên;Livefalse,Tậtchưa publish. Dừng đúng lượt rà, phần thiếuR1–R9 được liên kết, không tự mở gói. Thời gian toàn phiên khoảng27phút (13:25ước tính–13:52ICT,23/10/2026).
+
+## Mốc trước — lô9/48 cổng Phúc Đức1.68
 
 **Lô cổng có lời 1.68.0/catalog1.64.0, code5ad5749:** [checkpoint trong backlog](V1-DELIVERY-PLAN.md#partial-gates-168-20261023). Đã rà **9/48 nhóm gốc**, đều thuộc Phúc Đức: sửa3, giữ6 (2 đã có vế ND08;4 còn thiếu phép điều chỉnh trực tiếp). **39 nhóm gốc chưa rà**; nhóm tiếp theo `tanbien.no-ky`. Đầu phiên runtime có50nhóm do thêm2QuanVCD ở1.67; sau lô còn49nhóm đang giữ, không có nghĩa đã rà49. So192: **3Phúc mới có lời/7Phúc bổ sung/0rút lời/3gộp trùng**,10báo cáo đổi văn, Phúc29→26chưa có nhận định. Chỉ giữ vế phân tán của Dương thấp, LươngTỵ/Hợi và Hỏa(hayLinh)–Tang quaTT; không khôi phục toàn nền.146kiểm nội dung/6G2 DBriêng/6PDFmock/typecheck/build đạt;1engine đại diện form–lưu–mở/mobile360/390/PDF8trang15đoạn đã kiểm, mainQA3062 tạo132đúng nhánh/G2.247file cũ:243nguyên byte,4trial đã hết hạn trước baseline được retention cũ dọn, backup khớp; quyền cũ/34bài/QA3070/engine/Tật/Livefalse giữ. Mệnh5nhóm/ngũhành2nhóm và phạm viD chưa duyệt chưa mở. Không gọi cung hoàn chỉnh. Thời gian toàn phiên: khoảng 19 phút (11:21–11:40 ICT, 23/10/2026).
 
-## Hồ sơ phạm vi D — vẫn chờ duyệt, không được mở bởi lô1.68
+## Hồ sơ D trước quyết định — đã được thay bởi1.69
 
 **23/10 — rà nhóm D, chờ duyệt phạm vi:** [bảng duyệt 13 loại](PRODUCT-SCOPE-D-REVIEW.md), [backlog duy nhất](V1-DELIVERY-PLAN.md#scope-d-review-20261023). Toàn bộ 293 lượt D gốc vẫn thiếu nhận định ở 1.67; sửa phân loại 6 Phu Thê → E và 4 Phu Thê → A/ND13. **D hiện còn 283**: Tật 192, Tử 48, Huynh 27, Phu 11, Quan 3, Phúc 2. Tại mốc1.67 có553 lượt thiếu: A4/D283/E266; lô1.68 còn550, D283 giữ nguyên. Ba phần D không trùng: 192 Tật chưa được publish; 22 lượt ngoài Tật có vế thuộc giới hạn đã xác nhận; 69 lượt khác chưa tìm thấy bằng chứng chủ dự án cấm bao trùm. Nhãn nội dung trong bảng có trùng. Khoa/Hồng và hai chú giải Phu đã duyệt không thuộc 293 D. Hóa Quyền/Tử “sớm hiển đạt” là đề xuất N7 chưa duyệt (5 D); Tật vẫn thiếu cách áp dụng cứu/tác trực tiếp, không chỉ chờ duyệt. Chỉ sửa tài liệu, giữ app 1.67.0/catalog 1.63.0/code11b1a92; không chạy test/build/UI/PDF hoặc đổi runtime. Giữ mục tiêu trả phí đủ 12 cung, G2, lịch sử/quyền/hạn, QA3070, 34 bài, engine, Tật chưa publish và Live tắt. Dừng để duyệt phạm vi. Thời gian: khoảng 33 phút (10:45–11:18 ICT, 23/10/2026).
 

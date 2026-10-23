@@ -180,3 +180,10 @@ D/C: [Phụ](PHU-HUYNH-1.32.0.md), [Điền](NO-DIEN-1.31.0.md), `parentUnadjust
 **D đối chiếu:** [bảng duyệt13loại](PRODUCT-SCOPE-D-REVIEW.md) phân Uđãloại/Uđãcho phép/agentđềxuất/chưacóbằngchứng, dẫnQ05/Q06 vàphêduyệt4mẫu21/10.293Dgốc vẫn thiếu nhậnđịnh ở1.67;6Phu thuộc điều kiện/nguồn đã chuyểnE/ND13, cònD283. Số lượng/thứ bậc/giới tính/quýtử/số lần hôn nhân chưa có phêduyệtbao trùm; Khoa/Hồng và2chúgiải đãđượcphép khôngghiD. HóaQuyền/TửN7 làđềxuấtmới/chưaduyệt, không tự thành quyếtđịnh qua việc lưucommit. Không thayG2/hạn/quyền/lịch sử/engine/Live hoặcmụctiêutrảphí12cung.
 
 Bổ sung cùng lượt rà:4CựPhuThìn/Tuất/Tỵ (56/111/156/168) chuyểnD→A/ND13 cho câu quan hệ độc lập “vợ chồng bỏ nhau”; phần số lần vẫn chưa chốt. D283/A4/E266 hiện hành; chưa triển khai. Xem bằng chứng táchvế trong bảngduyệt.
+
+
+## 23/10/2026 — chốt phạm vi D và giao khép checkpoint48
+
+**U trực tiếp:** N1–N5 tạm chưa xuất ở giai đoạn hiện tại, không cấm vĩnh viễn; N6 giữ đúng hai đặc tính đã duyệt; N7 cho phép Hóa Quyền bản mệnh tọa Tử Nữ với lời “con sớm hiển đạt”, giữ “sớm”, không đặt tuổi/xác nhận thành công thực tế/mở hội chiếu hoặc đặc tính khác; N8 giữ hai chú giải, chưa mở mẫu điều kiện mới; N9 chưa xuất “nên ở riêng”; N10 giữ hướng thẩm định, Tật chưa publish; N11–N12 giữ giới hạn bệnh/sinh tử/chẩn đoán/điều trị và quy kết phẩm hạnh; N13 tiếp tục giữ để làm rõ nghĩa/tách câu. Quyết định này thay trạng thái chờ duyệt của [bảng D](PRODUCT-SCOPE-D-REVIEW.md), không thay các điều kiện/ngoại lệ nguồn.
+
+U giao rà hết39nhóm còn lại của48gốc từ `tanbien.no-ky`, kế thừa9Phúc;2Quan phát sinh ghi riêng. Cho triển khai phần đủ căn cứ, N7 và quan hệ Cự Môn thấp/Phu A4 bằng quy tắc chung, kiểm gộp rồi tích hợp QA3062. Đã rà không đồng nghĩa đã giải phương pháp/triển khai. Giữ lịch sử/quyền/hạn cũ, engine ngoài phạm vi, QA3070,34bài, Live tắt và Tật chưa publish. Không mở gói khác hoặc dùng có một nhận định làm tỷ lệ hoàn thành báo cáo trả phí.

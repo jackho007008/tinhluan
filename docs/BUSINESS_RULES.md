@@ -154,3 +154,8 @@ Hai mẫu Tật chưa duyệt/publish; không có phép mở sức khỏe/sinh t
 Hai loại đặc tínhKhoa/Hồng vàhai mẫuPhu đã duyệt1.57 giữ riêng; phê duyệt đó không bao trùmHóaQuyền/quýtử/số lượng/thứ bậc/giới tính/số lần hôn nhân. Giới hạn bệnh/sinh tử/chẩn đoán/điều trị vàphẩm hạnh được U tái khẳng định giữ trong yêu cầu23/10. Tật được thẩm định hướng nhưng chưa duyệt mẫu/publish, còn phươngpháp trực tiếp; không xin mở các cấm bằng miễn trừ hoặc hạ mục tiêu trả phí. N7HóaQuyền chỉ là đề xuất có giới hạn, chưa quyết định. Phần có điều kiện nguồn thiếu không được xuất chỉ vì phạm vi được đồngý.
 
 Bổ sung cùng lượt rà:4CựPhuThìn/Tuất/Tỵ (56/111/156/168) chuyểnD→A/ND13 cho câu quan hệ độc lập “vợ chồng bỏ nhau”; phần số lần vẫn chưa chốt. D283/A4/E266 hiện hành; chưa triển khai. Xem bằng chứng táchvế trong bảngduyệt.
+
+
+## 23/10/2026 — phạm vi D hiện hành
+
+Quyết định trực tiếp mới thay phần N7 chưa duyệt ở mục trước: [13mã đã chốt](PRODUCT-SCOPE-D-REVIEW.md#quyết-định-hiện-hành--phiên-khép-checkpoint48). N1–N5 chỉ tạm giữ giai đoạn này; N7 được phép đúng Hóa Quyền bản mệnh tọa Tử Nữ/“con sớm hiển đạt”, không tuổi/thành công thực tế/hội chiếu. N6/N8 giữ đúng mẫu cũ; N9 chưa xuất; N10 chưa publish; N11–N12 giữ giới hạn; N13 giữ để làm rõ. Quyết định phạm vi không giải điều kiện/ngoại lệ nguồn và không đổi mục tiêu trả phí, G2 hoặc quyền/hạn/lịch sử.

@@ -1,6 +1,23 @@
 # Bảng duyệt phạm vi nhóm D —23/10/2026
 
-**Chờ chủ dự án duyệt theo loại; chưa có phê duyệt mới, chưa coding/publish.** Đây là phụ lục quyết định của [ND19 trong backlog duy nhất](V1-DELIVERY-PLAN.md#scope-d-review-20261023), không phải backlog hoặc đợt nghiên cứu mới. Ứng dụng giữ1.67.0/catalog1.63.0/code11b1a92; baseline tài liệu main@3eb69ce, tracked/index sạch, thư mục bàn giao Bửu Đình chưa theo dõi được giữ nguyên. Chỉ đọc hồ sơ và192 đầu ra đã lưu; không chạy lại engine/evaluator/test/build/UI/PDF/DB hoặc tác động QA.
+**Phạm vi đã được chủ dự án chốt trực tiếp ngày23/10/2026; xem quyết định hiện hành ngay dưới.** Hồ sơ đề xuất và số liệu1.67 phía dưới được giữ làm lịch sử, không còn là yêu cầu duyệt lại.
+
+## Quyết định hiện hành — phiên khép checkpoint48
+
+- **N1–N5:** tạm chưa xuất số lượng, thứ bậc, giới tính, quý tử và số lần hôn nhân trong giai đoạn hiện tại; không cấm vĩnh viễn.
+- **N6:** giữ đúng hai đặc tính Hóa Khoa/thông minh và Hồng Loan/khéo tay đã duyệt, đã triển khai.
+- **N7:** cho phép **Hóa Quyền bản mệnh tọa Tử Nữ**, lời **“con sớm hiển đạt”**. Giữ chữ “sớm”, không đặt tuổi, không xác nhận thành công thực tế, không mở hội chiếu hoặc đặc tính khác. Giao triển khai trong phiên này sau kiểm điều kiện/ngoại lệ nguồn.
+- **N8:** giữ đúng hai chú giải đã duyệt; chưa mở mẫu điều kiện mới.
+- **N9:** chưa xuất lời khuyên “nên ở riêng”.
+- **N10:** giữ hướng thẩm định được phép; Tật chưa publish, hai mẫu chưa duyệt.
+- **N11–N12:** giữ giới hạn bệnh/sinh tử/chẩn đoán/điều trị và quy kết phẩm hạnh.
+- **N13:** tiếp tục giữ để làm rõ nghĩa và khả năng tách câu.
+
+Duyệt phạm vi không thay xác minh điều kiện và ngoại lệ nguồn. Chủ dự án đồng thời giao nhánh quan hệ Cự Môn thấp/Phu A4, không mở vế đếm số lần. Không đổi G2, lịch sử/quyền/hạn, engine, QA3070,34bài Toàn thư hoặc mục tiêu trả phí đủ chủ đề12cung; Live tắt.
+
+## Hồ sơ đề xuất trước quyết định (giữ để đối chiếu)
+
+ Đây là phụ lục quyết định của [ND19 trong backlog duy nhất](V1-DELIVERY-PLAN.md#scope-d-review-20261023), không phải backlog hoặc đợt nghiên cứu mới. Ứng dụng giữ1.67.0/catalog1.63.0/code11b1a92; baseline tài liệu main@3eb69ce, tracked/index sạch, thư mục bàn giao Bửu Đình chưa theo dõi được giữ nguyên. Chỉ đọc hồ sơ và192 đầu ra đã lưu; không chạy lại engine/evaluator/test/build/UI/PDF/DB hoặc tác động QA.
 
 ## Kết quả kiểm số liệu và sửa phân loại
 
