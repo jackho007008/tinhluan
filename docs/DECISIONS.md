@@ -172,3 +172,11 @@ D/C: [Phụ](PHU-HUYNH-1.32.0.md), [Điền](NO-DIEN-1.31.0.md), `parentUnadjust
 ## VCD Tài/Quan1.67 —23/10/2026
 
 [Lô25 trong backlog duy nhất](V1-DELIVERY-PLAN.md#vcd-finance-career-167-20261023). U giao15Tài/10QuanVCD từcheckpoint1.66,cho triểnkhai tậpcon đủcăn vàdừngsaugói. D/C1.67code11b1a92:giữkhácTài hợpchiến/Quan hợpchiếu; phânTTtạisao/cungnhận; khôngđòitổnghợptoàncung. Bốnnhánh chung giữcổngtăng/giảmánh sáng đúngphươngdiện;bothTTtạisao làtậpconbảothủdựánkhôngphảisáchbắtbuộc.6/25mới,19mắtxíchcònchặn,khôngtựmởnghiêncứu/chuyểngói. Khôngghéptácgiả/sửaengine/G2/Tật/phạmvi/Livehoặcmụctiêutrảphí12cung.
+
+## 23/10/2026 — giao rà trạng thái quyết định nhómD, chưa mở phạm vi
+
+**U trực tiếp:** “Không coi tất cả là đã bị chủ dự án cấm, cũng không coi đồng ý mở phạm vi là đủ điều kiện triển khai”; giữ giới hạn bệnh/sinh tử/chẩn đoán/điều trị/phẩm hạnh; chỉ tài liệu và một bảng duyệt từbacklog, khôngcode/publish/test/build, dừngđểduyệtphạmvi. Đây không phải đồngý các phươngán trong bảng.
+
+**D đối chiếu:** [bảng duyệt13loại](PRODUCT-SCOPE-D-REVIEW.md) phân Uđãloại/Uđãcho phép/agentđềxuất/chưacóbằngchứng, dẫnQ05/Q06 vàphêduyệt4mẫu21/10.293Dgốc vẫn thiếu nhậnđịnh ở1.67;6Phu thuộc điều kiện/nguồn đã chuyểnE/ND13, cònD283. Số lượng/thứ bậc/giới tính/quýtử/số lần hôn nhân chưa có phêduyệtbao trùm; Khoa/Hồng và2chúgiải đãđượcphép khôngghiD. HóaQuyền/TửN7 làđềxuấtmới/chưaduyệt, không tự thành quyếtđịnh qua việc lưucommit. Không thayG2/hạn/quyền/lịch sử/engine/Live hoặcmụctiêutrảphí12cung.
+
+Bổ sung cùng lượt rà:4CựPhuThìn/Tuất/Tỵ (56/111/156/168) chuyểnD→A/ND13 cho câu quan hệ độc lập “vợ chồng bỏ nhau”; phần số lần vẫn chưa chốt. D283/A4/E266 hiện hành; chưa triển khai. Xem bằng chứng táchvế trong bảngduyệt.

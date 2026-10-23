@@ -65,3 +65,7 @@ Với nguồn và phạm vi **đã được chứng minh hiện nay**, yêu cầ
 ## Quyết định sau48877fe — thông báo beta không thay mục tiêu cuối
 
 Chủ dự án đã duyệt thông báo giới hạn để mô tả trung thực beta; **không duyệt phần đề xuất hạ mục tiêu V1/trả phí** ở mục trước. Mục tiêu báo cáo cá nhân đầy đủ các chủ đề12cung, có giá trị thu phí và tiêu chí nghiệm thu cuối giữ nguyên, hiện chưa đạt. Hai mẫu Tật tiếp tục chưa duyệt/publish; dữ kiện/chú giải không tính là luận cá nhân hoàn chỉnh. [Bảng quyết định trong backlog](V1-DELIVERY-PLAN.md#beta-release-decisions-20261022) phân biệt phần phạm vi có thể quyết định với phần điều kiện nguồn không thể giải bằng đồng ý. Không nghiên cứu/rule hoặc thay nội dung khách trong phiên tài liệu này.
+
+## Chuẩn hóaD23/10/2026 — không phải chỉ thiếu duyệt
+
+[HàngN10/N11 trong bảng duyệt](PRODUCT-SCOPE-D-REVIEW.md) giữ192Tật ngoài publish; hướng chúgiải cấu trúc đã được phép thẩmđịnh, không gán U cấm đọc hoặc cấm mọi chúgiải. Hai mẫu chưa duyệt và các cấm bệnh/sinh tử/chẩn đoán/điều trị giữ. Phêduyệt mẫu/phạmvi không giải HóaQuyền/TảHữu/TT trongĐồng–Cự43 hoặcHóaKhoa/ĐịaKhông trongCơ–Âm83 sửa đúng câu thế nào. Không yêu cầu toàncung/điểm số, vẫn phải giữ ngoại lệ trực tiếp. Không có rule hoặc đềxuất mở bệnh để lấp cung; không giảm mục tiêu trảphí12cung.

@@ -209,3 +209,11 @@ Lượt này chỉ giải câu hỏi điều kiện của **PDF205§13.3.45**, k
 **Kết luận:** cách hiểu **một trong hai** được các đoạn đối chiếu hỗ trợ mạnh hơn cách khẳng định bắt buộc cả hai; chưa tìm được định nghĩa hoặc ví dụ đủ trực tiếp để khóa điều kiện của lời quan hệ205. Không coi hai khả năng được hỗ trợ ngang nhau, nhưng cũng không biến mức nghiêng vềOR thành điều kiện đã được nguồn xác nhận. Loại các lập luận: dấuphẩy tự bằngOR/AND; code Nô/Phụ đang dùngOR là bằng chứng; phép an riêng hai sao là định nghĩa lời luận; NPL377 là chính văn TB; không ghi đồng cung thì chắc chắn cả hai không có ngoại lệ. Không suy cả hai tự hủy hoặc đảo quan hệ theo hai gạch số con.
 
 **Mắt xích còn thiếu:** một dẫn giải cùng tác giả áp rõ một TT hoặc cả hai TT **cho câu 205**, hoặc một định nghĩa chung thực sự bao trùm câu này; và phạm vi khi cả hai cùng án. Không cần tỷ lệ định lượng hoặc kết luận tốt/xấu toàn Tử để giải câu hỏi đó. Chưa có đặc tả điều kiện mới đủ triển khai;0nhánh/0mới có nhận định/0bổ sung. Tử76/192thiếu là số giữ từ đối chiếu192ở23c8906, không phải lượt chạy 192 mới. Dừng đúng hai câu hỏi đã giao; không sửa vănkhách, không thêm chúgiải.
+
+## Chuẩn hóa nhãn phạm vi sau1.67 —23/10/2026 (chỉ tài liệu)
+
+[BảngD hiện hành](PRODUCT-SCOPE-D-REVIEW.md) vàND13 nhận lại6lượtPhu đã gánD quá rộng:119Tử–Sát/165Nhật–CựThân có điều kiện quan hệ chưa giải;16/78LươngSửu/191LươngTý thiếu câu đúngchi;159LươngTỵ bất nhấtTB212. Đây làE, không phải loại nội dung bị U cấm, khôngsẵn sàngcoding. Không tự mở mọi chúgiải unknown từhai mẫuPhu đãduyệt.
+
+Các dòng audit13/10 nóiKhoa/Hồng ngoài biên tập đã bịphêduyệt21/10 thaythế đúnghai loại, không áp lại; hiện0lượtD khớp2ruleđãduyệt. HóaQuyền203 “Con sớm hiển đạt” vẫn là đềxuất phạm vi riêng N7 (5D/22cấu trúc192), chưa code/publish. Số lượng/thứbậc/giới tính/quýtử/sốlầnhônnhân không cóU chốtbao trùm, nhưng đồngý không tựgiải điều kiện/ngoại lệ. Bảnlưu/app1.67 giữ.
+
+Bổ sung cùng lượt rà:4CựPhuThìn/Tuất/Tỵ (56/111/156/168) chuyểnD→A/ND13 cho câu quan hệ độc lập “vợ chồng bỏ nhau”; phần số lần vẫn chưa chốt. D283/A4/E266 hiện hành; chưa triển khai. Xem bằng chứng táchvế trong bảngduyệt.

@@ -146,3 +146,11 @@ Chỉ đạo hiện tại vẫn cấm suy bệnh, sinh tử, chẩn đoán hoặ
 - **Mục tiêu phát hành trả phí:** giữ nguyên báo cáo cá nhân đầy đủ các chủ đề12cung, có nội dung đủ giá trị để thu phí. Hiện chưa đạt; không hạ tiêu chí nghiệm thu cuối, không gọi dữ kiện hoặc chú giải chưa áp dụng là luận cá nhân hoàn chỉnh.
 
 Hai mẫu Tật chưa duyệt/publish; không có phép mở sức khỏe/sinh tử/điều trị. Không dùng miễn trừ để hợp thức hóa nhận định thiếu căn cứ. Các giới hạn do biên tập chưa có quyết định trực tiếp được phân biệt với cấm đã xác nhận trong [bảng quyết định hiện hành tại backlog](V1-DELIVERY-PLAN.md#beta-release-decisions-20261022). Chỉ hai lựa chọn sản phẩm ở bảng đó còn được hỏi trong lượt này; không tự mở nghiên cứu, thêm rule, sửa nội dung khách/giao diện/quyền hoặc bán hàng.
+
+## Chuẩn hóa bằng chứng phạm vi nhómD —23/10/2026
+
+[Bảng duyệt theo loại, chưa có phê duyệt mới](PRODUCT-SCOPE-D-REVIEW.md) thay cách gọiD293 là toàn bộ nội dung đã bị chủ dự án cấm. D là thiếu quyền phát hành trong phạm vi đang giữ, có thể chỉ là hạn chế/đề xuất của agent hoặc chưa tìm thấy quyết định; **không đồng nghĩa U cấm** và không đồng nghĩa chỉ chờ đồngý. SáuPhu điều kiện/nguồn đã trảE/ND13; Dhiện283, không đổi code/đầu ra.
+
+Hai loại đặc tínhKhoa/Hồng vàhai mẫuPhu đã duyệt1.57 giữ riêng; phê duyệt đó không bao trùmHóaQuyền/quýtử/số lượng/thứ bậc/giới tính/số lần hôn nhân. Giới hạn bệnh/sinh tử/chẩn đoán/điều trị vàphẩm hạnh được U tái khẳng định giữ trong yêu cầu23/10. Tật được thẩm định hướng nhưng chưa duyệt mẫu/publish, còn phươngpháp trực tiếp; không xin mở các cấm bằng miễn trừ hoặc hạ mục tiêu trả phí. N7HóaQuyền chỉ là đề xuất có giới hạn, chưa quyết định. Phần có điều kiện nguồn thiếu không được xuất chỉ vì phạm vi được đồngý.
+
+Bổ sung cùng lượt rà:4CựPhuThìn/Tuất/Tỵ (56/111/156/168) chuyểnD→A/ND13 cho câu quan hệ độc lập “vợ chồng bỏ nhau”; phần số lần vẫn chưa chốt. D283/A4/E266 hiện hành; chưa triển khai. Xem bằng chứng táchvế trong bảngduyệt.
