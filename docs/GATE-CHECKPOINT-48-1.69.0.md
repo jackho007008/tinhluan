@@ -1,5 +1,8 @@
 # Khép lượt rà checkpoint48 —1.69.0/catalog1.65.0
 
+**Cập nhật phạm vi chỉ mục23/10/2026:** đây là bằng chứng lượt rà48đã khép. R1–R9trong tài liệu chỉ là phần tồn của checkpoint, không đại diện toàn bộ báo cáo. Danh sách hiện hành duy nhất đã hợp nhất cause-map540/Mệnh/ngũhành/backlog tại [V1 — thiếu toàn báo cáo](V1-DELIVERY-PLAN.md#full-report-gaps-169-20261023); không mở lại48hoặc thay kết quả1.69.
+
+
 Ngày23/10/2026. Baseline `main@6cbc36a`, tracked/index sạch; `buu-dinh-7parts/` chưa theo dõi giữ nguyên. Code phục vụ trước1.68.0/catalog1.64.0/code5ad5749; đối chiếu **307file ứng dụng** của checkout QA3062 khớp HEAD, không lấy bàn giao làm bằng chứng code. Code mới **1e6ab7c**. [Nhận diện baseline](../.local/gate-close-20261023/baseline-code-identity.json) · [checkpoint đủ48](../.local/gate-close-20261023/review-checkpoint.json).
 
 ## Kết quả hữu hạn
@@ -135,7 +138,7 @@ Sau:
 > Tham Lang đơn thủ Phụ Mẫu tại Thìn/Tuất: mô tả cha mẹ có của nhưng con không được thừa hưởng, trong nhà thiếu hòa khí. Hóa Lộc tại Phụ Mẫu gắn với của cải của cha mẹ. Của cha mẹ và phần con được hưởng là hai phương diện riêng.
 > Hóa Khoa tại Phụ Mẫu gắn với danh chức của cha mẹ. Đoạn này không đánh giá trí tuệ hoặc phẩm hạnh của người thân.
 
-## Một danh sách việc còn thiếu duy nhất
+## R1–R9 — phần tồn checkpoint (đã được nối vào danh sách toàn báo cáo)
 
 Đây là phụ thuộc còn thiếu sau lượt rà, không tự giao mở gói kế tiếp. Phần đã có thànhphần giữ riêng với phần chưa tổnghợp. Các hàng48ởtrên là bằngchứng, không tạo backlog thứhai.
 

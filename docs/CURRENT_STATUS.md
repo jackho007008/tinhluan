@@ -4,9 +4,13 @@ Cập nhật23/10/2026: app **1.69.0/catalog1.65.0**, code **1e6ab7c**, đã và
 
 Đọc tiếp: [hợp đồng sản phẩm](BUSINESS_RULES.md), [sổ quyết định](DECISIONS.md), [đầu mối bàn giao](HANDOFF.md).
 
+**Danh sách thiếu toàn báo cáo đã hợp nhất theo1.69:** [bảng trong backlog duy nhất](V1-DELIVERY-PLAN.md#full-report-gaps-169-20261023), [cause-map540khóa](../.local/report-gap-inventory-20261023/cause-map-169.json).540/540có việc chính,0khóa mồcôi;538dữ kiện+2chúgiải;E262/D278/A0.13lượt đã lấp từ1.67được giữ tronglịch sử,không cộngvào540.45mãUchỉ là phần việc trongND01–19,không lập backlogkhác. R1–R9không còn đại diện toàn bộ phần thiếu.
+
+Tách riêng phần đã có lời:49nhóm runtime/117lượt;5nhómMệnh93+2ngũhành83,giao20→156Mệnh,không cộng trùng. Một gói đềxuất U42/ND03–04–17: đặc tả nhánhMệnhSửu–NhậtTỵ–NguyệtDậu ở miềncóchính tinh, theo căn cứ gói1.29và2engine116/123đãlưu1.69. Chưađượctínhready/coding/publish.48vàN1–N13giữ,khôngmở lại. Phiên này chỉđốisoátJSON/tài liệu và đối chiếu byte các file mã;khôngđọc sách/tínhengine/test/build/DB/UI/runtime.
+
 **Khép lượt rà48/48 —1.69.0/catalog1.65.0, code1e6ab7c,23/10/2026.** Đã vào luồng Lập lá số QA3062 tại `.local/gate-close-20261023/qa`. Baseline main@6cbc36a sạch tracked/index;307file ứng dụng khớp checkout1.68 đang phục vụ. Giữ thư mục Bửu Đình chưa theo dõi.
 
-**48/48 đã rà** =9kế thừa+39mới;4nhóm Phụ sửa trong phiên,35giữ có căn cứ; cộng3sửa kế thừa là7nhóm đã sửa. Hai nhóm Quan ghi riêng, không đổi mẫu số. Đã rà không đồng nghĩa đã giải phương pháp hoặc triển khai toàn lời. [Bảng48+2Quan,12cung,toàn văn và danh sách còn thiếu duy nhất R1–R9](GATE-CHECKPOINT-48-1.69.0.md).
+**48/48 đã rà** =9kế thừa+39mới;4nhóm Phụ sửa trong phiên,35giữ có căn cứ; cộng3sửa kế thừa là7nhóm đã sửa. Hai nhóm Quan ghi riêng, không đổi mẫu số. Đã rà không đồng nghĩa đã giải phương pháp hoặc triển khai toàn lời. [Bằng chứng48+2Quan,12cung,toàn văn và phần thiếu của checkpoint](GATE-CHECKPOINT-48-1.69.0.md).
 
 **N1–N13 đã được chủ dự án chốt**, xem [quyết định phạm vi](PRODUCT-SCOPE-D-REVIEW.md#quyết-định-hiện-hành--phiên-khép-checkpoint48). N7đã triển khai đúng Hóa Quyền bản mệnh tọaTửNữ/“con sớm hiển đạt”, không tuổi/thành công thực tế/hội chiếu/đặc tính khác. Phu Cự Môn thấp **A4đã triển khai**, giữ cứu giảmTB208, không xuất số lần hoặc mở mẫuN8.
 
@@ -14,7 +18,7 @@ So192: **10lượt cung mới có thành phần (6Tử/4Phu),18bổ sung,4lượ
 
 999ca nội dung/6G2 DBriêng/6PDFmock/typecheck/build đạt;2engine168/13 form–lưu–mở/mobile360/390;1PDFthật9trang17đoạn frozen đủ,đã xem ảnh. MainQA3062 tạo168 có cảN7/A4 đúngversion,G2/reload,khôngordermocktrênmain. **247file cũ nguyên byte**,27token/24binding/18link và34bài nguyên;QA3070/engine/quyền/hạn/Livefalse/Tậtchưa publish giữ. [Code phục vụ](../.local/gate-close-20261023/serving-code.json), [main smoke](../.local/gate-close-20261023/main-smoke.json), [bảo toàn](../.local/gate-close-20261023/preservation.json).
 
-Điểm dừng: đã khép lượt rà48; không còn nhóm gốc kế tiếp chưa rà. Phần phương pháp còn thiếu chỉ tạiR1–R9, không tự mở nghiên cứu/Mệnh/ngũhành/gói khác. Mục tiêu trả phí đủ chủ đề12cung chưa đạt. Thời gian toàn phiên khoảng27phút (13:25ước tính–13:52ICT,23/10/2026), gồm xác minh/nguồn/code/kiểm/tích hợp/tài liệu.
+Điểm dừng: đã khép lượt rà48; không còn nhóm gốc kế tiếp chưa rà. Ở mốc checkpoint nàyR1–R9chỉ ghi phần còn thiếu của checkpoint, không tự mở nghiên cứu/Mệnh/ngũhành/gói khác. Mục tiêu trả phí đủ chủ đề12cung chưa đạt. Thời gian toàn phiên khoảng27phút (13:25ước tính–13:52ICT,23/10/2026), gồm xác minh/nguồn/code/kiểm/tích hợp/tài liệu.
 
 Các mốc dưới là lịch sử; quyết định/phục vụ hiện hành ở trên.
 
