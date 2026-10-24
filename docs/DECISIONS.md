@@ -195,3 +195,9 @@ U giao rà hết39nhóm còn lại của48gốc từ `tanbien.no-ky`, kế thừ
 Cho phép triển khai nhánh đủ đặc tả, dữ kiện đã xác minh, thuộc phương pháp/phạm vi sản phẩm đã duyệt; không hỏi lại từng câu. Phương pháp mới khác tính toán/phối hợp phải chuẩn bị đặc tả và văn mẫu để chủ dự án quyết định, chưa tự trộn catalog. N1–N13, Tật chưa publish, engine ngoài phạm vi, lịch sử/quyền/hạn/G2/QA3070/34bài/Livefalse giữ. Không tự thêm quyết định chuyên môn từ việc đọc sách.
 
 [Checkpoint nghiên cứu](../.local/source-library/knowledge/three-books-20261023/README.md) mới khép lớp chữ ToànThư, chưa hoàn tất hai phần TứHóa; không có U khép/rule/triển khai hoặc phê duyệt phương pháp mới.
+
+## 24/10/2026 — chỉ kiểm khả thi MOVE365/SPEND201/SPEECH484
+
+**U trực tiếp:** chuyển từ đọc sách sang kiểm code/schema/evaluator/renderer và bộ192 cho đúng ba ứng viên, điều chỉnh hồ sơ nguồn, lập bảng bàn giao và gói coding hữu hạn; “phiên này kiểm khả thi và lập đặc tả, chưa sửa logic hoặc publish”. Không mở sách mới/rà45U, không buộc xây phi hóa/đại vận/giải mọi sao. Giữ engine, lịch sử/quyền/G2/QA/phạm vi/Tật chưa publish/Live tắt.
+
+Kết quả nghiên cứu và đề xuất6–9giờ ở [hồ sơ nguồn](../.local/source-library/knowledge/three-books-20261023/candidates-consolidated-606e30c.md#feasibility-20261024) không tự thành phê duyệt phương pháp Trung Châu, coding, tích hợp QA hoặc xuất khách. Backlog vẫn ở đúngU39/U41, U34/U42 không mở.
