@@ -1,10 +1,10 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-## Tứ Hóa2 — checkpoint280→281, 24/10/2026
+## Tứ Hóa2 — checkpoint404→405, 24/10/2026
 
-**Nghiên cứu Tứ Hóa2 — nối `main@cbee770`, hiện PDF280→281:** [checkpoint](../.local/source-library/knowledge/three-books-20261023/checkpoint-thp2-280.md), [ghi chép181–280](../.local/source-library/knowledge/three-books-20261023/thp2-resume-cbee770.md), [ứng viên3loại/lời mẫu](../.local/source-library/knowledge/three-books-20261023/candidates-cbee770.md). Mới100 vị trí/42ảnh;236 chỉ phần nhìn được do giấy che,108 cũ giữ. Tổng THP2 280/817,126ảnh. Khép phần nhìn được §2.4–2.9, §2.10.2 dở: tiếp PDF281 sau “…Tả Phụ, Hữu Bật, Văn…”. Giữ9A; KT-EX761 thêm xác nhận; thêm1cơ chế/3ngoại lệ/2nhận định chi tiêu có mẫu chưa publish. Chi tiết và điều kiện còn thiếu ở hồ sơ, không nhân đôi kế hoạch.
+**Nghiên cứu Tứ Hóa2 — nối `main@a8a9d01`, hiện PDF404→405:** [checkpoint](../.local/source-library/knowledge/three-books-20261023/checkpoint-thp2-404.md), [ghi chép281–404](../.local/source-library/knowledge/three-books-20261023/thp2-resume-a8a9d01.md), [ứng viên/lời mẫu](../.local/source-library/knowledge/three-books-20261023/candidates-a8a9d01.md). Mới124 vị trí/62ảnh;402 vài chữ mờ,108/236 che giữ. Tổng404/817,188ảnh; khép chương2–3 và4.1–4.3 phần đọc được,4.4.1 dở. Tiếp405 sau “…vô tình; tuy biểu…”. Giữ9A và bổ sung trước; hai mẫu chi tiêu không đổi. Thêm thứ bậc cặp, ngoại lệ và một văn mẫu nghề hẹp; không cộng thành số đủ triển khai. Chi tiết/điều kiện còn thiếu ở hồ sơ.
 
-[Receipt](../.local/source-library/verifications/three-books-20261023-resume-cbee770.json). Kho chữ/ảnh/ghi chép dài ngoài Git; commit chỉ lưu đầu mối và backlog.
+[Receipt](../.local/source-library/verifications/three-books-20261023-resume-a8a9d01.json). Kho chữ/ảnh/ghi chép dài ngoài Git; commit chỉ lưu đầu mối và backlog.
 
 ## Kiểm U01 với nguồn web — 23/10/2026
 

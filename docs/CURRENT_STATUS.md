@@ -2,7 +2,7 @@
 
 ## 24/10 — tiếp tục Tứ Hóa2, chưa hoàn tất
 
-**Nghiên cứu Tứ Hóa2 — PDF280→281 (baseline `main@cbee770`):** đi qua280/817,126ảnh; mới181–280=100vị trí/42ảnh,236 chỉ chữ nhìn được,108 vẫn che. §2.4–2.9 khép phần đọc được,§2.10.2 dở. [Checkpoint](../.local/source-library/knowledge/three-books-20261023/checkpoint-thp2-280.md), [ứng viên](../.local/source-library/knowledge/three-books-20261023/candidates-cbee770.md). Giữ9A, thêm6A hẹp:1cơ chế/3ngoại lệ/2nhận định có lời mẫu chưa publish; chưa audit dữ liệu phần mềm. ChỉU27/U39/U40/U41 thêm bằng chứng,0Ukhép/0rule. Toàn Thư170/170,22ảnh;THP1 qua824/824,263ảnh và lỗi cũ giữ. Không đổi app/QA/engine/catalog/quyền/lịch sử/G2/N1–N13/phạm vi;Tật chưa publish,Live tắt;không test/build/runtime/publish.
+**Nghiên cứu Tứ Hóa2 — PDF404→405 (baseline `main@a8a9d01`):** qua404/817,188ảnh; mới281–404=124vị trí/62ảnh,402 vài chữ mờ chỉ đọc phần nhìn rõ;108/236 và lỗi cũ giữ. Khép chương2–3 và4.1–4.3 phần đọc được;4.4.1 tiếp405 sau “…tuy biểu…”. [Checkpoint](../.local/source-library/knowledge/three-books-20261023/checkpoint-thp2-404.md), [ứng viên](../.local/source-library/knowledge/three-books-20261023/candidates-a8a9d01.md). Giữ9A/bổ sung trước và2mẫu chi tiêu; thêm cơ chế thứ bậc/ngoại lệ/văn mẫu nghề hẹp, không tổng số triển khai. ChỉU27/U39/U40/U41 bổ sung,0Ukhép/0rule; dữ liệu phần mềm chưa kiểm, bất nhất nguồn giữ riêng. Toàn Thư170/170,22ảnh;THP1qua824/824,263ảnh kế thừa. Giữ app/QA/engine/catalog/quyền/lịch sử/G2/N1–N13/phạm vi,Tật chưa publish,Live tắt;không test/build/runtime/publish.
 
 Checkpoint do giới hạn ngữ cảnh; hồ sơ dài ở kho riêng ngoàiGit. Commit chỉ lưu đầu mối/trạng thái/backlog. Không xác minh lại runtime.
 
