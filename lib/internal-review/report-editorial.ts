@@ -1,3 +1,4 @@
+import {TRUNGCHAU_RULE_IDS} from '../interpretation-rules/trungchau-natal';
 import {completionBranches,completionAssessment} from '../interpretation-rules/natal-completion';
 import {voidBranches,voidAssessment} from '../interpretation-rules/void-palace';
 import type {ChartSnapshot} from '../tuvi-engine';
@@ -7,7 +8,8 @@ import {noDienBranches,noDienKey,noDienAssessment} from '../interpretation-rules
 import {familyBranches,familyKey,familyAssessment} from '../interpretation-rules/phu-huynh';
 type Reading=ReturnType<typeof buildTanBienReading>;
 export function reportGap(s:ChartSnapshot,r:Reading,name:string,complete:boolean,hasClaims:boolean){
- const rules=r.execution.rules.filter(x=>subjectOf({factIds:x.requiredFacts})===name);
+ // These three independent topic additions do not resolve pre-existing palace-content gaps.
+ const rules=r.execution.rules.filter(x=>!TRUNGCHAU_RULE_IDS.includes(x.id)&&subjectOf({factIds:x.requiredFacts})===name);
  const traces=r.execution.traces.filter(t=>rules.some(x=>x.id===t.ruleId));
  // Reuse the exact assessment behind a missing fact, only when execution recorded it missing.
  const reasons=traces.filter(t=>t.status==='missing-facts').flatMap(t=>t.details.map(id=>{

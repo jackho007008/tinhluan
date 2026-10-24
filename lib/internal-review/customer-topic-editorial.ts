@@ -31,7 +31,9 @@ const ruleIds=(p:CustomerParagraph)=>p.members.flatMap(m=>m.claim.rules.map(r=>r
 export function editCustomerTopics(sections:CustomerSection[],continuous:ContinuousReport){
  for(const section of sections.filter(s=>['assets','natal-palace-4'].includes(s.id))){
   const career=section.id==='natal-palace-4';
+  const spending=section.paragraphs.some(p=>ruleIds(p).includes('trungchau.spend201'));
   section.intro=career?'Những lời dưới đây nói về công việc, công danh và điều kiện đi kèm. Liên hệ với một ngành nghề trong cách đọc truyền thống không phải đề nghị chọn nghề.':'Phần này tách nguồn thu, tích lũy và nhà đất. Một lời có thể nói đến cả thừa hưởng lẫn tự tạo dựng; các ý ấy được đọc cùng nhau, không suy thành mức tài sản chung.';
+  if(spending)section.intro+=' Mục chi tiêu ngoài công việc nói riêng về khoản chi của bạn, kể cả sinh hoạt gia đình.';
   for(const p of section.paragraphs){
    const relation=p.id.startsWith('customer-relation-')?p.id.slice('customer-relation-'.length):p.id.startsWith('customer-coordination-')?p.id.slice('customer-coordination-'.length):undefined;
    if(relation){
@@ -40,7 +42,7 @@ export function editCustomerTopics(sections:CustomerSection[],continuous:Continu
     continue;
    }
    const ids=ruleIds(p);
-   if(career){p.title=ids.some(id=>['tanbien.r40','tanbien.career-void-tu-ngo','tanbien.career-ky-base','tanbien.career-ky-exception','tanbien.career-kinh-luc'].includes(id))?'Tiến trình và sự ổn định công việc':'Công việc và công danh';continue;}
+   if(career){p.title=ids.some(id=>['trungchau.move365','tanbien.r40','tanbien.career-void-tu-ngo','tanbien.career-ky-base','tanbien.career-ky-exception','tanbien.career-kinh-luc'].includes(id))?'Tiến trình và sự ổn định công việc':'Công việc và công danh';continue;}
    const entry=continuous.financeAssets?.entries.find(e=>e.groupId===p.id);
    if(entry?.palace==='Điền Trạch'){
     const labels=[...new Set(ids.map(id=>propertyFacets[id]).filter(Boolean))];

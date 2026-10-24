@@ -1,3 +1,4 @@
+import {SPEND201,TRUNGCHAU_RULE_IDS} from '../interpretation-rules/trungchau-natal';
 import {M05} from '../interpretation-rules/life-literary';
 import {buildCandidatePresentation, type CandidatePresentation} from './candidate-presentation';
 import {LIEM_TUONG} from '../interpretation-rules/npl-local-adjustments';
@@ -7,7 +8,7 @@ import type { buildTanBienReading } from './tanbien-reading';
 import { subjectOf } from '../exploration/model';
 import { evidenceLayers } from './tanbien-presentation';
 import {reportGap,readerHeading,readerPlace} from './report-editorial';
-export const CONTINUOUS_VERSION = 'continuous-report-1.6.2';
+export const CONTINUOUS_VERSION = 'continuous-report-1.7.0';
 export const PALACE_ORDER = ['Mệnh','Phụ Mẫu','Phúc Đức','Điền Trạch','Quan Lộc','Nô Bộc','Thiên Di','Tật Ách','Tài Bạch','Tử Nữ','Phu Thê','Huynh Đệ'];
 type Reading = ReturnType<typeof buildTanBienReading>;
 type Paragraph = Reading['sections'][number]['paragraphs'][number];
@@ -62,6 +63,11 @@ export function coordinate(palace:string, ps:Paragraph[]) {
  for(const p of ps){if(used.has(p.claim.id))continue;const g=groups.find(g=>g.text===p.display.text);if(g){g.members.push(p);g.editorial='Cùng nguyên văn, cùng cung; giữ tất cả căn cứ, không tăng độ mạnh.';}else groups.push({text:p.display.text,members:[p],editorial:null});}
  return {groups,relations:COORDINATION_DECISIONS.filter(d=>d.palace===palace&&ps.some(p=>has(p,d.left))&&ps.some(p=>has(p,d.right))).map(d=>({...d,claimIds:ps.filter(p=>has(p,[...d.left,...d.right])).map(p=>p.claim.id),status:'unresolved' as const}))};
 }
+// Append new semantic groups after existing groups, preserving old paragraph IDs and G2 membership.
+function paragraphOrder(p:Paragraph){
+ if(p.claim.rules.some(r=>TRUNGCHAU_RULE_IDS.includes(r.id)))return 2;
+ return Number(p.claim.rules.some(r=>r.id.startsWith('tanbien.life-body-')||r.id.startsWith('npl.life-body-')||r.id.startsWith('npl.life-two-major-')||r.id.startsWith('npl.life-foundation-')));
+}
 function buildContinuousReportData(snapshot:ChartSnapshot,reading:Reading,verified:boolean){
  const paragraphs=reading.sections.flatMap(s=>s.paragraphs);
  // Section is the existing narrative subject; finance-extra facts predate subjectOf's wealth prefix.
@@ -70,8 +76,8 @@ function buildContinuousReportData(snapshot:ChartSnapshot,reading:Reading,verifi
  const palaces=PALACE_ORDER.map((name,index)=>{
   const matches=snapshot.chart.palaces.filter(p=>p.name===name),p=matches.length===1?matches[0]:undefined;
   const complete=verified&&!!p&&snapshot.chart.tanBien?.completeness?.majorStars==='complete'&&(['minorStars','adjectiveStars'] as const).every(g=>snapshot.chart.tanBien?.completeness?.[g]==='complete-with-declared-supplements')&&(['majorStars','minorStars','adjectiveStars'] as const).every(g=>Array.isArray(p[g])&&p[g].every(s=>(s as {scope?:string}).scope==='origin'));
-  const ps=paragraphs.filter(p=>subject(p)===name).sort((a,b)=>Number(a.claim.rules.some(r=>(r.id.startsWith('tanbien.life-body-')||r.id.startsWith('npl.life-body-')||r.id.startsWith('npl.life-two-major-')||r.id.startsWith('npl.life-foundation-'))))-Number(b.claim.rules.some(r=>(r.id.startsWith('tanbien.life-body-')||r.id.startsWith('npl.life-body-')||r.id.startsWith('npl.life-two-major-')||r.id.startsWith('npl.life-foundation-'))))),c=coordinate(name,ps);
-  return {gap:reportGap(snapshot,reading,name,complete,ps.length>0),name,id:'natal-palace-'+index,branch:p?.earthlyBranch||null,status:!complete?'missing-data':ps.length?'claims':'facts-only',facts:p?{major:p.majorStars?.filter(s=>(s as {scope?:string}).scope==='origin').map(s=>s.name)||null,minor:p.minorStars?.filter(s=>(s as {scope?:string}).scope==='origin').map(s=>s.name)||null,other:p.adjectiveStars?.filter(s=>(s as {scope?:string}).scope==='origin').map(s=>s.name)||null}:null,
+  const ps=paragraphs.filter(p=>subject(p)===name).sort((a,b)=>paragraphOrder(a)-paragraphOrder(b)),c=coordinate(name,ps);
+  return {gap:reportGap(snapshot,reading,name,complete,ps.some(p=>p.claim.rules.some(r=>r.id!==SPEND201))),name,id:'natal-palace-'+index,branch:p?.earthlyBranch||null,status:!complete?'missing-data':ps.length?'claims':'facts-only',facts:p?{major:p.majorStars?.filter(s=>(s as {scope?:string}).scope==='origin').map(s=>s.name)||null,minor:p.minorStars?.filter(s=>(s as {scope?:string}).scope==='origin').map(s=>s.name)||null,other:p.adjectiveStars?.filter(s=>(s as {scope?:string}).scope==='origin').map(s=>s.name)||null}:null,
    groups:c.groups.map((g,i)=>({id:'natal-paragraph-'+index+'-'+i,text:g.text,editorial:g.editorial,claimIds:g.members.map(p=>p.claim.id),readerTitles:[...new Set(g.members.flatMap(q=>q.evidence.map(e=>readerHeading(e.title,name,p?.earthlyBranch||null))))],titles:[...new Set(g.members.flatMap(p=>p.evidence.map(e=>e.title)))],topics:[...new Set(g.members.map(p=>reading.sections.find(s=>s.paragraphs.includes(p))?.title))],notes:[...new Set(g.members.flatMap(p=>p.nearbyNotes.map(n=>n.text)))],members:g.members.map(p=>({claim:p.claim,original:p.display.text,layers:p.evidence.map((e,i)=>evidenceLayers(e,p.nearbyNotes,p.claim.rules[i].id)),facts:reading.execution.derivedFacts.filter(f=>p.claim.factIds.includes(f.id)),traces:reading.execution.traces.filter(t=>p.claim.rules.some(r=>r.id===t.ruleId))}))})),relations:c.relations,
    related:name==='Huynh Đệ'?paragraphs.filter(p=>p.claim.factIds.some(id=>id.startsWith('fact.no-tl-'))).map(p=>({claimId:p.claim.id,target:'natal-palace-5',text:p.evidence.map(e=>e.title).join('; ')})):[],
    unknown:reading.execution.traces.filter(t=>t.status==='missing-facts'&&reading.execution.rules.some(r=>r.id===t.ruleId&&subjectOf({factIds:r.requiredFacts})===name)),

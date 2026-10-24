@@ -1,3 +1,4 @@
+import {SPEECH484,SPEND201,trungchauFact} from '../interpretation-rules/trungchau-natal';
 import {contextualizeCustomerReport} from './customer-contexts';
 import {editCustomerTopics} from './customer-topic-editorial';
 import {captureReportPolicy} from '../trial/reading-policy';
@@ -5,7 +6,7 @@ import type {ChartSnapshot} from '../tuvi-engine';
 import {phucDispersalCopy,type ContinuousReport} from './continuous-report';
 import {CUSTOMER_COPY} from './customer-copy';
 import EDITORIAL from './customer-editorial.json';
-export const CUSTOMER_VERSION='1.69.0';
+export const CUSTOMER_VERSION='1.70.0';
 type Group=ContinuousReport['palaces'][number]['groups'][number];
 export type CustomerParagraph={context?:{version:string;ids:string[];kind:'unresolved'|'distinct-aspects';sourceGroupIds:string[];methodResolved:false};conditionalAssessment?:{condition:string;status:'unknown';outcomeApplied:false}[];id:string;title:string;text:string;claimIds:string[];sentences:{text:string;claimIds:string[];kind:'paraphrase'|'editorial-transition'|'source-relation'}[];original:string;members:Group['members'];relations:unknown[];movedToEvidence:string[];review:'editorial-checked'|'pending-editorial'};
 export type CustomerSection={id:string;title:string;palaces:string[];intro:string|null;paragraphs:CustomerParagraph[];notices:{text:string;reason:unknown}[]};
@@ -103,7 +104,7 @@ export function makeCustomerParagraph(g:Group,r:ContinuousReport,s:ChartSnapshot
   const editorial=candidate?.sourceVersion===rule.version?candidate:undefined;
   // Dynamic copy sees only this rule, never steals other meanings in an unseen group.
   const one={...g,text:m.original,members:[{...m,claim:{...m.claim,rules:[rule]}}]};
-  let text=editorial?.text??dynamicCopy(one,r,s);
+  let text=rule.id===SPEND201?(editorial?String(fact(one,trungchauFact('spend')+'-copy')??''):undefined):editorial?.text??dynamicCopy(one,r,s);
   if(text&&rule.id.startsWith('tanbien.no-table-')){
    const life=s.chart.palaces.find(p=>p.name==='Mệnh'),no=s.chart.palaces.find(p=>p.name==='Nô Bộc');
    if(life?.majorStars.length===1&&no?.majorStars.length===1)text=`Khi xét ${life.majorStars[0].name} tại Mệnh cùng ${no.majorStars[0].name} tại Nô Bộc: ${text}`;
@@ -132,8 +133,8 @@ export function buildCustomerReport(s:ChartSnapshot,r:ContinuousReport,catalogVe
  for(const p of r.palaces){
   const target=p.name==='Mệnh'?sections[0]:section(getTarget(p.name),labels[p.name]??'Tiền bạc, tích lũy và nhà đất',p.name==='Tài Bạch'||p.name==='Điền Trạch'?['Tài Bạch','Điền Trạch']:[p.name]);
   for(const g of p.groups){const rules=ids(g);let t=target;
-   if(p.name==='Mệnh')t=rules.some(id=>id.includes('life-polarity-')||id.includes('life-foundation-')||id.includes('life-two-major-'))?sections[3]:rules.some(id=>id.includes('life-body-'))?sections[0]:rules.some(id=>['tanbien.r02','tanbien.life-wu-literary-male','npl.life-local-khoa-kiep','tanbien.life-empty-mui-sun-moon-trine'].includes(id))?sections[2]:sections[1];
-   const para=makeCustomerParagraph(g,r,s);const asset=r.financeAssets?.entries.find(e=>e.groupId===g.id);para.title=p.name==='Tài Bạch'?(asset?.aspect==='retention'?'Tích lũy và giữ tiền':asset?.aspect==='income'?'Nguồn thu':'Tiền bạc'):p.name==='Điền Trạch'?'Tạo lập và duy trì nhà đất':'';
+   if(p.name==='Mệnh')t=rules.some(id=>id.includes('life-polarity-')||id.includes('life-foundation-')||id.includes('life-two-major-'))?sections[3]:rules.some(id=>id.includes('life-body-'))?sections[0]:rules.some(id=>[SPEECH484,'tanbien.r02','tanbien.life-wu-literary-male','npl.life-local-khoa-kiep','tanbien.life-empty-mui-sun-moon-trine'].includes(id))?sections[2]:sections[1];
+   const para=makeCustomerParagraph(g,r,s);const asset=r.financeAssets?.entries.find(e=>e.groupId===g.id);para.title=asset?.aspect==='spending'?'Chi tiêu ngoài công việc':p.name==='Tài Bạch'?(asset?.aspect==='retention'?'Tích lũy và giữ tiền':asset?.aspect==='income'?'Nguồn thu':'Tiền bạc'):p.name==='Điền Trạch'?'Tạo lập và duy trì nhà đất':'';
    if(para.conditionalAssessment?.length)para.title='Chú giải có điều kiện — chưa xác định';
    t.paragraphs.push(para);
   }
@@ -151,13 +152,13 @@ export function buildCustomerReport(s:ChartSnapshot,r:ContinuousReport,catalogVe
  for(const p of r.palaces)for(const rel of p.relations){if(p.name==='Tài Bạch'&&r.financeAssets?.relations.some(d=>d.id==='creation-loss'))continue;section(getTarget(p.name),labels[p.name]||p.name,[p.name]).paragraphs.push({id:'customer-coordination-'+rel.id,title:'Những ý chưa được hợp nhất',text:rel.text,claimIds:rel.claimIds,sentences:[{text:rel.text,claimIds:rel.claimIds,kind:'editorial-transition'}],original:rel.text,members:p.groups.filter(g=>g.claimIds.some(id=>rel.claimIds.includes(id))).flatMap(g=>g.members),relations:[rel],movedToEvidence:[rel.source],review:'editorial-checked'});}
  for(const g of r.candidate?.methodGaps??[])sections[3].notices.push({text:g.kind==='unsupported'?`${g.title}: dữ kiện đã xác định, nhưng trường hợp này hiện chưa có lời diễn giải.`:`${g.title}: chưa đủ dữ kiện nhất quán để diễn giải.`,reason:g});
  const order=['life','traits','learning','elements','natal-palace-4','assets','natal-palace-10','natal-palace-1','natal-palace-11','natal-palace-9','natal-palace-5','natal-palace-6','natal-palace-2','natal-palace-7'];
- const assets=sections.find(x=>x.id==='assets');if(assets)assets.paragraphs.sort((a,b)=>{const order=['Nguồn thu','Tiền bạc','Nguồn thu và hao hụt','Tích lũy và giữ tiền','Giới hạn của lời giữ tiền','Tạo lập và duy trì nhà đất','Tiền bạc và nhà đất','Đọc cùng phần công việc'];return order.indexOf(a.title)-order.indexOf(b.title);});
+ const assets=sections.find(x=>x.id==='assets');if(assets)assets.paragraphs.sort((a,b)=>{const order=['Nguồn thu','Tiền bạc','Nguồn thu và hao hụt','Tích lũy và giữ tiền','Giới hạn của lời giữ tiền','Chi tiêu ngoài công việc','Tạo lập và duy trì nhà đất','Tiền bạc và nhà đất','Đọc cùng phần công việc'];return order.indexOf(a.title)-order.indexOf(b.title);});
  editCustomerTopics(sections,r);
  contextualizeCustomerReport(sections);
  const final=sections.filter(x=>x.paragraphs.length||x.notices.length||x.id==='life').sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id));
  const policy=captureReportPolicy({sections:final} as CustomerReport,r.palaces.find(p=>p.name==='Mệnh'));
  const freeIds=new Set(policy.freeParagraphIds);
- const candidates=final.filter(x=>['traits','learning'].includes(x.id)).flatMap(x=>x.paragraphs).filter(p=>freeIds.has(p.id)&&p.review==='editorial-checked');
+ const candidates=final.filter(x=>['traits','learning'].includes(x.id)).flatMap(x=>x.paragraphs).filter(p=>freeIds.has(p.id)&&p.review==='editorial-checked'&&!p.members.some(m=>m.claim.rules.some(q=>q.id===SPEECH484)));
  const highlights:CustomerParagraph[]=[];let words=0;
  for(const p of candidates){const count=p.text.trim().split(/\s+/u).length;if(highlights.length>=3)break;if(highlights.length&&words+count>250)break;highlights.push(p);words+=count;}
  if(highlights.length){

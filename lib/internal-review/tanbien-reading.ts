@@ -1,3 +1,4 @@
+import {TRUNGCHAU_RULE_IDS,SPEECH484} from '../interpretation-rules/trungchau-natal';
 import {M05,M07} from '../interpretation-rules/life-literary';
 import { overviewPresentation } from './overview-presentation';
 import {LIEM_TUONG,KHOA_KIEP,NPL_LOCAL_METHOD} from '../interpretation-rules/npl-local-adjustments';
@@ -34,7 +35,7 @@ import {
   ruleEvidence,
   type ReadingEvidence,
 } from "./tanbien-presentation";
-export const TANBIEN_TEMPLATE_VERSION = "1.45.0";
+export const TANBIEN_TEMPLATE_VERSION = "1.46.0";
 const sections = [
   {id:"life-elements",title:"Quan hệ ngũ hành theo phương pháp Nguyễn Phát Lộc",rules:[...nplFoundationRules,...nplTwoRules].map(r=>r.id)},
   {id:"life-body",title:"Vai trò Mệnh–Thân",rules:[...lifeBodyRules,...nplBodyRules].map(r=>r.id)},
@@ -66,7 +67,7 @@ const sections = [
   {
     id: "learning",
     title: "Học hỏi, sự chủ động",
-    rules: ["tanbien.r02", "tanbien.r04", "tanbien.r21", KHOA_KIEP, M05],
+    rules: ["tanbien.r02", "tanbien.r04", "tanbien.r21", KHOA_KIEP, M05, SPEECH484],
   },
   {
     id: "work",
@@ -74,7 +75,7 @@ const sections = [
     rules: catalog
       .filter(
         (r) =>
-          r.id.startsWith("tanbien.") &&
+          (r.id.startsWith("tanbien.") || TRUNGCHAU_RULE_IDS.includes(r.id)) &&
           r.presentation?.readingTheme === "work",
       )
       .map((r) => r.id),
@@ -85,7 +86,7 @@ const sections = [
     rules: catalog
       .filter(
         (r) =>
-          r.id.startsWith("tanbien.") &&
+          (r.id.startsWith("tanbien.") || TRUNGCHAU_RULE_IDS.includes(r.id)) &&
           r.presentation?.readingTheme === "finance",
       )
       .map((r) => r.id),

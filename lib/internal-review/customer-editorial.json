@@ -6170,5 +6170,32 @@
     "catalogHash": "859378e666b8f032f8196feec5d402991de5189e53a66cba503705864c35accf",
     "strategy": "explicit-rule-prose",
     "movedToEvidence": []
+  },
+  "trungchau.move365": {
+    "text": "Trong công việc, bạn có khuynh hướng trải qua nhiều công việc khác nhau hoặc thử sức ở nhiều nơi làm việc. Khuynh hướng này vẫn có thể hiện diện khi có sự trợ giúp thuận lợi.",
+    "sourceTemplate": "Trong công việc, bạn có khuynh hướng trải qua nhiều công việc khác nhau hoặc thử sức ở nhiều nơi làm việc. Khuynh hướng này vẫn có thể hiện diện khi có sự trợ giúp thuận lợi.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Paraphrase đúng ý riêng Trung Châu đã duyệt24/10; cung căn cứ và owner chủ đề tách riêng.",
+    "movedToEvidence": [
+      "Nguồn/phương pháp, điều kiện, ngoại lệ và giới hạn giữ trong căn cứ."
+    ]
+  },
+  "trungchau.spend201": {
+    "text": "Trong những khoản chi ngoài công việc, có lúc bạn dễ mua theo hứng hoặc bị lời mời, quảng cáo hấp dẫn nên chi ngoài kế hoạch. Sau một đợt mua sắm, bạn cũng có thể quay sang giữ tiền rất chặt; khuynh hướng này không có nghĩa lúc nào bạn cũng tiêu nhiều.",
+    "sourceTemplate": "{{fact.wealth-trungchau-spend-copy}}",
+    "sourceVersion": "1.0.0",
+    "strategy": "Paraphrase đúng ý riêng Trung Châu đã duyệt24/10; cung căn cứ và owner chủ đề tách riêng.",
+    "movedToEvidence": [
+      "Nguồn/phương pháp, điều kiện, ngoại lệ và giới hạn giữ trong căn cứ."
+    ]
+  },
+  "trungchau.speech484": {
+    "text": "Bạn có xu hướng phản ứng nhanh, suy nghĩ tỉ mỉ và diễn đạt linh hoạt. Khả năng dùng lời này không có nghĩa mọi lúc bạn đều nói năng chín chắn.",
+    "sourceTemplate": "Bạn có xu hướng phản ứng nhanh, suy nghĩ tỉ mỉ và diễn đạt linh hoạt. Khả năng dùng lời này không có nghĩa mọi lúc bạn đều nói năng chín chắn.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Paraphrase đúng ý riêng Trung Châu đã duyệt24/10; cung căn cứ và owner chủ đề tách riêng.",
+    "movedToEvidence": [
+      "Nguồn/phương pháp, điều kiện, ngoại lệ và giới hạn giữ trong căn cứ."
+    ]
   }
 }

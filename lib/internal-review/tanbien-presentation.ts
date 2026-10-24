@@ -1,3 +1,4 @@
+import {trungchauFacts,trungchauRules,TRUNGCHAU_RULE_IDS,SPEND201} from '../interpretation-rules/trungchau-natal';
 import {vcdLightAssessment,VCD_LIGHT_BRANCHES,vcdLightFactId} from '../interpretation-rules/vcd-light-exceptions';
 import {phucUnadjustedBranches,phucUnadjustedKey,phucUnadjustedAssessment} from '../interpretation-rules/phuc-unadjusted';
 import {parentUnadjustedBranches,parentUnadjustedKey,parentUnadjustedAssessment} from '../interpretation-rules/parent-unadjusted';
@@ -222,6 +223,7 @@ const factLabels: Record<string, string> = {
   "fact.wealth-minor-stars": "phụ tinh tại Tài Bạch",
 };
 export function conditionText(c: Condition): string {
+ const tc=trungchauRules.find(r=>r.conditions.some(q=>q.fact===c.fact));if(tc)return tc.presentation!.sourceConditions!.join(" ");
  const vcdBranch=VCD_LIGHT_BRANCHES.find(r=>vcdLightFactId(r)===c.fact);if(vcdBranch)return vcdBranch.palace+' vô chính diệu; ngoại lệ Nhật–Nguyệt/TT đã được kiểm riêng theo đúng quan hệ và trạng thái ở chi thật; không tổng hợp toàn cung.';
  const phuc=phucUnadjustedBranches.find(r=>c.fact==='fact.'+phucUnadjustedKey(r));if(phuc)return phuc.stars!.join('–')+' cùng tọa Phúc Đức; chỉ vế họ hàng ly tán, không mở toàn nền.';
  const stable=parentUnadjustedBranches.find(b=>c.fact==='fact.'+parentUnadjustedKey(b));
@@ -289,6 +291,7 @@ export function conditionText(c: Condition): string {
     : `Điều kiện về ${label}: ${c.value}.`;
 }
 export function factEvidence(s: ChartSnapshot, id: string): ReadingEvidence {
+ if(id.includes("-trungchau-")){const f=trungchauFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện nhất quán để kiểm cấu trúc gốc Trung Châu.");}
  const phuc=phucUnadjustedBranches.find(r=>id==='fact.'+phucUnadjustedKey(r));if(phuc){const a=phucUnadjustedAssessment(s,phuc);return item(a.text,a.paths,'source');}
  const stable=parentUnadjustedBranches.find(b=>id==='fact.'+parentUnadjustedKey(b));if(stable){const a=parentUnadjustedAssessment(s,stable);return item(a.text,a.paths,'snapshot');}
  if(id==='fact.di-direct-void'){const a=diVoidAssessment(s);return item(a.text,a.paths,'source');}
@@ -441,6 +444,7 @@ export function uniqueEvidence(items: ReadingEvidence[]) {
 }
 export function ruleEvidence(s: ChartSnapshot, rule: Rule) {
   const name =
+    TRUNGCHAU_RULE_IDS.includes(rule.id)?(rule.id===SPEND201?"Tử Nữ":"Mệnh"):
     rule.presentation?.readingTheme === "work"
       ? "Quan Lộc"
       : rule.presentation?.readingTheme === "finance"
@@ -474,7 +478,7 @@ export function ruleEvidence(s: ChartSnapshot, rule: Rule) {
       ...rule.requiredFacts.map((id) => factEvidence(s, id)),
     ]),
     contextNotes:
-      name === "Mệnh"
+      name === "Mệnh" && !TRUNGCHAU_RULE_IDS.includes(rule.id)
         ? [...sourceNamingNotes(s), ...nearbyNotes(s, rule.id)]
         : [],
     conditions: rule.conditions.map(conditionText),
