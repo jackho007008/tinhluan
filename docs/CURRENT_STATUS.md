@@ -1,5 +1,15 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Ưu tiên hiện hành sau U08 — giải khoảng thiếu trước, 24/10/2026
+
+**Ưu tiên tiếp tục:** cung chưa có nhận định → phương diện bắt buộc còn thiếu → thêm chiều sâu. Đo riêng ba số; một nhận định không thành hoàn chỉnh cung. Không mở lại U08 đã nghiệm thu hoặc kiểm kê toàn dự án; trong quyền hiện có và đủ căn cứ thì triển khai đến QA, không xin lại quyền coding.
+
+[Gói đã đối chiếu](V1-DELIVERY-PLAN.md#gap-priority-package-20261024), baseline `5458d24`: đúng U10/Phủ Nô, U24/Cơ–Âm Quan, U22/Di VCD; chọn **U24**. CâuToànThư79 về tiến thân giữa xáo động có ba witness38/93/186 đang thiếu lờiQuan; ngoại lệKhúchãm được loại bằng KhúcSửu/Tỵmiếu theo43, không đoán “gặp”. **Dự kiến3lời đầu tiên/0phương diện thêm ở cung đã có lời/0chiều sâu; thực tế0/0/0**,0rule/0bản mới/0publish. [Toàn văn trước/SAU ĐỀ XUẤT](../.local/gap-priority-20261024/proposed-full-before-after.txt) chưa là đầu ra pipeline.
+
+**Hành động tiếp theo duy nhất:** quyết định cho dùng riêng nhánhToànThư Cơ–Âm tạiQuanDần và văn đã trình; phê duyệtU08 không bao trùmQuan. Sau duyệt triển khai/kiểm rồiQA. U10còn alias/tập/vị trí/phối của KhôngVong–TứSát→côlập;U22còn chuyểnchi/điều chỉnh từngvế, không có cầu nối mới. App1.71/catalog1.67/code0a681c6/G2/engine/lịch sử/quyền/hạn/QA3070/34bài nguyên;478file root/QAkhớp,PID3062đúngcwd,khôngsửaDB/runtime. Livefalse,Tật chưa publish. Chỉ kiểm tài liệu/receipt/ảnh79, không chạy test/build/UI/PDFkhách/fullgate.
+
+Các mốc dưới là lịch sử; U08 đã nghiệm thu không mở lại trong gói này.
+
 ## Hiện hành24/10 — U08 Phủ Hợi, app1.71/catalog1.67
 
 **Code `0a681c6`, đặc tả `fe3f0ac` đã được duyệt và triển khai QA3062.** [Backlog/kết quả kiểm](V1-DELIVERY-PLAN.md#u08-delivery-171-20261024), [thử Lập lá số](http://127.0.0.1:3062/lap-la-so). So192 đúng3báo cáo11/25/155 đổi:11/155 nhận lời Điền đầu tiên,25 chỉ bổ sung quy mô giữ nguyên Lộc Tồn. **2 khoảng thiếu gốc thực sự giảm;1 chỉ bổ sung;0 hoàn chỉnh cung.** Điền chỉ dữ kiện43→41; không khép toàn U08 hoặc bất nhất Dần/Thân TB151. Phương pháp Toàn Thư được duyệt riêng đúng một nhánh, văn mẫu/căn cứ đủ; không suy thừa hưởng/tự tạo/giữ được tài sản từ câu quy mô.

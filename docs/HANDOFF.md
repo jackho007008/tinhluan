@@ -1,5 +1,15 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Ưu tiên hiện hành sau U08 — giải khoảng thiếu trước, 24/10/2026
+
+**Cho các thread sau:** cung chưa có nhận định → phương diện bắt buộc còn thiếu → thêm chiều sâu; đo riêng ba số, không gọi một nhận định là hoàn chỉnh cung. Không mở lại U08 đã nghiệm thu hoặc kiểm kê toàn dự án. Đủ căn cứ trong quyền hiện có thì triển khai đến QA, không xin lại quyền coding; phương pháp mới trình đúng quyết định/văn.
+
+[Gói hữu hạn](V1-DELIVERY-PLAN.md#gap-priority-package-20261024) nối `5458d24`: xét đúng U10/Phủ Nô, U24/Cơ–Âm Quan và U22/Di VCD; chọn **U24**. Toàn Thư79có câu riêng tiến thân trong cảnh xáo động; KhúcSửu/Tỵ ở ba mẫu được chính43xếpmiếu nên không thỏa ngoại lệKhúchãm. **Tiềm năng3Quan nhận lời đầu tiên (38/93/186),0bổ sung ở cung đã có lời,0chiều sâu; thực tế0/0/0**, chưacoding/publish. Chặn mới chính xác là quyền dùng riêng nhánhToànThư choQuan/vănmẫu; phê duyệtU08 không mởQuan. [Toàn văn trước/SAU ĐỀ XUẤT](../.local/gap-priority-20261024/proposed-full-before-after.txt) là minh họa, chưapipeline/bảnlưu/QA.
+
+**Hành động tiếp theo duy nhất:** quyết định đúng nhánhQuanDần/văn đã trình; sau duyệt triển khai/kiểm phần ảnh hưởng rồiQA. App1.71/catalog1.67/code0a681c6giữ;478file root/QAkhớp,PID3062đúngcheckout; không sửa ứng dụng/DB/runtime/G2/engine/lịch sử/quyền/hạn/QA3070/34bài. Livefalse,Tật chưa publish. Kiểmreceipt/nguồn/ảnh79/link/diff, khôngtest/build/UI/PDFkhách/fullgate. U10còn tập/vị trí/phối KhôngVong–TứSát→côlập;U22còn chuyểnchi/điều chỉnh đúng vế, không lặp nghiên cứu cũ.
+
+Các mốc dưới là lịch sử; kết quả U08 đã nghiệm thu giữ nguyên.
+
 ## Hiện hành24/10 — U08 Phủ Điền Hợi đã vào QA1.71
 
 **Code `0a681c6`, app1.71.0/catalog1.67.0**, nối đặc tả đã duyệt `fe3f0ac`. [Kết quả và điểm dừng duy nhất](V1-DELIVERY-PLAN.md#u08-delivery-171-20261024), [Lập lá số QA3062](http://127.0.0.1:3062/lap-la-so), checkout `.local/u08-20261024/qa`. Đúng3mẫu11/25/155: **2 khoảng thiếu gốc được giải,1 chỉ bổ sung quy mô**,0 thay đổi văn ngoài3mẫu. [Toàn văn trước/sau](../.local/u08-20261024/full-before-after.txt). Mẫu25 giữ Lộc Tồn, không ghép nguồn; không sửa Tân Biên Dần/Thân. Toàn U08 còn mở phần bất nhất TB151, không gọi hoàn chỉnh Điền.
