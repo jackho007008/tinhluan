@@ -1,5 +1,13 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Hiện hành24/10 — U08 Phủ Hợi, app1.71/catalog1.67
+
+**Code `0a681c6`, đặc tả `fe3f0ac` đã được duyệt và triển khai QA3062.** [Backlog/kết quả kiểm](V1-DELIVERY-PLAN.md#u08-delivery-171-20261024), [thử Lập lá số](http://127.0.0.1:3062/lap-la-so). So192 đúng3báo cáo11/25/155 đổi:11/155 nhận lời Điền đầu tiên,25 chỉ bổ sung quy mô giữ nguyên Lộc Tồn. **2 khoảng thiếu gốc thực sự giảm;1 chỉ bổ sung;0 hoàn chỉnh cung.** Điền chỉ dữ kiện43→41; không khép toàn U08 hoặc bất nhất Dần/Thân TB151. Phương pháp Toàn Thư được duyệt riêng đúng một nhánh, văn mẫu/căn cứ đủ; không suy thừa hưởng/tự tạo/giữ được tài sản từ câu quy mô.
+
+563/563+12/12G2/PDFmock riêng/typecheck/build/3engine form–lưu–mở/mobile360/390/1PDF9trang21đoạn đạt; main QA3bản mới đúngversion/G2. Lịch sử256tệp/quyền/hạn/engine/QA3070/34bài nguyên;Livefalse,Tật chưa publish. Selector `finance-presentation` trực tiếp chặn gói đã sửa có ghi riêng; lỗi OPEN-TEST-02 ở `customer-reading` giữ nguyên, không gọi toàn gate xanh. [Toàn văn trước/sau](../.local/u08-20261024/full-before-after.txt), [thời gian toàn phiên từ17:21:37 ICT](../.local/u08-20261024/session.json). Hành động tiếp theo duy nhất cho phần U08 còn chặn: chờ bằng chứng mới giải đúng chữ/vị trí TB151, không tự mở nghiên cứu/nhánh mới.
+
+Các mốc dưới là lịch sử trước1.71.
+
 ## 24/10 — đề xuất gói giảm khoảng thiếu gốc, chưa đổi1.70
 
 **Code/app giữa1936d8 / 1.70 / catalog1.66.** [Backlog/đặc tảU08vàba nhómđãxét](V1-DELIVERY-PLAN.md#original-gap-package-20261024). ChọnĐiềnPhủHợitheoToànThư89 đểtrìnhduyệt nguồn/phươngphápriêngvàvếquymôđịnhtính. Engine11/25/155khớplõi: dựkiến2khoảngĐiềnđangtrống+1Điềnchỉbổsung; **thực0khépgap/0rule/0bảnmới/0publish**,khôngkhépU08bấtnhấtchữTB151 hoặcgọihoànchỉnhcung. NôĐồng–Lươngcòn“bị”/điềuchỉnh;TàiVCDkhôngbằngchứngmớigiải“hợpchiến”. Hànhđộngtiếptheoduynhất: duyệt/bác đúngmẫunhàđấtđãđặctả;chưacóquyềncodingVTTLqua việclưuhồsơ. GiữG2/engine/lịch sử/quyền/hạn/QA3070/34bài/Tật/Livefalse;khôngsửaapp/DB/runtime,testselectortàichính hoặcchạytest/build/UI/PDF. Từ16:53:09ICT,khoảng26phút tại17:19;[receipt](../.local/gap-package-20261024/session.json).

@@ -93,3 +93,7 @@ Lượt này chỉ xét **bảng chính tinh168–171 và§9.2.11ở173**; khôn
 ## 24/10 — đề xuất nguồn riêng cho PhủĐiềnHợi, chưa triển khai
 
 [Gói hữu hạn trong backlog duy nhất](V1-DELIVERY-PLAN.md#original-gap-package-20261024) nối4346c7d chọnU08: VũTàiLục/ToànThư89có câuPhủĐiền vềnhiều đấtcát/vườnruộng,khôngchiaDần/Thân. Chỉ đềxuất tậpconPhủgốcđộcĐiềnHợi,khôngTTtrựctiếp;Hợi/độclàphạmvidựán,khôngđiềukiệnsách.11/155cóchứngkiếnenginevàĐiềnđangthiếu;25cùngpredicateđãcólờiLộcTồn vềítthừahưởng/tựtạo,giữnguyênphươngdiệnđó. Tiềmnăng2ýđầutiên+1bổsung,chưalàkếtquảtriểnkhai. Thực0rule/0gapgốckhép/0publish; khôngchữaDần/ThânTB151hoặcthaybảngnguồn. ChờduyệtphươngphápToànThưriêngvàđúngmô tảquymôđịnhtính;khôngđổichữ“nhiều”thànhthuậnlợitạodựngđểnéphạmvi. Khigiữphươngpháp/quymôchưaduyệt,code1.70vàmọiTT/ngoạilệhiệnhànhnguyên.
+
+## 24/10 — thực hiện gói Phủ Hợi đã duyệt, QA1.71
+
+[Kết quả hiện hành](V1-DELIVERY-PLAN.md#u08-delivery-171-20261024), code0a681c6 nối đặc tảfe3f0ac. Toàn Thư89 là nguồn riêng đã được duyệt đúng nhánh Phủ gốc độc Điền Hợi/vắng TT trực tiếp, không sửa Tân Biên151.11/155 có lời Điền đầu tiên,25 thêm quy mô giữ Lộc Tồn: **2 khóa thiếu gốc giải,1 chỉ bổ sung**, Điền chỉ dữ kiện43→41; không hoàn chỉnh cung. TT giữ unknown, không đảo/tự hủy hoặc bỏ điều chỉnh. Bất nhất Dần/Thân TB151 chưa giải: **không khép toàn U08**. Chỉ mở lại phần chữ/vị trí khi có bằng chứng mới; các câu chờ duyệt ở mốc trước là lịch sử.

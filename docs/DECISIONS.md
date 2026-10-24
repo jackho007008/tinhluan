@@ -215,3 +215,10 @@ MOVE đặt công việc, không thấtnghiệp/sốlần/tuổi/thunhập; SPEN
 **U trực tiếp:** chọn tốiđa3nhómthiếucóthểgiảitừkhođãlưu,chọn1nhómxửlýtớikếtquả;ưu tiênkhoảngthiếugốc/điềukiệncụthể/witnessengine,khôngmặcđịnhphảiTứHóamới. ĐượccodingvàQA nếuđủcăn/phạmviđãduyệt/dữliệuhiệncó; **“Nếu cần phương pháp hoặc phạm vi mới: chuẩn bị đặc tả và toàn văn mẫu để tôi quyết định; không tự publish.”** Thiếuthìghicâuhỏivàcăn cứ,khônglặpvòngcũkhôngbằngchứngmới. Khôngđòigiảimọisao/toàncungđểgiữvếđộclập,khôngbỏđiềuchỉnhtrựctiếphoặctáchcâulàmđổinghĩa.
 
 GiữG2/engine/lịch sử/quyền/hạn/QA3070/34bài/Livefalse;Tậtđúnghướngđãduyệt,khôngđổitênvănchungtínhluậncánhân. Testselectortàichínhlỗisẵngiữngoàiphạmvi,trừkhingănkiểmgóivàphảighi riêng. Khôngmởsách/chatbot. [KếtquảsànglọcvàđặctảU08](V1-DELIVERY-PLAN.md#original-gap-package-20261024) là **đềxuấtchờquyếtđịnh**,chưaphêduyệtVTTL89/đúngvếquymôhoặcpublishqua việclưutàiliệu. BaýTrungChâu1.70đãduyệttrướckhôngtựmởphươngphápToànThưchogóinày.
+
+<a id="u08-approval-20261024"></a>
+## 24/10/2026 — duyệt và triển khai riêng U08 Phủ Điền Hợi
+
+**U trực tiếp:** “Tôi duyệt triển khai gói U08 — Thiên Phủ tại Điền Hợi, theo đặc tả tại commit fe3f0ac và văn mẫu đã trình.” Cho dùng phương pháp Toàn Thư riêng đúng nhánh và mô tả định tính “nhiều đất đai, vườn ruộng”; không mở các nhánh Toàn Thư khác. Được tích hợp pipeline chung/luồng khách QA sau kiểm, không xin lại xác nhận.
+
+Giữ điều kiện/ngoại lệ/văn mẫu; không sửa Dần/Thân Tân Biên hoặc đồng nhất hai nguồn.11/155 kiểm lời Điền đầu tiên;25 giữ Lộc Tồn và chỉ bổ sung quy mô, không tự kết luận thừa hưởng/tự tạo/giữ được. Không hardcode mẫu hoặc suy lượng/diện tích/giá trị/quyền sở hữu. Giữ lịch sử/quyền/hạn/engine/QA3070/34bài,Livefalse,Tật chưa publish. Chỉ khép toàn U08 khi đủ tiêu chí toàn mục; lời đầu tiên không thành hoàn chỉnh Điền. [Kết quả thực QA1.71](V1-DELIVERY-PLAN.md#u08-delivery-171-20261024):2khóa thiếu gốc giảm+1bổ sung, bất nhất TB151 còn mở.
