@@ -1,10 +1,10 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-## Tứ Hóa2 — checkpoint650→651, 24/10/2026
+## Ba sách — khép lượt đọc, đề xuất kiểm ba nhận định · 24/10/2026
 
-**Nối `main@c85048b`, hiện PDF650→651:** [checkpoint](../.local/source-library/knowledge/three-books-20261023/checkpoint-thp2-650.md), [nhật ký533–650](../.local/source-library/knowledge/three-books-20261023/thp2-resume-c85048b.md), [ứng viên/văn mẫu](../.local/source-library/knowledge/three-books-20261023/candidates-c85048b.md). Mới118 vị trí/77ảnh;576 chỉ tiêu đề,650 còn một cụm mờ; tổng650/817,341ảnh. Chương5 khép575; chương6§6.3.2 đoạn Diêu dở. Tiếp651 sau “Nói một cách khác,” cuối650. Hai mẫu chi tiêu có điều chỉnh trực tiếp617/616/625/626;9A/nhận định nghề365/diễn đạt484 giữ. Thêm cơ chế và ngoại lệ hẹp, không cộng thành số triển khai. Hồ sơ giữ nguồn bất nhất và dữ liệu phần mềm chưa kiểm;0Ukhép/0rule/0publish. Giữ QA/quyền/lịch sử/G2/phạm vi,Tật chưa publish,Live tắt.
+**Khảo cứu ba sách — khép lượt đọc tuần tự tới Tứ Hóa2 PDF817 (nối `main@606e30c`):** mới651–817=167 vị trí, gồm156 trang nội dung chính tới806, thư mục807–810 đã kiểmảnh nhưng chưa hiệuđính chắc mọi tựa Hán, mục lục811–817.65lượt ảnh=64trang mới+817kiểm lại; THP2 tổng405ảnh. ToànThư170trang chữ/22ảnh vàTHP1qua824/263ảnh kế thừa, không đọc lại. [Khép đọc/lỗi nguồn](../.local/source-library/knowledge/three-books-20261023/checkpoint-thp2-817.md), [nhật ký mới](../.local/source-library/knowledge/three-books-20261023/thp2-resume-606e30c.md), [ứng viên hợp nhất/văn mẫu/gói tiếp](../.local/source-library/knowledge/three-books-20261023/candidates-consolidated-606e30c.md). Chữ che/mờ/thiếu cũ giữ; mới773 thiếu số cuối dòngMộc sớm, không điền22. Giữ9A;SPEND201/202 dùng bản sửa c85048b theo617/616/625/626;SPEECH484 thêm giới hạn733 khéo nói không bảo đảm chín chắn. Thêm ngoại lệ754/774, gộp704/750 vào vaiROLE175.30ID nghiên cứu đã loại trùng (8cơchế/18ngoạilệ/4nhậnđịnh), không phải số đủ triển khai hoặc mức phủ. Đề xuất kiểm khả thi đúng3nhậnđịnh QN-MOVE365/TC-SPEND201/TC-SPEECH484: xác minh dữ liệu/cơ chế hiệncó, chồnglời và điều chỉnh trực tiếp, trả đặc tả hữu hạn; chưa thực hiện audit/coding. ChỉU27/U39/U40/U41 thêm bằng chứng,0Ukhép/0rule/0publish,U34/U42giữ. Giữ QA/engine/catalog/quyền/lịch sử/G2/N1–N13/phạmvi,Tật chưa publish,Live tắt; không test/build/runtime/DB.
 
-[Receipt](../.local/source-library/verifications/three-books-20261023-resume-c85048b.json). Kho chữ/ảnh/ghi chép dài ngoài Git; commit chỉ lưu đầu mối và backlog.
+[Receipt](../.local/source-library/verifications/three-books-20261023-resume-606e30c.json). Hồ sơ dài/ảnh/chữ ngoài Git; commit chỉ đầu mối và backlog. Không còn trang nội dung chính cần nối; phần chữ che/thiếu và kiểm phần mềm vẫn mở.
 
 ## Kiểm U01 với nguồn web — 23/10/2026
 
