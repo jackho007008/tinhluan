@@ -1,10 +1,10 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-## Tứ Hóa2 — checkpoint404→405, 24/10/2026
+## Tứ Hóa2 — checkpoint532→533, 24/10/2026
 
-**Nghiên cứu Tứ Hóa2 — nối `main@a8a9d01`, hiện PDF404→405:** [checkpoint](../.local/source-library/knowledge/three-books-20261023/checkpoint-thp2-404.md), [ghi chép281–404](../.local/source-library/knowledge/three-books-20261023/thp2-resume-a8a9d01.md), [ứng viên/lời mẫu](../.local/source-library/knowledge/three-books-20261023/candidates-a8a9d01.md). Mới124 vị trí/62ảnh;402 vài chữ mờ,108/236 che giữ. Tổng404/817,188ảnh; khép chương2–3 và4.1–4.3 phần đọc được,4.4.1 dở. Tiếp405 sau “…vô tình; tuy biểu…”. Giữ9A và bổ sung trước; hai mẫu chi tiêu không đổi. Thêm thứ bậc cặp, ngoại lệ và một văn mẫu nghề hẹp; không cộng thành số đủ triển khai. Chi tiết/điều kiện còn thiếu ở hồ sơ.
+**Nối `main@58ed439`, hiện PDF532→533:** [checkpoint](../.local/source-library/knowledge/three-books-20261023/checkpoint-thp2-532.md), [nhật ký405–532](../.local/source-library/knowledge/three-books-20261023/thp2-resume-58ed439.md), [ứng viên/lời mẫu](../.local/source-library/knowledge/three-books-20261023/candidates-58ed439.md). Mới128vị trí/76ảnh; tổng532/817,264ảnh. Chương4 đi hết phần đọc được,402 vẫn mờ;512 nhãn cung chưa chốt. Tiếp533§5.1.4 VũKhúc/HàLạc, sau đoạn quản lí tiền bạc ở532. Giữ9A,2mẫu chi tiêu vàQN-MOVE365; thêm ánh xạ/ngoại lệ/văn mẫu hẹp, chưa audit phần mềm/publish. Xem hồ sơ cho điều kiện và các bất nhất; không cộng thành số đủ triển khai.
 
-[Receipt](../.local/source-library/verifications/three-books-20261023-resume-a8a9d01.json). Kho chữ/ảnh/ghi chép dài ngoài Git; commit chỉ lưu đầu mối và backlog.
+[Receipt](../.local/source-library/verifications/three-books-20261023-resume-58ed439.json). Kho chữ/ảnh/ghi chép dài ngoài Git; commit chỉ lưu đầu mối và backlog.
 
 ## Kiểm U01 với nguồn web — 23/10/2026
 
