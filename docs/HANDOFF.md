@@ -1,10 +1,10 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-## Tứ Hóa2 — checkpoint180→181, 24/10/2026
+## Tứ Hóa2 — checkpoint280→281, 24/10/2026
 
-**Nghiên cứu Tứ Hóa2 — nối `main@74b304e`, checkpoint180→181:** [checkpoint](../.local/source-library/knowledge/three-books-20261023/checkpoint-thp2-180.md), [ghi chép PDF56–180](../.local/source-library/knowledge/three-books-20261023/thp2-resume-74b304e.md), [ứng viên/phân bốn mặt](../.local/source-library/knowledge/three-books-20261023/candidates-74b304e.md). Đọc mới125 vị trí PDF, gồm108 chỉ đọc phần nhìn được vì che;57ảnh mới/0kiểm lại. THP2 đã đi tuần tự1–180/817,84ảnh; chương1 khép101, chương2§2.1–2.3 khép179,§2.4.1 dở180. **Tiếp PDF181**, sau câu cuối180 “duyên với người khác giới, quan hệ nhục dục, tài nghệ biểu diễn”. Toàn Thư170/170,22ảnh vàTHP1 đã qua824/824,263ảnh giữ; không nhận chữ thiếu đã đọc. Giữ5A kế thừa; thêm4A hẹp TC-DIFF80/TC-EX81/TC-EX155/TC-ROLE175 về loại trừ và bảo toàn vai, chưa thành lời khách. ChỉU27/U39/U40/U41 thêm bằng chứng,0Ukhép/0rule,U34/U42 giữ. Lỗi108che,156phiKị/selfKị và bất nhất nguồn giữ trong checkpoint; không OCR/nhập lại. Chưa audit schema/dữ liệu phần mềm. Chỉ tài liệu; app1.69/catalog1.65/code1e6ab7c,QA/quyền/lịch sử/G2/N1–N13/phạmvi/Tật chưa publish/Live tắt giữ; không test/build/runtime/publish.
+**Nghiên cứu Tứ Hóa2 — nối `main@cbee770`, hiện PDF280→281:** [checkpoint](../.local/source-library/knowledge/three-books-20261023/checkpoint-thp2-280.md), [ghi chép181–280](../.local/source-library/knowledge/three-books-20261023/thp2-resume-cbee770.md), [ứng viên3loại/lời mẫu](../.local/source-library/knowledge/three-books-20261023/candidates-cbee770.md). Mới100 vị trí/42ảnh;236 chỉ phần nhìn được do giấy che,108 cũ giữ. Tổng THP2 280/817,126ảnh. Khép phần nhìn được §2.4–2.9, §2.10.2 dở: tiếp PDF281 sau “…Tả Phụ, Hữu Bật, Văn…”. Giữ9A; KT-EX761 thêm xác nhận; thêm1cơ chế/3ngoại lệ/2nhận định chi tiêu có mẫu chưa publish. Chi tiết và điều kiện còn thiếu ở hồ sơ, không nhân đôi kế hoạch.
 
-[Receipt](../.local/source-library/verifications/three-books-20261023-resume-74b304e.json). Kho chữ/ảnh/ghi chép dài ngoàiGit; commit chỉ lưu đầu mối và backlog.
+[Receipt](../.local/source-library/verifications/three-books-20261023-resume-cbee770.json). Kho chữ/ảnh/ghi chép dài ngoài Git; commit chỉ lưu đầu mối và backlog.
 
 ## Kiểm U01 với nguồn web — 23/10/2026
 
