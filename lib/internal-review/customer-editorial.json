@@ -6197,5 +6197,14 @@
     "movedToEvidence": [
       "Nguồn/phương pháp, điều kiện, ngoại lệ và giới hạn giữ trong căn cứ."
     ]
+  },
+  "vttl.dien-phu-hoi-scale": {
+    "text": "Nhà đất của bạn được mô tả theo khuynh hướng có nhiều đất đai, vườn ruộng. Lời luận này không xác nhận số tài sản hoặc quyền sở hữu thực tế của bạn.",
+    "sourceTemplate": "Nhà đất của bạn được mô tả theo khuynh hướng có nhiều đất đai, vườn ruộng. Lời luận này không xác nhận số tài sản hoặc quyền sở hữu thực tế của bạn.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Giữ nguyên văn mẫu được duyệt sau fe3f0ac; chỉ quy mô định tính, nguồn/phương pháp riêng.",
+    "movedToEvidence": [
+      "Toàn Thư PDF89, nguồn/phương pháp, điều kiện tọa Điền và ranh giới dự án Hợi/độc/vắng TT trực tiếp."
+    ]
   }
 }

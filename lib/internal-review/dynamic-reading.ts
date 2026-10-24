@@ -11,7 +11,7 @@ import {
   PRESENTATION_VERSION,
 } from "./tanbien-presentation";
 import { RULESET_VERSION } from "../interpretation-rules/catalog";
-export const DYNAMIC_VERSION = "internal-reading-1.8.0";
+export const DYNAMIC_VERSION = "internal-reading-1.9.0";
 const digest = (x: unknown) =>
   createHash("sha256").update(JSON.stringify(x)).digest("hex");
 export type ListReceipt = {
@@ -110,11 +110,11 @@ export function freezeReading(snapshot: ChartSnapshot, receipt?: ListReceipt) {
     continuousReport: continuousReport as ContinuousReport | undefined,
     compatibility: snapshot.chart.tanBien
       ? {
-          version: "tanbien-profile-compatibility-0.4.0",
+          version: "tanbien-profile-compatibility-0.5.0",
           rules: reading.execution.rules.map(r => r.id + "@" + r.version).join(", "),
           status: "input-contract-checked-not-expert-reviewed",
           changes:
-            "Các fact vị trí, đồng cung và tứ hóa lấy từ profile mới; bảng điều kiện Tân Biên giữ nguyên. Không cho phép rule Toàn Thư.",
+            "Các fact vị trí, đồng cung và tứ hóa lấy từ profile mới; bảng điều kiện Tân Biên giữ nguyên. Toàn Thư chỉ bổ sung vttl.dien-phu-hoi-scale@1.0.0 theo profile v2 và tập con U08 đã duyệt; không mở các nhánh Toàn Thư khác.",
         }
       : undefined,
     layers,

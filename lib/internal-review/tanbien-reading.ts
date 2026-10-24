@@ -35,7 +35,7 @@ import {
   ruleEvidence,
   type ReadingEvidence,
 } from "./tanbien-presentation";
-export const TANBIEN_TEMPLATE_VERSION = "1.46.0";
+export const TANBIEN_TEMPLATE_VERSION = "1.47.0";
 const sections = [
   {id:"life-elements",title:"Quan hệ ngũ hành theo phương pháp Nguyễn Phát Lộc",rules:[...nplFoundationRules,...nplTwoRules].map(r=>r.id)},
   {id:"life-body",title:"Vai trò Mệnh–Thân",rules:[...lifeBodyRules,...nplBodyRules].map(r=>r.id)},
