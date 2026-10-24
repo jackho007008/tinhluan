@@ -201,3 +201,11 @@ Cho phép triển khai nhánh đủ đặc tả, dữ kiện đã xác minh, thu
 **U trực tiếp:** chuyển từ đọc sách sang kiểm code/schema/evaluator/renderer và bộ192 cho đúng ba ứng viên, điều chỉnh hồ sơ nguồn, lập bảng bàn giao và gói coding hữu hạn; “phiên này kiểm khả thi và lập đặc tả, chưa sửa logic hoặc publish”. Không mở sách mới/rà45U, không buộc xây phi hóa/đại vận/giải mọi sao. Giữ engine, lịch sử/quyền/G2/QA/phạm vi/Tật chưa publish/Live tắt.
 
 Kết quả nghiên cứu và đề xuất6–9giờ ở [hồ sơ nguồn](../.local/source-library/knowledge/three-books-20261023/candidates-consolidated-606e30c.md#feasibility-20261024) không tự thành phê duyệt phương pháp Trung Châu, coding, tích hợp QA hoặc xuất khách. Backlog vẫn ở đúngU39/U41, U34/U42 không mở.
+
+## 24/10/2026 — duyệt triển khai đúng ba nhận định Trung Châu
+
+**U trực tiếp, task kế thừa20d45ef:** “Tôi đồng ý triển khai đúng ba nhánh và đưa vào luồng khách ‘Lập lá số’ trên QA hiện hành sau khi kiểm đạt”: QN-MOVE365, TC-SPEND201, TC-SPEECH484. Thay trạng thái chỉ kiểm khả thi/chưacoding của đúng ba nhánh; cho bổ sung phương pháp tinh hệ gốc Trung Châu trong phạm vi đã đặc tả và văn mẫu hẹp, không là phép tự ghép mọi trường phái.
+
+MOVE đặt công việc, không thấtnghiệp/sốlần/tuổi/thunhập; SPEND nói chi ngoài côngviệc của đương số, giữ diễn tiến mua theo hứng rồi có thể giữ rất chặt, áp Hỏa OR Linh619 khôngđòi độc, không gán cho con hoặc mở khoản lớn618; SPEECH giữ phản ứng/biểu đạt, khôngđồngnghĩa chínchắn/trítuệ/đạođức/thànhcông. Pipeline/dữ kiện engine dùng lại; không xây phi hóa/đạivận. Nguồn/phươngpháp/điều kiện truy vết trong chi tiết; văn chính tự nhiên. Lời khác phươngdiện giữ, không tự chọn thắng. G2 theo chủđề côngviệc/tàichính/Mệnh, không theo cung predicate; chỉ tạo bản mới bằng phiênbản mới.
+
+Được tích hợp QA sau kiểm; không bật Live, publish Tật, viết lại lịch sử/quyền/hạn, sửa QA3070 hoặc34bài. Nếu một nhánh vướng, ghi chính xác và tiếp tục nhánh độc lập; không bỏ điều kiện cho đủba. [Kết quả1.70](V1-DELIVERY-PLAN.md#three-candidates-170-20261024). Không coi thêm nhận định là hoàn chỉnh cung/báo cáo trả phí hoặc khép cácU rộng.

@@ -1,5 +1,13 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Ba nhận định đã vào QA1.70 —24/10/2026
+
+**App1.70.0/catalog1.66.0, code `a1936d8`, nối `20d45ef`.** [Kết quả/điểm dừng trong backlog duy nhất](V1-DELIVERY-PLAN.md#three-candidates-170-20261024), [QA3062 Lập lá số](http://127.0.0.1:3062/lap-la-so), checkout `.local/three-candidates-20261024/qa`. Đúng MOVE365 côngviệc/SPEND201 chi ngoài nghề của native/SPEECH484 phảnứng–biểuđạt; nguồn TrungChâu riêng, G2 theo chủđề.1/29/4khớp,7guardHỏa/Linh619khôngđộc,34báo cáo thêmý;0gapgốckhép/0cunghoànchỉnh,15Tửchỉdữkiện khôngđượclấp.134cóthêmnhóm chi ownerTài nhưng gapnguồnthu/tíchlũy giữ. [Toànvăn trước/sau4mẫu](../.local/three-candidates-20261024/representatives-full-before-after.txt).
+
+87kiểm nội dung/12G2+PDFmock DBriêng/typecheck/build/4engineUI-mobile/1PDFthật đạt; QAchính4bản mới đúngversion/G2/lưu–mở, khôngordermock. Một test selector tài chính lỗi sẵn cũng tái hiện1.69, chưa sửa/khônggọi toàngate xanh.247filecũ/quyền/hạn/34bài/engine/QA3070 giữ;Livefalse,Tậtchưa publish. Nhánh618/Mùi engine/phầnthiếuV1 ngoài kiểm; dừngđúnggói. Thời gian toànphiên khoảng24phút từ16:19:54ICT, [mốc đo](../.local/three-candidates-20261024/session.json). Hồ sơ/ảnh/nguyênvăn vàQA riêng nằm ngoàiGit, cần bàn giao riêng.
+
+Các mốc bên dưới là lịch sử.
+
 ## Kiểm khả thi ba ứng viên — 24/10/2026, nối `36deccb`
 
 [Bảng bàn giao duy nhất, đặc tả và tiêu chí gói coding](../.local/source-library/knowledge/three-books-20261023/candidates-consolidated-606e30c.md#feasibility-20261024). Đã đánh giá đúng MOVE365/SPEND201/SPEECH484: dữ liệu nền đủ, cả ba còn phần nối kỹ thuật vào pipeline; đề xuất một gói 6–9 giờ, chưa coding/publish. Đo bộ engine đã lưu: **1/29/4 mẫu khớp**, SPEND có 7 mẫu cần giới hạn Hỏa/Linh trang619 (không đòi độc tọa).32 kiểm cấu trúc/ranh giới đạt; fixture không là witness engine. Không tìm ngoài192, không tăng độ phủ, khépU hoặc tính cung hoàn chỉnh.

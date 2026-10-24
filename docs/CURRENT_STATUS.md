@@ -1,5 +1,13 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Hiện hành24/10 — gói ba nhận định1.70 đã vàoQA
+
+**App1.70.0/catalog1.66.0, code `a1936d8`, baseline20d45ef.** [Backlog/kết quả và giới hạn](V1-DELIVERY-PLAN.md#three-candidates-170-20261024), [thử Lập lá số QA3062](http://127.0.0.1:3062/lap-la-so); checkout `.local/three-candidates-20261024/qa`, cùngDB/kho cũ. MOVE3651mẫu côngviệc;SPEND20129mẫu chi ngoài nghề của đương số,7guardHỏa/Linh619khôngđộc;SPEECH4844mẫu phảnứng/biểuđạt.34báo cáo mới thêmý,0gapgốcđược khép; không tính chi là luậncon hoặc cung hoànchỉnh.134thêmnhómownerTài nhưnggapthu/tíchlũy giữ;Tử nguyên.
+
+87nội dung+12G2/PDFmockriêng/typecheck/build/4engineform-lưu-mở/mobile360/390/1PDF8trang16đoạn đạt;mainQA4bảnmới đúngversion/G2, khôngmockorder. Có1testselector tài chính lỗi sẵn trên1.69, chưa sửa, khôngbáotoàngate xanh.247tệp lịch sử/quyền/hạn/34bài/engine/QA3070 giữ;Livefalse,Tậtchưa publish. Khôngmở618/SPEND202/phi-hạn/U34/U42, khôngkhépU39/U41 hoặc mục tiêu trảphí12cung. [Toànvăn4mẫu trước/sau](../.local/three-candidates-20261024/representatives-full-before-after.txt). Khoảng24phút toànphiên từ16:19:54ICT; [mốc đo](../.local/three-candidates-20261024/session.json).
+
+Các mốc dưới là lịch sử trước1.70.
+
 ## Kiểm khả thi ba ứng viên — 24/10/2026, nối36deccb
 
 [Bảng bàn giao duy nhất và gói coding hữu hạn](../.local/source-library/knowledge/three-books-20261023/candidates-consolidated-606e30c.md#feasibility-20261024). Đã kiểm đúng **QN-MOVE365 / TC-SPEND201 / TC-SPEECH484**, không rà 45U hay mở sách mới. Dữ liệu nền đủ cho cả 3; transport sao dùng tên chuẩn, chưa có stableID. Cả3 **cần bổ sung kỹ thuật**: fact/rule/source và selector/biên tập; MOVE đặt công việc, SPEND cần owner/aspect chi ngoài nghề của đương số, SPEECH đặt phản ứng/diễn đạt. Không cần phi hóa/đại vận hoặc giải mọi sao. Nguồn619 được kiểm lại: Hỏa OR Linh tọaTử giữ khoản bắt buộc/chính đáng, không đòi độc; nhánh khoản lớn618 còn “không tổ hợp khác” ngoài gói.
