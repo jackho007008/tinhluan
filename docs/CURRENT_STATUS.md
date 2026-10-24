@@ -1,5 +1,10 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 24/10 — đề xuất gói giảm khoảng thiếu gốc, chưa đổi1.70
+
+**Code/app giữa1936d8 / 1.70 / catalog1.66.** [Backlog/đặc tảU08vàba nhómđãxét](V1-DELIVERY-PLAN.md#original-gap-package-20261024). ChọnĐiềnPhủHợitheoToànThư89 đểtrìnhduyệt nguồn/phươngphápriêngvàvếquymôđịnhtính. Engine11/25/155khớplõi: dựkiến2khoảngĐiềnđangtrống+1Điềnchỉbổsung; **thực0khépgap/0rule/0bảnmới/0publish**,khôngkhépU08bấtnhấtchữTB151 hoặcgọihoànchỉnhcung. NôĐồng–Lươngcòn“bị”/điềuchỉnh;TàiVCDkhôngbằngchứngmớigiải“hợpchiến”. Hànhđộngtiếptheoduynhất: duyệt/bác đúngmẫunhàđấtđãđặctả;chưacóquyềncodingVTTLqua việclưuhồsơ. GiữG2/engine/lịch sử/quyền/hạn/QA3070/34bài/Tật/Livefalse;khôngsửaapp/DB/runtime,testselectortàichính hoặcchạytest/build/UI/PDF. Từ16:53:09ICT,khoảng26phút tại17:19;[receipt](../.local/gap-package-20261024/session.json).
+
+
 ## Hiện hành24/10 — gói ba nhận định1.70 đã vàoQA
 
 **App1.70.0/catalog1.66.0, code `a1936d8`, baseline20d45ef.** [Backlog/kết quả và giới hạn](V1-DELIVERY-PLAN.md#three-candidates-170-20261024), [thử Lập lá số QA3062](http://127.0.0.1:3062/lap-la-so); checkout `.local/three-candidates-20261024/qa`, cùngDB/kho cũ. MOVE3651mẫu côngviệc;SPEND20129mẫu chi ngoài nghề của đương số,7guardHỏa/Linh619khôngđộc;SPEECH4844mẫu phảnứng/biểuđạt.34báo cáo mới thêmý,0gapgốcđược khép; không tính chi là luậncon hoặc cung hoànchỉnh.134thêmnhómownerTài nhưnggapthu/tíchlũy giữ;Tử nguyên.

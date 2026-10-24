@@ -209,3 +209,9 @@ Kết quả nghiên cứu và đề xuất6–9giờ ở [hồ sơ nguồn](../.
 MOVE đặt công việc, không thấtnghiệp/sốlần/tuổi/thunhập; SPEND nói chi ngoài côngviệc của đương số, giữ diễn tiến mua theo hứng rồi có thể giữ rất chặt, áp Hỏa OR Linh619 khôngđòi độc, không gán cho con hoặc mở khoản lớn618; SPEECH giữ phản ứng/biểu đạt, khôngđồngnghĩa chínchắn/trítuệ/đạođức/thànhcông. Pipeline/dữ kiện engine dùng lại; không xây phi hóa/đạivận. Nguồn/phươngpháp/điều kiện truy vết trong chi tiết; văn chính tự nhiên. Lời khác phươngdiện giữ, không tự chọn thắng. G2 theo chủđề côngviệc/tàichính/Mệnh, không theo cung predicate; chỉ tạo bản mới bằng phiênbản mới.
 
 Được tích hợp QA sau kiểm; không bật Live, publish Tật, viết lại lịch sử/quyền/hạn, sửa QA3070 hoặc34bài. Nếu một nhánh vướng, ghi chính xác và tiếp tục nhánh độc lập; không bỏ điều kiện cho đủba. [Kết quả1.70](V1-DELIVERY-PLAN.md#three-candidates-170-20261024). Không coi thêm nhận định là hoàn chỉnh cung/báo cáo trả phí hoặc khép cácU rộng.
+
+## 24/10/2026 — giao một gói giảm khoảng thiếu gốc, nối4346c7d
+
+**U trực tiếp:** chọn tốiđa3nhómthiếucóthểgiảitừkhođãlưu,chọn1nhómxửlýtớikếtquả;ưu tiênkhoảngthiếugốc/điềukiệncụthể/witnessengine,khôngmặcđịnhphảiTứHóamới. ĐượccodingvàQA nếuđủcăn/phạmviđãduyệt/dữliệuhiệncó; **“Nếu cần phương pháp hoặc phạm vi mới: chuẩn bị đặc tả và toàn văn mẫu để tôi quyết định; không tự publish.”** Thiếuthìghicâuhỏivàcăn cứ,khônglặpvòngcũkhôngbằngchứngmới. Khôngđòigiảimọisao/toàncungđểgiữvếđộclập,khôngbỏđiềuchỉnhtrựctiếphoặctáchcâulàmđổinghĩa.
+
+GiữG2/engine/lịch sử/quyền/hạn/QA3070/34bài/Livefalse;Tậtđúnghướngđãduyệt,khôngđổitênvănchungtínhluậncánhân. Testselectortàichínhlỗisẵngiữngoàiphạmvi,trừkhingănkiểmgóivàphảighi riêng. Khôngmởsách/chatbot. [KếtquảsànglọcvàđặctảU08](V1-DELIVERY-PLAN.md#original-gap-package-20261024) là **đềxuấtchờquyếtđịnh**,chưaphêduyệtVTTL89/đúngvếquymôhoặcpublishqua việclưutàiliệu. BaýTrungChâu1.70đãduyệttrướckhôngtựmởphươngphápToànThưchogóinày.
