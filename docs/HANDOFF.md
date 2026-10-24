@@ -1,12 +1,10 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-## Hai phần Tứ Hóa — THP1 kết thúc scan, THP2 checkpoint55
+## Tứ Hóa2 — checkpoint180→181, 24/10/2026
 
-[Checkpoint55→56](../.local/source-library/knowledge/three-books-20261023/checkpoint-thp2-55.md) · [Ứng viên hữu hạn](../.local/source-library/knowledge/three-books-20261023/candidates-243f786.md) · [Backlog duy nhất](V1-DELIVERY-PLAN.md#full-report-gaps-169-20261023). Kế thừa `main@243f786`: đọc nối THP1 PDF625–824 (200 vị trí), sau đó THP2 PDF1–55. THP1 chương7–11 khép theo chữ nhìn được,263ảnh; THP2 chương1§1.8.5 dở,27ảnh. Kiểm92lượt/90ảnh mới/2kiểm lại. Toàn Thư170/170 giữ. **Tiếp THP2 PDF56**, nối ý Nô Bộc của Tài là Phụ Mẫu; không đọc lại toàn lịch sử.
+**Nghiên cứu Tứ Hóa2 — nối `main@74b304e`, checkpoint180→181:** [checkpoint](../.local/source-library/knowledge/three-books-20261023/checkpoint-thp2-180.md), [ghi chép PDF56–180](../.local/source-library/knowledge/three-books-20261023/thp2-resume-74b304e.md), [ứng viên/phân bốn mặt](../.local/source-library/knowledge/three-books-20261023/candidates-74b304e.md). Đọc mới125 vị trí PDF, gồm108 chỉ đọc phần nhìn được vì che;57ảnh mới/0kiểm lại. THP2 đã đi tuần tự1–180/817,84ảnh; chương1 khép101, chương2§2.1–2.3 khép179,§2.4.1 dở180. **Tiếp PDF181**, sau câu cuối180 “duyên với người khác giới, quan hệ nhục dục, tài nghệ biểu diễn”. Toàn Thư170/170,22ảnh vàTHP1 đã qua824/824,263ảnh giữ; không nhận chữ thiếu đã đọc. Giữ5A kế thừa; thêm4A hẹp TC-DIFF80/TC-EX81/TC-EX155/TC-ROLE175 về loại trừ và bảo toàn vai, chưa thành lời khách. ChỉU27/U39/U40/U41 thêm bằng chứng,0Ukhép/0rule,U34/U42 giữ. Lỗi108che,156phiKị/selfKị và bất nhất nguồn giữ trong checkpoint; không OCR/nhập lại. Chưa audit schema/dữ liệu phần mềm. Chỉ tài liệu; app1.69/catalog1.65/code1e6ab7c,QA/quyền/lịch sử/G2/N1–N13/phạmvi/Tật chưa publish/Live tắt giữ; không test/build/runtime/publish.
 
-U27/U39/U40/U41 thêm bằng chứng phương pháp riêng;0Ukhép/0rule,U34/U42 giữ. Một số điều kiện loại trừ, traceKị và hoán vị giữ vai đủ đặc tả đầu ra hẹp; dữ liệu/cơ chế/nhánh nghĩa khác còn mở, chưa thành lời khách. [Receipt](../.local/source-library/verifications/three-books-20261023-resume-243f786.json) · [THP1](../.local/source-library/knowledge/three-books-20261023/thp1-resume-243f786.md) · [THP2](../.local/source-library/knowledge/three-books-20261023/thp2-resume-243f786.md). Không suy điền lỗi cũ hoặc727che/THP2 thiếu nối; không gọi đi hết scan là đọc được chữ mất.
-
-Chỉ tài liệu và kho riêng ngoài Git; giữ app1.69/catalog1.65/code1e6ab7c,N1–N13/G2/quyền/lịch sử/phạm vi/QA/Tật chưa publish/Live tắt; không test/build/runtime. Chưa audit schema hoặc xác minh runtime. Không OCR/nhập/kiểm kê lại. Cập nhật23/10/2026 tại `/Volumes/DATA/TINHLUAN`.
+[Receipt](../.local/source-library/verifications/three-books-20261023-resume-74b304e.json). Kho chữ/ảnh/ghi chép dài ngoàiGit; commit chỉ lưu đầu mối và backlog.
 
 ## Kiểm U01 với nguồn web — 23/10/2026
 
