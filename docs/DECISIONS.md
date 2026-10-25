@@ -11,6 +11,12 @@ Cập nhật 20/10/2026. [BUSINESS_RULES](BUSINESS_RULES.md) diễn giải hợp
 
 ## Những quyết định có xác nhận trực tiếp
 
+### Phê duyệt riêng Toàn Thư87 — Nô Thiên Lương sau6e7e551,25/10/2026
+
+**U — chủ dự án:** “Tôi duyệt triển khai riêng nhánh Toàn Thư87 ‘Thiên Lương nhiều gia nhân’, theo đặc tả commit6e7e551 và văn mẫu đã trình”. Cho pipelinechung/QA saukiểmđạt, khôngxinlạiquyềncoding. Tậpcon:ThiênLương bảnmệnh đơnthủNô,Miếu/Vượng đúngbảngToànThư37,xácnhậnvắngTTtrựctiếp; ghi riêng làgiớihạn dựán, khônggánthànhđiềukiệnnguyênvănsách.
+
+Giữ nghĩa người phụgiúp theo gia nhân và vănmẫu; khôngsuy nhiềubạnbè/quan hệ rộng/cấp dưới trungthành/chắc đượcgiúptốt hoặc sốngười. Thiếudữkiện giữunknown, khôngsuyvắngTT/đủtrạngthái; G2ownerNô,rulechungkhôngtheoID. Engine/lịch sử/quyền/hạn/QA3070/34bài/Livefalse/Tậtchưapublishgiữ. Phêduyệt khôngmởnhánhToànThưkhác hoặcchọn nguồnthắngTB. [D/C — kếtquả QA1.74/codeaf5d7e4](V1-DELIVERY-PLAN.md#no-luong-delivery-174-20261025):2Nônhậnlờiđầutiên,492khóathiếugốccònlại, khôngkhéptoànU10/hoànchỉnhNô.
+
 ### Phê duyệt riêng U07/NPL260 sau1fe982b —25/10/2026
 
 **U — chủ dự án:** “Tôi duyệt mở đúng tập con U07/NPL260 theo đặc tả và hai văn mẫu tại commit1fe982b”. Cho Điền cóchínhtinh bảnmệnh, đúngmộtTuầnHOẶCmộtTriệt trựctiếp; mở các chính tinh thuộc tậpcon, khônggiới hạnCơ–Cự. Cho pipelinechung/QA saukiểmđạt, khôngxin lạiquyền. Quyếtđịnh này thay cổng chờmở đúngtậpcon1.36, khôngmởVCD/cảhaiTT/phépđảoTB/nguồnkhác.

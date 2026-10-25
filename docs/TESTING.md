@@ -2,6 +2,16 @@
 
 Cập nhật20/10/2026 sau kiểm ND03; các lệnh mẫu dưới đây cần chọn theo phạm vi, không mặc định chạy toàn bộ. [package.json](../package.json), [vitest.config.ts](../vitest.config.ts), [playwright.config.ts](../playwright.config.ts) là cấu hình hiện có; [kiến trúc](ARCHITECTURE.md) giải thích kho/queue/quyền. Không có Git tại root; xem cách nhận diện code ở ARCHITECTURE.
 
+<a id="no-luong-testing-20261025"></a>
+## Nô Thiên Lương87 — phần ảnh hưởng25/10/2026, codeaf5d7e4
+
+- **616/616 qua8file:**`vttl-no-luong`38mới,`vttl-career-co-am`,`vttl-dien-phu`,`npl-dien-single-void`,`customer-editorial-catalog`,`customer-topic-editorial`,`continuous-report`,`no-dien`. Kiểm đủ12ôtrạngtháiToànThư37,khôngdùngbrightness; cặpĐồng/Cơ,VCD/saođơnkhác;Tuần/Triệt/cảhai;15biênthiếudữkiện;finite3ID/nguồn–dựán/G2/chốngtrùng/receipt/editorialversion. [Logcuối](../.local/no-luong-20261025/tests-final.log).
+- So192giữsnapshot/fact/rule/trace/claim/nhóm/văn/căn cứ/G2cũ; financeAssetsnguyên. Đúng44/112thêmvăn,2Nôfirst/0chỉbổsung/0chiềusâu/0sửa-rút;69Nôcòntrống,492gapgốc/491owner cơhọc. **87/107thêm căn cứunknown doTriệt**, khôngđổivăn; phépso cho phépđúng bổsungdiagnosticIDmới vàkiểmđủmọi thànhphầncũ. Khônggọi0thayđổingoài2mẫu ởmọitầng. [Impact/toànvăn](V1-DELIVERY-PLAN.md#no-luong-delivery-174-20261025).
+- Typecheck/build đạt;12/12`reading-scope`+`stored-customer-pdf`trong DBriêng`tinhluan_no_luong_…`/3099. Haiengine44/112tínhmới form–lưu–mở/G2/quyềnsởhữu/mobile360/390,chart/toànvănkhớpaudit. MockTestorderchỉ DBriêng. PDFthật44/9trang21đoạn đủfrozenvăn,theoNFC+khoảngtrắng;đoạnNôtrang6,nguồn87/37,đãxemcontact/trang6/mobile. QAchínhhai bảnmới44/112đạtversion/G2/lưu–mở,khôngorder/mock.
+- Bảo toàn274filelịch sử/quyền/hạn/bindings/liênkết/34bài/6fileengine/QA3070.484file root/checkoutkhớp,mộtworkerchính; isolated3099dừng. Khôngmigration/backfill/fullgate/providerthật/Live; khôngchạy/sửa selectortàichínhlỗisẵn.
+
+**Lỗi đầu/lượt sửa:** lượt1có614pass/2fail. Một assertionnhãnđúng đãbắt thiếu nhãn`Quy mô người phụ giúp`ởcustomer; sửa điểmhiểnthịđúngIDmới tạiNô. BiênTT`null entry`đượcpredicate/factmớitrảunknown nhưng`executeRules`còn gọi derivedfinance-vcd cũ vàthrow đọc`name`ởnull. Giữ kiểmbiênnull trực tiếppredicate/fact; khôngmởsửa bộTàicũ hoặcgọi đãkiểmpipelinechungvớiobjectnullngoàihợpđồngengine. Các biênthiếudữkiệncòn lại vẫnkiểmqua evaluator. Lượtcuối616/616;typecheck/buildchạylại sau sửa hiểnthị,12G2riêngđạt. Khôngsửaexpectednguồn/lịch sử; hai testU08/U24chỉ cậpnhậtdanh sáchIDđượcmở vàmetadata bảnmới. Lượtđầuphépso táidùngU24đòi`gap=null`, đổi vềyêucầugiữnguyêngapTBvìNôchưagiảiđiềuchỉnh; sauđó ghiđúngdiagnostic87/107vàthẩmtra cácphầncũgiữ. Khôngdùngviệcsửa phépso đểbỏlờihoặcgiấuthayđổi.
+
 <a id="u07-testing-20261025"></a>
 ## U07/NPL260 — phần ảnh hưởng25/10/2026, code110ff10
 
