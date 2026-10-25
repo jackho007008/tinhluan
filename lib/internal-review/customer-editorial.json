@@ -6251,5 +6251,14 @@
     "movedToEvidence": [
       "NPL326/322–325; VCD/singleton/vắng TT/tập giữ là giới hạn dự án, không định nghĩa đơn thủ phụ tinh hoặc suy hết bất lợi."
     ]
+  },
+  "vttl.phuc-liem-sat-effort": {
+    "text": "Trong cách luận về phúc đức, Liêm Trinh–Thất Sát được mô tả bằng sự vất vả, khó nhọc. Đây chưa phải kết luận về hoàn cảnh hay diễn biến thực tế của bạn.",
+    "sourceTemplate": "Trong cách luận về phúc đức, Liêm Trinh–Thất Sát được mô tả bằng sự vất vả, khó nhọc. Đây chưa phải kết luận về hoàn cảnh hay diễn biến thực tế của bạn.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Giữ nguyên văn được duyệt sau414be37, chỉ vế tân khổ riêng Toàn Thư84.",
+    "movedToEvidence": [
+      "Nguồn Toàn Thư84; Sửu/Mùi, vắng TT và 4 sát tại bản phương/tam hợp/xung là tập con dự án, không gán thành nguyên văn sách."
+    ]
   }
 }

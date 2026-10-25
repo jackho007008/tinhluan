@@ -1,3 +1,4 @@
+import {vttlPhucLiemSatRule} from './vttl-phuc-liem-sat';
 import {nplPhu326Rule} from './npl-spouse-vcd-lonely';
 import {vttlNoLuongRule} from './vttl-no-luong';
 import {nplDienSingleRules} from './npl-dien-single-void';
@@ -38,7 +39,7 @@ import {lifeContentRules,lifeExpansionRules,refineLifeRules} from "./tanbien-lif
 import { tanBienRules } from "./tanbien";
 import { derivations } from "./derived";
 import { ruleSchema, type Rule } from "./schema";
-export const RULESET_VERSION = "interpretation-1.71.0";
+export const RULESET_VERSION = "interpretation-1.72.0";
 const base = {
   version: "1.0.0",
   origin: "catalog" as const,
@@ -1168,5 +1169,5 @@ export const catalog: Rule[] = [
   ...careerClosingRules,
   ...phucDiRules,
   ...lifeLiteraryRules,...nplLocalRules,...nplFoundationRules,...nplTwoRules, ...nplBodyRules, ...lifeBodyRules, retentionRule, ...voidRules, ...kinRules, ...childrenVcdRules.slice(0,2), ...familyRules, ...noDienRules, ...completionRules, ...childrenVcdRules.slice(2,6), ...kinExtensionRules.slice(0,9), ...familyExtensionRules, ...familyVcdRules, ...kinExtensionRules.slice(9), ...childrenVcdRules.slice(6), ...approvedKinRules, ...localPalaceRules, ...quanTaiRules, ...vcdLightRules,...financeVcdRules,...financeVcdScaleRules,...careerVcdScaleRules, ...diVoidRules, ...parentUnadjustedRules, ...phucUnadjustedRules,
-  ...trungchauRules, vttlDienPhuRule, vttlCareerCoAmRule, ...nplDienSingleRules, vttlNoLuongRule, nplPhu326Rule,
+  ...trungchauRules, vttlDienPhuRule, vttlCareerCoAmRule, ...nplDienSingleRules, vttlNoLuongRule, nplPhu326Rule, vttlPhucLiemSatRule,
 ];
