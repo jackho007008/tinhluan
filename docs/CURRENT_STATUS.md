@@ -1,5 +1,15 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Hiện hành 25/10 — QA1.76/catalog1.72; còn487 khóa thiếu gốc
+
+**Code `dcdcbb6`**, [nghiệm thu Phúc Liêm–Sát Toàn Thư84](V1-DELIVERY-PLAN.md#phuc-liem-sat-delivery-176-20261025), [QA3062](http://127.0.0.1:3062/lap-la-so). **2 lời Phúc đầu tiên98/101;489→487 khóa thiếu gốc**, Phúc chỉ dữ kiện26→24. 0 chỉ bổ sung phương diện/0 chiều sâu/0 sửa-rút; ngoài hai mẫu0 đổi văn/thông báo/căn cứ khách. Bản tính mới thêm fact/trace và metadata phiên bản; lịch sử không backfill.
+
+[Toàn văn trước/sau bản lưu QA chính](../.local/phuc-liem-sat-20261025/stored-full-before-after.txt). Nhãn **Vất vả, khó nhọc**. Văn: “Trong cách luận về phúc đức, Liêm Trinh–Thất Sát được mô tả bằng sự vất vả, khó nhọc. Đây chưa phải kết luận về hoàn cảnh hay diễn biến thực tế của bạn.” Trạng thái pipeline bỏ hai thông báo trống toàn phần; giữ giới hạn khác, không hoàn chỉnh Phúc/khépU06.
+
+Giữ đủ tập con bản mệnh Phúc Sửu/Mùi/cert/vắng TT trực tiếp/vắng Kình–Đà–Hỏa–Linh tại bản phương/tam hợp/xung; missing/điều chỉnh chưa phối unknown, tách nguồn84 với cổng dự án. Không suy sức khỏe/tuổi thọ/nghèo khó/đạo đức/họ hàng, không sửa chuỗi TB. **Sửu chỉ fixture; hai engine đều Mùi.** G2 ownerPhúc trả phí, không lộ free/API/print/PDF.
+
+250/250 nội dung(53 mới),12/12 G2/PDF mock DB riêng,typecheck/build/so192; một engine form–lưu–mở/mobile360/390/PDF9trang19đoạn đạt, hai bản mới QA chính/version/G2/lưu–mở đạt. 286 file lịch sử/quyền-hạn/34 bài/engine6file/QA3070 nguyên;488 file root/QA khớp,một worker,Livefalse,Tật chưa publish. [Runtime](../.local/phuc-liem-sat-20261025/final-runtime-check.json), [kiểm/giới hạn](TESTING.md#phuc-liem-sat-testing-20261025), [thời gian làm/chờ/gián đoạn](../.local/phuc-liem-sat-20261025/session.json). **Dừng đúng gói này; không tự mở việc kế tiếp.** Các mốc dưới là lịch sử.
+
 ## Hiện hành 25/10 — 489 khóa thiếu; đề nghị Phúc Liêm–Sát
 
 Baseline thực `main@dcb018f`, code `6faa35f`, app 1.75/catalog 1.71; 486 file root/QA khớp, QA3062 đúng checkout, QA3070 giữ. **Phiên này giảm 0 khóa; thực tế vẫn 489.** Ứng dụng, lịch sử/quyền/hạn, engine/G2/34 bài không đổi; Live tắt, Tật chưa publish.

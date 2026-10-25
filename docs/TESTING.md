@@ -2,6 +2,16 @@
 
 Cập nhật20/10/2026 sau kiểm ND03; các lệnh mẫu dưới đây cần chọn theo phạm vi, không mặc định chạy toàn bộ. [package.json](../package.json), [vitest.config.ts](../vitest.config.ts), [playwright.config.ts](../playwright.config.ts) là cấu hình hiện có; [kiến trúc](ARCHITECTURE.md) giải thích kho/queue/quyền. Không có Git tại root; xem cách nhận diện code ở ARCHITECTURE.
 
+<a id="phuc-liem-sat-testing-20261025"></a>
+## Gói Phúc Liêm–Sát Toàn Thư84 —25/10/2026
+
+- **250/250 qua8file**,53 ca mới `vttl-phuc-liem-sat`; còn `vttl-no-luong`,`vttl-career-co-am`,`vttl-dien-phu`,`npl-spouse-vcd-lonely`,`customer-editorial-catalog`,`customer-topic-editorial`,`continuous-report`. Kiểm khớp/no/unknown, Sửu/Mùi và ngoài chi, VCD/thiếu/thêm chính tinh, chiếu không thay tọa, TT/cảhai,4sát×4vịtrí,17 biên cert/scope/TT/chính tinh,8 nhóm biên list/scope/trùng phụ tinh, chống trùng/G2/editorial/giữ lời cũ/trống. [Log](../.local/phuc-liem-sat-20261025/tests-final.log).
+- So192 giữ mọi thành phần cũ, đúng2first98/101;0 bổ sung/chiều sâu/sửa-rút/ngoài hai mẫu về văn/nhóm/thông báo/căn cứ khách. Mỗi bản tính mới thêm fact/status/rule/trace và metadata mới; lịch sử không đổi. Khóa gốc487; owner cơ học486 khác thước đo. 192free projections không lộ văn/ID/lý do unknown mới. [Impact](../.local/phuc-liem-sat-20261025/impact192.json).
+- Typecheck/build đạt,12/12 reading-scope+stored-customer-pdf bằng DBriêng `tinhluan_phuc_sat_…`/3100. Mock Test chỉ ở DBriêng, không SePay thật. Một engine98 Mùi form–lưu–mở/quyền/G2/API/print/mobile360/390/PDF thật đạt; chart/sections/palaces khớp audit. PDF9trang19đoạn đủ frozen theo NFC+khoảng trắng, lời Phúc trang7, nguồn84/Vũ Tài Lục; đã xem contact9trang/trang7/mobile. Hai chứng kiến engine98/101 Mùi; **Sửu chỉ fixture**, không nhận đã kiểm engine Sửu. Không lặp UI/PDF cho hai mẫu cùng đường.
+- QAchính98/101 tạo bản mới/form/lưu–mở/G2/version đạt, không order/mock.286file lịch sử có backup/giữ byte; quyền-hạn/bindings/liên kết/34bài/engine6file/QA3070 nguyên.488file root/checkout khớp,một worker; isolated3100 dừng. Không migration/backfill/fullgate/provider thật/Live hoặc sửa selector tài chính cũ.
+
+**Lỗi đầu/lượt xử lý:** không có test ứng dụng thất bại trong tập đã chạy. Setup prepare lần đầu thiếu `--env-file` dừng vì cấu hình URL chưa nạp, trước tạo package/runtime; chạy lại với env rõ ràng đạt. Kết nối DB lần đầu bị EPERM localhost, chưa tạo DB; lượt có quyền kết nối tạo đúng DBriêng và đạt. Typecheck được kiểm lại sau bổ sung file test vào checkout; build ứng dụng đã đạt và byte ứng dụng không đổi. Ba test nhánh Toàn Thư cũ chỉ cập nhật allowlist hữu hạn/metadata bản mới, không sửa expected nguồn/lịch sử. Không gọi mock là thanh toán/PDF thật. [Chứng cứ/giới hạn](../.local/phuc-liem-sat-20261025/verification-notes.json), [nghiệm thu](V1-DELIVERY-PLAN.md#phuc-liem-sat-delivery-176-20261025).
+
 <a id="phu326-testing-20261025"></a>
 ## Phu VCD/NPL326 — phần ảnhhưởng25/10/2026,code6faa35f
 

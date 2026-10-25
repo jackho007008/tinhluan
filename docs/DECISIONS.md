@@ -11,6 +11,12 @@ Cập nhật 20/10/2026. [BUSINESS_RULES](BUSINESS_RULES.md) diễn giải hợp
 
 ## Những quyết định có xác nhận trực tiếp
 
+### Phê duyệt riêng Toàn Thư84 — Phúc Liêm–Sát sau414be37,25/10/2026
+
+**U — chủ dự án:** “Tôi duyệt mở riêng nhánh Toàn Thư PDF84: Liêm Trinh–Thất Sát tại Phúc Đức, theo đúng đặc tả và văn mẫu của bàn giao commit 414be37.” Cho triển khai pipeline chung/kiểm/tích hợp QA3062, không xin lại quyền. Đúng tập con bản mệnh đồng cung Phúc Sửu/Mùi, dữ liệu đủ chứng nhận, vắng TT trực tiếp và Kình/Đà/Hỏa/Linh tại bản phương/tam hợp/xung. Thiếu dữ liệu hoặc điều chỉnh chưa giải giữ unknown. Các cổng là tập con dự án, không gán thành nguyên văn sách; không mở nhánh nguồn khác.
+
+Giữ nhãn “Vất vả, khó nhọc” và toàn văn đã duyệt; không suy sức khỏe, tuổi thọ, nghèo khó, đạo đức hoặc hoàn cảnh họ hàng. Bỏ thông báo trống toàn phần theo pipeline; không hoàn chỉnh Phúc/khép toàn nhóm. Sửu nếu chỉ fixture phải ghi đúng. Giữ G2/lịch sử/quyền-hạn/engine/QA3070/34 bài/Livefalse/Tật chưa publish. **Dừng sau gói.** [D/C — QA1.76/code dcdcbb6](V1-DELIVERY-PLAN.md#phuc-liem-sat-delivery-176-20261025): hai mẫu98/101 đạt lời đầu tiên,487khóa còn lại; không sửa/rút lời cũ hoặc đổi văn ngoài hai mẫu.
+
 ### Phêduyệt riêng Phu VCD/NPL326 sau5c5d3ec —25/10/2026
 
 **U — chủdựán:**“Tôi duyệt triển khai riêng nhánh Phu VCD/NPL326 theo đặc tả commit5c5d3ec”. Cho mộtrulechungđúngmộtCô/Quả/ĐẩutrựctiếpPhuVCD,vắngTT,đủcert/scope/tậpgiữvàverifiedNatalTransformationshiệncó;giữnguyênvăn/nhãn,vàchophépQA saukiểmđạt. Khôngxinlạiquyềncoding. VCD/singleton/tậpgiữlàgiớihạn dựán,khôngđịnhnghĩađơnthủNPLhoặcORmọinơi;khôngmượnđốicung/saochiếu,khôngsuykếtquảngược hoặcunknownthànhchialy. KỵPhu/thiếuchứngnhậnHóagiữđúngunknown,khôngtínhlạiHóa/giảitoànlásố.
