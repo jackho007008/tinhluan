@@ -2,6 +2,20 @@
 
 Cập nhật20/10/2026 sau kiểm ND03; các lệnh mẫu dưới đây cần chọn theo phạm vi, không mặc định chạy toàn bộ. [package.json](../package.json), [vitest.config.ts](../vitest.config.ts), [playwright.config.ts](../playwright.config.ts) là cấu hình hiện có; [kiến trúc](ARCHITECTURE.md) giải thích kho/queue/quyền. Không có Git tại root; xem cách nhận diện code ở ARCHITECTURE.
 
+<a id="root-gap-batch-testing-20261026"></a>
+## Lô B01/B02 — hoàn tất26/10/2026,codeb7083fc
+
+- **297/297qua8file,112ca mới** `vttl-root-batch`;còn`vttl-phuc-liem-sat`,`vttl-no-luong`,`vttl-career-co-am`,`vttl-dien-phu`,`customer-editorial-catalog`,`customer-topic-editorial`,`continuous-report`. Hai trạng thái/bảng riêng,chi khớp/ngoài/thiếuô;TT1/2/vắng/missing;KìnhĐà B01chỉtrựctiếp/B02bốnvịtrí;LiêmSát/TửTham;VCD/cặp/chiếu;cert/list/scope/trùng/unknown,chốngtrùng/editorial/G2/giữlờicũ/trống67đúngphạmvi. [Logcuối](../.local/root-batch-delivery-20261025/tests-final.log).
+- So192đúngB01first29/115/118/122/125,B02first67;6khóa gốc,còn481.0chỉbổsung/chiềusâu/sửa-rút;giữmọithànhphầncũ.13báocáođổicăn cứ/trạngthái,vănthấyđổingoàisáuở43/64/133,4ca102/105/180/190giữcâu nhưngthêmcăn cứ.67giữ3traceVCD/undeterminedvàthôngbáocònthiếu;financeAssetschỉthêm1liênkếtunclassifiedcôngviệctrong67,cácfacettiềnbạcnguyên.192freeprojectionkhônglộcopy/ID/unknownmới. [Impact](../.local/root-batch-delivery-20261025/impact192.json).
+- Typecheck/buildcuốiđạt;12/12`reading-scope`+`stored-customer-pdf`DBriêng`tinhluan_root_batch_…`/3100. MockTestchỉDBriêng,khôngSePaythật. Engine29Tuất/67Dậu form–lưu–mở/quyền/G2/API/print/mobile360/390,mỗinhánh1PDFthậtđủfrozen:Nô8trang15đoạn,target6;Quan9trang19đoạn,target5.Đãxemcontact/trangtarget/mobile,cảhai chart/sections/palaceskhớpaudit. **B01Dậu/Hợi,B02Tỵ/Sửuchỉfixture**,khôngtìmthêmengine hoặcgọiđãkiểmenginecácchiấy.
+- QAchính2formđạidiện+4APIcùngluồngtạo6bảnmới/lưu–mở/version/G2,khôngorder/mock.490file root/QAkhớp,mộtworker,engine6file/QA3070/quyền-hạn/bindings/liênkết/34bàinguyên,Livefalse/Tậtchưapublish. Isolated3100dừng,khôngmigration/backfill/fullgate/providerthật/sửaselectorTàicũ.
+
+**Lỗi từng lượt:** lần1khôngchạytestdoenumreadingTheme`career`khônghợplệ,sửađúng`work`. Lần2có296pass/1fail:B02đãmatchednhưngthiếuregistrationtrongsectionCôngviệc;thêmđúngIDB02vàtemplateversionmới. Lần3có296pass/1fail:asserttestmớiđòigapnullsai,khi67còn3traceVCDcũ;giữtrace/giới hạnvàsửaassertkiểmđúngkhôngcònthôngbáotrốngtoànphần. Lần4vàcuốicùng297pass;sauphânloạiônguồnMùichưa cólàunresolved-adjustmentchứkhôngthiếudữliệukháchđãchạy297vàso192lạicuối. ComparebanđầuđòifinanceAssetsbấtbiếnhoàntoàn;bổsungngoạilệđượckiểmchặtđúngliênkếtunclassifiedB02ở67,khôngsửacodefinance/facet/vănđểlàmxanh. BốntestToànThưcũchỉđổiallowlist/metadatahiệnhành,khôngexpectednguồn/lịch sử.
+
+UI29hailượtđầudừngởassertcăn cứđòinguyêncụm“tập con dự án”;UIthựctếdùng“cổng dự án”,đổiassertharnesskiểmđúngýnghĩavàghiđủtext,khôngsửalờinguồn/ứngdụngchỉđểxanh.Lượtcuối29và67đạtđủmobile/PDF. [Nhật kýkiểm](../.local/root-batch-delivery-20261025/verification-notes.json). Cácbiênnull/malformedđượckiểmtrựctiếppredicate/factmới,khôngtuyênbốmọimodulecũchấpnhậnobjectngoàihợpđồngengine.
+
+**Bảo toàn có ngoại lệ TTL cũ:**hash284fileđầuphiên,266filecòntạibằngbyte;18file1phiêntrialhếthạnđượcmaintenancehourlycũdọn,đốichiếuexpiresAtvàbackupbấtbiến.Khôngmanualpurge/restore/giahạn.Backedup283file,1filehếthạntrướccopychưacóbảncopyđủ.Khôngsửachínhsáchretentionđểxanhhoặcgọi284filevẫncònnguyên. [Receipt](../.local/root-batch-delivery-20261025/expired-history-check.json),[preservation](../.local/root-batch-delivery-20261025/preservation.json),[nghiệmthu](V1-DELIVERY-PLAN.md#root-gap-batch-delivery-177-20261026).
+
 <a id="phuc-liem-sat-testing-20261025"></a>
 ## Gói Phúc Liêm–Sát Toàn Thư84 —25/10/2026
 

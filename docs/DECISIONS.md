@@ -11,6 +11,12 @@ Cập nhật 20/10/2026. [BUSINESS_RULES](BUSINESS_RULES.md) diễn giải hợp
 
 ## Những quyết định có xác nhận trực tiếp
 
+### Duyệt triển khai chung B01/B02 theo79b3947 —25/10/2026, nghiệm thu26/10
+
+**U — chủ dự án:**“Tôi duyệt cả B01 và B02 theo toàn bộ bảng đặc tả tại V1-DELIVERY-PLAN.md, mục root-gap-batch-176-20261025, bàn giao commit79b3947.” Cho một lô pipeline chung/kiểm/tích hợpQA, không xin lại quyền. B01đúng1ÂmNô/MiếuDậu-Hợi-Tuất bảng31/vắngTT,Kình-Đàchỉtrựctiếp,Liêm-Sát0/4/6/8unknown;khôngthêm6sát. B02QuanVCD/Hỏatrựctiếp/BìnhthườngTỵ-Dậu-Sửu bảng52/vắngTT,Kình-Đà/Tử-Tham0/4/6/8unknown,Mùichưaônguồngiữunknown;khôngHỏa–LinhMệnh/tuổi/vận hạn. Giữnguyênnhãn/văn,căn cứtáchnguồn/bảng/cổng/lýdounknown,khôngtheoID/cungtrống.
+
+Giữlờicũ/G2NôQuantrảphí/lịch sử/quyền-hạn/engine/QA3070/34bài/Livefalse/Tậtchưapublish. Thôngbáotrốngtheopipeline,giớihạn67/traceundeterminedcònđúngphảigiữ. Fixturekhônggọiengine. Chỉtrừ6khóa saukiểmđạt,khônghoànchỉnhcung/khéptoànU10/U23;dừngsau lô. [D/C — QA1.77/codeb7083fc](V1-DELIVERY-PLAN.md#root-gap-batch-delivery-177-20261026):6first,còn481khóa;7caunknownngoàisáuđãghirõ.18filetrialhếthạntheochínhsáchcũđượcđốichiếu,khôngđổihạn/restore hoặcgọitoànbộfileđềucònnguyên.
+
 ### Phê duyệt riêng Toàn Thư84 — Phúc Liêm–Sát sau414be37,25/10/2026
 
 **U — chủ dự án:** “Tôi duyệt mở riêng nhánh Toàn Thư PDF84: Liêm Trinh–Thất Sát tại Phúc Đức, theo đúng đặc tả và văn mẫu của bàn giao commit 414be37.” Cho triển khai pipeline chung/kiểm/tích hợp QA3062, không xin lại quyền. Đúng tập con bản mệnh đồng cung Phúc Sửu/Mùi, dữ liệu đủ chứng nhận, vắng TT trực tiếp và Kình/Đà/Hỏa/Linh tại bản phương/tam hợp/xung. Thiếu dữ liệu hoặc điều chỉnh chưa giải giữ unknown. Các cổng là tập con dự án, không gán thành nguyên văn sách; không mở nhánh nguồn khác.
