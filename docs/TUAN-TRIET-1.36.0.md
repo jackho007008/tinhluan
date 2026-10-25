@@ -1,4 +1,9 @@
 # Quyết định phạm vi trước triển khai — 1.36.0
+
+## Đề nghị mở tập con25/10/2026 — chưa duyệt, không thay phạm vi1.36
+
+[GóiU07nối38d3a01](V1-DELIVERY-PLAN.md#u07-followup-scope-20261025) chọn đúng câu riêng NPL260 đã dùng ởmục1, đề nghị Điền cóchínhtinh và đúng mộtTT trựctiếp, giữ nguyênCơ–CựMão/Dậuởrulecũ đểkhôngtrùng.41cung đangthiếulời trong192(18Tuần/23Triệt),chưađổiapp/giảmkhoảngthiếu. Chỉ đặc tả, baseline hiện app1.72/catalog1.68. Táchđiềukiệnnguồn/tậpcondựán, ngoại lệVCD/cảhaiTTởngoài; giữ khácbiệtTuần/TriệtvàTài hỗtrợtheo257trongvăn, khôngkhôiphụclờinềnTB hoặc mởdi sản/tuổi. **Cần một quyếtđịnh mở đúng tậpcon này và hai vănmẫu; nội dung dưới vẫn là phạmvi hiệnhành, chưa đượcsửa qua đềxuất.**
+
 Đối chiếu văn bản/ảnh, không phải phê duyệt chuyên môn. NPL Tổng Hợp SHA trong source.json, 442 trang; các trang đã đối chiếu dùng cùng số PDF và số in. Không đọc toàn sách.
 
 1. Điền Cơ–Cự Mão/Dậu, một Tuần hoặc Triệt trực tiếp: NPL260 mô tả khó/chậm tạo nhà đất, có rồi dễ hao/suy giảm. TB35/37 xác nhận hai chính tinh Miếu tại hai chi; TB150–152 lời nền khác khía cạnh; TB155§7.32 cần điều chỉnh. Giới hạn sản phẩm đúng tổ hợp này, không khẳng định tác động tương tự mọi phụ tinh. Không xuất lời nền chưa điều chỉnh. Không suy di sản/tự lập hoặc tuổi. Cả hai: giữ TB§7.33, không thay bằng NPL dự báo vô sản/phá sản.

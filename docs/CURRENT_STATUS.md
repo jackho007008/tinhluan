@@ -1,5 +1,13 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Hiện hành25/10 — chọn U07/NPL260, ứng dụng giữ1.72
+
+Baseline `38d3a01`, code1b6e072/app1.72/catalog1.68. [Đặc tả hữu hạn đã hoàn tất](V1-DELIVERY-PLAN.md#u07-followup-scope-20261025): chọnU07sau sànglọc đúngU07/U03/U25; không mở lạiU08/U24/U10PhủNô/U22DiVCD. Câu TổngHợp260đã dùng trongnhánhCơ–Cự, nhưng phạmvi1.36ghi rõ giới hạn đúngcặp; cần quyếtđịnh mở lời riêng tạo lập/duy trì choĐiềncóchínhtinh với đúngmộtTT. GiữVCD/cảhaiTT/nhánhCơ–Cự cũ ởngoài, không phục hồi lời nềnTB; Tuần/Triệt khác thờiđoạn và Tài hỗtrợ phải ởtrongvăn.
+
+**Thực0cung nhậnlờiđầutiên/0phươngdiệnbắtbuộc thêm/0chiềusâu;535khóa thiếu gốc còn lại**(540−2U08−3U24,không trừchi tiêu134). Tiềm năng41Điền đầu tiên(18Tuần/23Triệt),0cungđãcólời được bổsung,535→494chỉ nếu duyệt và nghiệmthuđạt. [Toàn văn trước/SAU ĐỀ XUẤT](../.local/u07-followup-20261025/proposed-full-before-after.txt) là minh họa, chưa pipeline/bảnlưu/QA; không hoàn chỉnhĐiền hoặc khép nghịchđảoTB/U07.
+
+**Hành động tiếp theo duy nhất:** quyếtđịnh mở đúng tậpcon NPL260 theo hai văn mẫu đã trình, không phải xin lại quyền triểnkhai/QA. U03cònđịnhnghĩa điều kiện/kếtquả;U25không có ôThìn/Tuất đủ để áp câu miếu/vượngToànThư79. Không đổiapp/DB/runtime;480filecodekhớp/PID3062đúngcheckout/QA3070nguyên. G2/engine/lịch sử/quyền/hạn/34bài/Livefalse/Tậtchưapublish giữ; kiểmchỉtài liệu/nguồn/receipt/ảnh260–261, khôngtest/build/UI/PDFkhách/fullgate. Các mốc dưới là lịch sử.
+
 ## Hiện hành25/10 — U24 Cơ–Âm Quan Dần, app1.72/catalog1.68
 
 **Code `1b6e072`, nối đặc tả5310b2e đã được duyệt.** [Kết quả/giới hạn](V1-DELIVERY-PLAN.md#u24-delivery-172-20261025), [QA3062](http://127.0.0.1:3062/lap-la-so). So192:38/93/186 là3báo cáo duy nhất đổi, **3Quan nhận lời đầu tiên/0phương diện thêm ởcungđãcólời/0chiều sâu**,13→10Quan chỉ dữ kiện; không rút lời cũ hoặc đổi văn ngoài3mẫu. Đúng câuToànThư79/bảngKhúc43, cổngTT/Khúc/thiếu dữ liệu giữunknown; G2 Côngviệc trảphí. [Toàn văn trước/sau](../.local/u24-20261025/full-before-after.txt).

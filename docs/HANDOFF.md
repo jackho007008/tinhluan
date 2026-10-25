@@ -1,5 +1,15 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành25/10 — gói kế tiếp U07/NPL260, chờ mở đúng phạm vi1.36
+
+Nối `38d3a01`, app1.72/catalog1.68/code1b6e072 giữ nguyên. [Gói hữu hạn/đặc tả và điểm cần quyết định](V1-DELIVERY-PLAN.md#u07-followup-scope-20261025): xét đúng U07/ĐiềnTT, U03/PhúcVCD, U25/QuanSát Thìn–Tuất; chọnU07. TổngHợp260đã được dùng trong Cơ–Cự1.36, câu riêng khó/chậm tạo nhà đất/hoặc có rồi hao suy rộng hơn cặp ấy. **Cổng hiện hành là “Giới hạn sản phẩm đúng tổ hợp này” ở1.36**, nên không tự mở sang chính tinh khác. Đặc tả giữ đúng mộtTT/cóchínhtinh, loạiVCD/cảhaiTT/nhánhCơ–Cựđãcó, giữ Tuần–Triệt khác thờiđoạn và Tài có thể hỗtrợ theo257.
+
+**Thực0lời đầu tiên/0phương diện thêm/0chiều sâu;535khóa thiếu gốc còn lại**, theo cùng540gốc trừ2U08/3U24;534owner cơhọc làchỉsốkhác do134chi tiêu không lấp thu/tích lũy. **Tiềm năng41Điền đầu tiên (18Tuần/23Triệt),0chỉ-bổ-sung/0chiều-sâu**, chưa nghiệmthu/chưa trừ535. [Toàn văn trước/SAU ĐỀ XUẤT cả41báo cáo](../.local/u07-followup-20261025/proposed-full-before-after.txt), minh họa chưa qua pipeline/lưu/QA. Không khép phép đảoTB/U07 hoặc hoàn chỉnhĐiền.
+
+**Hành động tiếp theo duy nhất:** quyết định mở đúng tậpcon NPL260/mộtTT/cóchínhtinh cùng hai văn mẫu đã trình. Không xin lại quyền coding/QA, không đề nghị mở toànnguồn hoặc phépđảo mọi sao. U03còn địnhnghĩaTT/TamKhông/sáng/độcthủ;U25còn ôThìn/Tuất trong trạngthái ToànThư và điều chỉnh,0đủpublish. Không mở lạiU08/U24/U10PhủNô/U22DiVCD.
+
+480file root/QAkhớp,PID60050đúngcwd/worker60051/QA3070PID94421nguyên; chỉ đọcfile/process/nguồn/ảnh260–261/link/diff, khôngtest/build/DB/runtime/provider. G2/engine/lịch sử/quyền/hạn/34bài/Livefalse/Tậtchưapublish giữ. Các mốc dưới là lịch sử trước gói sàng lọc này.
+
 ## Hiện hành25/10 — U24 đã vào QA1.72, ưu tiên khoảng thiếu giữ nguyên
 
 **Code `1b6e072`, app1.72/catalog1.68**, từ đặc tả5310b2e được duyệt. [Kết quả/điểm dừng trong backlog](V1-DELIVERY-PLAN.md#u24-delivery-172-20261025), [Lập lá số QA3062](http://127.0.0.1:3062/lap-la-so), checkout `.local/u24-20261025/qa`. **3cungQuan nhận lời đầu tiên (38/93/186)/0phương diện bổ sung ởcungđãcólời/0chiều sâu**; Quan chỉ dữ kiện13→10,0rút lời cũ/0văn đổi ngoài3mẫu. [Toàn văn trước/sau](../.local/u24-20261025/full-before-after.txt). Không giải bất nhấtTânBiên hoặc hoàn chỉnhQuan; U08 nguyên.
