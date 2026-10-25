@@ -11,6 +11,12 @@ Cập nhật 20/10/2026. [BUSINESS_RULES](BUSINESS_RULES.md) diễn giải hợp
 
 ## Những quyết định có xác nhận trực tiếp
 
+### Phêduyệt riêng Phu VCD/NPL326 sau5c5d3ec —25/10/2026
+
+**U — chủdựán:**“Tôi duyệt triển khai riêng nhánh Phu VCD/NPL326 theo đặc tả commit5c5d3ec”. Cho mộtrulechungđúngmộtCô/Quả/ĐẩutrựctiếpPhuVCD,vắngTT,đủcert/scope/tậpgiữvàverifiedNatalTransformationshiệncó;giữnguyênvăn/nhãn,vàchophépQA saukiểmđạt. Khôngxinlạiquyềncoding. VCD/singleton/tậpgiữlàgiớihạn dựán,khôngđịnhnghĩađơnthủNPLhoặcORmọinơi;khôngmượnđốicung/saochiếu,khôngsuykếtquảngược hoặcunknownthànhchialy. KỵPhu/thiếuchứngnhậnHóagiữđúngunknown,khôngtínhlạiHóa/giảitoànlásố.
+
+**U — sửa trạngthái:**khiPhuđãcónhậnđịnhthìkhôngcònthôngbáotrốngtoànphần;giữgiớihạn/phươngdiệncònthiếutheodữliệupipelinechung,khôngthaychuỗiriêngtheomẫu hoặcbáohoànchỉnh. GiữG2ownerPhu/lịchsử/quyền-hạn/engine/QA3070/34bài/Livefalse/Tậtchưapublish. CôThầnchỉfixture,khônggọilàengine thật. [D/C — nghiệmthuQA1.75/code6faa35f](V1-DELIVERY-PLAN.md#phu326-delivery-175-20261025):3lờiđầutiên,489khóathiếugốc;7cậpcăn cứ/thôngbáounknownngoài3mẫuđượcghirõ. KhôngkhéptoànU15/hoànchỉnhPhu.
+
 ### Phê duyệt riêng Toàn Thư87 — Nô Thiên Lương sau6e7e551,25/10/2026
 
 **U — chủ dự án:** “Tôi duyệt triển khai riêng nhánh Toàn Thư87 ‘Thiên Lương nhiều gia nhân’, theo đặc tả commit6e7e551 và văn mẫu đã trình”. Cho pipelinechung/QA saukiểmđạt, khôngxinlạiquyềncoding. Tậpcon:ThiênLương bảnmệnh đơnthủNô,Miếu/Vượng đúngbảngToànThư37,xácnhậnvắngTTtrựctiếp; ghi riêng làgiớihạn dựán, khônggánthànhđiềukiệnnguyênvănsách.

@@ -2,6 +2,16 @@
 
 Cập nhật20/10/2026 sau kiểm ND03; các lệnh mẫu dưới đây cần chọn theo phạm vi, không mặc định chạy toàn bộ. [package.json](../package.json), [vitest.config.ts](../vitest.config.ts), [playwright.config.ts](../playwright.config.ts) là cấu hình hiện có; [kiến trúc](ARCHITECTURE.md) giải thích kho/queue/quyền. Không có Git tại root; xem cách nhận diện code ở ARCHITECTURE.
 
+<a id="phu326-testing-20261025"></a>
+## Phu VCD/NPL326 — phần ảnhhưởng25/10/2026,code6faa35f
+
+- **611/611qua9file**,65mớitrong`npl-spouse-vcd-lonely`;còn`vttl-no-luong`,`npl-dien-single-void`,`vttl-career-co-am`,`vttl-dien-phu`,`customer-editorial-catalog`,`customer-topic-editorial`,`continuous-report`,`phu-tu`. Cả3sao/0-1-2-3/VCD-cóchínhtinh/chiếu/TT/đủ21têngiữ/Kỵchứngnhận/23biênthiếutrùngscope/cert/editorial/G2/chốngtrùng/trạngtháiđượckiểm. [Logcuối](../.local/phu326-20261025/tests-final.log).
+- So192giữmọinhậnđịnh cũ/fact/rule/trace/nhóm/căn cứ/G2/financeAssets. Đúng3firstPhu7/34/73,0chỉbổsung/0chiềusâu/0sửa-rút nhậnđịnh;3thôngbáotrốngđượcbỏtheodữliệu. **7ngoàimẫu54/138/139/150/155/167/186thêmcăn cứunknownvàthôngbáogiớihạn**:5câutrốngđổi,2giớihạnthêmvàomụcđãcólời,giữnguyênlờicũ.10báocáothayđổihiểnthị,khôngghi“chỉ3báocáođổi”.489gapgốc/488owner cơhọc,42Phuchỉdữkiện+2conditionalchưaápgiữ. [Chi tiết/toànvăn/bảnlưu](V1-DELIVERY-PLAN.md#phu326-delivery-175-20261025).
+- Typecheck/buildđạt,12/12`reading-scope`+`stored-customer-pdf`DBriêng`tinhluan_phu326_…`/3100.192freeprojectionkhônglộCOPY/ID/căn cứunknown;3engineform–lưu–mở/API/G2/freePDF403/ngườilạ404/mobile360/390đạt;fullsections/chartkhớpaudit. Print7free/ngườilạkhônglộ/fullđủvăn;PDF7thật8trang18đoạntrùngfrozen(NFC+khoảngtrắng),nguồn326/322,đoạnPhutrang6khôngcâutrống,đãxemảnh/mobile/contact. MockTestorderchỉDBriêng,khôngdịchvụSePaythật;khôngchạylạifullgate.
+- QAchính7/34/73bảnmới/version/G2/lưu–mởđạt,khôngorder/mock.278filecũ/quyền-hạn/34bài/6fileengine/QA3070nguyên;486file root/QAkhớp,mộtworker,isolated3100dừng. Khôngmigration/backfill/providerthật/Livehoặcsửatestselectortàichínhcũ.
+
+**Lỗiđầu/lượtsửa:**lượt1có610pass/1failởfixturechồnglời dùngLộcTồnnhưngrulePhucũlàHóaLộc;thayfixturebằngviệcdờisaomangKhoađãcótrongtracevàoPhuvàchứngnhậnlạicùngphâncôngcótrước(khôngtínhHóa),kiểmnhậnđịnhcũcùngtồntại. Khôngsửacâunguồnhoặcexpectedlịchsử. Lượtcuối611/611;typecheckđượckiểmlại,buildmãứngdụngđạt;thayđổicuốichỉfixture. TestTứHóaKỵdùngtrace/phâncôngtổnghợpcóghi“technicalfixture”,khônggọilàengine thật;productionchỉgọi`verifiedNatalTransformations`. CôThầnvàcácbiênmalformedchỉpredicate/factfixture;khôngkhẳngđịnhevaluatorTàicũnhậnmọiobjectnullngoàihợpđồngengine(giớihạncũgiữ). TTthiếutrườnghợphợpđồngvẫncókiểmquaevaluator. TrạngtháitrốngtínhtừhasClaims/groupshiệnhữu,khôngpatchchuỗitheoID;fixturegiữpartiallimitvàemptythậtcũngđạt. Hai lượtgiánđoạn côngcụtrongphiênđượcgiữtrongthờilượngtoànphiên,khôngtrừâmthầm.
+
 <a id="no-luong-testing-20261025"></a>
 ## Nô Thiên Lương87 — phần ảnh hưởng25/10/2026, codeaf5d7e4
 

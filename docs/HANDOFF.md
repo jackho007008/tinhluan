@@ -1,5 +1,15 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành25/10 — Phu VCD/NPL326 đã vào QA1.75
+
+**Code `6faa35f`,app1.75/catalog1.71**,đặctả5c5d3ecđãduyệt. [Kếtquả/giớihạn](V1-DELIVERY-PLAN.md#phu326-delivery-175-20261025),[QA3062](http://127.0.0.1:3062/lap-la-so),checkout`.local/phu326-20261025/qa`. **3Phu nhậnlờiđầutiên7/34/73;0chỉbổsung/0chiềusâu/0nhậnđịnhcũsửa-rút;492→489khóathiếugốc.** Phuchỉdữkiện45→42,2conditionalchưaápgiữ. Một rulebộnguồn/đúng21têngiữ/cert/Hóa/vắngTT,khôngtheoID;CôThầnchỉfixture,Đẩu/Quảcó3engine thật.
+
+[Toànvăn trước/sau từbảnlưu QA chính](../.local/phu326-20261025/stored-full-before-after.txt).3thôngbáotrốngPhuđượcbỏtheohasClaims/groupspipeline,khôngpatchchuỗi;giữpartiallimitcócăn cứ. **10báocáocóthayđổihiểnthị:**3nhậnđịnhmới và7căn cứ/thôngbáounknown54/138/139/150/155/167/186(5đổicâutrống/2thêmgiớihạn),khônggiấungoàiba. Khôngsuyunknown/chưaminhchứnglycáchthànhkếtluậnhônnhânhoặcxóalờikhác.
+
+611/611nộidung(65mới),12/12G2/PDFmockriêng,typecheck/build,3engineform–lưu–mở/mobile360/390,print/free/API/PDFđạt;PDF8trang18đoạn,nocâutrốngởPhu.3bảnmớiQA chínhversion/G2/lưu–mởđạt,khôngorder/mock.278filecũ/quyền-hạn/34bài/6fileengine/QA3070nguyên;486file root/QAkhớp,mộtworker,Livefalse,Tậtchưapublish. [Runtime](../.local/phu326-20261025/final-runtime-check.json),[lỗi/giớihạnkiểm](TESTING.md#phu326-testing-20261025),[thờigian từ11:31:51ICT,gồmgiánđoạn](../.local/phu326-20261025/session.json).
+
+Chỉkhépnhánhđãduyệt,khôngtoànU15/hoànchỉnhPhu. **Hànhđộngtiếptheoduy nhất:**khiđượcgiao,chọngóithiếugốckếtiếp từbacklog/khođãlưu,khôngmởlạicácnhánhđãnghiệmthuhoặcđiểmchặncũkhôngbằngchứngmới. Cácmốcdưới làlịchsử trướcphêduyệt/triểnkhaiNPL326.
+
 ## Hiện hành25/10 — điều kiện chung Phu VCD/NPL326, chờ mở nhánh
 
 Nối238b42a,codeaf5d7e4/app1.74/catalog1.70giữ;484file root/QAkhớp,PID76137/76138đúngcwd,QA3070nguyên. [Sođúngba hướng/đặc tả/vănmẫu](V1-DELIVERY-PLAN.md#common-conditions-174-20261025):hợpđồngVCDPhu21khóa chưa cócầunối nguồn đủ;giữcủaNPL254có0cungtrống,phầnĐẩuđãcógiữcủa;chọnđiềukiện“riêngmộttrongba”ởPhuNPL326. Mộtpredicatechung khôngmượnsaoQuan,cóthểphụcvụnhiềucấutrúcđốicung;khôngđoánAND/ORtừTB215.
