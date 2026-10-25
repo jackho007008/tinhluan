@@ -11,7 +11,7 @@ import {
   PRESENTATION_VERSION,
 } from "./tanbien-presentation";
 import { RULESET_VERSION } from "../interpretation-rules/catalog";
-export const DYNAMIC_VERSION = "internal-reading-1.10.0";
+export const DYNAMIC_VERSION = "internal-reading-1.11.0";
 const digest = (x: unknown) =>
   createHash("sha256").update(JSON.stringify(x)).digest("hex");
 export type ListReceipt = {
@@ -110,11 +110,11 @@ export function freezeReading(snapshot: ChartSnapshot, receipt?: ListReceipt) {
     continuousReport: continuousReport as ContinuousReport | undefined,
     compatibility: snapshot.chart.tanBien
       ? {
-          version: "tanbien-profile-compatibility-0.6.0",
+          version: "tanbien-profile-compatibility-0.7.0",
           rules: reading.execution.rules.map(r => r.id + "@" + r.version).join(", "),
           status: "input-contract-checked-not-expert-reviewed",
           changes:
-            "Các fact vị trí, đồng cung và tứ hóa lấy từ profile mới; bảng điều kiện Tân Biên giữ nguyên. Toàn Thư chỉ bổ sung vttl.dien-phu-hoi-scale@1.0.0 (U08) và vttl.career-co-am-dan-progress@1.0.0 (U24) theo profile v2 và tập con đã duyệt; không mở các nhánh Toàn Thư khác.",
+            "Các fact vị trí, đồng cung và tứ hóa lấy từ profile mới; bảng điều kiện Tân Biên giữ nguyên. NPL260 chỉ mở thêm npl.dien-single-tuan@1.0.0 và npl.dien-single-triet@1.0.0 theo tập conU07 đã duyệt, không đảo/xóa nguồn khác. Toàn Thư chỉ bổ sung vttl.dien-phu-hoi-scale@1.0.0 (U08) và vttl.career-co-am-dan-progress@1.0.0 (U24) theo profile v2 và tập con đã duyệt; không mở các nhánh Toàn Thư khác.",
         }
       : undefined,
     layers,

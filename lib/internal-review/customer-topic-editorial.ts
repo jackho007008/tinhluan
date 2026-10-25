@@ -1,3 +1,4 @@
+import {NPL_DIEN_SINGLE_IDS} from '../interpretation-rules/npl-dien-single-void';
 import {VTTL_CAREER_CO_AM} from '../interpretation-rules/vttl-career-co-am';
 import {VTTL_DIEN_PHU} from '../interpretation-rules/vttl-dien-phu';
 import type {CustomerParagraph,CustomerSection} from './customer-report';
@@ -10,7 +11,7 @@ export function customerTopicOwner(version:string,section:{id:string;palaces:str
 }
 
 /** Presentation only. These labels describe existing whole groups; never split claims or evaluate stars. */
-const propertyFacets:Record<string,string>={[VTTL_DIEN_PHU]:'Quy mô nhà đất'};
+const propertyFacets:Record<string,string>={...Object.fromEntries(NPL_DIEN_SINGLE_IDS.map(id=>[id,'Tạo lập và duy trì nhà đất'])),[VTTL_DIEN_PHU]:'Quy mô nhà đất'};
 const register=(title:string,ids:string[])=>ids.forEach(id=>{propertyFacets['tanbien.dien-'+id]=title;});
 register('Thừa hưởng và tự tạo dựng',['tu-ngo','tu-phu','tu-tuong','tu-pha','vu','vu-phu','vu-tham','sun-cu-dan','sun-luong-mao','sun-cu-than','sun-luong-dau','sun-moon','co-high','co-cu-mao','co-cu-dau','moon-high','tham-mo','tham-other','cu-high','tuong-low','luong-high','sat-dan-than','sat-ty-ngo','loc','both-void']);
 register('Phần nhà đất thừa hưởng',['tu-ty','phu']);

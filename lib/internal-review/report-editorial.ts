@@ -1,3 +1,4 @@
+import {NPL_DIEN_SINGLE_IDS,nplDienSingleBranches,nplDienSingleAssessment} from '../interpretation-rules/npl-dien-single-void';
 import {VTTL_CAREER_CO_AM,VTTL_CAREER_CO_AM_FACT,vttlCareerCoAmAssessment} from '../interpretation-rules/vttl-career-co-am';
 import {VTTL_DIEN_PHU,VTTL_DIEN_PHU_FACT,vttlDienPhuAssessment} from '../interpretation-rules/vttl-dien-phu';
 import {TRUNGCHAU_RULE_IDS} from '../interpretation-rules/trungchau-natal';
@@ -13,10 +14,12 @@ export function reportGap(s:ChartSnapshot,r:Reading,name:string,complete:boolean
  // Keep legacy no-match diagnostics stable, while retaining new unknown/held-source reasons.
  const vttlUnknown=r.execution.traces.some(t=>t.ruleId===VTTL_DIEN_PHU&&t.status==='missing-facts');
  const careerVttlUnknown=r.execution.traces.some(t=>t.ruleId===VTTL_CAREER_CO_AM&&t.status==='missing-facts');
- const rules=r.execution.rules.filter(x=>!TRUNGCHAU_RULE_IDS.includes(x.id)&&(x.id!==VTTL_DIEN_PHU||vttlUnknown)&&(x.id!==VTTL_CAREER_CO_AM||careerVttlUnknown)&&subjectOf({factIds:x.requiredFacts})===name);
+ const nplUnknown=NPL_DIEN_SINGLE_IDS.filter(id=>r.execution.traces.some(t=>t.ruleId===id&&t.status==='missing-facts'));
+ const rules=r.execution.rules.filter(x=>!TRUNGCHAU_RULE_IDS.includes(x.id)&&(!NPL_DIEN_SINGLE_IDS.includes(x.id)||nplUnknown.includes(x.id))&&(x.id!==VTTL_DIEN_PHU||vttlUnknown)&&(x.id!==VTTL_CAREER_CO_AM||careerVttlUnknown)&&subjectOf({factIds:x.requiredFacts})===name);
  const traces=r.execution.traces.filter(t=>rules.some(x=>x.id===t.ruleId));
  // Reuse the exact assessment behind a missing fact, only when execution recorded it missing.
  const reasons=traces.filter(t=>t.status==='missing-facts').flatMap(t=>t.details.map(id=>{
+  if(nplDienSingleBranches.some(b=>b.fact===id)){const a=nplDienSingleAssessment(s);return {ruleId:t.ruleId,factId:id,cause:a.cause,text:a.reason,paths:a.paths};}
   if(id===VTTL_CAREER_CO_AM_FACT){const a=vttlCareerCoAmAssessment(s);return {ruleId:t.ruleId,factId:id,cause:a.cause,text:a.reason,paths:a.paths};}
   if(id===VTTL_DIEN_PHU_FACT){const a=vttlDienPhuAssessment(s);return {ruleId:t.ruleId,factId:id,cause:a.cause,text:a.reason,paths:a.paths};}
   const nd=noDienBranches.find(x=>'fact.'+noDienKey(x)===id),fa=familyBranches.find(x=>'fact.'+familyKey(x)===id);

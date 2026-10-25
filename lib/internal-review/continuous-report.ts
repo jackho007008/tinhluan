@@ -1,3 +1,4 @@
+import {NPL_DIEN_SINGLE_IDS} from '../interpretation-rules/npl-dien-single-void';
 import {VTTL_CAREER_CO_AM} from '../interpretation-rules/vttl-career-co-am';
 import {VTTL_DIEN_PHU} from '../interpretation-rules/vttl-dien-phu';
 import {SPEND201,TRUNGCHAU_RULE_IDS} from '../interpretation-rules/trungchau-natal';
@@ -10,7 +11,7 @@ import type { buildTanBienReading } from './tanbien-reading';
 import { subjectOf } from '../exploration/model';
 import { evidenceLayers } from './tanbien-presentation';
 import {reportGap,readerHeading,readerPlace} from './report-editorial';
-export const CONTINUOUS_VERSION = 'continuous-report-1.9.0';
+export const CONTINUOUS_VERSION = 'continuous-report-1.10.0';
 export const PALACE_ORDER = ['Mệnh','Phụ Mẫu','Phúc Đức','Điền Trạch','Quan Lộc','Nô Bộc','Thiên Di','Tật Ách','Tài Bạch','Tử Nữ','Phu Thê','Huynh Đệ'];
 type Reading = ReturnType<typeof buildTanBienReading>;
 type Paragraph = Reading['sections'][number]['paragraphs'][number];
@@ -67,7 +68,7 @@ export function coordinate(palace:string, ps:Paragraph[]) {
 }
 // Append new semantic groups after existing groups, preserving old paragraph IDs and G2 membership.
 function paragraphOrder(p:Paragraph){
- if(p.claim.rules.some(r=>(TRUNGCHAU_RULE_IDS.includes(r.id)||r.id===VTTL_DIEN_PHU||r.id===VTTL_CAREER_CO_AM)))return 2;
+ if(p.claim.rules.some(r=>(TRUNGCHAU_RULE_IDS.includes(r.id)||r.id===VTTL_DIEN_PHU||r.id===VTTL_CAREER_CO_AM||NPL_DIEN_SINGLE_IDS.includes(r.id))))return 2;
  return Number(p.claim.rules.some(r=>r.id.startsWith('tanbien.life-body-')||r.id.startsWith('npl.life-body-')||r.id.startsWith('npl.life-two-major-')||r.id.startsWith('npl.life-foundation-')));
 }
 function buildContinuousReportData(snapshot:ChartSnapshot,reading:Reading,verified:boolean){

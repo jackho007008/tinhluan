@@ -6215,5 +6215,23 @@
     "movedToEvidence": [
       "Toàn Thư PDF79/43, điều kiện nguồn đồng cung Quan; tập con dự án Dần/vắng TT và cổng Khúc."
     ]
+  },
+  "npl.dien-single-tuan": {
+    "text": "Về nhà đất, lời luận mô tả việc tạo dựng khó hoặc chậm, hoặc có rồi lại hao hụt, suy giảm. Với Tuần, ảnh hưởng được nói là nhẹ hơn nhưng kéo dài. Nếu cung Tài tốt, bất lợi về nhà đất có thể được giảm nhẹ; mức hỗ trợ cụ thể chưa xác định. Đoạn này không xác nhận bạn có di sản, đang sở hữu hay sẽ mất tài sản.",
+    "sourceTemplate": "Về nhà đất, lời luận mô tả việc tạo dựng khó hoặc chậm, hoặc có rồi lại hao hụt, suy giảm. Với Tuần, ảnh hưởng được nói là nhẹ hơn nhưng kéo dài. Nếu cung Tài tốt, bất lợi về nhà đất có thể được giảm nhẹ; mức hỗ trợ cụ thể chưa xác định. Đoạn này không xác nhận bạn có di sản, đang sở hữu hay sẽ mất tài sản.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Giữ nguyên văn được duyệt sau1fe982b; tách thời đoạn và giữ đầy đủ Tài hỗ trợ có điều kiện.",
+    "movedToEvidence": [
+      "NPL257/260–261; mộtTT trực tiếp/Điền có chính tinh; ưu tiên Cơ–Cự cũ, không suy Tài tốt từ claim thuận."
+    ]
+  },
+  "npl.dien-single-triet": {
+    "text": "Về nhà đất, lời luận mô tả việc tạo dựng khó hoặc chậm, hoặc có rồi lại hao hụt, suy giảm. Với Triệt, ảnh hưởng được nói là mạnh hơn nhưng ở giai đoạn đầu. Nếu cung Tài tốt, bất lợi về nhà đất có thể được giảm nhẹ; mức hỗ trợ cụ thể chưa xác định. Đoạn này không xác nhận bạn có di sản, đang sở hữu hay sẽ mất tài sản.",
+    "sourceTemplate": "Về nhà đất, lời luận mô tả việc tạo dựng khó hoặc chậm, hoặc có rồi lại hao hụt, suy giảm. Với Triệt, ảnh hưởng được nói là mạnh hơn nhưng ở giai đoạn đầu. Nếu cung Tài tốt, bất lợi về nhà đất có thể được giảm nhẹ; mức hỗ trợ cụ thể chưa xác định. Đoạn này không xác nhận bạn có di sản, đang sở hữu hay sẽ mất tài sản.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Giữ nguyên văn được duyệt sau1fe982b; tách thời đoạn và giữ đầy đủ Tài hỗ trợ có điều kiện.",
+    "movedToEvidence": [
+      "NPL257/260–261; mộtTT trực tiếp/Điền có chính tinh; ưu tiên Cơ–Cự cũ, không suy Tài tốt từ claim thuận."
+    ]
   }
 }

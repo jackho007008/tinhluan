@@ -1,3 +1,4 @@
+import {nplDienSingleBranches,nplDienSingleFacts,NPL_DIEN_SINGLE_SUPPORT} from '../interpretation-rules/npl-dien-single-void';
 import {VTTL_CAREER_CO_AM_FACT,vttlCareerCoAmFacts,vttlCareerCoAmRule} from '../interpretation-rules/vttl-career-co-am';
 import {VTTL_DIEN_PHU_FACT,vttlDienPhuFacts,vttlDienPhuRule} from '../interpretation-rules/vttl-dien-phu';
 import {trungchauFacts,trungchauRules,TRUNGCHAU_RULE_IDS,SPEND201} from '../interpretation-rules/trungchau-natal';
@@ -225,6 +226,9 @@ const factLabels: Record<string, string> = {
   "fact.wealth-minor-stars": "phụ tinh tại Tài Bạch",
 };
 export function conditionText(c: Condition): string {
+ const nplSingle=nplDienSingleBranches.find(b=>b.fact===c.fact);
+ if(nplSingle)return nplSingle.voidName+' trực tiếp Điền có chính tinh, đúng một TT; giữ riêng thời đoạn và điều kiện Tài có thể hỗ trợ theo NPL257/260–261.';
+ if(c.fact===NPL_DIEN_SINGLE_SUPPORT)return 'Tài hỗ trợ chưa xác định; không suy đã được giảm nhẹ hoặc kết quả ngược.';
  if(c.fact===VTTL_CAREER_CO_AM_FACT)return [...vttlCareerCoAmRule.presentation!.sourceConditions!,...vttlCareerCoAmRule.presentation!.projectScope!.slice(2,3)].join(" ");
  if(c.fact===VTTL_DIEN_PHU_FACT)return [...vttlDienPhuRule.presentation!.sourceConditions!, ...vttlDienPhuRule.presentation!.projectScope!.slice(2,3)].join(" ");
  const tc=trungchauRules.find(r=>r.conditions.some(q=>q.fact===c.fact));if(tc)return tc.presentation!.sourceConditions!.join(" ");
@@ -295,6 +299,7 @@ export function conditionText(c: Condition): string {
     : `Điều kiện về ${label}: ${c.value}.`;
 }
 export function factEvidence(s: ChartSnapshot, id: string): ReadingEvidence {
+ if(nplDienSingleBranches.some(b=>b.fact===id)||id===NPL_DIEN_SINGLE_SUPPORT||id==='fact.dien-npl-single-status'){const f=nplDienSingleFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,'source'):item('Chưa đủ dữ kiện để xét Điền một TT theo NPL260.');}
  if(id===VTTL_CAREER_CO_AM_FACT||id===VTTL_CAREER_CO_AM_FACT+"-status"){const f=vttlCareerCoAmFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện nhất quán để kiểm Cơ–Âm Quan Dần theo Toàn Thư.");}
  if(id===VTTL_DIEN_PHU_FACT||id===VTTL_DIEN_PHU_FACT+"-status"){const f=vttlDienPhuFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện nhất quán để kiểm nhánh Phủ Điền Hợi theo Toàn Thư.");}
  if(id.includes("-trungchau-")){const f=trungchauFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện nhất quán để kiểm cấu trúc gốc Trung Châu.");}
