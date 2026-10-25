@@ -6242,5 +6242,14 @@
     "movedToEvidence": [
       "Nguồn Toàn Thư87; bảng37; đơn thủ/Miếu-Vượng/vắng TT là tập con dự án."
     ]
+  },
+  "npl.spouse-vcd-lonely-single": {
+    "text": "Cấu trúc này được sách liên hệ với sự cô đơn trong quan hệ vợ chồng, kể cả khi vẫn chung sống. Riêng nhận định này chưa đủ để kết luận chia ly. Đoạn này không xác nhận tình trạng hôn nhân thực tế của bạn.",
+    "sourceTemplate": "Cấu trúc này được sách liên hệ với sự cô đơn trong quan hệ vợ chồng, kể cả khi vẫn chung sống. Riêng nhận định này chưa đủ để kết luận chia ly. Đoạn này không xác nhận tình trạng hôn nhân thực tế của bạn.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Giữ nguyên văn được duyệt sau5c5d3ec, không suy cô đơn thành chia ly.",
+    "movedToEvidence": [
+      "NPL326/322–325; VCD/singleton/vắng TT/tập giữ là giới hạn dự án, không định nghĩa đơn thủ phụ tinh hoặc suy hết bất lợi."
+    ]
   }
 }

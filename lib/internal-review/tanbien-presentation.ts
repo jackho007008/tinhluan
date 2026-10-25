@@ -1,3 +1,4 @@
+import {NPL_PHU326_FACT,nplPhu326Facts,nplPhu326Rule} from '../interpretation-rules/npl-spouse-vcd-lonely';
 import {VTTL_NO_LUONG_FACT,vttlNoLuongFacts,vttlNoLuongRule} from '../interpretation-rules/vttl-no-luong';
 import {nplDienSingleBranches,nplDienSingleFacts,NPL_DIEN_SINGLE_SUPPORT} from '../interpretation-rules/npl-dien-single-void';
 import {VTTL_CAREER_CO_AM_FACT,vttlCareerCoAmFacts,vttlCareerCoAmRule} from '../interpretation-rules/vttl-career-co-am';
@@ -228,6 +229,7 @@ const factLabels: Record<string, string> = {
 };
 export function conditionText(c: Condition): string {
  if(c.fact===VTTL_NO_LUONG_FACT)return [...vttlNoLuongRule.presentation!.sourceConditions!,...vttlNoLuongRule.presentation!.projectScope!.slice(2,3)].join(' ');
+ if(c.fact===NPL_PHU326_FACT)return [...nplPhu326Rule.presentation!.sourceConditions!,...nplPhu326Rule.presentation!.projectScope!.slice(2)].join(' ');
  const nplSingle=nplDienSingleBranches.find(b=>b.fact===c.fact);
  if(nplSingle)return nplSingle.voidName+' trực tiếp Điền có chính tinh, đúng một TT; giữ riêng thời đoạn và điều kiện Tài có thể hỗ trợ theo NPL257/260–261.';
  if(c.fact===NPL_DIEN_SINGLE_SUPPORT)return 'Tài hỗ trợ chưa xác định; không suy đã được giảm nhẹ hoặc kết quả ngược.';
@@ -302,6 +304,7 @@ export function conditionText(c: Condition): string {
 }
 export function factEvidence(s: ChartSnapshot, id: string): ReadingEvidence {
  if(nplDienSingleBranches.some(b=>b.fact===id)||id===NPL_DIEN_SINGLE_SUPPORT||id==='fact.dien-npl-single-status'){const f=nplDienSingleFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,'source'):item('Chưa đủ dữ kiện để xét Điền một TT theo NPL260.');}
+ if(id===NPL_PHU326_FACT||id===NPL_PHU326_FACT+'-status'){const f=nplPhu326Facts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,'source'):item('Chưa đủ dữ kiện nhất quán kiểm Phu VCD/NPL326.');}
  if(id===VTTL_NO_LUONG_FACT||id===VTTL_NO_LUONG_FACT+'-status'){const f=vttlNoLuongFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,'source'):item('Chưa đủ dữ kiện kiểm quy mô người phụ giúp theo Toàn Thư.');}
  if(id===VTTL_CAREER_CO_AM_FACT||id===VTTL_CAREER_CO_AM_FACT+"-status"){const f=vttlCareerCoAmFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện nhất quán để kiểm Cơ–Âm Quan Dần theo Toàn Thư.");}
  if(id===VTTL_DIEN_PHU_FACT||id===VTTL_DIEN_PHU_FACT+"-status"){const f=vttlDienPhuFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện nhất quán để kiểm nhánh Phủ Điền Hợi theo Toàn Thư.");}
