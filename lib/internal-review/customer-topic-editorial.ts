@@ -1,3 +1,4 @@
+import {VTTL_NO_AM,VTTL_CAREER_FIRE} from '../interpretation-rules/vttl-root-batch';
 import {VTTL_PHUC_LIEM_SAT} from '../interpretation-rules/vttl-phuc-liem-sat';
 import {NPL_PHU326} from '../interpretation-rules/npl-spouse-vcd-lonely';
 import {VTTL_NO_LUONG} from '../interpretation-rules/vttl-no-luong';
@@ -35,6 +36,7 @@ const ruleIds=(p:CustomerParagraph)=>p.members.flatMap(m=>m.claim.rules.map(r=>r
 /** Put existing relation participants together, followed by their explanation. Broad scope notes stay last.
  * This is an order of reading, not a new claim union, causal relation or priority. */
 export function editCustomerTopics(sections:CustomerSection[],continuous:ContinuousReport){
+ for(const section of sections.filter(s=>s.palaces.includes('Nô Bộc')))for(const p of section.paragraphs)if(ruleIds(p).includes(VTTL_NO_AM))p.title='Quy mô người phụ giúp';
  for(const section of sections.filter(s=>s.palaces.includes('Phúc Đức')))for(const p of section.paragraphs)if(ruleIds(p).includes(VTTL_PHUC_LIEM_SAT))p.title='Vất vả, khó nhọc';
  for(const section of sections.filter(s=>s.palaces.includes('Phu Thê')))for(const p of section.paragraphs)if(ruleIds(p).includes(NPL_PHU326))p.title='Cô đơn trong quan hệ vợ chồng';
  for(const section of sections.filter(s=>s.palaces.includes('Nô Bộc')))for(const p of section.paragraphs)if(ruleIds(p).includes(VTTL_NO_LUONG))p.title='Quy mô người phụ giúp';
@@ -51,7 +53,7 @@ export function editCustomerTopics(sections:CustomerSection[],continuous:Continu
     continue;
    }
    const ids=ruleIds(p);
-   if(career){if(ids.includes(VTTL_CAREER_CO_AM)){p.title='Tiến thân trong hoàn cảnh xáo động';continue;}p.title=ids.some(id=>['trungchau.move365','tanbien.r40','tanbien.career-void-tu-ngo','tanbien.career-ky-base','tanbien.career-ky-exception','tanbien.career-kinh-luc'].includes(id))?'Tiến trình và sự ổn định công việc':'Công việc và công danh';continue;}
+   if(career){if(ids.includes(VTTL_CAREER_FIRE)){p.title='Diễn tiến công danh';continue;}if(ids.includes(VTTL_CAREER_CO_AM)){p.title='Tiến thân trong hoàn cảnh xáo động';continue;}p.title=ids.some(id=>['trungchau.move365','tanbien.r40','tanbien.career-void-tu-ngo','tanbien.career-ky-base','tanbien.career-ky-exception','tanbien.career-kinh-luc'].includes(id))?'Tiến trình và sự ổn định công việc':'Công việc và công danh';continue;}
    const entry=continuous.financeAssets?.entries.find(e=>e.groupId===p.id);
    if(entry?.palace==='Điền Trạch'){
     const labels=[...new Set(ids.map(id=>propertyFacets[id]).filter(Boolean))];

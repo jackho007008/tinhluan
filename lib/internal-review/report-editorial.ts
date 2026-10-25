@@ -1,3 +1,4 @@
+import {VTTL_ROOT_IDS,VTTL_NO_AM_FACT,VTTL_CAREER_FIRE_FACT,vttlRootAssessment} from '../interpretation-rules/vttl-root-batch';
 import {VTTL_PHUC_LIEM_SAT,VTTL_PHUC_LIEM_SAT_FACT,vttlPhucLiemSatAssessment} from '../interpretation-rules/vttl-phuc-liem-sat';
 import {NPL_PHU326,NPL_PHU326_FACT,nplPhu326Assessment} from '../interpretation-rules/npl-spouse-vcd-lonely';
 import {VTTL_NO_LUONG,VTTL_NO_LUONG_FACT,vttlNoLuongAssessment} from '../interpretation-rules/vttl-no-luong';
@@ -20,11 +21,13 @@ export function reportGap(s:ChartSnapshot,r:Reading,name:string,complete:boolean
  const noLuongUnknown=r.execution.traces.some(t=>t.ruleId===VTTL_NO_LUONG&&t.status==='missing-facts');
  const phu326Unknown=r.execution.traces.some(t=>t.ruleId===NPL_PHU326&&t.status==='missing-facts');
  const phucLiemSatUnknown=r.execution.traces.some(t=>t.ruleId===VTTL_PHUC_LIEM_SAT&&t.status==='missing-facts');
+ const rootUnknown=VTTL_ROOT_IDS.filter(id=>r.execution.traces.some(t=>t.ruleId===id&&t.status==='missing-facts'));
  const nplUnknown=NPL_DIEN_SINGLE_IDS.filter(id=>r.execution.traces.some(t=>t.ruleId===id&&t.status==='missing-facts'));
- const rules=r.execution.rules.filter(x=>!TRUNGCHAU_RULE_IDS.includes(x.id)&&(x.id!==VTTL_PHUC_LIEM_SAT||phucLiemSatUnknown)&&(x.id!==NPL_PHU326||phu326Unknown)&&(x.id!==VTTL_NO_LUONG||noLuongUnknown)&&(!NPL_DIEN_SINGLE_IDS.includes(x.id)||nplUnknown.includes(x.id))&&(x.id!==VTTL_DIEN_PHU||vttlUnknown)&&(x.id!==VTTL_CAREER_CO_AM||careerVttlUnknown)&&subjectOf({factIds:x.requiredFacts})===name);
+ const rules=r.execution.rules.filter(x=>!TRUNGCHAU_RULE_IDS.includes(x.id)&&(!VTTL_ROOT_IDS.includes(x.id)||rootUnknown.includes(x.id))&&(x.id!==VTTL_PHUC_LIEM_SAT||phucLiemSatUnknown)&&(x.id!==NPL_PHU326||phu326Unknown)&&(x.id!==VTTL_NO_LUONG||noLuongUnknown)&&(!NPL_DIEN_SINGLE_IDS.includes(x.id)||nplUnknown.includes(x.id))&&(x.id!==VTTL_DIEN_PHU||vttlUnknown)&&(x.id!==VTTL_CAREER_CO_AM||careerVttlUnknown)&&subjectOf({factIds:x.requiredFacts})===name);
  const traces=r.execution.traces.filter(t=>rules.some(x=>x.id===t.ruleId));
  // Reuse the exact assessment behind a missing fact, only when execution recorded it missing.
  const reasons=traces.filter(t=>t.status==='missing-facts').flatMap(t=>t.details.map(id=>{
+  if(id===VTTL_NO_AM_FACT||id===VTTL_CAREER_FIRE_FACT){const a=vttlRootAssessment(s,id===VTTL_NO_AM_FACT?VTTL_ROOT_IDS[0]:VTTL_ROOT_IDS[1]);return {ruleId:t.ruleId,factId:id,cause:a.cause,text:a.reason,paths:a.paths};}
   if(id===VTTL_PHUC_LIEM_SAT_FACT){const a=vttlPhucLiemSatAssessment(s);return {ruleId:t.ruleId,factId:id,cause:a.cause,text:a.reason,paths:a.paths};}
   if(id===NPL_PHU326_FACT){const a=nplPhu326Assessment(s);return {ruleId:t.ruleId,factId:id,cause:a.cause,text:a.reason,paths:a.paths};}
   if(id===VTTL_NO_LUONG_FACT){const a=vttlNoLuongAssessment(s);return {ruleId:t.ruleId,factId:id,cause:a.cause,text:a.reason,paths:a.paths};}

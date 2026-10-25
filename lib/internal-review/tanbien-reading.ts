@@ -1,3 +1,4 @@
+import {VTTL_CAREER_FIRE} from '../interpretation-rules/vttl-root-batch';
 import {VTTL_CAREER_CO_AM} from '../interpretation-rules/vttl-career-co-am';
 import {TRUNGCHAU_RULE_IDS,SPEECH484} from '../interpretation-rules/trungchau-natal';
 import {M05,M07} from '../interpretation-rules/life-literary';
@@ -36,7 +37,7 @@ import {
   ruleEvidence,
   type ReadingEvidence,
 } from "./tanbien-presentation";
-export const TANBIEN_TEMPLATE_VERSION = "1.51.0";
+export const TANBIEN_TEMPLATE_VERSION = "1.52.0";
 const sections = [
   {id:"life-elements",title:"Quan hệ ngũ hành theo phương pháp Nguyễn Phát Lộc",rules:[...nplFoundationRules,...nplTwoRules].map(r=>r.id)},
   {id:"life-body",title:"Vai trò Mệnh–Thân",rules:[...lifeBodyRules,...nplBodyRules].map(r=>r.id)},
@@ -76,7 +77,7 @@ const sections = [
     rules: catalog
       .filter(
         (r) =>
-          (r.id === VTTL_CAREER_CO_AM || r.id.startsWith("tanbien.") || TRUNGCHAU_RULE_IDS.includes(r.id)) &&
+          (r.id === VTTL_CAREER_FIRE || r.id === VTTL_CAREER_CO_AM || r.id.startsWith("tanbien.") || TRUNGCHAU_RULE_IDS.includes(r.id)) &&
           r.presentation?.readingTheme === "work",
       )
       .map((r) => r.id),

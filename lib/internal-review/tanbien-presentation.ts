@@ -1,3 +1,4 @@
+import {VTTL_ROOT_IDS,VTTL_NO_AM_FACT,VTTL_CAREER_FIRE_FACT,vttlRootFacts,vttlRootRules} from '../interpretation-rules/vttl-root-batch';
 import {VTTL_PHUC_LIEM_SAT_FACT,vttlPhucLiemSatFacts,vttlPhucLiemSatRule} from '../interpretation-rules/vttl-phuc-liem-sat';
 import {NPL_PHU326_FACT,nplPhu326Facts,nplPhu326Rule} from '../interpretation-rules/npl-spouse-vcd-lonely';
 import {VTTL_NO_LUONG_FACT,vttlNoLuongFacts,vttlNoLuongRule} from '../interpretation-rules/vttl-no-luong';
@@ -229,6 +230,7 @@ const factLabels: Record<string, string> = {
   "fact.wealth-minor-stars": "phụ tinh tại Tài Bạch",
 };
 export function conditionText(c: Condition): string {
+ if(c.fact===VTTL_NO_AM_FACT||c.fact===VTTL_CAREER_FIRE_FACT){const r=vttlRootRules.find(r=>r.requiredFacts.includes(c.fact))!;return [...r.presentation!.sourceConditions!,...r.presentation!.projectScope!].join(' ');}
  if(c.fact===VTTL_PHUC_LIEM_SAT_FACT)return [...vttlPhucLiemSatRule.presentation!.sourceConditions!,...vttlPhucLiemSatRule.presentation!.projectScope!].join(' ');
  if(c.fact===VTTL_NO_LUONG_FACT)return [...vttlNoLuongRule.presentation!.sourceConditions!,...vttlNoLuongRule.presentation!.projectScope!.slice(2,3)].join(' ');
  if(c.fact===NPL_PHU326_FACT)return [...nplPhu326Rule.presentation!.sourceConditions!,...nplPhu326Rule.presentation!.projectScope!.slice(2)].join(' ');
@@ -307,6 +309,7 @@ export function conditionText(c: Condition): string {
 export function factEvidence(s: ChartSnapshot, id: string): ReadingEvidence {
  if(nplDienSingleBranches.some(b=>b.fact===id)||id===NPL_DIEN_SINGLE_SUPPORT||id==='fact.dien-npl-single-status'){const f=nplDienSingleFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,'source'):item('Chưa đủ dữ kiện để xét Điền một TT theo NPL260.');}
  if(id===NPL_PHU326_FACT||id===NPL_PHU326_FACT+'-status'){const f=nplPhu326Facts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,'source'):item('Chưa đủ dữ kiện nhất quán kiểm Phu VCD/NPL326.');}
+ if([VTTL_NO_AM_FACT,VTTL_CAREER_FIRE_FACT,VTTL_NO_AM_FACT+'-status',VTTL_CAREER_FIRE_FACT+'-status'].includes(id)){const f=vttlRootFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,'source'):item('Chưa đủ dữ kiện kiểm B01/B02 theo Toàn Thư.');}
  if(id===VTTL_PHUC_LIEM_SAT_FACT||id===VTTL_PHUC_LIEM_SAT_FACT+'-status'){const f=vttlPhucLiemSatFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,'source'):item('Chưa đủ dữ kiện kiểm Phúc Liêm–Sát theo Toàn Thư84.');}
  if(id===VTTL_NO_LUONG_FACT||id===VTTL_NO_LUONG_FACT+'-status'){const f=vttlNoLuongFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,'source'):item('Chưa đủ dữ kiện kiểm quy mô người phụ giúp theo Toàn Thư.');}
  if(id===VTTL_CAREER_CO_AM_FACT||id===VTTL_CAREER_CO_AM_FACT+"-status"){const f=vttlCareerCoAmFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện nhất quán để kiểm Cơ–Âm Quan Dần theo Toàn Thư.");}

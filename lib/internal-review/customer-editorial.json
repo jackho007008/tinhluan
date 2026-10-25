@@ -6260,5 +6260,23 @@
     "movedToEvidence": [
       "Nguồn Toàn Thư84; Sửu/Mùi, vắng TT và 4 sát tại bản phương/tam hợp/xung là tập con dự án, không gán thành nguyên văn sách."
     ]
+  },
+  "vttl.no-am-mieu-scale": {
+    "text": "Về người phụ giúp, cấu trúc này được sách mô tả là có nhiều người phụ giúp. Đoạn này không xác nhận số người thực tế, mức độ trợ giúp hoặc phẩm chất của từng người.",
+    "sourceTemplate": "Về người phụ giúp, cấu trúc này được sách mô tả là có nhiều người phụ giúp. Đoạn này không xác nhận số người thực tế, mức độ trợ giúp hoặc phẩm chất của từng người.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Giữ nguyên văn B01 được duyệt theo79b3947; không thêm kết luận ngoài phương diện.",
+    "movedToEvidence": [
+      "Câu nguồn/bảng trạng thái nguồn/cổng dự án/lý do unknown tách rõ theo B01/B02; không đổi bảng engine."
+    ]
+  },
+  "vttl.career-fire-delayed-fulfillment": {
+    "text": "Về công danh, cấu trúc này được sách mô tả là thời trẻ long đong, có thành có bại, đến khi lớn tuổi mới toại nguyện. Các thời đoạn trên chỉ là cách nói định tính của nguồn; đoạn này chưa xác định tuổi chuyển biến, chức vụ, thu nhập hoặc diễn biến sự nghiệp thực tế của bạn.",
+    "sourceTemplate": "Về công danh, cấu trúc này được sách mô tả là thời trẻ long đong, có thành có bại, đến khi lớn tuổi mới toại nguyện. Các thời đoạn trên chỉ là cách nói định tính của nguồn; đoạn này chưa xác định tuổi chuyển biến, chức vụ, thu nhập hoặc diễn biến sự nghiệp thực tế của bạn.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Giữ nguyên văn B02 được duyệt theo79b3947; không thêm kết luận ngoài phương diện.",
+    "movedToEvidence": [
+      "Câu nguồn/bảng trạng thái nguồn/cổng dự án/lý do unknown tách rõ theo B01/B02; không đổi bảng engine."
+    ]
   }
 }
