@@ -2,6 +2,16 @@
 
 Cập nhật20/10/2026 sau kiểm ND03; các lệnh mẫu dưới đây cần chọn theo phạm vi, không mặc định chạy toàn bộ. [package.json](../package.json), [vitest.config.ts](../vitest.config.ts), [playwright.config.ts](../playwright.config.ts) là cấu hình hiện có; [kiến trúc](ARCHITECTURE.md) giải thích kho/queue/quyền. Không có Git tại root; xem cách nhận diện code ở ARCHITECTURE.
 
+<a id="u07-testing-20261025"></a>
+## U07/NPL260 — phần ảnh hưởng25/10/2026, code110ff10
+
+- **582/582 qua8file**,31mới trong `npl-dien-single-void`; còn `vttl-career-co-am`, `vttl-dien-phu`, `customer-editorial-catalog`, `customer-topic-editorial`, `continuous-report`, `finance-presentation`, `no-dien`. Kiểm mộtTuần/mộtTriệt/cảhai/vắngTT/VCD/chiếu,14biên thiếu dữkiện,4Cơ–CựMão/Dậu×TT, Tài thuận vẫnunknown, editorialversion/receipt/G2. [Logcuối](../.local/u07-delivery-20261025/tests-final.log).
+- So192giữ snapshot/fact/rule/trace/claim/nhóm/văn/căn cứ/G2cũ. Đúng41firstĐiền18/23;0chỉbổsung/0chiềusâu/0sửa-rút/0ngoài41.33ghi chú money-property hiệncó xuất cùng lờiĐiềnmới, khôngtínhthêmgap.494gapgốc/493owner cơhọc. [Impact/toànvăn](V1-DELIVERY-PLAN.md#u07-delivery-173-20261025).
+- Typecheck/build đạt trong checkoutU07; DBriêng`tinhluan_u07_…`/3098.12/12 `reading-scope`+`stored-customer-pdf` đạt, mockPDFchỉkiểmquyền. Haiengine49Tuần/52Triệt tínhmới form/lưu–mở/free403/ngườilạ404/mobile360/390khôngtràn; dữkiện/vănkhớpaudit. MockTestorder chỉDBriêng. HaiPDFthật9trang18/20đoạn từfrozen khớpNFC+khoảngtrắng, đủcâuđiềukiện vànguồn257/260–261; đãxemcontact/trang5/mobile. QA chínhhai bảnmới/version/G2/lưu–mởđạt, khôngorder/mock.
+- Bảo toàn270filelịch sử, quyền/hạn/bindings/liênkết,34bài,6fileengine,QA3070.482file root/checkoutkhớp, mộtworkerchính; isolated3098dừng saukiểm. Khôngmigration/backfill/fullgate/providerthật/Live.
+
+**Lỗi đầu/từng lượt:** lượt1 transform trùngbiến`nd` tronglabelmapper, sửa tênbiếnU07. Lượt2có3assertionmới sai(vănnhãn căn cứ, fixtureTàiởTT, prefixfactfinance); sửa assertdùngvănthực vàfixtureTàiđúngchiHợi. Lượt3còn1selectorfixture nhầm, sửa ID`tanbien.finance-vu-phu`;31testmớiđạt. Lượt mở rộng9file có596pass/1fail tài chínhcũ: row5trong`tuan-triet-20261013/readings.json`đãcóU08`vttl.dien-phu-hoi-scale`, khôngphảiNPLmới; expected`creation-loss`/Điềngap đãlỗi ởbaselineU24, actual`money-property,creation-loss`/khônggap. Thửchỉnhassert rồixácđịnh ngoài phạmvi, **đã trả`finance-assets.test.ts`vềnguyênHEAD**, khôngsửaexpectednguồn/lịch sửcho xanh. Lỗi này vàOPEN-TEST-02khôngđượcgọiđãsửa hoặc toàngateđạt. Lượtcuối8file582/582;12G2riêngđạt. Pythonmặcđịnh thiếupypdfium2, dùngruntimeđónggói hiệncó, khôngcài môi trường.
+
 ## 1. Chọn mức kiểm
 
 - **Tài liệu:** đọc lại ý nghĩa/quyết định, kiểm file/link/anchor và diff. Không chạy app, test/build, migration, PDF hoặc hash toàn kho.

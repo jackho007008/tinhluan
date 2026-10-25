@@ -1,5 +1,15 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Hiện hành25/10 — U07/NPL260, QA1.73/catalog1.69
+
+**Code `110ff10`**, kế thừa đặc tả `1fe982b` đã được duyệt mở đúng tập con. [Kết quả và giới hạn](V1-DELIVERY-PLAN.md#u07-delivery-173-20261025), [QA3062](http://127.0.0.1:3062/lap-la-so). **41Điền nhận lời đầu tiên18Tuần/23Triệt;0chỉ bổ sung/0chiều sâu/0sửa-rút lời cũ;41báo cáo duy nhất đổi/0ngoài dự kiến.**33ghi chú phối hợp sẵn có không được đếm thành gap mới.535→**494khóa thiếu gốc** theo540−2U08−3U24−41U07; đếm owner cơ học534→493là chỉ số khác. Điền chỉ dữ kiện41→0trong192 không thành hoàn chỉnhĐiền hoặc toàn báo cáo.
+
+Giữ hai thời đoạn và nguyên văn được duyệt, điều kiệnTài hỗ trợ chưa xác định vẫnunknown; không suy toànTài tốt từ một claimthuận. Cơ–Cự cũ ưu tiên theo cấu trúc, không trùng; VCD/cảhaiTT ngoài nhánh mới; thiếu dữkiện không thành vắngTT. NPLkhông xóa/đảo lời nguồn khác hoặc khôi phục nềnTB. [Toàn văn trước/sau49/52 và fixture](../.local/u07-delivery-20261025/representatives-full-before-after.txt), [toàn41](../.local/u07-delivery-20261025/full-before-after.txt).
+
+582/582nội dung(31mới)+12/12G2/PDFmock riêng/typecheck/build/haiengine form–lưu–mở/mobile360/390/haiPDF9trang18/20đoạn đạt. Hai bản mới QA chính đúngversion/G2/lưu–mở, khôngmockorder.270tệp cũ/quyền/hạn/6fileengine/QA3070/34bài giữ;482file root/checkout khớp, mộtworker; Livefalse,Tật chưa publish. [Runtime](../.local/u07-delivery-20261025/final-runtime-check.json). Khôngfullgate/providerthật hoặc sửa selector tài chính cũ.
+
+**Khép đúng tập con được duyệt, không khép toànU07/nghịch đảoTB hoặc hoàn chỉnhĐiền.** Ưu tiên khoảng thiếu gốc trước phương diện bắt buộc và chiều sâu. **Hành động tiếp theo duy nhất:** khi được giao, chọn gói khoảng thiếu gốc tiếp theo từ backlog/kho đã lưu; không mở lại các nhóm đã dặn dừng nếu thiếu bằng chứng mới. Thời gian đã đo ít nhất18phút từ09:49:43ICT; thiếu mốc đọc đầu phiên nên chưa có tổng toàn phiên chính xác. [Mốc đo](../.local/u07-delivery-20261025/session.json). Các mốc dưới là lịch sử trước triển khai U07.
+
 ## Hiện hành25/10 — chọn U07/NPL260, ứng dụng giữ1.72
 
 Baseline `38d3a01`, code1b6e072/app1.72/catalog1.68. [Đặc tả hữu hạn đã hoàn tất](V1-DELIVERY-PLAN.md#u07-followup-scope-20261025): chọnU07sau sànglọc đúngU07/U03/U25; không mở lạiU08/U24/U10PhủNô/U22DiVCD. Câu TổngHợp260đã dùng trongnhánhCơ–Cự, nhưng phạmvi1.36ghi rõ giới hạn đúngcặp; cần quyếtđịnh mở lời riêng tạo lập/duy trì choĐiềncóchínhtinh với đúngmộtTT. GiữVCD/cảhaiTT/nhánhCơ–Cự cũ ởngoài, không phục hồi lời nềnTB; Tuần/Triệt khác thờiđoạn và Tài hỗtrợ phải ởtrongvăn.

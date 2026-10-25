@@ -1,5 +1,11 @@
 # Quyết định phạm vi trước triển khai — 1.36.0
 
+## Bổ sung đã duyệt25/10 — tập con U07/NPL260, QA1.73
+
+Phêduyệt trực tiếp sau `1fe982b` mở đúng **Điền cóchínhtinh bảnmệnh với đúngmộtTuầnHOẶCmộtTriệt trựctiếp**. Không còn giới hạnCơ–Cự cho nhánhNPLmới; Cơ–CựMão/Dậu/mộtTT vẫn dùng nguyênrulecũ1.36và bịloại khỏi haiIDmới đểkhôngtrùng. Chỉthay giới hạn sảnphẩm đúngtậpcon, khôngđổi câuTB hoặc phépđảo mọisao. VCD/cảhaiTT ngoài nhánh mới, thiếudữkiện giữunknown. Tài257hỗtrợ cóđiềukiện trongcùngđoạn, chưakếtluậnđãthỏa; thờiđoạn riêngTuần/Triệt, khôngsuy tuổi/năm/tàisảnthực.
+
+[Kếtquả/vănnguyên](V1-DELIVERY-PLAN.md#u07-delivery-173-20261025):code110ff10/app1.73/catalog1.69,41Điền nhậnýđầutiên18/23,0sửa-rút; đúngtậpconđạt, toànU07/nghịchđảoTB cònmở. Mục1và đềnghị bên dưới là lịch sử trướcphêduyệt, vẫn dùng cho nhánhCơ–Cựcũ vàkhôngtựmởvếkhác.
+
 ## Đề nghị mở tập con25/10/2026 — chưa duyệt, không thay phạm vi1.36
 
 [GóiU07nối38d3a01](V1-DELIVERY-PLAN.md#u07-followup-scope-20261025) chọn đúng câu riêng NPL260 đã dùng ởmục1, đề nghị Điền cóchínhtinh và đúng mộtTT trựctiếp, giữ nguyênCơ–CựMão/Dậuởrulecũ đểkhôngtrùng.41cung đangthiếulời trong192(18Tuần/23Triệt),chưađổiapp/giảmkhoảngthiếu. Chỉ đặc tả, baseline hiện app1.72/catalog1.68. Táchđiềukiệnnguồn/tậpcondựán, ngoại lệVCD/cảhaiTTởngoài; giữ khácbiệtTuần/TriệtvàTài hỗtrợtheo257trongvăn, khôngkhôiphụclờinềnTB hoặc mởdi sản/tuổi. **Cần một quyếtđịnh mở đúng tậpcon này và hai vănmẫu; nội dung dưới vẫn là phạmvi hiệnhành, chưa đượcsửa qua đềxuất.**
