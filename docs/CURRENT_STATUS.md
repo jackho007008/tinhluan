@@ -1,5 +1,15 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Hiện hành 25/10 — chờ duyệt chung2 nhánh; thực tế vẫn487 khóa
+
+Code `dcdcbb6`, app1.76/catalog1.72, baseline bàn giao `e8a888f`;488file root/QA khớp, tiến trình3062/worker/QA3070 đúng cwd. **0 khóa thực giảm**, không đổi ứng dụng/engine/quyền/lịch sử/G2/34bài/QA/Livefalse; Tật chưa publish.
+
+[**Bảng duyệt chung duy nhất**](V1-DELIVERY-PLAN.md#root-gap-batch-176-20261025): đúng8 nhóm đã xét, chỉ2 đủ đặc tả. **B01 Nô Thái Âm Miếu riêng ToànThư87/31 —5first29/115/118/122/125. B02 Hỏa QuanVCD Bình thường ToànThư80/52 —1first67.** Hợp6khóa/6báocáo,giao0;0 bổ sung/chiều sâu. **481 chỉ là tiềm năng sau duyệt/nghiệm thu; thực487 giữ**. B01 chứng kiến engine Tuất,B02 Dậu; các chi còn lại cần fixture lúc coding, chưa có nghiệm thu. Không đưa XươngTài81 vào bảng vì chưa khóa phạm vi “nếu/nhiều cát”.
+
+[Toàn văn mẫu/trước-sau đề xuất](../.local/gap-batch-176-20261025/proposed-full-before-after.txt), chưa pipeline/bản lưu/QA. B01 chỉ nhiều người phụ giúp, không số người/chất lượng/bạn bè; B02 giữ diễn tiến định tính trẻ–lớn tuổi, không tuổi/chức/thu nhập/dự báo thực tế. Cổng dự án tách nguyên văn nguồn, missing/điều chỉnh trực tiếp chưa giải unknown; không bỏ sao để đủ6 hoặc gọi hoàn chỉnhNô/Quan/U10/U23.
+
+**Chốt trong một lần:** mở riêng B01/B02 cùng các tập con/văn trong bảng, có thể cảhai/chỉmột/chưa duyệt. Các quyền ToànThư trước chưa bao gồm hai nhánh này. Không xin lại coding/QA hoặc đưa câu hỏi toán tử nguồn cho chủ dự án. Không test/build/UI/PDF ứng dụng/DB/restart; chỉ đối chiếu snapshot/nguồn/ảnh hẹp/hợp khóa/link/diff. [Thời gian thực/chờ/gián đoạn](../.local/gap-batch-176-20261025/session.json). Dừng sau lô duyệt, không tìm vô hạn hoặc mở kế hoạch mới. Các mốc dưới là lịch sử.
+
 ## Hiện hành 25/10 — QA1.76/catalog1.72; còn487 khóa thiếu gốc
 
 **Code `dcdcbb6`**, [nghiệm thu Phúc Liêm–Sát Toàn Thư84](V1-DELIVERY-PLAN.md#phuc-liem-sat-delivery-176-20261025), [QA3062](http://127.0.0.1:3062/lap-la-so). **2 lời Phúc đầu tiên98/101;489→487 khóa thiếu gốc**, Phúc chỉ dữ kiện26→24. 0 chỉ bổ sung phương diện/0 chiều sâu/0 sửa-rút; ngoài hai mẫu0 đổi văn/thông báo/căn cứ khách. Bản tính mới thêm fact/trace và metadata phiên bản; lịch sử không backfill.

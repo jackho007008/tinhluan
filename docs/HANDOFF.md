@@ -1,5 +1,17 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành 25/10 — một bảng duyệt B01/B02, chưa đổi QA1.76
+
+Baseline thực `main@e8a888f`, code `dcdcbb6`, app1.76/catalog1.72;488file root/QA khớp, server68877/worker68878 và QA3070PID94421 đúng cwd. **Giảm thực0; còn487 khóa thiếu gốc.** Chỉ chuẩn bị lô, chưa coding/publish; QA,engine,G2,quyền/lịch sử,34bài,Livefalse/Tật chưa publish giữ.
+
+[**Một bảng duyệt duy nhất trong backlog**](V1-DELIVERY-PLAN.md#root-gap-batch-176-20261025), đủ nguồn/điều kiện/ngoại lệ/unknown/tập con dự án/văn khách/chứng kiến/quyền. Xét đúng8 nhóm U01/U03/U04/U10/U12/U19/U23/U26, chỉ2 nhánh đạt: **B01 U10 Âm Miếu đơn Nô —5first29/115/118/122/125; B02 U23 Hỏa QuanVCD Bình thường —1first67.** Hợp6khóa/6báocáo,giao0;0 chỉ bổ sung/0 chiều sâu. **487→481 chỉ sau duyệt và nghiệm thu**, chưa trừ đề xuất. Không cố đủ5; XươngTài81 bị loại do phạm vi “nếu/nhiều cát” chưa chắc, không lấy cấu trúc3 làm1 khóa sẵn sàng.
+
+B01: “Về người phụ giúp, cấu trúc này được sách mô tả là có nhiều người phụ giúp. Đoạn này không xác nhận số người thực tế, mức độ trợ giúp hoặc phẩm chất của từng người.” B02: “Về công danh, cấu trúc này được sách mô tả là thời trẻ long đong, có thành có bại, đến khi lớn tuổi mới toại nguyện. Các thời đoạn trên chỉ là cách nói định tính của nguồn; đoạn này chưa xác định tuổi chuyển biến, chức vụ, thu nhập hoặc diễn biến sự nghiệp thực tế của bạn.” [Toàn văn trước/sau minh họa sáu báo cáo](../.local/gap-batch-176-20261025/proposed-full-before-after.txt), chưa pipeline/bản lưu/QA.
+
+Chứng kiến là snapshot engine đã lưu: B01 chỉ Tuất,B02 chỉ Dậu; các chi còn lại trong tập con chưa có engine khớp, cần fixture lúc coding, chưa gọi đã kiểm fixture. Không mặc định sao khác vô ảnh hưởng; tách nguồn/cổng và đúng phương diện; TT/điều chỉnh chưa giải/missing giữ unknown. Năm ca B01 và hai ca B02 ngoài sáu có thể thêm diagnostic khi coding, không tínhfirst. Không khépU10/U23 hoặc hoàn chỉnhNô/Quan.
+
+**Một lần trả lời cần chốt:** duyệt riêng B01 và B02 (cảhai/chỉmột/chưa duyệt), theo nguyên bảng/văn. Quyền NôLương87/U24Quan79 chưa mở hai nhánh mới; không xin lại quyền coding/QA. Không hỏi user đoán toán tử nguồn. Phiên chỉ kiểm receipt/dữ liệu đã lưu/hợp khóa/ảnh đúng trang nguồn/link/diff; không test/build/engine/evaluator/UI/PDF ứng dụng/DB/runtime. [Thời gian làm/chờ/gián đoạn](../.local/gap-batch-176-20261025/session.json). **Dừng sau bảng này, không mở nhóm thứ9 hoặc kế hoạch song song.** Các mốc dưới là lịch sử.
+
 ## Hiện hành 25/10 — Phúc Liêm–Sát đạt QA1.76
 
 **Code `dcdcbb6`, app1.76/catalog1.72**, theo phê duyệt đặc tả414be37. [Kết quả/giới hạn](V1-DELIVERY-PLAN.md#phuc-liem-sat-delivery-176-20261025), [QA3062](http://127.0.0.1:3062/lap-la-so), checkout `.local/phuc-liem-sat-20261025/qa`. **98/101 nhận lời Phúc đầu tiên; giảm2 khóa, 489→487.** 0 chỉ bổ sung/0 chiều sâu/0 lời cũ sửa-rút; ngoài hai mẫu không đổi văn/thông báo/căn cứ khách. Fact/trace mới và metadata phiên bản có trong bản tính mới, không viết lại lịch sử.
