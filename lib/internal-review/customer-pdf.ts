@@ -27,7 +27,7 @@ async function renderStoredCustomerPdfInner(record:InternalReading,identity:({ki
   const paragraphs=await page.locator('[data-customer-text]').allTextContents();
   if(JSON.stringify(paragraphs)!==JSON.stringify(report.sections.flatMap(s=>s.paragraphs.map(p=>p.text))))throw Error('PRINT_CONTENT_MISMATCH');
   if(report.version==='1.46.0')await page.evaluate(paginate146);
-  if(report.version==='1.47.0'||['1.51.0','1.52.0','1.53.0','1.54.0','1.55.0','1.55.1','1.56.0','1.57.0','1.58.0','1.59.0','1.60.0','1.61.0', '1.62.0', '1.63.0', '1.63.1', '1.64.0', '1.64.1', '1.65.0','1.66.0','1.67.0','1.68.0','1.69.0','1.70.0','1.71.0'].includes(report.version))await page.evaluate(paginateCustomerReport);
+  if(report.version==='1.47.0'||['1.51.0','1.52.0','1.53.0','1.54.0','1.55.0','1.55.1','1.56.0','1.57.0','1.58.0','1.59.0','1.60.0','1.61.0', '1.62.0', '1.63.0', '1.63.1', '1.64.0', '1.64.1', '1.65.0','1.66.0','1.67.0','1.68.0','1.69.0','1.70.0','1.71.0','1.72.0'].includes(report.version))await page.evaluate(paginateCustomerReport);
   return await page.pdf({format:'A4',printBackground:true,preferCSSPageSize:true,displayHeaderFooter:true,headerTemplate:'<span></span>',footerTemplate:'<div style="font:9px Arial;width:100%;text-align:center;color:#68756c">TINH LUẬN · <span class="pageNumber"></span> / <span class="totalPages"></span></div>'});
  }finally{await browser?.close().catch(()=>{});active=false;}
 }

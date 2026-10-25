@@ -1,3 +1,4 @@
+import {VTTL_CAREER_CO_AM_FACT,vttlCareerCoAmFacts,vttlCareerCoAmRule} from '../interpretation-rules/vttl-career-co-am';
 import {VTTL_DIEN_PHU_FACT,vttlDienPhuFacts,vttlDienPhuRule} from '../interpretation-rules/vttl-dien-phu';
 import {trungchauFacts,trungchauRules,TRUNGCHAU_RULE_IDS,SPEND201} from '../interpretation-rules/trungchau-natal';
 import {vcdLightAssessment,VCD_LIGHT_BRANCHES,vcdLightFactId} from '../interpretation-rules/vcd-light-exceptions';
@@ -224,6 +225,7 @@ const factLabels: Record<string, string> = {
   "fact.wealth-minor-stars": "phụ tinh tại Tài Bạch",
 };
 export function conditionText(c: Condition): string {
+ if(c.fact===VTTL_CAREER_CO_AM_FACT)return [...vttlCareerCoAmRule.presentation!.sourceConditions!,...vttlCareerCoAmRule.presentation!.projectScope!.slice(2,3)].join(" ");
  if(c.fact===VTTL_DIEN_PHU_FACT)return [...vttlDienPhuRule.presentation!.sourceConditions!, ...vttlDienPhuRule.presentation!.projectScope!.slice(2,3)].join(" ");
  const tc=trungchauRules.find(r=>r.conditions.some(q=>q.fact===c.fact));if(tc)return tc.presentation!.sourceConditions!.join(" ");
  const vcdBranch=VCD_LIGHT_BRANCHES.find(r=>vcdLightFactId(r)===c.fact);if(vcdBranch)return vcdBranch.palace+' vô chính diệu; ngoại lệ Nhật–Nguyệt/TT đã được kiểm riêng theo đúng quan hệ và trạng thái ở chi thật; không tổng hợp toàn cung.';
@@ -293,6 +295,7 @@ export function conditionText(c: Condition): string {
     : `Điều kiện về ${label}: ${c.value}.`;
 }
 export function factEvidence(s: ChartSnapshot, id: string): ReadingEvidence {
+ if(id===VTTL_CAREER_CO_AM_FACT||id===VTTL_CAREER_CO_AM_FACT+"-status"){const f=vttlCareerCoAmFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện nhất quán để kiểm Cơ–Âm Quan Dần theo Toàn Thư.");}
  if(id===VTTL_DIEN_PHU_FACT||id===VTTL_DIEN_PHU_FACT+"-status"){const f=vttlDienPhuFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện nhất quán để kiểm nhánh Phủ Điền Hợi theo Toàn Thư.");}
  if(id.includes("-trungchau-")){const f=trungchauFacts(s).find(f=>f.id===id);return f?item(f.text,f.evidencePaths,"source"):item("Chưa đủ dữ kiện nhất quán để kiểm cấu trúc gốc Trung Châu.");}
  const phuc=phucUnadjustedBranches.find(r=>id==='fact.'+phucUnadjustedKey(r));if(phuc){const a=phucUnadjustedAssessment(s,phuc);return item(a.text,a.paths,'source');}

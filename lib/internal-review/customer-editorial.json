@@ -6206,5 +6206,14 @@
     "movedToEvidence": [
       "Toàn Thư PDF89, nguồn/phương pháp, điều kiện tọa Điền và ranh giới dự án Hợi/độc/vắng TT trực tiếp."
     ]
+  },
+  "vttl.career-co-am-dan-progress": {
+    "text": "Trong công việc, bạn được mô tả là có thể tiến thân giữa hoàn cảnh xáo động. Đây là lời luận của một cấu trúc sao, không khẳng định bạn sẽ thăng chức hoặc thành công trong một biến động thực tế.",
+    "sourceTemplate": "Trong công việc, bạn được mô tả là có thể tiến thân giữa hoàn cảnh xáo động. Đây là lời luận của một cấu trúc sao, không khẳng định bạn sẽ thăng chức hoặc thành công trong một biến động thực tế.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Giữ nguyên văn mẫu được duyệt sau5310b2e; nguồn/phương pháp riêng, không suy chức vụ/thu nhập/tuổi.",
+    "movedToEvidence": [
+      "Toàn Thư PDF79/43, điều kiện nguồn đồng cung Quan; tập con dự án Dần/vắng TT và cổng Khúc."
+    ]
   }
 }

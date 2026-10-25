@@ -1,3 +1,4 @@
+import {VTTL_CAREER_CO_AM} from '../interpretation-rules/vttl-career-co-am';
 import {VTTL_DIEN_PHU} from '../interpretation-rules/vttl-dien-phu';
 import type {CustomerParagraph,CustomerSection} from './customer-report';
 import type {ContinuousReport} from './continuous-report';
@@ -43,7 +44,7 @@ export function editCustomerTopics(sections:CustomerSection[],continuous:Continu
     continue;
    }
    const ids=ruleIds(p);
-   if(career){p.title=ids.some(id=>['trungchau.move365','tanbien.r40','tanbien.career-void-tu-ngo','tanbien.career-ky-base','tanbien.career-ky-exception','tanbien.career-kinh-luc'].includes(id))?'Tiến trình và sự ổn định công việc':'Công việc và công danh';continue;}
+   if(career){if(ids.includes(VTTL_CAREER_CO_AM)){p.title='Tiến thân trong hoàn cảnh xáo động';continue;}p.title=ids.some(id=>['trungchau.move365','tanbien.r40','tanbien.career-void-tu-ngo','tanbien.career-ky-base','tanbien.career-ky-exception','tanbien.career-kinh-luc'].includes(id))?'Tiến trình và sự ổn định công việc':'Công việc và công danh';continue;}
    const entry=continuous.financeAssets?.entries.find(e=>e.groupId===p.id);
    if(entry?.palace==='Điền Trạch'){
     const labels=[...new Set(ids.map(id=>propertyFacets[id]).filter(Boolean))];
