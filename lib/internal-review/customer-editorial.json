@@ -6233,5 +6233,14 @@
     "movedToEvidence": [
       "NPL257/260–261; mộtTT trực tiếp/Điền có chính tinh; ưu tiên Cơ–Cự cũ, không suy Tài tốt từ claim thuận."
     ]
+  },
+  "vttl.no-luong-single-scale": {
+    "text": "Về người phụ giúp, cấu trúc này được sách mô tả là có nhiều người phụ giúp. Đoạn này không xác nhận số người thực tế, mức độ trợ giúp hoặc phẩm chất của từng người.",
+    "sourceTemplate": "Về người phụ giúp, cấu trúc này được sách mô tả là có nhiều người phụ giúp. Đoạn này không xác nhận số người thực tế, mức độ trợ giúp hoặc phẩm chất của từng người.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Giữ nguyên văn được duyệt sau6e7e551, chỉ người phụ giúp theo gia nhân.",
+    "movedToEvidence": [
+      "Nguồn Toàn Thư87; bảng37; đơn thủ/Miếu-Vượng/vắng TT là tập con dự án."
+    ]
   }
 }

@@ -1,3 +1,4 @@
+import {VTTL_NO_LUONG} from '../interpretation-rules/vttl-no-luong';
 import {NPL_DIEN_SINGLE_IDS} from '../interpretation-rules/npl-dien-single-void';
 import {VTTL_CAREER_CO_AM} from '../interpretation-rules/vttl-career-co-am';
 import {VTTL_DIEN_PHU} from '../interpretation-rules/vttl-dien-phu';
@@ -32,6 +33,7 @@ const ruleIds=(p:CustomerParagraph)=>p.members.flatMap(m=>m.claim.rules.map(r=>r
 /** Put existing relation participants together, followed by their explanation. Broad scope notes stay last.
  * This is an order of reading, not a new claim union, causal relation or priority. */
 export function editCustomerTopics(sections:CustomerSection[],continuous:ContinuousReport){
+ for(const section of sections.filter(s=>s.palaces.includes('Nô Bộc')))for(const p of section.paragraphs)if(ruleIds(p).includes(VTTL_NO_LUONG))p.title='Quy mô người phụ giúp';
  for(const section of sections.filter(s=>['assets','natal-palace-4'].includes(s.id))){
   const career=section.id==='natal-palace-4';
   const spending=section.paragraphs.some(p=>ruleIds(p).includes('trungchau.spend201'));
