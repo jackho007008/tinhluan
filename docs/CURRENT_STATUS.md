@@ -1,5 +1,15 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Hiện hành 25/10 — 489 khóa thiếu; đề nghị Phúc Liêm–Sát
+
+Baseline thực `main@dcb018f`, code `6faa35f`, app 1.75/catalog 1.71; 486 file root/QA khớp, QA3062 đúng checkout, QA3070 giữ. **Phiên này giảm 0 khóa; thực tế vẫn 489.** Ứng dụng, lịch sử/quyền/hạn, engine/G2/34 bài không đổi; Live tắt, Tật chưa publish.
+
+[Ba nhóm đã xét/đặc tả cần một quyết định](V1-DELIVERY-PLAN.md#phuc-liem-sat-followup-175-20261025). Chọn lời riêng Phúc Liêm–Sát Toàn Thư84: **tiềm năng 2 cung có nhận định đầu tiên (98/101), 0 bổ sung phương diện, 0 chỉ chiều sâu**; chưa trừ 489. Hai hướng còn lại (bảng Mệnh–Nô hỗn hợp; số anh chị em) chưa giữ được đầy đủ điều chỉnh trực tiếp khi áp nguồn. Không mở lại nhánh đã nghiệm thu/checkpoint48 hoặc đọc toàn sách.
+
+Văn đề nghị: “Trong cách luận về phúc đức, Liêm Trinh–Thất Sát được mô tả bằng sự vất vả, khó nhọc. Đây chưa phải kết luận về hoàn cảnh hay diễn biến thực tế của bạn.” [Toàn văn trước/sau hai mẫu](../.local/phuc-gap-175-20261025/proposed-full-before-after.txt), chỉ minh họa, chưa pipeline/bản lưu/QA. Cặp bản mệnh Phúc Sửu/Mùi; chứng nhận dữ liệu, vắng TT trực tiếp, vắng Kình/Đà/Hỏa/Linh ở bản phương/tam hợp/xung là tập con dự án, không gán thành nguyên văn84; có điều chỉnh chưa phối/thiếu dữ liệu giữ unknown. Không đổi hại Tân Biên thành lời nhẹ hoặc khép U06/hoàn chỉnh Phúc.
+
+**Một hành động tiếp theo:** duyệt mở riêng nhánh nguồn/tập con/văn mẫu này; quyền Toàn Thư trước chưa bao gồm Phúc. Chỉ kiểm receipt/nguồn/ảnh84/probe từ 192 snapshot/link/diff, không đổi ứng dụng nên không test/build/UI/PDF. [Thời gian làm riêng với chờ/gián đoạn](../.local/phuc-gap-175-20261025/session.json). Các mốc dưới là lịch sử.
+
 ## Hiện hành25/10 — QA1.75/catalog1.71,Phu VCD/NPL326
 
 **Code `6faa35f`**,nốiđặctả5c5d3ecđãduyệt. [Nghiệmthu/giớihạn](V1-DELIVERY-PLAN.md#phu326-delivery-175-20261025),[QA3062](http://127.0.0.1:3062/lap-la-so). **3Phufirst7/34/73 /0chỉbổsung /0chiềusâu /0nhậnđịnhcũsửa-rút;489khóa thiếu gốc còn lại**(492−3),ownercơhọc488làthướcđokhác.3thôngbáotrốngPhubỏtheodữliệupipeline;giới hạncóthậtgiữ.7ngoàiba54/138/139/150/155/167/186thêmcăn cứ/thôngbáounknown(5đổitrống/2thêmgiớihạn),khôngnhậnđịnhmới;10báocáothayđổihiểnthị. [Toànvăn trước/sau bảnlưuQA thật](../.local/phu326-20261025/stored-full-before-after.txt).

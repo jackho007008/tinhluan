@@ -1,5 +1,15 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành 25/10 — đề nghị Phúc Liêm–Sát, chưa đổi QA
+
+Đã xác minh `main@dcb018f`, code `6faa35f`, app 1.75/catalog 1.71; 486 file ứng dụng root/checkout phục vụ khớp, đúng tiến trình QA3062, QA3070 giữ. **Giảm thực tế 0; còn 489 khóa thiếu gốc.** Không đổi code, bản lưu, quyền hoặc runtime.
+
+[Đối chiếu ba nhóm và đặc tả duy nhất](V1-DELIVERY-PLAN.md#phuc-liem-sat-followup-175-20261025): bảng Mệnh–Nô hỗn hợp chưa có cách tách phương diện giữ đủ điều chỉnh; số anh chị em còn thiếu cách áp điều chỉnh Phúc. Chọn câu Toàn Thư84 “cùng Liêm Trinh tân khổ” tại Phúc: **tiềm năng 2 lời đầu tiên (98/101), 0 bổ sung, 0 chiều sâu**. Hai mẫu engine Phúc Mùi đang trống, không lấy lời bệnh/sinh tử Tân Biên đổi thành lời nhẹ. Quyền Toàn Thư hiện có chưa mở nhánh Phúc này.
+
+Nhãn đề nghị **“Vất vả, khó nhọc”**. Văn khách: “Trong cách luận về phúc đức, Liêm Trinh–Thất Sát được mô tả bằng sự vất vả, khó nhọc. Đây chưa phải kết luận về hoàn cảnh hay diễn biến thực tế của bạn.” [Toàn văn trước/sau đề xuất hai báo cáo](../.local/phuc-gap-175-20261025/proposed-full-before-after.txt), chưa phải pipeline/bản lưu/QA. Tập con dự án: cặp bản mệnh tại Phúc Sửu/Mùi, dữ liệu chứng nhận đầy đủ, vắng TT trực tiếp và vắng Kình/Đà/Hỏa/Linh ở bản phương/tam hợp/xung; có sao giữ hoặc thiếu dữ liệu thì unknown. Các cổng này tách khỏi nguyên văn nguồn; không tuyên bố sao ngoài các vị trí ấy vô ảnh hưởng. Sửu chưa có chứng kiến engine trong gói.
+
+**Hành động tiếp theo duy nhất:** quyết định mở riêng nhánh Toàn Thư84 và tập con/văn mẫu trên. Không xin lại quyền coding/QA. Chưa trừ 2 khóa đề xuất, không khép U06 hoặc hoàn chỉnh Phúc. Phiên tài liệu chỉ kiểm nguồn/ảnh84, dữ liệu 192 đã lưu, liên kết/diff; không test/build/UI/PDF hay chạy lại engine. Giữ G2, lịch sử/quyền/hạn, engine, QA3070, 34 bài, Live tắt và Tật chưa publish. [Thời gian làm/chờ/gián đoạn](../.local/phuc-gap-175-20261025/session.json). Các mốc dưới là lịch sử.
+
 ## Hiện hành25/10 — Phu VCD/NPL326 đã vào QA1.75
 
 **Code `6faa35f`,app1.75/catalog1.71**,đặctả5c5d3ecđãduyệt. [Kếtquả/giớihạn](V1-DELIVERY-PLAN.md#phu326-delivery-175-20261025),[QA3062](http://127.0.0.1:3062/lap-la-so),checkout`.local/phu326-20261025/qa`. **3Phu nhậnlờiđầutiên7/34/73;0chỉbổsung/0chiềusâu/0nhậnđịnhcũsửa-rút;492→489khóathiếugốc.** Phuchỉdữkiện45→42,2conditionalchưaápgiữ. Một rulebộnguồn/đúng21têngiữ/cert/Hóa/vắngTT,khôngtheoID;CôThầnchỉfixture,Đẩu/Quảcó3engine thật.
