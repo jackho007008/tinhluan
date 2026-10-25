@@ -228,3 +228,10 @@ Giữ điều kiện/ngoại lệ/văn mẫu; không sửa Dần/Thân Tân Biê
 **U trực tiếp:** từ phiên này ưu tiên giải nội dung còn thiếu để hoàn thiện báo cáo; gói chỉ thêm chiều sâu xếp sau. Tối đa3nhóm đối chiếu, chọn1nhóm khả thi tác động lớn; trước triển khai ghi thiếu gì/câu–điều kiện–ngoại lệ/loại chặn/cấu trúcengine. Đủ căn cứ trong phương pháp/phạm vi đã duyệt phải triển khai đến QA, không xin lại quyền. Phương pháp/phạm vi mới trình đúng phần quyết định kèm văn mẫu; chưa đủ thì ghi chính xác mắt xích/bằng chứng, không chỉ nói “thiếu phương pháp”. Không đòi giải mọi sao/toàn cung nhưng phải giữ điều chỉnh trực tiếp.
 
 Ba thước đo riêng: cung nhận ý đầu tiên/phương diện bắt buộc bổ sung/chỉ chiều sâu; không gọi một nhận định là hoàn chỉnh cung. Không đọc lại toàn sách, kiểm kê toàn dự án hoặc mở lại U08 đã nghiệm thu. Giữ G2/engine/lịch sử/quyền/QA3070/34bài/Livefalse/Tật chưa publish. [U24 được chọn và quyết định mới cần](V1-DELIVERY-PLAN.md#gap-priority-package-20261024) vẫn **chưa duyệt Toàn Thư Quan**, không biến quyền giao nhiệm vụ thành cho phép nhánh mới;0thay đổi ứng dụng/đầu ra.
+
+<a id="u24-approval-20261025"></a>
+## 25/10/2026 — duyệt triển khai riêng U24 Cơ–Âm Quan Dần
+
+**U trực tiếp:** duyệt Thiên Cơ–Thái Âm bản mệnh đồng cung Quan Lộc tạiDần theo đặc tả5310b2e/văn đã trình; cho dùng ToànThưPDF79 cùng bảngVănKhúcPDF43 để xét ngoại lệ đúng nhánh. Không mở các nhánhToànThư khác; không xin lại xác nhận triển khai/tích hợpQA.
+
+Giữ điều kiện dữ liệu/tậpconDần/cổngTT/Khúc, tách điều kiện nguồn khỏi giới hạn dự án; thiếu dữ liệu hoặc điều chỉnh chưa giải giữunknown. Không sửaTânBiên, suy chức vụ/thu nhập/tuổi hoặc khuyên tạo biến động. Rulechung khônghardcode38/93/186; nguyên văn khách tạiCôngviệc/Quan theoG2, bảnmới khôngbackfill. Kiểmphầnảnhhưởng/so192/typecheck/build/G2/engineform–lưu–mở/mobile/PDF trướcQA, khôngfullgate vôcớ. Kỳvọng3cung đầu tiên phải kiểm thật, khôngnớiđiềukiện. Giữengine/lịchsử/quyền/hạn/QA3070/34bài/Livefalse/Tậtchưapublish. [Kết quả QA1.72](V1-DELIVERY-PLAN.md#u24-delivery-172-20261025):3đầu-tiên/0chỉ-bổ-sung/0chiều-sâu; không đồng nghĩa đã giải bất nhấtTânBiên hoặc hoàn chỉnhQuan.

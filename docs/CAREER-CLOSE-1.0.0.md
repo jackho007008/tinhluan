@@ -1,5 +1,9 @@
 # Chốt Công việc — phương pháp nội dung1.25.0
 
+## Cập nhật25/10/2026 — U24 nguồn riêng đã vào QA1.72
+
+[Bàn giao hữu hạn hiện hành](V1-DELIVERY-PLAN.md#u24-delivery-172-20261025), code1b6e072, đặc tả5310b2e được duyệt. Chỉ ruleToànThư `vttl.career-co-am-dan-progress@1.0.0`, Cơ–Âm gốc đồngQuanDần/vắngTT/Khúc xác định khônghãm theo43, câu tiến thân trong cảnh xáo động theo79. Không sửa dòngThìn/vềkhoa/nhưtrên TânBiên hoặc nhập hai nguồn thành một quy tắc. **3Quan mới có nhận định38/93/186,13→10chỉ dữ kiện,0chỉ-bổ-sung/0chiều-sâu**, không hoàn chỉnhQuan hoặc giải bất nhấtTB. Unknown dữ liệu/điều chỉnh có lýdo truyvết; Côngviệc trảphíG2, bảnmới1.72 khôngbackfill.260nội dung/12G2/PDFmockriêng/typecheck/build/3engineUI-mobile/1PDFđạt; nguyên văn trước/sau và bảo toàn theo backlog. Các phần dưới giữ lịch sử/phương pháp TânBiên.
+
 Đây là đóng phạm vi, không tuyên bố tổng hợp đầy đủ Quan Lộc. Tân Biên là nguồn của22nhánh mới, đủ lời trực tiếp nên không ghép Thiên Lương. Không có xung đột trực tiếp mới được xác minh ở những câu chọn. Rule draft/review=null.
 
 ## Danh mục trước khi kiểm tra độ phủ

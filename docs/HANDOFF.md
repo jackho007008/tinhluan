@@ -1,5 +1,15 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành25/10 — U24 đã vào QA1.72, ưu tiên khoảng thiếu giữ nguyên
+
+**Code `1b6e072`, app1.72/catalog1.68**, từ đặc tả5310b2e được duyệt. [Kết quả/điểm dừng trong backlog](V1-DELIVERY-PLAN.md#u24-delivery-172-20261025), [Lập lá số QA3062](http://127.0.0.1:3062/lap-la-so), checkout `.local/u24-20261025/qa`. **3cungQuan nhận lời đầu tiên (38/93/186)/0phương diện bổ sung ởcungđãcólời/0chiều sâu**; Quan chỉ dữ kiện13→10,0rút lời cũ/0văn đổi ngoài3mẫu. [Toàn văn trước/sau](../.local/u24-20261025/full-before-after.txt). Không giải bất nhấtTânBiên hoặc hoàn chỉnhQuan; U08 nguyên.
+
+260kiểm nội dung(42mới)/12G2-PDFmock DBriêng/typecheck/build/3engine form–lưu–mở-mobile360/390/1PDF8trang16đoạn đạt. QA chính3bản mới/G2/lưu–mở đạt, khôngorder/mock trênchính.263tệp cũ/quyền/hạn/34bài/engine/QA3070 giữ;480file code khớp,Livefalse,Tật chưa publish. [Runtime cuối](../.local/u24-20261025/final-runtime-check.json). Không fullgate/provider thật/sửa selector tài chính cũ.
+
+**Ưu tiên tiếp nối:** cung chưa có nhận định → phương diện bắt buộc → chiều sâu; đo riêng, không gọi một lời là hoàn chỉnh cung. **Hành động tiếp theo duy nhất:** chọn gói khoảng thiếu tiếp theo từ backlog/kho đã lưu khi được giao; không tự mở nhánhToànThư khác hoặc U08.
+
+Các mốc chờ duyệt dưới đây là lịch sử trước phê duyệt triển khai U24.
+
 ## Ưu tiên hiện hành sau U08 — giải khoảng thiếu trước, 24/10/2026
 
 **Cho các thread sau:** cung chưa có nhận định → phương diện bắt buộc còn thiếu → thêm chiều sâu; đo riêng ba số, không gọi một nhận định là hoàn chỉnh cung. Không mở lại U08 đã nghiệm thu hoặc kiểm kê toàn dự án. Đủ căn cứ trong quyền hiện có thì triển khai đến QA, không xin lại quyền coding; phương pháp mới trình đúng quyết định/văn.
