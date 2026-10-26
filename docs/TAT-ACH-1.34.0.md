@@ -1,5 +1,20 @@
 # Tật Ách — phạm vi trình bày 1.34.0
 
+<a id="tat-proposition-checkpoint-20261026"></a>
+## Kiểm lại toàn nguồn — checkpoint1 ngày26/10, chưa hoàn tất
+
+Baseline `5c45a16`, app1.77/catalog1.73/code`b7083fc`; 490 file root/QA khớp. Theo yêu cầu mới, không mặc định thiếu phương pháp hoặc cổng cũ đúng. [**Một bảng đối chiếu duy nhất**](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md) gồm phạm vi từng sách, từng câu/chuỗi TB, cổng và điểm chưa rõ; nguồn/chi tiết giữ trong kho riêng. Đây là hồ sơ chứng cứ nối ND18/U27, không tạo kế hoạch song song.
+
+Đã tách toàn bộ dòng TB181–189 từ ma trận đã kiểm ảnh: **167 đơn vị mệnh đề/chuỗi đầu ra, A0/B1/C157/D9/E0**; bốn dòng ThiênKhôi lặp ThiênTướng ghi dịbản nghi vấn, không đếm thêm bốn việc. 15dòng phươngpháp/cổng và các mục nguồn chưa rà không vào mẫu số. Không dùng167 làm tổng mọi sách hoặc số rule. C là dự báo bệnh/tật/thương tổn/sinh tử hoặc cứu/khỏi bệnh thuộc giới hạn sản phẩm; không phải thiếu phương pháp. Việc thẩm định chúgiải cấu trúc vẫn được phép, chưa phải duyệt publish.
+
+Các nguyên tắc NPL282–283/336–340, HS44/73 cho thấy nguồn có chỉ dẫn theo cung, tổ hợp và phương diện. HS73 không đặt cổng phải giải toàn bộ bốn cung trước một câu riêng. CodeTật hiện chiếu dữkiện/product-scope, không có predicate luận Tật đang chạy với cổngTT/Khoa/Quyền; các điểm giữ hai mẫu là hồ sơthẩmđịnh. **Chưa chứng minh một cổng phầnmềm quá rộng nào**; đã chỉ rõ các suy rộng không được phép: cóQuyền/TảHữu không thay điều kiện nhiều cứu/tác, TTchung không xóa lờiTTriêng, không trộn tácgiả thành côngthức cứu toàn diện.
+
+**Chưa xác nhận nhóm đủ đặc tả+phạmvi để đề nghị văn khách.** Kình–Tuế tạiTật có3cấu trúc cache7/14/17, chỉ là chứng kiến tra câu, không phải3khóa sẵn lấp. Vũ–Long còn alias/khác câuHS140 nên không nhận phép đo theoLongTrì làimpact hợp lệ. THP2/490–491 có nội dung tưduy/phảnứng rõ trong nguồn, khác bệnh; chưa rà hết điều kiện/phạmvi,0cấu trúc bộTồn+Kịnămsinh+(KhônghayKiếp)ởTật trong192. Không dùng số0 phủ định nghĩa nguồn hoặc đổi bệnh thành áp lực.
+
+**Chưa hoàn tất:** NPL283–288 từng nhóm bệnh/tật;267–281 thọ;289… cáchhọa và335–345 giảihọa; các mục bệnhlý/ởTật theo sao củaHS; các mụcToànThư,TL/BửuĐình/TứHóa và dẫn liênquan liệt kê trong bảng. Danh sách câu rải trong các mục sao chưa được chứngminh đầyđủ. Không lấy nhật ký đãđọc làm chứng nhận đãphân tích.
+
+**Checkpoint tiếp:** NPL283§B, dòng ĐịaKhông/ĐịaKiếp, rồi hết283–288; bổ sung dẫn tươngđương vào cùng đơnvị, giữ khác biệt tácgiả, không đếm lặp như việc mới. Chưa đóng ND18/U27, chưa đổi tiêu chí12cung.481khóa giữ,192Tật chưa có lời; không coding/test/build/UI/PDF/DB/engine/QA/quyền/Live. [Bằngchứng](../.local/tat-proposition-review-20261026/evidence.json), [thờigian](../.local/tat-proposition-review-20261026/session.json). Các mục dưới là lịch sử, không được dùng kết luận cũ thay bảng mới chưa hoàn tất.
+
 Baseline 1.33.0. Không thêm/sửa rule chuyên môn. Catalog/ruleset giữ 1.33.0; template lưu mới 1.34.0; lớp dữ kiện/giới hạn `tat-ach-scope-1.0.0`; căn cứ NPL hiện có không đổi. Engine, lịch và snapshot không đổi.
 
 ## Nguồn / quyết định

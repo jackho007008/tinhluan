@@ -1,5 +1,13 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Hiện hành 26/10 — Tật Ách đang kiểm lại toàn nguồn, checkpoint1 chưa hoàn tất
+
+Baseline`5c45a16`, app1.77/catalog1.73/code`b7083fc`;490file root/QAkhớp. **481khóa giữ;192Tật chưa có lời.** Không coding/publish/test/build/UI/PDF/DB/engine hoặc đổi QA/G2/quyền/hạn/lịch sử/Live. [Backlog hiện hành](V1-DELIVERY-PLAN.md#tat-source-crosswalk-177-20261026), [một bảng nguồn duy nhất](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md).
+
+Đã tách167đơn vị câu/chuỗiTB181–189: **A0/B1/C157/D9/E0**, không là tổng mọi sách.4dịbảnKhôi nghi lặp không cộng như4việc;15dòng phươngpháp/cổng ngoài mẫu số. Phần lớn TB bị loại do phạmvi sản phẩm, không gán thành thiếuphươngpháp. NPL/HS có chỉ dẫn theo phươngdiện/tổhợp; chưa có rule luậnTật đang chạy, nên không gọi điểm giữ2mẫu là lỗi cổngengine.0cổngphầnmềm quá rộng được chứngminh; các suy rộng TT/Quyền/TảHữu/toàncung được phân biệt với yêu cầu nguồn.
+
+Chưa xác nhận nhóm đủ điều kiện/phạmvi để trình vănkhách.3cấu trúcKình–Tuế chỉ tra câu, không là3khóa sẵn lấp. NguồnTHP2/490–491 thật sự có vế tưduy, chưa đủ đặc tả/phạmvi,0witness bộhẹp; không đổi bệnh thành áp lực. **Còn nhiều mục nguồn chưa rà**, không kếtluận toànkho thiếu cáchápdụng. Điểm tiếp: **NPL283§B từ ĐịaKhông/ĐịaKiếp→288**, theo đúng bảngS; không đọc lại toàn sách hoặc OCR lại. Không đóngND18/U27, không đổi tiêu chí12cung. [Thời gian](../.local/tat-proposition-review-20261026/session.json). Các mốc dưới là lịch sử.
+
 ## Hiện hành 26/10 — đã dừng gói kiểm cổng VCD/NPL326, chưa mở phạm vi
 
 Giữ app1.77/catalog1.73/code`b7083fc`, checkpoint đầu phiên`4fa0589`, **481 khóa thiếu**. 490 file root/QA khớp; không thay ứng dụng/QA/quyền/G2/lịch sử/engine/Live hoặc chạy test/build/UI/PDF. [Kết quả NPL326](V1-DELIVERY-PLAN.md#npl326-major-gate-review-177-20261026).
