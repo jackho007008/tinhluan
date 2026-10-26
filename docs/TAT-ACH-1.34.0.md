@@ -1,7 +1,7 @@
 # Tật Ách — phạm vi trình bày 1.34.0
 
 <a id="tat-proposition-checkpoint-20261026"></a>
-## Kiểm lại toàn nguồn — checkpoint3 nối0183dd1, chưa hoàn tất
+## Kiểm lại toàn nguồn — checkpoint4 nối0183dd1, chưa hoàn tất
 
 Kế thừa app1.77/catalog1.73/code`b7083fc`; HEAD tài liệu đầu lượt`0183dd1`. Bằng chứng490file root/QA thuộc lượt trước, không chạy lại trong phiên tài liệu. Không mặc định sách thiếu phương pháp hoặc cổng cũ đúng. [**Một bảng đối chiếu duy nhất**](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md) ghi phạm vi từng sách, từng câu/chuỗi, cổng và điểm chưa rõ; nguồn/chi tiết giữ trong kho riêng. Đây là hồ sơ chứng cứ nối ND18/U27, không tạo kế hoạch song song.
 
@@ -15,9 +15,11 @@ Các nguyên tắc NPL282–283/336–340, HS44/73 cho thấy nguồn có chỉ 
 
 **Nguyên nhân và đơn vị:** A—đủ đặc tả/phạmvi nhưng thiếu code; B—cổng/quy ước/phạmvi dựán cầnkiểm; C—giới hạn sản phẩm; D—điều kiện/cácháp dụng hoặc nguồn bất nhất; E của bảngTật cũ—đã triểnkhai nhận định cá nhân. E trong sổtổng lại là chưa tìmthấy lời phùhợp; không cộng haiE.192Tật đồng vướngB/C/D, chưa phân nguyênnhânchính, không192khóa chỉcần duyệt/gỡcổng.481gốc, phươngdiện bắtbuộc, giới hạn/chiềusâu và ứngviên giữriêng.
 
-**Chưa hoàn tất:** NPL305§E→335 phần cáchhọa;61vị tríNPL15ngoài31thamchiếu còn khóatrùng; bảng417 vàảnhdònghỏng267/280 nếuđúng điềukiện cầnkiểm; S-NPL-X/HS/HS-TT/TL/ToànThư/THP1/THP2/BửuĐình/TERM và dẫn theo bảng. Đã đi qua45U/12cung không chứngminh đãphântích hếtnguồn. Các mục có chữ rõ nhưng chưa đủpredicate hoặc ngoài phạmvi được ghi đúng, không mặc định sách thiếu phươngpháp.
+**Tiếp cùng phiên:** đã đối chiếu đủ chữ NPL305–335 trước tiêu đềCh17; danh sách dẫnNPL65/136/150/155/218/318/402 vàHS225–228TT. [Chi tiết từng mục/chuỗi, điều kiện và phần chưa giải](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md#npl16-x-hstt-checkpoint4-20261026). Phương pháp306–307/câu324–326 kế thừa, không rà lại5ứngviên. Tổn thất tài sản/tranh chấp không tự làC; chỉ vế bệnh/thương tổn/sinh tử/phẩm hạnh rõ hoặcN1–N5 theo loại. Những vế quan hệ/nghề/tài chưa rõ điều kiện/tách nghĩa giữD tạm, không thiếucode đơn thuần.
 
-**Checkpoint tiếp:** **S-NPL16 — NPL305§E “Họa nghề nghiệp”**, táidùngNPL30/NPL28cho306–307 và chỉphânvếchưađủbằngchứng, rồi phần còn lại đến335. Khôngđọc lặp340–345/266–281/31cặp hoặccheckpoint48.12khóaPhụ/Phúc,U42/U35 chưa tách coding/duyệt lẻ.481khóa giữ,192Tật chưa có lời; khôngcoding/publish/test/build/UI/PDF/DB/engine/QA/quyền/Live. [Bằngchứng](../.local/tat-proposition-review-20261026/evidence.json), [mốcphiên](../.local/full-review-20261026/session.json). Các mục dưới là lịch sử.
+**Chưa hoàn tất:** S-HS các mục sao84…227 và dẫn, TL/ToànThư/THP1/THP2/BửuĐình/TERM;61vị tríNPL15ngoài31cặp chưa khóa trùng toàn kho; bảng417/chữhỏng267/280 nếu điều kiện cần kiểm. Danh sách dẫn đã rà không chứng minh mọi câuTật rải trong sách đã đủ. Không cộng85/14/18mục hỗn hợp vào167TB/92NPL15 hoặc481khóa.
+
+**Checkpoint tiếp:** **S-HS — HS84§2 “Ý nghĩa cơ thể” của Cự Môn**, rồi mục phúc/thọ/tai họa, ởTật và dẫn chưa đủ củaS-HS; kế thừaVũLong140. Không đọc lạiNPL/HS-TT vừa phân tích chỉ để ghi nhật ký.12khóaPhụ/Phúc,U42/U35 chưa tách coding/duyệt lẻ;0giảm,481giữ,192Tật chưa có lời. Khôngcoding/publish/test/build/UI/PDF/DB/engine/QA/quyền/Live. [Bằng chứng](../.local/tat-proposition-review-20261026/evidence.json), [mốc phiên](../.local/full-review-20261026/session.json). Các mục dưới là lịch sử.
 
 Baseline 1.33.0. Không thêm/sửa rule chuyên môn. Catalog/ruleset giữ 1.33.0; template lưu mới 1.34.0; lớp dữ kiện/giới hạn `tat-ach-scope-1.0.0`; căn cứ NPL hiện có không đổi. Engine, lịch và snapshot không đổi.
 
