@@ -1,9 +1,9 @@
 # Tật Ách — phạm vi trình bày 1.34.0
 
 <a id="tat-proposition-checkpoint-20261026"></a>
-## Kiểm lại toàn nguồn — checkpoint6 nối d2f5411, chưa hoàn tất
+## Cuộc rà hiện hành đã khép — Tật còn tồn đọng, chưa publish
 
-Kế thừa app1.77/catalog1.73/code`b7083fc`; HEAD tài liệu đầu lượt`d2f5411`. Bằng chứng490file root/QA thuộc lượt trước, không chạy lại trong phiên tài liệu. Không mặc định sách thiếu phương pháp hoặc cổng cũ đúng. [**Một bảng đối chiếu duy nhất**](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md) ghi phạm vi từng sách, từng câu/chuỗi, cổng và điểm chưa rõ; nguồn/chi tiết giữ trong kho riêng. Đây là hồ sơ chứng cứ nối ND18/U27, không tạo kế hoạch song song.
+Kế thừa app1.77/catalog1.73/code`b7083fc`; HEAD tài liệu đầu lượt`04a4a53`. Bằng chứng490file root/QA thuộc lượt trước, không chạy lại trong phiên tài liệu. Không mặc định sách thiếu phương pháp hoặc cổng cũ đúng. [**Một bảng đối chiếu duy nhất**](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md) ghi phạm vi từng sách, từng câu/chuỗi, cổng và điểm chưa rõ; nguồn/chi tiết giữ trong kho riêng. Đây là hồ sơ chứng cứ nối ND18/U27, không tạo kế hoạch song song.
 
 Đã tách toàn bộ dòng TB181–189 từ ma trận đã kiểm ảnh: **167 đơn vị mệnh đề/chuỗi đầu ra, A0/B1/C157/D9/E0**; bốn dòng ThiênKhôi lặp ThiênTướng ghi dịbản nghi vấn, không đếm thêm bốn việc. 15dòng phươngpháp/cổng và các mục nguồn chưa rà không vào mẫu số. Không dùng167 làm tổng mọi sách hoặc số rule. C là dự báo bệnh/tật/thương tổn/sinh tử hoặc cứu/khỏi bệnh thuộc giới hạn sản phẩm; không phải thiếu phương pháp. Việc thẩm định chúgiải cấu trúc vẫn được phép, chưa phải duyệt publish.
 
@@ -25,7 +25,7 @@ Các nguyên tắc NPL282–283/336–340, HS44/73 cho thấy nguồn có chỉ 
 
 61vị tríNPL ngoài31cặp cũ đãso đúngTB167:15cùnglõi/25giao-khác/21chưa tương đương;không cặp mới nào chứng minh đồng full predicate. [Đối chiếu](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md#npl61-checkpoint6-20261026). Không cộng các mẫu số nguồn hoặc xem N làE toànkho.56dòng kiểm soát bổ sung gồm23vế nguồnC và33dòng phươngpháp/hồsơD,không56việc hoặc56khóa;không cộngTB167/NPL92/HS97.
 
-**Chưa hoàn tất cuộc rà toàn báo cáo:** phần phươngdiện ởcung đãcólời và tổngkết/lô/quyếtđịnh chung còn dở. NguồnTật còn alias/vịtrí/tầng/toántử/cứu theo từng dòng;đó là vấnđề cụthể,không hàngđợi đọc lại toànkho.192Tật chưa chốt chínhB/C/D,không192chờduyệt;481giữ. **Điểm nối chung:U45 → U02/34marker vật chất-vị thếPhụ**, dùngkeys/hồsơ đãlưu,khôngkiểm kêlại.12Phụ/Phúc,U42/U35 giữ bảngchung;khôngcoding/publish/test/build/UI/PDF/DB/engine/QA/quyền/Live. [Bằngchứng](../.local/tat-proposition-review-20261026/evidence.json),[mốcphiên](../.local/full-review-20261026/session.json). Các mục dưới là lịch sử.
+**Khép cuộc rà từ04a4a53:** phần U45/dấu ở cung đã có lời và bảng tổng kết12cung/liên cung đã được hoàn tất theo danh sách kiểm soát hiện có. [Kết luận chung](../.local/source-library/knowledge/full-report-crosswalk-20261026.md#full-review-conclusion-20261026). Không phải đã giải mọi mệnh đề nguồn hoặc đủ luận cá nhân Tật. Các điều kiện/alias/cứu theođích,giới hạn nội dung và phạmvi phát hành vẫn là [tồn đọng có điều kiện mở lại](../.local/source-library/knowledge/full-report-crosswalk-20261026.md#remaining-evidence-final-20261026),không hàng đợi đọc lại toàn kho.192Tật chưa phân nguyên nhân chínhB/C/D,không192chỉ chờ duyệt;481gốc giữ. Không publish hoặc thay mục tiêu12cung. Không coding/test/build/UI/PDF/DB/engine/QA/quyền/Live. [Mốc phiên](../.local/full-review-20261026/session.json). Các mục dưới là lịch sử.
 
 Baseline 1.33.0. Không thêm/sửa rule chuyên môn. Catalog/ruleset giữ 1.33.0; template lưu mới 1.34.0; lớp dữ kiện/giới hạn `tat-ach-scope-1.0.0`; căn cứ NPL hiện có không đổi. Engine, lịch và snapshot không đổi.
 
