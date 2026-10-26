@@ -1,5 +1,17 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành 26/10 — hậu kiểm hiệu suất/retention; chỉ tài liệu
+
+Giữ app 1.77/catalog 1.73/code `b7083fc`, baseline `3d34e73`. Đã xác minh 490 file root/QA khớp và đúng tiến trình phục vụ. **481 khóa thiếu giữ nguyên; không đổi rule, nội dung, QA, quyền hoặc Live.** Không chạy test/build/UI/PDF. Chỉ có một giao dịch SELECT READ ONLY/ROLLBACK giới hạn đúng tập retention. [Phân tích và điểm dừng trong backlog](V1-DELIVERY-PLAN.md#efficiency-retention-next-177-20261026).
+
+**Phiên trước:** 6 giờ 19 phút 56 giây là thời gian trôi qua, chưa đo riêng nghiên cứu, coding, xử lý lỗi, UI/PDF, tổng build hoặc chờ công cụ. Năm log Vitest cộng 29.018 giây và log G2 cuối 3.45 giây chỉ là phần runner có ghi; không thể quy phần lớn phiên cho test. Có thể giảm các vòng sửa enum/đăng ký section/assertion bằng kiểm nhỏ hai đường trước bộ rộng, chốt nghĩa trạng thái trước build cuối và lưu checkpoint UI. [Số đo](../.local/efficiency-retention-177-20261026/efficiency-summary.json).
+
+**Retention:** 17 bản đọc và một file phiên đã hết hạn lúc 25/10 18:42:32, trước lô. Dấu hiệu phù hợp chính sách 7 ngày; thiếu audit nên chưa xác định được caller và thời điểm xóa chính xác. Không tìm thấy binding/link/recovery/token cho 17 ID trong đối chiếu chỉ đọc. Đây vẫn là dữ liệu đã lưu của chủ phiên, không thể gọi là không ảnh hưởng dữ liệu khách chỉ vì ở QA. 16 bản đọc và file phiên có bản sao khớp hash; riêng `dbd12196-b20d-4dc4-98a0-d562ce864b41.json` chỉ còn hash, không xác minh lại nội dung được. Kết luận này hiệu chỉnh câu khẳng định nguyên nhân timer ở bàn giao trước. [Danh sách file và bằng chứng](../.local/efficiency-retention-177-20261026/retention-readonly.json). Lô sau cần copy byte và hash ngay đầu, kiểm bản sao ngay; không gia hạn quyền hoặc tắt retention.
+
+**Gom 481 theo nguyên nhân chính, không trùng:** 192 Tật/cứu–tác/publish; 118 VCD ngoài Tật; 84 phạm vi và điều kiện nguồn; 56 bảng phối/điều chỉnh ngoài VCD; 27 điều kiện/chủ thể/chuỗi vế ngoài VCD; 4 bất nhất chữ/vị trí. Đây là quy mô bị chặn, không phải số sẵn lấp.
+
+**Một gói tiếp theo:** kiểm cổng dự án VCD của NPL326 trên 5 ứng viên Phu có chính tinh 69/151/180/182/190 đã lưu (4 U18 + 1 U15). Chưa khóa nghĩa “đơn thủ”, điều chỉnh trực tiếp và đủ bộ 21 tên/Hóa/chứng nhận; **0 khóa sẵn triển khai, 0 khóa chắc sẽ lấp**. Nếu chứng minh được thì trình đặc tả/văn mẫu/tập con mới; nếu không, ghi đúng mắt xích và dừng. Không mở lại ba mẫu VCD đã nghiệm thu, không mở N5/N11/N12, không coding/publish. [Gói và cách đếm](../.local/efficiency-retention-177-20261026/next-package.json), [thời gian phiên này](../.local/efficiency-retention-177-20261026/session.json). Các mốc dưới là lịch sử.
+
 ## Hiện hành26/10 — B01/B02 đạt QA1.77, còn481 khóa thiếu gốc
 
 **Code `b7083fc`,app1.77/catalog1.73**, theo phê duyệt cảB01/B02 sau79b3947. [Nghiệm thu/giới hạn](V1-DELIVERY-PLAN.md#root-gap-batch-delivery-177-20261026),[QA3062](http://127.0.0.1:3062/lap-la-so),checkout `.local/root-batch-delivery-20261025/qa`. **B01 first29/115/118/122/125;B02 first67;6khóa khôngtrùng giảm487→481.**0chỉbổsung/0chiềusâu/0lờicũsửa-rút. Nôtrống69→64,Quan10→9;khônghoànchỉnhcung/khéptoànU10/U23.

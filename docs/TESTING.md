@@ -2,6 +2,17 @@
 
 Cập nhật20/10/2026 sau kiểm ND03; các lệnh mẫu dưới đây cần chọn theo phạm vi, không mặc định chạy toàn bộ. [package.json](../package.json), [vitest.config.ts](../vitest.config.ts), [playwright.config.ts](../playwright.config.ts) là cấu hình hiện có; [kiến trúc](ARCHITECTURE.md) giải thích kho/queue/quyền. Không có Git tại root; xem cách nhận diện code ở ARCHITECTURE.
 
+<a id="efficiency-minimum-testing-20261026"></a>
+## Hậu kiểm hiệu suất/retention 26/10 — đề xuất quy trình, không nghiệm thu lại
+
+[Phân tích đầy đủ](V1-DELIVERY-PLAN.md#efficiency-retention-next-177-20261026). Phiên B01/B02 kéo dài 6 giờ 19 phút 56 giây nhưng chưa đo thời gian làm/chờ riêng. Năm log Vitest cộng 29.018 giây, log G2 cuối 3.45 giây chỉ là phần runner có ghi; compile 2.5 giây chỉ là bước thành phần. Không suy thời gian nghiên cứu/coding/debug/UI/PDF/chờ/tổng build từ phần còn lại hoặc mtime.
+
+Quy trình đề nghị: kiểm schema, ID đăng ký, routing, fact→claim→section→customer, chủ đề/G2 và trạng thái hasClaims/unknown trên mỗi đường trước bộ rộng. Chốt nghĩa trạng thái rồi kiểm phần ảnh hưởng, so192 và typecheck/build bản cuối. Gộp kiểm DB quyền khi đường quyền/bản lưu có rủi ro; thay riêng câu căn cứ thì đối chiếu serialization phần đổi, không mặc định chạy lại toàn gate DB. UI/PDF một mẫu mỗi đường khác nhau; bốn mẫu cùng đường qua API smoke là hợp lý. Lưu version/hash/evidence-text/checkpoint từng chặng trước assertion; giữ context trong phiên khi có thể, không ghi cookie/token. Lỗi công cụ kiểm phải sửa cách kiểm theo bằng chứng, không sửa nguồn/lịch sử cho xanh. Mã thay đổi thật thì kiểm lại phần ảnh hưởng.
+
+Snapshot ngay đầu: kiểm TTL hiện có và dùng phiên nghiệm thu mới theo cơ chế chuẩn, không gia hạn phiên cũ. Đọc byte/copy/hash cùng buffer; xác minh bản sao và ghi expiresAt/version/quyền trước test hoặc tích hợp QA. Mỗi bản mới lưu xong thì chụp frozen/evidence ngay vào kho bằng chứng riêng được phép ngoài trial root bị dọn. Bản sao không cấp lại quyền sống. ENOENT phải phân loại đúng owner/expiry/bằng chứng backup, không dùng TTL để bỏ qua file khác hoặc hash đổi. Ghi start/end/duration và chờ/gián đoạn riêng; phần không đo để null.
+
+Hiệu chỉnh retention cũ: 18 file (17 bản đọc + một phiên) đã hết hạn trước lô; phù hợp purge hiện hành nhưng thiếu audit nên không kết luận chắc chắn caller/thời điểm. 16 bản đọc và phiên có bản sao khớp hash, một bản chỉ còn hash. Không gọi là không ảnh hưởng dữ liệu khách chỉ vì QA. SQL READ ONLY hiện tại không tìm thấy quyền/binding/link/recovery cho 17 ID. [Đối chiếu file/quyền](../.local/efficiency-retention-177-20261026/retention-readonly.json). Phiên này không chạy lại test/build/UI/PDF; chưa thay phần mềm hoặc chính sách retention.
+
 <a id="root-gap-batch-testing-20261026"></a>
 ## Lô B01/B02 — hoàn tất26/10/2026,codeb7083fc
 

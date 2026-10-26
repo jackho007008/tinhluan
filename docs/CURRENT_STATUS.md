@@ -1,5 +1,15 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Hiện hành 26/10 — hậu kiểm hiệu suất và retention, baseline giữ 1.77
+
+Giữ app 1.77/catalog 1.73/code `b7083fc`, bàn giao `3d34e73`; 490 file root/QA khớp. **481 khóa thiếu không đổi.** Phiên này chỉ tài liệu và SELECT READ ONLY/ROLLBACK cho tập retention; không test/build/UI/PDF hoặc đổi QA, engine, quyền, lịch sử, G2, 34 bài, Live và trạng thái Tật chưa publish. [Kết quả trong backlog](V1-DELIVERY-PLAN.md#efficiency-retention-next-177-20261026).
+
+Phiên trước kéo dài 6 giờ 19 phút 56 giây nhưng chưa đo thời gian làm/chờ riêng. Log chỉ chứng minh 29.018 giây của năm lượt Vitest và 3.45 giây G2 cuối, không phải tổng kiểm. Quy trình đề nghị: kiểm nhỏ schema/đăng ký/render trước bộ rộng, chốt nghĩa trước build cuối, checkpoint UI và copy bằng chứng ngay đầu trước retention.
+
+Retention: 17 JSON bản đọc và một JSON phiên hết hạn trước lô, phù hợp chính sách 7 ngày; chưa có audit để xác định lượt xóa/caller chính xác. Không tìm thấy quyền/binding/link/recovery cho 17 ID. 16 bản đọc và phiên có bản sao khớp hash; một bản đọc chỉ còn hash nên không xác minh lại nội dung. Không gọi QA là không có dữ liệu khách bị ảnh hưởng. [Bằng chứng](../.local/efficiency-retention-177-20261026/retention-readonly.json).
+
+481 khóa được gộp không trùng: **192 + 118 + 84 + 56 + 27 + 4**, theo sáu nguyên nhân chính trong backlog. Chỉ khuyến nghị một hướng mới: kiểm cổng VCD của NPL326 trên 5 ứng viên Phu có chính tinh đã lưu. Chưa giải nghĩa “đơn thủ”/điều chỉnh/bộ giữ 21 tên/Hóa/chứng nhận; **0 khóa sẵn triển khai, không trừ khóa đề xuất**. Nếu đủ căn cứ thì trình tập con mới; nếu không thì ghi mắt xích và dừng. Không coi nhận định đầu tiên là hoàn chỉnh cung. [Thời gian](../.local/efficiency-retention-177-20261026/session.json). Các mốc dưới là lịch sử.
+
 ## Hiện hành26/10 — QA1.77/catalog1.73,481 khóa thiếu gốc
 
 **Code `b7083fc`**, [B01/B02 đã nghiệm thu](V1-DELIVERY-PLAN.md#root-gap-batch-delivery-177-20261026),[QA3062](http://127.0.0.1:3062/lap-la-so). **6firstkhôngtrùng:5Nô29/115/118/122/125 +1Quan67;487→481**.0chỉbổsung/chiềusâu/sửa-rút;lờicũgiữ. Nôtrống64,Quan9;owner cơhọc480khácthướcđo. KhônghoànchỉnhNô/Quan/khéptoànU10/U23.
