@@ -1,7 +1,7 @@
 # Tật Ách — phạm vi trình bày 1.34.0
 
 <a id="tat-proposition-checkpoint-20261026"></a>
-## Kiểm lại toàn nguồn — checkpoint4 nối0183dd1, chưa hoàn tất
+## Kiểm lại toàn nguồn — checkpoint5 nối0962157, chưa hoàn tất
 
 Kế thừa app1.77/catalog1.73/code`b7083fc`; HEAD tài liệu đầu lượt`0183dd1`. Bằng chứng490file root/QA thuộc lượt trước, không chạy lại trong phiên tài liệu. Không mặc định sách thiếu phương pháp hoặc cổng cũ đúng. [**Một bảng đối chiếu duy nhất**](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md) ghi phạm vi từng sách, từng câu/chuỗi, cổng và điểm chưa rõ; nguồn/chi tiết giữ trong kho riêng. Đây là hồ sơ chứng cứ nối ND18/U27, không tạo kế hoạch song song.
 
@@ -17,9 +17,13 @@ Các nguyên tắc NPL282–283/336–340, HS44/73 cho thấy nguồn có chỉ 
 
 **Tiếp cùng phiên:** đã đối chiếu đủ chữ NPL305–335 trước tiêu đềCh17; danh sách dẫnNPL65/136/150/155/218/318/402 vàHS225–228TT. [Chi tiết từng mục/chuỗi, điều kiện và phần chưa giải](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md#npl16-x-hstt-checkpoint4-20261026). Phương pháp306–307/câu324–326 kế thừa, không rà lại5ứngviên. Tổn thất tài sản/tranh chấp không tự làC; chỉ vế bệnh/thương tổn/sinh tử/phẩm hạnh rõ hoặcN1–N5 theo loại. Những vế quan hệ/nghề/tài chưa rõ điều kiện/tách nghĩa giữD tạm, không thiếucode đơn thuần.
 
-**Chưa hoàn tất:** S-HS các mục sao84…227 và dẫn, TL/ToànThư/THP1/THP2/BửuĐình/TERM;61vị tríNPL15ngoài31cặp chưa khóa trùng toàn kho; bảng417/chữhỏng267/280 nếu điều kiện cần kiểm. Danh sách dẫn đã rà không chứng minh mọi câuTật rải trong sách đã đủ. Không cộng85/14/18mục hỗn hợp vào167TB/92NPL15 hoặc481khóa.
+**Nối0962157:** đã đối chiếu các mục bệnh/cơ thể/Tật/cứu và điều kiện liên quan của14chính tinhHS84–143, phụ tinh146–221, bổ sung229–234; kếthừa44/73,VũLong140,TT225–228. HS87 phânMệnh–Thân/Tật;160cứuKKhãm cótập/mức riêng;179TảHữu sát hãm tănghọa;216–218ThươngSứ chỉhạn, khôngcổng natalmọicâu. Phụ–ÁchTL186109–111/TL298160–163cùng12vídụ, không24việc. TT/đức58–60thuộcTL186; TamKhông/TamLuân kếthừa hồsơđãkiểmảnh. [Từng mục và phần chưa giải](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md#hs-tl-checkpoint5-20261026).
 
-**Checkpoint tiếp:** **S-HS — HS84§2 “Ý nghĩa cơ thể” của Cự Môn**, rồi mục phúc/thọ/tai họa, ởTật và dẫn chưa đủ củaS-HS; kế thừaVũLong140. Không đọc lạiNPL/HS-TT vừa phân tích chỉ để ghi nhật ký.12khóaPhụ/Phúc,U42/U35 chưa tách coding/duyệt lẻ;0giảm,481giữ,192Tật chưa có lời. Khôngcoding/publish/test/build/UI/PDF/DB/engine/QA/quyền/Live. [Bằng chứng](../.local/tat-proposition-review-20261026/evidence.json), [mốc phiên](../.local/full-review-20261026/session.json). Các mục dưới là lịch sử.
+**SáuX:** sửa liên kết đối chiếu `relatedTB`, đíchma trậnkhôngcóruleluậnTật; chưa có dấu hiệu ứngdụngdùngliênkết nênkhôngtruycode/gọi6lỗi. K8 khôngtựđồngmọiđiềukiện,V17giữkhácvế, phươngphápriêng khônghợpnhất.192Tật chưa chốt nguyênnhânchính; C nội dung không chứngminh mọicấu trúcđủđiềukiện, B publishriêng, D cácháp/nguồn chưađủ.
+
+**Chưa hoàn tất:** S-VTTL/THP1/THP2/BD/TERM,61vịtríNPL15 ngoài31cặp/bảng417/alias, cácalias/độsáng/quan hệcứu củaHS vàphầnnguồn/cung chưađóng. HS235–237bảngvậtdụng/nghề ngoài packet chưa rà.97mụcHS và12vídụ/6mụcTL làkiểmsoátnguồn, khôngcộng vào167TB/92NPL15 hoặc481khóa.
+
+**Checkpoint tiếp:** **S-VTTL — ToànThưPDF90 mụcTật→91**, theođúngbảng/trạngthái vàcácdẫn96–106/150/155. Khôngđọclạipacketđủbằngchứng.12Phụ/Phúc,U42/U35giữtrongbảngchung;0giảm,481giữ. Khôngcoding/publish/test/build/UI/PDF/DB/engine/QA/quyền/Live. [Bằng chứng](../.local/tat-proposition-review-20261026/evidence.json), [mốcphiên](../.local/full-review-20261026/session.json). Các mục dưới là lịch sử.
 
 Baseline 1.33.0. Không thêm/sửa rule chuyên môn. Catalog/ruleset giữ 1.33.0; template lưu mới 1.34.0; lớp dữ kiện/giới hạn `tat-ach-scope-1.0.0`; căn cứ NPL hiện có không đổi. Engine, lịch và snapshot không đổi.
 

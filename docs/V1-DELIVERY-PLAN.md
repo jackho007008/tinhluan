@@ -200,10 +200,14 @@ Yêu cầu mới mở rộng nhiệm vụ Tật sau`584f929` sang đủ12cung v�
 
 **Nối tiếp cùng phiên (checkpoint tài liệu trung gian28d867a):** đã đối chiếu phần còn lại **NPL305–335**, các dẫnNPL65/136/150/155/218/318/402 và **HS225–228TT**. Phương pháp306–307/câu324–326 kế thừa hồ sơ, không rà lại5ứngviên. [Từng mục nguồn, điều kiện và phần chưa giải](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md#npl16-x-hstt-checkpoint4-20261026). Mọi tổn thất tài sản/tranh chấp không tự thuộcC; C chỉ đúng vế bị giới hạn đã xác nhận, phần quan hệ/nghề/tài cònD nếu chưa khóa điều kiện.85/14/18mục hỗn hợp không số việc hoặc khóa tiềm năng.
 
-**Điểm nối chính xác:** **S-HS — HS84§2 “Ý nghĩa cơ thể” của Cự Môn**, sau đó các mục phúc/thọ/tai họa, ởTật và dẫn trong danh sáchS-HS; kế thừaVũLong140. NPL289–335 đã đối chiếu chữ nhưng còn predicate/alias/cứu cụ thể;61vị tríNPL15 ngoài31cặp và các nguồnS/cung còn mở không coi đã xong.12khóaPhụ/Phúc,U42/U35 giữ trong bảng chung. Không đọc lại packet đủ bằng chứng hoặc checkpoint48; không coding/publish/QA/test/build/UI/PDF. [Mốc phiên](../.local/full-review-20261026/session.json).
+**Checkpoint nối0962157:** đã đối chiếu mục bệnh/cơ thể/Tật/cứu và điều kiện liên quan củaHS14chính tinh84–143, phụ tinh146–221, đoạn229–234bổ sung danh sách cũ; kế thừa44/73,VũLong140,TT225–228.97mục nguồn không sốviệc/khóa. S-TL:12cấu trúc bàiPhụ–ÁchTL186109–111/TL298160–163cùngbài, TT/đức58–60TL186; hồsơTamKhông/TamLuânđãkiểmảnh kếthừa. [Chi tiết và phầnchưa giải](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md#hs-tl-checkpoint5-20261026). Chưa hoàn tất toàn nguồn hoặc mọi predicate.
+
+**Ảnh hưởng X6:** H06→TB024,H10→TB059,I01/I03→TB034,M04/M05→TB139 là các liên kết hồsơ `relatedTB`/khóa trùng; đích ma trận ghi khôngcóruleluậnTật và chưa có dấu hiệu tiêu thụ runtime. Không truymã hoặc gọi6lỗi ứng dụng. K8 cùnglõi chưa chứngminh mọiđiềukiệnbằngnhau; V17 khácđiềukiện/kếtquả; phươngphápriêng giữriêng.192Tật chưa chốt nguyênnhânchính, không gom thành chỉchờduyệt;481giữ.
+
+**Điểm nối chính xác:** **S-VTTL — ToànThưPDF90 mụcTật→91**, theo đúng bảng/trạngthái và dẫn96–106/150/155. CònTHP1/THP2/BD/TERM, NPLkhóatrùng/alias/bảng417 và nguồn/cung chưađóng; HS235–237bảng vật dụng/nghề ngoài packet chưa rà.12ứngviênPhụ/Phúc,U42/U35 giữ bảngchung, chưa coding/duyệt lẻ. [Mốc phiên](../.local/full-review-20261026/session.json).
 
 <a id="tat-source-crosswalk-177-20261026"></a>
-### ND18/U27 — kiểm lại nguyên nhân Tật, checkpoint4 nối0183dd1, chưa hoàn tất
+### ND18/U27 — kiểm lại nguyên nhân Tật, checkpoint5 nối0962157, chưa hoàn tất
 
 Theo yêu cầu mới sau`5c45a16`, giữ app1.77/catalog1.73/code`b7083fc`; bằng chứng490file root/QA thuộc lượt trước, không chạy lại. **481khóa khôngđổi,192Tật chưa có lời.** Không coding/publish/test/build/UI/PDF/DB/engine/QA/quyền/Live. [**Một bảng nguồn duy nhất**](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md), [phạmvi và checkpoint](TAT-ACH-1.34.0.md#tat-proposition-checkpoint-20261026).
 
@@ -213,7 +217,7 @@ Chưa xác nhận nhóm đủđặc tả+phạmvi để trình vănkhách;3cache
 
 **Nối0183dd1:** NPL340–345 đã đối chiếu;NPL34/395 đã giải danh tính4Đức.31thamchiếuNPL15/TB phânK8/V17/X6, chưađồngnhấtđiềukiệnphươngpháp. Chữ266–281 và289–304 đãtiếp; Ch15kếtsangđầu289,hiện92vịtríC91/D1khôngcộng167TB;61vịtríkhácchưakhóatrùng. Tật192đồngvướngphạmvi/điềukiện/cổng, chưaphânnguyênnhânchính vàkhông192khóachờduyệt. E“đãtriểnkhai”củabảngnàykhácE“chưatìmthấy”củasổtổng. Phạmviđã/chưakiểm cótrongcácpacketvàtừngdòngnguồn.
 
-**Điểm tiếp tục:** **S-HS — HS84§2 “Ý nghĩa cơ thể” của Cự Môn**. Đã nốiNPL305–335, danh sáchNPL-X vàHS225–228TT; kế thừa câu324/326, không rà lại5ứngviên. Các mục saoS-HS,TL/ToànThư/THP1/THP2/BửuĐình/TERM và phần bảng/ảnh/khóa trùng còn mở. Không gọi đã đi qua45U/12cung là hoàn tất nguồn hoặc đủpredicate. Chưa đóngND18/U27, không đổi phạmvi/tiêuchí;481giữ. [Mốc phiên](../.local/full-review-20261026/session.json).
+**Điểm tiếp tục:** **S-VTTL — PDF90 mụcTật→91**. S-HS/S-TL đã nối theo checkpoint0962157 trong sổ; chưa toànnguồn, chưa đủ mọi điều kiện.97mụcHS,12vídụ/6mục phươngphápTL không sốviệc/khóa. SáuX chỉ cóbằngchứng hồsơđốichiếusai, không6lỗiứngdụng.192Tật chưa chốt nguyênnhânchính;481giữ; khôngđổi phạmvi/tiêuchí hoặc publish. [Mốc phiên](../.local/full-review-20261026/session.json).
 
 <a id="npl326-major-gate-review-177-20261026"></a>
 ### NPL326 — kiểm cổng VCD trên đúng 5 Phu có chính tinh, 26/10/2026: chưa đủ mở phạm vi

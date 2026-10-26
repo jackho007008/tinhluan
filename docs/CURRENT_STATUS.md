@@ -1,14 +1,16 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-## Hiện hành26/10 — nối0183dd1;481khóa giữ, cuộc rà toàn nguồn còn dở
+## Hiện hành26/10 — nối0962157,481khóa giữ; checkpoint5 chưa hoàn tất
 
-Giữ **app1.77/catalog1.73/code`b7083fc`**, QA/G2/engine/quyền/hạn/lịch sử/Live tắt và Tật chưa publish. Chỉ tài liệu/nguồn đã lưu; bằng chứng490file thuộc lượt trước, không chạy lại. Checkpoint tài liệu trung gian`28d867a`.
+Giữ app1.77/catalog1.73/code`b7083fc`, QA/engine/G2/quyền/hạn/lịch sử/Live tắt, Tật chưa publish. Không quét baseline hoặc chạy kiểm ứng dụng trong phiên tài liệu.
 
-[Sổ tổng và phần đã/chưa kiểm](../.local/source-library/knowledge/full-report-crosswalk-20261026.md): NPL340–345 và31tham chiếuNPL15/TB đã đối chiếu (8cùng lõi/17giao/6liên kết sai); thêm266–281, đủ chữ289–335, danh sáchNPL-X vàHS225–228TT. Câu324/326 kế thừa, không rà lại5ứngviên. Đã phân biệt cổng kết luận chung cuộc với câu độc lập; không gán mọi tổn thất tài sản vàoC. Đọc đủ chữ không đồng nghĩa đủpredicate hoặc đã rà mọi nguồn.
+[Sổ hiện có](../.local/source-library/knowledge/full-report-crosswalk-20261026.md): đã nối S-HS84§2,14chính tinh84–143 và các mục bệnh/Tật/cứu phụ tinh146–221, bổ sung229–234. Các đoạnMệnh/Thân/Tật/Hạn giữ riêng;97mục nguồn không97việc. S-TL:12ví dụ cùng bàiPhụ–Ách ởhaiấn bản, không24việc;58–60TT/đức hạnh thuộcTL186, hồsơTamKhông/TamLuân kế thừa. Chưa đủ mọi predicate hoặc toàn nguồn.
 
-**Giảm thực0, còn481**:289khóa ngoàiTật tạm A0/B12/C85/D189/E3;192Tật đa nguyên nhân B/C/D chưa phân chính, không192chỉ chờ duyệt. E của bảngTật cũ“đã triển khai”khác E của sổtổng“chưa tìm thấy lời phù hợp”; không cộng thống kê khác nghĩa/đơn vị. Phương diện bắt buộc chưa chốt tổng;306marker/giới hạn/chiều sâu và ứng viên giữ riêng.12khóaPhụ/Phúc,U42/U35 vẫn trong bảng chung, chưa tách coding/duyệt cuối.
+Sáu liên kếtX sai trong hồ sơ đối chiếu chưa có dấu hiệu nối rule đang chạy; không mặc định6lỗi ứng dụng, không truymã ngoài phạmvi. K8 chỉ cùnglõi, chưa đồng nhất điều kiện; V17 khácđiều kiện/kếtquả; phương pháp riêng giữ riêng.
 
-**Tiếp S-HS — HS84§2 Cự Môn**, rồi các mục/dẫn liên quan chưa đủ trong danh sáchS-HS; kế thừaVũLong140. Các S/nguồn/cung khác còn mở và61vị tríNPL15 chưa khóa trùng toàn kho ghi trong sổ; không lặp packet đủ bằng chứng hoặc checkpoint48. [Thời gian và điểm nối](../.local/full-review-20261026/session.json). Các mục dưới là lịch sử.
+**0giảm, còn481;192Tật chưa chốt nguyên nhân chính**, không192chỉchờduyệt.289ngoàiTật giữtạmA0/B12/C85/D189/E3; E lịch sửTật khác E sổtổng. Phương diện bắtbuộc chưa chốttổng, giới hạn/chiều sâu vàứngviên riêng.12Phụ/Phúc,U42/U35 chưa triểnkhai/duyệtlẻ.
+
+**Tiếp S-VTTL — PDF90 mụcTật→91**, rồi các dẫn vàS chưa đóng. CònTHP1/THP2/BD/TERM, NPLkhóatrùng/alias/bảng417, HS235–237bảng ngoài packet vàphầnnguồn/cung ghi trong sổ. Không lặp những phần đủ bằng chứng. [Mốc phiên](../.local/full-review-20261026/session.json). Các mục dưới là lịch sử.
 
 
 ## Hiện hành 26/10 — Tật Ách đang kiểm lại toàn nguồn, checkpoint1 chưa hoàn tất
