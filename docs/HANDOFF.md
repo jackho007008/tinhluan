@@ -1,5 +1,15 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành 26/10 — NPL326 có chính tinh: đã kiểm 5 ứng viên, dừng vì chưa đủ căn cứ
+
+Baseline `4fa0589`, app1.77/catalog1.73/code`b7083fc`; 490 file root/QA khớp. **0 khóa giảm, còn481.** Không coding/test/build/UI/PDF/DB hoặc đổi QA/G2/engine/quyền/hạn/lịch sử/Live. [Kết quả duy nhất trong backlog](V1-DELIVERY-PLAN.md#npl326-major-gate-review-177-20261026).
+
+326 xác nhận một Cô/Quả/Đẩu riêng chưa đủ kết luận chia ly, không nêu VCD. Mạch câu hỗ trợ nghĩa xét riêng đối lập với đi cùng các dấu kể trước; chưa cho phép coi mọi chính tinh vô ảnh hưởng. Đã xem đúng ảnh323/324/326 và chữ322–326 đã lưu.
+
+Cả5 snapshot đủ chứng nhận chính/phụ tinh và TứHóa, vắngTT/Kỵ trực tiếp; audit không kèm receipt khách, chưa nghiệm thu bản lưu mới. 69/180 cóÂmSát,182/190 cóĐịaKiếp thuộc tậpgiữ. Riêng151 vắng tậpgiữ nhưng PháTuất khớp câu điều kiện324; chưa xác định cách phối hợp với vế đơn thủ326. Cả5 không có lờiPhu; trước/sau giữ “Phần này hiện chưa có luận giải.” Không có đặc tả đủ duyệt hoặc số khóa chắc sẽ lấp.
+
+**Điểm dừng:** không bỏ VCD đơn lẻ, không rút tậpgiữ hoặc mở nội dung chia ly/số lần/phẩm hạnh. Chỉ mở lại khi có bằng chứng cùng nguồn giải cách áp vế cô đơn khi PháTuất–QuảTú cùng hiện diện; không đọc lại các trang vừa kiểm nếu không có bằng chứng mới, không chuyển gói. [Hồ sơ5mẫu](../.local/npl326-major-gate-20261026/candidates.json), [mốc thời gian từng bước](../.local/npl326-major-gate-20261026/session.json). Các mốc dưới là lịch sử.
+
 ## Hiện hành 26/10 — hậu kiểm hiệu suất/retention; chỉ tài liệu
 
 Giữ app 1.77/catalog 1.73/code `b7083fc`, baseline `3d34e73`. Đã xác minh 490 file root/QA khớp và đúng tiến trình phục vụ. **481 khóa thiếu giữ nguyên; không đổi rule, nội dung, QA, quyền hoặc Live.** Không chạy test/build/UI/PDF. Chỉ có một giao dịch SELECT READ ONLY/ROLLBACK giới hạn đúng tập retention. [Phân tích và điểm dừng trong backlog](V1-DELIVERY-PLAN.md#efficiency-retention-next-177-20261026).

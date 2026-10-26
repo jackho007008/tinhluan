@@ -1,5 +1,13 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Hiện hành 26/10 — đã dừng gói kiểm cổng VCD/NPL326, chưa mở phạm vi
+
+Giữ app1.77/catalog1.73/code`b7083fc`, checkpoint đầu phiên`4fa0589`, **481 khóa thiếu**. 490 file root/QA khớp; không thay ứng dụng/QA/quyền/G2/lịch sử/engine/Live hoặc chạy test/build/UI/PDF. [Kết quả NPL326](V1-DELIVERY-PLAN.md#npl326-major-gate-review-177-20261026).
+
+Nguồn326 không định nghĩa đơn thủ là VCD; chưa chứng minh vế cô đơn độc lập khi có các chính tinh liên quan trong323–325. Kiểm đúng5 ứng viên:69/180 cóÂmSát,182/190 cóĐịaKiếp;151 vắng bộgiữ21/TT và đủ chứng nhận snapshot nhưng còn cách phối hợp PháTuất–QuảTú với câu324/326. Không thiếu thao tác code đơn thuần, cũng chưa chỉ cần duyệt phạm vi.0ready/0khóa giảm; cả5 phầnPhu giữ nguyên chưa có lời, không tạo trước/sau giả.
+
+Dừng tại mắt xích đó; chỉ mở lại khi có bằng chứng cùng nguồn giải trực tiếp nghĩa/quan hệ hai vế. Không mở lại ba mẫu VCD đã nghiệm thu hoặc chuyển nhánh khác. [Hồ sơ và mức bằng chứng](../.local/npl326-major-gate-20261026/candidates.json), [mốc từng bước](../.local/npl326-major-gate-20261026/session.json). Các mốc dưới là lịch sử.
+
 ## Hiện hành 26/10 — hậu kiểm hiệu suất và retention, baseline giữ 1.77
 
 Giữ app 1.77/catalog 1.73/code `b7083fc`, bàn giao `3d34e73`; 490 file root/QA khớp. **481 khóa thiếu không đổi.** Phiên này chỉ tài liệu và SELECT READ ONLY/ROLLBACK cho tập retention; không test/build/UI/PDF hoặc đổi QA, engine, quyền, lịch sử, G2, 34 bài, Live và trạng thái Tật chưa publish. [Kết quả trong backlog](V1-DELIVERY-PLAN.md#efficiency-retention-next-177-20261026).
