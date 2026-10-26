@@ -1,3 +1,4 @@
+import {TB_FAMILY_PHUC_IDS,TB_F01,TB_P02,TB_P03,TB_FAMILY_PHUC_COPY} from '../interpretation-rules/tb-family-phuc-clauses';
 import {VTTL_ROOT_IDS} from '../interpretation-rules/vttl-root-batch';
 import {VTTL_PHUC_LIEM_SAT} from '../interpretation-rules/vttl-phuc-liem-sat';
 import {NPL_PHU326} from '../interpretation-rules/npl-spouse-vcd-lonely';
@@ -53,9 +54,9 @@ export function coordinate(palace:string, ps:Paragraph[]) {
  }
  if(palace==='Tử Nữ')merge(['tanbien.children-tu-pha','tanbien.children-tu'],'Theo Tân Biên, hai nhánh Tử Vi–Phá Quân đồng cung và sao Tử thuộc vòng Tràng Sinh tại Tử Nữ cùng mô tả sự xung khắc giữa cha mẹ và con cái khi con lớn lên.','Gộp cùng đối tượng, khía cạnh và thời gian; hai căn cứ không làm tăng độ chắc chắn.');
  if(palace==='Phúc Đức'){
-  const pure=['tanbien.phuc-base-tu-pha-dispersal','tanbien.phuc-base-tu-tham-dispersal','tanbien.phuc-fire-tang-relation','tanbien.phuc-sun-low-local-dispersal','tanbien.phuc-luong-ty-hoi-local-dispersal','tanbien.phuc-hoa-ky','tanbien.phuc-loc-ton'];
+  const pure=[TB_F01,'tanbien.phuc-base-tu-pha-dispersal','tanbien.phuc-base-tu-tham-dispersal','tanbien.phuc-fire-tang-relation','tanbien.phuc-sun-low-local-dispersal','tanbien.phuc-luong-ty-hoi-local-dispersal','tanbien.phuc-hoa-ky','tanbien.phuc-loc-ton'];
   const present=pure.filter(id=>ps.some(p=>has(p,[id])));
-  if(present.length>1&&present.some(id=>id.includes('-local-dispersal')||id==='tanbien.phuc-fire-tang-relation')){
+  if(present.length>1&&present.some(id=>id===TB_F01||id.includes('-local-dispersal')||id==='tanbien.phuc-fire-tang-relation')){
    merge(present,phucDispersalCopy(present),'Gộp đúng vế họ hàng phân tán đã thực sự xuất; giữ mọi claim, điều kiện và căn cứ. Giữ ngày càng nếu nguồn của nhánh khớp có vế này; giữ riêng tranh chấp của Hóa Kỵ, không cộng mức độ.');
   }else{
  if(palace==='Phúc Đức')for(const id of ['tanbien.phuc-base-tu-pha-dispersal','tanbien.phuc-base-tu-tham-dispersal']){
@@ -65,14 +66,18 @@ export function coordinate(palace:string, ps:Paragraph[]) {
   }
  }
  // Hóa Kỵ also concerns parents with each other: keep this alternative explicit.
+ if(palace==='Phụ Mẫu')merge([TB_P02,TB_P03],TB_FAMILY_PHUC_COPY[TB_P03],'Gộp vế bất hòa/tranh chấp chung, giữ thêm quan hệ cha mẹ–con của Thái Tuế. Cả hai claim, cấu trúc và nguồn được giữ; không cộng mức độ hoặc chọn kết luận thắng.');
  if(palace==='Phụ Mẫu')merge(['tanbien.parents-co-cu','tanbien.parents-ky'],'Theo Tân Biên, nhánh Thiên Cơ–Cự Môn nói về tình trạng trong nhà thiếu hòa khí. Hóa Kỵ có thêm cách mô tả bất hòa giữa cha mẹ với nhau, hoặc không hợp tính giữa cha mẹ và con. Lời về không khí gia đình và hai đối tượng quan hệ của Hóa Kỵ không được đồng nhất.','Gom cùng đoạn để tránh nhắc hai lần; giữ riêng đối tượng và phép “hoặc” của Hóa Kỵ. Không tạo kết luận chung mới.');
  if(palace==='Phụ Mẫu')merge(['tanbien.parents-loc','tanbien.parents-hoa-loc'],'Theo Tân Biên, Lộc Tồn và Hóa Lộc tại Phụ Mẫu cùng có ý liên hệ với của cải của cha mẹ. Riêng nhánh Lộc Tồn còn mô tả phần của cải dễ bị tiêu tán bởi con và cha mẹ–con không hợp tính.','Gộp ý của cải; giữ vế hạn chế chỉ thuộc Lộc Tồn. Không cộng mức giàu hoặc độ chắc chắn.');
  for(const p of ps){if(used.has(p.claim.id))continue;const g=groups.find(g=>g.text===p.display.text);if(g){g.members.push(p);g.editorial='Cùng nguyên văn, cùng cung; giữ tất cả căn cứ, không tăng độ mạnh.';}else groups.push({text:p.display.text,members:[p],editorial:null});}
+ // A merge made only of this new batch is appended as one unit, so existing IDs stay stable.
+ const newOnly=(g:typeof groups[number])=>g.members.every(p=>p.claim.rules.every(r=>TB_FAMILY_PHUC_IDS.includes(r.id)));
+ groups.sort((a,b)=>Number(newOnly(a))-Number(newOnly(b)));
  return {groups,relations:COORDINATION_DECISIONS.filter(d=>d.palace===palace&&ps.some(p=>has(p,d.left))&&ps.some(p=>has(p,d.right))).map(d=>({...d,claimIds:ps.filter(p=>has(p,[...d.left,...d.right])).map(p=>p.claim.id),status:'unresolved' as const}))};
 }
 // Append new semantic groups after existing groups, preserving old paragraph IDs and G2 membership.
 function paragraphOrder(p:Paragraph){
- if(p.claim.rules.some(r=>(VTTL_ROOT_IDS.includes(r.id)||r.id===VTTL_PHUC_LIEM_SAT||r.id===NPL_PHU326||r.id===VTTL_NO_LUONG||TRUNGCHAU_RULE_IDS.includes(r.id)||r.id===VTTL_DIEN_PHU||r.id===VTTL_CAREER_CO_AM||NPL_DIEN_SINGLE_IDS.includes(r.id))))return 2;
+ if(p.claim.rules.some(r=>(TB_FAMILY_PHUC_IDS.includes(r.id)||VTTL_ROOT_IDS.includes(r.id)||r.id===VTTL_PHUC_LIEM_SAT||r.id===NPL_PHU326||r.id===VTTL_NO_LUONG||TRUNGCHAU_RULE_IDS.includes(r.id)||r.id===VTTL_DIEN_PHU||r.id===VTTL_CAREER_CO_AM||NPL_DIEN_SINGLE_IDS.includes(r.id))))return 2;
  return Number(p.claim.rules.some(r=>r.id.startsWith('tanbien.life-body-')||r.id.startsWith('npl.life-body-')||r.id.startsWith('npl.life-two-major-')||r.id.startsWith('npl.life-foundation-')));
 }
 function buildContinuousReportData(snapshot:ChartSnapshot,reading:Reading,verified:boolean){

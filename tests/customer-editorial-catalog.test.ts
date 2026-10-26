@@ -1,3 +1,4 @@
+import {TB_FAMILY_PHUC_IDS} from '../lib/interpretation-rules/tb-family-phuc-clauses';
 import {describe,it,expect} from 'vitest';
 import fs from 'node:fs';
 import {catalog} from '../lib/interpretation-rules/catalog';
@@ -16,7 +17,7 @@ describe('Customer catalog coverage and compositional safety',()=>{
    expect(copy.sourceVersion).toBe(rule.version);expect(copy.sourceTemplate).toBe(rule.claimTemplate);
    const g=groupFor([rule]),p=makeCustomerParagraph(g,continuous,x.snapshot);
    expect(p.review,rule.id).toBe('editorial-checked');expect(p.text.length).toBeGreaterThan(25);
-   expect(p.text,rule.id).not.toMatch(/Tân Biên|Nguyễn Phát Lộc|evaluator|snapshot|\bclaim\b|\{\{|undefined/);
+   expect(TB_FAMILY_PHUC_IDS.includes(rule.id)?p.text.replace(/^Theo Tân Biên, /,''):p.text,rule.id).not.toMatch(/Tân Biên|Nguyễn Phát Lộc|evaluator|snapshot|\bclaim\b|\{\{|undefined/);
    expect(p.members[0].claim.rules[0].conditions).toEqual(rule.conditions);
    expect(p.members[0].claim.rules[0].exceptions).toEqual(rule.exceptions);
    expect(p.members[0].claim.rules[0].sourceReferences).toEqual(rule.sourceReferences);

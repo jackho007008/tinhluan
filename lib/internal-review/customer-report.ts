@@ -1,3 +1,4 @@
+import {TB_F01,TB_P02,TB_P03,TB_FAMILY_PHUC_COPY} from '../interpretation-rules/tb-family-phuc-clauses';
 import {SPEECH484,SPEND201,trungchauFact} from '../interpretation-rules/trungchau-natal';
 import {contextualizeCustomerReport} from './customer-contexts';
 import {editCustomerTopics} from './customer-topic-editorial';
@@ -6,7 +7,7 @@ import type {ChartSnapshot} from '../tuvi-engine';
 import {phucDispersalCopy,type ContinuousReport} from './continuous-report';
 import {CUSTOMER_COPY} from './customer-copy';
 import EDITORIAL from './customer-editorial.json';
-export const CUSTOMER_VERSION='1.77.0';
+export const CUSTOMER_VERSION='1.78.0';
 type Group=ContinuousReport['palaces'][number]['groups'][number];
 export type CustomerParagraph={context?:{version:string;ids:string[];kind:'unresolved'|'distinct-aspects';sourceGroupIds:string[];methodResolved:false};conditionalAssessment?:{condition:string;status:'unknown';outcomeApplied:false}[];id:string;title:string;text:string;claimIds:string[];sentences:{text:string;claimIds:string[];kind:'paraphrase'|'editorial-transition'|'source-relation'}[];original:string;members:Group['members'];relations:unknown[];movedToEvidence:string[];review:'editorial-checked'|'pending-editorial'};
 export type CustomerSection={id:string;title:string;palaces:string[];intro:string|null;paragraphs:CustomerParagraph[];notices:{text:string;reason:unknown}[]};
@@ -63,6 +64,7 @@ export const CUSTOMER_EDITORIAL=EDITORIAL as Record<string,{text:string;sourceTe
 // Only these five relationships were already specified by continuous-report.
 // They are consumed as units; any additional members are rendered independently.
 const GROUP_COPY:Record<string,string>={
+ [`${TB_P02}|${TB_P03}`]:TB_FAMILY_PHUC_COPY[TB_P03],
  ...Object.fromEntries(['tu-pha','tu-tham'].map(id=>['tanbien.phuc-base-'+id+'-dispersal|tanbien.phuc-hoa-ky',CUSTOMER_EDITORIAL['tanbien.phuc-hoa-ky'].text])),
  ...Object.fromEntries(Object.entries(CUSTOMER_COPY).filter(([k])=>k.includes('|'))),
  'tanbien.life-wu-literary-male|tanbien.r02':'Vũ Khúc sáng cùng Văn Khúc gắn với sự học rộng và nhiều khả năng. Ở nam mệnh, cấu trúc này còn có cách gọi “tài kiêm văn võ”. Cách gọi truyền thống ấy không xác định nghề nghiệp, bằng cấp hoặc năng lực thực tế.',
@@ -73,8 +75,8 @@ const GROUP_COPY:Record<string,string>={
 export function makeCustomerParagraph(g:Group,r:ContinuousReport,s:ChartSnapshot):CustomerParagraph{
  const parts:{text:string;claimIds:string[]}[]=[],consumed=new Set<string>(),moved=[...g.notes,...(g.editorial?[g.editorial]:[])];
  const rules=unique(ids(g));
- const dispersalIds=['tanbien.phuc-base-tu-pha-dispersal','tanbien.phuc-base-tu-tham-dispersal','tanbien.phuc-fire-tang-relation','tanbien.phuc-sun-low-local-dispersal','tanbien.phuc-luong-ty-hoi-local-dispersal','tanbien.phuc-hoa-ky','tanbien.phuc-loc-ton'].filter(id=>rules.includes(id));
- const combinedDispersal=!!g.editorial&&dispersalIds.length>1&&dispersalIds.some(id=>id.includes('-local-dispersal')||id==='tanbien.phuc-fire-tang-relation');
+ const dispersalIds=[TB_F01,'tanbien.phuc-base-tu-pha-dispersal','tanbien.phuc-base-tu-tham-dispersal','tanbien.phuc-fire-tang-relation','tanbien.phuc-sun-low-local-dispersal','tanbien.phuc-luong-ty-hoi-local-dispersal','tanbien.phuc-hoa-ky','tanbien.phuc-loc-ton'].filter(id=>rules.includes(id));
+ const combinedDispersal=!!g.editorial&&dispersalIds.length>1&&dispersalIds.some(id=>id===TB_F01||id.includes('-local-dispersal')||id==='tanbien.phuc-fire-tang-relation');
  if(combinedDispersal){parts.push({text:phucDispersalCopy(dispersalIds),claimIds:g.members.filter(m=>m.claim.rules.some(r=>dispersalIds.includes(r.id))).map(m=>m.claim.id)});dispersalIds.forEach(id=>consumed.add(id));}
  if(!combinedDispersal&&g.editorial)for(const [key,text] of Object.entries(GROUP_COPY)){
   const required=key.split('|');

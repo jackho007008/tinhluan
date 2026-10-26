@@ -6278,5 +6278,41 @@
     "movedToEvidence": [
       "Câu nguồn/bảng trạng thái nguồn/cổng dự án/lý do unknown tách rõ theo B01/B02; không đổi bảng engine."
     ]
+  },
+  "tanbien.parents-vcd-sun-moon-relation": {
+    "text": "Theo Tân Biên, Phụ Mẫu vô chính diệu nhận Thái Dương–Thái Âm xung chiếu trong thế Sửu–Mùi có lời riêng về cha mẹ bất hòa và con khó sống gần cha mẹ. Đoạn này chưa xác nhận quan hệ hoặc hoàn cảnh thực tế của gia đình bạn.",
+    "sourceTemplate": "Theo Tân Biên, Phụ Mẫu vô chính diệu nhận Thái Dương–Thái Âm xung chiếu trong thế Sửu–Mùi có lời riêng về cha mẹ bất hòa và con khó sống gần cha mẹ. Đoạn này chưa xác nhận quan hệ hoặc hoàn cảnh thực tế của gia đình bạn.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Giữ toàn văn vế độc lập được duyệt theo907abca; không phục hồi toàn lời nền.",
+    "movedToEvidence": [
+      "Điều kiện nguồn, giới hạn tập con dự án và lý do unknown giữ tách rõ trong căn cứ; không chuyển Tứ Hóa/phụ tinh hoặc kết luận toàn cung."
+    ]
+  },
+  "tanbien.parents-vcd-sun-cu-relation": {
+    "text": "Theo Tân Biên, khi xét Cự Môn trong cặp Thái Dương–Cự Môn xung chiếu vào Phụ Mẫu vô chính diệu, lời riêng về Phụ Mẫu nói cha mẹ bất hòa, trong nhà có tranh chấp. Đoạn này chưa xác nhận quan hệ hoặc hoàn cảnh thực tế của gia đình bạn.",
+    "sourceTemplate": "Theo Tân Biên, khi xét Cự Môn trong cặp Thái Dương–Cự Môn xung chiếu vào Phụ Mẫu vô chính diệu, lời riêng về Phụ Mẫu nói cha mẹ bất hòa, trong nhà có tranh chấp. Đoạn này chưa xác nhận quan hệ hoặc hoàn cảnh thực tế của gia đình bạn.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Giữ toàn văn vế độc lập được duyệt theo907abca; không phục hồi toàn lời nền.",
+    "movedToEvidence": [
+      "Điều kiện nguồn, giới hạn tập con dự án và lý do unknown giữ tách rõ trong căn cứ; không chuyển Tứ Hóa/phụ tinh hoặc kết luận toàn cung."
+    ]
+  },
+  "tanbien.parents-thai-tue-relation": {
+    "text": "Theo Tân Biên, Thái Tuế tại Phụ Mẫu có lời về thiếu hòa khí và tranh chấp trong nhà, cha mẹ và con không hợp tính nhau. Đoạn này chưa xác nhận quan hệ hoặc hoàn cảnh thực tế của gia đình bạn.",
+    "sourceTemplate": "Theo Tân Biên, Thái Tuế tại Phụ Mẫu có lời về thiếu hòa khí và tranh chấp trong nhà, cha mẹ và con không hợp tính nhau. Đoạn này chưa xác nhận quan hệ hoặc hoàn cảnh thực tế của gia đình bạn.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Giữ toàn văn vế độc lập được duyệt theo907abca; không phục hồi toàn lời nền.",
+    "movedToEvidence": [
+      "Điều kiện nguồn, giới hạn tập con dự án và lý do unknown giữ tách rõ trong căn cứ; không chuyển Tứ Hóa/phụ tinh hoặc kết luận toàn cung."
+    ]
+  },
+  "tanbien.phuc-vcd-tu-tham-dispersal": {
+    "text": "Theo Tân Biên, Phúc Đức vô chính diệu xét Tử Vi–Tham Lang xung chiếu có lời riêng về sự phân tán của họ hàng. Đây là chú giải cục bộ của nguồn, chưa xác nhận hoàn cảnh thực tế của gia đình bạn hoặc kết luận mức hưởng phúc chung.",
+    "sourceTemplate": "Theo Tân Biên, Phúc Đức vô chính diệu xét Tử Vi–Tham Lang xung chiếu có lời riêng về sự phân tán của họ hàng. Đây là chú giải cục bộ của nguồn, chưa xác nhận hoàn cảnh thực tế của gia đình bạn hoặc kết luận mức hưởng phúc chung.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Giữ toàn văn vế độc lập được duyệt theo907abca; không phục hồi toàn lời nền.",
+    "movedToEvidence": [
+      "Điều kiện nguồn, giới hạn tập con dự án và lý do unknown giữ tách rõ trong căn cứ; không chuyển Tứ Hóa/phụ tinh hoặc kết luận toàn cung."
+    ]
   }
 }
