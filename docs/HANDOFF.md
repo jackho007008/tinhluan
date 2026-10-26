@@ -1,14 +1,13 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-## Hiện hành26/10 — rà toàn bộ U01–U45, nhiệm vụ đang tiếp tục
+## Hiện hành 26/10 — nối df6c6ae, rà toàn nguồn vẫn đang tiếp tục
 
-Baseline`584f929`, app1.77/catalog1.73/code`b7083fc`;490file root/QAkhớp, **481khóa giữ**. Phạmvi mới bao gồm đủ12cung, Mệnh–Thân, ngũhành/cáchcục, phối lời và phầnthiếu ởcungđãcólời. Không coding/publish/test/build/UI/PDF/engine/DB hoặc đổi QA/G2/quyền/hạn/lịch sử/Live/Tật. [**Đầu mối duy nhất trong backlog**](V1-DELIVERY-PLAN.md#full-content-review-177-20261026), [sổ45U/bảng12cung/liêncung/duyệt](../.local/source-library/knowledge/full-report-crosswalk-20261026.md).
+Giữ **app1.77/catalog1.73/code`b7083fc`, 481 khóa thiếu gốc**. HEAD đầu lượt `df6c6ae`, tracked sạch; kế thừa bằng chứng QA trước, không quét lại 490 file vì ứng dụng không đổi. Chỉ sửa tài liệu, đọc nguồn và dữ liệu đã lưu; không coding/publish/test/build/UI/PDF/DB/engine hoặc đổi QA/G2/quyền/hạn/lịch sử/Live/Tật. [Backlog duy nhất](V1-DELIVERY-PLAN.md#full-content-review-177-20261026), [sổ hiện hành](../.local/source-library/knowledge/full-report-crosswalk-20261026.md).
 
-Đã nốiđủ45U, **chưa đồngnghĩa ràđủtoànnguồn**. Gốc540−59=481 khôngtrùng; nguyênnhânvậnhànhtạm A0/B192/C84/D202/E3 (B192Tật cònC/Dphụ và nguồnđangdở). ChữE mới=chưatìmđượclờiphùhợp, khácEtriểnkhai trongbảngTật cũ.306liênkếtmarker ở273cungđãcólời đãđối chiếu cùngcase1.77giữnguyên; không cộngvào481 hoặcgọi306phươngdiệnbắtbuộc. Cácphầnu09/U37–45 chưađo và57noticeU30khôngtựđịnhnghĩa57việc.
+Đã nối Phụ/Phúc rồi các cung còn lại qua hồ sơ cổng đã định vị, **chưa rà đủ mọi mệnh đề mọi nguồn**. Phụ có ba vế đáng đặc tả: Nhật–Nguyệt khi cả hai chi đều thuộc Sửu/Mùi, câu Cự mọi vị trí, câu đầu Thái Tuế; tiềm năng 9 khóa. Phúc có vế phân tán của Tử–Tham xung chiếu, tiềm năng 3 khóa. Hợp 12 khóa trên 11 báo cáo, **chưa trừ 481 hoặc nhận là chắc sẽ lấp**. Bảy ứng viên ở Phụ đã có lời được ghi riêng, chưa xác nhận là phương diện bắt buộc; 306 marker cũ trên 273 cung không cộng vào khóa gốc. U20 sửa mẫu162 Liêm–Phá: nguồn không có vế bất hòa, D→C, không làm giảm khóa. Nguyên nhân vận hành **tạm A0/B204/C85/D189/E3**, chưa kết luận toàn nguồn; chưa có lô A chốt để coding.
 
-U42: câuTB71khôngđòiVCD, cổngMệnhrỗngthuộcgói1.29;2chứngkiến116/123,0root,đãcóđặctả/văn/giớihạn/đềxuấtG2trảphí đểgom bảngduyệt cuối. U35:26casecầnkiểmcổngchiềuKhắc,khôngphải26đủmở;37chiềucòn lại giữD. Ađãxácnhận0lô; khôngtựxinmởN1–N13 hoặcgiảmtiêuchí12cung.
+Tật đã nối **NPL283§B→288**: 91 vị trí nguồn, C90/D1; 31 tham chiếu TB đang đối chiếu trùng, không cộng 91 vào 167 TB. J07 nói Mệnh/tâm trạng, không tự gán C hoặc đổi thành Tật. **Tiếp đúng S-NPL17: NPL340 đoạn Vũ Khúc đầu trang→Thiên Tướng/Tử Vi→345**, dùng nguyên tắc NPL-M07 đã có; đồng thời xử lý trùng 31 tham chiếu, rồi các nguồn S/cung còn dở trong sổ. Không đọc lặp 283–288/48 hoặc rà lại toàn bộ baseline. **U42/U35 chưa tách coding, chưa trình bảng duyệt/lô cuối.** Cuộc rà xuyên checkpoint đã có ủy quyền, không xin giao lại. [Mốc từng đoạn và giới hạn đo thời gian](../.local/full-review-20261026/session.json). Các mục dưới là lịch sử.
 
-**Tiếpđúngcheckpoint,khôngxingiaolạicùngnhiệmvụ:** Gói nguồn/cổng Mệnh/liêncung đãđịnhvị đãkiểm, giữD/Bcụthể. **Tiếp PhụMẫuU01/U02**, rồiPhúc/Điền/Quan/Nô/Di vàcác cungcòn lại;TậtgiữđiểmNPL283§B→288. Giữbằngchứng48vàcácgóiđãnghiệmthu,khôngráđãđủchỉđểtạonhậtký. Chưa đóngcuộcràtoànnguồn hoặcU45; nguồn chưađốichiếu hiệnrõtrongsổ. [Mốcphiên](../.local/full-review-20261026/session.json). Cácmốcdướilàlịchsử.
 
 ## Hiện hành 26/10 — Tật Ách đang kiểm lại toàn nguồn, checkpoint1 chưa hoàn tất
 
