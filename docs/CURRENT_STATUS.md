@@ -1,16 +1,16 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-## Hiện hành26/10 — nối0962157,481khóa giữ; checkpoint5 chưa hoàn tất
+## Hiện hành26/10 — checkpoint6 nối d2f5411;481khóa giữ
 
-Giữ app1.77/catalog1.73/code`b7083fc`, QA/engine/G2/quyền/hạn/lịch sử/Live tắt, Tật chưa publish. Không quét baseline hoặc chạy kiểm ứng dụng trong phiên tài liệu.
+App1.77/catalog1.73/code`b7083fc`, QA/engine/G2/quyền/hạn/lịch sử/Live tắt và Tật chưa publish giữ nguyên. Chỉ nguồn/tài liệu; không kiểm ứng dụng hoặc quét lại baseline.
 
-[Sổ hiện có](../.local/source-library/knowledge/full-report-crosswalk-20261026.md): đã nối S-HS84§2,14chính tinh84–143 và các mục bệnh/Tật/cứu phụ tinh146–221, bổ sung229–234. Các đoạnMệnh/Thân/Tật/Hạn giữ riêng;97mục nguồn không97việc. S-TL:12ví dụ cùng bàiPhụ–Ách ởhaiấn bản, không24việc;58–60TT/đức hạnh thuộcTL186, hồsơTamKhông/TamLuân kế thừa. Chưa đủ mọi predicate hoặc toàn nguồn.
+[Sổ hiện có](../.local/source-library/knowledge/full-report-crosswalk-20261026.md#supplemental-full-checkpoint6-20261026): đã nối VTTL90–91/96–106/150/155, THP1/2, Bửu Đình, thuật ngữ, HS235–237 và các dẫn liên cung/U. Đã đọc thêm đúng VTTL86–87/HS55–60/76–82/129/168–169; kế thừa hồ sơ, không đọc lại toàn sách. VTTL96–106 là vận hạn; HS235–237 là thực phẩm/đồ tang; NPL268→417 chưa đúng bảng giờ quan sát. Đây là hiệu chỉnh hồ sơ, chưa có bằng chứng lỗi rule ứng dụng.
 
-Sáu liên kếtX sai trong hồ sơ đối chiếu chưa có dấu hiệu nối rule đang chạy; không mặc định6lỗi ứng dụng, không truymã ngoài phạmvi. K8 chỉ cùnglõi, chưa đồng nhất điều kiện; V17 khácđiều kiện/kếtquả; phương pháp riêng giữ riêng.
+61đối chiếu NPL bổ sung vớiTB167:15cùng lõi/25giao-khác/21chưa chứng minh tương đương, không đồng full predicate; không số việc/khóa. Ba văn THP đã triển khai giữ nguyên,8cơchế/18guard không thành26lời khách. Dẫn được rà không có nghĩa mọi mệnh đề của toàn nguồn đã đủ đặc tả.
 
-**0giảm, còn481;192Tật chưa chốt nguyên nhân chính**, không192chỉchờduyệt.289ngoàiTật giữtạmA0/B12/C85/D189/E3; E lịch sửTật khác E sổtổng. Phương diện bắtbuộc chưa chốttổng, giới hạn/chiều sâu vàứngviên riêng.12Phụ/Phúc,U42/U35 chưa triểnkhai/duyệtlẻ.
+**0khóa giảm, còn481.**289ngoàiTật tạmA0/B12/C85/D189/E3;192Tật chưa phân chính, không192chỉ chờ duyệt.306marker trên273cung chưa có mẫu số phương diện bắt buộc đã xác minh.12ứng viên Phụ/Phúc,U42/U35 giữ bảng chung.
 
-**Tiếp S-VTTL — PDF90 mụcTật→91**, rồi các dẫn vàS chưa đóng. CònTHP1/THP2/BD/TERM, NPLkhóatrùng/alias/bảng417, HS235–237bảng ngoài packet vàphầnnguồn/cung ghi trong sổ. Không lặp những phần đủ bằng chứng. [Mốc phiên](../.local/full-review-20261026/session.json). Các mục dưới là lịch sử.
+**Tiếp đúng U45 → U02/34marker vật chất-vị thếPhụ**, theo keys và nguồn đã lưu; rồi các nhóm marker còn lại để chốt bảng tổng kết/quyết định chung. Chưa gọi cuộc rà toàn bộ hoàn tất, không mở vòng sách mới hoặc triển khai giữa cuộc rà. [Backlog](V1-DELIVERY-PLAN.md#full-content-review-177-20261026), [mốc thời gian](../.local/full-review-20261026/session.json). Các mục dưới là lịch sử.
 
 
 ## Hiện hành 26/10 — Tật Ách đang kiểm lại toàn nguồn, checkpoint1 chưa hoàn tất

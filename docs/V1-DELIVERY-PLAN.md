@@ -204,10 +204,16 @@ Yêu cầu mới mở rộng nhiệm vụ Tật sau`584f929` sang đủ12cung v�
 
 **Ảnh hưởng X6:** H06→TB024,H10→TB059,I01/I03→TB034,M04/M05→TB139 là các liên kết hồsơ `relatedTB`/khóa trùng; đích ma trận ghi khôngcóruleluậnTật và chưa có dấu hiệu tiêu thụ runtime. Không truymã hoặc gọi6lỗi ứng dụng. K8 cùnglõi chưa chứngminh mọiđiềukiệnbằngnhau; V17 khácđiềukiện/kếtquả; phươngphápriêng giữriêng.192Tật chưa chốt nguyênnhânchính, không gom thành chỉchờduyệt;481giữ.
 
-**Điểm nối chính xác:** **S-VTTL — ToànThưPDF90 mụcTật→91**, theo đúng bảng/trạngthái và dẫn96–106/150/155. CònTHP1/THP2/BD/TERM, NPLkhóatrùng/alias/bảng417 và nguồn/cung chưađóng; HS235–237bảng vật dụng/nghề ngoài packet chưa rà.12ứngviênPhụ/Phúc,U42/U35 giữ bảngchung, chưa coding/duyệt lẻ. [Mốc phiên](../.local/full-review-20261026/session.json).
+**Checkpoint6 nối d2f5411:** đã đối chiếu VTTL90–91/96–106/150/155; THP40supplement/30ID,BD14thẻ/7part-notes/15hit,TERMS3–5/7 thêm ngữ cảnh6;HS235–237 và các dẫn bổ sung theo45U/12cung/liên cung. Đọc thêm đúngVTTL86–87/HS55–60/76–82/129/168–169. [Phạm vi từng cung và phần chưa giải](../.local/source-library/knowledge/full-report-crosswalk-20261026.md#supplemental-full-checkpoint6-20261026),[từng dòng nguồn](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md#supplemental-checkpoint6-20261026). Không lấy rà dẫn/hồ sơ thay cho phân tích mọi mệnh đề mọi sách.
+
+VTTL96–106 là nhập hạn ca, không phụ tinh/Tật bản mệnh;HS235–237 thực phẩm rồi đồ tang, không bảng nghề chung. NPL268→417:417 hiện là ca chồng chết sớm, chưa có đúng bảng giờ quan sát tại đích dẫn;267/280 và các alias giữ vấn đề cụ thể. Đây là sửa hồ sơ, chưa có dấu hiệu rule dùng các nhãn/dẫn đó, không truy code ngoài phạm vi. Phủ chế sát ởHS129 không tự đảo suy giảm tài/quyền;HS55–60 có ngoại lệ và cách/cục theo phương diện.
+
+61vị tríNPL còn ngoài31cặp đã đối chiếuTB167:15cùng lõi/25giao hoặc khác điều kiện-kết quả/21chưa thiết lập tương đương trong phạm vi này;không cặp mới nào chứng minh đồng full predicate. N không làE toàn kho. Giữ31cặp cũ8/17/6;không cộng quan hệ/vị trí nguồn thành việc hoặc khóa. THP đã đi qua824/817,không dùng mô tả lịch sử “phần2chưa đọc” làm hàng đợi đọc lại;3văn đã triển khai giữ nguyên,8cơchế/18guard chưa tự thành lời đầu tiên.
+
+**Còn dở:** phân loại phương diện ở cung đã có lời và bảng tổng kết/lô/quyết định chung.481giữ,192Tật chưa chốt chính;306marker trên273cung chưa là306phương diện bắt buộc hoặc306lỗi.12ứng viênPhụ/Phúc,U42/U35 chưa tách coding. **Điểm nối: U45 → U02/34marker vật chất-vị thếPhụ** theo `register.json/rows[id=U02].partial`,PHU-HUYNH/parent-unadjusted và các vếTT đã lưu;không kiểm kê lạikeys. Sau đóU04/05/07/10/23/28/29/30–36/42 bằng cácmarker hiện có. Không quay lại nguồnS/61NPL đã đủ bằng chứng khi không có mâu thuẫn/ngữ cảnh thiếu mới. [Mốc phiên](../.local/full-review-20261026/session.json).
 
 <a id="tat-source-crosswalk-177-20261026"></a>
-### ND18/U27 — kiểm lại nguyên nhân Tật, checkpoint5 nối0962157, chưa hoàn tất
+### ND18/U27 — kiểm lại nguyên nhân Tật, checkpoint6 nối d2f5411, chưa hoàn tất
 
 Theo yêu cầu mới sau`5c45a16`, giữ app1.77/catalog1.73/code`b7083fc`; bằng chứng490file root/QA thuộc lượt trước, không chạy lại. **481khóa khôngđổi,192Tật chưa có lời.** Không coding/publish/test/build/UI/PDF/DB/engine/QA/quyền/Live. [**Một bảng nguồn duy nhất**](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md), [phạmvi và checkpoint](TAT-ACH-1.34.0.md#tat-proposition-checkpoint-20261026).
 
@@ -217,7 +223,9 @@ Chưa xác nhận nhóm đủđặc tả+phạmvi để trình vănkhách;3cache
 
 **Nối0183dd1:** NPL340–345 đã đối chiếu;NPL34/395 đã giải danh tính4Đức.31thamchiếuNPL15/TB phânK8/V17/X6, chưađồngnhấtđiềukiệnphươngpháp. Chữ266–281 và289–304 đãtiếp; Ch15kếtsangđầu289,hiện92vịtríC91/D1khôngcộng167TB;61vịtríkhácchưakhóatrùng. Tật192đồngvướngphạmvi/điềukiện/cổng, chưaphânnguyênnhânchính vàkhông192khóachờduyệt. E“đãtriểnkhai”củabảngnàykhácE“chưatìmthấy”củasổtổng. Phạmviđã/chưakiểm cótrongcácpacketvàtừngdòngnguồn.
 
-**Điểm tiếp tục:** **S-VTTL — PDF90 mụcTật→91**. S-HS/S-TL đã nối theo checkpoint0962157 trong sổ; chưa toànnguồn, chưa đủ mọi điều kiện.97mụcHS,12vídụ/6mục phươngphápTL không sốviệc/khóa. SáuX chỉ cóbằngchứng hồsơđốichiếusai, không6lỗiứngdụng.192Tật chưa chốt nguyênnhânchính;481giữ; khôngđổi phạmvi/tiêuchí hoặc publish. [Mốc phiên](../.local/full-review-20261026/session.json).
+**Nối d2f5411/checkpoint6:** VTTL90–91/96–106/150/155, THP1/2, BD, TERM, HS235–237 và các dẫn liên cung đã nối theo phạm vi có địa chỉ;không coi đã rà mọi mệnh đề của toàn sách.61NPL ngoài31cặp đãsoTB167(15lõi/25giao-khác/21chưa tương đương), không cộng số việc. [Điều kiện/phần chưa giải](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md#supplemental-checkpoint6-20261026). VTTL96–106 là hạn, HS235–237 thực phẩm/đồ tang;NPL268→417 không có đúng bảng ở đích dẫn. Không tự chốt192Tật hoặc mở nhánh;0khóa giảm.
+
+**Điểm nối chung:** U45 → U02/34marker vật chất-vị thế ở cung đã có lời, rồi cácmarker hiện có;nguồnTật còn vấn đề cụ thể trong bảng,không đọc lại packetS vừa xử lý hoặc mở sách mới.481giữ,Tật chưa publish,12ứng viênPhụ/Phúc,U42/U35 ởbảngchung. [Mốc phiên](../.local/full-review-20261026/session.json).
 
 <a id="npl326-major-gate-review-177-20261026"></a>
 ### NPL326 — kiểm cổng VCD trên đúng 5 Phu có chính tinh, 26/10/2026: chưa đủ mở phạm vi
