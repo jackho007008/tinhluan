@@ -1,5 +1,16 @@
 # Kiểm chứng theo phạm vi
 
+<a id="tb-family-phuc-testing-20261026"></a>
+## TB–Phụ–Phúc1.78 —26/10/2026,code2e8758a
+
+[Bàn giao](V1-DELIVERY-PLAN.md#tb-family-phuc-delivery-178-20261026). Schema/registration/predicate/owner/render được kiểm trước bộ rộng.8file953/953 đạt (`tb-family-phuc-clauses`,`family-vcd`,`phu-huynh`,`parent-property-void`,`no-dien-phuc`,`customer-editorial-catalog`,`customer-topic-editorial`,`continuous-report`). Sau sửa phần căn cứ mới: đúng2file137/137,so192,typecheck/build cuối đạt.12/12reading-scope+stored-customer-pdf chỉ DBriêng. So192 giải12gốc/11hồsơ,5bổsung,16kếtquảtínhmớiđổi,0sửa/rútclaim/paragraphcũ,0unknownmới;G2khônglộvăn/ID/căn cứmới qua192freeprojection. Không gọi phương diện bắt buộc/chiều sâu khi chưa định nghĩa.
+
+3engine0/99/119 form–lưu–mở/quyền/print/mobile360/390;3PDFthật8/9/9trang đủ19/22/18paragraphfrozen (NFC+khoảngtrắng),đã xemcontact/trangđích5/6–7/5.119gộp2claim,giữparent-child;99baoPhụvàPhúc. P02đơn32/39tái dùng đường chung, kiểm API tạo–lưu–mở; không lặp thêmUI/PDF. QA3062saucutover3form+9APIđạt,12bảnmới/11hồsơgốc+119,khôngorder/mock trênmain. Khôngfullgate/providerngoài/sửaselectorTàicũ.
+
+**Lỗi/lượt kiểm được giữ:** narrowđầu124pass/1fail dofixture54đãcóĐà,mớithêmtrùng; sửafixturekhôngđổinguồn. Lượt kiểmgộp952pass/1fail doassertviếthoa“Cha”khácvănđãduyệt“cha”; sửaassertgiữcopy. Công cụwiređầu dừng ởimport locator sai,dòđúngprefix rồi tiếp phầnchưaáp. UIlượtđầu đườngbackupdùngownerobjectthayowner.hash,đãcopybảnthửcònnguyên; lượttiếp UI bắt thiếu cổngdựán trong phầncăn cứ hiểnthị dùmetadatađãcó. Đã bổsunglimitationscho đúng4rulemới,giữvănchính/predicate,kiểm2file137/137+so192+build+3UI/PDFtrênbảncuối. CutoverlượtđầuđếmnhầmworkerQA3070, dừngtrướcmọiSIGTERM; sửaphạmvi kiểmcheckoutđíchvàgiữriêngQA3070web/worker. Scriptxuấtbefore/afterđầu bịSyntaxErrorlistcomprehension,sửahelperxuấtvăn; khôngchạylạiứngdụng. Genericcustomer-copytestchỉngoạilệ4prefix“Theo Tân Biên”đúngvănchủdựánchốt,khôngđổi expectednguồn/lịchsử.
+
+250tệpcũ+backupgiữnguyên,24tệpmớicopy/hash,DBquyền/hạn/34bàigiữnguyên;engine8file/QA3070giữ,492fileroot/checkoutkhớp,3100dừng. Biênmalformed/Kỵ/chứngnhận tổnghợpchỉfixture;khônggọilàengine thật hoặc sourceđãchứngminhsựkiện. [Log/giới hạn](../.local/tb-family-phuc-20261026/verification-notes.json),[bảo toàn](../.local/tb-family-phuc-20261026/preservation.json).
+
 Cập nhật20/10/2026 sau kiểm ND03; các lệnh mẫu dưới đây cần chọn theo phạm vi, không mặc định chạy toàn bộ. [package.json](../package.json), [vitest.config.ts](../vitest.config.ts), [playwright.config.ts](../playwright.config.ts) là cấu hình hiện có; [kiến trúc](ARCHITECTURE.md) giải thích kho/queue/quyền. Không có Git tại root; xem cách nhận diện code ở ARCHITECTURE.
 
 <a id="efficiency-minimum-testing-20261026"></a>

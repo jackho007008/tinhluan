@@ -11,6 +11,12 @@ Cập nhật 20/10/2026. [BUSINESS_RULES](BUSINESS_RULES.md) diễn giải hợp
 
 ## Những quyết định có xác nhận trực tiếp
 
+### Triển khai TB–Phụ–Phúc từ907abca —26/10/2026
+
+**U — chủ dự án:** “Chuyển sang triển khai lô TB–Phụ–Phúc đã xác định, không mở thêm cuộc rà hoặc xin lại quyền nguồn/phạm vi mà bản tổng kết đã xác nhận được phép.” Giao đúng P01Nhật–NguyệtVCDPhụ/P02Nhật–CựVCDPhụ/P03TháiTuếPhụ/F01Tử–ThamVCDPhúc, rulechung, đúngvăn/điềukiện/ngoạilệ/unknown, không mượnHóa/phụtinh hoặc khôi phục toàn nền. Cho kiểm và tích hợp QA3062sauđạt, bảnđọcmới/phiênbảnmới,G2/lịchsửgiữ. Không triển khaiU42/U35 hoặc đổiMệnh–Thân; dừngsaugói.
+
+**D/C:** [nghiệm thu1.78](V1-DELIVERY-PLAN.md#tb-family-phuc-delivery-178-20261026),code`2e8758a`:12gốc/11hồsơđãđượcchứngnhận bằngbảnlưuQA,481→469. Dedupe119giữ2claimvàvếparent-childtrongvănP03;phầncũgiữ. Hiệuchỉnhứngviên12/27/120thựctếcóchínhtinhtọaPhụ,nằmngoàiP02VCD;83Phúcđượcbổsungtheorulechung,khôngtrừgốc. Đây là thựcthi đúnglô và căn cứ, không phêduyệt toàn cung/toànbáocáo/nguồnkhác hoặc mởLive/Tật; trạngtháiquy tắc chuyên môn draft/reviewnull giữ.
+
 ### Duyệt triển khai chung B01/B02 theo79b3947 —25/10/2026, nghiệm thu26/10
 
 **U — chủ dự án:**“Tôi duyệt cả B01 và B02 theo toàn bộ bảng đặc tả tại V1-DELIVERY-PLAN.md, mục root-gap-batch-176-20261025, bàn giao commit79b3947.” Cho một lô pipeline chung/kiểm/tích hợpQA, không xin lại quyền. B01đúng1ÂmNô/MiếuDậu-Hợi-Tuất bảng31/vắngTT,Kình-Đàchỉtrựctiếp,Liêm-Sát0/4/6/8unknown;khôngthêm6sát. B02QuanVCD/Hỏatrựctiếp/BìnhthườngTỵ-Dậu-Sửu bảng52/vắngTT,Kình-Đà/Tử-Tham0/4/6/8unknown,Mùichưaônguồngiữunknown;khôngHỏa–LinhMệnh/tuổi/vận hạn. Giữnguyênnhãn/văn,căn cứtáchnguồn/bảng/cổng/lýdounknown,khôngtheoID/cungtrống.
