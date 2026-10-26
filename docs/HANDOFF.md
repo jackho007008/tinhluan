@@ -1,5 +1,15 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành26/10 — rà toàn bộ U01–U45, nhiệm vụ đang tiếp tục
+
+Baseline`584f929`, app1.77/catalog1.73/code`b7083fc`;490file root/QAkhớp, **481khóa giữ**. Phạmvi mới bao gồm đủ12cung, Mệnh–Thân, ngũhành/cáchcục, phối lời và phầnthiếu ởcungđãcólời. Không coding/publish/test/build/UI/PDF/engine/DB hoặc đổi QA/G2/quyền/hạn/lịch sử/Live/Tật. [**Đầu mối duy nhất trong backlog**](V1-DELIVERY-PLAN.md#full-content-review-177-20261026), [sổ45U/bảng12cung/liêncung/duyệt](../.local/source-library/knowledge/full-report-crosswalk-20261026.md).
+
+Đã nốiđủ45U, **chưa đồngnghĩa ràđủtoànnguồn**. Gốc540−59=481 khôngtrùng; nguyênnhânvậnhànhtạm A0/B192/C84/D202/E3 (B192Tật cònC/Dphụ và nguồnđangdở). ChữE mới=chưatìmđượclờiphùhợp, khácEtriểnkhai trongbảngTật cũ.306liênkếtmarker ở273cungđãcólời đãđối chiếu cùngcase1.77giữnguyên; không cộngvào481 hoặcgọi306phươngdiệnbắtbuộc. Cácphầnu09/U37–45 chưađo và57noticeU30khôngtựđịnhnghĩa57việc.
+
+U42: câuTB71khôngđòiVCD, cổngMệnhrỗngthuộcgói1.29;2chứngkiến116/123,0root,đãcóđặctả/văn/giớihạn/đềxuấtG2trảphí đểgom bảngduyệt cuối. U35:26casecầnkiểmcổngchiềuKhắc,khôngphải26đủmở;37chiềucòn lại giữD. Ađãxácnhận0lô; khôngtựxinmởN1–N13 hoặcgiảmtiêuchí12cung.
+
+**Tiếpđúngcheckpoint,khôngxingiaolạicùngnhiệmvụ:** Gói nguồn/cổng Mệnh/liêncung đãđịnhvị đãkiểm, giữD/Bcụthể. **Tiếp PhụMẫuU01/U02**, rồiPhúc/Điền/Quan/Nô/Di vàcác cungcòn lại;TậtgiữđiểmNPL283§B→288. Giữbằngchứng48vàcácgóiđãnghiệmthu,khôngráđãđủchỉđểtạonhậtký. Chưa đóngcuộcràtoànnguồn hoặcU45; nguồn chưađốichiếu hiệnrõtrongsổ. [Mốcphiên](../.local/full-review-20261026/session.json). Cácmốcdướilàlịchsử.
+
 ## Hiện hành 26/10 — Tật Ách đang kiểm lại toàn nguồn, checkpoint1 chưa hoàn tất
 
 Baseline`5c45a16`, app1.77/catalog1.73/code`b7083fc`;490file root/QAkhớp. **481khóa giữ;192Tật chưa có lời.** Không coding/publish/test/build/UI/PDF/DB/engine hoặc đổi QA/G2/quyền/hạn/lịch sử/Live. [Backlog hiện hành](V1-DELIVERY-PLAN.md#tat-source-crosswalk-177-20261026), [một bảng nguồn duy nhất](../.local/source-library/knowledge/tat-ach-crosswalk-20261026.md).
