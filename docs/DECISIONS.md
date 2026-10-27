@@ -1,5 +1,16 @@
 # Sổ quyết định Tinh Luận
 
+<a id="ai-menh-direction-20261027"></a>
+## 27/10/2026 — Gói 2 chính thức cho AI diễn giải và tổng hợp Mệnh
+
+**U — chủ dự án:** engine chịu tính lịch/an sao/cung vị/facts; AI chịu diễn giải/phân tích/tổng hợp và không bị giới hạn viết lại claim catalog. Không cần lấp mọi khoảng thiếu bằng rule thủ công trước khi luận. Catalog/kho chữ/hồ sơ nguồn vẫn là tri thức và tài sản truy vết; không gửi cả PDF mỗi request hoặc bịa sách/trang/câu dẫn. Chỉ AI Mệnh miễn phí trong gói này; toàn lá số có thể làm ngữ cảnh, không viết chi tiết 11 chủ đề trả phí hoặc y khoa/tuổi thọ/điều trị/định mệnh chắc chắn.
+
+Chọn Responses/SDK chính thức, model cấu hình server và phải kiểm khả dụng thực tế; không đổi xuống model kém để vượt quyền. Khi thiếu key, tiếp tục triển khai/kiểm mock và nói rõ chưa kiểm API thật. Facts, quan điểm tài liệu và suy luận AI phải tách rõ. Snapshot trước, queue/kết quả sau; chống tạo trùng, GET không gọi lại, lỗi lưu bền vững/retry an toàn, không xóa bài hoàn thành. Dùng tab 12 cung hiện có, quyền máy chủ, không gắn nhãn AI lên catalog cũ.
+
+**Quyền triển khai:** QA3101 hoặc QA độc lập; không tự cập nhật/restart QA3062/3070 hoặc worker sản xuất, không mở bán/Gói 3. Quyết định này thay giới hạn “AI chỉ biên tập claim” cho luồng Mệnh AI mới; không sửa văn/quyền/policy catalog lịch sử hoặc mở nhánh nội dung Tật cũ.
+
+**C — đã làm:** queue/artifact AI riêng, chỉ marker bản mới; worker AI độc lập trên QA3111, Node24. Marker là outbox khi DB enqueue gián đoạn. Chỉ dùng retry có bằng chứng thất bại; timeout/network/5xx không rõ kết quả giữ uncertain để không tự tính phí lại. Không thể bảo đảm exactly-once billing qua mọi sự cố mạng/provider; không tuyên bố như vậy. Không key/model nên chưa kiểm quyền API hoặc chất lượng thật. [Kết quả, sai sót harness và giới hạn](V1-DELIVERY-PLAN.md#ai-menh-package2-20261027).
+
 <a id="qa3062-result-package1-authorized-20261027"></a>
 ## 27/10/2026 — quyền thực thi cụ thể và kết quả thay riêng web QA3062
 

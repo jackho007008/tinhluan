@@ -1,5 +1,22 @@
 # Kiến trúc Tinh Luận hiện hành
 
+<a id="ai-menh-architecture-20261027"></a>
+## Bổ sung Gói 2 — AI Mệnh, môi trường QA riêng
+
+Luồng AI mới không thay engine hoặc renderer PDF/catalog. Các module trong `lib/ai/` tách facts, retrieval, prompt/schema, provider, store và worker. Chỉ `scripts/ai-worker.ts` xử lý queue AI; không thêm tác vụ vào `scripts/worker.ts` của thanh toán/email. SDK `openai@7.45.0` yêu cầu Node>=22; QA dùng24.19. Cấu hình mặc định `AI_MENH_ENABLED=false`, key/model chỉ server, không có model mặc định hoặc fallback.
+
+1. POST tạo lá số lưu snapshot/receipt/frozen/policy như cũ, chỉ bản mới khi bật AI có `aiPolicy`. Sau lưu mới enqueue; marker đã lưu là outbox để worker đối soát nếu DB enqueue lỗi. Duplicate POST dùng đúng record đã lưu, không tạo phiên bản quyền mới.
+2. `menhFacts` kiểm receipt/toàn vẹn và đọc snapshot, không tính/an sao lại. Đưa nạp âm/Cục/âm dương, các cung/sao/trạng thái, Thân, hình học tam hợp/xung/giáp và chứng nhận Tứ Hóa; thiếu dữ kiện giữ thiếu. Không gửi tên/email/ngày giờ sinh chính xác. Facts engine và geometry có ID/path riêng.
+3. Retrieval chọn tối đa12 nhánh catalog theo sao/ngữ cảnh/nhánh đã khớp, cùng tối đa5 hồ sơ phương pháp từ kho riêng. Điều kiện/ngoại lệ/bất định và từng tác giả giữ riêng. Nhánh chỉ tham khảo không tự thành kết luận; không cần có claim mới được luận. Không đọc PDF toàn sách. Metadata predicate chỉ cho kiểm/AI, giao diện hiện điều kiện nguồn bằng tiếng Việt.
+4. Migration011 tạo `ai_reading_jobs` và `ai_reading_attempts`, không sửa bảng cũ. Unique(reading_id,reading_hash,palace,edition), input/prompt/source packet lưu cố định. Claim bằng transaction/FOR UPDATE SKIP LOCKED; API bên ngoài chạy sau commit, không giữ lock DB trong lúc gọi mạng. Daily quota kiểm dưới advisory lock, mặc định20 job/ngày.
+5. Worker dùng Responses/Structured Outputs, SDK retry=0, `store:false`, kiểm model qua Models API trước khi gọi sinh. Trạng thái model nhìn thấy chưa chứng minh model hỗ trợ đầy đủ Responses/schema; lỗi trả về được giữ, không đổi model khác. Sau phản hồi kiểm schema/8 phần/thứ tự/ID fact/nguồn và ràng buộc scope; actual model/usage/latency/response ID lưu từ server, không tin metadata do model tự viết. Giá chỉ ước tính khi operator đặt đủ rates, không tự đoán.
+6. Completed là artifact bền vững, retry không overwrite. Lỗi đã biết có cooldown30s và tối đa3 attempt; không tự retry request tính phí. Timeout/mạng/5xx hoặc worker mất sau dispatch giữ uncertain; worker quá6phút không tự dispatch lại. Chưa có UI đối soát uncertain; operator cần kiểm provider trước khi cho phép thêm chi phí. Không bảo đảm exactly-once billing của hệ ngoài.
+7. GET `/api/trial/readings/[id]/ai-menh` chỉ đọc; POST kiểm origin/sở hữu/marker và chỉ tạo hoặc retry Mệnh. Không nhận palace/model/raw output từ client. `AiMenhReading` đọc/poll từ server, hiển thị8 phần/căn cứ và nhãn AI hoặc MOCK; state gắn key theo reading ID. 11 cung khóa AI; catalog vẫn ở vùng biên tập riêng. Artifact hoàn thành vẫn đọc khi tắt tạo mới hoặc edition không còn được sinh, miễn quyền sở hữu còn hợp lệ.
+
+**Đích hiện tại:** QA3111/database preview/kho riêng, database test khác hẳn. Chỉ áp011 ở hai DB riêng mới sau schema backup. Main chưa có bảng AI, QA3062/3070/3101 và worker thanh toán giữ nguyên. Không backfill lịch sử, đưa AI vào PDF cũ hoặc triển khai Gói 3. [Kiểm/bàn giao](V1-DELIVERY-PLAN.md#ai-menh-package2-20261027).
+
+Tài liệu API đã kiểm: [Structured Outputs/Responses](https://developers.openai.com/api/docs/guides/structured-outputs?api-mode=responses), [SDK TypeScript chính thức](https://developers.openai.com/api/reference/typescript). Trang model công khai không chứng minh quyền tài khoản; phiên này không có key nên không chọn model live.
+
 Đối chiếu tĩnh ngày 20/10/2026 tại `/Volumes/DATA/TINHLUAN`. Không chạy ứng dụng hoặc truy vấn DB trong phiên tài liệu. [Trạng thái](CURRENT_STATUS.md), [quyền/phạm vi](BUSINESS_RULES.md), [kiểm thử](TESTING.md). [INTERPRETATION-ARCHITECTURE](INTERPRETATION-ARCHITECTURE.md) là thiết kế lịch sử 07/10, giữ để tra nguồn gốc; các con số catalog và đường giao hàng trong đó không mô tả đầy đủ luồng khách hiện nay.
 
 ## 1. Nhận diện mã, không chỉ số phiên bản

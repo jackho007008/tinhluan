@@ -1,3 +1,4 @@
+import AiMenhReading from './AiMenhReading';
 import ReadingAccountLink from './ReadingAccountLink';
 import type {CustomerReport,CustomerSection} from '@/lib/internal-review/customer-report';
 import type {ChartSnapshot} from '@/lib/tuvi-engine';
@@ -9,7 +10,7 @@ import ReadingPosition from './ReadingPosition';
 import TrialReadingPdf from './TrialReadingPdf';
 import ReadingEmailAccess from './ReadingEmailAccess';
 import {customerTopicOwner} from '@/lib/internal-review/customer-topic-editorial';
-import {initialAiState,resultPresentation,RESULT_UI_VERSION} from '@/lib/result-presentation';
+import {resultPresentation,RESULT_UI_VERSION} from '@/lib/result-presentation';
 import ResultTabs from './ResultTabs';
 import AiReadingStatus from './AiReadingStatus';
 const labels={free:'Đọc miễn phí',available:'Đã mở',locked:'Đang khóa',empty:'Chưa có luận giải'};
@@ -48,7 +49,7 @@ export default function CustomerReadingWorkspace({report:r,snapshot,id,basic,bir
   const saved=r.palaces.find(x=>x.name===p.name);
   return <ReadingDisclosure id={'cung-'+i} data-reading-position key={p.name} initiallyOpen={p.name==='Mệnh'} className="card palace-chapter">
   <summary><span className="result-palace-heading"><strong>{p.name==='Tử Nữ'?'Tử Tức':p.name}</strong><span>{p.branch}</span>{p.isBody&&<span className="result-body-badge">Thân</span>}<span className="result-palace-stars">{stars(p)}</span></span></summary>
-  <AiReadingStatus state={initialAiState(p.name,scope)}/>
+  {p.name==='Mệnh'&&id?<AiMenhReading key={id} readingId={id}/>:<AiReadingStatus state={p.name==='Mệnh'?'not-created':'not-entitled'}/>}
   <div className="saved-editorial" data-palace-access={state}><p className="result-eyebrow">NỘI DUNG BIÊN TẬP ĐÃ LƯU · {labels[state]}</p>{state==='locked'?<p className="access-message">Cung này có nội dung trong bản đã lưu và cần quyền đọc đầy đủ. {checkout==='closed'?'Chưa mở bán.':<a href={'/checkout?id='+id+'#cung-'+i}>{checkout==='login'?'Đăng nhập · xem phạm vi gói thử':'Xem phạm vi gói Test Mode'}</a>}</p>:<>
   {state==='empty'&&<p className="access-message">Phần này hiện chưa có luận giải. Mở quyền không tạo thêm nội dung cho cung này.</p>}
   {owned.map(s=>p.name==='Mệnh'?<p key={s.id}><a href={'#'+s.id}>{s.title} · đọc tại Tổng quan</a></p>:<SavedSection key={s.id} section={s} version={r.version}/>)}{shared.map(s=><p key={s.id}>Nội dung chung: <a href={'#'+s.id}>{s.title}</a>.</p>)}

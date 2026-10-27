@@ -242,3 +242,10 @@
  .result-shell .result-stars{font-size:16px}
  .result-shell .result-overview h2{font-size:22px}
 }
+
+/* Gói 2: AI text stays separate from immutable catalog paragraphs. */
+.result-shell .ai-menh-result{margin:24px 0;padding:18px 0;border-top:1px solid var(--border)}
+.result-shell .ai-menh-result article{margin:24px 0}
+.result-shell .ai-menh-result h3{color:var(--gold);font-size:22px;margin:0 0 12px}
+.result-shell .ai-menh-result article>p{font-size:15px;line-height:1.9;white-space:pre-line}
+.result-shell .ai-menh-reading button:disabled{opacity:.6;cursor:wait}

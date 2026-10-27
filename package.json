@@ -16,7 +16,9 @@
     "data:delete": "node --env-file=.env --import tsx scripts/data-maintenance.ts delete-order",
     "reconcile": "node --env-file=.env --import tsx scripts/reconcile.ts",
     "format": "prettier --write app components lib scripts tests *.ts *.json",
-    "chart:compare": "node --import tsx scripts/compare-chart.ts"
+    "chart:compare": "node --import tsx scripts/compare-chart.ts",
+    "worker:ai": "node --env-file=.env --import tsx scripts/ai-worker.ts",
+    "ai:check-model": "node --env-file=.env --import tsx scripts/check-openai-model.ts"
   },
   "dependencies": {
     "astronomy-engine": "2.1.19",
@@ -25,6 +27,7 @@
     "lucide-react": "0.468.0",
     "next": "15.5.27",
     "nodemailer": "10.1.2",
+    "openai": "7.45.0",
     "pg": "8.16.3",
     "playwright-core": "1.56.1",
     "qrcode": "1.5.4",
@@ -52,5 +55,8 @@
   "overrides": {
     "postcss": "8.5.23",
     "sharp": "0.35.5"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }

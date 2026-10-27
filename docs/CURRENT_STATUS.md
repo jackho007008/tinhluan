@@ -1,5 +1,13 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Cập nhật 27/10 — AI Mệnh Gói 2 ở QA3111 độc lập
+
+AI edition `menh-ai-1.0.0`, prompt `menh-vietnamese-1.0.0`, nền Git `3491535`. Luồng mới: lưu engine trước → marker/outbox → queue PostgreSQL AI → worker AI độc lập → Responses + Structured Outputs → kiểm schema/tham chiếu → lưu artifact → tab 12 cung. GET/mở lại không tạo bài. 11 cung giữ khóa AI; catalog cũ vẫn là biên tập. Bản lịch sử không có marker không được tự cấp AI; bài AI hoàn thành vẫn đọc được khi tắt tạo mới.
+
+31/31 test trên database test riêng; typecheck/build Node24 đạt. Browser chờ/đang tạo/hoàn thành **mock**,8 phần,11 khóa, mobile360/390/căn cứ/lưu–mở/chống trùng, chuyển hồ sơ và lỗi thiếu cấu hình qua worker thật đạt. SDK OpenAI 7.45 yêu cầu Node>=22; runtime QA riêng24.19. Không có `OPENAI_API_KEY`/`OPENAI_MODEL`, chưa gọi API thật, chưa xác nhận model hoặc chất lượng/usage/chi phí thật.
+
+[QA3111](http://localhost:3111/lap-la-so), [bài mock](../.local/ai-menh-package2-20261027/mock-example.txt), [bàn giao/giới hạn](V1-DELIVERY-PLAN.md#ai-menh-package2-20261027). QA3062 vẫn `a104748`, worker và QA3070/3101 không đổi PID/cwd/thời điểm khởi động. 282 file/8 bảng main giữ nguyên, không bảng AI trên main. Không Gói 3/mở bán/Live; không tự tích hợp main.
+
 ## Cập nhật 27/10 — Gói 1 đã chạy trên web QA3062
 
 Theo quyền riêng của chủ dự án, [QA3062](http://127.0.0.1:3062/lap-la-so) đã chuyển từ code `22bb53e` sang UI `result-package1-1.0.0`/code `a104748`; HEAD được kiểm trước deploy là `350cdb4`. Tái dùng build đã kiểm, đối chiếu 339 file nguồn và đặt checkout riêng tại `.local/result-package1-web3062-20261027/qa`; không sửa mã ứng dụng hoặc QA3101. Report 1.79/catalog 1.75/engine/policy giữ nguyên.

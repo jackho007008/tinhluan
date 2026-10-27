@@ -1,5 +1,26 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="ai-menh-package2-20261027"></a>
+## Gói 2 — AI Mệnh miễn phí, đã triển khai ở QA riêng, chưa kiểm API thật
+
+**Yêu cầu mới thay giới hạn AI chỉ biên tập claim trong luồng này.** [Quyết định](DECISIONS.md#ai-menh-direction-20261027),[kiến trúc](ARCHITECTURE.md#ai-menh-architecture-20261027),[kiểm](TESTING.md#ai-menh-package2-testing-20261027). Baseline xác minh `main@3491535`, tracked/index sạch; Bửu Đình giữ chưa theo dõi. QA3062 vẫn `a104748`/UI1.0.0/report1.79/catalog1.75, runtime và hash được đối chiếu, không dựa mỗi tên phiên bản.
+
+Đã làm facts adapter từ snapshot/receipt đã lưu, retrieval có giới hạn từ catalog/hồ sơ nguồn, prompt8phần cho AI được diễn giải/phân tích/tổng hợp Mệnh, Structured Outputs và kiểm ID tham chiếu/scope. Không an sao lại, không cần mọi cấu trúc có rule. Tách engine facts, ý kiến nguồn và AI synthesis, không bịa nguồn/trang. Không viết bài riêng 11 chủ đề trả phí/y khoa/vận hạn. Mô tả/prompt không thay catalog hoặc quyền cũ.
+
+Bản mới có marker/outbox; lưu snapshot trước queue. Hai bảng AI riêng, unique theo báo cáo/hash/cung/edition, input/source packet/metadata cố định. Worker AI độc lập, claim xuyên process, quota20job/ngày, SDK retry0. Completed không overwrite; known-error retry có cooldown/max3; timeout/mạng/5xx/stale không rõ giữ uncertain, cần operator đối soát trước gọi tiếp. GET/refresh chỉ đọc, retry completed không tạo lượt. Artifact hoàn thành vẫn đọc khi tắt tạo mới. 11 cung không sinh AI và giữ khóa; không dựng Gói3.
+
+**API/model:** SDK chính thức `openai@7.45.0`, Responses/Structured Outputs, Node>=22; QA dùng24.19. Key và model server-only, không có model mặc định/fallback. Không có `OPENAI_API_KEY`/`OPENAI_MODEL` trong môi trường được kiểm. `ai:check-model` đã chạy và dừng trước network vì thiếu key; không khẳng định model nào tài khoản gọi được. Chưa có bài API thật, token/latency/chi phí hoặc đánh giá chất lượng thật. Fixture narrator chỉ trong test/script QA, không cấu hình client/env cho worker thật; mọi ví dụ hoàn thành hiện rõ MOCK.
+
+**Đích:**[QA AI3111](http://localhost:3111/lap-la-so),checkout `.local/ai-menh-package2-20261027/qa`,database preview `qa-db.json` và database test `test-db.json` khác nhau, có guard. Web và worker AI mới chạy Node24, không thay worker thanh toán. Migration011 chỉ áp DB riêng mới, có schema backup/rollback plan; không chạy trênmain. Env example mặc định tắt AI. Snapshot/các chính sách/nội dung cũ bất biến; không đưa AI vàoPDF cũ.
+
+**Kiểm đã chạy:**31/31 (18AI+7UI+6quyền),typecheck/build cuối; browser engine/form/lưu/queue/generating/completedMOCK8phần/11khóa/mobile360/390/căn cứ/refresh/chốngtrùng/quyền, chuyển hồ sơ và worker thật báo thiếukey. Không fullE2E/PDF. Đã sửa raw conditionJSON khỏi giao diện. Sai sót harness dùng chung DB test/preview làm mất một artifact mock ban đầu đã ghi rõ; đã tách DB, thêm guard, kiểm lại và dựng mock mới. Không có dữ liệu/main hoặc API thật bị tác động. [Nhật ký và file đổi](../.local/ai-menh-package2-20261027/verification-notes.json),[UI](../.local/ai-menh-package2-20261027/ui.json).
+
+Ví dụ **MOCK**, không phải chất lượng OpenAI: [bài8phần](../.local/ai-menh-package2-20261027/mock-example.txt),[ảnh360](../.local/ai-menh-package2-20261027/completed-360.png),[ảnh390](../.local/ai-menh-package2-20261027/completed-390.png),[căn cứ](../.local/ai-menh-package2-20261027/ai-evidence-390.png),[thiếu cấu hình](../.local/ai-menh-package2-20261027/configuration-error-390.png).
+
+**Bảo toàn:**[receipt](../.local/ai-menh-package2-20261027/protected-after.json) xác nhận282file/8bảng main nguyên, không schemaAI trênmain; QA3062/3070/3101/worker thanh toán nguyên PID/cwd/thời điểm khởi động. Engine/calendar/catalog/quyền/đơn/webhook/Google/thư viện/34bài/SePayLive/vận hạn không đổi. Source ảnh/sách vẫn ngoàiGit, không force-add thư mụcBửu Đình.
+
+**Trước khi đưa QA3062:** chủ dự án cấu hình key/model server; kiểm model list/visibility rồi pilot nhỏ Responses+schema và đọc chất lượng tiếngViệt/căn cứ/phạm vi; đo usage/latency/chi phí thật. Chốt runtime Node>=22, backup/migration011/kho AI và quyền riêng chuyển web/worker AI; không restart worker thanh toán. Cần quy trình đối soát uncertain/attempt-limit và retention/backup AI phù hợp vòng đời phiên; schema/regex không thay nghiệm thu nội dung. Chưa có quyền tích hợp main hoặc Gói3. Dừng sau Gói2 trong phạm vi mock đã kiểm.
+
 <a id="qa3062-result-package1-20261027"></a>
 ## Gói 1 — đã cập nhật riêng web QA3062 sau quyền cụ thể, 27/10/2026
 

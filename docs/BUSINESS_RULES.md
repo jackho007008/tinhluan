@@ -1,5 +1,11 @@
 # Tinh Luận — hợp đồng sản phẩm, nguồn và quyết định
 
+### Quyết định hiện hành về AI Mệnh — Gói 2 ngày27/10
+
+[Định hướng chính thức](DECISIONS.md#ai-menh-direction-20261027) cho AI phân tích/tổng hợp từ facts engine và tri thức có nguồn, không chỉ biên tập claim. Chỉ Mệnh miễn phí, không phụ thuộc thanh toán. Dữ liệu toàn lá số dùng làm ngữ cảnh; không mở bài chi tiết 11 cung, Tật/sức khỏe hoặc vận hạn. Tri thức tham khảo chưa khớp phải giữ điều kiện/ngoại lệ, không gọi là engine fact; suy luận AI không được giả làm sách hoặc kết quả chắc chắn.
+
+Bản mới có marker AI riêng; artifact AI nằm ngoài frozen report/quyền catalog. Bản cũ không tự cấp marker hoặc backfill. Bài hoàn thành không bị thay bởi retry lỗi và vẫn đọc được khi tắt tạo mới; việc đọc luôn cần quyền sở hữu hiện hành. Không sinh trước AI trả phí. Mô phỏng chỉ bằng fixture/test narrator riêng, luôn hiện nhãn MOCK; không có env/client parameter bật fake narrator trong worker thật. Gói 1 bên dưới mô tả giai đoạn trước; Gói 2 chưa được tích hợp main, không mở Live/mở bán/Gói 3.
+
 ### Phạm vi task UI Gói 1 ngày 27/10
 
 [Xem yêu cầu mới](DECISIONS.md#result-package1-decision-20261027): chỉ 4 tab, chuẩn bị 5 trạng thái AI; chưa có lời AI thật hoặc API/worker AI. Catalog đã lưu vẫn là nội dung biên tập và giữ quyền/policy cũ. Mệnh AI miễn phí, 11 cung sau thanh toán là yêu cầu cho luồng tương lai; chưa thực thi hoặc tự chuyển quyền cũ thành quyền của sản phẩm AI. Các giới hạn chuyên môn/lịch sử/Live bên dưới tiếp tục áp dụng. Không tự làm Gói 2.
@@ -19,7 +25,7 @@ Căn cứ phân loại quyết định: [DECISIONS](DECISIONS.md) ghi lời ch�
 1. Báo cáo cá nhân hóa, có căn cứ, đủ **12 cung** vẫn là mục tiêu V1 trước mở bán. Dữ kiện, tên cung, văn chung hoặc một đoạn không chứng minh chủ đề hoàn chỉnh. Không tự giảm lời hứa thành 11 cung.
 2. Beta tiếp tục; **Live tắt, chưa thu tiền thật**, giá/hạn thương mại chưa chốt. G4 chỉ Test Mode cho A/B. Zalo và triển khai máy chủ tạm hoãn; chưa mở G6.
 3. Dùng chung nội dung cho mọi hồ sơ trong miền hỗ trợ; không chọn lời theo tên/ID hay viết riêng 1992/Kim Thoa.
-4. AI chỉ biên tập nhận định đã xác minh: không thêm kết luận, nghề, nguyên nhân, lời khuyên, dự báo; không chọn bên thắng giữa các ý khác chiều hoặc tạo trọng số. Không mặc định gọi AI bên ngoài cho mỗi khách.
+4. **Định hướng Gói 2 ngày27/10:** trong luồng AI Mệnh mới, engine giữ facts còn AI được diễn giải/phân tích/tổng hợp, không giới hạn viết lại claim và không đòi rule lấp hết khoảng thiếu. Nhận định cần căn cứ, tách nguồn và suy luận, không định mệnh chắc chắn/y khoa hoặc chi tiết chủ đề trả phí. Quy định cũ “AI chỉ biên tập claim” giữ làm lịch sử, không chặn luồng đã giao. Catalog truyền thống và quyền/nội dung bản cũ không bị thay.
 5. Giữ engine, lịch, snapshot và lịch sử nếu task không cho phép thay. Bản mới có phiên bản riêng, không âm thầm dùng renderer/catalog mới thay văn cũ.
 6. Không suy bệnh thực tế, chẩn đoán, thời điểm tử vong hoặc khuyên điều trị từ lá số. Không chuyển lời bệnh/tai họa thành “áp lực/sức bền” nếu nguồn không nói vậy.
 7. Không mở vận hạn, scoring, nhiều lá số, quy kết phẩm hạnh hoặc tính năng phụ chỉ để bài trông đầy đủ. Phạm vi lớp năm xem của **phiếu** đã có không đồng nghĩa đã có luận vận hạn.

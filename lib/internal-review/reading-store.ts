@@ -13,6 +13,7 @@ import type { ChartSnapshot } from "../tuvi-engine";
 import type { FrozenReading, ListReceipt } from "./dynamic-reading";
 export type InternalReading = {
   id: string;
+  aiPolicy?: {edition:string;palace:'Mệnh'};
   accessPolicy?: import("../trial/reading-policy").ReadingPolicy;
   inputReceipt?: import("../customer-birth").CustomerInputReceipt;
   parentId?: string;

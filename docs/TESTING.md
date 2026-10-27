@@ -1,5 +1,20 @@
 # Kiểm chứng theo phạm vi
 
+<a id="ai-menh-package2-testing-20261027"></a>
+## Gói 2 AI Mệnh — mock và QA riêng, 27/10/2026
+
+**31/31 ca trên 3 file:**18 `ai-menh`,7 `result-presentation`,6 `reading-scope`; lượt chốt dùng database test riêng, có guard từ chối nếu trùng preview. Facts/receipt/geometry/Tứ Hóa thiếu hoặc không nhất quán; retrieval khi không có claim Mệnh; schema sai/nguồn bịa/scope sai; queue/worker đồng thời chỉ1attempt; mở/retry completed không gọi; output lỗi/retry/cooldown/max3; timeout/network uncertain và stale dispatch không tự tính phí lại; outbox chỉ bản mới; lịch sử/hash/quyền và chỉMệnh; origin/owner404/old403/palace khác400; creation lưu trước và hash đúng bản đã lưu; daily quota đồng thời; migration idempotent; SDK HTTP intercepted/Structured Outputs/actual model+usage/no fallback/no hidden retry; tắt tạo mới/edition cũ vẫn đọc artifact hoàn thành. Mock hoàn toàn, không API thật.
+
+Typecheck và production build trên Node24.19 đạt; SDK7.45 yêu cầu>=22. Lượt31ca cuối trước thay UI key theo ID vẫn có hiệu lực với backend không đổi; thay UI key được typecheck/build cuối và kiểm chuyển hồ sơ thật trong browser. Không full E2E/PDF/provider thanh toán/Google/email.
+
+**Browser QA3111:** engine qua form → snapshot lưu → queue pending → run mock worker có gate → generating → completed8phần.11cung khóaAI,4tab,360/390 khôngtràn, mở/đóng căn cứ khôngJSON máy, refresh/requestlặp không tăngattempt, hash bảnlưu giữ. Chuyển báo cáo mới không hiện bài cũ; worker AI process thật nhận job mới và lưu lỗi `AI_NOT_CONFIGURED`, UI báo chưa cấu hình. Không key/model, không request OpenAI thật; MOCK hiện banner riêng và `provider=test-mock`. Đã kiểm ảnh completed/căn cứ/lỗi; usage0/duration12ms của fixture không phải số đo API.
+
+**Lượt lỗi/sửa được giữ:** npm dưới Node20 cảnh báo SDK cần22, đã dùng Node24 riêng; không nâng/restart runtime main. Typecheck đầu phát hiện profile `vn-unavailable` không thuộc catalog, sửa qua compatibility hiện có. Ảnh đầu phát hiện condition JSON ở căn cứ; tách predicate nội bộ và human text, kiểm lại browser. Bổ sung đọc completed khi tắt sinh và key component theo ID. Một lượt test sau dựng preview dùng nhầm DB preview, lệnh TRUNCATE fixture đã xóa một artifact AI mock trước đó (không sửa snapshot và không có API thật). Đã dừng riêng AI worker, tách DB test/preview và thêm guard; chạy31ca trên DB mới, tạo ví dụ mock mới trong preview. Không gọi fixture bị xóa là còn nguyên; mọi dữ liệu/main và QA3101 không bị tác động.
+
+**Bảo toàn cuối:**282file/8bảng main giữ nguyên, main không có `ai_reading_jobs`. QA3062 `94756`, worker thanh toán `62860`, QA3070 `94421/94426`, QA3101 `89190` giữ PID/cwd/thời điểm khởi động. Không migrate/deploy/restart main; chỉ web/worker AI mới ởQA3111. 68file JS browser không có `OPENAI_API_KEY`, URL provider trực tiếp hoặc key fixture. GET không sinh, client chỉ gọi API nội bộ.
+
+[Bằng chứng từnglượt](../.local/ai-menh-package2-20261027/verification-notes.json),[31test](../.local/ai-menh-package2-20261027/tests-separated-final.log),[build cuối](../.local/ai-menh-package2-20261027/build-delivery.log),[UI](../.local/ai-menh-package2-20261027/ui.json),[bảo toàn](../.local/ai-menh-package2-20261027/protected-after.json),[checkmodel khôngkey](../.local/ai-menh-package2-20261027/model-check.log). Chưa nghiệm thu chất lượng luận/token/giá/latency/API model thật; regex/ID/schema không chứng minh toàn bộ suy luận ngôn ngữ tự nhiên đúng.
+
 <a id="qa3062-result-package1-testing-20261027"></a>
 ## Smoke sau cập nhật riêng web QA3062 — 27/10/2026
 

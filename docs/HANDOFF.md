@@ -1,5 +1,11 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành 27/10 — Gói 2 AI Mệnh đã triển khai ở QA riêng; chưa kiểm API thật
+
+Baseline `3491535`, AI `menh-ai-1.0.0`, prompt `menh-vietnamese-1.0.0`, SDK OpenAI 7.45.0/Node 24.19.0. [Định hướng mới đã giao](DECISIONS.md#ai-menh-direction-20261027), [bàn giao duy nhất](V1-DELIVERY-PLAN.md#ai-menh-package2-20261027), [kiểm](TESTING.md#ai-menh-package2-testing-20261027). Engine giữ facts; AI được phân tích/tổng hợp, không chỉ viết lại claim. Chỉ Mệnh miễn phí, không 11 cung trả phí.
+
+[QA AI riêng](http://localhost:3111/lap-la-so) có web và worker AI độc lập, database preview tách khỏi database test. Không có key/model cấu hình; ví dụ hoàn thành mang nhãn **MOCK**, form mới báo tính năng chưa cấu hình. Chưa xác nhận quyền model, chất lượng bài/token/chi phí/thời gian API thật. 31/31 ca, typecheck/build và browser mobile đạt. Không deploy/migrate/restart QA3062/3070/3101 hoặc worker thanh toán; 282 file/8 bảng main giữ nguyên, main chưa có bảng AI. Dừng Gói 2; điều kiện trước tích hợp main ở backlog.
+
 ## Hiện hành 27/10 — Gói 1 đã cập nhật riêng web QA3062
 
 Sau quyền thực thi cụ thể của chủ dự án, QA3062 đã chạy UI `result-package1-1.0.0`, code `a104748` từ HEAD bàn giao `350cdb4`; report 1.79/catalog 1.75 giữ nguyên. Chỉ web `62859` → `94756`; worker chính `62860`, web/worker QA3070 `94421/94426` và QA3101 `89190` giữ PID, thời điểm khởi động và checkout. [Bàn giao hiện hành](V1-DELIVERY-PLAN.md#qa3062-result-package1-20261027), [smoke/bảo toàn](TESTING.md#qa3062-result-package1-testing-20261027).
