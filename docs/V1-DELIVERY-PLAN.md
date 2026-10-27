@@ -1,7 +1,7 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
 <a id="ai-menh-package2-20261027"></a>
-## Gói 2 — AI Mệnh miễn phí, đã triển khai ở QA riêng, chưa kiểm API thật
+## Gói 2 — QA riêng kết nối API thật được; bài Mệnh dài còn timeout
 
 **Yêu cầu mới thay giới hạn AI chỉ biên tập claim trong luồng này.** [Quyết định](DECISIONS.md#ai-menh-direction-20261027),[kiến trúc](ARCHITECTURE.md#ai-menh-architecture-20261027),[kiểm](TESTING.md#ai-menh-package2-testing-20261027). Baseline xác minh `main@3491535`, tracked/index sạch; Bửu Đình giữ chưa theo dõi. QA3062 vẫn `a104748`/UI1.0.0/report1.79/catalog1.75, runtime và hash được đối chiếu, không dựa mỗi tên phiên bản.
 
@@ -9,7 +9,7 @@
 
 Bản mới có marker/outbox; lưu snapshot trước queue. Hai bảng AI riêng, unique theo báo cáo/hash/cung/edition, input/source packet/metadata cố định. Worker AI độc lập, claim xuyên process, quota20job/ngày, SDK retry0. Completed không overwrite; known-error retry có cooldown/max3; timeout/mạng/5xx/stale không rõ giữ uncertain, cần operator đối soát trước gọi tiếp. GET/refresh chỉ đọc, retry completed không tạo lượt. Artifact hoàn thành vẫn đọc khi tắt tạo mới. 11 cung không sinh AI và giữ khóa; không dựng Gói3.
 
-**API/model:** SDK chính thức `openai@7.45.0`, Responses/Structured Outputs, Node>=22; QA dùng24.19. Key và model server-only, không có model mặc định/fallback. Không có `OPENAI_API_KEY`/`OPENAI_MODEL` trong môi trường được kiểm. `ai:check-model` đã chạy và dừng trước network vì thiếu key; không khẳng định model nào tài khoản gọi được. Chưa có bài API thật, token/latency/chi phí hoặc đánh giá chất lượng thật. Fixture narrator chỉ trong test/script QA, không cấu hình client/env cho worker thật; mọi ví dụ hoàn thành hiện rõ MOCK.
+**API/model:** SDK chính thức `openai@7.45.0`, Responses/Structured Outputs, Node>=22; QA dùng24.19. Key/model server-only, không mặc định/fallback. Lượt triển khai ban đầu thiếu key/model. Sau chủ dự án cấu hình và yêu cầu test, đã xác minh `gpt-6-astra` có quyền và chạy đúng2POST: một bài Mệnh thật qua queue (timeout120giây, wall121,213giây, `uncertain`, chưa có usage/chi phí/responseID) và một probe schema nhỏ độc lập (completed3,507giây,46input+14output=60token, ước tính $0,00116 theo Standard10/1/50 USD/triệu token input/cache/output). Không gọi lại bài timeout, không đổi model hoặc ghi đè artifact. Probe không phải bài luận, chưa đủ đánh giá chất lượng Mệnh. [Nhật ký](../.local/ai-menh-package2-20261027/live-api-20261027/generation.json),[probe](../.local/ai-menh-package2-20261027/live-api-20261027/schema-probe.json),[đối chiếu](../.local/ai-menh-package2-20261027/live-api-20261027/verification.json),[giá công khai](https://developers.openai.com/api/docs/pricing?latest-pricing=standard). Chi phí bài timeout có thể phát sinh nhưng chưa biết; con số probe không phải tổng hóa đơn. Hai bài completed hiện có vẫn là MOCK.
 
 **Đích:**[QA AI3111](http://localhost:3111/lap-la-so),checkout `.local/ai-menh-package2-20261027/qa`,database preview `qa-db.json` và database test `test-db.json` khác nhau, có guard. Web và worker AI mới chạy Node24, không thay worker thanh toán. Migration011 chỉ áp DB riêng mới, có schema backup/rollback plan; không chạy trênmain. Env example mặc định tắt AI. Snapshot/các chính sách/nội dung cũ bất biến; không đưa AI vàoPDF cũ.
 
@@ -19,7 +19,7 @@ Ví dụ **MOCK**, không phải chất lượng OpenAI: [bài8phần](../.local
 
 **Bảo toàn:**[receipt](../.local/ai-menh-package2-20261027/protected-after.json) xác nhận282file/8bảng main nguyên, không schemaAI trênmain; QA3062/3070/3101/worker thanh toán nguyên PID/cwd/thời điểm khởi động. Engine/calendar/catalog/quyền/đơn/webhook/Google/thư viện/34bài/SePayLive/vận hạn không đổi. Source ảnh/sách vẫn ngoàiGit, không force-add thư mụcBửu Đình.
 
-**Trước khi đưa QA3062:** chủ dự án cấu hình key/model server; kiểm model list/visibility rồi pilot nhỏ Responses+schema và đọc chất lượng tiếngViệt/căn cứ/phạm vi; đo usage/latency/chi phí thật. Chốt runtime Node>=22, backup/migration011/kho AI và quyền riêng chuyển web/worker AI; không restart worker thanh toán. Cần quy trình đối soát uncertain/attempt-limit và retention/backup AI phù hợp vòng đời phiên; schema/regex không thay nghiệm thu nội dung. Chưa có quyền tích hợp main hoặc Gói3. Dừng sau Gói2 trong phạm vi mock đã kiểm.
+**Trước khi đưa QA3062:** kết nối/model/schema nhỏ đã qua, nhưng bài Mệnh dài chưa hoàn thành. Cần đối soát request timeout trước bất kỳ retry, giải thời gian xử lý bài dài rồi pilot có kiểm soát để đọc chất lượng tiếngViệt/căn cứ/phạm vi và đo usage/latency/chi phí bài thật. Chốt runtime Node>=22, backup/migration011/kho AI và quyền riêng chuyển web/worker AI; không restart worker thanh toán. Cần quy trình đối soát uncertain/attempt-limit và retention/backup AI phù hợp vòng đời phiên; schema/regex không thay nghiệm thu nội dung. Chưa có quyền tích hợp main hoặc Gói3. Lượt test key không sửa code ứng dụng; chỉ nạp cấu hình cho web/AI worker QA3111. Không nghiệm thu thành công bài dài.
 
 <a id="qa3062-result-package1-20261027"></a>
 ## Gói 1 — đã cập nhật riêng web QA3062 sau quyền cụ thể, 27/10/2026

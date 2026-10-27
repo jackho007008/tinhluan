@@ -1,10 +1,10 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-## Hiện hành 27/10 — Gói 2 AI Mệnh đã triển khai ở QA riêng; chưa kiểm API thật
+## Hiện hành 27/10 — Gói 2 kết nối API thật được; bài Mệnh dài timeout
 
 Baseline `3491535`, AI `menh-ai-1.0.0`, prompt `menh-vietnamese-1.0.0`, SDK OpenAI 7.45.0/Node 24.19.0. [Định hướng mới đã giao](DECISIONS.md#ai-menh-direction-20261027), [bàn giao duy nhất](V1-DELIVERY-PLAN.md#ai-menh-package2-20261027), [kiểm](TESTING.md#ai-menh-package2-testing-20261027). Engine giữ facts; AI được phân tích/tổng hợp, không chỉ viết lại claim. Chỉ Mệnh miễn phí, không 11 cung trả phí.
 
-[QA AI riêng](http://localhost:3111/lap-la-so) có web và worker AI độc lập, database preview tách khỏi database test. Không có key/model cấu hình; ví dụ hoàn thành mang nhãn **MOCK**, form mới báo tính năng chưa cấu hình. Chưa xác nhận quyền model, chất lượng bài/token/chi phí/thời gian API thật. 31/31 ca, typecheck/build và browser mobile đạt. Không deploy/migrate/restart QA3062/3070/3101 hoặc worker thanh toán; 282 file/8 bảng main giữ nguyên, main chưa có bảng AI. Dừng Gói 2; điều kiện trước tích hợp main ở backlog.
+[QA AI riêng](http://localhost:3111/lap-la-so) có web và worker AI độc lập, database preview tách khỏi database test. Code `44b42c0`; sau chủ dự án cấu hình key/model và yêu cầu test, `gpt-6-astra` qua model visibility và request schema nhỏ thật (3,507 giây, 60 token, ước tính $0,00116). Một bài Mệnh qua queue thật timeout 120 giây, giữ `uncertain`, không tự retry; chưa có bài dài hoàn thành, usage/chi phí của request này chưa biết. Hai bài hoàn thành cũ vẫn là **MOCK**. [Kết quả và giới hạn](V1-DELIVERY-PLAN.md#ai-menh-package2-20261027). Chỉ restart web/AI worker QA3111 để nạp cấu hình; không đổi code ứng dụng, QA3062/3070/3101 hoặc worker thanh toán. 282 file/8 bảng main nguyên, main chưa có bảng AI. Chưa đủ điều kiện tích hợp main.
 
 ## Hiện hành 27/10 — Gói 1 đã cập nhật riêng web QA3062
 
