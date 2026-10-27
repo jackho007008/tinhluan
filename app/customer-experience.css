@@ -172,3 +172,73 @@
 @media(max-width:400px){.reference-ui .customer-workspace{padding-inline:10px}.reference-ui .palace-chapter{padding:12px}.reference-ui .library-tabs a{padding:8px;font-size:13px}}
 
 @media screen{.reference-ui .workspace-nav>a,.reference-ui .library-tabs>a,.reference-ui .library-pagination>a{display:inline-flex;align-items:center}.reference-ui .palace-access-grid>a{display:flex}}
+
+/* Gói 1: result pages only. The saved report/print styles remain independent. */
+.reference-ui.result-shell{--bg:#14120f;--paper:#211c14;--ink:#eee5cb;--muted:#bcaa82;--border:#5c4b29;--line:#493c27;--accent:#ef7959;--gold:#dfc16e;min-height:100vh;background:radial-gradient(ellipse at top,#231c1280,transparent 65%),var(--bg);font-size:15px}
+.result-shell .result-workspace{max-width:1120px;padding-bottom:24px}
+.result-shell .compact-profile{border-color:var(--border);padding:20px;margin-bottom:18px}
+.result-shell .compact-profile>p{color:var(--muted)}
+.result-shell .workspace-actions{display:flex;gap:10px 20px;flex-wrap:wrap;font-size:12px;margin-top:16px}
+.result-shell .result-eyebrow{display:block;font-size:10px;letter-spacing:1.4px;line-height:1.8;color:var(--muted);text-transform:uppercase}
+.result-shell .result-tabs{position:sticky;top:0;z-index:4;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;background:var(--bg);border-bottom:1px solid var(--border);margin:0 0 24px}
+.result-shell .result-tabs button{display:block;width:100%;min-height:54px;border:0;border-bottom:3px solid transparent;padding:8px 2px;color:var(--muted);font:600 17px Phudu,sans-serif;white-space:nowrap}
+.result-shell .result-tabs button[aria-selected=true]{color:var(--accent);border-bottom-color:var(--accent)}
+.result-shell [role=tabpanel][hidden]{display:none}
+.result-shell .result-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:22px}
+.result-shell .result-facts .card{display:flex;flex-direction:column;justify-content:center;text-align:center;min-height:126px;padding:18px 10px}
+.result-shell .result-facts strong{display:block;margin-top:8px;font:600 24px/1.35 Phudu,sans-serif}
+.result-shell .result-facts small{display:block;font-size:12px;color:var(--muted);margin-top:6px}
+.result-shell .result-overview>.card{margin-bottom:20px;padding:26px}
+.result-shell .result-overview h2,.result-shell .result-patterns>h2{margin:0 0 14px}
+.result-shell .result-stars{font-size:18px;line-height:1.8;color:var(--gold)}
+.result-shell .result-muted{color:var(--muted);font-size:13px;line-height:1.8}
+.result-shell .reading-disclosure{border-top-color:var(--line);color:var(--ink)}
+.result-shell .disclosure-toggle{color:var(--gold);min-height:44px;line-height:1.7}
+.result-shell .reading-disclosure .reading-disclosure{font-size:13px}
+.result-shell .reading-disclosure .reading-disclosure p{font-size:13px;line-height:1.8}
+.result-shell .palace-chapter{margin:12px 0;border-color:var(--border);padding:18px 22px}
+.result-shell .palace-chapter>.disclosure-toggle{font-family:inherit;font-size:16px;justify-content:flex-start;gap:16px;color:var(--ink);text-align:left}
+.result-shell .result-palace-heading{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;flex:1;min-width:0}
+.result-shell .result-palace-heading strong{font:600 22px/1.3 Phudu,sans-serif;text-transform:uppercase}
+.result-shell #cung-0>.disclosure-toggle strong{color:var(--accent)}
+.result-shell .result-palace-heading>span{color:var(--muted);font-size:12px}
+.result-shell .result-palace-heading>.result-palace-stars{font-size:14px;line-height:1.8}
+.result-shell .result-palace-heading>.result-body-badge{border:1px solid var(--gold);border-radius:4px;padding:0 7px;color:var(--gold);text-transform:uppercase}
+.result-shell .ai-reading-status{border:1px dashed var(--border);border-radius:8px;padding:14px 16px;margin:20px 0;background:#14120f66}
+.result-shell .ai-reading-status span{color:var(--gold);font-weight:600;font-size:13px}
+.result-shell .ai-reading-status p{font-size:13px;margin:6px 0 0;color:var(--muted);line-height:1.8}
+.result-shell .saved-editorial{margin-top:18px}
+.result-shell .saved-editorial h3{font-size:22px;margin:20px 0 12px;color:var(--ink)}
+.result-shell .saved-editorial h4{font-size:15px;line-height:1.65;color:var(--gold);margin:20px 0 8px}
+.result-shell .saved-editorial article>p{font-size:15px;line-height:1.9}
+.result-shell .access-message,.result-shell .notice{background:#17140f;color:var(--muted);border-left:2px solid var(--border);padding:14px;border-radius:6px;font-size:13px;line-height:1.8}
+.result-shell .result-patterns{margin:30px 0}
+.result-shell .result-patterns ul{padding-left:20px}
+.result-shell .result-patterns li{margin-bottom:14px}
+.result-shell .result-transformations{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:24px 0}
+.result-shell .transformation-card{padding:26px}
+.result-shell .transformation-card h2{color:var(--gold);margin:0 0 18px}
+.result-shell .transformation-ky{border-color:#99503b}
+.result-shell .transformation-ky h2{color:var(--accent)}
+.result-shell .result-transformed-star{font-size:21px;font-weight:600}
+.result-shell .result-location{color:var(--gold);font-size:13px;margin-bottom:20px}
+.result-shell .result-periods{padding:44px 24px;text-align:center;min-height:150px;display:grid;place-items:center}
+.result-shell .result-periods p{margin:0;color:var(--muted)}
+.result-shell .result-options{margin-top:32px}
+.result-shell .result-options>h2{margin-top:0}
+.result-shell .close-evidence{border:1px solid var(--border);border-radius:6px;color:var(--gold)}
+.result-shell .result-workspace [id]{scroll-margin-top:78px;overflow-wrap:anywhere}
+@media(max-width:600px){
+ .result-shell .result-tabs{margin-bottom:18px}
+ .result-shell .result-tabs button{font-size:15px;min-height:50px}
+ .result-shell .result-facts{grid-template-columns:1fr;gap:10px;margin-bottom:16px}
+ .result-shell .result-facts .card{min-height:88px;padding:15px}
+ .result-shell .result-facts strong{font-size:23px;margin-top:4px}
+ .result-shell .compact-profile,.result-shell .result-overview>.card,.result-shell .transformation-card{padding:20px 16px}
+ .result-shell .result-transformations{grid-template-columns:1fr;gap:14px}
+ .result-shell .palace-chapter{padding:14px}
+ .result-shell .result-palace-heading>.result-palace-stars{flex-basis:100%;font-size:13px}
+ .result-shell .result-palace-heading strong{font-size:21px}
+ .result-shell .result-stars{font-size:16px}
+ .result-shell .result-overview h2{font-size:22px}
+}
