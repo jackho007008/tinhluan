@@ -1,3 +1,4 @@
+import { careerSunMoonSuuRule } from './career-sun-moon-suu';
 import {tbFamilyPhucRules} from './tb-family-phuc-clauses';
 import {vttlRootRules} from './vttl-root-batch';
 import {vttlPhucLiemSatRule} from './vttl-phuc-liem-sat';
@@ -41,7 +42,7 @@ import {lifeContentRules,lifeExpansionRules,refineLifeRules} from "./tanbien-lif
 import { tanBienRules } from "./tanbien";
 import { derivations } from "./derived";
 import { ruleSchema, type Rule } from "./schema";
-export const RULESET_VERSION = "interpretation-1.74.0";
+export const RULESET_VERSION = "interpretation-1.75.0";
 const base = {
   version: "1.0.0",
   origin: "catalog" as const,
@@ -1164,6 +1165,7 @@ export const catalog: Rule[] = [
   ...lifeContentRules, ...lifeExpansionRules,
   emptyLifeRule,
   ...emptyLifeTrineRules,
+  careerSunMoonSuuRule,
   careerQuyenRule,
   ...careerKyRules,
   ...activeIndependentCareerRules,

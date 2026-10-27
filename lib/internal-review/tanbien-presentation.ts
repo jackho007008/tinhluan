@@ -1,3 +1,4 @@
+import { CAREER_SUN_MOON_SUU, CAREER_SUN_MOON_SUU_FACT, careerSunMoonSuuFacts } from '../interpretation-rules/career-sun-moon-suu';
 import {TB_FAMILY_PHUC_IDS,tbFamilyPhucFact,tbFamilyPhucFacts,tbFamilyPhucRules} from '../interpretation-rules/tb-family-phuc-clauses';
 import {VTTL_ROOT_IDS,VTTL_NO_AM_FACT,VTTL_CAREER_FIRE_FACT,vttlRootFacts,vttlRootRules} from '../interpretation-rules/vttl-root-batch';
 import {VTTL_PHUC_LIEM_SAT_FACT,vttlPhucLiemSatFacts,vttlPhucLiemSatRule} from '../interpretation-rules/vttl-phuc-liem-sat';
@@ -341,6 +342,8 @@ export function factEvidence(s: ChartSnapshot, id: string): ReadingEvidence {
   if(nd){const a=noDienAssessment(s,nd);return item(a.text,a.paths,a.cause==='unresolved-adjustment'?'editorial':'snapshot');}
   const kyFact = [...completionFacts(s),...retentionFacts(s),...noDienFacts(s),...phucDiFacts(s),...lifeContentFacts(s),...careerKyFacts(s), ...independentCareerFacts(s), ...occupationalCareerFacts(s), ...careerClosingFacts(s), ...financeSupplementFacts(s)].find(f=>f.id===id);
   if(kyFact) return item(kyFact.text,kyFact.evidencePaths,lifeHamBranches.some(x=>id==="fact.life-batch-"+x.id)?"source":"snapshot");
+  const careerSunMoonFact = id===CAREER_SUN_MOON_SUU_FACT ? careerSunMoonSuuFacts(s)[0] : undefined;
+  if(careerSunMoonFact)return item(careerSunMoonFact.text,careerSunMoonFact.evidencePaths,"source");
   const emptyFact = emptyLifeFacts(s).find(f=>f.id===id);
   if (emptyFact) return item(emptyFact.text,emptyFact.evidencePaths,emptyFact.status==="source-table"?"source":"snapshot");
   if(id === "fact.life-branch") return palaceLocation(s,"Mệnh");
@@ -850,7 +853,7 @@ export function sourceTablesForRule(rule: Rule): Record<string,{id:string;versio
     Object.entries({ wuqu: tanBienTable, ...tanBienLifeTables }).filter(
       ([key]) =>
         rule.requiredFacts.includes(`fact.tanbien-${key}-eligible`) ||
-        (emptyLifeTrineRules.some(r=>r.id===rule.id) && ["taiyang","taiyin"].includes(key)) ||
+        ((rule.id===CAREER_SUN_MOON_SUU || emptyLifeTrineRules.some(r=>r.id===rule.id)) && ["taiyang","taiyin"].includes(key)) ||
         rule.requiredFacts.includes(`fact.tanbien-${key}-state`) ||
         lifeHamBranches.some(s=>rule.id === "tanbien.life-batch-"+s.id && s.table===key),
     ),

@@ -6314,5 +6314,12 @@
     "movedToEvidence": [
       "Điều kiện nguồn, giới hạn tập con dự án và lý do unknown giữ tách rõ trong căn cứ; không chuyển Tứ Hóa/phụ tinh hoặc kết luận toàn cung."
     ]
+  },
+  "tanbien.career-sun-moon-suu": {
+    "text": "Về công danh, Tân Biên mô tả thế Thái Dương tại Tỵ và Thái Âm tại Dậu cùng chiếu Mệnh ở Sửu bằng hình ảnh “nhẹ bước thang mây”. Đây là chú giải của nguồn về thế chiếu này, chưa xác định chức vụ, thu nhập hoặc thành công thực tế của bạn.",
+    "sourceTemplate": "Về công danh, Tân Biên mô tả thế Thái Dương tại Tỵ và Thái Âm tại Dậu cùng chiếu Mệnh ở Sửu bằng hình ảnh “nhẹ bước thang mây”. Đây là chú giải của nguồn về thế chiếu này, chưa xác định chức vụ, thu nhập hoặc thành công thực tế của bạn.",
+    "sourceVersion": "1.0.0",
+    "strategy": "Giữ nguyên toàn văn Q-U42 đã duyệt; đặt Công việc/G2, căn cứ Mệnh riêng.",
+    "movedToEvidence": []
   }
 }

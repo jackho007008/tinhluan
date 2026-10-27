@@ -1,3 +1,4 @@
+import {CAREER_SUN_MOON_SUU} from '../interpretation-rules/career-sun-moon-suu';
 import {VTTL_NO_AM,VTTL_CAREER_FIRE} from '../interpretation-rules/vttl-root-batch';
 import {VTTL_PHUC_LIEM_SAT} from '../interpretation-rules/vttl-phuc-liem-sat';
 import {NPL_PHU326} from '../interpretation-rules/npl-spouse-vcd-lonely';
@@ -53,7 +54,7 @@ export function editCustomerTopics(sections:CustomerSection[],continuous:Continu
     continue;
    }
    const ids=ruleIds(p);
-   if(career){if(ids.includes(VTTL_CAREER_FIRE)){p.title='Diễn tiến công danh';continue;}if(ids.includes(VTTL_CAREER_CO_AM)){p.title='Tiến thân trong hoàn cảnh xáo động';continue;}p.title=ids.some(id=>['trungchau.move365','tanbien.r40','tanbien.career-void-tu-ngo','tanbien.career-ky-base','tanbien.career-ky-exception','tanbien.career-kinh-luc'].includes(id))?'Tiến trình và sự ổn định công việc':'Công việc và công danh';continue;}
+   if(career){if(ids.includes(CAREER_SUN_MOON_SUU)){p.title='Thế Nhật–Nguyệt chiếu Mệnh và công danh';continue;}if(ids.includes(VTTL_CAREER_FIRE)){p.title='Diễn tiến công danh';continue;}if(ids.includes(VTTL_CAREER_CO_AM)){p.title='Tiến thân trong hoàn cảnh xáo động';continue;}p.title=ids.some(id=>['trungchau.move365','tanbien.r40','tanbien.career-void-tu-ngo','tanbien.career-ky-base','tanbien.career-ky-exception','tanbien.career-kinh-luc'].includes(id))?'Tiến trình và sự ổn định công việc':'Công việc và công danh';continue;}
    const entry=continuous.financeAssets?.entries.find(e=>e.groupId===p.id);
    if(entry?.palace==='Điền Trạch'){
     const labels=[...new Set(ids.map(id=>propertyFacets[id]).filter(Boolean))];

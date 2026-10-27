@@ -1,3 +1,4 @@
+import { careerSunMoonSuuFacts } from './career-sun-moon-suu';
 import {tbFamilyPhucFacts} from './tb-family-phuc-clauses';
 import {vttlRootFacts} from './vttl-root-batch';
 import {vttlPhucLiemSatFacts} from './vttl-phuc-liem-sat';
@@ -133,7 +134,7 @@ export function deriveFacts(snapshot: ChartSnapshot): DerivedFact[] {
         p[f] = kept.map((x) => x.st);
       }
   });
-  const out: DerivedFact[] = emptyLifeFacts(snapshot);
+  const out: DerivedFact[] = [...emptyLifeFacts(snapshot), ...careerSunMoonSuuFacts(snapshot)];
   for (const spec of derivations) {
     const candidates = snapshot.chart.palaces
       .map((p, i) => ({ p, i }))

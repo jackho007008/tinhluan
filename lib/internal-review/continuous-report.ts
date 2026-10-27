@@ -1,3 +1,4 @@
+import {CAREER_SUN_MOON_SUU} from '../interpretation-rules/career-sun-moon-suu';
 import {TB_FAMILY_PHUC_IDS,TB_F01,TB_P02,TB_P03,TB_FAMILY_PHUC_COPY} from '../interpretation-rules/tb-family-phuc-clauses';
 import {VTTL_ROOT_IDS} from '../interpretation-rules/vttl-root-batch';
 import {VTTL_PHUC_LIEM_SAT} from '../interpretation-rules/vttl-phuc-liem-sat';
@@ -77,7 +78,7 @@ export function coordinate(palace:string, ps:Paragraph[]) {
 }
 // Append new semantic groups after existing groups, preserving old paragraph IDs and G2 membership.
 function paragraphOrder(p:Paragraph){
- if(p.claim.rules.some(r=>(TB_FAMILY_PHUC_IDS.includes(r.id)||VTTL_ROOT_IDS.includes(r.id)||r.id===VTTL_PHUC_LIEM_SAT||r.id===NPL_PHU326||r.id===VTTL_NO_LUONG||TRUNGCHAU_RULE_IDS.includes(r.id)||r.id===VTTL_DIEN_PHU||r.id===VTTL_CAREER_CO_AM||NPL_DIEN_SINGLE_IDS.includes(r.id))))return 2;
+ if(p.claim.rules.some(r=>(r.id===CAREER_SUN_MOON_SUU||TB_FAMILY_PHUC_IDS.includes(r.id)||VTTL_ROOT_IDS.includes(r.id)||r.id===VTTL_PHUC_LIEM_SAT||r.id===NPL_PHU326||r.id===VTTL_NO_LUONG||TRUNGCHAU_RULE_IDS.includes(r.id)||r.id===VTTL_DIEN_PHU||r.id===VTTL_CAREER_CO_AM||NPL_DIEN_SINGLE_IDS.includes(r.id))))return 2;
  return Number(p.claim.rules.some(r=>r.id.startsWith('tanbien.life-body-')||r.id.startsWith('npl.life-body-')||r.id.startsWith('npl.life-two-major-')||r.id.startsWith('npl.life-foundation-')));
 }
 function buildContinuousReportData(snapshot:ChartSnapshot,reading:Reading,verified:boolean){
