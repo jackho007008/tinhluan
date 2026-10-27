@@ -1,12 +1,14 @@
 # Tinh Luận — hợp đồng sản phẩm, nguồn và quyết định
 
-Cập nhật 20/10/2026. Đọc cùng [CURRENT_STATUS](CURRENT_STATUS.md) và backlog duy nhất [V1-DELIVERY-PLAN](V1-DELIVERY-PLAN.md). File này phân biệt quyết định chủ dự án, hành vi đang có, lựa chọn kỹ thuật và đề xuất; không phải một danh sách rule mới để tự triển khai.
+Cập nhật 27/10/2026. Đọc cùng [CURRENT_STATUS](CURRENT_STATUS.md) và backlog duy nhất [V1-DELIVERY-PLAN](V1-DELIVERY-PLAN.md). File này phân biệt quyết định chủ dự án, hành vi đang có, lựa chọn kỹ thuật và đề xuất; không phải một danh sách rule mới để tự triển khai.
 
 Căn cứ phân loại quyết định: [DECISIONS](DECISIONS.md) ghi lời chủ dự án theo từng gói, hồ sơ hỗ trợ và những mục chỉ có bằng chứng triển khai. Nhật ký assistant/code không tự là phê duyệt; chỗ chưa có xác nhận được đánh dấu riêng. Các mục1–8 dưới đây tương ứng Q01/Q02/Q05/Q06; bảo toàn lịch sử còn được yêu cầu trực tiếp trong G2 và các task nội dung.
 
 **Chỉ đạo21/10 nối80d9232:** dừng mở thêm sách; NPA120/DDSN898 giữ chưa đọc. Dùng kiến thức đã lưu để hoàn thiện báo cáo; chủ dự án và Codex thực hiện, không yêu cầu người thẩm định bên ngoài như cổng bắt buộc. Có lựa chọn phương pháp thì Codex trình phương án/căn cứ/tác động, không tự ghép hoặc chọn câu thắng. [Quyết định Q12](DECISIONS.md).
 
 **Ngoại lệ theo task23/10 đang có hiệu lực:** chủ dự án giao đọc đủ ba PDF ToànThư/TứHóaPhái1–2 và triển khai phần đủ căn cứ trong phạm vi đã duyệt. Điều này thay lệnh dừng mở sách phía trên chỉ với ba PDF; phương pháp độc lập cần đặc tả/văn mẫu để quyết định, chưa tự trộn vào catalog. N1–N13, Tật chưa publish, G2/lịch sử/quyền/hạn/Livefalse giữ. [Quyết định và giới hạn](DECISIONS.md#23102026--giao-đọc-ba-sách-mới-và-triển-khai-phần-đủ-căn-cứ).
+
+**Chốt27/10/2026:** [K12/T1/Q-U42/Q-ND02](DECISIONS.md#scope-k12-t1-u42-nd02-20261027) đã được chủ dự án duyệt. [Câu hỏi nghiệm thu12chủ đề+tổng quan](PRODUCT-SCOPE-D-REVIEW.md#k12-customer-questions-20261027) cụ thể hóa phương diện bắt buộc, không thêm tổng hợp mọi sao/tốt–xấu toàn cung/tài sản ròng. S1/S2/S3/S5/S9 tiếp tục chưa xuất; N4/N13 chờ nghĩa, N11/N12 giữ. T1 là chú giải cấu trúc theo nguồn, không đánh giá sức khỏe; hai mẫuTật chưa được duyệt xuất. Q-U42 đúng nhánh đã được phép; Q-ND02 đúng ba nhóm ngữ cảnh đã được duyệt nhưng việc thực thi quyền phải theo phiên bản mới, không tác động lịch sử. Không hỏi lại cùng quyết định. Hàng đợi và trạng thái thực hiện ở backlog, không dùng quyết định loại để ghi giảm469.
 
 ## 1. Mục tiêu và những điều đã được chủ dự án chốt
 
@@ -41,15 +43,15 @@ Căn cứ phân loại quyết định: [DECISIONS](DECISIONS.md) ghi lời ch�
 - Cổng bảo thủ khi chưa biết cách điều chỉnh không có nghĩa sách yêu cầu “không có sao đó”. Ví dụ Phụ Mẫu §5.2.30 yêu cầu xét lại giàu/nghèo dưới Tuần/Triệt; chưa có phép đổi đúng từng lời nên hệ thống giữ nhánh chưa xác định. Không suy thành mọi quan hệ cha mẹ đều bị đảo. Lô1.64 đã tách34nhánh vế độc lập và gỡ cổng mộtTT cho nguồn gốcĐiềnVCD; phần giàu/nghèo/sang/hèn chưa có bảng đảo vẫn giữ, xem PHU-HUYNH/NO-DIEN.
 - Việc từng chặn mọi trường hợp Nô có hai chính tinh hoặc chặn Vũ–Tham/Huynh do chữ “sau” là giới hạn cũ của dự án. Các phần đã được chứng minh và thay trong 1.52/1.53 không được thread mới phục hồi nhầm thành điều kiện sách.
 
-### Đề xuất còn chờ duyệt
+### Quyết định phạm vi và phần chưa thực thi
 
-- ND02: mở nguyên ba nhóm vai trò Mệnh–Thân vào miễn phí, giữ hai nhóm Thân cư Quan/Tài ở chủ đề chi tiết. **Chưa đổi G2**; không dùng file này làm ủy quyền đổi policy.
-- Định dạng cụ thể và hai mẫu Tật Ách dưới đây; danh sách loại trừ rộng hơn các cấm rõ ràng của chủ dự án; tiêu chí nghiệm thu luận Tật cá nhân.
+- ND02 đã được duyệt27/10: mở nguyên ba nhóm vai trò Mệnh–Thân/cùng tam hợp/khác tam hợp vào miễn phí cho bản mới, giữ hai nhóm Thân cư Quan/Tài trả phí. **Policy hiện hành chưa thực thi quyết định này**; không sửa bản lưu/quyền-hạn cũ. Không còn chờ quyết định phạm vi.
+- Hai mẫu Tật Ách dưới đây vẫn chưa duyệt xuất. Chuẩn loại nội dung T1 đã được chấp nhận27/10; mỗi nhánh còn phải đủ điều kiện và giữ giới hạn, không coi T1 là phê duyệt hai mẫu hoặc đánh giá sức khỏe.
 - Không có quyết định giá/hạn thương mại, mở Live, hoặc chuyển beta thành phát hành trả phí.
 
 ### Quyết định mới nhất về Tật Ách
 
-Chủ dự án **đồng ý hướng “chú giải truyền thống theo cấu trúc” để tiếp tục thẩm định**. Đây **không phải**:
+Chủ dự án **chấp nhận T1 “chú giải truyền thống theo cấu trúc lá số” ngày27/10**, không phải đánh giá sức khỏe cá nhân. Độ trung thành với văn bản không chứng minh câu nguồn đúng ngoài đời. Đây **không phải**:
 
 - duyệt nội dung hai mẫu;
 - cho phép publish hoặc thêm rule Tật Ách;

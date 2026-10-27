@@ -277,3 +277,18 @@ Giữ điều kiện dữ liệu/tậpconDần/cổngTT/Khúc, tách điều ki�
 **U trực tiếp:** U24ba mẫu đã nghiệmthu; không mở lạiU08/U24/bấtnhấtTB nếu không có bằngchứng mới, không ràU10/PhủNô hoặcU22/DiVCD khi chưa có bằngchứng giải đúng chặn. Dùngkhođãlưu, tốiđa3nhóm, chọn1nhómthiếukhảthi/tácđộnglớn; khôngchọnchỉchiềusâu khicónhómthiếukhảthi. Đúngphươngpháp/phạmviđãduyệt thìtriểnkhaiđếnQA; cầnnhánhnguồnmới thìhoàntấtđặctả/vănmẫu,trìnhđúngmộtquyếtđịnh; thiếucăn cứghimắtxíchkhônghạđiềukiện. Rulechung,giữđiềuchỉnhtrựctiếp,khôngđòigiảitoàncung; bảo toànG2/engine/lịch sử/quyền/hạn/QA3070/34bài/Livefalse/Tậtchưapublish.
 
 Bàn giao tách nội dung/toànvăn trước–sau, cung nhậnýđầutiên, phươngdiệnbắtbuộc thêm, chiều sâu, tổngkhóathiếucùngcáchđếm và một hànhđộng tiếp. [GóiU07/NPL260đượcchọn](V1-DELIVERY-PLAN.md#u07-followup-scope-20261025) có41cấutrúcđủdữkiện nhưng **chưa duyệt mở giới hạn sản phẩm1.36 từCơ–Cự sang chính tinh khác**. Đặc tả/văn mẫu không tự thành quyếtđịnh; hiện0đổiứngdụng/0giảmkhóa,535còn lại. Không xin lại quyềncoding/QA hoặc mởtoànnguồn.
+
+
+<a id="scope-k12-t1-u42-nd02-20261027"></a>
+## 27/10/2026 — chốt K12, loại nội dung, T1, Q-U42 và Q-ND02
+
+**Nguồn quyết định:** lời chủ dự án trong phiên nối tài liệu26e2759/app1.78/catalog1.74. Đây là quyết định đã chốt, không còn đề nghị chờ duyệt. [Chuẩn và hồ sơ](PRODUCT-SCOPE-D-REVIEW.md#scope-criteria-review-178-20261027), [hàng đợi duy nhất](V1-DELIVERY-PLAN.md#completion-queue-k12-20261027).
+
+- **K12:** duyệt bảng12chủ đề+tổng quan và bảy nguyên tắc nghiệm thu. Mỗi phương diện bắt buộc phải thành câu hỏi khách hàng cụ thể, có đầu ra/căn cứ để kiểm. Không thêm yêu cầu kết luận tốt–xấu toàn cung, phối hợp mọi sao hoặc tài sản ròng nếu nguồn không đòi. Một nhận định/notice không hoàn thành chủ đề; chưa có mẫu số hợp lệ thì không công bố phần trăm.
+- **S1/S2/S3/S5/S9:** tiếp tục chưa xuất. N4/N13 chờ nghĩa; N11/N12 giữ nguyên; N6/N7/N8 giữ đúng nhánh đã duyệt. Không dùng giới hạn một loại để chặn vế độc lập đã được phép và đủ điều kiện; không cắt điều chỉnh trực tiếp.
+- **T1:** chấp nhận hướng chú giải truyền thống theo cấu trúc lá số, không phải đánh giá sức khỏe cá nhân. Không suy bệnh, nguy cơ, tuổi thọ, tiên lượng/điều trị từ lá số; không đổi thuật ngữ bệnh thành tính cách để lách. Chưa duyệt xuất hai mẫuTật. Trung thành với nguồn tách khỏi bằng chứng đúng ngoài đời. Không tự publishTật.
+- **Q-U42:** duyệt đúng miền MệnhSửu có chính tinh/NhậtTỵ–ÂmDậu, bảngTânBiên/chứng nhận/unknown và văn đã đặc tả; chỉ vế công danh ở Công việc/G2, không mở nhánh khác hoặc yêu cầu giải toànLương.
+- **Q-ND02:** duyệt ba nhóm ngữ cảnh vai tròThân/cùng tam hợp/khác tam hợp vào Mệnh miễn phí; hai nhóm Công việc/Tài chính vẫn trả phí. Giữ nguyên nhóm/căn cứ/điều chỉnh; chỉ bản mới, không thay quyền/hạn hoặc bản lưu cũ. Quyết định đã chốt, không hỏi lại; chưa ưu tiên trước khoảng trống khả thi.
+- Ghi một hàng đợi trong backlog từ hồ sơ đã khép; phân biệt thiếu bắt buộc, ngoài phạm vi, tùy chọn, chưa đủ bằng chứng. Giữ nguyên sổ469lịch sử; đổi loại không phải đã giải, không cộng khóa/phương diện/dấu giới hạn. Ưu tiên gói bắt buộc đủ đặc tả dùng chung; được coding/kiểm/tích hợpQA khi đủ, không xin lại quyền. Không mở lại cuộc rà toàn nguồn.
+
+Giữ engine/lịch sử/quyền-hạn/QA3070/34bài, G2 và Live tắt. Việc ghi phê duyệt Q-ND02 không đồng nghĩa policy đã đổi; trạng thái thực thi phải có bằng chứng riêng trong backlog.

@@ -1,5 +1,19 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành 27/10 — K12 đã chốt; U42 đạt QA1.79, còn469 khóa gốc
+
+**Code `22bb53e`, app1.79/catalog1.75, compatibility0.13.** QA3062 đã tích hợp;494 tệp root/checkout khớp, một worker. [Quyết định đã chốt](DECISIONS.md#scope-k12-t1-u42-nd02-20261027), [hàng đợi duy nhất](V1-DELIVERY-PLAN.md#completion-queue-k12-20261027), [câu hỏi khách và bằng chứng K12](PRODUCT-SCOPE-D-REVIEW.md#k12-customer-questions-20261027). S1/S2/S3/S5/S9 tiếp tục chưa xuất; N4/N13 chờ nghĩa, N11/N12 giữ, N6/N7/N8 đúng nhánh cũ. **ND02 đã duyệt, chưa thực thi; không hỏi lại.**
+
+**Giảm0 khóa gốc, giữ469.** U42 thêm **một loại phương diện Q3 về mức công danh trên hai hồ sơ116/123**; hai ô bắt buộc được trả lời, không phải hai loại câu hỏi mới. Trước chỉ có tổ chức/thao lược; sau giữ lời cũ và thêm đúng văn đã duyệt. Không có cung nhận lời đầu tiên, không gọi hoàn chỉnh Mệnh/Quan hoặc báo cáo. So192 chỉ hai báo cáo đổi văn; metadata/rule/trace/fact mới có trên mọi lần tính mới. Hai liên kết finance `unclassified` không phải luận thu/chi/nhà đất. [Toàn văn pipeline và bản lưu thực tế](../.local/completion-queue-178-20261027/stored-full-before-after.txt), [so192](../.local/completion-queue-178-20261027/impact192.json).
+
+Kiểm liên quan57/57; phần căn cứ cuối17/17; typecheck/build cuối đạt. G2/PDF12/12 ở DB riêng; sau đăng ký phân trang1.79 kiểm riêng PDF6/6. Engine116 qua form–lưu–mở/mobile360/390; PDF cuối9 trang đủ21 đoạn, mục lục có dữ liệu, vế mới ở trang5. QA3062 kiểm116 qua form và123 qua API cùng đường, hai frozen mới mở lại khớp pipeline, G2/403/404 đạt; không order/mock trên main. [Lỗi và từng lượt](../.local/completion-queue-178-20261027/verification-notes.json).
+
+276 tệp đầu phiên và4 hồ sơ archive/bản sao giữ hash, không mất/đổi;5 tệp mới được sao lưu. Trong đó có một bản1.78 xuất hiện trước tích hợp, chưa xác minh caller, không tính vào hai bản nghiệm thu. Quyền/hạn, liên kết,34 bài,6 tệp trong lib/tuvi-engine và QA3070 web/worker giữ nguyên; Live tắt, Tật chưa publish,3100 đã dừng. [Bảo toàn](../.local/completion-queue-178-20261027/preservation-final.json), [runtime](../.local/completion-queue-178-20261027/serving-code.json), [thời gian](../.local/completion-queue-178-20261027/session.json).
+
+Hàng đợi tách phần bắt buộc, ngoài phạm vi, tùy chọn và chưa đủ bằng chứng. Không trừ85C vì đổi loại; không ép192 Tật vào một nguyên nhân. Hồ sơ chưa chứng minh tập con đủ T1+đặc tả để xuất; không dùng miễn trừ thay điều kiện hoặc đòi giải toàn cung. Cuộc rà907abca vẫn khép.
+
+**Bước kế tiếp duy nhất:** bảng vị trí TT tại Mệnh → đầu vào cột → ô Nô → quan hệ trợ giúp, trên tập con ô nguồn đã xác định/vắng TT tại Nô trong64 khóa kiểm soát. Chỉ dùng hồ sơ đã lưu; dừng ở quan hệ đầu tiên chưa có căn cứ, không hứa số giảm hoặc coding khi chưa đủ. Các mục dưới là lịch sử.
+
 ## Hiện hành 27/10 — bản duyệt phạm vi/tiêu chí, chưa thay sản phẩm
 
 **App1.78/catalog1.74/code `2e8758a`; còn469 khóa thiếu gốc.** Checkout đầu phiên `main@ca1acb3`, tracked/index sạch, giữ thư mục Bửu Đình chưa theo dõi; mã ứng dụng không khác code đã nghiệm thu. Không kiểm lại runtime/DB/HTTP hoặc nghiệm thu ứng dụng. Cuộc rà907abca vẫn khép.

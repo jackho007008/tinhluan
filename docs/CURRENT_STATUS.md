@@ -1,5 +1,15 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Hiện hành 27/10 — app1.79/catalog1.75; K12 đã chốt,469 gốc giữ nguyên
+
+Code `22bb53e`, QA3062 đã tích hợp và kiểm hai bản lưu mới. [Hàng đợi hoàn thiện](V1-DELIVERY-PLAN.md#completion-queue-k12-20261027), [quyết định](DECISIONS.md#scope-k12-t1-u42-nd02-20261027), [câu hỏi/bằng chứng K12](PRODUCT-SCOPE-D-REVIEW.md#k12-customer-questions-20261027). K12/T1/Q-U42/Q-ND02 đã duyệt; S1/S2/S3/S5/S9 chưa xuất, N4/N13 chờ nghĩa, N11/N12 giữ. ND02 chưa thực thi, không xin lại quyết định.
+
+**U42:0 khóa gốc giảm, còn469; một loại phương diện công danh Q3 được bổ sung trên116/123 (hai ô bắt buộc),0 chỉ chiều sâu.** Không có cung nhận lời đầu tiên. Lời tổ chức/thao lược cũ giữ nguyên. So192 chỉ hai báo cáo đổi văn, không sửa/rút lời hoặc thêm unknown; hai liên kết finance `unclassified` và metadata mới không thành luận tài chính hoặc đổi quyền. [Toàn văn trước/sau bản lưu thật](../.local/completion-queue-178-20261027/stored-full-before-after.txt).
+
+Kiểm liên quan57/57, căn cứ cuối17/17, typecheck/build cuối đạt; G2/PDF12/12 ở DB riêng và lượt PDF cuối6/6. Engine116 qua lưu–mở/mobile360/390/PDF thật9 trang đủ21 đoạn, mục lục có dữ liệu. QA chính kiểm hai bản mới, không mock/order.276 tệp cũ và4 archive/bản sao nguyên hash;5 tệp mới được sao lưu, gồm một bản1.78 trước tích hợp chưa rõ caller. Quyền/hạn, engine, QA3070 và34 bài giữ; Live tắt, Tật chưa publish;3100 đã dừng. [Kiểm/bảo toàn/thời gian](../.local/completion-queue-178-20261027/session.json).
+
+Sổ469, phương diện bắt buộc và marker giữ riêng; chưa có mẫu số nghiệm thu toàn miền, không công bố phần trăm.192 Tật chưa có tập con được chứng minh đủ T1+đặc tả, không chỉ chờ duyệt. Nguồn đã rà vẫn khép. Tiếp đúng bước bảng TT tại Mệnh → cột/ô Nô trong hàng đợi, với đầu ra và điểm dừng; không đọc sách lại hoặc chuyển sang ND02 chỉ vì dễ. Các mục dưới là lịch sử.
+
 ## Hiện hành 27/10 — chờ quyết định phạm vi và chuẩn nội dung
 
 Giữ **app1.78/catalog1.74/code `2e8758a`,469 khóa thiếu gốc**. Xác minh checkout/source từ bàn giao `ca1acb3`; không kiểm lại runtime/DB/HTTP. [Bản duyệt duy nhất](PRODUCT-SCOPE-D-REVIEW.md#scope-criteria-review-178-20261027), [backlog](V1-DELIVERY-PLAN.md#product-scope-acceptance-178-20261027).

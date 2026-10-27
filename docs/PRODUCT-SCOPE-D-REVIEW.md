@@ -1,11 +1,11 @@
 # Bản duyệt phạm vi và tiêu chí báo cáo đầy đủ
 
 <a id="scope-criteria-review-178-20261027"></a>
-**Đề xuất ngày 27/10/2026 — chưa phải quyết định được áp dụng.** Baseline `ca1acb3`, app1.78/catalog1.74/code`2e8758a`, còn **469 khóa thiếu gốc**. Phiên này chỉ chuẩn bị một lần quyết định; không sửa quy tắc, nội dung khách, quyền, QA hoặc tiêu chí hiện hành. Cuộc rà nguồn đã khép tại907abca; không mở lại sách hoặc checkpoint48.
+**Đã được chủ dự án chốt27/10/2026, nối26e2759.** [Quyết định chính thức](DECISIONS.md#scope-k12-t1-u42-nd02-20261027). K12/T1/Q-U42/Q-ND02 đã duyệt; S1/S2/S3/S5/S9 tiếp tục chưa xuất, N4/N13 chờ nghĩa, N11/N12 giữ. Hai mẫuTật chưa duyệt xuất. Phần nguồn và số85 dưới đây kế thừa bản duyệt, không rà sách lại. [Hàng đợi thực thi duy nhất](V1-DELIVERY-PLAN.md#completion-queue-k12-20261027) ghi kết quả và bản ứng dụng sau nghiệm thu; **469khóa lịch sử không đổi chỉ vì phân loại lại**.
 
-Bản duyệt có ba phần chính cần chốt: **chuẩn nội dung 12 chủ đề và tổng quan; loại nội dung định lượng/lời khuyên có được phục vụ; chuẩn nội dung Tật Ách riêng**. Toàn văn đại diện nằm ngay trong tài liệu này. [Backlog duy nhất](V1-DELIVERY-PLAN.md#product-scope-acceptance-178-20261027) giữ đầu mối, không tạo kế hoạch triển khai song song.
+Bản duyệt lưu ba phần chính đã được chốt: **chuẩn nội dung 12 chủ đề và tổng quan; loại nội dung định lượng/lời khuyên có được phục vụ; chuẩn nội dung Tật Ách riêng**. Toàn văn đại diện nằm ngay trong tài liệu này. [Backlog duy nhất](V1-DELIVERY-PLAN.md#product-scope-acceptance-178-20261027) giữ đầu mối, không tạo kế hoạch triển khai song song.
 
-**Đề nghị:** dùng câu hỏi và phương diện khách cần được trả lời để nghiệm thu, giữ số lượng/thứ bậc/giới tính/số lần hôn nhân/lời khuyên là phần bổ sung có giới hạn, không dùng chúng thay lời về quan hệ. Tiếp tục giữ các loại đang tạm chưa xuất nếu chưa có quyết định mở cụ thể. Không mở bệnh/sinh tử/phẩm hạnh; không dùng thông báo thiếu hoặc trích đoạn chưa áp dụng để gọi một chủ đề hoàn chỉnh. Bảng quyết định cuối tài liệu cho phép chốt riêng từng loại trong cùng một lần trả lời, đồng thời gom lại hai quyết định U42/ND02 đã chờ từ cuộc rà; không tạo yêu cầu rà hoặc triển khai mới.
+**Theo quyết định27/10:** dùng câu hỏi và phương diện khách cần được trả lời để nghiệm thu; số lượng/thứ bậc/giới tính/số lần hôn nhân/lời khuyên tiếp tục chưa xuất, không dùng chúng thay lời về quan hệ. Không mở bệnh/sinh tử/phẩm hạnh; không dùng thông báo thiếu hoặc trích đoạn chưa áp dụng để gọi một chủ đề hoàn chỉnh. Quyết định từng loại và U42/ND02 đã được ghi ở§5; không xin chốt lại cùng phạm vi.
 
 ## 1. Đối soát 85 khóa ngoài Tật
 
@@ -139,13 +139,13 @@ Hai chứng kiến engine116/123 đều đã có lời Công việc; **0 khóa g
 
 **Q-ND02 — chỉ phân phối nội dung Mệnh–Thân đã có.** Đề nghị trước đó là mở nguyên ba nhóm vai trò Thân/cùng tam hợp/khác tam hợp (`tanbien.life-body-role/same-trine/other-trine`) vào phần Mệnh miễn phí; giữ hai nhóm Thân–Công việc/Thân–Tài chính (`npl.life-body-career/wealth`) ở chủ đề trả phí. Giữ nguyên toàn văn/claim/quan hệ/căn cứ/điều chỉnh, không cắt nhóm giao thoa để lộ lời khóa. Đây **không phải loại nội dung mới**, không có văn khách mới để duyệt; năm nhóm đã có bản full. **0 khóa gốc,0 nhận định mới**;21nhóm/9mẫu là chứng cứ phân phối cũ, không phải21phần thiếu. Phiên này vẫn giữ phân phốiG2 hiện hành, không backfill hoặc đổi quyền/hạn. Giữ cả hai quyết định ở đây để chủ dự án không phải mở thêm một bảng duyệt; không đưa U35 còn thiếu bằng chứng thành lựa chọn phạm vi.
 
-## 3. Tiêu chí nội dung đề xuất cho báo cáo đầy đủ
+## 3. Tiêu chí nội dung K12 đã được duyệt
 
 ### Phần đã chốt và phần đang xin cụ thể hóa
 
-[Q01](DECISIONS.md#q01--mục-tiêu-đủ-12-cung-beta-và-điều-kiện-mở-bán) và [BUSINESS_RULES§1/§7](BUSINESS_RULES.md) đã giữ mục tiêu báo cáo cá nhân đầy đủ12 chủ đề, có giá trị trả phí; beta chỉ luận phần đã triển khai. Chưa có danh mục phương diện bắt buộc chi tiết đã được duyệt. **Bảng dưới là đề xuất cụ thể hóa**, không tự trở thành tiêu chí hiện hành, không dùng để xóa469 khóa hoặc tính lại tỷ lệ hoàn thành.
+[Q01](DECISIONS.md#q01--mục-tiêu-đủ-12-cung-beta-và-điều-kiện-mở-bán) và [BUSINESS_RULES§1/§7](BUSINESS_RULES.md) đã giữ mục tiêu báo cáo cá nhân đầy đủ12 chủ đề, có giá trị trả phí; beta chỉ luận phần đã triển khai. **Chủ dự án đã duyệt bảng dưới cùng bảy nguyên tắc27/10.** Câu hỏi và bằng chứng nghiệm thu cụ thể nằm ngay sau bảng. Không dùng việc duyệt để xóa469khóa hoặc tính phần trăm khi chưa có mẫu số hợp lệ.
 
-Đề nghị dùng cùng quy tắc nghiệm thu cho mọi chủ đề:
+Dùng cùng bảy nguyên tắc nghiệm thu đã duyệt cho mọi chủ đề:
 
 1. **Có câu trả lời có nội dung cho câu hỏi chính**, theo phương diện bắt buộc đã duyệt và đúng đối tượng. Tên cung, danh sách sao, văn chung, thông báo thiếu hay trích đoạn có kết quả chưa áp dụng không thay câu trả lời.
 2. **Mỗi phương diện có nhận định áp dụng được và căn cứ truy vết**, hoặc có bằng chứng rõ rằng một điều kiện riêng không áp dụng. “Chưa tìm nguồn/chưa có code/chưa giải ngoại lệ/ngoài quyền xem” không được đổi thành “không áp dụng”. Nếu mọi phần chỉ là không áp dụng hoặc unknown, chủ đề vẫn chưa có câu trả lời đủ để gọi hoàn thành.
@@ -157,9 +157,9 @@ Hai chứng kiến engine116/123 đều đã có lời Công việc; **0 khóa g
 
 ### Bảng 12 chủ đề và tổng quan
 
-“Bắt buộc” dưới đây là phương diện đề nghị cho chủ dự án duyệt; thực hiện theo điều kiện của nguồn ở từng hồ sơ, không bắt mỗi cung phải có mọi câu trong sách. Phần hiện chưa đáp ứng kế thừa cuộc rà và lô1.78; **số có lời không phải số hoàn thành**. Chưa ánh xạ lại mọi hồ sơ theo tiêu chí chưa được duyệt.
+“Bắt buộc” dưới đây là phương diện đã được chủ dự án duyệt; thực hiện theo điều kiện của nguồn ở từng hồ sơ, không bắt mỗi cung phải có mọi câu trong sách. Phần hiện chưa đáp ứng kế thừa cuộc rà và lô1.78; **số có lời không phải số hoàn thành**. Chưa ánh xạ xong mọi hồ sơ thành mẫu số phương diện bắt buộc; hàng đợi giữ rõ phần đã chứng minh và phần chưa đủ bằng chứng.
 
-| Chủ đề và câu hỏi chính | Phương diện bắt buộc đề xuất | Chỉ thêm chiều sâu khi không có điều chỉnh trực tiếp | Điều kiện hoàn thành và phần hiện còn thiếu |
+| Chủ đề và câu hỏi chính | Phương diện bắt buộc đã duyệt | Chỉ thêm chiều sâu khi không có điều chỉnh trực tiếp | Điều kiện hoàn thành và phần hiện còn thiếu |
 |---|---|---|---|
 | **Tổng quan** — Bức tranh nào nổi bật, do những cấu trúc nào và giới hạn gì? | Tóm tắt các nhận định đã áp dụng theo đúng chủ đề/điều kiện; nối tới căn cứ; phân biệt nội dung đã có, còn thiếu và giới hạn quyền. | Thêm thuật ngữ, ví dụ, lời giải thích lặp hoặc diễn đạt dài hơn. | Không tạo tính cách/số phận chung ngoài nguồn, không biến lời riêng thành dự báo toàn đời. Chỉ hoàn thành khi phản ánh trung thực các chủ đề đã đủ; không dùng phần tổng quan để che469 khóa hoặc gọi12 cung đã đủ. Chưa có chuẩn tổng quan mới được nghiệm thu. |
 | **Mệnh** — Cấu trúc bản mệnh gợi những khuynh hướng hành động/biểu đạt gì? | Nền mô tả theo cấu trúc; cách hành động/biểu đạt khi có điều kiện; âm dương/ngũ hành và vai trò Mệnh–Thân trong đúng phép đã có; điều chỉnh trực tiếp. | Thêm câu đồng nghĩa, thuật ngữ cách/cục không đổi ý đã có, ví dụ kỹ hơn. | Không đòi một phán quyết tốt–xấu chung.192 có thành phần,0khóa gốc, nhưng còn sao chiếuVCD, can/tổ hợp, các ô ngũ hànhU35/U36 và M06 chưa đủ điều kiện. Không gán tình trạng0gốc thành hoàn chỉnhMệnh. |
@@ -175,9 +175,32 @@ Hai chứng kiến engine116/123 đều đã có lời Công việc; **0 khóa g
 | **Phu Thê** — Tương tác, hòa hợp/xung khắc và điều kiện chung sống được mô tả thế nào? | Mô tả quan hệ/đối tượng đúng nguồn; sự hòa hợp, trở ngại hoặc diễn tiến; giữ điều kiện muộn/nếu/mới và giới hạn “chưa đủ kết luận chia ly”. | Số lần hôn nhân nếu được mở; thêm thuật ngữ/nguồn đồng nghĩa; không xác nhận hôn nhân thực tế. | Không suy ly hôn/góa/ngoại tình/phẩm hạnh.148có thành phần,44gốc:11C,30D,3chưa có câu phù hợp trong phần đã rà. BaPhuVCD/NPL326 đã nghiệm thu không giải nghĩa“đơn thủ”mọi cấu trúc. |
 | **Huynh Đệ** — Quan hệ, trợ giúp và gần–xa/phân tán giữa anh chị em ra sao? | Tính chất quan hệ/trợ giúp; gần–xa/diễn tiến khi nguồn nêu; đúng đối tượng và điều kiện của mệnh đề. | Số người/thứ bậc/giới tính hoặc ghi chú lời khuyên nếu được mở; không thay một mệnh đề quan hệ. | Không đổi “nên ở riêng” thành chắc xa cách.152có thành phần,40gốc:28C và12D(VCD/chuỗi quan hệ). Liêm–Phá162không có vế bất hòa độc lập để phục hồi; không lấy lời bệnh/bần cùng làm câu quan hệ. |
 
-**Cách kiểm sau khi tiêu chí được duyệt:** ánh xạ các nhận định/căn cứ đã có vào phương diện được duyệt, giữ trạng thái “đã trả lời/thiếu điều kiện/thiếu nội dung” theo từng chủ đề. Tái dùng sổ và dữ liệu đã lưu; không tái đọc sách. Chưa có số chủ đề hoàn chỉnh hoặc tổng phương diện bắt buộc còn thiếu được đo theo bảng đề xuất này; không suy từ469,306dấu lịch sử hoặc số paragraph.
+**Cách kiểm theo tiêu chí đã duyệt:** ánh xạ các nhận định/căn cứ đã có vào phương diện được duyệt, giữ trạng thái “đã trả lời/thiếu điều kiện/thiếu nội dung” theo từng chủ đề. Tái dùng sổ và dữ liệu đã lưu; không tái đọc sách. Chưa có số chủ đề hoàn chỉnh hoặc tổng phương diện bắt buộc còn thiếu được đo theo K12 này; không suy từ469,306dấu lịch sử hoặc số paragraph.
 
 Giữ riêng ba phép đo sau quyết định: **khóa thiếu gốc theo cách đếm hiện hành; phương diện bắt buộc chưa được trả lời; phần chỉ bổ sung chiều sâu**. Một lời thuộc loại mới được mở có thể được kiểm như nhận định đầu tiên, nhưng không tự làm chủ đề đạt. Không xóa khóa hiện hành chỉ bằng việc đổi nhãn nội dung thành tùy chọn, và không cộng các phương diện/giới hạn với469 thành một mẫu số mới.
+
+<a id="k12-customer-questions-20261027"></a>
+### Câu hỏi khách hàng và bằng chứng đầu ra cho từng phương diện bắt buộc
+
+Đây là cách diễn đạt/kiểm bảng K12 đã duyệt, không thêm phương diện. Mỗi câu chỉ được trả lời khi đúng chủ thể/điều kiện nguồn; không bắt mọi sao phải có kết luận hoặc gọi thiếu nguồn là không áp dụng. Bằng chứng gồm paragraph toàn văn+bộ claim/điều kiện/nguồn và trạng thái dữ liệu; nghiệm thu kỹ thuật không chứng minh sự kiện hay sức khỏe ngoài đời.
+
+| Chủ đề | Câu hỏi cụ thể của khách hàng | Bằng chứng đầu ra cần kiểm |
+|---|---|---|
+| Tổng quan | TQ1: Những nhận định nào nổi bật trong bản của tôi? TQ2: Chúng dựa trên cấu trúc/điều kiện nào, và phần nào còn chưa được trả lời hoặc ngoài quyền xem? | Tóm tắt nối tới đúng đoạn đang áp dụng, không thêm kết luận; nêu thiếu/giới hạn quyền đúng phạm vi. Không gọi đủ12khi các chủ đề chưa đạt. |
+| Mệnh | M1: Nguồn mô tả khuynh hướng hành động/biểu đạt của cấu trúc tôi thế nào? M2: Âm dương/ngũ hành có ý nghĩa gì trong đúng phép đang áp dụng? M3: Vai trò và quan hệ Mệnh–Thân được hiểu thế nào? | Paragraph cùng fact cấu trúc, bảng/chiều hành/phương pháp; giữ điều chỉnh trực tiếp và nguồn riêng. M3 kiểm bản full hiện có; việc mở miễn phí là Q-ND02, không phải thiếu nội dung. |
+| Phụ Mẫu | PM1: Nguồn nói gì về quan hệ cha mẹ với nhau? PM2: Quan hệ cha mẹ–con ra sao? PM3: Hoàn cảnh vật chất/vị thế, thừa hưởng/tiêu tán được mô tả thế nào khi câu đang áp dụng có phương diện ấy? | Các đối tượng quan hệ được giữ riêng; paragraph vật chất/vị thế có điều kiện/TT đúng đích. Không lấy hòa thuận thay khá giả hoặc cần kết luận tài sản ròng. |
+| Phúc Đức | P1: Cấu trúc này được mô tả thế nào về hưởng phúc theo nghĩa nguồn? P2: Quan hệ/hoàn cảnh và phân tán họ hàng ra sao? | Đoạn hưởng phúc và quan hệ/phân tán riêng khi có điều kiện; có cứu/tác trực tiếp. Không dùng vế họ hàng thay hưởng phúc, không mở bệnh/sinh tử/phẩm hạnh. |
+| Điền Trạch | D1: Nguồn gốc nhà đất được mô tả là thừa hưởng hay tự tạo? D2: Việc tạo lập và duy trì biến chuyển thế nào? | Đúng vế nguồn gốc/tạo/giữ, thời đoạn/TT trực tiếp nếu liên quan; không bắt kết luận giá trị, số lượng hoặc tài sản ròng. Quy mô chỉ sâu thêm nếu không điều chỉnh trực tiếp. |
+| Quan Lộc | Q1: Cách làm việc/khuynh hướng công việc được mô tả thế nào? Q2: Tiến trình và sự ổn định ra sao? Q3: Khi câu nguồn phù hợp có vế mức công danh, vế ấy nói gì? | Paragraph công việc/tiến trình/mức công danh đúng điều kiện; không dùng khả năng tổ chức trả lời Q3. Không cần tổng hợp toànMệnh hoặc đo chức vụ/thu nhập/tuổi thật.116/123 là hai Q3 thiếu đã chứng minh bằng cache1.78. |
+| Nô Bộc | N1: Nguồn nói gì về quan hệ và sự trợ giúp qua lại? N2: Thuận–khó và khả năng duy trì/diễn tiến trợ giúp ra sao khi nguồn nêu? | Đúng chủ thể bạn bè/người phụ giúp; ô Mệnh–Nô/câu riêng và TT theo nguồn, giữ đủ thời đoạn. Một câu số người không thay chất lượng/duy trì. |
+| Thiên Di | DI1: Ra ngoài môi trường quen thuộc được nguồn mô tả thuận–khó thế nào? DI2: Sự hỗ trợ, cạnh tranh hoặc trở ngại nào có căn cứ? | Câu đúng chi/vị trí và phương diện, giữ phần tài lộc/nghề nếu không thể tách. Không thành khuyên di cư/đầu tư hoặc lời thay toànQuan/Tài. |
+| Tật Ách | T1a: Văn bản truyền thống mô tả cấu trúc này bằng mệnh đề nào? T1b: Điều kiện/điều chỉnh trực tiếp và giới hạn áp dụng của mệnh đề đó là gì? | Chú giải cấu trúc đủ nghĩa/điều kiện, không khẳng định sức khỏe. Tách kiểm trung thành nguồn với bằng chứng đúng ngoài đời; một trích dẫn/notice/miễn trừ không đủ. Hai mẫu chưa duyệt và nhánh chưa đủ điều kiện không đạt. |
+| Tài Bạch | TA1: Nguồn thu/tạo tiền được mô tả ra sao? TA2: Tích lũy và giữ tiền thế nào? TA3: Chi tiêu của tôi được mô tả thế nào trong đúng phạm vi nguồn? | Đoạn thu/giữ/chi riêng theo điều kiện, ranh giới Quan/Điền rõ. Không bù trừ thành tài sản ròng;134cóchi vẫn chưa trả lời phần thu/giữ. |
+| Tử Nữ | TU1: Nguồn mô tả điều gì về con/diễn tiến trong các loại đã duyệt? TU2: Quan hệ cha mẹ–con được mô tả thế nào? TU3: Điều kiện đối tượng/sinh–nuôi/sớm–muộn nào giới hạn đúng vế đó? | Đoạn đúng chủ thể có điều kiện; không dùng chi của đương số lấp TU1/TU2. Không đếm thiếu số con/giới tính đang ngoài phạm vi thành việc phải mở; cũng không bỏ điều kiện của câu ghép. |
+| Phu Thê | PH1: Tương tác, hòa hợp hoặc trở ngại trong quan hệ được mô tả thế nào? PH2: Diễn tiến/điều kiện chung sống nào đi cùng nhận định? | Giữ muộn/nếu/mới và đối tượng; NPL326 giữ “riêng nhận định này chưa đủ kết luận chia ly”. Không xác nhận hôn nhân thực tế hoặc dùng số lần/phẩm hạnh thay quan hệ. |
+| Huynh Đệ | H1: Quan hệ và sự trợ giúp giữa anh chị em được nguồn mô tả thế nào? H2: Gần–xa/phân tán và diễn tiến ra sao khi câu nguồn nêu? | Đúng đối tượng/điều kiện, không biến lời khuyên ở riêng thành dự báo xa cách. Số người/thứ bậc/giới tính vẫn chưa xuất, không phải câu trả lời thay quan hệ. |
+
+Không suy các câu hỏi trên thành danh sách mệnh đề bắt buộc cho mọi cấu trúc. Chỉ ghi phương diện thiếu khi câu hỏi thuộc K12 và chưa có đầu ra trả lời được; một notice nguồn có thể là giới hạn hợp lệ. Mẫu số nghiệm thu toàn miền chưa được đo, không công bố tỷ lệ.
 
 ## 4. Tật Ách là quyết định riêng
 
@@ -206,49 +229,33 @@ Cấu trúc engine43: Đồng–Cự tại Tật/Sửu, CựHóaQuyền, Tả/H�
 
 Cấu trúc engine83: Cơ–Âm tại Tật/Dần, ÂmHóaKhoa, ĐịaKhông và các yếu tố liên quan. Hồ sơ chưa nối được mức/đích cứu giải với đúng vế của Cơ–Âm. Có cấu trúc engine không chứng minh người đó có bệnh; đây không phải hai dự báo y khoa được thử nghiệm.
 
-### Chuẩn Tật đề nghị chốt
+### Chuẩn Tật T1 đã được chấp nhận
 
-**T1 đề nghị:** chấp nhận loại *chú giải văn bản theo cấu trúc cá nhân* là một dạng nội dung có thể phục vụ chủ đềTật, khi mệnh đề thật sự áp dụng đủ điều kiện đã được xác minh và giữ điều chỉnh trực tiếp. Có thể trích thuật ngữ cổ trong đúng ngữ cảnh của nguồn, **không chuyển thành khẳng định bệnh, nguy cơ, nặng/nhẹ/khỏi, tuổi thọ, tiên lượng hay điều trị của người đọc**. Không dùng mỗi lời trích chưa áp hoặc thông báo thiếu làm luận cá nhân đạt.
+**T1 đã chốt:** chấp nhận hướng nội dung *chú giải văn bản theo cấu trúc cá nhân* là một dạng nội dung có thể phục vụ chủ đềTật, khi mệnh đề thật sự áp dụng đủ điều kiện đã được xác minh và giữ điều chỉnh trực tiếp. Có thể trích thuật ngữ cổ trong đúng ngữ cảnh của nguồn, **không chuyển thành khẳng định bệnh, nguy cơ, nặng/nhẹ/khỏi, tuổi thọ, tiên lượng hay điều trị của người đọc**. Không dùng mỗi lời trích chưa áp hoặc thông báo thiếu làm luận cá nhân đạt.
 
-Đây là quyết định về **loại nội dung có thể được nghiệm thu**, không hỏi lại hướng thẩm định đã đồng ý. DuyệtT1 không duyệt hai mẫu trên, không chứng minh phép cứu/tác đã rõ, không publish hoặc ghi giảm192. Nếu không chấp nhận dạng nội dung này, giữTậtchưa có chuẩn nội dung đạt để phát hành; mục tiêu12chủ đề vẫn chưa đạt, không tự tuyên bố11chủ đề đã đủ.
+T1 là quyết định đã chốt về **loại nội dung có thể được nghiệm thu**. Quyết định này không duyệt hai mẫu trên, không chứng minh phép cứu/tác đã rõ, không tự publish hoặc ghi giảm192. Mục tiêu12chủ đề vẫn giữ; không tự tuyên bố11chủ đề đã đủ.
 
-## 5. Một bảng quyết định cần chốt cùng lúc
+## 5. Quyết định hiện hành — đã chốt27/10
 
-Có thể trả lời theo từng dòng, hoặc duyệt phần đề nghị và sửa rõ dòng khác. **Không trả lời không phải đồng ý.** Tất cả lựa chọn trong bảng chỉ trở thành phạm vi/tiêu chí sau lời chốt của chủ dự án; phiên này dừng ở bản duyệt.
-
-| Quyết định | Phần cụ thể cần chốt | Đề nghị của Codex và hệ quả |
+| Mục | Quyết định của chủ dự án | Trạng thái thực thi/giới hạn |
 |---|---|---|
-| **K12 — chuẩn nội dung** | Duyệt bảng12chủ đề+tổng quan và bảy nguyên tắc ở§3, hoặc sửa rõ phương diện. | **Đề nghị duyệt làm chuẩn nghiệm thu nội dung.** Không chấm lại số hoàn thành ngay; không đổi mục tiêu12cung, G2, miền phục vụ, lịch sử hoặc cổng mở bán. Cần ánh xạ sau quyết định mới biết mức thiếu theo chuẩn. |
-| **S1 — N1 số lượng** | Giữ chưa xuất; hoặc cho phục vụ đúng loại lời số lượng theo nguồn, giữ lượng từ/điều kiện/điều chỉnh và văn tương tự mẫuN1, không xác nhận số người thật. | **Đề nghị tiếp tục giữ ở giai đoạn hiện tại; nếu mở, chỉ là chiều sâu tùy chọn**, không thay quan hệ.70khóa liên quan nhưng0được hồ sơ xác nhận sẵn triển khai; chưa có số giảm chắc chắn. Không bỏ điều chỉnh trực tiếp để lấy lượng từ. |
-| **S2 — N2 thứ bậc/đầu lòng** | Giữ chưa xuất; hoặc chỉ cho thẩm định/phục vụ chú giải điều kiện nguyên vẹn như mẫuN2, kết quả chưa áp khi dữ kiện thiếu. | **Đề nghị giữ.** Hai vế đầu lòng và27Huynh không thành29lời cá nhân áp dụng được. Nếu chọn mở dạng chú giải, không tính chú giải unknown là hoàn thành hay tự thu thêm dữ liệu gia đình. |
-| **S3 — N3 giới tính/tỷ lệ** | Giữ chưa xuất; hoặc cho loại chú giải phép xét nguồn có giới hạn như mẫuN3 sau khi có đặc tả điều kiện, không xác nhận giới tính thực tế/khuyên sinh. | **Đề nghị giữ.**70là miền liên quan trùngN1, không70lời tỷ lệ đã đủ. Không dùng phê duyệt thay toán tử phối sao. |
-| **S5 — N5 số lần hôn nhân** | Giữ chưa xuất; hoặc cho loại lời đếm theo nguồn như mẫuN5, giữ khoảng số và vế đi kèm, không khẳng định tình trạng thật. | **Đề nghị giữ.**4khóa liên quan nhưng chưa có lô đầy đủ điều kiện; đặc biệt3Sát còn vế “tai ương”. Không cần mở số lần để xuất lời quan hệ độc lập vốn đã được phép. |
-| **S9 — N9 lời khuyên** | Giữ chưa xuất; hoặc chỉ cho dạng ghi chép lời khuyên của nguồn như mẫuN9, không biến thành lời khuyên hành động/dự báo của ứng dụng. | **Đề nghị giữ.**4khóa, chưa có4nhánh sẵn triển khai; nếu mở loại chú giải cũng không tính là lời quan hệ hoàn chỉnh. |
-| **T1 — chuẩn nội dung Tật** | Chốt loại chú giải theo cấu trúc đủ điều kiện ở§4 có thể tham gia nghiệm thuTật; hoặc giữ chưa chấp nhận dạng nội dung để xuất. | **Đề nghị chấp nhận chuẩnT1 với toàn bộ ranh giới trên, vẫn chưa publish.** Không duyệt hai mẫu hoặc giải192khóa bằng quyết định này; không thayN11 hay nghiệm thu12chủ đề bằng mỗi trích đoạn. |
-| **Q-U42 — quyết định còn chờ** | Duyệt đúng miền có chính tinh/văn/điều kiện ở§2; hoặc giữ gói1.29. Không mở thêm phương pháp. | **Có thể duyệt nhánh hẹp đã đặc tả**, nhưng xếp sau gói khả thi giảm thiếu gốc. Hai engine116/123,0gốc; chưa tính thành hai phương diện bắt buộc. Vẫn Công việc/G2. |
-| **Q-ND02 — quyết định còn chờ** | Mở nguyên ba nhóm Mệnh–Thân ngữ cảnh vào Mệnh miễn phí, giữ hai nhóm Công việc/Tài ởG2 như§2; hoặc giữ phân phối hiện tại. | **Đề nghị duyệt đúng phân phối ba nhóm đã có**, không thêm nội dung hoặc giảm thiếu gốc. Chỉ áp bản mới khi được giao triển khai; không đổi quyền/hạn lịch sử. |
+| K12 | Duyệt12chủ đề+tổng quan và bảy nguyên tắc. | Câu hỏi/bằng chứng cụ thể ở bảng dưới; không mặc định mọi dấu giới hạn là lỗi hoặc chấm hoàn thành theo số câu. |
+| S1/S2/S3/S5/S9 | Tiếp tục chưa xuất số lượng, thứ bậc, giới tính, số lần hôn nhân và lời khuyên. | Không triển khai các mẫu giữ trong§2; không dùng giới hạn này chặn vế độc lập đã được phép. N4/N13 chờ nghĩa; N11/N12 giữ; N6/N7/N8 đúng nhánh cũ. |
+| T1 | Chấp nhận chú giải truyền thống theo cấu trúc lá số, không đánh giá sức khỏe. | Hai mẫu chưa duyệt xuất; chưa có tập con được xác nhận đủ T1+đặc tả trong hồ sơ. Không suy bệnh/nguy cơ/tuổi thọ/tiên lượng/điều trị; không đổi nghĩa. |
+| Q-U42 | Duyệt đúng miền/điều kiện/văn đã đặc tả. | Đã nghiệm thuQA1.79/code22bb53e:1loại phương diện Q3 thêm ở116/123,2ô còn trống được trả lời;0khóa gốc giảm,không mở nhánh khác. Toàn văn/bản lưu và kiểm ở backlog. |
+| Q-ND02 | Duyệt ba nhóm ngữ cảnh Mệnh–Thân vào Mệnh miễn phí, hai nhóm Công việc/Tài giữ trả phí. | Đã chốt, chưa thực thi trong lôU42. Không hỏi lại, không đổi quyền/hạn/bản lưu cũ; nội dung full đã có nên không tính là nội dung bắt buộc còn trống. |
 
-**Không yêu cầu chốt lại:** N6/N7 giữ đúng nhánh đã duyệt; N8 giữ hai chú giải cũ; hướng nghiên cứuN10 đã có; N11/N12 tiếp tục loại. N4 vàN13 vẫn phải có bằng chứng nghĩa/tách câu trước khi có đề nghị xuất hợp lệ, không đưa thành câu hỏi để chủ dự án chọn nghĩa. Q-U42/Q-ND02 được gom nguyên đề nghị còn chờ vào bảng này; chưa có quyết định mới. U35 vẫn thiếu bằng chứng cách đọc, không đưa ra để chủ dự án chọn toán tử hoặc duyệt thay nguồn. Bảng này không tự mở nhánh nguồn hoặc đổi phân phối Mệnh–Thân.
+Các lựa chọn và văn mẫu ban đầu ở§1–2 là hồ sơ của quyết định loại, không còn là lời xin mở S/N hoặc cho phép xuất mẫu unknown. U35 vẫn thiếu cách đọc nguồn; không dùng phê duyệt thay bằng chứng. [Hàng đợi duy nhất và điểm dừng](V1-DELIVERY-PLAN.md#completion-queue-k12-20261027).
 
-Nếu muốn phục vụ một loạiS, có thể chốt riêng loại ấy trong cùng lần trả lời; không cần duyệt tất cả. Duyệt loại không tự duyệt phương pháp còn thiếu, không làm các mẫu unknown thành đã áp dụng và không cho coding/publish trong phiên tài liệu này.
+## 6. Thực hiện sau quyết định
 
-## 6. Thứ tự công việc sau quyết định và điểm dừng
-
-| Ưu tiên sau khi được giao tiếp | Việc hữu hạn và điều kiện vào | Tác động đã chứng minh / phần chưa biết | Điểm dừng |
-|---|---|---|---|
-| **1 — áp chuẩn nội dung đã chốt** | Ánh xạ nhận định và khoảng thiếu đã rà vào phương diện được duyệt của12chủ đề+tổng quan, trên cùng dữ liệu lưu; tách nội dung và quyền. Không đọc lại nguồn. | Hiện469gốc; tổng phương diện bắt buộc mới chưa được đo. **0khóa được chứng minh giảm chỉ nhờ quyết định tiêu chí.** | Có bảng trạng thái nội dung theo chuẩn và danh sách phần thật sự còn thiếu; không đổi cách đếm gốc hoặc tự công bố hoàn thành. |
-| **2 — chỉ khi mởS1/S2/S3** | Hoàn tất hợp đồng lượng từ/điều kiện/điều chỉnh cho một tập con dùng chung từ hồ sơ đã có; không dựng85phiếu. | **Hợp70khóa**, không70+29+70. Đủ đặc tả đã được hồ sơ xác nhận:0; số có thể hoàn thiện ngay chưa biết. Trong70,10đã đồng thời mangN11/N12; mởS không mở các vế ấy. | Chỉ chuyển coding tập con có đầy đủ điều kiện/unknown/văn/chống trùng và số chứng kiến được chứng minh. Nếu thiếu đúng bằng chứng đã ghi, lưu điểm chặn, không quay lại rà sách vô hạn. |
-| **3 — chỉ khi mởS5 hoặcS9** | Xử lý riêng câu số lần hôn nhân và câu lời khuyên; không mượn phương pháp số con hoặc biến lời khuyên thành dự báo. | S5liên quan4Phu;S9liên quan4Huynh nhưng S9 đã nằm trong70 ở ưu tiên2. **Không cộng8vào70.** Không có số chắc chắn giảm;0lô được hồ sơ xác nhận sẵn triển khai. | Không bỏ vế tai ương, không suy tình trạng thật; không xuất chú giải chỉ để xóa khoảng trống. |
-| **U42/ND02 — việc độc lập nếu được duyệt và giao tiếp** | U42 nối đúng nhánh hẹp đã đặc tả; ND02 chỉ sửa phân phối ba nhóm nguyên vẹn, giữ hai nhóm trả phí. Xếp sau gói khả thi giảm thiếu gốc, không dùng việc dễ làm để thay mục tiêu. | U42:2 chứng kiến có lời trước,0gốc; ND02:0nhận định mới/0gốc. Không cộng với85 hoặc192Tật. | Chỉ triển khai sau quyết định tương ứng và nhiệm vụ tiếp; kiểm phần ảnh hưởng, không tự mở miễn phí nội dung Công việc/Tài. |
-| **Tật — luồng riêng, không coi là lô192** | SauT1, chỉ xem xét một mệnh đề có nghĩa, chủ thể và điều chỉnh trực tiếp đã đủ trong hồ sơ; phạm vi y khoa/phẩm hạnh giữ. |192khóa, **0khóa chứng minh sẵn lấp**. Hai mẫu có engine chứng kiến cấu trúc, không chứng minh hiệu lực nhận định hoặc đủ phương pháp áp. | Không publish trước khi có tập con đủ đặc tả; không mở lại toàn sách. Không hứa ngày hoàn thiệnTật hoặc chốt hai mẫu nhờ việc duyệt loại. |
-
-Đây là **thứ tự phụ thuộc, chưa phải hàng đợi coding đã sẵn sàng**; U42 có nhánh hẹp đủ hồ sơ để trình nhưng tác động chỉ bổ sung, ND02 chỉ phân phối nội dung đã có. N4/N13 đòi đúng chứng cứ nghĩa/tách câu mới;21khóa N11/N12 không nằm trong đề nghị mở. Trong469 còn192khóa ngoàiC/Tật (189điều kiện/bất nhất và3chưa tìm lời phù hợp trong phần đã kiểm), không được giải chỉ bằng bảng phạm vi này. Không đề xuất lô chỉ tăng độ sâu để thay ưu tiên khoảng thiếu gốc.
+Dùng [hàng đợi trong backlog](V1-DELIVERY-PLAN.md#completion-queue-k12-20261027), thay thứ tự giả định mởS của bản duyệt trước. Không mởS1/S2/S3/S5/S9. U42 đã thực hiện/đạtQA vì có câu hỏi bắt buộc chưa trả lời và đủ đặc tả/phạm vi; không chọn để tăng chiều sâu. Q-ND02 chỉ phân phối nội dung full đã có, xếp sau phần bắt buộc còn trống. Tật tiếp tục có giới hạn phạm vi và mắt xích điều kiện riêng; không phải lô192sẵn code. Không hứa số khóa giảm từ việc phân loại.
 
 ## 7. Bằng chứng, kiểm tài liệu và ranh giới phiên
 
 Sổ nguồn đã khép và lôTB–Phụ–Phúc1.78 là đầu vào, không phải đợt rà mới: [sổ toàn báo cáo](../.local/source-library/knowledge/full-report-crosswalk-20261026.md),[khóa hiện còn469](../.local/tb-family-phuc-20261026/root-reconciliation.json),[đếm loạiC85](../.local/product-scope-178-20261027/group-counts.json),[hồ sơ nguồn/cổng Tử–Phu](PHU-TU-1.33.0.md),[Phụ–Huynh](PHU-HUYNH-1.32.0.md),[Quan](CAREER-CLOSE-1.0.0.md),[quyết địnhN](DECISIONS.md).
 
-Đã xác minh checkout/source tại`ca1acb3` và các hằng phiên bản1.78/1.74, mã ứng dụng không khác code2e8758a. Không xác minh lại runtime/DB/HTTP hoặc nghiệm thu ứng dụng trong phiên tài liệu. Chỉ kiểm số đếm tập hợp, nguồn dẫn và diff tài liệu; [biên nhận kiểm tài liệu](../.local/product-scope-178-20261027/verification.json). Không chạy test/build/UI/PDF, không thay QA/engine/G2/quyền/hạn/lịch sử/Live hoặc publishTật. **469giữ nguyên. Dừng sau bản duyệt, chờ quyết định.**
+Phiên bản duyệt26e2759 xác minh source app1.78/catalog1.74/code2e8758a; không kiểm runtime khi đó. Phiên thực hiện theo quyết định27/10 ghi kiểm/bản lưu/phiên bản và thời gian tại [backlog](V1-DELIVERY-PLAN.md#completion-queue-k12-20261027). Giữ riêng sổ469, không backfill hoặc đổi mẫu số. Các số/đề nghị lịch sử dưới đây không thay quyết định mới.
 
 ---
 

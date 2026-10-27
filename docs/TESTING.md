@@ -1,5 +1,16 @@
 # Kiểm chứng theo phạm vi
 
+<a id="u42-k12-testing-20261027"></a>
+## U42 theoK12 — app1.79/catalog1.75,code22bb53e
+
+[Hàngđợi/nghiệm thu](V1-DELIVERY-PLAN.md#completion-queue-k12-20261027).57/57qua5tệp`career-sun-moon-suu`,`life-empty-trine`,`customer-editorial-catalog`,`customer-topic-editorial`,`continuous-report`;sauphầncăn cứcuốikiểmđúng2tệp17/17. Predicate12cung/14chính tinh/scope/chứng nhận,chi/vị trí/khôngVCD,bảngTânBiên thiếu/khácsáng/mờ,khôngsửabảngengine,khôngmượnTTtăngcường;schema/catalog/sectionCôngviệc/owner/G2/chốngtrùng/lời cũđạt.116/123làenginewitness;nhữngbiêngiảlậpkhông gọiengine. So192giữlời cũ/fact/trace/paragraph/G2;2văn mới/0gốc/1loạiphương diệnQ3trên2ô. Financechỉthêm2linkunclassifiedtớivếCôngviệc,không đổinộidungtài. Tậtgiữ nguyên,0unknownmới. KhôngchạylạifullgatehoặcsửaselectorTàicũ.
+
+Typecheck/buildcuốiđạtcheckoutriêng;12/12reading-scope+stored-customer-pdfởDBriêng`tinhluan_completion_*`;sauđăngkýPDF1.79kiểmriêng6/6PDF,không cộngrerun. Engine116form–lưu–mở/G2/print/người lạ/mobile360/390/PDFthật;PDFcuối9trangđủ21đoạnfrozen,mục lụccó,nộidungmớitrang5,đãxemcontact/mobile. PDFcuốitạo bảnriêngquaAPIcùngengine/snapshot/paragraphsđểchỉkiểmPDFsaukhiđăngkýphân trang,không lặpfullUI. MockTestchỉDBriêng;khôngSePaythật. QA3062:116form/123API,2bảnmới1.79đãmở lại/sofull/G2/403/404;khôngorder/mocktrênmain.494fileroot/QAkhớp,mộtworker,276tệpcũ+4archive/quyền-hạn/34bài/engine/QA3070nguyên,3100dừng.
+
+**Lỗi/lượtđầuđượcgiữ:** fixturegắn`Star.id`khôngthuộchợpđồngStarhiện hành nênkhôngtestđược“IDhỏng”;đổisangtêncanonicalhỏng,giữexpectedunknown. Typecheckbắtoptional`sourceConditions`ởtest;thêmassertđúngkiểu. Prepaređầuthiếu`--env-file=.env`nênchưađụngDB/QA;chạylạiđúngenv. ĐọcvàtạoDBriêngbịquyềnkếtnốinội bộchặnởmặcdịnh,đãchạythànhcôngvớiquyềncông cụtheoủyquyền;khônglàlỗinguồn. So192đầusorawJSvớiJSONđã lưunênvướng`undefined`;chuẩnhóaJSONvàchỉchophépthêmđúng2linkunclassified,khôngsửacodetàihoặccâu nguồn. UIđầubắtcompatibilitychangeschưaghinhánhU42;thêmnhậndiện0.13/chứng nhậnfrozen. UItiếpbắtcổngdựánchưahiểnthịtrongcăn cứ;thêmgiớihạnriêngU42vàtestgiữthôngtin,không đổipredicate/văn. KiểmảnhPDFpháthiệnmục lụcrỗngdoallowlistphân trangdừng1.78;đăngký1.79vàchỉkiểmlạiPDF,giữbộphân trangcũ. Bảncuốiđạt;PDFtrướcsửalưugiữlàbằng chứnglỗi,khôngnhậnnóđã đạt. HelpermainAPIcònnhãnlogcũ“Remaining9”;thựctếchạyduynhất123,hai receipttổng116/123,không gọi9mẫumới.
+
+[Bằngchứng/lượtkiểm](../.local/completion-queue-178-20261027/verification-notes.json),[so192](../.local/completion-queue-178-20261027/impact192.json),[PDFcuối](../.local/completion-queue-178-20261027/ui-116/pdf-check.json),[bảo toàn](../.local/completion-queue-178-20261027/preservation-final.json).5tệpmớitrênmaincó2trialreadingsnghiệm thu/2phiênvà1reading1.78xuấthiệntrướctích hợp,chưa xác minhcaller;chỉsaolưu,không tínhlàlời mớiU42hoặcnghiệm thu3mẫu.
+
 <a id="tb-family-phuc-testing-20261026"></a>
 ## TB–Phụ–Phúc1.78 —26/10/2026,code2e8758a
 
