@@ -1,5 +1,13 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Hiện hành 27/10 — chờ quyết định phạm vi và chuẩn nội dung
+
+Giữ **app1.78/catalog1.74/code `2e8758a`,469 khóa thiếu gốc**. Xác minh checkout/source từ bàn giao `ca1acb3`; không kiểm lại runtime/DB/HTTP. [Bản duyệt duy nhất](PRODUCT-SCOPE-D-REVIEW.md#scope-criteria-review-178-20261027), [backlog](V1-DELIVERY-PLAN.md#product-scope-acceptance-178-20261027).
+
+85khóaC ngoàiTật =43Tử+28Huynh+11Phu+3Quan; loại nội dung chồng nhau được đếm theo hợp85.21cóN11/N12 rõ; không mở loại bệnh/sinh tử/phẩm hạnh. N1–N5/N9/N13 là giới hạn giai đoạn đã được chủ dự án xác nhận, không phải cấm vĩnh viễn hoặc mọi cổng đều do agent. Hồ sơ chưa chứng nhận lô C85 đủ đặc tả sau giả định mở loại; số sẵn/chưa sẵn cụ thể chưa được chứng minh, không hứa85khóa sẽ giảm.
+
+Tiêu chí12chủ đề+tổng quan đang là đề xuất, chưa chấm lại mức hoàn thành hoặc thay mục tiêu trả phí.192Tật giữ riêng phạm vi/điều kiện/cổng, không trình thành chỉ chờ duyệt. T1 không duyệt hai mẫu hoặc publish. Gom các quyết định K12,S1/S2/S3/S5/S9,T1 và Q-U42/Q-ND02 từ cuộc rà; U35 chưa đủ bằng chứng. Không thay ứng dụng, G2/phân phối Mệnh–Thân, QA, quyền/lịch sử, engine,34bài hoặc Live tắt; Tật chưa publish. Không test/build/UI/PDF, không đọc lại sách. [Mốc và kiểm tài liệu](../.local/product-scope-178-20261027/session.json). **Dừng sau bản duyệt.** Các mục dưới là lịch sử.
+
 ## Hiện hành 26/10 — app1.78/catalog1.74, còn469 khóa thiếu gốc
 
 Code `2e8758a`, [QA3062 Lập lá số](http://127.0.0.1:3062/lap-la-so) đã tích hợp và kiểm bản lưu mới. [Lô TB–Phụ–Phúc](V1-DELIVERY-PLAN.md#tb-family-phuc-delivery-178-20261026) giải **12 khóa trên11 hồ sơ**, từ481 xuống469 theo cùng cách đếm. Phụ còn10 khóa gốc, Phúc21;192 Tật vẫn chưa phân nguyên nhân chính B/C/D. Không gọi có lời đầu tiên là hoàn chỉnh cung hoặc đủ báo cáo trả phí.

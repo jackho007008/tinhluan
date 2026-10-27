@@ -1,5 +1,15 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành 27/10 — bản duyệt phạm vi/tiêu chí, chưa thay sản phẩm
+
+**App1.78/catalog1.74/code `2e8758a`; còn469 khóa thiếu gốc.** Checkout đầu phiên `main@ca1acb3`, tracked/index sạch, giữ thư mục Bửu Đình chưa theo dõi; mã ứng dụng không khác code đã nghiệm thu. Không kiểm lại runtime/DB/HTTP hoặc nghiệm thu ứng dụng. Cuộc rà907abca vẫn khép.
+
+[Một bản duyệt dễ đọc](PRODUCT-SCOPE-D-REVIEW.md#scope-criteria-review-178-20261027), [đầu mối backlog](V1-DELIVERY-PLAN.md#product-scope-acceptance-178-20261027).85khóaC ngoàiTật gom theo loại:43Tử/28Huynh/11Phu/3Quan, hợp không trùng85;70liên quan số lượng không phải70sẵn lấp. N1–N5/N9/N13 đã được chủ dự án chốt tạm giữ23/10; sửa cách đọc bảng lịch sử “agent chưa chốt”.21khóa cóN11/N12 rõ vẫn giữ loại. Chưa có tập con C85 được hồ sơ chứng nhận sẵn triển khai; số có thể hoàn tất đặc tả ngay chưa biết. Không biến duyệt loại thành85khóa chỉ thiếu code.
+
+Đề xuất tiêu chí12chủ đề+tổng quan, tách bắt buộc/chiều sâu và trạng thái chưa đáp ứng; không chấm theo số câu hoặc có lời đầu tiên. Tật là quyết địnhT1 về loại chú giải có thể nghiệm thu;192khóa vẫn chưa phân nguyên nhân chính B/C/D, hai mẫu chỉ là hồ sơ thẩm định, không xin publish. Bảng quyết định gom K12,S1/S2/S3/S5/S9,T1 và hai đề nghị Q-U42/Q-ND02 còn chờ. U42 có2chứng kiến bổ sung/0gốc, ND02 có0nội dung mới/0gốc; U35 vẫn thiếu bằng chứng, không hỏi chọn toán tử.
+
+Chỉ đổi tài liệu, không có quyết định phạm vi mới được áp dụng. Giữ QA/engine/G2/quyền/hạn/lịch sử/34bài/Live tắt/Tật chưa publish; không test/build/UI/PDF hoặc đọc lại sách. [Bằng chứng đếm](../.local/product-scope-178-20261027/group-counts.json), [mốc phiên/giới hạn đo](../.local/product-scope-178-20261027/session.json). **Dừng sau bản duyệt; chờ chủ dự án chốt, không tự coding.** Các mục dưới là lịch sử.
+
 ## Hiện hành 26/10 — TB–Phụ–Phúc đã nghiệm thu QA3062
 
 **App1.78/catalog1.74, code `2e8758a`; 481 → 469 khóa thiếu gốc.** Đã tích hợp [Lập lá số QA3062](http://127.0.0.1:3062/lap-la-so), cùng DB/kho hiện hành, một worker chính. [Bàn giao trong backlog duy nhất](V1-DELIVERY-PLAN.md#tb-family-phuc-delivery-178-20261026). Cuộc rà khép tại `907abca` vẫn khép; không mở nguồn hoặc lô tiếp.

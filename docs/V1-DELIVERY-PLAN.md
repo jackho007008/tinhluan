@@ -175,6 +175,19 @@ Tất cả số trang sau là **trang PDF** của đúng tệp đã định danh
 
 **Khảo cứu ba sách — khép lượt đọc tuần tự tới Tứ Hóa2 PDF817 (nối `main@606e30c`):** mới651–817=167 vị trí, gồm156 trang nội dung chính tới806, thư mục807–810 đã kiểmảnh nhưng chưa hiệuđính chắc mọi tựa Hán, mục lục811–817.65lượt ảnh=64trang mới+817kiểm lại; THP2 tổng405ảnh. ToànThư170trang chữ/22ảnh vàTHP1qua824/263ảnh kế thừa, không đọc lại. [Khép đọc/lỗi nguồn](../.local/source-library/knowledge/three-books-20261023/checkpoint-thp2-817.md), [nhật ký mới](../.local/source-library/knowledge/three-books-20261023/thp2-resume-606e30c.md), [ứng viên hợp nhất/văn mẫu/gói tiếp](../.local/source-library/knowledge/three-books-20261023/candidates-consolidated-606e30c.md). Chữ che/mờ/thiếu cũ giữ; mới773 thiếu số cuối dòngMộc sớm, không điền22. Giữ9A;SPEND201/202 dùng bản sửa c85048b theo617/616/625/626;SPEECH484 thêm giới hạn733 khéo nói không bảo đảm chín chắn. Thêm ngoại lệ754/774, gộp704/750 vào vaiROLE175.30ID nghiên cứu đã loại trùng (8cơchế/18ngoạilệ/4nhậnđịnh), không phải số đủ triển khai hoặc mức phủ. Đề xuất kiểm khả thi đúng3nhậnđịnh QN-MOVE365/TC-SPEND201/TC-SPEECH484: xác minh dữ liệu/cơ chế hiệncó, chồnglời và điều chỉnh trực tiếp, trả đặc tả hữu hạn; chưa thực hiện audit/coding. ChỉU27/U39/U40/U41 thêm bằng chứng,0Ukhép/0rule/0publish,U34/U42giữ. Giữ QA/engine/catalog/quyền/lịch sử/G2/N1–N13/phạmvi,Tật chưa publish,Live tắt; không test/build/runtime/DB.
 
+<a id="product-scope-acceptance-178-20261027"></a>
+### Phạm vi sản phẩm và tiêu chí báo cáo đầy đủ — bản duyệt 27/10/2026
+
+**Chỉ tài liệu, chờ quyết định.** Xác minh checkout `main@ca1acb3`, app1.78/catalog1.74/code`2e8758a`; mã ứng dụng không khác code đã nghiệm thu. Không kiểm lại runtime/DB/HTTP. **469 khóa gốc giữ nguyên**, cuộc rà907abca vẫn khép.
+
+[Một bản duyệt đầy đủ: loại nội dung, toàn văn mẫu, tiêu chí12chủ đề+tổng quan, Tật riêng và bảng quyết định](PRODUCT-SCOPE-D-REVIEW.md#scope-criteria-review-178-20261027). Đây là đầu mối hiện hành cho phần phạm vi U14/U18/U21/U25 và Huynh162/U20; không lập85phiếu hoặc kế hoạch song song.85khóaC ngoàiTật =43Tử+28Huynh+11Phu+3Quan. Phân chia không trùng60liên quan định lượng/lời khuyên không có nhãn bệnh/phẩm hạnh rõ +4số lần hôn nhân +21cóN11/N12; không cộng các hàng loại chồng nhau. Nhãn N2/N3 bao gồm miền tiên quyết, không phải29/70kết quả đã khớp. [Đếm tập hợp kế thừa](../.local/product-scope-178-20261027/group-counts.json).
+
+N1–N5/N9/N13 là giới hạn giai đoạn đã được chủ dự án xác nhận23/10, không còn là đề nghị agent chưa chốt. N11/N12 giữ loại. Chưa có tập con C85 được hồ sơ chứng nhận đủ đặc tả triển khai; số thực sự có thể hoàn tất đặc tả ngay chưa biết, không ghi85chỉ chờ duyệt.192Tật còn đồng thời phạm vi/cổng phát hành/điều kiện; không gom thành192chỉ cần đồng ý. Bảng tiêu chí là đề xuất, không chấm lại hoàn thành hoặc biến306dấu lịch sử thành phương diện bắt buộc.
+
+Quyết định gom một lần: K12; S1/S2/S3/S5/S9 (giữ hoặc mở từng loại hữu hạn); T1 chuẩn nội dungTật; Q-U42 và Q-ND02 kế thừa hai đề nghị còn chờ. Không xin user chọn nghĩa quý tử/khó nuôi, toán tửU35 hoặc thay bằng chứng nguồn. Không duyệt lại N6/N7/N8 hay hai mẫuTật. Không có phê duyệt mới được ghi nhận; thứ tự sau quyết định và điểm dừng ở bản duyệt, không có số giảm gốc chắc chắn mới.
+
+Không code/publish/test/build/UI/PDF, không đọc lại sách, không thay QA/engine/G2/quyền/hạn/lịch sử/Live/Tật. Chỉ kiểm số đếm/liên kết mới/diff tài liệu; [mốc và giới hạn thời gian](../.local/product-scope-178-20261027/session.json). **Dừng sau bản duyệt.**
+
 <a id="tb-family-phuc-delivery-178-20261026"></a>
 ### TB–Phụ–Phúc1.78 — đã nghiệm thu và tích hợp QA3062, 26/10/2026
 
@@ -251,7 +264,7 @@ U35không là lô chỉ chờ duyệt:26caseKhắcngược còn cách đọc hai
 <a id="full-review-scope-decisions-20261026"></a>
 #### Một bảng quyết định phạm vi sau rà
 
-Hai dòng dưới là đề xuất đủ cụ thể để chủ dự án chốt cùng một lần;chưa có phê duyệt mới. LôTB-Phụ–Phúc không cần xin lại quyền mở nguồn/phạm vi đã được cho phép. Không đưaU35hoặc192Tật thành câu hỏi đồng ý để thay nghĩa nguồn.
+Hai dòng dưới được gom nguyên vào [bản duyệt27/10](PRODUCT-SCOPE-D-REVIEW.md#scope-criteria-review-178-20261027); dùng một bảng quyết định hiện hành ở đó. Hồ sơ bên dưới giữ để truy vết, chưa có phê duyệt mới. LôTB-Phụ–Phúc không cần xin lại quyền mở nguồn/phạm vi đã được cho phép. Không đưaU35hoặc192Tật thành câu hỏi đồng ý để thay nghĩa nguồn.
 
 | Quyết định | Phần được đề nghị và toàn văn/điều kiện | Tác động có chứng cứ | Cách chốt |
 |---|---|---|---|
