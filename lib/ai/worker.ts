@@ -25,10 +25,23 @@ export async function runAiMenhJob(narrator: Narrator = openaiNarrator) {
       );
     const row = (
       await c.query(
-        "SELECT * FROM ai_reading_jobs WHERE palace='Mệnh' AND status='queued' AND run_after<=now() ORDER BY created_at FOR UPDATE SKIP LOCKED LIMIT 1",
+        "SELECT j.*,a.response_id,a.started_at AS attempt_started_at FROM ai_reading_jobs j LEFT JOIN ai_reading_attempts a ON a.id=j.attempt_id WHERE j.palace='Mệnh' AND j.run_after<=now() AND (j.status='queued' OR (j.status='uncertain' AND a.response_id IS NOT NULL AND a.provider='openai')) ORDER BY j.created_at FOR UPDATE OF j SKIP LOCKED LIMIT 1",
       )
     ).rows[0];
     if (!row) return;
+    if (row.status === "uncertain") {
+      // Same attempt, same provider response: only GET reconciliation. Never
+      // enqueue or increment attempts for a response that may already be billed.
+      await c.query(
+        "UPDATE ai_reading_jobs SET status='running',locked_at=now(),retryable=false WHERE id=$1",
+        [row.id],
+      );
+      await c.query(
+        "UPDATE ai_reading_attempts SET status='running',finished_at=NULL WHERE id=$1",
+        [row.attempt_id],
+      );
+      return row as ClaimedJob;
+    }
     const attempt = randomUUID();
     await c.query(
       "UPDATE ai_reading_jobs SET status='running',attempt_id=$2,locked_at=now(),attempts=attempts+1,retryable=false WHERE id=$1",
@@ -42,12 +55,28 @@ export async function runAiMenhJob(narrator: Narrator = openaiNarrator) {
       ...row,
       attempt_id: attempt,
       attempts: row.attempts + 1,
+      response_id: undefined,
+      attempt_started_at: new Date(),
     } as ClaimedJob;
   });
   if (!job) return false;
   let generated: Generation | undefined;
   try {
-    generated = await narrator(job.input, job.attempt_id);
+    generated = await narrator(job.input, job.attempt_id, {
+      responseId: job.response_id,
+      onResponseCreated: async (id, model) => {
+        const saved = await pool.query(
+          "UPDATE ai_reading_attempts SET response_id=$2,provider='openai',model=$3 WHERE id=$1 AND status='running' AND (response_id IS NULL OR response_id=$2) RETURNING id",
+          [job.attempt_id, id, model],
+        );
+        if (saved.rowCount !== 1) throw Error("AI_RESPONSE_ID_NOT_SAVED");
+      },
+    });
+    if (job.attempt_started_at)
+      generated.durationMs = Math.max(
+        generated.durationMs,
+        Date.now() - new Date(job.attempt_started_at).getTime(),
+      );
     const content = validateNarration(generated.raw, job.input);
     const result: AiResult = {
       content,
@@ -67,7 +96,7 @@ export async function runAiMenhJob(narrator: Narrator = openaiNarrator) {
         [job.id, job.attempt_id, result],
       );
       await c.query(
-        "UPDATE ai_reading_attempts SET status='completed',model=$2,provider=$3,response_id=$4,usage=$5,duration_ms=$6,estimated_cost_usd=$7,finished_at=now() WHERE id=$1",
+        "UPDATE ai_reading_attempts SET status='completed',error_code=NULL,model=$2,provider=$3,response_id=$4,usage=$5,duration_ms=$6,estimated_cost_usd=$7,finished_at=now() WHERE id=$1",
         [
           job.attempt_id,
           generated!.model,
@@ -104,7 +133,7 @@ export async function runAiMenhJob(narrator: Narrator = openaiNarrator) {
         ],
       );
       await c.query(
-        "UPDATE ai_reading_attempts SET status=$2,error_code=$3,model=COALESCE($4,model),provider=$5,response_id=$6,usage=$7,duration_ms=$8,estimated_cost_usd=$9,finished_at=now() WHERE id=$1 AND status<>'completed'",
+        "UPDATE ai_reading_attempts SET status=$2,error_code=$3,model=COALESCE($4,model),provider=COALESCE($5,provider),response_id=COALESCE($6,response_id),usage=COALESCE($7,usage),duration_ms=COALESCE($8,duration_ms),estimated_cost_usd=COALESCE($9,estimated_cost_usd),finished_at=now() WHERE id=$1 AND status<>'completed'",
         [
           job.attempt_id,
           uncertain ? "uncertain" : "error",

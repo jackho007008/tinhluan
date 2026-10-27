@@ -103,6 +103,7 @@ beforeAll(async () => {
   owner = await createTrialOwner();
 });
 beforeEach(async () => {
+  vi.stubEnv("AI_MENH_BACKGROUND", "false");
   vi.stubEnv("OPENAI_MODEL", "unit-test-model-not-live");
   vi.stubEnv("OPENAI_API_KEY", "unit-test-key-not-real");
   await pool.query("TRUNCATE ai_reading_attempts,ai_reading_jobs");
@@ -433,6 +434,243 @@ describe("bounded cost and recovery controls", () => {
   });
 });
 describe("official SDK adapter with intercepted HTTP, no real API calls", () => {
+  it("does not reuse the previous provider response ID when a known invalid output is manually retried", async () => {
+    const r = record();
+    await requestMenh(r);
+    await runAiMenhJob(async (input, _attempt, recovery) => {
+      await recovery!.onResponseCreated("resp_invalid_output", "fixture-model");
+      return {
+        ...mockMenhGeneration(input),
+        provider: "openai",
+        responseId: "resp_invalid_output",
+        raw: {},
+      };
+    });
+    expect((await findAiJob(r)).status).toBe("error");
+    await pool.query(
+      "UPDATE ai_reading_jobs SET run_after=now()-interval '1 second'",
+    );
+    await retryMenh(r);
+    await runAiMenhJob(async (input, _attempt, recovery) => {
+      expect(recovery!.responseId).toBeUndefined();
+      await recovery!.onResponseCreated("resp_valid_retry", "fixture-model");
+      return {
+        ...mockMenhGeneration(input),
+        provider: "openai",
+        responseId: "resp_valid_retry",
+      };
+    });
+    expect((await findAiJob(r)).attempts).toBe(2);
+    expect((await readMenh(r)).state).toBe("completed");
+    const attempts = (
+      await pool.query(
+        "SELECT status,response_id FROM ai_reading_attempts ORDER BY started_at",
+      )
+    ).rows;
+    expect(attempts).toEqual([
+      { status: "error", response_id: "resp_invalid_output" },
+      { status: "completed", response_id: "resp_valid_retry" },
+    ]);
+  });
+  it("persists background response ID before GET, survives a lost connection, and resumes the same attempt without another CREATE", async () => {
+    vi.stubEnv("AI_MENH_BACKGROUND", "true");
+    const r = record();
+    await requestMenh(r);
+    const output = mockMenhGeneration((await findAiJob(r)).input);
+    let creates = 0,
+      gets = 0;
+    const fetcher = vi.fn(async (url: any, init: any) => {
+      const address = String(url);
+      const headers = { "Content-Type": "application/json" };
+      if (address.includes("/models/"))
+        return new Response(
+          JSON.stringify({
+            id: "unit-test-model-not-live",
+            object: "model",
+            created: 0,
+            owned_by: "test",
+          }),
+          { headers },
+        );
+      if (init.method === "POST") {
+        creates++;
+        const body = JSON.parse(init.body);
+        expect(body.background).toBe(true);
+        expect(body.store).toBe(true);
+        expect(body.text.format.schema.properties.sections.minItems).toBe(8);
+        return new Response(
+          JSON.stringify({
+            id: "resp_recoverable",
+            object: "response",
+            status: "queued",
+            model: "actual-fixture-model",
+            output: [],
+          }),
+          { headers },
+        );
+      }
+      gets++;
+      const attempt = (
+        await pool.query("SELECT response_id,provider FROM ai_reading_attempts")
+      ).rows[0];
+      expect(attempt).toMatchObject({
+        response_id: "resp_recoverable",
+        provider: "openai",
+      });
+      expect(address).toContain("/responses/resp_recoverable");
+      if (gets === 1)
+        throw new DOMException(
+          "connection dropped after provider accepted",
+          "AbortError",
+        );
+      return new Response(
+        JSON.stringify({
+          id: "resp_recoverable",
+          object: "response",
+          status: "completed",
+          model: "actual-fixture-model",
+          output: [
+            {
+              type: "message",
+              id: "msg",
+              status: "completed",
+              role: "assistant",
+              content: [
+                {
+                  type: "output_text",
+                  text: JSON.stringify(output.raw),
+                  annotations: [],
+                },
+              ],
+            },
+          ],
+          usage: {
+            input_tokens: 100,
+            input_tokens_details: { cached_tokens: 0 },
+            output_tokens: 200,
+            output_tokens_details: { reasoning_tokens: 20 },
+          },
+        }),
+        { headers },
+      );
+    });
+    vi.stubGlobal("fetch", fetcher);
+    await runAiMenhJob();
+    expect(await readMenh(r)).toMatchObject({
+      state: "error",
+      canRetry: false,
+      errorCode: "AI_OUTCOME_UNCERTAIN",
+    });
+    const first = await findAiJob(r);
+    await retryMenh(r);
+    expect((await findAiJob(r)).status).toBe("uncertain");
+    // A missing key during GET recovery must not turn an already dispatched
+    // response into a retryable CREATE when configuration is restored.
+    vi.stubEnv("OPENAI_API_KEY", "");
+    await pool.query(
+      "UPDATE ai_reading_jobs SET run_after=now()-interval '1 second'",
+    );
+    await runAiMenhJob();
+    expect((await findAiJob(r)).status).toBe("uncertain");
+    expect((await findAiJob(r)).attempts).toBe(1);
+    expect(creates).toBe(1);
+    vi.stubEnv("OPENAI_API_KEY", "unit-test-key-not-real");
+    await pool.query(
+      "UPDATE ai_reading_jobs SET run_after=now()-interval '1 second'",
+    );
+    await Promise.all([runAiMenhJob(), runAiMenhJob()]);
+    expect(await readMenh(r)).toMatchObject({
+      state: "completed",
+      result: { model: "actual-fixture-model", provider: "openai" },
+    });
+    const last = await findAiJob(r);
+    expect(last.attempt_id).toBe(first.attempt_id);
+    expect(last.attempts).toBe(1);
+    expect(creates).toBe(1);
+    expect(gets).toBe(2);
+    expect(
+      (await pool.query("SELECT count(*) FROM ai_reading_attempts")).rows[0]
+        .count,
+    ).toBe("1");
+    expect(
+      (await pool.query("SELECT error_code FROM ai_reading_attempts")).rows[0]
+        .error_code,
+    ).toBeNull();
+    const calls = fetcher.mock.calls.length;
+    await readMenh(r);
+    await requestMenh(r, true);
+    await runAiMenhJob();
+    expect(fetcher).toHaveBeenCalledTimes(calls);
+  });
+  it("does not repeat a background CREATE if the provider accepted it but the response ID was lost", async () => {
+    vi.stubEnv("AI_MENH_BACKGROUND", "true");
+    const r = record();
+    await requestMenh(r);
+    let creates = 0;
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (url: any) => {
+        if (String(url).includes("/models/"))
+          return new Response(
+            JSON.stringify({
+              id: "unit-test-model-not-live",
+              object: "model",
+              created: 0,
+              owned_by: "test",
+            }),
+            { headers: { "Content-Type": "application/json" } },
+          );
+        creates++;
+        throw new DOMException(
+          "accepted, but no response received",
+          "AbortError",
+        );
+      }),
+    );
+    await runAiMenhJob();
+    expect((await findAiJob(r)).status).toBe("uncertain");
+    await pool.query(
+      "UPDATE ai_reading_jobs SET run_after=now()-interval '1 hour',locked_at=now()-interval '1 hour'",
+    );
+    await retryMenh(r);
+    expect(await runAiMenhJob()).toBe(false);
+    expect(creates).toBe(1);
+    expect(
+      (await pool.query("SELECT response_id FROM ai_reading_attempts")).rows[0]
+        .response_id,
+    ).toBeNull();
+  });
+  it("recovers a crashed worker by GET and blocks retries when the stored provider response was deleted", async () => {
+    const r = record();
+    await requestMenh(r);
+    await runAiMenhJob(async (_input, _attempt, recovery) => {
+      await recovery!.onResponseCreated("resp_deleted", "original-model");
+      throw new GenerationFailure("AI_OUTCOME_UNCERTAIN", false, true);
+    });
+    await pool.query(
+      "UPDATE ai_reading_jobs SET status='running',locked_at=now()-interval '7 minutes',run_after=now()-interval '1 hour'",
+    );
+    const fetcher = vi.fn(async (url: any, init: any) => {
+      expect(init.method).not.toBe("POST");
+      expect(String(url)).toContain("/responses/resp_deleted");
+      return new Response(
+        JSON.stringify({
+          error: { message: "deleted", type: "invalid_request_error" },
+        }),
+        { status: 404, headers: { "Content-Type": "application/json" } },
+      );
+    });
+    vi.stubGlobal("fetch", fetcher);
+    await runAiMenhJob();
+    expect(await readMenh(r)).toMatchObject({
+      state: "error",
+      canRetry: false,
+      errorCode: "AI_RESPONSE_UNAVAILABLE",
+    });
+    expect((await findAiJob(r)).attempts).toBe(1);
+    expect(fetcher).toHaveBeenCalledTimes(1);
+    expect(await runAiMenhJob()).toBe(false);
+  });
   it("uses Responses + strict schema, actual model/usage, no stored provider response or hidden SDK retry", async () => {
     const r = record(),
       input = await retrieveMenhKnowledge(r, menhFacts(r)),

@@ -15,6 +15,10 @@ export type Generation = {
 export type Narrator = (
   input: MenhInput,
   attemptId: string,
+  recovery?: {
+    responseId?: string;
+    onResponseCreated: (id: string, model: string) => Promise<void>;
+  },
 ) => Promise<Generation>;
 export class GenerationFailure extends Error {
   constructor(
@@ -26,34 +30,66 @@ export class GenerationFailure extends Error {
   }
 }
 /** No key/model fallback and no SDK retry of a possibly billed request. */
-export const openaiNarrator: Narrator = async (input, attemptId) => {
+export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
   const config = aiConfig();
-  if (!config.configured)
-    throw new GenerationFailure("AI_NOT_CONFIGURED", true);
+  if (!config.apiKey || (!config.model && !recovery?.responseId))
+    throw new GenerationFailure(
+      "AI_NOT_CONFIGURED",
+      !recovery?.responseId,
+      !!recovery?.responseId,
+    );
   const client = new OpenAI({
     apiKey: config.apiKey,
     timeout: config.timeoutMs,
     maxRetries: 0,
   });
-  try {
-    await client.models.retrieve(config.model!);
-  } catch {
-    throw new GenerationFailure("AI_MODEL_UNAVAILABLE", true);
+  if (!recovery?.responseId) {
+    try {
+      await client.models.retrieve(config.model!);
+    } catch {
+      throw new GenerationFailure("AI_MODEL_UNAVAILABLE", true);
+    }
   }
   const start = Date.now();
+  let responseId = recovery?.responseId;
   try {
-    const response = await client.responses.create(
-      {
-        model: config.model!,
-        store: false,
-        instructions: MENH_INSTRUCTIONS,
-        input: menhUserInput(input),
-        max_output_tokens: config.maxOutputTokens,
-        reasoning: { effort: config.reasoningEffort as "high" },
-        text: { format: zodTextFormat(narrationSchema, "menh_reading") },
-      },
-      { headers: { "X-Client-Request-Id": attemptId } },
-    );
+    if (config.background && !recovery)
+      throw new GenerationFailure("AI_RECOVERY_REQUIRED", false);
+    let response = responseId
+      ? await client.responses.retrieve(responseId)
+      : await client.responses.create(
+          {
+            model: config.model!,
+            store: config.background,
+            ...(config.background ? { background: true } : {}),
+            instructions: MENH_INSTRUCTIONS,
+            input: menhUserInput(input),
+            max_output_tokens: config.maxOutputTokens,
+            reasoning: { effort: config.reasoningEffort as "high" },
+            text: { format: zodTextFormat(narrationSchema, "menh_reading") },
+          },
+          { headers: { "X-Client-Request-Id": attemptId } },
+        );
+    if (!responseId && config.background) {
+      responseId = response.id;
+      // Do not poll until the ID is durable. If this write fails, the attempt is
+      // ambiguous and must not be dispatched again.
+      await recovery!.onResponseCreated(response.id, response.model);
+    }
+    while (response.status === "queued" || response.status === "in_progress") {
+      const remaining = config.backgroundWaitMs - (Date.now() - start);
+      if (!responseId || remaining <= 0)
+        throw new GenerationFailure("AI_OUTCOME_UNCERTAIN", false, true);
+      await new Promise((resolve) =>
+        setTimeout(resolve, Math.min(2000, remaining)),
+      );
+      const timeout = config.backgroundWaitMs - (Date.now() - start);
+      if (timeout <= 0)
+        throw new GenerationFailure("AI_OUTCOME_UNCERTAIN", false, true);
+      response = await client.responses.retrieve(responseId, {
+        timeout: Math.min(config.timeoutMs, timeout),
+      });
+    }
     const usage = {
       inputTokens: response.usage?.input_tokens ?? 0,
       cachedInputTokens:
@@ -90,6 +126,14 @@ export const openaiNarrator: Narrator = async (input, attemptId) => {
       estimatedCostUsd,
     };
   } catch (error) {
+    if (error instanceof GenerationFailure) throw error;
+    if (responseId) {
+      // Retrieval never creates a new billed response. An expired/deleted ID
+      // needs operator review, not a fresh CREATE or an endless GET loop.
+      if (error instanceof OpenAI.APIError && error.status === 404)
+        throw new GenerationFailure("AI_RESPONSE_UNAVAILABLE", false);
+      throw new GenerationFailure("AI_OUTCOME_UNCERTAIN", false, true);
+    }
     if (
       error instanceof OpenAI.APIError &&
       error.status &&

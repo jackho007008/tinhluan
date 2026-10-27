@@ -12,6 +12,13 @@ export function aiConfig() {
     apiKey,
     configured: !!(apiKey && model),
     timeoutMs: number("AI_MENH_TIMEOUT_MS", 120000, 1000, 180000),
+    background: process.env.AI_MENH_BACKGROUND === "true",
+    backgroundWaitMs: number(
+      "AI_MENH_BACKGROUND_WAIT_MS",
+      300000,
+      1000,
+      300000,
+    ),
     maxOutputTokens: number("AI_MENH_MAX_OUTPUT_TOKENS", 12000, 2000, 20000),
     maxDailyJobs: number("AI_MENH_MAX_DAILY_JOBS", 20, 1, 500),
     reasoningEffort: process.env.OPENAI_REASONING_EFFORT || "high",

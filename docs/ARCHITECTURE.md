@@ -3,6 +3,8 @@
 <a id="ai-menh-architecture-20261027"></a>
 ## Bổ sung Gói 2 — AI Mệnh, môi trường QA riêng
 
+**Bổ sung Gói2.1:** Background opt-in (`AI_MENH_BACKGROUND`, mặc địnhfalse), `store=true` khi bật để phục hồi response sau mất kết nối. CREATE một lần, callback lưuID/model/provider vào `ai_reading_attempts` có sẵn trước polling. `uncertain` cóID được cùngqueue claim và GET lại, không tăngattempt hoặc tạo response mới; khôngID không tựdispatch; GET404 chuyển lỗi khôngretry. Mỗi lượtpoll tối đa5phút rồi giữID cho đốisoát tiếp. Không thêm bảng/queue, không bật trênmain. Provider retention cần chốt trước tích hợp. [Kiểm và giới hạn](TESTING.md#ai-menh-package21-testing-20261027).
+
 Luồng AI mới không thay engine hoặc renderer PDF/catalog. Các module trong `lib/ai/` tách facts, retrieval, prompt/schema, provider, store và worker. Chỉ `scripts/ai-worker.ts` xử lý queue AI; không thêm tác vụ vào `scripts/worker.ts` của thanh toán/email. SDK `openai@7.45.0` yêu cầu Node>=22; QA dùng24.19. Cấu hình mặc định `AI_MENH_ENABLED=false`, key/model chỉ server, không có model mặc định hoặc fallback.
 
 1. POST tạo lá số lưu snapshot/receipt/frozen/policy như cũ, chỉ bản mới khi bật AI có `aiPolicy`. Sau lưu mới enqueue; marker đã lưu là outbox để worker đối soát nếu DB enqueue lỗi. Duplicate POST dùng đúng record đã lưu, không tạo phiên bản quyền mới.

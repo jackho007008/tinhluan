@@ -1,5 +1,13 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Cập nhật 27/10 — Gói 2.1: ba bài thật đã lưu, còn việc về chất lượng
+
+Baseline `b6fa7dc`; Node24.19/SDK7.45, project có quyền `gpt-6-astra`. Đúng3bài/3CREATE/1attempt mỗi mẫu, schema8phần và GET đối soát khớp database. A182,301giây/$0,49023; B221,633giây/$0,59669; C185,098giây/$0,50059; tổng ước tính $1,58751, chưa gồm request timeout cũ. [Bài đầy đủ/facts/tri thức/đánh giá7tiêu chí](AI-MENH-PACKAGE21-EVALUATION.md), [backlog](V1-DELIVERY-PLAN.md#ai-menh-package21-20261027).
+
+Chỉ sửa nhánh chống trùng/đối soát: Background opt-in `store=true`, lưu ID sớm vào attempt hiện có, resume chỉ GET cùng ID/attempt; mất ID giữ uncertain,404 dừng không tính phí lại.22/22 mock AI, typecheck/build, UI360/390/4tab/11khóa/lưu–mở/requestlặp đạt;5AIjob cũ nguyên, không key trong68JS client. WebQA3111 `59187` phục vụ build mới; AIworkerQA3111 đang dừng để giữ đúng3bài, không chạy worker chồng. QA3062/3070/3101/worker chính và main282file/8bảng giữ nguyên, không migration main.
+
+Chưa đủ đưa QA3062: chiều sâu chính–phụ tinh và chế hóa thấp (2–3/5), retrieval còn template/nhánh không khớp, văn nhiều lời rào. Không coi engine facts khớp hoặc văn trôi chảy là kiểm chứng con người thực tế. Cần cải thiện retrieval/prompt và chốt retention provider/đối soát mấtID trước tích hợp; không triển khai Gói3.
+
 ## Cập nhật 27/10 — AI Mệnh Gói 2 ở QA3111 độc lập
 
 AI edition `menh-ai-1.0.0`, prompt `menh-vietnamese-1.0.0`, nền Git `3491535`. Luồng mới: lưu engine trước → marker/outbox → queue PostgreSQL AI → worker AI độc lập → Responses + Structured Outputs → kiểm schema/tham chiếu → lưu artifact → tab 12 cung. GET/mở lại không tạo bài. 11 cung giữ khóa AI; catalog cũ vẫn là biên tập. Bản lịch sử không có marker không được tự cấp AI; bài AI hoàn thành vẫn đọc được khi tắt tạo mới.

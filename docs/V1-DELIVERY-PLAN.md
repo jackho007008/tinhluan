@@ -1,5 +1,18 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="ai-menh-package21-20261027"></a>
+## Gói 2.1 — kiểm API và chất lượng ba bài thật, chưa đưa QA3062
+
+Theo yêu cầu chủ dự án: tối đa3bài, ưu tiênA hai chính tinh/B vô chính diệu/C cát-sát hoặc Tứ Hóa, không fallback/model benchmark/Gói3. Baseline `main@b6fa7dc` sạch tracked/index, Bửu Đình giữ nguyên. Bối cảnh mới kế thừa bằng chứng schema nhỏ thành công và bài cũ timeout, không coi API chưa từng được gọi.
+
+**Đã kiểm:** Node24.19/SDK7.45, key/model server có cấu hình, project truy cập `gpt-6-astra`. Ba snapshot qua form thật, chọn26phép tính engine theo tiêu chí trước khi đọc AI; tên/ngày sinh QA không gửi provider. Đúng3CREATE/3completed/1attempt mỗi mẫu, prompt1.0.0/schema8phần; token và metadata thực ở [đánh giá đầy đủ](AI-MENH-PACKAGE21-EVALUATION.md). Tổng ước tính $1,58751 theo Standard;182–222giây/bài. Chưa biết phí request cũ, giữ nguyên uncertain và không gọi lại.
+
+**Sửa hữu hạn:** config/provider/worker/type và test chống trùng. Background opt-in `AI_MENH_BACKGROUND=true`, `store=true`; ID ghi ngay vào bảngattempt hiện có rồi GET poll. Mất mạng/crash cóID thì cùngqueue resumeGET, cùngattempt, không CREATE; khôngID giữuncertain,404 dừng. Không schema mới/migration/queue thứhai hoặc thay prompt/retrieval để làm đẹp điểm.22/22mock AI đạt, typecheck/build QA đạt. ActualGET3response khớp artifact, facts/hash giữ nguyên; UI4tab/11khóa/360/390/căn cứ/mở lại/requestlặp không tăngattempt đạt. [Bằng chứng](../.local/ai-menh-package21-20261027/verification.json).
+
+**Kết luận chất lượng:**7tiêu chí0–5 có dẫn chứng, không tổng điểm thành nghiệm thu. Cả3khớp corefacts và không lấn bài trả phí; kết hợp chính–phụ tinh và chế hóa chỉ2–3/5. Retrieval nhiều reference-only không khớp, còn template; thân bài lặp giới hạn/thuật ngữ kỹ thuật. Giả thuyết AI được giữ riêng, không gọi là nguồn xác nhận hoặc lỗi facts khi chưa có bằng chứng. Không đòi viết rule lấp mọi khoảng thiếu.
+
+**Đích/bảo toàn/điểm dừng:** chỉ build/restart webQA3111; AIworkerQA3111 dừng sau vòng để không tự tạo thêm phí. Không đổi QA3062/3070/3101/worker chính, main282file/8bảng và5AIjob cũ giữ nguyên; không chạy migration chính/Live/Gói3. TrướcQA3062 còn retrieval/prompt/chiều sâu, retention provider và xử lý mấtID, runtime>=22/backup/migration AI có quyền riêng. Không tự sửa nội dung hoặc tạo lại3bài để tăng điểm trong task này.
+
 <a id="ai-menh-package2-20261027"></a>
 ## Gói 2 — QA riêng kết nối API thật được; bài Mệnh dài còn timeout
 

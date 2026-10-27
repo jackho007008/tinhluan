@@ -1,5 +1,11 @@
 # Sổ quyết định Tinh Luận
 
+## 27/10/2026 — Gói 2.1 kiểm thực tế, tối đa ba bài, không tích hợp main
+
+**U — chủ dự án:** kiểm môi trường/model/schema thực tế, toàn pipeline và chất lượng7tiêu chí trên tối đa3bài; không fallback/model benchmark/Gói3, không lặp request khônggiớihạn. Cho rà Background mode và chỉ sửa nhánh chốngtrùng/đốisoát nếu cần. Không restart QA3062/3070/workerchính, migrationmain, Live hoặc sửa lịch sử.
+
+**C — thực thi trong phạm vi:** timeout cũ khôngID giữ nguyên; opt-in Background `store=true` để lưu responseID sớm và cùngqueue GET khi cóID, không tựCREATE lại. MấtID vẫn không bảo đảm exactly-once, cần đốisoát. Ba bài `gpt-6-astra` hoàn thành với promptcũ, tổngước$1,58751; chỉwebQA3111cậpnhật, AIworkerQA tạmdừng sau vòng. Chưa chốt retention provider/main hoặc nghiệm thu chấtlượng; [đánh giá và vấnđề](AI-MENH-PACKAGE21-EVALUATION.md),[backlog](V1-DELIVERY-PLAN.md#ai-menh-package21-20261027). Không tự sửa retrieval/prompt để tăngđiểm hoặc tạo lại bài.
+
 <a id="ai-menh-direction-20261027"></a>
 ## 27/10/2026 — Gói 2 chính thức cho AI diễn giải và tổng hợp Mệnh
 

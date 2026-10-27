@@ -146,4 +146,6 @@ export type ClaimedJob = {
   prompt_version: string;
   edition: string;
   attempts: number;
+  response_id?: string;
+  attempt_started_at?: Date;
 };

@@ -1,6 +1,12 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-## Hiện hành 27/10 — Gói 2 kết nối API thật được; bài Mệnh dài timeout
+## Hiện hành 27/10 — Gói 2.1 hoàn thành kiểm ba bài API thật; chưa đạt chiều sâu nội dung
+
+Model `gpt-6-astra`, prompt1.0.0; đúng3CREATE/3bài hoàn thành, tổng ước tính $1,58751,182–222giây/bài. Chọn A hai chính tinh/B vô chính diệu/C cát-sát từ engine trước xem bài. Background opt-in lưu responseID trước polling, đối soát GET cùngattempt, không queue mới/schema mới.22/22 mock AI, typecheck/build và UI360/390/lưu–mở/11khóa đạt. Request timeout cũ giữ uncertain, không gửi lại.
+
+[Bàn giao hiện hành](V1-DELIVERY-PLAN.md#ai-menh-package21-20261027), [bài/facts/tri thức/điểm và dẫn chứng](AI-MENH-PACKAGE21-EVALUATION.md). Facts/phạm vi giữ tốt trong ba mẫu, nhưng phối hợp phụ tinh/chế hóa còn nông; retrieval có nhánh không khớp/template chưa resolve, prompt nhiều lời rào. Chưa nghiệm thu chất lượng hoặc tích hợp QA3062. Chỉ webQA3111 cập nhật; AIworkerQA3111 tạm dừng sau ba bài để không tạo thêm phí. QA3062/3070/3101/worker chính và lịch sử giữ nguyên. Không Gói3/Live.
+
+## Lượt trước 27/10 — Gói 2 kết nối API thật được; bài Mệnh dài timeout
 
 Baseline `3491535`, AI `menh-ai-1.0.0`, prompt `menh-vietnamese-1.0.0`, SDK OpenAI 7.45.0/Node 24.19.0. [Định hướng mới đã giao](DECISIONS.md#ai-menh-direction-20261027), [bàn giao duy nhất](V1-DELIVERY-PLAN.md#ai-menh-package2-20261027), [kiểm](TESTING.md#ai-menh-package2-testing-20261027). Engine giữ facts; AI được phân tích/tổng hợp, không chỉ viết lại claim. Chỉ Mệnh miễn phí, không 11 cung trả phí.
 

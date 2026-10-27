@@ -1,5 +1,16 @@
 # Kiểm chứng theo phạm vi
 
+<a id="ai-menh-package21-testing-20261027"></a>
+## Gói 2.1 — ba bài API thật và recovery, 27/10/2026
+
+Baseline `b6fa7dc`, triển khaiGói2 `44b42c0`; SDK7.45/Node24.19. Model visibility thật đạt `gpt-6-astra`; không fallback. Prompt vàschema giữ nguyên.3CREATE hoàn chỉnh: A Liêm–Phá Hãm/Dậu; B VCD/Hợi; C Dương Hãm/Tý+Kiếp/Khôi. Input từ form/snapshot/adapter/retrieval thật, không sửa engine để chọn mẫu. A115facts/16knowledge, B111/17, C110/16; người rà đã đọc cả bài và packet, không đọc lại toàn sách.
+
+**22/22mock AI ởDBtest riêng:**18ca cũ và4ca recovery: Background lưuID trước GET; connection mất sau provider nhận chỉ1CREATE và cùngattempt GET về completed; mất kết nối trướcID giữuncertain khôngresend; workercrash vớiID và GET404 dừng khôngretrytínhphí; lỗioutput đã xác định được retry thủ công sangID mới, không dùng nhầmID cũ. Không cho mock gọi key thật. Thêm chốt mất key khi GET recovery vẫn giữ uncertain;22ca, typecheck/build cuối được kiểm sau chốt này. Canvas TS check đạt. Không fullE2E/PDF hoặc chạy lại test không liên quan.
+
+**Actual/UI đạt:** schema8phần/ID hợp lệ/databasecompleted/1attempt mỗi mẫu.3GETprovider nội dung khớp artifact; snapshot/packet hash nguyên; refresh và2POSTretry mỗi completed không tăngattempt; runworker không phát sinh việc mới.4tab,11khóaAI,360/390 khôngtràn, căn cứ mở được;68JS khôngkey, browser không gọi provider trực tiếp, khôngpageerror.5AIjob cũ (gồm timeout khôngID) nguyên. Chi phíướcA$0,49023/B$0,59669/C$0,50059, tổng$1,58751; thời gian182,301/221,633/185,098giây. Reasoning nằm trongoutput. Không gộp chi phí chưa biết của timeout cũ vào đây.
+
+**Hữu hạn/bảo toàn:** workerAI3111 dừng trước tạo3snapshot, gọi workerfunction chung có guardmỗi mẫu1CREATE, không có process chạy chồng; sau vòng giữ dừng để không phát sinh phí. Chỉweb3111restartPID59187. QA3062/3070/3101/worker chính và main282file/8bảng nguyên, khôngschemaAI/main. Đánh giá kỹ thuật đạt không thay phê duyệt chuyên môn; [bài/facts/tri thức/bảngđiểm và vấnđề](AI-MENH-PACKAGE21-EVALUATION.md),[logtest](../.local/ai-menh-package21-20261027/test.log),[verification](../.local/ai-menh-package21-20261027/verification.json). UI evidence không lộ template, nhưng packet gửiAI còn template nên retrieval vẫn cần sửa. Không đổi prompt/retrieval hoặc tái tạo bài để nâng điểm.
+
 <a id="ai-menh-package2-testing-20261027"></a>
 ## Gói 2 AI Mệnh — mock và QA riêng, 27/10/2026
 
