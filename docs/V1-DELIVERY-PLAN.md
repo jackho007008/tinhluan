@@ -1,5 +1,29 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="result-package1-20261027"></a>
+## Gói 1 — trang kết quả lá số, 27/10/2026
+
+**Task hiện tại thay thứ tự tiếp tục nghiên cứu trong phiên UI này.** [Yêu cầu/quyết định](DECISIONS.md#result-package1-decision-20261027). Baseline `main@4598823`, tracked/index sạch, giữ thư mục `buu-dinh-7parts/` chưa theo dõi. Code `a104748`, UI `result-package1-1.0.0`; report 1.79/catalog 1.75 giữ nguyên. Không mở lại khảo cứu sách: tái dùng dữ kiện/hồ sơ và đoạn Tân Biên 40–41 đã lưu.
+
+**Đã triển khai và kiểm trên checkout riêng:**
+
+- Tổng quan: nạp âm, Cục, âm dương, Mệnh/chính tinh/trạng thái, Thân cư. Hai chủ tinh chỉ hiện khi có metadata quy ước; quan hệ Mệnh–Cục định tính. Bộ sao/Cách cục dùng accordion các nhóm Mệnh đã lưu, giữ toàn văn/giới hạn/căn cứ; chưa tự lập danh mục hoặc xếp hạng mới. Thiếu dữ kiện báo chưa biết, không phần trăm/điểm/vượng–khuyết.
+- 12 cung: đúng 12 accordion, Mệnh mở mặc định; địa chi, chính tinh/trạng thái, VCD có chứng nhận và dấu Thân. Engine giữ tên Tử Nữ, nhãn UI là Tử Tức. Nội dung biên tập tách khỏi trạng thái AI; phần Mệnh ở Tổng quan, các cung khác theo owner hiện có, liên kết giữa tab hoạt động. Có giao diện 5 trạng thái AI; production chỉ dùng chưa tạo/chưa có quyền theo projection hiện có, không hành động sinh AI hoặc lời giả. Đây chưa phải grant AI thật hay thiết kế worker Gói 2.
+- Tứ Hóa: 4 thẻ từ `verifiedNatalTransformations` trong snapshot đã lưu; thiếu chứng nhận báo thiếu, không tính bù. Giữ `source`/`note` engine và mâu thuẫn Tân can nếu có. Giải thích khái quát từ Tân Biên PDF 40–41 §3.23–26; phân biệt bảng an PDF 13–14 §8.23 với can cung/tự hóa/phi hóa/lưu niên. Không kết luận chắc chắn về cá nhân.
+- Vận hạn: chỉ “Phần Vận hạn đang được hoàn thiện.” Không graph/scoring/thuật toán hoặc nội dung trả phí mới. Lá số và điều khiển năm đã có vẫn trong disclosure Xem lá số, không thêm tab.
+
+**Dữ liệu và file:** adapter tái dùng `customerInfo`, `starState`, `rulerConvention` và chứng nhận Tứ Hóa; không gọi engine khi mở bản lưu. Workspace vẫn nhận projection máy chủ; không đổi API/policy/kho hoặc nhánh print. Snapshot cũ thiếu metadata hai chủ tinh/chứng nhận Hóa giữ trạng thái thiếu, không backfill. Chưa có danh mục cách cục độc lập được xác nhận nên không tự suy.
+
+9 file code/test: `app/ban-doc/page.tsx`, `app/don-thu/page.tsx`, `app/customer-experience.css`, `components/CustomerReadingWorkspace.tsx`, `components/CustomerShell.tsx`, `components/ResultTabs.tsx`, `components/AiReadingStatus.tsx`, `lib/result-presentation.ts`, `tests/result-presentation.test.ts`. Sáu tài liệu cập nhật: HANDOFF, CURRENT_STATUS, BUSINESS_RULES, DECISIONS, TESTING và V1-DELIVERY-PLAN. [Danh sách và giới hạn kiểm](../.local/result-package1-20261027/verification-notes.json).
+
+**Kiểm thực chạy:** [TESTING](TESTING.md#result-package1-testing-20261027). Unit 19 ca: 18 đạt/1 lỗi tài chính có sẵn, tái hiện trên HEAD gốc; 7 mới + 4 dữ kiện đạt. Scope 6/6 trên database riêng, typecheck/build cuối đạt. Browser đạt 4 tab/360/390/desktop, accordion/căn cứ/bàn phím/liên kết/lưu–mở/legacy full/403/404. Không full E2E, xuất PDF thật hoặc provider ngoài; print static 1.45/1.46/current, code PDF giữ nguyên.
+
+**Môi trường và điểm chặn:** bản mới chạy tại [QA3101 riêng](http://127.0.0.1:3101/lap-la-so), database/kho riêng, không worker/email thật/Live. **Chưa tích hợp QA3062:** auto-review từ chối lệnh thay riêng web vì rủi ro gián đoạn dịch vụ dùng chung, cần quyền restart rõ hơn. Lệnh bị chặn trước thực thi; web 3062 code `22bb53e`, worker chính và QA3070 giữ nguyên. Có baseline/bản sao cục bộ 282 file lịch sử; query READ ONLY quyền/đơn/bindings/liên kết/Toàn thư. [Đối chiếu cuối](../.local/result-package1-20261027/main-after.json) xác nhận mọi file/row cũ, 34 bài, engine/payment/PDF và tiến trình giữ nguyên, không có file mới trên main. Không migration/backfill hoặc vượt chặn.
+
+Ảnh: [Tổng quan 360](../.local/result-package1-20261027/tongquan-360.png), [Tổng quan 390](../.local/result-package1-20261027/tongquan-390.png), [12 cung 360](../.local/result-package1-20261027/12cung-360.png), [12 cung 390](../.local/result-package1-20261027/12cung-390.png), [Tứ Hóa 360](../.local/result-package1-20261027/tuhoa-360.png), [Tứ Hóa 390](../.local/result-package1-20261027/tuhoa-390.png), [Vận hạn 360](../.local/result-package1-20261027/vanhan-360.png), [Vận hạn 390](../.local/result-package1-20261027/vanhan-390.png), [desktop 1280](../.local/result-package1-20261027/desktop-1280.png).
+
+**Còn lại:** chờ quyền thay riêng web QA3062. Lỗi test tài chính có sẵn được ghi riêng, không sửa ngoài gói. API/queue/worker/lưu kết quả AI và kích hoạt sau thanh toán thuộc Gói 2, chưa triển khai. Không tuyên bố hoàn chỉnh AI/chuyên môn 12 cung, nghiệm thu PDF thật hoặc mở bán. Dừng tại Gói 1.
+
 **Bàn giao giữa các thread (20/10/2026):** bắt đầu tại [HANDOFF.md](HANDOFF.md), đọc [CURRENT_STATUS.md](CURRENT_STATUS.md) và [BUSINESS_RULES.md](BUSINESS_RULES.md). Backlog ND01–ND19 trong file này vẫn là danh sách công việc duy nhất. Hai mẫu Tật Ách có **toàn văn, điều kiện, phần chưa xét và nguồn** trong BUSINESS_RULES; không coi việc chủ dự án đồng ý hướng thẩm định là duyệt mẫu hoặc cho phép publish.
 
 > **Bản điều hành hiện hành — 20/10/2026, sau G5, ND01, ND04/Thiên Di và lô khách hàng ND03/Mệnh–ND04/Tử Nữ;  kết quả và phần còn chặn tại V1-4.** Các mục V1-0 đến V1-9 dưới đây thay thế phạm vi/lịch cũ. Nhật ký trước đó được giữ ở cuối để truy vết, không phải yêu cầu triển khai song song. **Cập nhật sau G1a/G2/G3/G4 Test/G5: triển khai máy chủ và G1b Zalo vẫn tạm hoãn; Google, quyền G2, không gian khách hàng G3 và checkout G4 Test đã chạy QA theo ủy quyền riêng.** Không bật thu phí/Live hoặc thay quyền cũ. Các quyết định thương mại và nội dung ở V1-8 vẫn cần chốt.

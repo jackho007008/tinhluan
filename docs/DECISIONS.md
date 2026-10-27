@@ -1,5 +1,14 @@
 # Sổ quyết định Tinh Luận
 
+<a id="result-package1-decision-20261027"></a>
+## 27/10/2026 — yêu cầu Gói 1 trang kết quả, tách phần AI tương lai
+
+**U — yêu cầu trực tiếp:** đúng 4 tab Tổng quan, 12 cung, Tứ Hóa, Vận hạn; không thêm tab Luận chi tiết AI hoặc Bộ sao. Ảnh chỉ tham chiếu bố cục/phong cách, không sao chép dữ kiện/văn luận. Tổng quan và Tứ Hóa không gọi AI; dùng dữ liệu đã có, có nguồn, thiếu dữ liệu không bịa. Không tự tạo tỷ lệ, trọng số, điểm hoặc nhãn đánh giá chưa có công thức. Vận hạn chỉ hiển thị câu đã giao.
+
+12 cung chuẩn bị 5 trạng thái AI; chưa tích hợp OpenAI API, xây worker AI hoặc thay thanh toán. Luồng tương lai cần Mệnh AI miễn phí khi tạo, 11 cung sau thanh toán hợp lệ, không sinh trước bài trả phí và mở lại dùng kết quả đã lưu. **Chưa cho phép triển khai Gói 2.** Catalog cũ không đổi nhãn thành AI; quyền/nội dung lịch sử, engine, Google/thư viện, PDF, 34 bài và QA3070 phải được bảo toàn. Không mở Live, bán thật hoặc deploy máy chủ.
+
+**C — thực hiện:** `a104748` chỉ thay lớp trình bày, adapter chỉ đọc và kiểm thử. Quyền máy chủ/renderer print giữ byte; chưa có grant, mô hình lưu hoặc queue AI mới. Bản kiểm QA3101 riêng đạt, không coi là nghiệm thu sinh AI/thanh toán/PDF thật. **Chưa thay web QA3062:** bộ duyệt tự động từ chối vì rủi ro gián đoạn dịch vụ dùng chung và cần quyền restart rõ hơn. Không ghi việc dùng QA thành một lần chuyển dịch vụ đã thực hiện. [Bàn giao](V1-DELIVERY-PLAN.md#result-package1-20261027).
+
 Cập nhật 20/10/2026. [BUSINESS_RULES](BUSINESS_RULES.md) diễn giải hợp đồng hiện hành; [backlog duy nhất](V1-DELIVERY-PLAN.md) quản lý công việc. Sổ này không phải phê duyệt chuyên môn và không tự cho phép thực thi task tiếp theo.
 
 ## Cách đọc bằng chứng

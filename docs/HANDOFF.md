@@ -1,5 +1,11 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành 27/10 — Gói 1 trang kết quả đã kiểm; QA3062 chưa đổi
+
+UI `result-package1-1.0.0`, code `a104748`, baseline `4598823`. Đúng 4 tab; xem [bàn giao và điểm chặn](V1-DELIVERY-PLAN.md#result-package1-20261027), [kiểm và lỗi từng lượt](TESTING.md#result-package1-testing-20261027). Bản mới chạy tại [QA3101 riêng](http://127.0.0.1:3101/lap-la-so), database/kho riêng, không worker.
+
+**QA3062 vẫn code `22bb53e`, app 1.79/catalog 1.75.** Bộ duyệt tự động từ chối thay web trước thực thi vì rủi ro chuyển dịch vụ dùng chung; chờ quyền cụ thể cho thao tác này. Worker chính và QA3070 giữ nguyên; Live tắt. Không triển khai Gói 2 hoặc tự tiếp tục các task nghiên cứu bên dưới.
+
 ## Hiện hành 27/10 — K12 đã chốt; U42 đạt QA1.79, còn469 khóa gốc
 
 **Code `22bb53e`, app1.79/catalog1.75, compatibility0.13.** QA3062 đã tích hợp;494 tệp root/checkout khớp, một worker. [Quyết định đã chốt](DECISIONS.md#scope-k12-t1-u42-nd02-20261027), [hàng đợi duy nhất](V1-DELIVERY-PLAN.md#completion-queue-k12-20261027), [câu hỏi khách và bằng chứng K12](PRODUCT-SCOPE-D-REVIEW.md#k12-customer-questions-20261027). S1/S2/S3/S5/S9 tiếp tục chưa xuất; N4/N13 chờ nghĩa, N11/N12 giữ, N6/N7/N8 đúng nhánh cũ. **ND02 đã duyệt, chưa thực thi; không hỏi lại.**

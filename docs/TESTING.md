@@ -1,5 +1,21 @@
 # Kiểm chứng theo phạm vi
 
+<a id="result-package1-testing-20261027"></a>
+## Gói 1 trang kết quả — 27/10/2026
+
+Code `a104748`, UI `result-package1-1.0.0`, baseline `4598823`. Checkout/database/kho riêng trong `.local/result-package1-20261027/`; database `tinhluan_result_package1_*`, web 3101, không worker. Không migration/restore/purge hoặc đơn mock trên QA chính.
+
+- **7/7 test mới** `result-presentation`: dữ kiện/trạng thái sao, 12 cung/Thân/VCD, dữ liệu thiếu/trùng cung, chứng nhận Tứ Hóa và metadata hai chủ tinh; 5 trạng thái AI, đúng 4 tab/Mệnh mở. Sáu mẫu qua 12 projection free/full/legacy giữ từng section, notice và paragraph đúng một lần. Kiểm basic và renderer print 1.45/1.46/current tách khỏi tab. Object biên và đổi version trong kiểm renderer chỉ là fixture, không gọi là bản lịch sử engine thật.
+- **4/4 `chart-customer-info`; 7/8 `customer-reading`.** Lỗi cũ `Kim work adjustment stays adjacent...` tại dòng 15 truy cập `.text` của paragraph retention-unresolved không tồn tại. Chạy riêng test đó với component HEAD `4598823` cũng lỗi giống hệt. Không sửa expected/nguồn/tài chính. Tổng unit: 18 đạt/1 lỗi có sẵn trong 19 ca, không nói tất cả xanh.
+- **6/6 `reading-scope` trên database mới:** free/full/legacy/đơn mock tích hợp, không lộ lời khóa, PDF 403, người khác 404 và quyền/hạn. Mock chỉ ở database riêng, không SePay thật hoặc worker AI. Typecheck cuối và hai lượt production build đạt.
+- **Browser thật trên QA3101:** engine qua form → lưu → mở lại; 4 tab × 360/390, không tràn ngang; 12 accordion/Mệnh mở, Phụ Mẫu đóng–mở–đóng; 4 thẻ Tứ Hóa và căn cứ; Vận hạn đúng một câu. Home/ArrowRight, liên kết đổi tab và mở nhóm Mệnh đạt. Bản legacy full giữ toàn văn/căn cứ; free PDF 403, chéo phiên 404, không page error. Legacy full là fixture mới trong kho riêng bỏ policy, không sửa/nâng quyền bản đã lưu. Có 8 ảnh mobile, 1 desktop 1280 và 1 ảnh căn cứ; đã kiểm ảnh đại diện từng tab/desktop/căn cứ.
+
+**Lỗi và lượt chạy được giữ:** fixture mới thiếu `place`; typecheck cần khẳng định lookup state; assertion dùng thẻ p khác thuộc tính. Đã sửa fixture/typing/assertion. Database loopback ban đầu EPERM, lượt có quyền tạo database riêng và kiểm đạt. UI lượt 1 selector exact bỏ qua dấu +/− từ CSS, sửa harness. UI lượt 2 phát hiện lỗi thật: section Mệnh chỉ có intro/notice bị loại khỏi điểm đến. Đã giữ mọi section Mệnh, thêm kiểm section/notice, build và UI cuối đạt. Không xóa hoặc nới expected nội dung nguồn/lịch sử.
+
+**Giới hạn:** không chạy full E2E hoặc xuất lại PDF vì không đổi renderer print/PDF; chỉ kiểm print static và cổng quyền. Sinh AI/queue/lưu kết quả chưa có; generating/completed/error chỉ render trong test. Không kiểm lại Google/SePay/Gmail/provider ngoài hoặc tính đúng chuyên môn toàn lá số. **QA3062 chưa đổi:** auto-review chặn thay web trước thực thi, không vượt chặn. Đối chiếu cuối giữ nguyên 282 file lịch sử, quyền/đơn/liên kết, 34 bài và các file engine/payment/PDF; worker chính/QA3070 nguyên.
+
+[Nhật ký từng lượt và danh sách file](../.local/result-package1-20261027/verification-notes.json), [UI](../.local/result-package1-20261027/ui.json), [test trên baseline](../.local/result-package1-20261027/baseline-customer-reading.log), [quyền](../.local/result-package1-20261027/scope-1.log), [build cuối](../.local/result-package1-20261027/build-final.log), [bảo toàn](../.local/result-package1-20261027/main-after.json).
+
 <a id="u42-k12-testing-20261027"></a>
 ## U42 theoK12 — app1.79/catalog1.75,code22bb53e
 

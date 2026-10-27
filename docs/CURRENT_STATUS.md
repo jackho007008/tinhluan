@@ -1,5 +1,11 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Cập nhật 27/10 — Gói 1 trang kết quả đã kiểm trên QA3101 riêng
+
+Baseline `main@4598823` → code `a104748`; UI `result-package1-1.0.0`. Đã có đúng 4 tab Tổng quan/12 cung/Tứ Hóa/Vận hạn, giao diện tối, accordion Mệnh mở mặc định và 5 trạng thái AI. Dùng snapshot cùng nội dung biên tập được máy chủ cho phép; không gọi AI hoặc sửa report 1.79/catalog 1.75/engine/policy. Bộ sao/Cách cục tái dùng các nhóm Mệnh đã lưu, chưa tự lập danh mục hoặc xếp hạng mới.
+
+[QA3101](http://127.0.0.1:3101/lap-la-so) dùng database/kho riêng, không worker. **QA3062 vẫn bản cũ**: auto-review từ chối chuyển web trước thực thi, chờ quyền restart cụ thể. QA3070 và worker chính giữ nguyên. Typecheck/build cuối đạt; 7/7 test mới, 4/4 dữ kiện, 6/6 quyền trên database riêng, 7/8 báo cáo cũ. Một lỗi tài chính tái hiện trên HEAD gốc, giữ expected. Browser thật đạt 4 tab, mobile 360/390, bàn phím/liên kết/căn cứ, lưu–mở, bản cũ và cổng 403/404. 282 file lịch sử, quyền/đơn/liên kết và 34 bài công khai giữ nguyên. [Chi tiết và ảnh](V1-DELIVERY-PLAN.md#result-package1-20261027). Không Gói 2, API/worker AI, mở bán hoặc Live.
+
 ## Hiện hành 27/10 — app1.79/catalog1.75; K12 đã chốt,469 gốc giữ nguyên
 
 Code `22bb53e`, QA3062 đã tích hợp và kiểm hai bản lưu mới. [Hàng đợi hoàn thiện](V1-DELIVERY-PLAN.md#completion-queue-k12-20261027), [quyết định](DECISIONS.md#scope-k12-t1-u42-nd02-20261027), [câu hỏi/bằng chứng K12](PRODUCT-SCOPE-D-REVIEW.md#k12-customer-questions-20261027). K12/T1/Q-U42/Q-ND02 đã duyệt; S1/S2/S3/S5/S9 chưa xuất, N4/N13 chờ nghĩa, N11/N12 giữ. ND02 chưa thực thi, không xin lại quyết định.

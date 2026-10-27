@@ -1,5 +1,9 @@
 # Tinh Luận — hợp đồng sản phẩm, nguồn và quyết định
 
+### Phạm vi task UI Gói 1 ngày 27/10
+
+[Xem yêu cầu mới](DECISIONS.md#result-package1-decision-20261027): chỉ 4 tab, chuẩn bị 5 trạng thái AI; chưa có lời AI thật hoặc API/worker AI. Catalog đã lưu vẫn là nội dung biên tập và giữ quyền/policy cũ. Mệnh AI miễn phí, 11 cung sau thanh toán là yêu cầu cho luồng tương lai; chưa thực thi hoặc tự chuyển quyền cũ thành quyền của sản phẩm AI. Các giới hạn chuyên môn/lịch sử/Live bên dưới tiếp tục áp dụng. Không tự làm Gói 2.
+
 Cập nhật 27/10/2026. Đọc cùng [CURRENT_STATUS](CURRENT_STATUS.md) và backlog duy nhất [V1-DELIVERY-PLAN](V1-DELIVERY-PLAN.md). File này phân biệt quyết định chủ dự án, hành vi đang có, lựa chọn kỹ thuật và đề xuất; không phải một danh sách rule mới để tự triển khai.
 
 Căn cứ phân loại quyết định: [DECISIONS](DECISIONS.md) ghi lời chủ dự án theo từng gói, hồ sơ hỗ trợ và những mục chỉ có bằng chứng triển khai. Nhật ký assistant/code không tự là phê duyệt; chỗ chưa có xác nhận được đánh dấu riêng. Các mục1–8 dưới đây tương ứng Q01/Q02/Q05/Q06; bảo toàn lịch sử còn được yêu cầu trực tiếp trong G2 và các task nội dung.
