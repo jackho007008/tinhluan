@@ -1,5 +1,20 @@
 # Kiểm chứng theo phạm vi
 
+<a id="qa3062-result-package1-testing-20261027"></a>
+## Smoke sau cập nhật riêng web QA3062 — 27/10/2026
+
+Theo quyền cụ thể của chủ dự án, dùng build Gói 1 đã đạt trên QA3101; không đổi source, không build lại/toàn E2E/PDF hoặc test đã đạt. HEAD trước thao tác `350cdb4`, implementation `a104748`. 339 file nguồn root/checkout đã kiểm/checkout deploy khớp; build ID giữ nguyên. Web `62859` → `94756`; chỉ gửi SIGTERM tới PID web đã xác minh, không có lệnh restart worker/process manager.
+
+**Preflight:** xác minh PID/cổng/cwd/thời điểm khởi động của web, worker, QA3070 và QA3101. `ps` chỉ trả tên cho tiến trình Next cũ, không trả environment; không coi đây là cấu hình khác. 28 biến ứng dụng của worker khớp bộ cấu hình launch dùng chung; launch script cũ dùng cùng environment cho web/worker và checkout không có dotenv đè. Sau deploy xác minh trực tiếp kết nối PostgreSQL của web qua `lsof` + `pg_stat_activity` đúng database QA chính. Không in hoặc lưu raw environment/secret.
+
+**Smoke đạt bằng Chrome thật và phiên sở hữu hiện có:** mở cùng báo cáo 1.79 đã lưu trước deploy; thấy đúng 4 tab Tổng quan/12 cung/Tứ Hóa/Vận hạn, dữ kiện Mệnh/chính tinh/trạng thái/Thân khớp. Mệnh mở ban đầu, đóng rồi mở lại; mở/đóng căn cứ của đoạn biên tập đã lưu, thấy dữ kiện/điều kiện/nguồn/giới hạn; Tứ Hóa đủ 4 thẻ, Vận hạn đúng câu placeholder. Quay lại danh sách vẫn 3 bản của phiên, mở lại cùng bản bằng giao diện mới. Không tạo/sửa bản, phiên, quyền hoặc đơn. Không thử Google/SePay/email/AI hoặc kiểm console đầy đủ qua native UI.
+
+**Lượt chưa đạt không che giấu:** keyboard reload ban đầu vẫn là view cũ; toolbar reload trả khung xám/AX trống. Không tính hai lượt ấy là thành công. Mở tab Chrome mới vào danh sách rồi bấm bản cũ đã hiển thị và qua các thao tác trên. Không sửa ứng dụng hoặc dữ liệu để giải hiện tượng quan sát. HTTP không cookie: form/Toàn thư 200; API bản riêng 404 và trang đọc báo không có quyền, không dùng ID làm quyền.
+
+**Đối chiếu cuối:** 282 file giữ nguyên hash, không file lưu mới; hash bản cũ khớp. 8 bảng giữ nguyên mọi row/count: access tokens, order bindings, customer links, orders, payment events/transactions, encyclopedia articles/versions; vẫn 34 bài công khai. Worker `62860`, web/worker QA3070 `94421/94426`, QA3101 `89190` giữ PID/cwd/thời điểm khởi động. Không schema operation/migration/restore/thanh toán hoặc rollback; web mới hoạt động.
+
+[Bản nhận diện phục vụ](../.local/result-package1-web3062-20261027/serving-code.json), [smoke](../.local/result-package1-web3062-20261027/smoke.json), [HTTP](../.local/result-package1-web3062-20261027/http-smoke.json), [bảo toàn và tiến trình](../.local/result-package1-web3062-20261027/after.json), [kế hoạch rollback riêng web](../.local/result-package1-web3062-20261027/rollback-plan.json). Lỗi unit tài chính ở lượt trước giữ nguyên, không gọi đây là một lượt toàn suite xanh.
+
 <a id="result-package1-testing-20261027"></a>
 ## Gói 1 trang kết quả — 27/10/2026
 
@@ -12,7 +27,7 @@ Code `a104748`, UI `result-package1-1.0.0`, baseline `4598823`. Checkout/databas
 
 **Lỗi và lượt chạy được giữ:** fixture mới thiếu `place`; typecheck cần khẳng định lookup state; assertion dùng thẻ p khác thuộc tính. Đã sửa fixture/typing/assertion. Database loopback ban đầu EPERM, lượt có quyền tạo database riêng và kiểm đạt. UI lượt 1 selector exact bỏ qua dấu +/− từ CSS, sửa harness. UI lượt 2 phát hiện lỗi thật: section Mệnh chỉ có intro/notice bị loại khỏi điểm đến. Đã giữ mọi section Mệnh, thêm kiểm section/notice, build và UI cuối đạt. Không xóa hoặc nới expected nội dung nguồn/lịch sử.
 
-**Giới hạn:** không chạy full E2E hoặc xuất lại PDF vì không đổi renderer print/PDF; chỉ kiểm print static và cổng quyền. Sinh AI/queue/lưu kết quả chưa có; generating/completed/error chỉ render trong test. Không kiểm lại Google/SePay/Gmail/provider ngoài hoặc tính đúng chuyên môn toàn lá số. **QA3062 chưa đổi:** auto-review chặn thay web trước thực thi, không vượt chặn. Đối chiếu cuối giữ nguyên 282 file lịch sử, quyền/đơn/liên kết, 34 bài và các file engine/payment/PDF; worker chính/QA3070 nguyên.
+**Giới hạn:** không chạy full E2E hoặc xuất lại PDF vì không đổi renderer print/PDF; chỉ kiểm print static và cổng quyền. Sinh AI/queue/lưu kết quả chưa có; generating/completed/error chỉ render trong test. Không kiểm lại Google/SePay/Gmail/provider ngoài hoặc tính đúng chuyên môn toàn lá số. **Ở lượt `350cdb4`, QA3062 chưa đổi:** auto-review chặn trước thực thi; quyền cụ thể và smoke sau tích hợp được ghi ở mục mới phía trên. Đối chiếu cuối giữ nguyên 282 file lịch sử, quyền/đơn/liên kết, 34 bài và các file engine/payment/PDF; worker chính/QA3070 nguyên.
 
 [Nhật ký từng lượt và danh sách file](../.local/result-package1-20261027/verification-notes.json), [UI](../.local/result-package1-20261027/ui.json), [test trên baseline](../.local/result-package1-20261027/baseline-customer-reading.log), [quyền](../.local/result-package1-20261027/scope-1.log), [build cuối](../.local/result-package1-20261027/build-final.log), [bảo toàn](../.local/result-package1-20261027/main-after.json).
 

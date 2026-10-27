@@ -1,10 +1,10 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-## Hiện hành 27/10 — Gói 1 trang kết quả đã kiểm; QA3062 chưa đổi
+## Hiện hành 27/10 — Gói 1 đã cập nhật riêng web QA3062
 
-UI `result-package1-1.0.0`, code `a104748`, baseline `4598823`. Đúng 4 tab; xem [bàn giao và điểm chặn](V1-DELIVERY-PLAN.md#result-package1-20261027), [kiểm và lỗi từng lượt](TESTING.md#result-package1-testing-20261027). Bản mới chạy tại [QA3101 riêng](http://127.0.0.1:3101/lap-la-so), database/kho riêng, không worker.
+Sau quyền thực thi cụ thể của chủ dự án, QA3062 đã chạy UI `result-package1-1.0.0`, code `a104748` từ HEAD bàn giao `350cdb4`; report 1.79/catalog 1.75 giữ nguyên. Chỉ web `62859` → `94756`; worker chính `62860`, web/worker QA3070 `94421/94426` và QA3101 `89190` giữ PID, thời điểm khởi động và checkout. [Bàn giao hiện hành](V1-DELIVERY-PLAN.md#qa3062-result-package1-20261027), [smoke/bảo toàn](TESTING.md#qa3062-result-package1-testing-20261027).
 
-**QA3062 vẫn code `22bb53e`, app 1.79/catalog 1.75.** Bộ duyệt tự động từ chối thay web trước thực thi vì rủi ro chuyển dịch vụ dùng chung; chờ quyền cụ thể cho thao tác này. Worker chính và QA3070 giữ nguyên; Live tắt. Không triển khai Gói 2 hoặc tự tiếp tục các task nghiên cứu bên dưới.
+Bốn tab, dữ kiện, accordion Mệnh, căn cứ và mở lại báo cáo cũ đã kiểm bằng phiên Chrome sở hữu hiện có. 282 file lịch sử, 8 bảng quyền/đơn/webhook/Toàn thư và 34 bài công khai giữ nguyên; không tạo bản/phiên/đơn mới. Không migration, thay thanh toán hoặc rollback; không Gói 2. QA3101 giữ nguyên. Receipt runtime mới tại `.local/result-package1-web3062-20261027/serving-code.json`; receipt cũ giữ làm lịch sử. Điểm chặn auto-review ở lượt trước đã được giải bằng quyền cụ thể lần này.
 
 ## Hiện hành 27/10 — K12 đã chốt; U42 đạt QA1.79, còn469 khóa gốc
 

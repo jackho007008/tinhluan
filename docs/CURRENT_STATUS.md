@@ -1,10 +1,12 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-## Cập nhật 27/10 — Gói 1 trang kết quả đã kiểm trên QA3101 riêng
+## Cập nhật 27/10 — Gói 1 đã chạy trên web QA3062
 
-Baseline `main@4598823` → code `a104748`; UI `result-package1-1.0.0`. Đã có đúng 4 tab Tổng quan/12 cung/Tứ Hóa/Vận hạn, giao diện tối, accordion Mệnh mở mặc định và 5 trạng thái AI. Dùng snapshot cùng nội dung biên tập được máy chủ cho phép; không gọi AI hoặc sửa report 1.79/catalog 1.75/engine/policy. Bộ sao/Cách cục tái dùng các nhóm Mệnh đã lưu, chưa tự lập danh mục hoặc xếp hạng mới.
+Theo quyền riêng của chủ dự án, [QA3062](http://127.0.0.1:3062/lap-la-so) đã chuyển từ code `22bb53e` sang UI `result-package1-1.0.0`/code `a104748`; HEAD được kiểm trước deploy là `350cdb4`. Tái dùng build đã kiểm, đối chiếu 339 file nguồn và đặt checkout riêng tại `.local/result-package1-web3062-20261027/qa`; không sửa mã ứng dụng hoặc QA3101. Report 1.79/catalog 1.75/engine/policy giữ nguyên.
 
-[QA3101](http://127.0.0.1:3101/lap-la-so) dùng database/kho riêng, không worker. **QA3062 vẫn bản cũ**: auto-review từ chối chuyển web trước thực thi, chờ quyền restart cụ thể. QA3070 và worker chính giữ nguyên. Typecheck/build cuối đạt; 7/7 test mới, 4/4 dữ kiện, 6/6 quyền trên database riêng, 7/8 báo cáo cũ. Một lỗi tài chính tái hiện trên HEAD gốc, giữ expected. Browser thật đạt 4 tab, mobile 360/390, bàn phím/liên kết/căn cứ, lưu–mở, bản cũ và cổng 403/404. 282 file lịch sử, quyền/đơn/liên kết và 34 bài công khai giữ nguyên. [Chi tiết và ảnh](V1-DELIVERY-PLAN.md#result-package1-20261027). Không Gói 2, API/worker AI, mở bán hoặc Live.
+Chỉ web `62859` → `94756`. Worker chính `62860`, QA3070 web/worker `94421/94426`, QA3101 `89190` giữ PID/thời điểm khởi động/checkout. HTTP và smoke 4 tab, dữ kiện, Mệnh đóng–mở, căn cứ biên tập, danh sách/mở lại báo cáo cũ đạt bằng phiên Chrome hiện có. Lượt Chrome reload xám không tính đạt; mở tab mới qua danh sách rồi kiểm thành công. 282 file, 8 bảng đối chiếu và 34 bài giữ nguyên; không có bản/phiên/đơn mới hoặc ghi DB từ thao tác deploy/smoke. Không migration/đổi thanh toán, không cần rollback. [Bằng chứng](V1-DELIVERY-PLAN.md#qa3062-result-package1-20261027).
+
+Lỗi test tài chính có sẵn vẫn ghi riêng từ lượt `350cdb4`; không chạy lại toàn E2E/PDF/build/test đã đạt vì code không đổi. API/worker/lưu kết quả AI thuộc Gói 2, chưa triển khai. Không mở bán hoặc Live.
 
 ## Hiện hành 27/10 — app1.79/catalog1.75; K12 đã chốt,469 gốc giữ nguyên
 

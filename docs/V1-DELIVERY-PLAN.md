@@ -1,5 +1,18 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="qa3062-result-package1-20261027"></a>
+## Gói 1 — đã cập nhật riêng web QA3062 sau quyền cụ thể, 27/10/2026
+
+**Đã thực hiện phần còn chặn của Gói 1.** [Quyền của chủ dự án](DECISIONS.md#qa3062-result-package1-authorized-20261027), [kiểm theo phạm vi](TESTING.md#qa3062-result-package1-testing-20261027). Trước: web code `22bb53e`, report 1.79/catalog 1.75. Sau: code `a104748`, UI `result-package1-1.0.0`; report/catalog/engine/quyền giữ nguyên. HEAD bàn giao được xác minh `350cdb4`, tracked/index sạch, giữ thư mục Bửu Đình chưa theo dõi.
+
+Tái dùng build đã đạt, không sửa source; 339 file nguồn khớp giữa root/bản kiểm/bản deploy. Checkout web mới `.local/result-package1-web3062-20261027/qa`, độc lập QA3101. Xác minh cấu hình launch/worker, DB/kho và tiến trình thực trước thao tác; chỉ web QA3062 `62859` → `94756`. Worker `62860` vẫn ở checkout cũ; web/worker QA3070 `94421/94426` và QA3101 `89190` giữ PID/cwd/thời điểm khởi động. Không process manager hoặc restart dịch vụ khác.
+
+[QA3062](http://127.0.0.1:3062/lap-la-so) trả HTTP 200. Smoke dùng báo cáo cũ thật trước/sau bằng phiên Chrome đang có: đúng 4 tab, dữ kiện Mệnh–Thân, accordion Mệnh, căn cứ nguồn/điều kiện/giới hạn, 4 thẻ Hóa, câu Vận hạn; quay lại danh sách và mở lại bản cũ đạt. Không tạo báo cáo/phiên/đơn hoặc sửa nội dung/quyền. Hai lượt Chrome reload đầu chưa quan sát được view mới, không tính đạt; mở tab mới từ danh sách rồi kiểm thành công. Không có lỗi ứng dụng mới được quan sát; không nói đã kiểm hết console hoặc mọi luồng.
+
+[Bảo toàn](../.local/result-package1-web3062-20261027/after.json): 282 file giữ hash, 0 file lưu mới, bản cũ giữ hash; mọi row/count của 8 bảng quyền/đơn/webhook/Toàn thư giữ nguyên, 34 bài công khai. Kết nối DB thực của web đã đối chiếu đúng QA chính. Không schema/migration/restore, đổi thanh toán, worker hoặc QA3070/3101. Web mới hoạt động nên không cần rollback; [phương án riêng web](../.local/result-package1-web3062-20261027/rollback-plan.json) đã chuẩn bị trước thao tác. [Receipt code/process](../.local/result-package1-web3062-20261027/serving-code.json), [smoke](../.local/result-package1-web3062-20261027/smoke.json).
+
+**Điểm dừng:** Gói 1 UI và cập nhật web đã kiểm trong phạm vi giao. Không chạy lại full E2E/PDF/test/build đã đạt vì source không đổi. Lỗi test tài chính có sẵn từ phiên trước giữ ghi nhận; không mở task sửa ngoài gói. Gói 2/API/worker/lưu kết quả AI chưa triển khai, Live vẫn tắt. Các trạng thái “chờ quyền” của lượt trước bên dưới là lịch sử.
+
 <a id="result-package1-20261027"></a>
 ## Gói 1 — trang kết quả lá số, 27/10/2026
 
@@ -18,11 +31,11 @@
 
 **Kiểm thực chạy:** [TESTING](TESTING.md#result-package1-testing-20261027). Unit 19 ca: 18 đạt/1 lỗi tài chính có sẵn, tái hiện trên HEAD gốc; 7 mới + 4 dữ kiện đạt. Scope 6/6 trên database riêng, typecheck/build cuối đạt. Browser đạt 4 tab/360/390/desktop, accordion/căn cứ/bàn phím/liên kết/lưu–mở/legacy full/403/404. Không full E2E, xuất PDF thật hoặc provider ngoài; print static 1.45/1.46/current, code PDF giữ nguyên.
 
-**Môi trường và điểm chặn:** bản mới chạy tại [QA3101 riêng](http://127.0.0.1:3101/lap-la-so), database/kho riêng, không worker/email thật/Live. **Chưa tích hợp QA3062:** auto-review từ chối lệnh thay riêng web vì rủi ro gián đoạn dịch vụ dùng chung, cần quyền restart rõ hơn. Lệnh bị chặn trước thực thi; web 3062 code `22bb53e`, worker chính và QA3070 giữ nguyên. Có baseline/bản sao cục bộ 282 file lịch sử; query READ ONLY quyền/đơn/bindings/liên kết/Toàn thư. [Đối chiếu cuối](../.local/result-package1-20261027/main-after.json) xác nhận mọi file/row cũ, 34 bài, engine/payment/PDF và tiến trình giữ nguyên, không có file mới trên main. Không migration/backfill hoặc vượt chặn.
+**Lịch sử ở HEAD `350cdb4` — môi trường và điểm chặn trước khi có quyền riêng:** bản mới chạy tại [QA3101 riêng](http://127.0.0.1:3101/lap-la-so), database/kho riêng, không worker/email thật/Live. **Chưa tích hợp QA3062:** auto-review từ chối lệnh thay riêng web vì rủi ro gián đoạn dịch vụ dùng chung, cần quyền restart rõ hơn. Lệnh bị chặn trước thực thi; web 3062 code `22bb53e`, worker chính và QA3070 giữ nguyên. Có baseline/bản sao cục bộ 282 file lịch sử; query READ ONLY quyền/đơn/bindings/liên kết/Toàn thư. [Đối chiếu cuối](../.local/result-package1-20261027/main-after.json) xác nhận mọi file/row cũ, 34 bài, engine/payment/PDF và tiến trình giữ nguyên, không có file mới trên main. Không migration/backfill hoặc vượt chặn.
 
 Ảnh: [Tổng quan 360](../.local/result-package1-20261027/tongquan-360.png), [Tổng quan 390](../.local/result-package1-20261027/tongquan-390.png), [12 cung 360](../.local/result-package1-20261027/12cung-360.png), [12 cung 390](../.local/result-package1-20261027/12cung-390.png), [Tứ Hóa 360](../.local/result-package1-20261027/tuhoa-360.png), [Tứ Hóa 390](../.local/result-package1-20261027/tuhoa-390.png), [Vận hạn 360](../.local/result-package1-20261027/vanhan-360.png), [Vận hạn 390](../.local/result-package1-20261027/vanhan-390.png), [desktop 1280](../.local/result-package1-20261027/desktop-1280.png).
 
-**Còn lại:** chờ quyền thay riêng web QA3062. Lỗi test tài chính có sẵn được ghi riêng, không sửa ngoài gói. API/queue/worker/lưu kết quả AI và kích hoạt sau thanh toán thuộc Gói 2, chưa triển khai. Không tuyên bố hoàn chỉnh AI/chuyên môn 12 cung, nghiệm thu PDF thật hoặc mở bán. Dừng tại Gói 1.
+**Điểm chặn lúc `350cdb4`:** quyền thay riêng web QA3062 đã được cấp và thực thi tại mục mới phía trên. Lỗi test tài chính có sẵn được ghi riêng, không sửa ngoài gói. API/queue/worker/lưu kết quả AI và kích hoạt sau thanh toán thuộc Gói 2, chưa triển khai. Không tuyên bố hoàn chỉnh AI/chuyên môn 12 cung, nghiệm thu PDF thật hoặc mở bán. Dừng tại Gói 1.
 
 **Bàn giao giữa các thread (20/10/2026):** bắt đầu tại [HANDOFF.md](HANDOFF.md), đọc [CURRENT_STATUS.md](CURRENT_STATUS.md) và [BUSINESS_RULES.md](BUSINESS_RULES.md). Backlog ND01–ND19 trong file này vẫn là danh sách công việc duy nhất. Hai mẫu Tật Ách có **toàn văn, điều kiện, phần chưa xét và nguồn** trong BUSINESS_RULES; không coi việc chủ dự án đồng ý hướng thẩm định là duyệt mẫu hoặc cho phép publish.
 

@@ -1,5 +1,12 @@
 # Sổ quyết định Tinh Luận
 
+<a id="qa3062-result-package1-authorized-20261027"></a>
+## 27/10/2026 — quyền thực thi cụ thể và kết quả thay riêng web QA3062
+
+**U — chủ dự án xác nhận:** cho phép build/deploy/restart riêng web QA3062 bằng Gói 1 đã kiểm trên QA3101; xác minh code `a104748` và HEAD `350cdb4`, không ghi đè việc đang dở. Giữ worker hiện tại, không restart QA3070, không tác động QA3101 nếu không cần. Không schema/dữ liệu lịch sử/quyền đã mua/đơn/webhook/cấu hình thanh toán, không restart toàn hệ thống/process manager. Nếu web mới lỗi chỉ rollback web cũ. Không Gói 2. Quyền này giải điểm chặn auto-review trước đó, không mở quyền sang dịch vụ khác.
+
+**C — đã thực hiện đúng phạm vi:** tái dùng build, checkout riêng, chỉ web `62859` → `94756`; worker/QA3070/QA3101 giữ nguyên. Smoke trên báo cáo cũ thật bằng phiên sở hữu đạt, file/row lịch sử giữ nguyên, không cần rollback. [Kết quả và giới hạn](V1-DELIVERY-PLAN.md#qa3062-result-package1-20261027). Không suy từ việc web chạy thành nghiệm thu AI/chuyên môn hoặc PDF mới.
+
 <a id="result-package1-decision-20261027"></a>
 ## 27/10/2026 — yêu cầu Gói 1 trang kết quả, tách phần AI tương lai
 
