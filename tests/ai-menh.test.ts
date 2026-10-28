@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import os from "node:os";
 import { randomUUID, createHash } from "node:crypto";
+import { spawnSync } from "node:child_process";
 import {
   beforeAll,
   beforeEach,
@@ -36,6 +37,9 @@ import {
 } from "../lib/ai/store";
 import { menhFacts } from "../lib/ai/facts";
 import { retrieveMenhKnowledge } from "../lib/ai/knowledge";
+import { executeRules } from "../lib/interpretation-rules/execute";
+import { tanBienRules } from "../lib/interpretation-rules/profile-rules";
+import { menhInstructions } from "../lib/ai/prompt";
 import { runAiMenhJob } from "../lib/ai/worker";
 import { GenerationFailure, openaiNarrator } from "../lib/ai/provider";
 import { validateNarration } from "../lib/ai/validate";
@@ -117,6 +121,92 @@ afterAll(async () => {
   await pool.end();
 });
 describe("facts and source retrieval", () => {
+  it("prioritizes only saved V1 Mệnh for this snapshot, keeps draft provenance, and removes unmatched branches/templates", async () => {
+    const r = record(),
+      before = JSON.stringify(r),
+      input = await retrieveMenhKnowledge(r, menhFacts(r));
+    expect(input.editorial?.acceptedGroups).toBeGreaterThan(0);
+    expect(input.knowledge[0].selection).toBe("matched-v1-editorial");
+    const matched = new Set(
+      executeRules(
+        r.snapshot,
+        tanBienRules(r.snapshot),
+        "internal-draft",
+      ).previewClaims.flatMap((c) => c.rules.map((r) => r.id)),
+    );
+    for (const k of input.knowledge) {
+      expect(JSON.stringify(k)).not.toContain("{{");
+      expect([
+        "matched-v1-editorial",
+        "matched-snapshot",
+        "background-method",
+      ]).toContain(k.selection);
+      for (const id of k.provenance?.ruleIds || [])
+        expect(matched.has(id)).toBe(true);
+      if (k.provenance)
+        expect(k.provenance.certification).toBe(
+          "editorial-reference-not-expert-approved",
+        );
+    }
+    expect(JSON.stringify(r)).toBe(before);
+  });
+  it("rejects V1 copied from a different snapshot and falls back without inventing another report", async () => {
+    const r = record();
+    r.frozen.continuousReport!.snapshotId = "different-chart";
+    r.frozen.continuousReport!.palaces.find(
+      (p) => p.name === "Mệnh",
+    )!.groups[0].text = "FOREIGN_EDITORIAL_NEVER_SEND";
+    let input = await retrieveMenhKnowledge(r, menhFacts(r));
+    expect(input.editorial?.status).toBe("mismatch");
+    expect(JSON.stringify(input)).not.toContain("FOREIGN_EDITORIAL_NEVER_SEND");
+    expect(
+      input.knowledge.every((k) => k.selection !== "matched-v1-editorial"),
+    ).toBe(true);
+    delete r.frozen.continuousReport;
+    input = await retrieveMenhKnowledge(r, menhFacts(r));
+    expect(input.editorial?.status).toBe("absent");
+    expect(input.knowledge.length).toBeGreaterThan(0);
+  });
+  it("does not copy an unresolved V1 template and preserves legacy prompt versions", async () => {
+    const r = record();
+    r.frozen.continuousReport!.palaces.find(
+      (p) => p.name === "Mệnh",
+    )!.groups[0].text = "{{fact.unresolved}}";
+    const input = await retrieveMenhKnowledge(r, menhFacts(r));
+    expect(input.editorial?.excludedGroups).toBeGreaterThan(0);
+    expect(JSON.stringify(input)).not.toContain("{{");
+    expect(menhInstructions("menh-vietnamese-1.0.0")).toContain(
+      "Phiên bản menh-vietnamese-1.0.0",
+    );
+    expect(menhInstructions()).toContain("matched-v1-editorial");
+    expect(() => menhInstructions("unknown")).toThrow(
+      "AI_PROMPT_VERSION_UNSUPPORTED",
+    );
+  });
+  it("accepts a narrow negative lifespan disclaimer but blocks actual/contrasting predictions and internal jargon", () => {
+    const input = menhFacts(record()),
+      raw = mockMenhGeneration(input).raw as any;
+    for (const text of [
+      "Bài tham khảo này không dự đoán tuổi thọ.",
+      "Long Trì và Thiên Thọ cũng không được tự mở thành phẩm chất hay lời đoán tuổi thọ.",
+    ]) {
+      raw.sections[4].content = text;
+      expect(() => validateNarration(raw, input)).not.toThrow();
+    }
+    for (const text of [
+      "Tuổi thọ của bạn là 90, đây là điều chắc chắn.",
+      "Không dự đoán tuổi thọ nhưng bạn sẽ sống 90 tuổi.",
+      "Bài không dự đoán tuổi thọ. Bạn sẽ sống 90 tuổi.",
+      "Engine cho thấy các sao tọa Mệnh cần được phân tích.",
+    ]) {
+      raw.sections[4].content = text;
+      expect(() => validateNarration(raw, input)).toThrow("AI_SCOPE_VIOLATION");
+    }
+    raw.sections[4].content =
+      "Đoạn tham khảo giữ đúng phạm vi riêng của cung Mệnh.";
+    raw.limitations[0] = "Engine chưa có schema cho thông tin này.";
+    expect(() => validateNarration(raw, input)).toThrow("AI_SCOPE_VIOLATION");
+  });
   it("reads natal stars/states and geometry, omits identity, and never changes snapshot", async () => {
     const r = record(),
       before = JSON.stringify(r),
@@ -168,6 +258,84 @@ describe("facts and source retrieval", () => {
   });
 });
 describe("durable queue, workers and immutable artifacts", () => {
+  it("scopes the worker to one reading, leaves other backlog untouched, and honors read-only mode", async () => {
+    const invalidBudget = spawnSync(
+      process.execPath,
+      ["--import", "tsx", "scripts/ai-worker.ts"],
+      {
+        env: {
+          ...process.env,
+          AI_MENH_READING_ID: randomUUID(),
+          AI_MENH_MAX_NEW_JOBS: "Infinity",
+        },
+        encoding: "utf8",
+        timeout: 5000,
+      },
+    );
+    expect(invalidBudget.status).not.toBe(0);
+    expect(invalidBudget.stderr).toContain("AI_INVALID_PROCESS_LIMIT");
+    const a = record(),
+      b = record();
+    await requestMenh(a);
+    await requestMenh(b);
+    expect(
+      await runAiMenhJob(async (input) => mockMenhGeneration(input), {
+        readingId: a.id,
+        allowCreate: false,
+      }),
+    ).toBe(false);
+    await runAiMenhJob(
+      async (input, _attempt, recovery) => {
+        expect(recovery?.promptVersion).toBe("menh-vietnamese-1.1.0");
+        return mockMenhGeneration(input);
+      },
+      { readingId: a.id },
+    );
+    expect((await findAiJob(a)).status).toBe("completed");
+    expect((await findAiJob(b)).status).toBe("queued");
+    expect((await findAiJob(b)).attempts).toBe(0);
+    await expect(
+      runAiMenhJob(undefined, { revalidateOutput: true }),
+    ).rejects.toThrow("AI_REVALIDATE_REQUIRES_READ_ONLY_SCOPE");
+  });
+  it("revalidates an existing provider output by ID without a new attempt and retains original duration/cost", async () => {
+    const r = record();
+    await requestMenh(r);
+    await runAiMenhJob(async (input, _attempt, recovery) => {
+      await recovery!.onResponseCreated("resp_review", "fixture-model");
+      return {
+        ...mockMenhGeneration(input),
+        provider: "openai",
+        responseId: "resp_review",
+        raw: {},
+        durationMs: 12000,
+        estimatedCostUsd: 0.1,
+      };
+    });
+    const before = await findAiJob(r);
+    await pool.query(
+      "UPDATE ai_reading_jobs SET run_after=now()-interval '1 second'",
+    );
+    await runAiMenhJob(
+      async (input, _attempt, recovery) => {
+        expect(recovery?.responseId).toBe("resp_review");
+        return {
+          ...mockMenhGeneration(input),
+          provider: "openai",
+          responseId: "resp_review",
+          durationMs: 50,
+          estimatedCostUsd: 0.2,
+        };
+      },
+      { readingId: r.id, allowCreate: false, revalidateOutput: true },
+    );
+    const after = await findAiJob(r);
+    expect(after.status).toBe("completed");
+    expect(after.attempt_id).toBe(before.attempt_id);
+    expect(after.attempts).toBe(1);
+    expect(after.result.durationMs).toBeGreaterThanOrEqual(12000);
+    expect(after.result.estimatedCostUsd).toBe(0.1);
+  });
   it("deduplicates concurrent enqueue and worker claims; completion/reopen/retry never calls again", async () => {
     const r = record(),
       before = readingHash(r);

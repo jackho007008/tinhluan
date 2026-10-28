@@ -1,8 +1,8 @@
 import { z } from "zod";
 export const AI_EDITION = "menh-ai-1.0.0";
-export const PROMPT_VERSION = "menh-vietnamese-1.0.0";
+export const PROMPT_VERSION = "menh-vietnamese-1.1.0";
 export const FACTS_VERSION = "menh-facts-1.0.0";
-export const KNOWLEDGE_VERSION = "menh-retrieval-1.0.0";
+export const KNOWLEDGE_VERSION = "menh-retrieval-1.1.0";
 export const SECTION_KINDS = [
   "overview",
   "traits",
@@ -44,14 +44,33 @@ export type Knowledge = {
   conditions: string[];
   limits: string[];
   references: { title: string; location: string }[];
-  selection: "reference-only" | "matched-saved-context";
+  selection:
+    | "reference-only"
+    | "matched-saved-context"
+    | "matched-v1-editorial"
+    | "matched-snapshot"
+    | "background-method";
+  provenance?: {
+    ruleIds: string[];
+    ruleStatuses: string[];
+    sourceVersion: string;
+    certification: "editorial-reference-not-expert-approved";
+  };
 };
 export type MenhInput = {
   version: typeof FACTS_VERSION;
-  knowledgeVersion: typeof KNOWLEDGE_VERSION;
+  knowledgeVersion: typeof KNOWLEDGE_VERSION | "menh-retrieval-1.0.0";
   facts: AiFact[];
   knowledge: Knowledge[];
   missing: string[];
+  editorial?: {
+    version: string | null;
+    status: "available" | "absent" | "mismatch";
+    totalGroups: number;
+    acceptedGroups: number;
+    excludedGroups: number;
+    note: string;
+  };
 };
 export type AiResult = {
   content: Narration;

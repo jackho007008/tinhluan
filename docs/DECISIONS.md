@@ -1,5 +1,12 @@
 # Sổ quyết định Tinh Luận
 
+<a id="ai-menh-package22-decision-20261028"></a>
+## 28/10/2026 — Gói2.2 khôi phục job QA và dùng V1 làm nền
+
+**U — chủ dự án:** kiểm job/worker/provider hiện tại, chỉworkerAIQA3111 với sốpending/hạnmức đãkiểm, tốiđa1bài mới đểxácminh; khônghútbacklog/tạolạiuncertain. ƯutiênV1Mệnh đúngsnapshot saufacts, khôngcoiV1làchânlý; sửa retrieval/prompt tựnhiên/chuyểnsâu, dryA/B/CkhôngAPI. Khôngoverwritehistory, khôngrestartmain/QA3062/3070/workerchính, khôngGói3 hoặcAPI tốiưu thêm trướcđánhgiá.
+
+**C — đã làm:** scopereadingID/max1; mộtCREATEprompt1.0đãlưu. Sửa validatorfalsepositive với câu phủđịnh vàGET-only cùngresponseIDđểlưu, khôngsửavăn. Workerđãdừngtheohạn,1jobkháccònchờ. V1adapter vàprompt/retrieval1.1chojobmới, registry1.0bảotoàn, dryA/B/C0API. Khôngcoidrylàchấtlượngvănđãđạt hoặc quyền bậtworkerthườngtrực/main. [Bàn giao/giớihạn](AI-MENH-PACKAGE22-HANDOFF.md).
+
 ## 27/10/2026 — Gói 2.1 kiểm thực tế, tối đa ba bài, không tích hợp main
 
 **U — chủ dự án:** kiểm môi trường/model/schema thực tế, toàn pipeline và chất lượng7tiêu chí trên tối đa3bài; không fallback/model benchmark/Gói3, không lặp request khônggiớihạn. Cho rà Background mode và chỉ sửa nhánh chốngtrùng/đốisoát nếu cần. Không restart QA3062/3070/workerchính, migrationmain, Live hoặc sửa lịch sử.

@@ -2,7 +2,7 @@ import OpenAI from "openai";
 import { zodTextFormat } from "openai/helpers/zod";
 import { aiConfig } from "./config";
 import { narrationSchema, type MenhInput, type AiResult } from "./contract";
-import { MENH_INSTRUCTIONS, menhUserInput } from "./prompt";
+import { menhInstructions, menhUserInput } from "./prompt";
 export type Generation = {
   raw: unknown;
   model: string;
@@ -17,6 +17,7 @@ export type Narrator = (
   attemptId: string,
   recovery?: {
     responseId?: string;
+    promptVersion?: string;
     onResponseCreated: (id: string, model: string) => Promise<void>;
   },
 ) => Promise<Generation>;
@@ -31,6 +32,12 @@ export class GenerationFailure extends Error {
 }
 /** No key/model fallback and no SDK retry of a possibly billed request. */
 export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
+  let instructions: string;
+  try {
+    instructions = menhInstructions(recovery?.promptVersion);
+  } catch {
+    throw new GenerationFailure("AI_PROMPT_VERSION_UNSUPPORTED", false);
+  }
   const config = aiConfig();
   if (!config.apiKey || (!config.model && !recovery?.responseId))
     throw new GenerationFailure(
@@ -62,7 +69,7 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
             model: config.model!,
             store: config.background,
             ...(config.background ? { background: true } : {}),
-            instructions: MENH_INSTRUCTIONS,
+            instructions,
             input: menhUserInput(input),
             max_output_tokens: config.maxOutputTokens,
             reasoning: { effort: config.reasoningEffort as "high" },

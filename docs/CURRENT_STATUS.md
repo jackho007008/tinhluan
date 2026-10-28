@@ -1,5 +1,11 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Cập nhật 28/10 — Gói 2.2: khôi phục một job, V1/prompt1.1 chưa kiểm API
+
+Baseline `858dc92`; webQA3111PID53543 nạp build mới. AIworker trước đó không chạy,2jobqueued; mục tiêu0attempt/khôngresponseID. Chỉ1CREATE ở readingID mục tiêu, providercompleted; validator false positive câu phủ định khiến lỗioutput, đã sửa và GET-only cùngattempt để lưu nguyên văn. Kết quả completed/1attempt, prompt1.0 vàinput cũ nguyên;14990input/6504output,129,276giây,ước$0,47510. Worker **đang dừng theo hạn1bài**;1queued khác không xử lý, không bật thường trực.9job khác (5completed/1uncertain cũ) nguyên.
+
+Prompt/retrieval1.1 dùng V1 Mệnh đã lưu đúngsnapshot làm nguồn ưu tiên, giữ điều kiện và statusdraft, không gọi là chân lý/chứng nhận. DryA/B/C:16→9/17→7/16→8mục; nhánhfalse7/8/7→0,template4/3/3→0,facts nguyên.28/28test/typecheck/build đạt; browser bài thật4tab/8phần/11khóa. Không thêm API prompt1.1/A/B/C; chưa khẳng định chất lượng tăng. [Chi tiết, bài thật và preview](AI-MENH-PACKAGE22-HANDOFF.md). Main282file/8bảng,QA3062/3070/3101/worker chính giữ nguyên; không migration/Live/Gói3.
+
 ## Cập nhật 27/10 — Gói 2.1: ba bài thật đã lưu, còn việc về chất lượng
 
 Baseline `b6fa7dc`; Node24.19/SDK7.45, project có quyền `gpt-6-astra`. Đúng3bài/3CREATE/1attempt mỗi mẫu, schema8phần và GET đối soát khớp database. A182,301giây/$0,49023; B221,633giây/$0,59669; C185,098giây/$0,50059; tổng ước tính $1,58751, chưa gồm request timeout cũ. [Bài đầy đủ/facts/tri thức/đánh giá7tiêu chí](AI-MENH-PACKAGE21-EVALUATION.md), [backlog](V1-DELIVERY-PLAN.md#ai-menh-package21-20261027).

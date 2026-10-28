@@ -1,5 +1,9 @@
 # Tinh Luận — hợp đồng sản phẩm, nguồn và quyết định
 
+### Gói2.2 ngày28/10 — V1 Mệnh làm nền biên tập ưu tiên cho AI
+
+Chủ dự án chọn nguồn theo thứ tự facts engine đã lưu → V1Mệnh phù hợp snapshot → tri thức sách đúng điều kiện → tổng hợp quan hệ. V1 không phải chân lý/chứng nhận chuyên môn, không lấy lời của lá số khác; thiếu V1 thì dùngfacts/tri thức phù hợp. Không viết lại/ghiđèV1 hoặc bàiAIhoànthành. Promptmới1.1 chỉcho yêu cầumới, jobcũ giữinput/phiênbảnđãlưu. ChỉMệnh, không 11cung/Live/Gói3. Lầnkhôiphụchiện tại tốiđa1bài, khôngtiêuthụqueuekhác/tạolạiuncertain; khônggọithêmAPIđểtốiưu trướcđánhgiácủachủdựán. [Quyết định](DECISIONS.md#ai-menh-package22-decision-20261028),[bàn giao](AI-MENH-PACKAGE22-HANDOFF.md).
+
 ### Quyết định hiện hành về AI Mệnh — Gói 2 ngày27/10
 
 [Định hướng chính thức](DECISIONS.md#ai-menh-direction-20261027) cho AI phân tích/tổng hợp từ facts engine và tri thức có nguồn, không chỉ biên tập claim. Chỉ Mệnh miễn phí, không phụ thuộc thanh toán. Dữ liệu toàn lá số dùng làm ngữ cảnh; không mở bài chi tiết 11 cung, Tật/sức khỏe hoặc vận hạn. Tri thức tham khảo chưa khớp phải giữ điều kiện/ngoại lệ, không gọi là engine fact; suy luận AI không được giả làm sách hoặc kết quả chắc chắn.

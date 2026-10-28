@@ -1,5 +1,18 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="ai-menh-package22-20261028"></a>
+## Gói 2.2 — xử lý job chờ và thêm nguồn V1, dừng sau dry-run prompt mới
+
+Chủ dự án cho khôi phục đúng QAriêng, tối đa1bài thật; không hút backlog hoặc retry uncertain. Cho dùng V1 Mệnh phù hợp snapshot làm nền ưu tiên và sửa prompt/retrieval; A/B/C chỉdry-run. Baseline `main@858dc92`, tracked/index sạch, BửuĐình giữ nguyên.
+
+**Đã làm:** xác nhận web3111/DB/kho và worker dừng có chủ đích;2queued. WorkerreadingID/hạn1CREATE xử lý đúng mục tiêu; phát hiện validator nhận nhầm phủ định, sửa hẹp và GET-only cùngresponse/attempt, giữnguyên bài/metrics. Mục tiêu completed/1attempt, prompt1.0/input cũ nguyên,129,276giây/$0,47510.9job khác giữ nguyên;1queued chưa xử lý; worker đã tựdừngtheohạn, không bật thườngtrực.
+
+**Nguồn/prompt:** adapter chỉ đọc V1 Mệnh đã đóng băng, kiểm snapshot/nhánh/điềukiện qua evaluator cũ, giữstatusdraft/ngoại lệ/nguồn. KhôngV1 hoặc crosssnapshot thìfallbackfacts/tri thức khớp. Retrieval bỏkeywordmatch làm điều kiện, loại false/template, không lặp ruleđãcóV1; phươngphápnền tách riêng. Prompt1.1 tổnghợp tựnhiên, khôngchỉviếtlạiV1, khôngthuậtngữnộibộ/lặprào. Registry1.0 giữ đúng yêucầucũ. Không sửa V1/lịch sử/rule/engine/PDF.
+
+**Kiểm:**28/28AI mock, typecheck/build, browsercompleted4tab/8phần/11khóa. DryA/B/C cùngfacts: nguồn16→9,17→7,16→8; loại7/8/7nhánhfalse và4/3/3template;0API cho prompt1.1, khôngthay3bài cũ. [Bàn giao/bài/token/preview](AI-MENH-PACKAGE22-HANDOFF.md),[dry-run](../.local/ai-menh-package22-20261028/dry-run.json),[bảo toàn](../.local/ai-menh-package22-20261028/verification.json).
+
+**Điểm dừng:** chưađánhgiávăn1.1 hoặc bậtworkerQA thườngtrực,1jobcònchờ; khôngtựgọithêmAPIđểtốiưu trước đánhgiácủachủdựán. QA3062/3070/3101/worker chính và main282file/8bảng nguyên, khôngmigration/Live/Gói3. V1 cónguồn không cónghĩa đủmọichủđề/chứngnhận; retention/unknownmấtID và cổngtíchhợpmain vẫn cần chốt.
+
 <a id="ai-menh-package21-20261027"></a>
 ## Gói 2.1 — kiểm API và chất lượng ba bài thật, chưa đưa QA3062
 

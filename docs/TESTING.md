@@ -1,5 +1,14 @@
 # Kiểm chứng theo phạm vi
 
+<a id="ai-menh-package22-testing-20261028"></a>
+## Gói 2.2 — V1/prompt và một job thật, 28/10/2026
+
+28/28testAI trênDBtest riêng:22ca kếthừa+6ca choV1 đúngsnapshot/draftprovenance/template/nhánhfalse/crosssnapshot/fallback, registry1.0 vàcấm thuậtngữnộibộ1.1, phủđịnhtuổithọ so vớidựđoán/số/đốilập, workerscopekhônghútbacklog/allowCreatefalse, GETrevalidationcùngattemptgiữduration/cost. Typecheck/build QA cuối đạt, không fullE2E/PDF. DryA/B/C dùng đúngfactsđãlưu,0API, khôngđổisnapshot/baAIartifact; false7/8/7→0/template4/3/3→0, giữ5/4/5nhómV1.
+
+ActualCREATEduynhất qua workerQA3111readingID/max1: đầuqueued0, providerdone nhưngvalidator nhậnnhầm câu cấm suyđoántuổithọ → AI_INVALID_OUTPUT. GETprovider chỉra schema/ID đúng, lỗi scopefalsepositive. Đã sửa logic phủđịnh hẹp, workerGET-only/allowCreatefalse cùngresponseID/attempt → completed1; nguyênvănDB bằngprovideroutput, duration129276ms/costước$0,47510 gốc giữnguyên, khôngtínhthờigiankiểm lại. Input/hash/prompt1.0cũ nguyên, registry1.0 sohashkhớpbaseline. Chưa gọiprompt1.1; không gọilại requestuncertain.
+
+Browser sởhữuthật sauwebbuildmới:refreshcompleted,4tab/8phần/11khóa. Main282file/8bảng vàQA3062/3070/3101/worker chính nguyên;9jobQAkhác nguyên,1queued cònchờ, AIworkerQA tựdừngtheohạn. Không migration/chạmV1history/thanh toán/Live. [Bằngchứng](../.local/ai-menh-package22-20261028/verification.json),[test](../.local/ai-menh-package22-20261028/test.log),[dry](../.local/ai-menh-package22-20261028/dry-run.json),[nộidung/giớihạn](AI-MENH-PACKAGE22-HANDOFF.md). Chấtlượngvăn1.1 chưađượcxácminh, khôngcoidry-runlàđạtluậnchuyênmôn.
+
 <a id="ai-menh-package21-testing-20261027"></a>
 ## Gói 2.1 — ba bài API thật và recovery, 27/10/2026
 

@@ -1,5 +1,11 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành 28/10 — Gói 2.2: job mục tiêu hoàn thành; V1/prompt1.1 đã dry-run
+
+Baseline `858dc92`. Job chờ vì AIworkerQA3111 đã dừng có chủ đích. Chạy worker đúng readingID/hạn1CREATE; phát hiện false positive câu phủ định về tuổi thọ, sửa và GET-only cùngresponseID/attempt để lưu nguyên văn. Một bài thật, prompt1.0 gốc,129,276giây/$0,47510; không tạo lại bài. Worker đã tự dừng theo hạn,1job khác còn chờ,9job ngoài phạm vi nguyên.
+
+Nguồn mới: facts → V1 Mệnh đúng snapshot → luận điểm sách khớp điều kiện → phương pháp nền. Prompt/retrieval1.1 chỉ cho yêu cầu mới; lưu registry1.0 để không đổi job cũ. DryA/B/C giữ facts, loại7/8/7nhánhfalse và4/3/3template; **0API bằng prompt mới, chưa đánh giá chất lượng văn1.1**.28/28test/typecheck/build và browser4tab/8phần/11khóa đạt. [Bàn giao đầy đủ](AI-MENH-PACKAGE22-HANDOFF.md),[backlog](V1-DELIVERY-PLAN.md#ai-menh-package22-20261028). ChỉwebQA3111nạp mới; main/QA3062/3070/3101/worker chính nguyên, không Gói3.
+
 ## Hiện hành 27/10 — Gói 2.1 hoàn thành kiểm ba bài API thật; chưa đạt chiều sâu nội dung
 
 Model `gpt-6-astra`, prompt1.0.0; đúng3CREATE/3bài hoàn thành, tổng ước tính $1,58751,182–222giây/bài. Chọn A hai chính tinh/B vô chính diệu/C cát-sát từ engine trước xem bài. Background opt-in lưu responseID trước polling, đối soát GET cùngattempt, không queue mới/schema mới.22/22 mock AI, typecheck/build và UI360/390/lưu–mở/11khóa đạt. Request timeout cũ giữ uncertain, không gửi lại.

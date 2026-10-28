@@ -10,12 +10,28 @@ import {
   type Generation,
 } from "./provider";
 import type { ClaimedJob } from "./store";
-export async function runAiMenhJob(narrator: Narrator = openaiNarrator) {
+import { validReadingId } from "../internal-review/reading-store";
+export async function runAiMenhJob(
+  narrator: Narrator = openaiNarrator,
+  options: {
+    readingId?: string;
+    allowCreate?: boolean;
+    revalidateOutput?: boolean;
+  } = {},
+) {
   if (!aiEnabled()) return false;
+  if (options.readingId && !validReadingId(options.readingId))
+    throw Error("AI_INVALID_READING_SCOPE");
+  if (
+    options.revalidateOutput &&
+    (!options.readingId || options.allowCreate !== false)
+  )
+    throw Error("AI_REVALIDATE_REQUIRES_READ_ONLY_SCOPE");
   const job = await transaction(async (c) => {
     // A crashed/overlong dispatched attempt is never automatically re-billed.
     const stale = await c.query(
-      "UPDATE ai_reading_jobs SET status='uncertain',error_code='AI_INTERRUPTED',retryable=false WHERE status='running' AND palace='Mệnh' AND locked_at<now()-interval '6 minutes' RETURNING attempt_id",
+      "UPDATE ai_reading_jobs SET status='uncertain',error_code='AI_INTERRUPTED',retryable=false WHERE status='running' AND palace='Mệnh' AND locked_at<now()-interval '6 minutes' AND ($1::uuid IS NULL OR reading_id=$1) RETURNING attempt_id",
+      [options.readingId || null],
     );
     const staleIds = stale.rows.map((r) => r.attempt_id).filter(Boolean);
     if (staleIds.length)
@@ -25,11 +41,16 @@ export async function runAiMenhJob(narrator: Narrator = openaiNarrator) {
       );
     const row = (
       await c.query(
-        "SELECT j.*,a.response_id,a.started_at AS attempt_started_at FROM ai_reading_jobs j LEFT JOIN ai_reading_attempts a ON a.id=j.attempt_id WHERE j.palace='Mệnh' AND j.run_after<=now() AND (j.status='queued' OR (j.status='uncertain' AND a.response_id IS NOT NULL AND a.provider='openai')) ORDER BY j.created_at FOR UPDATE OF j SKIP LOCKED LIMIT 1",
+        "SELECT j.*,a.response_id,a.started_at AS attempt_started_at,a.duration_ms AS previous_duration_ms,a.estimated_cost_usd AS previous_estimated_cost_usd FROM ai_reading_jobs j LEFT JOIN ai_reading_attempts a ON a.id=j.attempt_id WHERE j.palace='Mệnh' AND j.run_after<=now() AND ($1::uuid IS NULL OR j.reading_id=$1) AND ((j.status='queued' AND $2::boolean) OR ((j.status='uncertain' OR ($3::boolean AND j.status='error' AND j.error_code='AI_INVALID_OUTPUT')) AND a.response_id IS NOT NULL AND a.provider='openai')) ORDER BY j.created_at FOR UPDATE OF j SKIP LOCKED LIMIT 1",
+        [
+          options.readingId || null,
+          options.allowCreate !== false,
+          options.revalidateOutput === true,
+        ],
       )
     ).rows[0];
     if (!row) return;
-    if (row.status === "uncertain") {
+    if (row.status !== "queued") {
       // Same attempt, same provider response: only GET reconciliation. Never
       // enqueue or increment attempts for a response that may already be billed.
       await c.query(
@@ -40,7 +61,10 @@ export async function runAiMenhJob(narrator: Narrator = openaiNarrator) {
         "UPDATE ai_reading_attempts SET status='running',finished_at=NULL WHERE id=$1",
         [row.attempt_id],
       );
-      return row as ClaimedJob;
+      return {
+        ...row,
+        revalidating_output: row.status === "error",
+      } as ClaimedJob;
     }
     const attempt = randomUUID();
     await c.query(
@@ -64,6 +88,7 @@ export async function runAiMenhJob(narrator: Narrator = openaiNarrator) {
   try {
     generated = await narrator(job.input, job.attempt_id, {
       responseId: job.response_id,
+      promptVersion: job.prompt_version,
       onResponseCreated: async (id, model) => {
         const saved = await pool.query(
           "UPDATE ai_reading_attempts SET response_id=$2,provider='openai',model=$3 WHERE id=$1 AND status='running' AND (response_id IS NULL OR response_id=$2) RETURNING id",
@@ -72,7 +97,11 @@ export async function runAiMenhJob(narrator: Narrator = openaiNarrator) {
         if (saved.rowCount !== 1) throw Error("AI_RESPONSE_ID_NOT_SAVED");
       },
     });
-    if (job.attempt_started_at)
+    if (job.revalidating_output && job.previous_duration_ms != null) {
+      generated.durationMs = job.previous_duration_ms;
+      if (job.previous_estimated_cost_usd != null)
+        generated.estimatedCostUsd = Number(job.previous_estimated_cost_usd);
+    } else if (job.attempt_started_at)
       generated.durationMs = Math.max(
         generated.durationMs,
         Date.now() - new Date(job.attempt_started_at).getTime(),

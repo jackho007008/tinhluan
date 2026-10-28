@@ -31,7 +31,7 @@ export function mockMenhGeneration(input: MenhInput): Generation {
     "Gợi ý tự đối chiếu",
   ];
   const descriptions = [
-    `Bản mô phỏng này sử dụng vị trí Mệnh và danh sách sao thật của engine: ${starNames}. Nó kiểm việc đưa dữ kiện đã lưu vào đúng bài của hồ sơ, không giả làm kết quả do OpenAI phân tích. Khi có model thật, phần này cần giải thích ý nghĩa của tổ hợp trong đúng vị trí và giữ các điều kiện của tài liệu.`,
+    `Bản mô phỏng này sử dụng vị trí Mệnh và danh sách sao thật của lá số: ${starNames}. Nó kiểm việc đưa dữ kiện đã lưu vào đúng bài của hồ sơ, không giả làm kết quả do OpenAI phân tích. Khi có model thật, phần này cần giải thích ý nghĩa của tổ hợp trong đúng vị trí và giữ các điều kiện của tài liệu.`,
     "Đoạn kiểm thử chưa kết luận tính cách của người thật. Các dữ kiện về chính tinh, trạng thái và sao đi kèm đã có trong gói đầu vào; model thật cần chỉ rõ xu hướng nào được hỗ trợ bởi dữ kiện nào, và trình bày như khả năng để người đọc tự quan sát thay vì một nhãn cố định.",
     "Bản mô phỏng dùng phần này để kiểm cách trình bày ưu điểm, mặt hạn chế và câu hỏi tự đối chiếu trong cùng cấu trúc lưu trữ. Chưa có suy luận về năng lực được tạo bởi một model thật. Không dùng vị trí sao để xác nhận bằng cấp, thành tích hoặc thay thế hiểu biết về trải nghiệm của người đọc.",
     `Các sao tọa Mệnh được truyền nguyên từ snapshot: ${starNames}. Bộ kiểm không tự cộng ý nghĩa các sao thành một kết luận. Phân tích thật có thể tổng hợp, nhưng cần nói rõ điều gì đến từ tài liệu và điều gì là cách hiểu do AI đề xuất, nhất là khi các yếu tố cùng cung khác chiều.`,
@@ -54,7 +54,7 @@ export function mockMenhGeneration(input: MenhInput): Generation {
     })),
     limitations: [
       "BẢN MÔ PHỎNG KIỂM THỬ; không phải kết quả OpenAI hoặc đánh giá chất lượng model.",
-      "Dữ kiện là engine thật trong môi trường kiểm riêng; văn minh họa không xác nhận con người hoặc hoàn cảnh thực tế.",
+      "Dữ kiện là lá số thật trong môi trường kiểm riêng; văn minh họa không xác nhận con người hoặc hoàn cảnh thực tế.",
     ],
   };
   return {

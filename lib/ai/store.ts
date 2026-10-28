@@ -148,4 +148,7 @@ export type ClaimedJob = {
   attempts: number;
   response_id?: string;
   attempt_started_at?: Date;
+  revalidating_output?: boolean;
+  previous_duration_ms?: number;
+  previous_estimated_cost_usd?: string;
 };
