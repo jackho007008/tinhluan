@@ -1,5 +1,12 @@
 # Sổ quyết định Tinh Luận
 
+<a id="ai-menh-package24-decision-20261028"></a>
+## 28/10/2026 — Gói 2.4 hoàn thiện kho biên tập Mệnh V1
+
+**U — chủ dự án:** kiểm kê V1 1.79, kho bền có nguồn/điều kiện/phiên bản/prompt/model và trạng thái draft/approved/rejected; Luna chỉ sửa văn, không kiến thức mới. Dùng bản đã nhận đúng điều kiện, fallback gốc, không thay lịch sử hoặc gọi API khi mở. Kiểm có chính tinh/VCD và mobile; không batch lớn, QA3062/3070/Gói3 hoặc mở dự án lấp rule/PDF.
+
+**C — lựa chọn kỹ thuật và bằng chứng:** tái dùng kho private, thêm registry và journal append-only có candidateHash/previousReviewId/5tiêu chí chứng cứ, không CMS/schema/queue mới. 28mẫu hữu hạn →73đơn vị; ba Luna cũ đối chiếu2approved/1rejected,70chưa sinh. Codex đọc đối chiếu, không chứng nhận chuyên môn. Prompt1.1mới chỉ dry-run;0API mới/$0.45test/typecheck/build vàQA360/390đạt. Không coi73đơn vị là toàn bộ nội dung hoặc quyền chạy batch/integrate main. [Chi tiết và điểm dừng](AI-MENH-PACKAGE24-HANDOFF.md).
+
 <a id="ai-menh-package23-decision-20261028"></a>
 ## 28/10/2026 — Gói2.3 phân tầng model, V1 Mệnh ngay
 

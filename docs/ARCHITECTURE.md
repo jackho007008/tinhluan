@@ -1,5 +1,11 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## Gói 2.4 — registry nguồn và journal duyệt trong kho private
+
+Tái dùng `AI_V1_EDIT_DIR`: sources bất biến chứa unit V1/nguồn/điều kiện/report/catalog; requests/candidates/errors giữ cơ chế reservation cũ. reviews theo candidateKey + sourceContextHash là chuỗi sequence/previousReviewId, ghi temp rồi hardlink độc quyền, stale không overwrite. `v1-edit-storage` giữ canonical hash cũ; `v1-review-store` kiểm context/journal; `v1-inventory` nhận snapshot hữu hạn, đọc đúng các nhóm nguồn renderer/policy hiện hành, không AI hay bộ chọn rule mới. Similarity chỉ gợi ý đọc soát.
+
+Selection mới cần approved,5pass,candidateHash,unit/điều kiện/nguồn/report/catalog/model/prompt chính xác, không technical findings; lỗi/chưa nhận trả V1. Prompt registry giữ actual1.0, ưu tiên1.1, không relabel candidate cũ. `freeMenhView` chỉ đọc saved selection, không tham khảo journal mới khi reopen. CLI operator có register/list/inspect/review và prepare một unit chủ động, không endpoint/CMS/worker/queue mới. Không migration; journal private cần volume bền/backup/chuyển đầy đủ trước tích hợp host khác. [Chi tiết](AI-MENH-PACKAGE24-HANDOFF.md).
+
 <a id="ai-menh-architecture-20261027"></a>
 ## Gói2.3 — V1 miễn phí và kho biên tập
 

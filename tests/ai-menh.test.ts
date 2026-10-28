@@ -1,3 +1,7 @@
+import {
+  v1SourceContext,
+  type V1ReviewAssessment,
+} from "../lib/ai/v1-review-store";
 import fs from "node:fs/promises";
 import path from "node:path";
 import os from "node:os";
@@ -44,6 +48,7 @@ import {
   v1EditUnit,
   prepareV1Edit,
   approveV1Edit,
+  decideV1Edit,
   contentHash,
 } from "../lib/ai/v1-edit";
 import { retrieveMenhKnowledge } from "../lib/ai/knowledge";
@@ -560,7 +565,32 @@ describe("server ownership and creation integration", () => {
         durationMs: 1,
       }))
     ).candidate!;
-    await approveV1Edit(c.key, contentHash(c));
+    const approval = await approveV1Edit(
+      c.key,
+      contentHash(c),
+      v1SourceContext(source, original.frozen.customerReport!.catalogVersion),
+      {
+        requestedState: "approved",
+        previousReviewId: null,
+        note: "Mock integration: full source and output compared; no professional certification.",
+        checks: Object.fromEntries(
+          [
+            "factsAndScope",
+            "conditions",
+            "noNewClaims",
+            "meaning",
+            "sources",
+          ].map((k) => [
+            k,
+            {
+              status: "pass",
+              evidence:
+                "Mock fixture: checked complete source and output for this criterion.",
+            },
+          ]),
+        ) as V1ReviewAssessment["checks"],
+      },
+    );
     const fresh = {
       ...structuredClone(original),
       id: randomUUID(),
@@ -568,12 +598,28 @@ describe("server ownership and creation integration", () => {
     };
     expect(freeMenhView(fresh).paragraphs[0].editor).toBe("luna");
     expect(freeMenhView(existing).paragraphs[0].editor).toBe("v1");
+    await decideV1Edit(
+      c.key,
+      contentHash(c),
+      v1SourceContext(source, original.frozen.customerReport!.catalogVersion),
+      {
+        requestedState: "rejected",
+        previousReviewId: approval.id,
+        note: "Mock review reversal: future selections must use original; existing stored edition stays unchanged.",
+        checks: approval.checks,
+      },
+    );
+    expect(freeMenhView(fresh).paragraphs[0].editor).toBe("luna");
+    expect((await captureFreeMenh(original)).units[0].editor).toBe("v1");
+
     expect(
       freeMenhView(original).paragraphs.every((p) => p.editor === "v1"),
     ).toBe(true);
     expect(readingHash(original)).toBe(before);
-    const unsupported=structuredClone(original);
-    (unsupported.frozen.customerReport!.sections[0].paragraphs[0] as any).members=undefined;
+    const unsupported = structuredClone(original);
+    (
+      unsupported.frozen.customerReport!.sections[0].paragraphs[0] as any
+    ).members = undefined;
     expect(freeMenhView(unsupported).paragraphs).toEqual([]);
     await requestMenh(original);
     await runAiMenhJob(async (input) => mockMenhGeneration(input));

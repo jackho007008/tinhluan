@@ -1,5 +1,9 @@
 # Tinh Luận — hợp đồng sản phẩm, nguồn và quyết định
 
+## Bổ sung Gói 2.4 — chấp nhận bản sửa văn không chứng nhận nguồn
+
+Kho Mệnh chỉ dùng bản biên tập đã duyệt đúng toàn văn/điều kiện/nguồn/V1/catalog/model/prompt; uncertain giữ draft hoặc V1 gốc, không vì văn trôi chảy mà tự duyệt. Phải đối chiếu đủ dữ kiện/phạm vi, điều kiện, không thêm kết luận, nghĩa và căn cứ. Duyệt lời không nâng rule nguồn draft hoặc xác nhận Tử Vi đúng đời sống. Gần trùng không cho phép gộp/dùng lại; không bỏ điều kiện để tăng độ phủ. Review thay đổi chỉ ảnh hưởng lựa chọn cho báo cáo mới; báo cáo cũ giữ lời/quyền và bài Astra đã lưu. Không batch toàn kho/11cung/main. [Yêu cầu và bằng chứng Gói2.4](AI-MENH-PACKAGE24-HANDOFF.md).
+
 ### Quyết định thay thế Gói2.3 ngày28/10
 
 Mệnh miễn phí lấy V1 của chính bản lưu và hiển thị ngay; Luna chỉ biên tập lời, không sinh luận điểm/facts/điều kiện mới. Chỉ dùng bản đã đối chiếu cùng nội dung/nguồn/điều kiện; lỗi/thiếu thì V1 gốc, không chờAI. Chốt lựa chọn khi lưu, không tự cập nhật lịch sử theo cache mới. Astra giữ riêng cho luận sâu trả phí tương lai; không tạo mới Mệnh miễn phí hoặc11cung trong gói này, không thay bài Astra completed. Quyết định này thay hướng tự dùng Astra miễn phí của Gói2–2.2, không thay lịch sử/quyền/catalog. [Quyết định](DECISIONS.md#ai-menh-package23-decision-20261028), [triển khai/giới hạn](AI-MENH-PACKAGE23-HANDOFF.md).

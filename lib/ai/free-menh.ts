@@ -1,3 +1,4 @@
+import { v1SourceContext } from "./v1-review-store";
 import type { InternalReading } from "../internal-review/reading-store";
 import type { CustomerParagraph } from "../internal-review/customer-report";
 import { captureReadingPolicy } from "../trial/reading-policy";
@@ -6,7 +7,7 @@ import {
   approvedV1Edit,
   contentHash,
   v1EditUnit,
-  V1_EDIT_PROMPT,
+  supportedV1Prompt,
 } from "./v1-edit";
 
 export const FREE_MENH_VERSION = "menh-v1-immediate-1.0.0";
@@ -82,7 +83,10 @@ export async function captureFreeMenh(
   const units = await Promise.all(
     freeMenhParagraphs(record).map(async (p) => {
       const source = v1EditUnit(p, version),
-        edit = await approvedV1Edit(source);
+        edit = await approvedV1Edit(
+          source,
+          v1SourceContext(source, record.frozen.customerReport!.catalogVersion),
+        );
       return {
         paragraphId: p.id,
         sourceHash: contentHash(source),
@@ -128,7 +132,8 @@ export function freeMenhView(record: InternalReading): FreeMenhView {
           : undefined;
       const valid =
         saved?.editor === "luna" &&
-        saved.edit?.promptVersion === V1_EDIT_PROMPT &&
+        saved.edit &&
+        supportedV1Prompt(saved.edit.promptVersion) &&
         !!saved.text.trim();
       return {
         paragraph,

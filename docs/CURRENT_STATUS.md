@@ -1,5 +1,11 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Cập nhật 28/10 — Gói 2.4: kho biên tập có kiểm soát, chưa biên tập toàn bộ
+
+QA3111 có registry nguồn V1 và journal duyệt nối tiếp theo toàn văn/điều kiện/nguồn/report/catalog/model/prompt. Năm tiêu chí phải có chứng cứ pass; uncertain/fail hoặc kiểm kỹ thuật lỗi không được approved; trạng thái nguồn draft không được nâng theo duyệt lời. Giữ selection lịch sử và V1 fallback. 51 mẫu nguồn, 45 có thể miễn phí/6 giữ riêng; 28 lá số QA →109 lần xuất hiện/73 đơn vị render;3 phản hồi Luna cũ được đối chiếu lại:2approved/1rejected/70draft chưa sinh. 31 mẫu quan sát/14 miễn phí chưa quan sát, không coi 28 mẫu phủ hết Mệnh. VCD có2–3đoạn cơ bản; hai ca có phép xét ngũ hành VCD, vẫn thiếu nhánh sao chiếu Tân Biên khớp điều kiện.
+
+Prompt biên tập1.1 giữ phạm vi/ngoại lệ/giọng Tinh Luận, chưa API thật;0CREATE/$0 trong gói.45/45test/typecheck/build, 360/390/căn cứ/refresh/reopen/11khóa đạt.13file báo cáo/12jobAI và8artifact cũ nguyên;main282file/8bảng vàdịchvụ nguyên. ChỉwebQA3111 nạp mới, AIworker dừng. Không QA3062/3070/3101/worker chính/migration/Gói3. [Bàn giao, dữ liệu và việc trước QA3062](AI-MENH-PACKAGE24-HANDOFF.md).
+
 ## Cập nhật28/10 — Gói2.3 thay Astra Mệnh miễn phí bằng V1 ngay
 
 Baselinef6bb4f0. Luồng mới không enqueue Astra hoặc chờ worker; chốt V1 gốc/bản Luna đã đối chiếu khi lập. Tách `AI_FREE_EDIT_MODEL=gpt-6-luna` và `AI_PAID_READING_MODEL=gpt-6-astra`, không fallback; cả2Models GET có quyền,3Responses Luna/schema thật đạt.2đoạn giữ nghĩa được dùng chung,1đoạn chưa chấp nhận nên giữgốc; tổngước$0,0004678, không gọi lại để tối ưu. QA mới7đoạn(2Luna/5gốc), bảncũ7gốc/Astra cũ8phần giữ riêng;360/390/căn cứ/lưu–mở/11khóa đạt,40/40test/typecheck/build.

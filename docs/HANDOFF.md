@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành 28/10 — Gói 2.4: kho biên tập Mệnh có nguồn/phiên bản/lịch sử duyệt
+
+Kho dùng chung đã thêm registry nguồn và journal draft/approved/rejected có chứng cứ 5 tiêu chí, chặn dùng sai điều kiện/catalog/model/prompt và duyệt đồng thời; thiếu/chưa chắc thì V1 gốc. 51 mẫu nguồn (45 có thể miễn phí/6 giữ riêng); tập 28 lá số có 73 đơn vị render, 3 Luna cũ/2 duyệt/1 từ chối/70 chưa sinh. V1 vẫn draft, 2–7 đoạn/lá số, VCD chỉ phủ một phần. Prompt biên tập1.1 mới chỉ dry-run, không API mới/$0. 45/45 test/typecheck/build, browser360/390/lưu–mở/11khóa đạt;13file/12jobAI cũ và main giữ nguyên. Chỉ webQA3111 nạp build, AIworker dừng, khôngQA3062/3070/Gói3. [Bàn giao/kiểm kê/văn/ảnh/giới hạn](AI-MENH-PACKAGE24-HANDOFF.md), [backlog](V1-DELIVERY-PLAN.md#ai-menh-package24-20261028).
+
 ## Hiện hành 28/10 — Gói2.3: Mệnh V1 đọc ngay, không Astra miễn phí
 
 Thay hướng cũ bằng V1 đúng bản lưu/quyền, hiển thị ngay trong Mệnh. Luna chỉ biên tập đơn vị, dùng chung khi cùng văn/nguồn/điều kiện/model/prompt; Astra dành cấu hình luận sâu tương lai.3đoạn Luna thật,2được đối chiếu dùng chung/1giữ gốc, tổngước$0,0004678;0CREATE/jobAstra mới. Bản QA mới7đoạn(2Luna/5gốc), SSR/360/390/lưu–mở/11khóa đạt;40/40test/typecheck/build.12file/12jobAI QA cũ và main282file/8bảng nguyên. ChỉwebQA3111 nạp mới, worker vẫn dừng; khôngQA3062/3070/Gói3. [Bàn giao/bài gốc–Luna/giới hạn](AI-MENH-PACKAGE23-HANDOFF.md), [backlog](V1-DELIVERY-PLAN.md#ai-menh-package23-20261028).

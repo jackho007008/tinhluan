@@ -1,5 +1,14 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="ai-menh-package24-20261028"></a>
+## Gói 2.4 — Kho biên tập Mệnh V1, chỉ QA riêng
+
+**Đã triển khai:** registry nguồn và review journal bất biến, 5 tiêu chí có chứng cứ, draft/approved/rejected, kiểm chính xác nguồn/điều kiện/report/catalog/model/prompt/candidateHash, chống ghi đè/stale. Lựa chọn lưu một lần; báo cáo cũ không đổi. Inventory dùng đúng renderer/policy V1 hiện có, không pipeline lời/rule/CMS mới. Prompt biên tập1.1 mới, giữ nguyên1.0 cho ba candidate cũ.
+
+**Đã kiểm hữu hạn:**51 mẫu nguồn (45 có thể miễn phí/6 giữ riêng),28lá số/109lần/73đơn vị;3Luna có sẵn được đối chiếu lại,2approved/1rejected/70chưa sinh.2–7đoạn/lá số;4VCD2–3đoạn, hai có phép xét ngũ hành VCD, chưa có nhánh sao chiếu Tân Biên khớp.45/45test/typecheck/build, browser360/390/căn cứ/lưu–mở/11khóa đạt;13file/12jobAI/8artifact cũ vàmain nguyên.0API mới/$0, chỉwebQA3111 nạp mới, AIworker dừng. [Bàn giao/kiểm kê/giới hạn](AI-MENH-PACKAGE24-HANDOFF.md).
+
+**Điểm dừng:** không coi73đơn vị quan sát là toàn bộ V1 hoặc đã biên tập hết; V1 còn draft, prompt1.1chưa có văn API thật. Trước QA3062 cần quyền riêng, cấu hình/kho bền/backup/chuyển journal và tiếp tục duyệt có hạn. Không batch Luna lớn, thêmAPI tối ưu, QA3062/3070 hoặcGói3.
+
 <a id="ai-menh-package23-20261028"></a>
 ## Gói2.3 — V1 Mệnh ngay, Luna biên tập đơn vị, chưa tích hợp main
 

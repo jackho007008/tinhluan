@@ -5,14 +5,37 @@ import { beforeEach, afterEach, describe, it, expect, vi } from "vitest";
 import {
   prepareV1Edit,
   approveV1Edit,
-  approvedV1Edit,
+  approvedV1Edit as readApproved,
   contentHash,
   validateV1Edit,
   v1EditKey,
   type V1EditUnit,
   type V1Editor,
 } from "../lib/ai/v1-edit";
+import {
+  v1SourceContext,
+  type V1ReviewAssessment,
+} from "../lib/ai/v1-review-store";
 import { aiModels } from "../lib/ai/config";
+const approvedV1Edit = (unit: V1EditUnit) =>
+  readApproved(unit, v1SourceContext(unit, "catalog-fixture-1"));
+const assessment = (): V1ReviewAssessment => ({
+  requestedState: "approved",
+  previousReviewId: null,
+  note: "Fixture: full source and output compared, not a real astrology approval.",
+  checks: Object.fromEntries(
+    ["factsAndScope", "conditions", "noNewClaims", "meaning", "sources"].map(
+      (k) => [
+        k,
+        {
+          status: "pass",
+          evidence:
+            "Fixture: this criterion was checked against the whole original.",
+        },
+      ],
+    ),
+  ) as V1ReviewAssessment["checks"],
+});
 let dir: string;
 const source = (): V1EditUnit => ({
   sourceVersion: "unit-fixture-not-a-chart",
@@ -71,10 +94,20 @@ describe("V1 editorial artifacts", () => {
     expect(narrator).toHaveBeenCalledTimes(1);
     const candidate = results.find((r) => r.candidate)!.candidate!;
     expect(await approvedV1Edit(unit)).toBeNull();
-    await expect(approveV1Edit(candidate.key, "wrong")).rejects.toThrow(
-      "V1_EDIT_REVIEW_MISMATCH",
+    await expect(
+      approveV1Edit(
+        candidate.key,
+        "wrong",
+        v1SourceContext(unit, "catalog-fixture-1"),
+        assessment(),
+      ),
+    ).rejects.toThrow("V1_EDIT_REVIEW_MISMATCH");
+    await approveV1Edit(
+      candidate.key,
+      contentHash(candidate),
+      v1SourceContext(unit, "catalog-fixture-1"),
+      assessment(),
     );
-    await approveV1Edit(candidate.key, contentHash(candidate));
     expect((await approvedV1Edit(structuredClone(unit)))?.text).toBe(
       candidate.text,
     );
@@ -118,8 +151,13 @@ describe("V1 editorial artifacts", () => {
     const unit = source(),
       prepared = await prepareV1Edit(unit, edit),
       c = prepared.candidate!;
-    await approveV1Edit(c.key, contentHash(c));
-    const filename = path.join(dir, "approved", c.key + ".json"),
+    await approveV1Edit(
+      c.key,
+      contentHash(c),
+      v1SourceContext(unit, "catalog-fixture-1"),
+      assessment(),
+    );
+    const filename = path.join(dir, "candidates", c.key + ".json"),
       a = JSON.parse(await fs.readFile(filename, "utf8"));
     a.text = "Nội dung đã bị đổi ngoài quy trình.";
     await fs.writeFile(filename, JSON.stringify(a));

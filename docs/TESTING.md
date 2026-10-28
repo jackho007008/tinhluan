@@ -1,5 +1,12 @@
 # Kiểm chứng theo phạm vi
 
+<a id="ai-menh-package24-testing-20261028"></a>
+## Gói 2.4 — nguồn/phiên bản/quy trình duyệt, 28/10
+
+45/45test liên quan trênDBtest riêng:30AI/4editorial/5review/6scope. Kiểm exact condition/catalog/model/version, source registration, approval/rejection/draft/uncertainty, đủ5chứngcứ, mấtphủđịnh/phạmvi, journalstale/concurrent/corrupt, khôngreuse theo neartext, legacyactualprompt, fallback, savedselectionkhôngđổi sau reject, SSR/refresh/reopen khôngAPI/11khóa. Typecheck/build đạt; chỉ cảnh báo nhiều lockfile đã có. Không chạyE2E/PDF.
+
+28snapshot engine QA, không sửa facts, thống kê51template/73unit quan sát; VCDgiữphép ngũ hành và ghi thiếu nhánh sao chiếu riêng. Hai report quaform thật:7đoạn/2Lunađãduyệt vàVCD2gốc;360/390khôngoverflow,4tab,căncứđóngmở,refresh/reopenđúng.13file/12jobAI/8artifactcũ/main282file/8bảng/dịchvụ nguyên.0API mới/$0;3candidate dùng đểreview làphản hồi thật đãcó từGói2.3, prompt1.1chỉdry-run. Khôngcoi testkiểmthuật/đốichiếu biên tập lànghiệmthu chuyênmôn/độphủmọilásố. [Log/ảnh/giớihạn](AI-MENH-PACKAGE24-HANDOFF.md).
+
 ## Gói2.3 — V1 đọc ngay và Luna biên tập,28/10
 
 40/40kiểm liên quan(30AI/4editorial/6scope) trênDBtest riêng; SSR có văn không chờJS, tạo/duplicate khôngenqueue, cache/model/conditionkhác khôngreuse, đồngthời1dispatch, timeout/lỗikhôngretry, candidatehash/corrupt/fallback, chốt bản mới khôngđổi bảncũ, public API không pending như luồng còn chạy. Typecheck/buildcuối đạt. Lỗi đầu JSX đã sửa,1ca test lẫn cache fixture đã táchenv từngca; giữlogđầu, khôngsửaexpectednguồnđểxanh.3API Luna thật/schema đạt,2đoạn đốichiếu dùng/1chưa nhận giữgốc; khônggọi thêm. BrowserQAform→7đoạn(2Luna/5gốc),360/390/căncứ/refresh/reopen/11khóa; Astra cũ8phần mởriêng.12file/12jobAIcũ vàmain282file/8bảng/dịchvụ được bảotoàn nguyên. KhôngE2E/PDF/main/11cung. [Bằngchứng/văn/chi phí/giới hạn](AI-MENH-PACKAGE23-HANDOFF.md).

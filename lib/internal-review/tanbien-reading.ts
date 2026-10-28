@@ -95,6 +95,8 @@ const sections = [
   },
   ...([ ["phuc", "Phúc Đức"], ["di", "Thiên Di"], ["no", "Nô Bộc"], ["dien", "Điền Trạch"], ["parents", "Phụ Mẫu"], ["siblings", "Huynh Đệ"], ["spouse", "Phu Thê"], ["children", "Tử Nữ"] ] as const).map(([id,title])=>({id,title,rules:catalog.filter(r=>r.presentation?.readingTheme===id).map(r=>r.id)})),
 ] as const;
+/** Read-only source inventory for Mệnh V1; the renderer/evaluator is unchanged. */
+export const TANBIEN_MENH_SOURCE_IDS = [...new Set(sections.filter(s=>["life-elements","life-body","structure","action","learning"].includes(s.id)).flatMap(s=>[...s.rules]))];
 // Internal-only deterministic composition. Every interpretation comes verbatim from a matched claim.
 // Exact duplicates already merge in executeRules; distinct base/combination meanings are retained once.
 export function buildTanBienReading(
