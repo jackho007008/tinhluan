@@ -129,6 +129,14 @@ export async function readMenh(record: InternalReading): Promise<AiView> {
             ? "not-created"
             : "error",
     queued: row.status === "queued",
+    // A saved request is not evidence that a consumer is running. Report a
+    // long wait without inventing failure or changing/retrying the queued job.
+    ...(row.status === "queued"
+      ? {
+          queueDelayed:
+            Date.now() - new Date(row.created_at).getTime() >= 120000,
+        }
+      : {}),
     canRetry:
       row.status === "error" &&
       row.retryable &&

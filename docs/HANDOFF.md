@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành 28/10 — sửa trên đúng báo cáo chủ dự án đang mở
+
+Báo cáo `b69fb574…` trên QA3111 có job queued/0attempt, API khớp database nhưng worker đã dừng sau hạn mức trước. Chỉ chạy worker theo đúng readingID/max1:1CREATE, completed/1attempt, prompt1.1;136,013giây/ước$0,47498. Trang tự cập nhật8phần; refresh/mở lại/API khớp,11cung khóa. Worker đã tự dừng,1job khác còn queued; **chưa bật xử lý tự động thường trực cho các lá số mới**. Thay nhãn queued và thêm nút chỉ GET để trạng thái rõ ràng.29/29test/typecheck/build đạt; chỉ webQA3111 nạp build mới, các QA khác/worker chính nguyên. [Bàn giao đúng báo cáo và ảnh](AI-MENH-DISPLAY-FIX-20261028.md), [backlog](V1-DELIVERY-PLAN.md#ai-menh-display-fix-20261028).
+
 ## Hiện hành 28/10 — Gói 2.2: job mục tiêu hoàn thành; V1/prompt1.1 đã dry-run
 
 Baseline `858dc92`. Job chờ vì AIworkerQA3111 đã dừng có chủ đích. Chạy worker đúng readingID/hạn1CREATE; phát hiện false positive câu phủ định về tuổi thọ, sửa và GET-only cùngresponseID/attempt để lưu nguyên văn. Một bài thật, prompt1.0 gốc,129,276giây/$0,47510; không tạo lại bài. Worker đã tự dừng theo hạn,1job khác còn chờ,9job ngoài phạm vi nguyên.

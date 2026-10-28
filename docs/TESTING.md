@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## Sửa AI Mệnh trên đúng báo cáo — 28/10/2026
+
+29/29AI test trên DBtest riêng, typecheck/build đạt. Ca mới kiểm queued lâu, GET lặp không tạo job/attempt, lỗi đã lưu trả error thay pending. Browser thật đúng `b69fb574…`: trước queued, worker đúng ID/max1 chuyển generating rồi tự cập nhật completed/8phần; API content hash bằng database; refresh và rời trang/mở lại vẫn completed, attempt1;11cung khóa. Một báo cáo queued khác chỉ dùng kiểm nút GET/thông báo chờ, không gọi provider;10job ngoài phạm vi nguyên. Một CREATE mới,136013ms/ước$0,47498. Main282file/8bảng và các dịch vụ được bảo toàn nguyên. Không fullE2E/PDF hoặc đánh giá chất lượng văn chuyên môn. [Bằng chứng và giới hạn vận hành](AI-MENH-DISPLAY-FIX-20261028.md).
+
 <a id="ai-menh-package22-testing-20261028"></a>
 ## Gói 2.2 — V1/prompt và một job thật, 28/10/2026
 

@@ -258,6 +258,52 @@ describe("facts and source retrieval", () => {
   });
 });
 describe("durable queue, workers and immutable artifacts", () => {
+  it("reports a delayed queue without retrying it, then exposes a stored failure instead of pending", async () => {
+    const r = record();
+    await saveTrialReading(owner.owner, r);
+    await requestMenh(r);
+    const initial = await findAiJob(r);
+    expect(await readMenh(r)).toMatchObject({
+      queued: true,
+      queueDelayed: false,
+    });
+    await pool.query(
+      "UPDATE ai_reading_jobs SET created_at=now()-interval '3 minutes' WHERE id=$1",
+      [initial.id],
+    );
+    for (let n = 0; n < 2; n++) {
+      const response = await GET(req(r.id), params(r.id));
+      expect(response.status).toBe(200);
+      expect(await response.json()).toMatchObject({
+        state: "not-created",
+        queued: true,
+        queueDelayed: true,
+        canRetry: false,
+      });
+    }
+    expect((await findAiJob(r)).attempts).toBe(0);
+    expect(
+      +(await pool.query("SELECT count(*) FROM ai_reading_jobs")).rows[0].count,
+    ).toBe(1);
+    expect(
+      +(await pool.query("SELECT count(*) FROM ai_reading_attempts")).rows[0]
+        .count,
+    ).toBe(0);
+    await runAiMenhJob(
+      async () => {
+        throw new GenerationFailure("AI_REQUEST_REJECTED", false);
+      },
+      { readingId: r.id },
+    );
+    const failed = await GET(req(r.id), params(r.id));
+    expect(await failed.json()).toMatchObject({
+      state: "error",
+      queued: false,
+      canRetry: false,
+      errorCode: "AI_REQUEST_REJECTED",
+    });
+    expect((await findAiJob(r)).attempts).toBe(1);
+  });
   it("scopes the worker to one reading, leaves other backlog untouched, and honors read-only mode", async () => {
     const invalidBudget = spawnSync(
       process.execPath,

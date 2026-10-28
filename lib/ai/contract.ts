@@ -94,6 +94,7 @@ export type AiView = {
   eligible: boolean;
   state: "not-created" | "generating" | "completed" | "error";
   queued: boolean;
+  queueDelayed?: boolean;
   canRetry: boolean;
   errorCode?: string;
   result?: AiResult;

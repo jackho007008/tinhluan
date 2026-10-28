@@ -1,5 +1,11 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Cập nhật 28/10 — đúng báo cáo mới đã hoàn thành, worker vẫn giới hạn một job
+
+Baseline sửa lỗi `a025903` (lưu riêng Gói2.2 từ858dc92). Tái hiện báo cáo `b69fb574…` QA3111 queued/0attempt vì không có AI worker; không dùng báo cáo trước để kết luận. Worker62751 chỉ xử lý đúng ID/max1, completed/1attempt; prompt1.1,14113input/6677output token,136013ms/ước$0,47498. API đúng phiên và database khớp nội dung, trang tự nhận8phần, refresh/mở lại không tạo thêm attempt,11cung khóa.29/29test/typecheck/build đạt. WebQA3111 mớiPID63815; main/QA3062/3070/3101/worker chính nguyên.
+
+Worker đã dừng theo hạn,1job khác còn chờ; chưa hoàn tất vận hành consumer thường trực cho các lá số mới. UI báo “Đã xếp hàng”, chờ lâu nêu dịch vụ có thể tạm dừng/bận và có nút đọc lại chỉ GET. Không tự CREATE uncertain hoặc gọi thêm API tối ưu văn. [Chi tiết/bài thật/ảnh/giới hạn](AI-MENH-DISPLAY-FIX-20261028.md). Các mục Gói2.2 bên dưới ghi kết quả ở thời điểm trước lần sửa này; bài prompt1.1 mới chưa được chủ dự án đánh giá chất lượng.
+
 ## Cập nhật 28/10 — Gói 2.2: khôi phục một job, V1/prompt1.1 chưa kiểm API
 
 Baseline `858dc92`; webQA3111PID53543 nạp build mới. AIworker trước đó không chạy,2jobqueued; mục tiêu0attempt/khôngresponseID. Chỉ1CREATE ở readingID mục tiêu, providercompleted; validator false positive câu phủ định khiến lỗioutput, đã sửa và GET-only cùngattempt để lưu nguyên văn. Kết quả completed/1attempt, prompt1.0 vàinput cũ nguyên;14990input/6504output,129,276giây,ước$0,47510. Worker **đang dừng theo hạn1bài**;1queued khác không xử lý, không bật thường trực.9job khác (5completed/1uncertain cũ) nguyên.

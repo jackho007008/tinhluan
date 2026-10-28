@@ -1,5 +1,12 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="ai-menh-display-fix-20261028"></a>
+## Sửa AI Mệnh chờ trên đúng báo cáo người dùng — 28/10/2026
+
+Đã tái hiện báo cáo `b69fb574…` tại QA3111: API/database queued/0attempt, không worker. Chỉ worker62751 theo readingID/max1, một CREATE bằng input/prompt1.1 đã lưu → completed1/8phần; trang tự cập nhật, API khớp database, refresh/mở lại/11khóa đạt.10job ngoài phạm vi nguyên.29/29AI test/typecheck/build đạt; webQA3111PID63815, QA3062/3070/3101/worker chính nguyên. Sửa trạng thái queued/chờ lâu/nút GET, không queue mới hoặc thay engine/quyền. [Bàn giao, bài và bằng chứng](AI-MENH-DISPLAY-FIX-20261028.md).
+
+Điểm dừng: worker tự thoát sau một job,1queued khác giữ nguyên. Consumer thường trực cho các lá số tiếp theo chưa bật, không coi khôi phục một báo cáo là toàn chức năng hoàn thành. Không tự xử lý backlog/uncertain, thêm API tối ưu nội dung, tích hợp main hoặc Gói3. Bài prompt1.1 mới chỉ đạt kiểm kỹ thuật, chờ đánh giá nội dung từ chủ dự án.
+
 <a id="ai-menh-package22-20261028"></a>
 ## Gói 2.2 — xử lý job chờ và thêm nguồn V1, dừng sau dry-run prompt mới
 

@@ -91,11 +91,15 @@ export default function AiMenhReading({ readingId }: { readingId: string }) {
       aria-label="Luận AI cung Mệnh"
     >
       <div className="ai-reading-status" role="status">
-        <span>Luận AI · {labels[state]}</span>
+        <span>Luận AI · {view?.queued ? "Đã xếp hàng" : labels[state]}</span>
         {!view && !message ? (
           <p>Đang đọc trạng thái đã lưu…</p>
         ) : view?.queued ? (
-          <p>Yêu cầu đã được lưu, đang chờ tạo bài.</p>
+          <p>
+            {view.queueDelayed
+              ? "Yêu cầu đã lưu nhưng chưa bắt đầu xử lý. Dịch vụ tạo bài có thể đang tạm dừng hoặc đang bận. Kiểm tra trạng thái chỉ đọc yêu cầu đã lưu, không tạo bài lần nữa."
+              : "Yêu cầu đã được lưu và đang xếp hàng. Trạng thái sẽ tự cập nhật khi bắt đầu xử lý."}
+          </p>
         ) : state === "generating" ? (
           <p>
             Đang phân tích cung Mệnh. Bạn có thể mở lại báo cáo để xem kết quả
@@ -114,6 +118,19 @@ export default function AiMenhReading({ readingId }: { readingId: string }) {
           </p>
         ) : null}
         {message && <p role="alert">{message}</p>}
+        {(view?.queued ||
+          state === "generating" ||
+          state === "error" ||
+          message) && (
+          <button
+            type="button"
+            className="button quiet"
+            onClick={() => setRevision((r) => r + 1)}
+            disabled={busy}
+          >
+            Kiểm tra trạng thái
+          </button>
+        )}
         {view?.canRetry && !view.queued && (
           <button
             type="button"

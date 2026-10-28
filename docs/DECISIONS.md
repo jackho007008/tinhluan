@@ -1,5 +1,11 @@
 # Sổ quyết định Tinh Luận
 
+## 28/10/2026 — sửa lỗi đúng phiên người dùng, giới hạn một job
+
+**U — chủ dự án:** xác minh đúng báo cáo đang mở, API/database/queue/worker và nguồn dữ liệu; không lấy báo cáo khác làm bằng chứng. Nếu worker dừng, đếm queue trước và chỉ xử lý đúng một job chỉ định, tối đa một CREATE có dự toán. Không tạo lại uncertain, ghi đè completed, chạm các QA khác/worker thanh toán hoặc mở Gói3.
+
+**C — thực hiện:** báo cáo `b69fb574…` queued vì worker dừng chủ động; worker theo ID/max1 xử lý completed1, không queue mới. UI phân biệt đã xếp hàng/chờ lâu và có nút GET; không tự đánh dấu job lỗi chỉ vì lâu. Worker đã dừng theo hạn, consumer thường trực chưa bật; không coi một báo cáo đã phục hồi là toàn luồng mới tự động hoàn tất. [Bàn giao](AI-MENH-DISPLAY-FIX-20261028.md).
+
 <a id="ai-menh-package22-decision-20261028"></a>
 ## 28/10/2026 — Gói2.2 khôi phục job QA và dùng V1 làm nền
 
