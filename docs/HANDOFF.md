@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành 28/10 — Gói2.3: Mệnh V1 đọc ngay, không Astra miễn phí
+
+Thay hướng cũ bằng V1 đúng bản lưu/quyền, hiển thị ngay trong Mệnh. Luna chỉ biên tập đơn vị, dùng chung khi cùng văn/nguồn/điều kiện/model/prompt; Astra dành cấu hình luận sâu tương lai.3đoạn Luna thật,2được đối chiếu dùng chung/1giữ gốc, tổngước$0,0004678;0CREATE/jobAstra mới. Bản QA mới7đoạn(2Luna/5gốc), SSR/360/390/lưu–mở/11khóa đạt;40/40test/typecheck/build.12file/12jobAI QA cũ và main282file/8bảng nguyên. ChỉwebQA3111 nạp mới, worker vẫn dừng; khôngQA3062/3070/Gói3. [Bàn giao/bài gốc–Luna/giới hạn](AI-MENH-PACKAGE23-HANDOFF.md), [backlog](V1-DELIVERY-PLAN.md#ai-menh-package23-20261028).
+
 ## Hiện hành 28/10 — sửa trên đúng báo cáo chủ dự án đang mở
 
 Báo cáo `b69fb574…` trên QA3111 có job queued/0attempt, API khớp database nhưng worker đã dừng sau hạn mức trước. Chỉ chạy worker theo đúng readingID/max1:1CREATE, completed/1attempt, prompt1.1;136,013giây/ước$0,47498. Trang tự cập nhật8phần; refresh/mở lại/API khớp,11cung khóa. Worker đã tự dừng,1job khác còn queued; **chưa bật xử lý tự động thường trực cho các lá số mới**. Thay nhãn queued và thêm nút chỉ GET để trạng thái rõ ràng.29/29test/typecheck/build đạt; chỉ webQA3111 nạp build mới, các QA khác/worker chính nguyên. [Bàn giao đúng báo cáo và ảnh](AI-MENH-DISPLAY-FIX-20261028.md), [backlog](V1-DELIVERY-PLAN.md#ai-menh-display-fix-20261028).

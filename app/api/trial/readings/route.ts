@@ -1,4 +1,4 @@
-import {captureAiPolicy,requestMenh,aiEligible} from '@/lib/ai/store';
+import {captureFreeMenh} from '@/lib/ai/free-menh';
 import {linkCreatedReading} from '@/lib/customer-auth/accounts';
 import {CUSTOMER_COOKIE} from '@/lib/customer-auth/config';
 import {captureReadingPolicy} from '@/lib/trial/reading-policy';
@@ -27,7 +27,7 @@ export async function POST(req:NextRequest){
   let adapted:ReturnType<typeof prepareCustomerBirth>;
   try{adapted=prepareCustomerBirth(body.customerInput);}catch{return trialJson({error:'Kiểm tra lại ngày sinh và tháng nhuận.',fieldErrors:{birthDate:'Ngày hoặc tháng nhuận không hợp lệ trong lịch đã chọn. Phạm vi hỗ trợ 1976–2050.'}},400);}
   const old=await getTrialReading(owner,body.id);
-  if(old){if(JSON.stringify(old.inputReceipt)!==JSON.stringify(adapted.receipt))return trialJson({error:'Yêu cầu đã dùng cho thông tin khác.'},409);await linkCreatedReading(req.cookies.get(CUSTOMER_COOKIE)?.value,req.cookies.get(TRIAL_COOKIE)?.value,old.id);if(aiEligible(old))try{await requestMenh(old);}catch{console.error('AI_MENH_ENQUEUE_PENDING');}return trialJson({id:old.id});}
+  if(old){if(JSON.stringify(old.inputReceipt)!==JSON.stringify(adapted.receipt))return trialJson({error:'Yêu cầu đã dùng cho thông tin khác.'},409);await linkCreatedReading(req.cookies.get(CUSTOMER_COOKIE)?.value,req.cookies.get(TRIAL_COOKIE)?.value,old.id);return trialJson({id:old.id});}
   if(ownersInFlight.has(owner.hash))return trialJson({error:'Phiên này đang tạo báo cáo. Vui lòng chờ rồi thử lại.'},429);
   ownersInFlight.add(owner.hash);lockedOwner=owner.hash;
   await rateLimit('free-trial:owner:'+owner.hash,5);
@@ -36,12 +36,11 @@ export async function POST(req:NextRequest){
   const {snapshot,receipt}=await calculateInternal(adapted.birth);const frozen=freezeReading(snapshot,receipt);
   if(!frozen.customerReport)throw Error('MISSING_REPORT');
   const b=adapted.birth;frozen.customerReport.birth=`${b.date.split('-').reverse().join('/')} · Dương lịch · ${adapted.receipt.timeLabel} · ${b.gender==='male'?'Nam':'Nữ'} · ${b.place} · ${b.timezone}`;
-  const aiPolicy=captureAiPolicy();
-  const record={id:body.id,createdAt:new Date().toISOString(),snapshot,receipt,frozen,inputReceipt:adapted.receipt,...(aiPolicy?{aiPolicy}:{})};
-  const savedRecord={...record,accessPolicy:captureReadingPolicy(record)};
+  const record={id:body.id,createdAt:new Date().toISOString(),snapshot,receipt,frozen,inputReceipt:adapted.receipt};
+  const savedRecord:import('@/lib/internal-review/reading-store').InternalReading={...record,accessPolicy:captureReadingPolicy(record)};
+  savedRecord.freeMenh=await captureFreeMenh(savedRecord);
   await saveTrialReading(owner,savedRecord);
   await linkCreatedReading(req.cookies.get(CUSTOMER_COOKIE)?.value,req.cookies.get(TRIAL_COOKIE)?.value,body.id);
-  if(aiEligible(savedRecord))try{await requestMenh(savedRecord);}catch{console.error('AI_MENH_ENQUEUE_PENDING');}
   return trialJson({id:body.id});
  }catch(e){return trialError(e);}finally{if(lockedOwner)ownersInFlight.delete(lockedOwner);active--;}
 }

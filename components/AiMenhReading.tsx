@@ -2,150 +2,33 @@
 import { useEffect, useState } from "react";
 import type { AiView } from "@/lib/ai/contract";
 import ReadingDisclosure from "./ReadingDisclosure";
-const labels = {
-  "not-created": "Chưa tạo",
-  generating: "Đang tạo",
-  completed: "Hoàn thành",
-  error: "Lỗi",
-};
+/** Historical Astra artifacts remain readable. New free Mệnh uses V1 on the server. */
 export default function AiMenhReading({ readingId }: { readingId: string }) {
-  const [view, setView] = useState<AiView | null>(null),
-    [busy, setBusy] = useState(false),
-    [message, setMessage] = useState(""),
-    [revision, setRevision] = useState(0);
-  const url =
-    "/api/trial/readings/" + encodeURIComponent(readingId) + "/ai-menh";
+  const [view, setView] = useState<AiView | null>(null);
   useEffect(() => {
-    let live = true,
-      timer: ReturnType<typeof setTimeout> | undefined;
-    const read = async () => {
-      try {
-        const response = await fetch(url, { cache: "no-store" });
-        if (!response.ok) throw Error();
-        const state = (await response.json()) as AiView;
-        if (!live) return;
-        setView(state);
-        setMessage("");
-        if (
-          state.queued ||
-          state.state === "generating" ||
-          state.state === "error"
-        )
-          timer = setTimeout(read, state.state === "error" ? 10000 : 2500);
-      } catch {
-        if (live)
-          setMessage(
-            "Chưa đọc được trạng thái AI. Bạn có thể tải lại trang; nội dung đã lưu vẫn được giữ.",
-          );
-      }
-    };
-    read();
+    let live = true;
+    fetch("/api/trial/readings/" + encodeURIComponent(readingId) + "/ai-menh", {
+      cache: "no-store",
+    })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((state) => {
+        if (live) setView(state);
+      })
+      .catch(() => {});
     return () => {
       live = false;
-      clearTimeout(timer);
     };
-  }, [url, revision]);
-  async function request() {
-    if (busy) return;
-    setBusy(true);
-    setMessage("");
-    try {
-      const response = await fetch(url, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ retry: view?.state === "error" }),
-      });
-      if (!response.ok) {
-        const data = await response.json();
-        setMessage(data.error || "Chưa gửi được yêu cầu.");
-        return;
-      }
-      const state = (await response.json()) as AiView;
-      setView(state);
-      if (state.queued || state.state === "generating")
-        setRevision((r) => r + 1);
-    } catch {
-      setMessage(
-        "Chưa gửi được yêu cầu; hãy tải lại trạng thái trước khi thử tiếp.",
-      );
-    } finally {
-      setBusy(false);
-    }
-  }
-  if (view && (!view.enabled || !view.eligible) && view.state !== "completed")
-    return (
-      <div className="ai-reading-status">
-        <span>Luận AI · Chưa tạo</span>
-        <p>
-          Bản lưu này chưa được bật AI Mệnh. Nội dung và quyền cũ được giữ
-          nguyên.
-        </p>
-      </div>
-    );
-  const state = view?.state || "not-created",
-    result = view?.result;
+  }, [readingId]);
+  if (view?.state !== "completed" || !view.result) return null;
+  const state = view.state,
+    result = view.result;
   return (
-    <section
+    <ReadingDisclosure
       className="ai-menh-reading"
-      data-ai-state={state}
-      aria-label="Luận AI cung Mệnh"
+      data-ai-state="completed"
+      aria-label="Bài AI Mệnh đã lưu"
     >
-      <div className="ai-reading-status" role="status">
-        <span>Luận AI · {view?.queued ? "Đã xếp hàng" : labels[state]}</span>
-        {!view && !message ? (
-          <p>Đang đọc trạng thái đã lưu…</p>
-        ) : view?.queued ? (
-          <p>
-            {view.queueDelayed
-              ? "Yêu cầu đã lưu nhưng chưa bắt đầu xử lý. Dịch vụ tạo bài có thể đang tạm dừng hoặc đang bận. Kiểm tra trạng thái chỉ đọc yêu cầu đã lưu, không tạo bài lần nữa."
-              : "Yêu cầu đã được lưu và đang xếp hàng. Trạng thái sẽ tự cập nhật khi bắt đầu xử lý."}
-          </p>
-        ) : state === "generating" ? (
-          <p>
-            Đang phân tích cung Mệnh. Bạn có thể mở lại báo cáo để xem kết quả
-            đã lưu.
-          </p>
-        ) : state === "not-created" ? (
-          <p>Chưa có bài AI Mệnh trong phiên bản này.</p>
-        ) : state === "error" ? (
-          <p>
-            {view?.errorCode === "AI_NOT_CONFIGURED"
-              ? "Chưa cấu hình API/model cho tính năng AI. Chưa có bài AI thật được tạo."
-              : view?.errorCode === "AI_OUTCOME_UNCERTAIN" ||
-                  view?.errorCode === "AI_INTERRUPTED"
-                ? "Lần xử lý trước chưa xác định được kết quả. Hệ thống giữ trạng thái để kiểm tra, không tự gọi lại gây tính phí trùng."
-                : "Chưa tạo được bài AI Mệnh. Báo cáo và nội dung đã lưu vẫn được giữ nguyên."}
-          </p>
-        ) : null}
-        {message && <p role="alert">{message}</p>}
-        {(view?.queued ||
-          state === "generating" ||
-          state === "error" ||
-          message) && (
-          <button
-            type="button"
-            className="button quiet"
-            onClick={() => setRevision((r) => r + 1)}
-            disabled={busy}
-          >
-            Kiểm tra trạng thái
-          </button>
-        )}
-        {view?.canRetry && !view.queued && (
-          <button
-            type="button"
-            className="button quiet"
-            onClick={request}
-            disabled={busy}
-          >
-            {busy
-              ? "Đang gửi yêu cầu…"
-              : state === "error"
-                ? "Thử lại an toàn"
-                : "Yêu cầu tạo luận Mệnh"}
-          </button>
-        )}
-      </div>
+      <summary>Bài AI Mệnh đã lưu · phiên bản trước</summary>
       {state === "completed" && result && (
         <div className="ai-menh-result">
           <p className="result-eyebrow">
@@ -222,6 +105,6 @@ export default function AiMenhReading({ readingId }: { readingId: string }) {
           </ReadingDisclosure>
         </div>
       )}
-    </section>
+    </ReadingDisclosure>
   );
 }

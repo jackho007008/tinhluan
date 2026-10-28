@@ -1,5 +1,9 @@
 # Tinh Luận — hợp đồng sản phẩm, nguồn và quyết định
 
+### Quyết định thay thế Gói2.3 ngày28/10
+
+Mệnh miễn phí lấy V1 của chính bản lưu và hiển thị ngay; Luna chỉ biên tập lời, không sinh luận điểm/facts/điều kiện mới. Chỉ dùng bản đã đối chiếu cùng nội dung/nguồn/điều kiện; lỗi/thiếu thì V1 gốc, không chờAI. Chốt lựa chọn khi lưu, không tự cập nhật lịch sử theo cache mới. Astra giữ riêng cho luận sâu trả phí tương lai; không tạo mới Mệnh miễn phí hoặc11cung trong gói này, không thay bài Astra completed. Quyết định này thay hướng tự dùng Astra miễn phí của Gói2–2.2, không thay lịch sử/quyền/catalog. [Quyết định](DECISIONS.md#ai-menh-package23-decision-20261028), [triển khai/giới hạn](AI-MENH-PACKAGE23-HANDOFF.md).
+
 ### Gói2.2 ngày28/10 — V1 Mệnh làm nền biên tập ưu tiên cho AI
 
 Chủ dự án chọn nguồn theo thứ tự facts engine đã lưu → V1Mệnh phù hợp snapshot → tri thức sách đúng điều kiện → tổng hợp quan hệ. V1 không phải chân lý/chứng nhận chuyên môn, không lấy lời của lá số khác; thiếu V1 thì dùngfacts/tri thức phù hợp. Không viết lại/ghiđèV1 hoặc bàiAIhoànthành. Promptmới1.1 chỉcho yêu cầumới, jobcũ giữinput/phiênbảnđãlưu. ChỉMệnh, không 11cung/Live/Gói3. Lầnkhôiphụchiện tại tốiđa1bài, khôngtiêuthụqueuekhác/tạolạiuncertain; khônggọithêmAPIđểtốiưu trướcđánhgiácủachủdựán. [Quyết định](DECISIONS.md#ai-menh-package22-decision-20261028),[bàn giao](AI-MENH-PACKAGE22-HANDOFF.md).

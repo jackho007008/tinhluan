@@ -9,9 +9,7 @@ import {
   trialPostGuard,
   trialBody,
 } from "@/lib/trial/http";
-import { readMenh, requestMenh, aiEligible } from "@/lib/ai/store";
-import { aiEnabled } from "@/lib/ai/config";
-import { rateLimit } from "@/lib/db";
+import { readMenh } from "@/lib/ai/store";
 export const runtime = "nodejs";
 const owned = (req: NextRequest, id: string) =>
   customerReadingAccess(
@@ -30,7 +28,21 @@ export async function GET(
   try {
     const access = await owned(req, (await params).id);
     if (!access) return trialJson({ error: "Không tìm thấy báo cáo." }, 404);
-    return trialJson(await readMenh(access.record));
+    const view = await readMenh(access.record);
+    // Retired free jobs stay untouched in storage, but are not an active
+    // customer queue anymore. This also stops old tabs showing an endless wait.
+    return trialJson(
+      view.state === "completed"
+        ? view
+        : {
+            enabled: false,
+            eligible: false,
+            state: "not-created",
+            queued: false,
+            canRetry: false,
+            errorCode: "AI_FREE_ASTRA_RETIRED",
+          },
+    );
   } catch {
     return trialJson({ error: "Chưa đọc được trạng thái AI." }, 503);
   }
@@ -44,11 +56,6 @@ export async function POST(
   try {
     const access = await owned(req, (await params).id);
     if (!access) return trialJson({ error: "Không tìm thấy báo cáo." }, 404);
-    if (!aiEnabled() || !aiEligible(access.record))
-      return trialJson(
-        { error: "Phiên bản báo cáo này chưa được bật AI Mệnh." },
-        403,
-      );
     const body = await trialBody(req);
     if (
       !body ||
@@ -57,15 +64,15 @@ export async function POST(
     )
       return trialJson({ error: "Yêu cầu không hợp lệ." }, 400);
     const current = await readMenh(access.record);
-    if (
-      current.state !== "completed" &&
-      current.state !== "generating" &&
-      !current.queued
-    ) {
-      await rateLimit("ai-menh:" + access.record.id, 6);
-      await requestMenh(access.record, body.retry === true);
-    }
-    return trialJson(await readMenh(access.record));
+    if (current.state === "completed") return trialJson(current);
+    return trialJson(
+      {
+        error:
+          "Mệnh miễn phí sử dụng bài đã biên soạn và hiển thị ngay. Tạo luận AI Mệnh tự động đã dừng.",
+        code: "AI_FREE_ASTRA_RETIRED",
+      },
+      409,
+    );
   } catch (error) {
     const code = error instanceof Error ? error.message : "";
     return trialJson(

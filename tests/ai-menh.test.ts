@@ -14,6 +14,9 @@ import {
   vi,
 } from "vitest";
 import { NextRequest } from "next/server";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import FreeMenhReading from "../components/FreeMenhReading";
 import { pool } from "../lib/db";
 import {
   calculateInternal,
@@ -36,6 +39,13 @@ import {
   retryMenh,
 } from "../lib/ai/store";
 import { menhFacts } from "../lib/ai/facts";
+import { captureFreeMenh, freeMenhView } from "../lib/ai/free-menh";
+import {
+  v1EditUnit,
+  prepareV1Edit,
+  approveV1Edit,
+  contentHash,
+} from "../lib/ai/v1-edit";
 import { retrieveMenhKnowledge } from "../lib/ai/knowledge";
 import { executeRules } from "../lib/interpretation-rules/execute";
 import { tanBienRules } from "../lib/interpretation-rules/profile-rules";
@@ -107,6 +117,8 @@ beforeAll(async () => {
   owner = await createTrialOwner();
 });
 beforeEach(async () => {
+  vi.stubEnv("AI_FREE_EDIT_MODEL", "");
+  vi.stubEnv("AI_V1_EDIT_DIR", path.join(dir, "edits-" + randomUUID()));
   vi.stubEnv("AI_MENH_BACKGROUND", "false");
   vi.stubEnv("OPENAI_MODEL", "unit-test-model-not-live");
   vi.stubEnv("OPENAI_API_KEY", "unit-test-key-not-real");
@@ -258,7 +270,7 @@ describe("facts and source retrieval", () => {
   });
 });
 describe("durable queue, workers and immutable artifacts", () => {
-  it("reports a delayed queue without retrying it, then exposes a stored failure instead of pending", async () => {
+  it("keeps legacy queue diagnostics without retrying; public GET exposes retirement rather than pending", async () => {
     const r = record();
     await saveTrialReading(owner.owner, r);
     await requestMenh(r);
@@ -276,9 +288,9 @@ describe("durable queue, workers and immutable artifacts", () => {
       expect(response.status).toBe(200);
       expect(await response.json()).toMatchObject({
         state: "not-created",
-        queued: true,
-        queueDelayed: true,
+        queued: false,
         canRetry: false,
+        errorCode: "AI_FREE_ASTRA_RETIRED",
       });
     }
     expect((await findAiJob(r)).attempts).toBe(0);
@@ -295,8 +307,7 @@ describe("durable queue, workers and immutable artifacts", () => {
       },
       { readingId: r.id },
     );
-    const failed = await GET(req(r.id), params(r.id));
-    expect(await failed.json()).toMatchObject({
+    expect(await readMenh(r)).toMatchObject({
       state: "error",
       queued: false,
       canRetry: false,
@@ -481,7 +492,7 @@ describe("durable queue, workers and immutable artifacts", () => {
     expect((await readMenh(r)).errorCode).toBe("AI_INTERRUPTED");
     expect(narrator).not.toHaveBeenCalled();
   });
-  it("reconciles only new marked outbox requests; historical files/rights remain byte-identical", async () => {
+  it("retires the free Astra outbox; all saved files and rights remain byte-identical", async () => {
     const old = record(true),
       r = record();
     await saveTrialReading(owner.owner, old);
@@ -489,7 +500,7 @@ describe("durable queue, workers and immutable artifacts", () => {
     const before = readingHash((await getTrialReading(owner.owner, old.id))!);
     await reconcileAiOutbox();
     expect(await findAiJob(old)).toBeUndefined();
-    expect(await findAiJob(r)).toBeDefined();
+    expect(await findAiJob(r)).toBeUndefined();
     expect(readingHash((await getTrialReading(owner.owner, old.id))!)).toBe(
       before,
     );
@@ -524,7 +535,64 @@ describe("saved AI editions remain immutable", () => {
   });
 });
 describe("server ownership and creation integration", () => {
-  it("allows free Mệnh without payment; GET/open does not enqueue; denies strangers, CSRF, old editions and other palaces", async () => {
+  it("shows authorized V1 immediately, freezes reviewed edits only for new records, and never overwrites legacy or completed Astra", async () => {
+    vi.stubEnv(
+      "AI_V1_EDIT_DIR",
+      await fs.mkdtemp(path.join(os.tmpdir(), "v1-free-integration-")),
+    );
+    vi.stubEnv("AI_FREE_EDIT_MODEL", "unit-free-editor-not-live");
+    const original = record(),
+      before = readingHash(original);
+    const view = freeMenhView(original);
+    expect(view.paragraphs.length).toBeGreaterThan(0);
+    const existing = {
+      ...structuredClone(original),
+      freeMenh: await captureFreeMenh(original),
+    };
+    const first = view.paragraphs[0].paragraph,
+      source = v1EditUnit(first, view.version);
+    const c = (
+      await prepareV1Edit(source, async (unit, model) => ({
+        text: unit.text + "\n",
+        model,
+        responseId: "resp_mock",
+        usage: { inputTokens: 10, cachedInputTokens: 0, outputTokens: 10 },
+        durationMs: 1,
+      }))
+    ).candidate!;
+    await approveV1Edit(c.key, contentHash(c));
+    const fresh = {
+      ...structuredClone(original),
+      id: randomUUID(),
+      freeMenh: await captureFreeMenh(original),
+    };
+    expect(freeMenhView(fresh).paragraphs[0].editor).toBe("luna");
+    expect(freeMenhView(existing).paragraphs[0].editor).toBe("v1");
+    expect(
+      freeMenhView(original).paragraphs.every((p) => p.editor === "v1"),
+    ).toBe(true);
+    expect(readingHash(original)).toBe(before);
+    const unsupported=structuredClone(original);
+    (unsupported.frozen.customerReport!.sections[0].paragraphs[0] as any).members=undefined;
+    expect(freeMenhView(unsupported).paragraphs).toEqual([]);
+    await requestMenh(original);
+    await runAiMenhJob(async (input) => mockMenhGeneration(input));
+    const ai = (await findAiJob(original)).result;
+    freeMenhView(original);
+    await captureFreeMenh(original);
+    expect((await findAiJob(original)).result).toEqual(ai);
+    expect(
+      freeMenhView({
+        ...original,
+        accessPolicy: {
+          version: "unknown" as any,
+          freeParagraphIds: [],
+          heldGroups: [],
+        },
+      }).paragraphs,
+    ).toEqual([]);
+  });
+  it("retires free Astra POST; GET remains read-only and ownership/CSRF guards hold", async () => {
     const r = record(),
       old = record(true);
     await saveTrialReading(owner.owner, r);
@@ -532,7 +600,7 @@ describe("server ownership and creation integration", () => {
     expect((await GET(req(r.id), params(r.id))).status).toBe(200);
     expect(await findAiJob(r)).toBeUndefined();
     expect((await POST(req(r.id, owner.token, {}), params(r.id))).status).toBe(
-      200,
+      409,
     );
     expect(
       (await POST(req(r.id, "f".repeat(64), {}), params(r.id))).status,
@@ -542,7 +610,7 @@ describe("server ownership and creation integration", () => {
     );
     expect(
       (await POST(req(old.id, owner.token, {}), params(old.id))).status,
-    ).toBe(403);
+    ).toBe(409);
     expect(
       (await POST(req(r.id, owner.token, { palace: "Quan Lộc" }), params(r.id)))
         .status,
@@ -562,9 +630,9 @@ describe("server ownership and creation integration", () => {
     expect((await POST(cross, params(r.id))).status).toBe(403);
     expect(
       (await pool.query("SELECT DISTINCT palace FROM ai_reading_jobs")).rows,
-    ).toEqual([{ palace: "Mệnh" }]);
+    ).toEqual([]);
   });
-  it("saves engine snapshot first, then queues the exact saved hash once, including duplicate creation request", async () => {
+  it("saves engine snapshot and immediate V1 without any Astra job, including duplicate creation request", async () => {
     const id = randomUUID(),
       body = {
         id,
@@ -592,8 +660,30 @@ describe("server ownership and creation integration", () => {
     const response = await createReading(request());
     expect(response.status).toBe(200);
     const saved = (await getTrialReading(owner.owner, id))!;
-    expect(saved.aiPolicy?.palace).toBe("Mệnh");
-    expect((await findAiJob(saved)).reading_hash).toBe(readingHash(saved));
+    expect(saved.aiPolicy).toBeUndefined();
+    expect(saved.freeMenh?.version).toBe("menh-v1-immediate-1.0.0");
+    expect(saved.freeMenh!.units.length).toBeGreaterThan(0);
+    const html = renderToStaticMarkup(
+      createElement(FreeMenhReading, { view: freeMenhView(saved) }),
+    );
+    expect((html.match(/data-free-menh-paragraph=/g) || []).length).toBe(
+      saved.freeMenh!.units.length,
+    );
+    expect(html).not.toContain("đang chờ");
+    expect(html).not.toContain("Chưa tạo");
+    expect(
+      renderToStaticMarkup(
+        createElement(FreeMenhReading, {
+          view: { version: "test", paragraphs: [] },
+        }),
+      ),
+    ).toContain("chưa có lời biên soạn phù hợp");
+    expect(
+      saved.freeMenh!.units.every(
+        (u) => u.editor === "v1" && u.text.length > 0,
+      ),
+    ).toBe(true);
+    expect(await findAiJob(saved)).toBeUndefined();
     expect((await createReading(request())).status).toBe(200);
     expect(
       +(
@@ -602,7 +692,7 @@ describe("server ownership and creation integration", () => {
           [id],
         )
       ).rows[0].count,
-    ).toBe(1);
+    ).toBe(0);
   });
 });
 describe("bounded cost and recovery controls", () => {

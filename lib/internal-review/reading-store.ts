@@ -14,6 +14,7 @@ import type { FrozenReading, ListReceipt } from "./dynamic-reading";
 export type InternalReading = {
   id: string;
   aiPolicy?: {edition:string;palace:'Mệnh'};
+  freeMenh?: import('../ai/free-menh').FreeMenhEdition;
   accessPolicy?: import("../trial/reading-policy").ReadingPolicy;
   inputReceipt?: import("../customer-birth").CustomerInputReceipt;
   parentId?: string;

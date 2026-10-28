@@ -18,6 +18,7 @@
     "format": "prettier --write app components lib scripts tests *.ts *.json",
     "chart:compare": "node --import tsx scripts/compare-chart.ts",
     "worker:ai": "node --env-file=.env --import tsx scripts/ai-worker.ts",
+    "ai:edit-v1": "node --env-file=.env --import tsx scripts/edit-v1-unit.ts",
     "ai:check-model": "node --env-file=.env --import tsx scripts/check-openai-model.ts"
   },
   "dependencies": {

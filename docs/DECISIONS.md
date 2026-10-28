@@ -1,5 +1,12 @@
 # Sổ quyết định Tinh Luận
 
+<a id="ai-menh-package23-decision-20261028"></a>
+## 28/10/2026 — Gói2.3 phân tầng model, V1 Mệnh ngay
+
+**U — chủ dự án, thay quyết định Astra Mệnh miễn phí trước:** V1 từ sách là lời miễn phí; GPT-6 Luna chỉ biên tập cho tự nhiên, giữ nghĩa/điều kiện/facts; ưu tiên đơn vị dùng chung khi nội dung/điều kiện giống. Khách xem ngay, không chờAPI; Astra dành luận sâu trả phí tương lai. Lưu riêng V1/Luna/Astra, giữ model/prompt/nguồn, fallbackgốc, không overwritehistory hoặc thay Astra completed. Tốiđa2–3đoạn Luna thật, không batchcatalog/11cung/thanh toán/QA3062/3070/Live/Gói3.
+
+**C — đã làm trong QA:**7đoạn V1 có sẵn,3Luna thật/2đối chiếu giữ nghĩa dùng chung/1chưa nhận giữgốc; chốt selection mỗi bản mới, giữ12file/12jobAI cũ. API/outbox/CLI ngừng CREATE miễn phí, đọc Astra completed riêng; không consumer mới. Codex đối chiếu biên tập, không phải chứng nhận chuyên môn hoặc toàncatalog. [Bàn giao và điểm dừng](AI-MENH-PACKAGE23-HANDOFF.md).
+
 ## 28/10/2026 — sửa lỗi đúng phiên người dùng, giới hạn một job
 
 **U — chủ dự án:** xác minh đúng báo cáo đang mở, API/database/queue/worker và nguồn dữ liệu; không lấy báo cáo khác làm bằng chứng. Nếu worker dừng, đếm queue trước và chỉ xử lý đúng một job chỉ định, tối đa một CREATE có dự toán. Không tạo lại uncertain, ghi đè completed, chạm các QA khác/worker thanh toán hoặc mở Gói3.

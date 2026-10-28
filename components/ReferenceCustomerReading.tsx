@@ -1,3 +1,4 @@
+import type {FreeMenhView} from '@/lib/ai/free-menh';
 import CustomerReadingWorkspace from './CustomerReadingWorkspace';
 import type {ReadingScope} from '@/lib/trial/reading-policy';
 import ReadingEmailAccess from './ReadingEmailAccess';
@@ -8,8 +9,8 @@ import {customerInfo} from '@/lib/chart-customer-info';
 import CustomerChart from './CustomerChart';
 import {CustomerEvidence} from './CustomerReading';
 import ReadingDisclosure from './ReadingDisclosure';
-export default function ReferenceCustomerReading({report:r,snapshot,id,basic,birthTimeLabel,publicTrial=false,orderId,emailRecovery=false,allowBirthEdit=true,scope,checkout='closed'}:{report:CustomerReport;snapshot?:ChartSnapshot;id?:string;basic:boolean;birthTimeLabel?:string;publicTrial?:boolean;orderId?:string;emailRecovery?:boolean;allowBirthEdit?:boolean;scope?:ReadingScope;checkout?:'closed'|'login'|'allowed'}){
- if(publicTrial&&scope)return <CustomerReadingWorkspace report={r} snapshot={snapshot} id={id} basic={basic} birthTimeLabel={birthTimeLabel} orderId={orderId} emailRecovery={emailRecovery} allowBirthEdit={allowBirthEdit} scope={scope} checkout={checkout}/>;
+export default function ReferenceCustomerReading({report:r,snapshot,id,basic,birthTimeLabel,publicTrial=false,orderId,emailRecovery=false,allowBirthEdit=true,scope,freeMenh,checkout='closed'}:{report:CustomerReport;snapshot?:ChartSnapshot;id?:string;basic:boolean;birthTimeLabel?:string;publicTrial?:boolean;orderId?:string;emailRecovery?:boolean;allowBirthEdit?:boolean;scope?:ReadingScope;freeMenh?:FreeMenhView;checkout?:'closed'|'login'|'allowed'}){
+ if(publicTrial&&scope)return <CustomerReadingWorkspace report={r} snapshot={snapshot} id={id} basic={basic} birthTimeLabel={birthTimeLabel} orderId={orderId} emailRecovery={emailRecovery} allowBirthEdit={allowBirthEdit} scope={scope} freeMenh={freeMenh} checkout={checkout}/>;
  // Hide redundant profile metadata only in this customer view; retain the saved report.
  const birthSummary=r.birth.split(' · ').filter(part=>part!=='Chưa có thông tin nơi sinh'&&part!=='Asia/Ho_Chi_Minh').join(' · ');
  const limited=!!scope&&!scope.full;

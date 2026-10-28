@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## Gói2.3 — V1 đọc ngay và Luna biên tập,28/10
+
+40/40kiểm liên quan(30AI/4editorial/6scope) trênDBtest riêng; SSR có văn không chờJS, tạo/duplicate khôngenqueue, cache/model/conditionkhác khôngreuse, đồngthời1dispatch, timeout/lỗikhôngretry, candidatehash/corrupt/fallback, chốt bản mới khôngđổi bảncũ, public API không pending như luồng còn chạy. Typecheck/buildcuối đạt. Lỗi đầu JSX đã sửa,1ca test lẫn cache fixture đã táchenv từngca; giữlogđầu, khôngsửaexpectednguồnđểxanh.3API Luna thật/schema đạt,2đoạn đốichiếu dùng/1chưa nhận giữgốc; khônggọi thêm. BrowserQAform→7đoạn(2Luna/5gốc),360/390/căncứ/refresh/reopen/11khóa; Astra cũ8phần mởriêng.12file/12jobAIcũ vàmain282file/8bảng/dịchvụ được bảotoàn nguyên. KhôngE2E/PDF/main/11cung. [Bằngchứng/văn/chi phí/giới hạn](AI-MENH-PACKAGE23-HANDOFF.md).
+
 ## Sửa AI Mệnh trên đúng báo cáo — 28/10/2026
 
 29/29AI test trên DBtest riêng, typecheck/build đạt. Ca mới kiểm queued lâu, GET lặp không tạo job/attempt, lỗi đã lưu trả error thay pending. Browser thật đúng `b69fb574…`: trước queued, worker đúng ID/max1 chuyển generating rồi tự cập nhật completed/8phần; API content hash bằng database; refresh và rời trang/mở lại vẫn completed, attempt1;11cung khóa. Một báo cáo queued khác chỉ dùng kiểm nút GET/thông báo chờ, không gọi provider;10job ngoài phạm vi nguyên. Một CREATE mới,136013ms/ước$0,47498. Main282file/8bảng và các dịch vụ được bảo toàn nguyên. Không fullE2E/PDF hoặc đánh giá chất lượng văn chuyên môn. [Bằng chứng và giới hạn vận hành](AI-MENH-DISPLAY-FIX-20261028.md).

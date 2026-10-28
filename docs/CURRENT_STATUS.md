@@ -1,5 +1,11 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Cập nhật28/10 — Gói2.3 thay Astra Mệnh miễn phí bằng V1 ngay
+
+Baselinef6bb4f0. Luồng mới không enqueue Astra hoặc chờ worker; chốt V1 gốc/bản Luna đã đối chiếu khi lập. Tách `AI_FREE_EDIT_MODEL=gpt-6-luna` và `AI_PAID_READING_MODEL=gpt-6-astra`, không fallback; cả2Models GET có quyền,3Responses Luna/schema thật đạt.2đoạn giữ nghĩa được dùng chung,1đoạn chưa chấp nhận nên giữgốc; tổngước$0,0004678, không gọi lại để tối ưu. QA mới7đoạn(2Luna/5gốc), bảncũ7gốc/Astra cũ8phần giữ riêng;360/390/căn cứ/lưu–mở/11khóa đạt,40/40test/typecheck/build.
+
+12file/12jobAI QA cũ và main282file/8bảng nguyên; chỉwebQA3111 cập nhật, worker không chạy. API/outbox/CLI không CREATE Mệnh miễn phí cũ; pending/uncertain giữ nguyên trong kho. Các trạng thái chờ worker/định hướng Astra miễn phí bên dưới là lịch sử. KhôngQA3062/3070/Live/Gói3. [Bàn giao và hạn chế nguồn/biên tập](AI-MENH-PACKAGE23-HANDOFF.md).
+
 ## Cập nhật 28/10 — đúng báo cáo mới đã hoàn thành, worker vẫn giới hạn một job
 
 Baseline sửa lỗi `a025903` (lưu riêng Gói2.2 từ858dc92). Tái hiện báo cáo `b69fb574…` QA3111 queued/0attempt vì không có AI worker; không dùng báo cáo trước để kết luận. Worker62751 chỉ xử lý đúng ID/max1, completed/1attempt; prompt1.1,14113input/6677output token,136013ms/ước$0,47498. API đúng phiên và database khớp nội dung, trang tự nhận8phần, refresh/mở lại không tạo thêm attempt,11cung khóa.29/29test/typecheck/build đạt. WebQA3111 mớiPID63815; main/QA3062/3070/3101/worker chính nguyên.

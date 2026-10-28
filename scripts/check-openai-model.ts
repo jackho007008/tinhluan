@@ -1,6 +1,21 @@
 import OpenAI from "openai";
-import { aiConfig } from "../lib/ai/config";
+import { aiConfig, aiModels } from "../lib/ai/config";
 const config = aiConfig();
+const purpose = process.argv[2] || "free-edit";
+if (!["free-edit", "paid-reading", "legacy"].includes(purpose))
+  throw Error("MODEL_PURPOSE_REQUIRED");
+const model =
+  purpose === "free-edit"
+    ? aiModels().freeEdit
+    : purpose === "paid-reading"
+      ? aiModels().paidReading
+      : config.model;
+const variable =
+  purpose === "free-edit"
+    ? "AI_FREE_EDIT_MODEL"
+    : purpose === "paid-reading"
+      ? "AI_PAID_READING_MODEL"
+      : "OPENAI_MODEL";
 if (!config.apiKey) {
   console.log("OPENAI_API_KEY is not configured; no API request made.");
   process.exitCode = 2;
@@ -11,26 +26,22 @@ if (!config.apiKey) {
     timeout: 15000,
   });
   try {
-    if (config.model) {
-      const m = await client.models.retrieve(config.model);
+    if (model) {
+      const m = await client.models.retrieve(model);
       console.log(
         JSON.stringify({
+          purpose,
           configuredModel: m.id,
           accessible: true,
           note: "Model visibility only; Responses/Structured Outputs still need a controlled generation test.",
         }),
       );
     } else {
-      const list = await client.models.list();
       console.log(
-        JSON.stringify({
-          accessibleModels: list.data
-            .map((m) => m.id)
-            .filter((id) => /^gpt-/.test(id))
-            .sort(),
-          note: "Select a capable model explicitly in OPENAI_MODEL; no automatic fallback.",
-        }),
+        variable +
+          " is not configured; no API request made and no fallback selected.",
       );
+      process.exitCode = 2;
     }
   } catch {
     console.error(

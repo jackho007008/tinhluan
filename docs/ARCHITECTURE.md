@@ -1,6 +1,10 @@
 # Kiến trúc Tinh Luận hiện hành
 
 <a id="ai-menh-architecture-20261027"></a>
+## Gói2.3 — V1 miễn phí và kho biên tập
+
+Luồng customer mới: engine/frozen → policy miễn phí → `captureFreeMenh` đọc artifact đã đối chiếu hoặc V1gốc → lưu `freeMenh` optional vào JSON báo cáo → SSR `FreeMenhReading`. Không API/queue trong đường hiển thị. `freeMenhView` chỉ đọc lựa chọn đã chốt, không đổi lịch sử khi cache tăng. Nguồn và metadata gốc giữ trong frozen; bản Luna private tách riêng theo content/conditions/source/model/prompt hash, reservation ghi độc quyền và approval theo candidate hash, không worker/queue mới. CLI chỉ một unit, lỗi/unknown không tự retry. Public API/old outbox không enqueue Astra miễn phí; CLI worker cũ chỉ đối soát GET theo ID, hạt nhân AI cũ và completed giữ nguyên. Hai model explicit độc lập, không fallback từ `OPENAI_MODEL`. Paidmodel mới chỉ cấu hình, không11cung. [Chi tiết](AI-MENH-PACKAGE23-HANDOFF.md).
+
 ## Bổ sung Gói 2 — AI Mệnh, môi trường QA riêng
 
 **Gói2.2:** `v1-editorial.ts` đọc nhómMệnh trong frozencontinuousreport đúngsnapshot, kiểmreceipt/nhánh/chínhtinh/điềukiện qua evaluatorcũ; khôngrenderlạiV1. V1primarycómetadata nguồn/ngoạilệ/statusdraft, khôngchứngnhậnđúngđờithật. Retrieval1.1 chỉthêmclaimkhớp, textđãresolve, loại trùngruleV1, phươngphápnền táchriêng. Promptregistrychọnđúng `job.prompt_version` (1.0giữnguyên,1.1chojobmới). Workercóreadingscope/maxnewprocess; chếđộrevalidateoutputphảicóreadingIDvàallowCreatefalse,GETcùngID/attempt,giữmetricscũ. Khôngqueue/bảng/migrationmới. [Kiểm](TESTING.md#ai-menh-package22-testing-20261028),[bàn giao](AI-MENH-PACKAGE22-HANDOFF.md).

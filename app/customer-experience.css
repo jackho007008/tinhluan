@@ -249,3 +249,7 @@
 .result-shell .ai-menh-result h3{color:var(--gold);font-size:22px;margin:0 0 12px}
 .result-shell .ai-menh-result article>p{font-size:15px;line-height:1.9;white-space:pre-line}
 .result-shell .ai-menh-reading button:disabled{opacity:.6;cursor:wait}
+
+.result-shell .free-menh-reading article{margin:24px 0}
+.result-shell .free-menh-reading h3{color:var(--gold);font-size:20px;line-height:1.5}
+.result-shell .free-menh-reading article>p{font-size:15px;line-height:1.9;white-space:pre-line;overflow-wrap:anywhere}

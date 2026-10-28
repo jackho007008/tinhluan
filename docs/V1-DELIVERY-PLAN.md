@@ -1,5 +1,12 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="ai-menh-package23-20261028"></a>
+## Gói2.3 — V1 Mệnh ngay, Luna biên tập đơn vị, chưa tích hợp main
+
+**U thay hướng cũ:** miễn phí dùng V1; Luna chỉ sửa văn, Astra cho luận sâu trả phí tương lai; không chờ AI, khôngGói3. **Đã triển khai QA3111:** nguồn đúng frozen/policy, snapshot/phiên bản hiển thị lưu một lần; cache dùng chung theo nội dung+điều kiện+nguồn+prompt+model, duyệt từng candidate hash sau đối chiếu. Không backfill lịch sử hoặc thay Astra completed. Tạo/reopen không có job Astra; outbox dừng, CLI cũ GET-only, public API không báo pending như luồng còn hoạt động.
+
+3đoạn Luna thật/2dùng/1giữgốc, tổngước$0,0004678; mới7đoạn(2Luna/5gốc) qua form, mobile360/390/căn cứ/refresh/reopen/11khóa đạt;40/40test/typecheck/build.12file/12jobAI QA cũ và main282file/8bảng nguyên. [Bàn giao/ảnh/văn/chi phí](AI-MENH-PACKAGE23-HANDOFF.md). Điểm dừng: chỉ2đơn vị cache được đối chiếu, nguồn chưa phủ kín/chứng nhận; không thêmAPI/batch toàncatalog, QA3062/3070 hoặc11cung. Tích hợp main cần quyền/cấu hình/kho private/backup riêng.
+
 <a id="ai-menh-display-fix-20261028"></a>
 ## Sửa AI Mệnh chờ trên đúng báo cáo người dùng — 28/10/2026
 

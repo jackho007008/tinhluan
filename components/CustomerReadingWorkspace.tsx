@@ -1,3 +1,5 @@
+import FreeMenhReading from './FreeMenhReading';
+import type {FreeMenhView} from '@/lib/ai/free-menh';
 import AiMenhReading from './AiMenhReading';
 import ReadingAccountLink from './ReadingAccountLink';
 import type {CustomerReport,CustomerSection} from '@/lib/internal-review/customer-report';
@@ -18,7 +20,7 @@ function SavedSection({section:s,version}:{section:CustomerSection;version:strin
  return <section id={s.id} data-customer-section={s.id} data-reading-position><h3>{s.title}</h3>{s.intro&&<p>{s.intro}</p>}{s.paragraphs.map((p,i)=><article id={p.id} key={p.id} data-customer-paragraph={p.id} data-reading-position>{p.title&&(!['1.54.0','1.55.0','1.55.1'].includes(version)||p.title!==s.paragraphs[i-1]?.title)&&<h4>{p.title}</h4>}<p data-customer-text>{p.text}</p><CustomerEvidence p={p} allowInternalLinks={false}/></article>)}{s.notices.map((n,i)=><p className="notice" key={i} data-customer-gap>{n.text}</p>)}</section>;
 }
 /** Receives only the existing server-authorized frozen projection. */
-export default function CustomerReadingWorkspace({report:r,snapshot,id,basic,birthTimeLabel,orderId,emailRecovery,allowBirthEdit,scope,checkout='closed'}:{report:CustomerReport;snapshot?:ChartSnapshot;id?:string;basic:boolean;birthTimeLabel?:string;orderId?:string;emailRecovery?:boolean;allowBirthEdit?:boolean;scope:ReadingScope;checkout?:'closed'|'login'|'allowed'}){
+export default function CustomerReadingWorkspace({report:r,snapshot,id,basic,birthTimeLabel,orderId,emailRecovery,allowBirthEdit,scope,freeMenh,checkout='closed'}:{report:CustomerReport;snapshot?:ChartSnapshot;id?:string;basic:boolean;birthTimeLabel?:string;orderId?:string;emailRecovery?:boolean;allowBirthEdit?:boolean;scope:ReadingScope;freeMenh?:FreeMenhView;checkout?:'closed'|'login'|'allowed'}){
  const edition=id||r.snapshotId,url=orderId?'/don-thu?id='+orderId:'/ban-doc?id='+id;
  const visible=basic&&scope.full?r.sections.filter(s=>r.basicSectionIds.includes(s.id)):r.sections;
  const opening=visible.find(s=>s.id==='key-points');
@@ -49,7 +51,7 @@ export default function CustomerReadingWorkspace({report:r,snapshot,id,basic,bir
   const saved=r.palaces.find(x=>x.name===p.name);
   return <ReadingDisclosure id={'cung-'+i} data-reading-position key={p.name} initiallyOpen={p.name==='Mệnh'} className="card palace-chapter">
   <summary><span className="result-palace-heading"><strong>{p.name==='Tử Nữ'?'Tử Tức':p.name}</strong><span>{p.branch}</span>{p.isBody&&<span className="result-body-badge">Thân</span>}<span className="result-palace-stars">{stars(p)}</span></span></summary>
-  {p.name==='Mệnh'&&id?<AiMenhReading key={id} readingId={id}/>:<AiReadingStatus state={p.name==='Mệnh'?'not-created':'not-entitled'}/>}
+  {p.name==='Mệnh'?<>{freeMenh&&<FreeMenhReading view={freeMenh}/>} {id&&<AiMenhReading key={id} readingId={id}/>}</>:<AiReadingStatus state="not-entitled"/>}
   <div className="saved-editorial" data-palace-access={state}><p className="result-eyebrow">NỘI DUNG BIÊN TẬP ĐÃ LƯU · {labels[state]}</p>{state==='locked'?<p className="access-message">Cung này có nội dung trong bản đã lưu và cần quyền đọc đầy đủ. {checkout==='closed'?'Chưa mở bán.':<a href={'/checkout?id='+id+'#cung-'+i}>{checkout==='login'?'Đăng nhập · xem phạm vi gói thử':'Xem phạm vi gói Test Mode'}</a>}</p>:<>
   {state==='empty'&&<p className="access-message">Phần này hiện chưa có luận giải. Mở quyền không tạo thêm nội dung cho cung này.</p>}
   {owned.map(s=>p.name==='Mệnh'?<p key={s.id}><a href={'#'+s.id}>{s.title} · đọc tại Tổng quan</a></p>:<SavedSection key={s.id} section={s} version={r.version}/>)}{shared.map(s=><p key={s.id}>Nội dung chung: <a href={'#'+s.id}>{s.title}</a>.</p>)}
@@ -64,6 +66,6 @@ export default function CustomerReadingWorkspace({report:r,snapshot,id,basic,bir
  <section className="card result-periods"><p>Phần Vận hạn đang được hoàn thiện.</p></section>
  </ResultTabs>
  <section className="card result-options" id="reading-options" data-reading-position><h2>Tùy chọn bản đọc</h2>{scope.full?<><p><a className="button quiet" href={basic?url:url+'&mode=basic'}>{basic?'Đọc bản chi tiết':'Đọc bản cơ bản'}</a></p>{id&&<TrialReadingPdf id={id} orderId={orderId}/>}</>:<p>PDF toàn bài cần quyền đọc đầy đủ. QA chưa mở bán.</p>}{emailRecovery&&id&&<ReadingEmailAccess readingId={id} orderId={orderId}/>}
- <ReadingDisclosure><summary>Cách đọc và phạm vi</summary><p>{r.intro}</p><p>{r.notice}</p><p>Luận AI chưa được kích hoạt trong phiên bản này. Nội dung biên tập đã lưu không phải bài luận AI.</p></ReadingDisclosure><ReadingDisclosure><summary>Thuật ngữ trong bài</summary>{r.glossary.map(g=><p key={g.term}><strong>{g.term}: </strong>{g.text}</p>)}</ReadingDisclosure></section>
+ <ReadingDisclosure><summary>Cách đọc và phạm vi</summary><p>{r.intro}</p><p>{r.notice}</p><p>Mệnh miễn phí sử dụng nội dung đã biên soạn từ tài liệu. Biên tập lời văn bằng AI không bổ sung lời luận mới; các bài AI đã lưu được giữ riêng.</p></ReadingDisclosure><ReadingDisclosure><summary>Thuật ngữ trong bài</summary>{r.glossary.map(g=><p key={g.term}><strong>{g.term}: </strong>{g.text}</p>)}</ReadingDisclosure></section>
  </main>;
 }
