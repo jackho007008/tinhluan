@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 29/10 — phê duyệt một lần cập nhật riêng web QA3062
+
+**U:** chủ dự án cho thực thi kế hoạch Gói2.5/c576d6a, chấp nhận kho/backup cùngDATA; chỉwebQA3062/Node24, AIoff/khôngkey, backupmới/smoke/đối chiếu vàrollback riêngweb nếu lỗi. Khôngproduction/workers/migration/API/Live. **C:** đã thực thi, khôngrollback; phát hiện100file của phiênhếthạn biến mất trướcstop, giữbackup/ghi riêng, khôngtựrestore/đổiTTL. [Bàn giao](QA3062-MENH-V1-DEPLOYED-20261029.md).
+
 <a id="ai-menh-package25-decision-20261029"></a>
 ## 29/10/2026 — Gói2.5 chỉ chuẩn bị tích hợp QA3062
 

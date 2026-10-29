@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 29/10 — Gói2.5 đã cập nhật riêng web QA3062
+
+Theo quyền cụ thể của chủ dự án, web94756/Node20 →32792/Node24.22.1, build `vQVwORxbMpjju4MCaF34c`, mã ứng dụngf18acee từ commit chuẩn bịc576d6a. AIoff/keykhôngtruyền;0API/migration/worker/rollback. Smoke4tab/V1gốc/bảnmới2Lunaapproved/căn cứ/refresh/mởlại/11khóa đạt.184file trước stop,8bảng/34bài/QA3070/3101/3111/worker nguyên saudeploy. **Ngoại lệ đã ghi nhận trước stop:**100file(49phiên hết hạn/51báo cáo) mất so với đầu phiên, khớp TTL; đã có backup đầy đủ, chưa tựrestore hoặc đổi hạn. [Bàn giao và bằng chứng](QA3062-MENH-V1-DEPLOYED-20261029.md).
+
 ## Cập nhật 29/10 — Gói2.5 chuẩn bị tích hợp, web main vẫn Gói1
 
 QA3062 codea104748/web94756/Node20 không đổi; chỉ bản build chưa triển khai được chuẩn bị bằng Node24.22.1, kho private tuyệt đối tách checkout và web không cần key/AIworker.49/49test/typecheck/build; preview3112 tạo2mẫu V1fallback/approved,4tab/căn cứ/11khóa/refresh/mở lại đạt, đã dừng.1Luna1.1 CREATE thật/schema đạt,1267input/95output/3413ms/ước$0,0001742; candidate giữdraft vì sắc thái “chưa”→“không”, không nới guard hay gọi thêm. Kho73unit vẫn2approved/1rejected/70draft (1draft đã sinh,69chưa sinh), không hoàn thiện toàn kho.

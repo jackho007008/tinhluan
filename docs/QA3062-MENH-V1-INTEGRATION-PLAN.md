@@ -1,5 +1,7 @@
 # Gói 2.5 — Chuẩn bị tích hợp Mệnh V1 vào riêng web QA3062
 
+**Trạng thái sau phê duyệt:** đã triển khai riêng web ngày29/10; xem [bàn giao thực thi](QA3062-MENH-V1-DEPLOYED-20261029.md). Các đoạn “chưa được phép” bên dưới là kế hoạch tại thời điểm chuẩn bị.
+
 Ngày 29/10/2026, baseline `main@f18acee`; tracked/index sạch trước sửa, giữ nguyên `buu-dinh-7parts/`. **Đã chuẩn bị, chưa cập nhật/restart QA3062.** Không triển khai Gói 3, AI 11 cung, worker AI, migration hoặc Live. Commit Gói 2.5 chỉ thêm công cụ snapshot kho, test và tài liệu; mã ứng dụng phục vụ Mệnh vẫn là Gói 2.4 `f18acee`, không sửa engine/renderer/quyền/thanh toán.
 
 ## Phiên bản và tiến trình đã xác minh

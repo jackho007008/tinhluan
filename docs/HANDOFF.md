@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 29/10 — Gói2.5 đã cập nhật riêng web QA3062
+
+Theo quyền cụ thể của chủ dự án, web94756/Node20 →32792/Node24.22.1, build `vQVwORxbMpjju4MCaF34c`, mã ứng dụngf18acee từ commit chuẩn bịc576d6a. AIoff/keykhôngtruyền;0API/migration/worker/rollback. Smoke4tab/V1gốc/bảnmới2Lunaapproved/căn cứ/refresh/mởlại/11khóa đạt.184file trước stop,8bảng/34bài/QA3070/3101/3111/worker nguyên saudeploy. **Ngoại lệ đã ghi nhận trước stop:**100file(49phiên hết hạn/51báo cáo) mất so với đầu phiên, khớp TTL; đã có backup đầy đủ, chưa tựrestore hoặc đổi hạn. [Bàn giao và bằng chứng](QA3062-MENH-V1-DEPLOYED-20261029.md).
+
 ## Hiện hành 29/10 — Gói2.5: đã chuẩn bị, chưa cập nhật QA3062
 
 HEAD nềnf18acee; QA3062 vẫn a104748/PID94756/Node20. Đã build checkout mới Node24,49/49test/typecheck/build; preview3112 không key/worker cho V1fallback và2Lunaapproved hiển thị ngay,4tab/11khóa/lưu–mở đạt rồi dừng preview.1CREATE Luna1.1 thật,1267in/95out/3413ms/ước$0,0001742; giữdraft, không thêmAPI. Kho89artifact đã chuyển đủ và restore thử/hash/context khớp; backup282file/DB chỉ đọc. Main/QA3111/lịch sử/job/worker vàQA3070 nguyên. Kho/backup tách checkout nhưng cùng DATA, chưa mount/backup vật lý khác. [Kế hoạch chính xác, giới hạn và quyền cần xin](QA3062-MENH-V1-INTEGRATION-PLAN.md), [backlog](V1-DELIVERY-PLAN.md#ai-menh-package25-20261029). Không tự restart main/Gói3.
