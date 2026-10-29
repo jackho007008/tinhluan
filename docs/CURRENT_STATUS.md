@@ -1,5 +1,11 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Cập nhật 29/10 — Gói2.5 chuẩn bị tích hợp, web main vẫn Gói1
+
+QA3062 codea104748/web94756/Node20 không đổi; chỉ bản build chưa triển khai được chuẩn bị bằng Node24.22.1, kho private tuyệt đối tách checkout và web không cần key/AIworker.49/49test/typecheck/build; preview3112 tạo2mẫu V1fallback/approved,4tab/căn cứ/11khóa/refresh/mở lại đạt, đã dừng.1Luna1.1 CREATE thật/schema đạt,1267input/95output/3413ms/ước$0,0001742; candidate giữdraft vì sắc thái “chưa”→“không”, không nới guard hay gọi thêm. Kho73unit vẫn2approved/1rejected/70draft (1draft đã sinh,69chưa sinh), không hoàn thiện toàn kho.
+
+89artifact source/request/candidate/review/journal/legacy/inventory chuyển đủ, hash/context/selection vàrestore thử khớp; file0600/dir0700. Backup main282file/DBdump chỉ đọc có receipt, cần làm mới trước deploy được phép. Release/backup cùng volume DATA: bền ngoài checkout, chưa bảo vệ mất cả ổ và chưa mount vật lý riêng. Main282file/8bảng,QA3111 22file/12jobAI,QA3070/3101/worker giữ nguyên; không migration/QA3062restart/Live/Gói3. [Kế hoạch, bằng chứng, điểm cần chốt](QA3062-MENH-V1-INTEGRATION-PLAN.md).
+
 ## Cập nhật 28/10 — Gói 2.4: kho biên tập có kiểm soát, chưa biên tập toàn bộ
 
 QA3111 có registry nguồn V1 và journal duyệt nối tiếp theo toàn văn/điều kiện/nguồn/report/catalog/model/prompt. Năm tiêu chí phải có chứng cứ pass; uncertain/fail hoặc kiểm kỹ thuật lỗi không được approved; trạng thái nguồn draft không được nâng theo duyệt lời. Giữ selection lịch sử và V1 fallback. 51 mẫu nguồn, 45 có thể miễn phí/6 giữ riêng; 28 lá số QA →109 lần xuất hiện/73 đơn vị render;3 phản hồi Luna cũ được đối chiếu lại:2approved/1rejected/70draft chưa sinh. 31 mẫu quan sát/14 miễn phí chưa quan sát, không coi 28 mẫu phủ hết Mệnh. VCD có2–3đoạn cơ bản; hai ca có phép xét ngũ hành VCD, vẫn thiếu nhánh sao chiếu Tân Biên khớp điều kiện.

@@ -1,5 +1,12 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="ai-menh-package25-20261029"></a>
+## Gói2.5 — chuẩn bị QA3062, dừng trước quyền cập nhật web
+
+Đã xác minh maina104748/PID94756/Node20 và nềnf18acee. Chuẩn bị checkout/build Node24, envwebAIoff/keyrỗng/kho private tuyệt đối, không thay28thiết lập app/thanh toán;49/49test/typecheck/build/preview3112fallback–approved/4tab/11khóa/lưu–mở đạt, preview đã dừng.1CREATE Luna1.1/ước$0,0001742, giữdraft; không thêmAstra hoặc batch. Snapshot89artifact/73context vàrestore thử khớp; backup282file/DB chỉ đọc. Tất cả dịch vụ/lịch sử chính giữ nguyên.
+
+Điểm dừng: chưa được phép cập nhật/restart QA3062; cần quyền riêng để dừng đúng web, chạy Node24/build đã kiểm, smoke và rollback riêng web nếu lỗi. Kho/backup tách checkout trên DATA, **chưa là mount/backup vật lý riêng**; nếu bắt buộc đích độc lập phải chuẩn bị trước. Không đòi biên tập hếtV1 để dùngfallback, không migration/worker/Live/Gói3. [Kế hoạch chi tiết và điều kiện xin quyền](QA3062-MENH-V1-INTEGRATION-PLAN.md).
+
 <a id="ai-menh-package24-20261028"></a>
 ## Gói 2.4 — Kho biên tập Mệnh V1, chỉ QA riêng
 

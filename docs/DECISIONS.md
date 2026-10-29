@@ -1,5 +1,12 @@
 # Sổ quyết định Tinh Luận
 
+<a id="ai-menh-package25-decision-20261029"></a>
+## 29/10/2026 — Gói2.5 chỉ chuẩn bị tích hợp QA3062
+
+**U — chủ dự án:** chuẩn bị kho bền/backup/chuyển đủ journal/hash/điều kiện, thử tốiđa1CREATE Luna1.1 trên đơn vị chưa biên tập, chỉ approved khi giữ nghĩa; V1fallback/khôngAPIkhiđọc/lịch sử bất biến. Xác định chính xác web/config/backup/smoke/rollback; **chưa cập nhật/restart QA3062**. Nếu đủ điều kiện chỉ đề xuất xin quyền riêng, không worker/QA3070/11cung/Live/Gói3.
+
+**C — đã làm/lựa chọn kỹ thuật:**1Luna thật giữdraft sau đối chiếu, không dùng cho khách; thêm CLI snapshot không overwrite,89artifact/restore/hash/context khớp;49test/typecheck/build/preview khôngkey đạt. MainNode20 nên kế hoạch chuyển riêngwebNode24, khôngkey/AIworker/migration. Chỉ chuẩn bị thư mục dữ liệu tách checkout trên DATA; backup cùng volume, chưa mount vật lý khác. Không biến lựa chọn này thành phê duyệt yêu cầu volume riêng hoặc quyền deploy. [Kế hoạch và điểm cần chốt](QA3062-MENH-V1-INTEGRATION-PLAN.md).
+
 <a id="ai-menh-package24-decision-20261028"></a>
 ## 28/10/2026 — Gói 2.4 hoàn thiện kho biên tập Mệnh V1
 

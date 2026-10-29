@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Hiện hành 29/10 — Gói2.5: đã chuẩn bị, chưa cập nhật QA3062
+
+HEAD nềnf18acee; QA3062 vẫn a104748/PID94756/Node20. Đã build checkout mới Node24,49/49test/typecheck/build; preview3112 không key/worker cho V1fallback và2Lunaapproved hiển thị ngay,4tab/11khóa/lưu–mở đạt rồi dừng preview.1CREATE Luna1.1 thật,1267in/95out/3413ms/ước$0,0001742; giữdraft, không thêmAPI. Kho89artifact đã chuyển đủ và restore thử/hash/context khớp; backup282file/DB chỉ đọc. Main/QA3111/lịch sử/job/worker vàQA3070 nguyên. Kho/backup tách checkout nhưng cùng DATA, chưa mount/backup vật lý khác. [Kế hoạch chính xác, giới hạn và quyền cần xin](QA3062-MENH-V1-INTEGRATION-PLAN.md), [backlog](V1-DELIVERY-PLAN.md#ai-menh-package25-20261029). Không tự restart main/Gói3.
+
 ## Hiện hành 28/10 — Gói 2.4: kho biên tập Mệnh có nguồn/phiên bản/lịch sử duyệt
 
 Kho dùng chung đã thêm registry nguồn và journal draft/approved/rejected có chứng cứ 5 tiêu chí, chặn dùng sai điều kiện/catalog/model/prompt và duyệt đồng thời; thiếu/chưa chắc thì V1 gốc. 51 mẫu nguồn (45 có thể miễn phí/6 giữ riêng); tập 28 lá số có 73 đơn vị render, 3 Luna cũ/2 duyệt/1 từ chối/70 chưa sinh. V1 vẫn draft, 2–7 đoạn/lá số, VCD chỉ phủ một phần. Prompt biên tập1.1 mới chỉ dry-run, không API mới/$0. 45/45 test/typecheck/build, browser360/390/lưu–mở/11khóa đạt;13file/12jobAI cũ và main giữ nguyên. Chỉ webQA3111 nạp build, AIworker dừng, khôngQA3062/3070/Gói3. [Bàn giao/kiểm kê/văn/ảnh/giới hạn](AI-MENH-PACKAGE24-HANDOFF.md), [backlog](V1-DELIVERY-PLAN.md#ai-menh-package24-20261028).

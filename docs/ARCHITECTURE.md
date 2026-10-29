@@ -1,5 +1,11 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## Gói2.5 — snapshot kho và kế hoạch web QA3062
+
+`v1-edit-transfer`/CLI `snapshot-v1-edit-store` sao chép toàn bộ artifact/journal sang thư mục mới, manifestSHA256/bytes, kiểm nguồn ổn định/JSON và từ chối symlink/overlap/overwrite; verify phát hiện thiếu/thừa/đổi. Khôi phục chỉ sang root mới, không DB/process/API. Kho runtimeprivate ngoài checkout trên DATA, backup/restore thử; không coi cùng volume là bản sao ngoài ổ. Không đổi đường dựng lời/runtime của f18acee.
+
+Ứng dụng miễn phí có thể phục vụ bằng Node24 với AI_MENH_ENABLED=false/keyrỗng, chỉ đọc approved/V1; main không cần schemaAI011 hoặc worker. Gói2.5 chỉ build/preview riêng và chuẩn bị env/rollback; webQA3062 hiệnNode20 vẫn nguyên. [Kế hoạch](QA3062-MENH-V1-INTEGRATION-PLAN.md).
+
 ## Gói 2.4 — registry nguồn và journal duyệt trong kho private
 
 Tái dùng `AI_V1_EDIT_DIR`: sources bất biến chứa unit V1/nguồn/điều kiện/report/catalog; requests/candidates/errors giữ cơ chế reservation cũ. reviews theo candidateKey + sourceContextHash là chuỗi sequence/previousReviewId, ghi temp rồi hardlink độc quyền, stale không overwrite. `v1-edit-storage` giữ canonical hash cũ; `v1-review-store` kiểm context/journal; `v1-inventory` nhận snapshot hữu hạn, đọc đúng các nhóm nguồn renderer/policy hiện hành, không AI hay bộ chọn rule mới. Similarity chỉ gợi ý đọc soát.

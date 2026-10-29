@@ -1,5 +1,12 @@
 # Kiểm chứng theo phạm vi
 
+<a id="ai-menh-package25-testing-20261029"></a>
+## Gói2.5 — chuẩn bị deploy riêng web,29/10
+
+49/49test(45V1/AI/duyệt/phạmvi+4snapshot/restore), DBtest riêng; typecheck/buildNode24đạt. Kiểm kho đủ89artifact,73context/selection/điều kiện/phiênbản vàrestore sangroot mới, file0600/dir0700; khôngoverwrite, symlink/overlap/JSONlỗi/hashthiếuthừa bịtừchối.1API Luna1.1 thật/schemađạt/giữdraft, không gọi thêm, không gọiAstra.
+
+Preview3112keyrỗng/AIoff/khôngworker:2reportthậtquaform, VCD2gốc và7đoạn/2approved;360/390/4tab/căn cứ/TứHóa4thẻ/Vậnhạnplaceholder/11khóa/refresh/mởlạiđạt,0jobAI. BộđọcNode20cũ đọcnguyênreportJSONmới, khôngthực hiệnrollbackdịchvụ. Previewđãdừng; main282file/8bảng,QA3111 22file/12jobAIvàdịchvụ nguyên. Backupmainread-only282file/DBdumpđượcpg_restore--listkiểm, chưarestoreDB. PreflightđầukhôngđọcđượcenvwebquapsvàQAinternalchưatồntại làhạnchếharnessđãxửlý; khônglỗiapp/testfirstfailure. KhôngE2E/PDF/OAuth/deploymain. [Bằngchứng/giớihạn/kếhoạch](QA3062-MENH-V1-INTEGRATION-PLAN.md).
+
 <a id="ai-menh-package24-testing-20261028"></a>
 ## Gói 2.4 — nguồn/phiên bản/quy trình duyệt, 28/10
 
