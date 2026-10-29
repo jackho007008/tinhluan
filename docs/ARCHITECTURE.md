@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## Gói 3.2 — scope cung và prompt trả phí 1.0.1
+
+Consumer hiện có nhận `palace` tùy chọn, kiểm tên cung trả phí, áp cùng scope cho claim/stale; CLI hỗ trợ `AI_PAID_PALACE`. Provider dùng paidUserInput đúng cung thay task Mệnh, prompt1.0.1, không đổi Mệnh miễn phí hoặc queue. Ba request thật dùng root code; webQA3113 vẫn build Gói3.1, chỉ tắt cờ nhãn mock/key vẫn rỗng. Adapter bỏ sót trường vòng riêng là lỗi còn mở; không sửa engine hoặc backfill input/output. [Bàn giao](AI-PAID-PACKAGE32-EVALUATION.md).
+
 ## 29/10 — Gói3.1 trên QA riêng, chỉ kiểm mock
 
 QA3113 triển khai payment/grant → queue11cung → consumer cùng hạ tầng → lưu/poll/màn chờ/thư viện. Hai báo cáo tổng hợp đủ11/11mock, webhook lặp1grant, đóng trang/refresh/reopen không thêmattempt; MệnhV1/Luna giữ nguyên.54/54test/typecheck/build; mobile360/390.0API thật/$0, ETA5phút chưa đo, chưa nghiệm thu chất lượngAstra/TậtÁch hoặc consumer thật thường trực. Không cập nhậtQA3062/3070/3101/3111/worker chính/Live. Migration011/012 chỉDBmới; [bàn giao, kiến trúc, bằng chứng và giới hạn](AI-PAID-PACKAGE31-HANDOFF.md).

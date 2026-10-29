@@ -1,5 +1,10 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="package32-astra-evaluation"></a>
+## Gói 3.2 — kiểm chứng thật ba cung, 29/10
+
+Đã thực hiện đúng ba CREATE cho Quan Lộc, Tài Bạch, Phu Thê trên report QA mới có quyền test; mỗi cung một attempt, không retry/ghi đè completed. Schema/validation/lưu/UI/đối soát/refresh/thư viện đạt; 55/55 test/typecheck/build. Sửa scope worker theo cung và task nhầm Mệnh trước phí, prompt1.0.1. Chất lượng còn thiếu chiều sâu; adapter bỏ sót sao vòng: Bạch Hổ/Tấu Thư có trong snapshot nhưng không có trong packet. **Chưa đạt để cập nhật QA3062.** Tổng ước $0,94638; ngoại suy 11 cung $3,47/13,7 phút API tuần tự, không SLA. Tám job queued giữ nguyên; consumer mock dừng và worker thật hữu hạn đã thoát. Không gọi thêm/deploy main/Live. [Bài thật, facts, số liệu và việc còn chặn](AI-PAID-PACKAGE32-EVALUATION.md).
+
 <a id="package31-post-payment-ux"></a>
 ## Gói 3.1 — yêu cầu UX sau thanh toán AI 11 cung (bổ sung 29/10/2026)
 

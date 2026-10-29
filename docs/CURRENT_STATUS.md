@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 29/10 — Gói 3.2: ba bài Astra thật, chưa đạt để đưa lên QA3062
+
+Ba CREATE gpt-6-astra/schema/validation/lưu/GET đối soát/UI đạt, mỗi bài 1 attempt; tổng ước $0,94638. Adapter bỏ sót sao vòng, thiếu phân tích sâu. Ngoại suy 11 cung khoảng $3,47/13,7 phút pha API tuần tự, không xác nhận ETA 5 phút. 55/55 test/typecheck/build. 22 completed cũ/Mệnh/main nguyên; 8 job mới queued, consumer mock dừng, worker thật hữu hạn đã thoát. Không gọi thêm/QA3062/3070/Live. [Bài thật và vấn đề còn chặn](AI-PAID-PACKAGE32-EVALUATION.md).
+
 ## 29/10 — Gói3.1 trên QA riêng, chỉ kiểm mock
 
 QA3113 triển khai payment/grant → queue11cung → consumer cùng hạ tầng → lưu/poll/màn chờ/thư viện. Hai báo cáo tổng hợp đủ11/11mock, webhook lặp1grant, đóng trang/refresh/reopen không thêmattempt; MệnhV1/Luna giữ nguyên.54/54test/typecheck/build; mobile360/390.0API thật/$0, ETA5phút chưa đo, chưa nghiệm thu chất lượngAstra/TậtÁch hoặc consumer thật thường trực. Không cập nhậtQA3062/3070/3101/3111/worker chính/Live. Migration011/012 chỉDBmới; [bàn giao, kiến trúc, bằng chứng và giới hạn](AI-PAID-PACKAGE31-HANDOFF.md).

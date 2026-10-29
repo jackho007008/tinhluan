@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 29/10 — Gói 3.2: ba bài Astra thật, chất lượng còn chặn
+
+Đúng 3 CREATE gpt-6-astra cho Quan Lộc/Tài Bạch/Phu Thê, mỗi bài 1 attempt, tổng ước $0,94638. Schema/lưu/UI/refresh/thư viện đạt; Mệnh và 22 bài mock cũ nguyên, 8 job còn queued, consumer mock dừng. Adapter thiếu sao vòng, bài còn thiên mô tả, chưa đạt luận chuyên sâu. 55/55 test/typecheck/build; không QA3062/3070/Live hoặc worker chính. [Toàn văn, facts, đánh giá và số liệu](AI-PAID-PACKAGE32-EVALUATION.md).
+
 ## 29/10 — Gói3.1 trên QA riêng, chỉ kiểm mock
 
 QA3113 triển khai payment/grant → queue11cung → consumer cùng hạ tầng → lưu/poll/màn chờ/thư viện. Hai báo cáo tổng hợp đủ11/11mock, webhook lặp1grant, đóng trang/refresh/reopen không thêmattempt; MệnhV1/Luna giữ nguyên.54/54test/typecheck/build; mobile360/390.0API thật/$0, ETA5phút chưa đo, chưa nghiệm thu chất lượngAstra/TậtÁch hoặc consumer thật thường trực. Không cập nhậtQA3062/3070/3101/3111/worker chính/Live. Migration011/012 chỉDBmới; [bàn giao, kiến trúc, bằng chứng và giới hạn](AI-PAID-PACKAGE31-HANDOFF.md).

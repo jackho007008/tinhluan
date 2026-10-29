@@ -2,6 +2,7 @@ import { PAID_GRANT_SQL } from "./paid-store";
 import {
   paidEnabled,
   PAID_EDITION,
+  PAID_PALACES,
   validatePaidNarration,
 } from "./paid-contract";
 import { aiModels } from "./config";
@@ -23,12 +24,15 @@ export async function runAiMenhJob(
   options: {
     paid?: boolean;
     readingId?: string;
+    palace?: string;
     allowCreate?: boolean;
     revalidateOutput?: boolean;
   } = {},
 ) {
   const paid = options.paid === true;
   if (paid ? !paidEnabled() : !aiEnabled()) return false;
+  if (options.palace && (!paid || !PAID_PALACES.includes(options.palace as any)))
+    throw Error("AI_INVALID_PALACE_SCOPE");
   if (options.readingId && !validReadingId(options.readingId))
     throw Error("AI_INVALID_READING_SCOPE");
   if (
@@ -39,8 +43,8 @@ export async function runAiMenhJob(
   const job = await transaction(async (c) => {
     // A crashed/overlong dispatched attempt is never automatically re-billed.
     const stale = await c.query(
-      `UPDATE ai_reading_jobs SET status='uncertain',error_code='AI_INTERRUPTED',retryable=false WHERE status='running' AND ${paid ? "edition='" + PAID_EDITION + "'" : "palace='Mệnh'"} AND locked_at<now()-interval '6 minutes' AND ($1::uuid IS NULL OR reading_id=$1) RETURNING attempt_id`,
-      [options.readingId || null],
+      `UPDATE ai_reading_jobs SET status='uncertain',error_code='AI_INTERRUPTED',retryable=false WHERE status='running' AND ${paid ? "edition='" + PAID_EDITION + "'" : "palace='Mệnh'"} AND locked_at<now()-interval '6 minutes' AND ($1::uuid IS NULL OR reading_id=$1) AND ($2::text IS NULL OR palace=$2) RETURNING attempt_id`,
+      [options.readingId || null, options.palace || null],
     );
     const staleIds = stale.rows.map((r) => r.attempt_id).filter(Boolean);
     if (staleIds.length)
@@ -50,11 +54,12 @@ export async function runAiMenhJob(
       );
     const row = (
       await c.query(
-        `SELECT j.*,a.response_id,a.started_at AS attempt_started_at,a.duration_ms AS previous_duration_ms,a.estimated_cost_usd AS previous_estimated_cost_usd FROM ai_reading_jobs j LEFT JOIN ai_reading_attempts a ON a.id=j.attempt_id WHERE ${paid ? "j.edition='" + PAID_EDITION + "' AND " + PAID_GRANT_SQL : "j.palace='Mệnh'"} AND j.run_after<=now() AND ($1::uuid IS NULL OR j.reading_id=$1) AND ((j.status='queued' AND $2::boolean) OR ((j.status='uncertain' OR ($3::boolean AND j.status='error' AND j.error_code='AI_INVALID_OUTPUT')) AND a.response_id IS NOT NULL AND a.provider='openai')) ORDER BY j.created_at FOR UPDATE OF j SKIP LOCKED LIMIT 1`,
+        `SELECT j.*,a.response_id,a.started_at AS attempt_started_at,a.duration_ms AS previous_duration_ms,a.estimated_cost_usd AS previous_estimated_cost_usd FROM ai_reading_jobs j LEFT JOIN ai_reading_attempts a ON a.id=j.attempt_id WHERE ${paid ? "j.edition='" + PAID_EDITION + "' AND " + PAID_GRANT_SQL : "j.palace='Mệnh'"} AND j.run_after<=now() AND ($1::uuid IS NULL OR j.reading_id=$1) AND ($4::text IS NULL OR j.palace=$4) AND ((j.status='queued' AND $2::boolean) OR ((j.status='uncertain' OR ($3::boolean AND j.status='error' AND j.error_code='AI_INVALID_OUTPUT')) AND a.response_id IS NOT NULL AND a.provider='openai')) ORDER BY j.created_at FOR UPDATE OF j SKIP LOCKED LIMIT 1`,
         [
           options.readingId || null,
           options.allowCreate !== false,
           options.revalidateOutput === true,
+          options.palace || null,
         ],
       )
     ).rows[0];

@@ -1,5 +1,11 @@
 # Sổ quyết định Tinh Luận
 
+## 29/10 — Gói 3.2: tối đa ba CREATE Astra trên QA riêng
+
+**U — chủ dự án:** chọn trước Quan Lộc, Tài Bạch, Phu Thê trên báo cáo QA có quyền hợp lệ; tối đa ba CREATE ban đầu, không toàn queue/retry uncertain/sửa completed, không QA3062/3070/worker thanh toán chính hoặc Live. Đánh giá nội dung, token/thời gian/chi phí; Tật Ách chỉ mock.
+
+**C — thực thi:** ba bài completed/1 attempt, tổng ước $0,94638; không gọi thêm để nâng điểm. Sửa task nhầm Mệnh và scope cung trước phí. Lỗi adapter thiếu sao vòng/chất lượng mỏng được ghi blocker, không backfill/sinh lại. ETA 5 phút chưa được xác nhận. Tám job queued giữ nguyên, consumer mock dừng và real harness đã thoát. [Bằng chứng](AI-PAID-PACKAGE32-EVALUATION.md).
+
 ## 29/10/2026 — quyền triển khai Gói3.1 QA riêng
 
 **U — chủ dự án:** triển khai AI11cung sau thanh toán và màn chờ theo đặc tả đã chốt, mock trước, giữ MệnhV1/Luna, khôngQA3062/3070 hoặcLive. Thay trạng thái tài liệu-only của mục trước bằng quyền triển khai QA riêng, không phải quyền gọi hàng loạtAPI hoặc production.

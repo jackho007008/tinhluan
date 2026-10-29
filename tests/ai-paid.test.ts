@@ -23,6 +23,8 @@ import { readingHash } from "../lib/order-readings";
 import { reconcilePaidOrders, readPaid, retryPaid } from "../lib/ai/paid-store";
 import {
   PAID_EDITION,
+  paidUserInput,
+  paidInstructions,
   PAID_PALACES,
   validatePaidNarration,
 } from "../lib/ai/paid-contract";
@@ -223,9 +225,13 @@ it("two consumers claim different jobs and GET/reopen never generate more work",
     return mockPaidGeneration(input);
   };
   await Promise.all([
-    runAiMenhJob(narrator, { paid: true, readingId: record.id }),
-    runAiMenhJob(narrator, { paid: true, readingId: record.id }),
+    runAiMenhJob(narrator, { paid: true, readingId: record.id, palace: PAID_PALACES[0] }),
+    runAiMenhJob(narrator, { paid: true, readingId: record.id, palace: PAID_PALACES[1] }),
   ]);
+  expect(calls).toBe(2);
+  await expect(runAiMenhJob(narrator,{paid:true,readingId:record.id,palace:"Mệnh"})).rejects.toThrow("AI_INVALID_PALACE_SCOPE");
+  expect(await runAiMenhJob(narrator,{paid:true,readingId:record.id,palace:PAID_PALACES[0]})).toBe(false);
+  expect((await pool.query("SELECT palace FROM ai_reading_jobs WHERE reading_id=$1 AND status='completed' ORDER BY palace",[record.id])).rows.map(r=>r.palace).sort()).toEqual([PAID_PALACES[0],PAID_PALACES[1]].sort());
   expect(calls).toBe(2);
   const before = await pool.query(
     "SELECT attempts FROM ai_reading_jobs WHERE reading_id=$1 ORDER BY palace",
@@ -322,6 +328,8 @@ it("ambiguous timeout never CREATEs again and does not turn purchased rights int
 });
 it("unknown schema/reference fails validation; target geometry and knowledge use the saved snapshot", () => {
   const i = paidInput(record, "Phụ Mẫu");
+  expect(JSON.parse(paidUserInput(i)).task).toBe("Luận riêng cung Phụ Mẫu");
+  expect(JSON.parse(paidUserInput(i)).paidTarget.palace).toBe("Phụ Mẫu");
   expect(i.facts.find((f) => f.id === "geometry.tam-hop")!.text).toContain(
     "của Phụ Mẫu",
   );
@@ -415,4 +423,13 @@ it("revocation blocks reading/retry/worker without deleting results", async () =
     ).rows[0].count,
   ).toBe("11");
   expect(readingHash(record)).toBe(beforeHash);
+});
+
+it("Tật Ách dry-run remains structural and rejects medical claims without API", () => {
+  const input=paidInput(record,"Tật Ách");
+  expect(paidInstructions(input)).toContain("Riêng Tật Ách chỉ chú giải truyền thống theo cấu trúc");
+  const safe=mockPaidGeneration(input);
+  expect(validatePaidNarration(safe.raw,input).sections).toHaveLength(8);
+  (safe.raw as any).sections[0].content="Bạn sẽ mắc bệnh và cần điều trị ngay.";
+  expect(()=>validatePaidNarration(safe.raw,input)).toThrow("AI_SCOPE_VIOLATION");
 });

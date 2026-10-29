@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## Gói 3.2 — 55 test và ba Responses thật
+
+55/55 test trong 5 file trên DB test riêng: hồi quy quyền/checkout/Mệnh/V1; thêm scope cung/không claim Mệnh hoặc completed, paidUserInput đúng cung, mock Tật Ách/chặn bệnh và điều trị. Typecheck/rootbuild đạt, không toàn E2E/PDF. Ba CREATE Astra thật/schema/validation/lưu/GET responseID khớp; UI24 phần nguyên văn sau refresh/thư viện, 3/11 và Mệnh7đoạn nguyên. Không có uncertain/retry thật, không coi mock timeout là đã kiểm provider timeout thật. 22completed cũ và main bảo toàn. Lỗi thiếu facts sao vòng là blocker dù test đạt. [Đánh giá](AI-PAID-PACKAGE32-EVALUATION.md), [logs](../.local/ai-paid32-20261029/test-final.log).
+
 ## 29/10 — Gói3.1 trên QA riêng, chỉ kiểm mock
 
 QA3113 triển khai payment/grant → queue11cung → consumer cùng hạ tầng → lưu/poll/màn chờ/thư viện. Hai báo cáo tổng hợp đủ11/11mock, webhook lặp1grant, đóng trang/refresh/reopen không thêmattempt; MệnhV1/Luna giữ nguyên.54/54test/typecheck/build; mobile360/390.0API thật/$0, ETA5phút chưa đo, chưa nghiệm thu chất lượngAstra/TậtÁch hoặc consumer thật thường trực. Không cập nhậtQA3062/3070/3101/3111/worker chính/Live. Migration011/012 chỉDBmới; [bàn giao, kiến trúc, bằng chứng và giới hạn](AI-PAID-PACKAGE31-HANDOFF.md).

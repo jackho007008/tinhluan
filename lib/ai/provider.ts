@@ -1,4 +1,4 @@
-import { paidInstructions, PAID_PROMPT } from "./paid-contract";
+import { paidInstructions, paidUserInput, PAID_PROMPT } from "./paid-contract";
 import { aiModels } from "./config";
 import OpenAI from "openai";
 import { zodTextFormat } from "openai/helpers/zod";
@@ -82,7 +82,7 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
             store: config.background,
             ...(config.background ? { background: true } : {}),
             instructions,
-            input: menhUserInput(input),
+            input: input.paidTarget ? paidUserInput(input) : menhUserInput(input),
             max_output_tokens: config.maxOutputTokens,
             reasoning: { effort: config.reasoningEffort as "high" },
             text: { format: zodTextFormat(narrationSchema, "menh_reading") },

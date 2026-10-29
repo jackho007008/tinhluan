@@ -1,6 +1,6 @@
 import { narrationSchema, SECTION_KINDS, type MenhInput } from "./contract";
 export const PAID_EDITION = "paid-palaces-ai-1.0.0";
-export const PAID_PROMPT = "paid-palaces-vietnamese-1.0.0";
+export const PAID_PROMPT = "paid-palaces-vietnamese-1.0.1";
 export const PAID_PALACES = [
   "Phụ Mẫu",
   "Phúc Đức",
@@ -19,6 +19,8 @@ export const paidEnabled = () =>
   process.env.SEPAY_LIVE_ENABLED === "false" &&
   process.env.CHECKOUT_TEST_ENABLED === "true";
 export const paidLabel = (p: string) => (p === "Tử Nữ" ? "Tử Tức" : p);
+export const paidUserInput = (input: MenhInput) =>
+  JSON.stringify({ task: "Luận riêng cung " + paidLabel(input.paidTarget!.palace), ...input });
 export function paidInstructions(input: MenhInput) {
   if (
     !input.paidTarget ||
