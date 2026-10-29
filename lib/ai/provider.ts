@@ -1,3 +1,5 @@
+import { paidInstructions, PAID_PROMPT } from "./paid-contract";
+import { aiModels } from "./config";
 import OpenAI from "openai";
 import { zodTextFormat } from "openai/helpers/zod";
 import { aiConfig } from "./config";
@@ -34,11 +36,21 @@ export class GenerationFailure extends Error {
 export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
   let instructions: string;
   try {
-    instructions = menhInstructions(recovery?.promptVersion);
+    instructions = input.paidTarget
+      ? recovery?.promptVersion === PAID_PROMPT
+        ? paidInstructions(input)
+        : (() => {
+            throw Error("AI_PROMPT_VERSION_UNSUPPORTED");
+          })()
+      : menhInstructions(recovery?.promptVersion);
   } catch {
     throw new GenerationFailure("AI_PROMPT_VERSION_UNSUPPORTED", false);
   }
-  const config = aiConfig();
+  const config = {
+    ...aiConfig(),
+    model: input.paidTarget ? aiModels().paidReading : aiConfig().model,
+    ...(input.paidTarget ? {background:true} : {}),
+  };
   if (!config.apiKey || (!config.model && !recovery?.responseId))
     throw new GenerationFailure(
       "AI_NOT_CONFIGURED",

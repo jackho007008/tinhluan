@@ -11,12 +11,12 @@ import {
 } from "./contract";
 /** Uses only the immutable saved engine output. Names, exact birth date/time,
  * email, IDs and raw input are deliberately absent from the provider packet. */
-export function menhFacts(record: InternalReading): MenhInput {
+export function menhFacts(record: InternalReading, target = "Mệnh"): MenhInput {
   const s = record.snapshot;
   if (!record.frozen.verified || !receiptMatches(s, record.receipt))
     throw Error("AI_UNVERIFIED_SNAPSHOT");
   const ps = s.chart.palaces,
-    life = ps.filter((p) => p.name === "Mệnh");
+    life = ps.filter((p) => p.name === target);
   if (life.length !== 1) throw Error("AI_LIFE_DATA_MISSING");
   const facts: AiFact[] = [],
     missing: string[] = [];
@@ -101,7 +101,7 @@ export function menhFacts(record: InternalReading): MenhInput {
     if (selected.some((p) => !p)) throw Error("AI_GEOMETRY_INCOMPLETE");
     add(
       "geometry." + relation,
-      `${relation} của Mệnh: ${selected.map((p) => p.name + " tại " + p.earthlyBranch).join("; ")}. Chỉ xác định vị trí, không tự mượn sao hay áp cách cục.`,
+      `${relation} của ${target}: ${selected.map((p) => p.name + " tại " + p.earthlyBranch).join("; ")}. Chỉ xác định vị trí, không tự mượn sao hay áp cách cục.`,
       ["chart.palaces"],
       "geometry",
     );

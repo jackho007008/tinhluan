@@ -253,3 +253,7 @@
 .result-shell .free-menh-reading article{margin:24px 0}
 .result-shell .free-menh-reading h3{color:var(--gold);font-size:20px;line-height:1.5}
 .result-shell .free-menh-reading article>p{font-size:15px;line-height:1.9;white-space:pre-line;overflow-wrap:anywhere}
+
+.paid-ai-progress{margin:16px 0;overflow-wrap:anywhere}.paid-ai-progress progress{width:100%;height:12px;accent-color:var(--accent,#e56746)}.paid-palace-reading{padding-top:16px;overflow-wrap:anywhere}.paid-palace-reading article{margin:20px 0}.paid-ai-progress a{display:inline-block;padding:8px 0}
+
+.paid-ai-progress{max-width:960px;margin:16px auto;padding:20px}.paid-ai-progress progress{display:block}.paid-palace-reading button{max-width:100%;white-space:normal}@media(max-width:600px){.paid-ai-progress{margin:12px 12px;padding:16px}}

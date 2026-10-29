@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 29/10 — Gói3.1 trên QA riêng, chỉ kiểm mock
+
+QA3113 triển khai payment/grant → queue11cung → consumer cùng hạ tầng → lưu/poll/màn chờ/thư viện. Hai báo cáo tổng hợp đủ11/11mock, webhook lặp1grant, đóng trang/refresh/reopen không thêmattempt; MệnhV1/Luna giữ nguyên.54/54test/typecheck/build; mobile360/390.0API thật/$0, ETA5phút chưa đo, chưa nghiệm thu chất lượngAstra/TậtÁch hoặc consumer thật thường trực. Không cập nhậtQA3062/3070/3101/3111/worker chính/Live. Migration011/012 chỉDBmới; [bàn giao, kiến trúc, bằng chứng và giới hạn](AI-PAID-PACKAGE31-HANDOFF.md).
+
 ## 29/10 — Gói2.5 đã cập nhật riêng web QA3062
 
 Theo quyền cụ thể của chủ dự án, web94756/Node20 →32792/Node24.22.1, build `vQVwORxbMpjju4MCaF34c`, mã ứng dụngf18acee từ commit chuẩn bịc576d6a. AIoff/keykhôngtruyền;0API/migration/worker/rollback. Smoke4tab/V1gốc/bảnmới2Lunaapproved/căn cứ/refresh/mởlại/11khóa đạt.184file trước stop,8bảng/34bài/QA3070/3101/3111/worker nguyên saudeploy. **Ngoại lệ đã ghi nhận trước stop:**100file(49phiên hết hạn/51báo cáo) mất so với đầu phiên, khớp TTL; đã có backup đầy đủ, chưa tựrestore hoặc đổi hạn. [Bàn giao và bằng chứng](QA3062-MENH-V1-DEPLOYED-20261029.md).

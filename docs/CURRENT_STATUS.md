@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 29/10 — Gói3.1 trên QA riêng, chỉ kiểm mock
+
+QA3113 triển khai payment/grant → queue11cung → consumer cùng hạ tầng → lưu/poll/màn chờ/thư viện. Hai báo cáo tổng hợp đủ11/11mock, webhook lặp1grant, đóng trang/refresh/reopen không thêmattempt; MệnhV1/Luna giữ nguyên.54/54test/typecheck/build; mobile360/390.0API thật/$0, ETA5phút chưa đo, chưa nghiệm thu chất lượngAstra/TậtÁch hoặc consumer thật thường trực. Không cập nhậtQA3062/3070/3101/3111/worker chính/Live. Migration011/012 chỉDBmới; [bàn giao, kiến trúc, bằng chứng và giới hạn](AI-PAID-PACKAGE31-HANDOFF.md).
+
 ## Bổ sung 29/10 — đặc tả UX Gói3.1
 
 Yêu cầu sau thanh toán đã được ghi vào [backlog Gói3.1](V1-DELIVERY-PLAN.md#package31-post-payment-ux), chưa triển khai. “Khoảng5phút” là ETA tạm chưa đo11cung, không SLA; tiến trình thậtX/11, lưu/mở bền vững, giữ quyền khi lỗi và Mệnh miễn phí, chống job/API trùng. Không đổi runtime hoặc chạy API/test/build ứng dụng trong task tài liệu.

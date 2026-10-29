@@ -3,7 +3,7 @@
 <a id="package31-post-payment-ux"></a>
 ## Gói 3.1 — yêu cầu UX sau thanh toán AI 11 cung (bổ sung 29/10/2026)
 
-**Trạng thái: đặc tả được chủ dự án yêu cầu, chưa triển khai/kiểm chứng.** Đây là bổ sung cho lần triển khai Gói3.1 sau này, không phải quyền mở bán, bật SePayLive, chạy worker/API hoặc cập nhật QA hiện tại.
+**Trạng thái29/10: đã triển khai trên QA3113 theo yêu cầu mới, kiểm mock; chưa kiểm APIAstra thật hoặc mở bán/Live.** 54/54test/typecheck/build,2báo cáo11/11mock, mobile360/390, Mệnh miễn phí giữ nguyên. [Bàn giao và hạn chế](AI-PAID-PACKAGE31-HANDOFF.md). Không cập nhậtQA3062/3070.
 
 Luồng cần nghiệm thu:
 
@@ -21,9 +21,9 @@ Ràng buộc kỹ thuật: webhook lặp không cấp quyền hoặc tạo job t
 
 Thiết kế mobile360/390px theo nền tối/thẻ nâu đen/viền vàng trầm/nhấn cam đỏ Tinh Luận. Cần kiểm đủ trạng thái chờ xác nhận, được cấp quyền/queued, running, completed một phần,11/11completed, quá ước tính, error và uncertain; không giả tiến trình trong dữ liệu sản xuất.
 
-Khi có số liệu thật được phép đo, lưu thời gian từ cấp quyền tới hoàn thành11cung, thời gian chờ queue và xử lý/lỗi/thử lại riêng, cùng model/cấu hình/tải đồng thời. Báo cỡ mẫu và phân bố (ví dụ trung vị/P90 khi mẫu đủ), rồi đề xuất ETA phù hợp; không tự coi5phút là kết quả đo. Task hiện tại không gọi API hoặc chạy thử11cung để lấy số liệu.
+Khi có số liệu thật được phép đo, lưu thời gian từ cấp quyền tới hoàn thành11cung, thời gian chờ queue và xử lý/lỗi/thử lại riêng, cùng model/cấu hình/tải đồng thời. Báo cỡ mẫu và phân bố (ví dụ trung vị/P90 khi mẫu đủ), rồi đề xuất ETA phù hợp; không tự coi5phút là kết quả đo. Lượt QA này không gọi API thật; thời gianmock không dùng đo ETA.
 
-Kiểm sau khi triển khai Gói3.1: webhook đồng thời/lặp; chỉ cấp quyền/tạo job một lần; refresh/rời trang/thư viện không CREATE; tiến trình khớp DB; kết quả completed không ghi đè/sinh lại; lỗi giữ quyền; uncertain không CREATE trùng; quá ETA không tự fail; thông báo11/11 không phát sớm; Mệnh miễn phí và mobile360/390 giữ đúng. **Chưa chạy các kiểm này, chưa triển khai Gói3.1.**
+Kiểm sau khi triển khai Gói3.1: webhook đồng thời/lặp; chỉ cấp quyền/tạo job một lần; refresh/rời trang/thư viện không CREATE; tiến trình khớp DB; kết quả completed không ghi đè/sinh lại; lỗi giữ quyền; uncertain không CREATE trùng; quá ETA không tự fail; thông báo11/11 không phát sớm; Mệnh miễn phí và mobile360/390 giữ đúng. **Đã kiểm bằng mock trên QA riêng; API thật/chất lượng/ETA còn chưa xác minh.**
 
 ## 29/10 — Gói2.5 đã cập nhật riêng web QA3062
 

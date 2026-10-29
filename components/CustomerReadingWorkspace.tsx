@@ -1,3 +1,5 @@
+import {paidEnabled} from '@/lib/ai/paid-contract';
+import {PaidAiProvider,PaidPalaceReading} from './PaidAiReading';
 import FreeMenhReading from './FreeMenhReading';
 import type {FreeMenhView} from '@/lib/ai/free-menh';
 import AiMenhReading from './AiMenhReading';
@@ -31,7 +33,7 @@ export default function CustomerReadingWorkspace({report:r,snapshot,id,basic,bir
  const menhGroups=body.filter(s=>firstOwner(s)==='Mệnh');
  const birth=r.birth.split(' · ').filter(p=>p!=='Chưa có thông tin nơi sinh'&&p!=='Asia/Ho_Chi_Minh').join(' · ');
  const stars=(p:typeof life)=>p.stars.length?p.stars.map(s=>`${s.name} (${s.display})`).join(' · '):p.voidConfirmed?'Vô chính diệu':p.empty;
- return <main className="customer-workspace result-workspace" data-result-ui={RESULT_UI_VERSION} data-reading-mode={basic?'basic':'detailed'} data-customer-version={r.version}>
+ return <PaidAiProviderWrapper id={id}><main className="customer-workspace result-workspace" data-result-ui={RESULT_UI_VERSION} data-reading-mode={basic?'basic':'detailed'} data-customer-version={r.version}>
  <ReadingPosition edition={edition}/>
  <section className="card compact-profile" id="profile" data-reading-position><p className="result-eyebrow">TINH LUẬN · LÁ SỐ BẢN MỆNH</p><h1>{r.name}</h1><p>{birth}</p><div className="workspace-actions">{allowBirthEdit&&id&&!orderId&&<a href={'/lap-la-so?edit='+id}>Sửa thông tin · tạo bản mới</a>}<a href="/la-so-cua-toi">Lá số của tôi</a><a href="#reading-options">Tùy chọn & PDF</a><ReadingAccountLink url={url+(basic?'&mode=basic':'')}>Hồ sơ</ReadingAccountLink></div>
  {snapshot&&<ReadingDisclosure id="chart" className="compact-disclosure" persistKey={edition+':chart'}><summary>Xem lá số</summary><CustomerChart interactive snapshot={snapshot} birthTimeLabel={birthTimeLabel}/></ReadingDisclosure>}</section>
@@ -51,7 +53,7 @@ export default function CustomerReadingWorkspace({report:r,snapshot,id,basic,bir
   const saved=r.palaces.find(x=>x.name===p.name);
   return <ReadingDisclosure id={'cung-'+i} data-reading-position key={p.name} initiallyOpen={p.name==='Mệnh'} className="card palace-chapter">
   <summary><span className="result-palace-heading"><strong>{p.name==='Tử Nữ'?'Tử Tức':p.name}</strong><span>{p.branch}</span>{p.isBody&&<span className="result-body-badge">Thân</span>}<span className="result-palace-stars">{stars(p)}</span></span></summary>
-  {p.name==='Mệnh'?<>{freeMenh&&<FreeMenhReading view={freeMenh}/>} {id&&<AiMenhReading key={id} readingId={id}/>}</>:<AiReadingStatus state="not-entitled"/>}
+  {p.name==='Mệnh'?<>{freeMenh&&<FreeMenhReading view={freeMenh}/>} {id&&<AiMenhReading key={id} readingId={id}/>}</>:id&&paidEnabled()?<PaidPalaceReading palace={p.name}/>:<AiReadingStatus state="not-entitled"/>}
   <div className="saved-editorial" data-palace-access={state}><p className="result-eyebrow">NỘI DUNG BIÊN TẬP ĐÃ LƯU · {labels[state]}</p>{state==='locked'?<p className="access-message">Cung này có nội dung trong bản đã lưu và cần quyền đọc đầy đủ. {checkout==='closed'?'Chưa mở bán.':<a href={'/checkout?id='+id+'#cung-'+i}>{checkout==='login'?'Đăng nhập · xem phạm vi gói thử':'Xem phạm vi gói Test Mode'}</a>}</p>:<>
   {state==='empty'&&<p className="access-message">Phần này hiện chưa có luận giải. Mở quyền không tạo thêm nội dung cho cung này.</p>}
   {owned.map(s=>p.name==='Mệnh'?<p key={s.id}><a href={'#'+s.id}>{s.title} · đọc tại Tổng quan</a></p>:<SavedSection key={s.id} section={s} version={r.version}/>)}{shared.map(s=><p key={s.id}>Nội dung chung: <a href={'#'+s.id}>{s.title}</a>.</p>)}
@@ -67,5 +69,7 @@ export default function CustomerReadingWorkspace({report:r,snapshot,id,basic,bir
  </ResultTabs>
  <section className="card result-options" id="reading-options" data-reading-position><h2>Tùy chọn bản đọc</h2>{scope.full?<><p><a className="button quiet" href={basic?url:url+'&mode=basic'}>{basic?'Đọc bản chi tiết':'Đọc bản cơ bản'}</a></p>{id&&<TrialReadingPdf id={id} orderId={orderId}/>}</>:<p>PDF toàn bài cần quyền đọc đầy đủ. QA chưa mở bán.</p>}{emailRecovery&&id&&<ReadingEmailAccess readingId={id} orderId={orderId}/>}
  <ReadingDisclosure><summary>Cách đọc và phạm vi</summary><p>{r.intro}</p><p>{r.notice}</p><p>Mệnh miễn phí sử dụng nội dung đã biên soạn từ tài liệu. Biên tập lời văn bằng AI không bổ sung lời luận mới; các bài AI đã lưu được giữ riêng.</p></ReadingDisclosure><ReadingDisclosure><summary>Thuật ngữ trong bài</summary>{r.glossary.map(g=><p key={g.term}><strong>{g.term}: </strong>{g.text}</p>)}</ReadingDisclosure></section>
- </main>;
+ </main></PaidAiProviderWrapper>;
 }
+
+function PaidAiProviderWrapper({id,children}:{id?:string;children:React.ReactNode}){return id&&paidEnabled()?<PaidAiProvider key={id} id={id}>{children}</PaidAiProvider>:<>{children}</>;}

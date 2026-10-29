@@ -58,6 +58,7 @@ export type Knowledge = {
   };
 };
 export type MenhInput = {
+  paidTarget?: { palace: string; edition: string };
   version: typeof FACTS_VERSION;
   knowledgeVersion: typeof KNOWLEDGE_VERSION | "menh-retrieval-1.0.0";
   facts: AiFact[];

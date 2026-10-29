@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 29/10 — Gói3.1 trên QA riêng, chỉ kiểm mock
+
+QA3113 triển khai payment/grant → queue11cung → consumer cùng hạ tầng → lưu/poll/màn chờ/thư viện. Hai báo cáo tổng hợp đủ11/11mock, webhook lặp1grant, đóng trang/refresh/reopen không thêmattempt; MệnhV1/Luna giữ nguyên.54/54test/typecheck/build; mobile360/390.0API thật/$0, ETA5phút chưa đo, chưa nghiệm thu chất lượngAstra/TậtÁch hoặc consumer thật thường trực. Không cập nhậtQA3062/3070/3101/3111/worker chính/Live. Migration011/012 chỉDBmới; [bàn giao, kiến trúc, bằng chứng và giới hạn](AI-PAID-PACKAGE31-HANDOFF.md).
+
 ## Bổ sung 29/10 — UX Gói3.1 sau thanh toán, chưa triển khai
 
 Đã ghi yêu cầu màn chờ sau xác nhận/cấp quyền server, ETA “Khoảng5phút” không SLA, tiến trình completedX/11, Mệnh đọc ngay, rời trang/thư viện không tạo lại, hoàn thành/lỗi/quá ETA và chống trùng. [Đặc tả/tiêu chí/đo ETA](V1-DELIVERY-PLAN.md#package31-post-payment-ux). Lượt này chỉ tài liệu; không thay QA3062/worker/thanh toán/Live hoặc triển khai Gói3.1.

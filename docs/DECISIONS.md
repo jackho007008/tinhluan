@@ -1,5 +1,11 @@
 # Sổ quyết định Tinh Luận
 
+## 29/10/2026 — quyền triển khai Gói3.1 QA riêng
+
+**U — chủ dự án:** triển khai AI11cung sau thanh toán và màn chờ theo đặc tả đã chốt, mock trước, giữ MệnhV1/Luna, khôngQA3062/3070 hoặcLive. Thay trạng thái tài liệu-only của mục trước bằng quyền triển khai QA riêng, không phải quyền gọi hàng loạtAPI hoặc production.
+
+**C — thực thi:** QA3113/testDBmới, markerAIedition chỉđơnmới, dùng queue/worker/grant hiệncó; thêmrawsnapshot012khôngbackfill vì JSONB đổi thứ tựreceipt.0API thật, mock rõnhãn; ETA5phút chưađo, chất lượng chuyên môn chưađược công nhận. [Chi tiết](AI-PAID-PACKAGE31-HANDOFF.md).
+
 ## 29/10/2026 — bổ sung UX sau thanh toán cho Gói3.1
 
 **U — chủ dự án:** sau thanh toán hợp lệ/cấp quyền server, giao diện chờ xác nhận thành công, ETA ban đầu “Khoảng 5 phút” chỉ ước tính, tiến trình theo cung thực sự completed; đọc Mệnh trong lúc chờ, rời trang không hủy, thư viện khôi phục trạng thái/kết quả, thông báo khi đủ11; quá ETA tiếp tục xử lý, lỗi giữ quyền và hỗ trợ/retry an toàn. Không webhook/job/API trùng, không sinh lại completed, không đổi Mệnh V1/Luna hoặc bật Live. Đo thực tế11cung rồi đề xuất điều chỉnh ETA.

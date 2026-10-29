@@ -1,3 +1,10 @@
+import { PAID_GRANT_SQL } from "./paid-store";
+import {
+  paidEnabled,
+  PAID_EDITION,
+  validatePaidNarration,
+} from "./paid-contract";
+import { aiModels } from "./config";
 import { randomUUID } from "node:crypto";
 import { pool, transaction } from "../db";
 import { aiEnabled } from "./config";
@@ -14,12 +21,14 @@ import { validReadingId } from "../internal-review/reading-store";
 export async function runAiMenhJob(
   narrator: Narrator = openaiNarrator,
   options: {
+    paid?: boolean;
     readingId?: string;
     allowCreate?: boolean;
     revalidateOutput?: boolean;
   } = {},
 ) {
-  if (!aiEnabled()) return false;
+  const paid = options.paid === true;
+  if (paid ? !paidEnabled() : !aiEnabled()) return false;
   if (options.readingId && !validReadingId(options.readingId))
     throw Error("AI_INVALID_READING_SCOPE");
   if (
@@ -30,7 +39,7 @@ export async function runAiMenhJob(
   const job = await transaction(async (c) => {
     // A crashed/overlong dispatched attempt is never automatically re-billed.
     const stale = await c.query(
-      "UPDATE ai_reading_jobs SET status='uncertain',error_code='AI_INTERRUPTED',retryable=false WHERE status='running' AND palace='Mệnh' AND locked_at<now()-interval '6 minutes' AND ($1::uuid IS NULL OR reading_id=$1) RETURNING attempt_id",
+      `UPDATE ai_reading_jobs SET status='uncertain',error_code='AI_INTERRUPTED',retryable=false WHERE status='running' AND ${paid ? "edition='" + PAID_EDITION + "'" : "palace='Mệnh'"} AND locked_at<now()-interval '6 minutes' AND ($1::uuid IS NULL OR reading_id=$1) RETURNING attempt_id`,
       [options.readingId || null],
     );
     const staleIds = stale.rows.map((r) => r.attempt_id).filter(Boolean);
@@ -41,7 +50,7 @@ export async function runAiMenhJob(
       );
     const row = (
       await c.query(
-        "SELECT j.*,a.response_id,a.started_at AS attempt_started_at,a.duration_ms AS previous_duration_ms,a.estimated_cost_usd AS previous_estimated_cost_usd FROM ai_reading_jobs j LEFT JOIN ai_reading_attempts a ON a.id=j.attempt_id WHERE j.palace='Mệnh' AND j.run_after<=now() AND ($1::uuid IS NULL OR j.reading_id=$1) AND ((j.status='queued' AND $2::boolean) OR ((j.status='uncertain' OR ($3::boolean AND j.status='error' AND j.error_code='AI_INVALID_OUTPUT')) AND a.response_id IS NOT NULL AND a.provider='openai')) ORDER BY j.created_at FOR UPDATE OF j SKIP LOCKED LIMIT 1",
+        `SELECT j.*,a.response_id,a.started_at AS attempt_started_at,a.duration_ms AS previous_duration_ms,a.estimated_cost_usd AS previous_estimated_cost_usd FROM ai_reading_jobs j LEFT JOIN ai_reading_attempts a ON a.id=j.attempt_id WHERE ${paid ? "j.edition='" + PAID_EDITION + "' AND " + PAID_GRANT_SQL : "j.palace='Mệnh'"} AND j.run_after<=now() AND ($1::uuid IS NULL OR j.reading_id=$1) AND ((j.status='queued' AND $2::boolean) OR ((j.status='uncertain' OR ($3::boolean AND j.status='error' AND j.error_code='AI_INVALID_OUTPUT')) AND a.response_id IS NOT NULL AND a.provider='openai')) ORDER BY j.created_at FOR UPDATE OF j SKIP LOCKED LIMIT 1`,
         [
           options.readingId || null,
           options.allowCreate !== false,
@@ -86,6 +95,18 @@ export async function runAiMenhJob(
   if (!job) return false;
   let generated: Generation | undefined;
   try {
+    if (
+      paid &&
+      (job.input.paidTarget?.palace !== job.palace ||
+        job.input.paidTarget?.edition !== PAID_EDITION)
+    )
+      throw new GenerationFailure("AI_PAID_TARGET_INVALID", false);
+    if (
+      paid &&
+      !job.response_id &&
+      job.requested_model !== aiModels().paidReading
+    )
+      throw new GenerationFailure("AI_MODEL_CONFIGURATION_CHANGED", false);
     generated = await narrator(job.input, job.attempt_id, {
       responseId: job.response_id,
       promptVersion: job.prompt_version,
@@ -106,7 +127,9 @@ export async function runAiMenhJob(
         generated.durationMs,
         Date.now() - new Date(job.attempt_started_at).getTime(),
       );
-    const content = validateNarration(generated.raw, job.input);
+    const content = paid
+      ? validatePaidNarration(generated.raw, job.input)
+      : validateNarration(generated.raw, job.input);
     const result: AiResult = {
       content,
       facts: job.input.facts,

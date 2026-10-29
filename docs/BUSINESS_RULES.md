@@ -1,5 +1,9 @@
 # Tinh Luận — hợp đồng sản phẩm, nguồn và quyết định
 
+## Gói3.1 — phạm vi QA đã được phép
+
+Yêu cầu triển khai mới cho phép AI11cung và UX sau payment trên QA riêng, mocktrước; không phải mởbán/Live hoặc thayquyềnlịch sử. Chỉ offerAIedition mới+paid+ready+grant cònhiệulực mớiđược enqueue/read/retry; đơn cũ khôngtự nâng. Mệnhmiễnphí V1/Luna và các kếtquảcompleted giữnguyên. [Bàn giao](AI-PAID-PACKAGE31-HANDOFF.md).
+
 ## Bổ sung Gói3.1 — UX sau thanh toán AI 11 cung
 
 Sau server xác nhận thanh toán hợp lệ và cấp quyền, khách thấy xác nhận thành công/màn chờ với “Khoảng 5 phút” là ước tính chưa được đo, không SLA. Tiến trình X/11 từ completed đã lưu; Mệnh miễn phí giữ nguyên và đọc được khi chờ. Đóng trang không hủy tác vụ, mở lại từ thư viện chỉ đọc trạng thái/kết quả; lỗi không mất quyền hoặc cung completed, quá ETA không tự thất bại. Webhook/refresh/retry không được cấp quyền/job/API trùng; uncertain cần đối soát. Chưa cấp quyền mở bán/Live hoặc triển khai11cung trong task ghi đặc tả. [Đặc tả và tiêu chí nghiệm thu](V1-DELIVERY-PLAN.md#package31-post-payment-ux).

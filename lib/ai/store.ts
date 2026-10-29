@@ -148,6 +148,8 @@ export async function readMenh(record: InternalReading): Promise<AiView> {
   };
 }
 export type ClaimedJob = {
+  palace: string;
+  requested_model?: string;
   id: string;
   attempt_id: string;
   input: MenhInput;

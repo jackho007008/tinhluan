@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 29/10 — Gói3.1 trên QA riêng, chỉ kiểm mock
+
+QA3113 triển khai payment/grant → queue11cung → consumer cùng hạ tầng → lưu/poll/màn chờ/thư viện. Hai báo cáo tổng hợp đủ11/11mock, webhook lặp1grant, đóng trang/refresh/reopen không thêmattempt; MệnhV1/Luna giữ nguyên.54/54test/typecheck/build; mobile360/390.0API thật/$0, ETA5phút chưa đo, chưa nghiệm thu chất lượngAstra/TậtÁch hoặc consumer thật thường trực. Không cập nhậtQA3062/3070/3101/3111/worker chính/Live. Migration011/012 chỉDBmới; [bàn giao, kiến trúc, bằng chứng và giới hạn](AI-PAID-PACKAGE31-HANDOFF.md).
+
 ## Gói2.5 — snapshot kho và kế hoạch web QA3062
 
 `v1-edit-transfer`/CLI `snapshot-v1-edit-store` sao chép toàn bộ artifact/journal sang thư mục mới, manifestSHA256/bytes, kiểm nguồn ổn định/JSON và từ chối symlink/overlap/overwrite; verify phát hiện thiếu/thừa/đổi. Khôi phục chỉ sang root mới, không DB/process/API. Kho runtimeprivate ngoài checkout trên DATA, backup/restore thử; không coi cùng volume là bản sao ngoài ổ. Không đổi đường dựng lời/runtime của f18acee.

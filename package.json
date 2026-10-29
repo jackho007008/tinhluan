@@ -17,6 +17,7 @@
     "reconcile": "node --env-file=.env --import tsx scripts/reconcile.ts",
     "format": "prettier --write app components lib scripts tests *.ts *.json",
     "chart:compare": "node --import tsx scripts/compare-chart.ts",
+    "worker:ai-paid": "node --env-file=.env --import tsx scripts/ai-paid-worker.ts",
     "worker:ai": "node --env-file=.env --import tsx scripts/ai-worker.ts",
     "ai:inventory-menh": "node --env-file=.env --import tsx scripts/inventory-menh-v1.ts",
     "ai:edit-v1": "node --env-file=.env --import tsx scripts/edit-v1-unit.ts",
