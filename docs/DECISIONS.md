@@ -1,5 +1,11 @@
 # Sổ quyết định Tinh Luận
 
+## 29/10/2026 — bổ sung UX sau thanh toán cho Gói3.1
+
+**U — chủ dự án:** sau thanh toán hợp lệ/cấp quyền server, giao diện chờ xác nhận thành công, ETA ban đầu “Khoảng 5 phút” chỉ ước tính, tiến trình theo cung thực sự completed; đọc Mệnh trong lúc chờ, rời trang không hủy, thư viện khôi phục trạng thái/kết quả, thông báo khi đủ11; quá ETA tiếp tục xử lý, lỗi giữ quyền và hỗ trợ/retry an toàn. Không webhook/job/API trùng, không sinh lại completed, không đổi Mệnh V1/Luna hoặc bật Live. Đo thực tế11cung rồi đề xuất điều chỉnh ETA.
+
+**C — phạm vi lượt này:** ghi đặc tả/backlog và tiêu chí nghiệm thu, chưa triển khai Gói3.1, không chạy API/worker/deploy. [Backlog duy nhất](V1-DELIVERY-PLAN.md#package31-post-payment-ux).
+
 ## 29/10 — phê duyệt một lần cập nhật riêng web QA3062
 
 **U:** chủ dự án cho thực thi kế hoạch Gói2.5/c576d6a, chấp nhận kho/backup cùngDATA; chỉwebQA3062/Node24, AIoff/khôngkey, backupmới/smoke/đối chiếu vàrollback riêngweb nếu lỗi. Khôngproduction/workers/migration/API/Live. **C:** đã thực thi, khôngrollback; phát hiện100file của phiênhếthạn biến mất trướcstop, giữbackup/ghi riêng, khôngtựrestore/đổiTTL. [Bàn giao](QA3062-MENH-V1-DEPLOYED-20261029.md).

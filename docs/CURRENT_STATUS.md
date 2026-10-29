@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## Bổ sung 29/10 — đặc tả UX Gói3.1
+
+Yêu cầu sau thanh toán đã được ghi vào [backlog Gói3.1](V1-DELIVERY-PLAN.md#package31-post-payment-ux), chưa triển khai. “Khoảng5phút” là ETA tạm chưa đo11cung, không SLA; tiến trình thậtX/11, lưu/mở bền vững, giữ quyền khi lỗi và Mệnh miễn phí, chống job/API trùng. Không đổi runtime hoặc chạy API/test/build ứng dụng trong task tài liệu.
+
 ## 29/10 — Gói2.5 đã cập nhật riêng web QA3062
 
 Theo quyền cụ thể của chủ dự án, web94756/Node20 →32792/Node24.22.1, build `vQVwORxbMpjju4MCaF34c`, mã ứng dụngf18acee từ commit chuẩn bịc576d6a. AIoff/keykhôngtruyền;0API/migration/worker/rollback. Smoke4tab/V1gốc/bảnmới2Lunaapproved/căn cứ/refresh/mởlại/11khóa đạt.184file trước stop,8bảng/34bài/QA3070/3101/3111/worker nguyên saudeploy. **Ngoại lệ đã ghi nhận trước stop:**100file(49phiên hết hạn/51báo cáo) mất so với đầu phiên, khớp TTL; đã có backup đầy đủ, chưa tựrestore hoặc đổi hạn. [Bàn giao và bằng chứng](QA3062-MENH-V1-DEPLOYED-20261029.md).

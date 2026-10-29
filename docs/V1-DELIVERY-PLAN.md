@@ -1,5 +1,30 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="package31-post-payment-ux"></a>
+## Gói 3.1 — yêu cầu UX sau thanh toán AI 11 cung (bổ sung 29/10/2026)
+
+**Trạng thái: đặc tả được chủ dự án yêu cầu, chưa triển khai/kiểm chứng.** Đây là bổ sung cho lần triển khai Gói3.1 sau này, không phải quyền mở bán, bật SePayLive, chạy worker/API hoặc cập nhật QA hiện tại.
+
+Luồng cần nghiệm thu:
+
+1. Chỉ sau khi máy chủ xác nhận thanh toán hợp lệ **và cấp quyền thành công**, chuyển khách tới giao diện chờ AI; hiển thị “Thanh toán thành công”. Redirect/query từ trình duyệt không chứng minh đã thanh toán. Khi mới chờ xác nhận, không báo thành công hoặc tạo luận trả phí.
+2. Hiển thị ban đầu **“Khoảng 5 phút”**, ghi rõ đây là ước tính, không phải SLA hoặc cam kết. Chưa có phép đo11cung nên không khẳng định thời gian xử lý thực tế.
+3. Hiển thị **“Đã hoàn thành X/11 cung”** từ trạng thái đã lưu của đúng báo cáo trên server. Chỉ đếm cung completed có nội dung hợp lệ đã lưu; cung Mệnh miễn phí không nằm trong mẫu số11. Không dùng timer/animation để tự tăng tiến trình hoặc phần trăm giả.
+4. Cho đọc Mệnh miễn phí V1/Luna trong lúc chờ; giữ nguyên nội dung, cách chọn bản approved/fallback và lịch sử Mệnh. Có thể đọc các cung đã hoàn thành khi có quyền; không cần chờ đủ11 mới đọc phần đã có.
+5. Đóng trình duyệt/rời trang không hủy job. Queue/worker hiện có xử lý bất đồng bộ, độc lập phiên trang; trạng thái từng cung lưu bền vững.
+6. Mở lại từ thư viện lá số đọc đúng trạng thái/nội dung đã lưu sau kiểm quyền server. Refresh/mở lại chỉ đọc, không kích hoạt API mới, không sinh lại cung completed.
+7. Chỉ khi đủ **11/11 completed**, cập nhật giao diện và thông báo hoàn thành. Thông báo trong giao diện là phạm vi mặc định của yêu cầu này; chưa mặc định gửi email/SMS/push ngoài ứng dụng.
+8. Khi quá thời gian ước tính, hiển thị đang tiếp tục xử lý, giữ tiến trình thật; không coi vượt5phút là thất bại hoặc lý do tự CREATE lại.
+9. Khi AI lỗi, giữ quyền đã mua và các cung completed. Hiển thị trạng thái lỗi/thử lại/hỗ trợ phù hợp cho phần chưa xong; không yêu cầu thanh toán lại. Retry có kiểm quyền/idempotency server, chỉ cho phần cần xử lý; request uncertain phải đối soát trước, không tự tạo response tính phí trùng.
+
+Ràng buộc kỹ thuật: webhook lặp không cấp quyền hoặc tạo job trùng; quyền phải gắn đúng báo cáo/chủ sở hữu/phiên bản nghiệp vụ, không tin trạng thái từ client. Dùng queue/worker và kho hiện có, không dựng pipeline riêng cho màn chờ. Không sinh11cung trước thanh toán hợp lệ; không thay nội dung/quyền lịch sử, không biến Mệnh miễn phí thành tác vụ trả phí.
+
+Thiết kế mobile360/390px theo nền tối/thẻ nâu đen/viền vàng trầm/nhấn cam đỏ Tinh Luận. Cần kiểm đủ trạng thái chờ xác nhận, được cấp quyền/queued, running, completed một phần,11/11completed, quá ước tính, error và uncertain; không giả tiến trình trong dữ liệu sản xuất.
+
+Khi có số liệu thật được phép đo, lưu thời gian từ cấp quyền tới hoàn thành11cung, thời gian chờ queue và xử lý/lỗi/thử lại riêng, cùng model/cấu hình/tải đồng thời. Báo cỡ mẫu và phân bố (ví dụ trung vị/P90 khi mẫu đủ), rồi đề xuất ETA phù hợp; không tự coi5phút là kết quả đo. Task hiện tại không gọi API hoặc chạy thử11cung để lấy số liệu.
+
+Kiểm sau khi triển khai Gói3.1: webhook đồng thời/lặp; chỉ cấp quyền/tạo job một lần; refresh/rời trang/thư viện không CREATE; tiến trình khớp DB; kết quả completed không ghi đè/sinh lại; lỗi giữ quyền; uncertain không CREATE trùng; quá ETA không tự fail; thông báo11/11 không phát sớm; Mệnh miễn phí và mobile360/390 giữ đúng. **Chưa chạy các kiểm này, chưa triển khai Gói3.1.**
+
 ## 29/10 — Gói2.5 đã cập nhật riêng web QA3062
 
 Theo quyền cụ thể của chủ dự án, web94756/Node20 →32792/Node24.22.1, build `vQVwORxbMpjju4MCaF34c`, mã ứng dụngf18acee từ commit chuẩn bịc576d6a. AIoff/keykhôngtruyền;0API/migration/worker/rollback. Smoke4tab/V1gốc/bảnmới2Lunaapproved/căn cứ/refresh/mởlại/11khóa đạt.184file trước stop,8bảng/34bài/QA3070/3101/3111/worker nguyên saudeploy. **Ngoại lệ đã ghi nhận trước stop:**100file(49phiên hết hạn/51báo cáo) mất so với đầu phiên, khớp TTL; đã có backup đầy đủ, chưa tựrestore hoặc đổi hạn. [Bàn giao và bằng chứng](QA3062-MENH-V1-DEPLOYED-20261029.md).

@@ -1,5 +1,9 @@
 # Tinh Luận — hợp đồng sản phẩm, nguồn và quyết định
 
+## Bổ sung Gói3.1 — UX sau thanh toán AI 11 cung
+
+Sau server xác nhận thanh toán hợp lệ và cấp quyền, khách thấy xác nhận thành công/màn chờ với “Khoảng 5 phút” là ước tính chưa được đo, không SLA. Tiến trình X/11 từ completed đã lưu; Mệnh miễn phí giữ nguyên và đọc được khi chờ. Đóng trang không hủy tác vụ, mở lại từ thư viện chỉ đọc trạng thái/kết quả; lỗi không mất quyền hoặc cung completed, quá ETA không tự thất bại. Webhook/refresh/retry không được cấp quyền/job/API trùng; uncertain cần đối soát. Chưa cấp quyền mở bán/Live hoặc triển khai11cung trong task ghi đặc tả. [Đặc tả và tiêu chí nghiệm thu](V1-DELIVERY-PLAN.md#package31-post-payment-ux).
+
 ## Bổ sung Gói 2.4 — chấp nhận bản sửa văn không chứng nhận nguồn
 
 Kho Mệnh chỉ dùng bản biên tập đã duyệt đúng toàn văn/điều kiện/nguồn/V1/catalog/model/prompt; uncertain giữ draft hoặc V1 gốc, không vì văn trôi chảy mà tự duyệt. Phải đối chiếu đủ dữ kiện/phạm vi, điều kiện, không thêm kết luận, nghĩa và căn cứ. Duyệt lời không nâng rule nguồn draft hoặc xác nhận Tử Vi đúng đời sống. Gần trùng không cho phép gộp/dùng lại; không bỏ điều kiện để tăng độ phủ. Review thay đổi chỉ ảnh hưởng lựa chọn cho báo cáo mới; báo cáo cũ giữ lời/quyền và bài Astra đã lưu. Không batch toàn kho/11cung/main. [Yêu cầu và bằng chứng Gói2.4](AI-MENH-PACKAGE24-HANDOFF.md).

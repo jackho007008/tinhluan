@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## Bổ sung 29/10 — UX Gói3.1 sau thanh toán, chưa triển khai
+
+Đã ghi yêu cầu màn chờ sau xác nhận/cấp quyền server, ETA “Khoảng5phút” không SLA, tiến trình completedX/11, Mệnh đọc ngay, rời trang/thư viện không tạo lại, hoàn thành/lỗi/quá ETA và chống trùng. [Đặc tả/tiêu chí/đo ETA](V1-DELIVERY-PLAN.md#package31-post-payment-ux). Lượt này chỉ tài liệu; không thay QA3062/worker/thanh toán/Live hoặc triển khai Gói3.1.
+
 ## 29/10 — Gói2.5 đã cập nhật riêng web QA3062
 
 Theo quyền cụ thể của chủ dự án, web94756/Node20 →32792/Node24.22.1, build `vQVwORxbMpjju4MCaF34c`, mã ứng dụngf18acee từ commit chuẩn bịc576d6a. AIoff/keykhôngtruyền;0API/migration/worker/rollback. Smoke4tab/V1gốc/bảnmới2Lunaapproved/căn cứ/refresh/mởlại/11khóa đạt.184file trước stop,8bảng/34bài/QA3070/3101/3111/worker nguyên saudeploy. **Ngoại lệ đã ghi nhận trước stop:**100file(49phiên hết hạn/51báo cáo) mất so với đầu phiên, khớp TTL; đã có backup đầy đủ, chưa tựrestore hoặc đổi hạn. [Bàn giao và bằng chứng](QA3062-MENH-V1-DEPLOYED-20261029.md).
