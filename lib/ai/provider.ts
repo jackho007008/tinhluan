@@ -37,11 +37,7 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
   let instructions: string;
   try {
     instructions = input.paidTarget
-      ? recovery?.promptVersion === PAID_PROMPT
-        ? paidInstructions(input)
-        : (() => {
-            throw Error("AI_PROMPT_VERSION_UNSUPPORTED");
-          })()
+      ? paidInstructions(input, recovery?.promptVersion)
       : menhInstructions(recovery?.promptVersion);
   } catch {
     throw new GenerationFailure("AI_PROMPT_VERSION_UNSUPPORTED", false);

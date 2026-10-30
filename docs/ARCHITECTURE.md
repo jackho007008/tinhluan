@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## Gói 3.3 — paid facts/retrieval1.1.0
+
+`paid-facts` đọc bốn field vòng đã lưu, provenance phân cung/quan hệ/nguồn/phạm vi và mức kiểm; không an lại. Boshi/suiqian kiểm trace, changsheng giữ bất nhất, jiangqian và supplementary upstream không thành căn cứ cá nhân. `paid-retrieval` tái dùng executeRules, loại false/unknown/template/conflict, ưu tiên V1 trực tiếp và phân A/B/C/D; context không được chuyển chủ đề. Registry prompt1.1.0 giữ legacy body, provider dùng version từ job; Mệnh cũ không đổi. Queue/payment/schema/engine không sửa. Một CREATE đã quauncertain→GET được phép→lưucompleted cùngattempt/ID bằng worker/validator/store hiện có, khôngHTTP khi lưu. Không consumer thường trực/requeue tự động. Metadata phí cần xử lý cache_write_tokens trướcQA3062. [Chi tiết](AI-PAID-PACKAGE33-HANDOFF.md).
+
 ## Gói 3.2 — scope cung và prompt trả phí 1.0.1
 
 Consumer hiện có nhận `palace` tùy chọn, kiểm tên cung trả phí, áp cùng scope cho claim/stale; CLI hỗ trợ `AI_PAID_PALACE`. Provider dùng paidUserInput đúng cung thay task Mệnh, prompt1.0.1, không đổi Mệnh miễn phí hoặc queue. Ba request thật dùng root code; webQA3113 vẫn build Gói3.1, chỉ tắt cờ nhãn mock/key vẫn rỗng. Adapter bỏ sót trường vòng riêng là lỗi còn mở; không sửa engine hoặc backfill input/output. [Bàn giao](AI-PAID-PACKAGE32-EVALUATION.md).

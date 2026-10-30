@@ -1,5 +1,11 @@
 # Sổ quyết định Tinh Luận
 
+## 30/10 — Gói 3.3: nâng đầu vào và đánh giá hữu hạn
+
+**U:** sửa facts sao vòng, retrieval có điều kiện và prompt sâu/chuyên biệt; giữ engine, quyền, queue, báo cáo cũ. Dry-run trước; tối đa3CREATE mớiQuan/Tài/Phu trên phiên đánh giá tách biệt, không retryuncertain/xửlý8queued cũ, không3.4/QA3062/3070/Live.
+
+**C:** 64/64test/typecheck/build/dryđạt; giữ jiangqian12 là upstream chưa xác minh, TrườngSinh có bất nhất, không tự nâng nguồn. Prompt1.1.0/giữ cũ. 1CREATE Quan mới uncertain/IDbềnvững; sau3GETpending, chủdựán cho phép thêmđúng1GET/khôngCREATE, trảcompleted. Lưu nguyênvăn qua worker hiện có cùngattempt/ID khôngHTTPthêm. Mộtbài cải thiện mộtphần, Tài/Phu0CREATE, chưa nghiệmthu11cung. Không dùng mock/bài cũ thay kết quả thật; không tự tăng timeout/concurrency hoặc mở phạmvi. [Bàn giao](AI-PAID-PACKAGE33-HANDOFF.md).
+
 ## 29/10 — Gói 3.2: tối đa ba CREATE Astra trên QA riêng
 
 **U — chủ dự án:** chọn trước Quan Lộc, Tài Bạch, Phu Thê trên báo cáo QA có quyền hợp lệ; tối đa ba CREATE ban đầu, không toàn queue/retry uncertain/sửa completed, không QA3062/3070/worker thanh toán chính hoặc Live. Đánh giá nội dung, token/thời gian/chi phí; Tật Ách chỉ mock.

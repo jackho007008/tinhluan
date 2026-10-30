@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## Gói 3.3 — dry-run,64test và một bài completed
+
+64/64test trong6file trênDBtest riêng; typecheck/rootbuild đạt. Chínca adapter/retrieval kiểm tám sao yêu cầu, xác minh/phạmvi/quan hệ, khôngđổi snapshot, template trongvăn/điềukiện, falsepredicate, Dkhôngđượcsource-interpretation, hashpromptcũ vàfocusmới. Lượtđầu63/64do thiếu đúng câu guardTậtÁch, phục hồi guard khôngđổi assertion.111facts cũ giữtext/paths, thêm48fieldvòng, ba packetmới khớpdry/cùngchart3.2. APIthật1CREATEuncertain sau300s; GETthứ4 được chủdựán cho phép trảcompleted/validationđạt, lưu cùngattempt/ID khôngHTTPthêm. UI8phần/1trên11, Mệnh7đoạn, refresh/thưviện nguyên. Không gọiTàiPhu; không coi64test hoặc mộtbài là nghiệmthu11cung.33jobcũ, main185file/8bảng/dịchvụ nguyên. [Bằng chứng/CSV/giới hạn](AI-PAID-PACKAGE33-HANDOFF.md).
+
 ## Gói 3.2 — 55 test và ba Responses thật
 
 55/55 test trong 5 file trên DB test riêng: hồi quy quyền/checkout/Mệnh/V1; thêm scope cung/không claim Mệnh hoặc completed, paidUserInput đúng cung, mock Tật Ách/chặn bệnh và điều trị. Typecheck/rootbuild đạt, không toàn E2E/PDF. Ba CREATE Astra thật/schema/validation/lưu/GET responseID khớp; UI24 phần nguyên văn sau refresh/thư viện, 3/11 và Mệnh7đoạn nguyên. Không có uncertain/retry thật, không coi mock timeout là đã kiểm provider timeout thật. 22completed cũ và main bảo toàn. Lỗi thiếu facts sao vòng là blocker dù test đạt. [Đánh giá](AI-PAID-PACKAGE32-EVALUATION.md), [logs](../.local/ai-paid32-20261029/test-final.log).

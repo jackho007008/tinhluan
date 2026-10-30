@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 30/10 — Gói 3.3: mới đánh giá một bài thật
+
+Dry-run adapter159facts/metadata nguồn và retrieval A/B/C/D đạt, prompt1.1.0 giữ1.0.0/1.0.1; 64/64test/typecheck/build. 1CREATE Astra Quan Lộc trên report mới `cbb4fd02…`, ban đầuuncertain; GETthứ4 được chủ dự án cho phép trảcompleted, lưu cùngattempt/ID khôngHTTPthêm. 28.108input/5.916output(3.358reasoning), cachewrite28.105, ước$0,64714/provider812s. Bài cải thiện mộtphần, chưa nghiệmthu11cung; Tài/Phu0CREATE.33job cũ nguyên, QA mới1completed+10queued, consumer dừng, web3113khôngrestart; khôngQA3062/3070/Live/Gói3.4. [Chi tiết](AI-PAID-PACKAGE33-HANDOFF.md).
+
 ## 29/10 — Gói 3.2: ba bài Astra thật, chưa đạt để đưa lên QA3062
 
 Ba CREATE gpt-6-astra/schema/validation/lưu/GET đối soát/UI đạt, mỗi bài 1 attempt; tổng ước $0,94638. Adapter bỏ sót sao vòng, thiếu phân tích sâu. Ngoại suy 11 cung khoảng $3,47/13,7 phút pha API tuần tự, không xác nhận ETA 5 phút. 55/55 test/typecheck/build. 22 completed cũ/Mệnh/main nguyên; 8 job mới queued, consumer mock dừng, worker thật hữu hạn đã thoát. Không gọi thêm/QA3062/3070/Live. [Bài thật và vấn đề còn chặn](AI-PAID-PACKAGE32-EVALUATION.md).

@@ -1,5 +1,10 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="package33-quality"></a>
+## Gói 3.3 — adapter/retrieval/prompt và một bài thật
+
+Theo yêu cầu30/10: sửa riêng paid adapter bằng field thực `boshi12/suiqian12/changsheng12/jiangqian12`, phân mức xác minh và vị trí; không diễn giải sao upstream chưa kiểm. Retrieval dùng evaluator hiện có, A/B trực tiếp, C context, D phương pháp; prompt1.1.0 chuyên biệt11cung/giữ bản cũ.64/64test/typecheck/build/dry3packetđạt, CSV trước/sau có159facts và14/13/10knowledge. Không coi số lượng là chất lượng. Vòng thực chỉ1CREATE mớiQuan Lộc, uncertain sau300s; GETthứ4 được chủ dự án cho phép trảcompleted, lưu cùngattempt/ID khôngHTTPthêm. 28.108input/5.916output, ước$0,64714 kểcachewrite, provider812s. BạchHổ–TấuThư được luận đúng, cải thiện mộtphần; chưa gọiTài/Phu, **chưa nghiệmthu11cung**.33jobcũ/8queued cũ nguyên, worker dừng; khôngCREATEthêm, không mở rộng3.4/QA3062/3070/Live. [Bàn giao và bằng chứng](AI-PAID-PACKAGE33-HANDOFF.md).
+
 <a id="package32-astra-evaluation"></a>
 ## Gói 3.2 — kiểm chứng thật ba cung, 29/10
 
