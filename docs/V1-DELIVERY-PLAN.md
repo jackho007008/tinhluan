@@ -1,5 +1,10 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="package35-runtime"></a>
+## Gói3.5 — kiểm runtime Background trên clone
+
+Đã kiểm consumer3.4 bằng process/DB/HTTP thật nhưng provider giả lập, maxNew0; restart cùng attempt/ID, backoff/cap và GET vượt ngân sách CREATE.9GET mock/0CREATE/OpenAI, UI3/11/refresh/thư viện đạt; sửa semantic pending/held và thêm CLI operator.17/17test/typecheck/build QA3115, không main/QA3113/18queued/Live/3.6. Consumer/mock dừng; provider thật, chất lượng và ETA chưa nghiệm thu. [Bàn giao](AI-PAID-PACKAGE35-HANDOFF.md).
+
 <a id="package34-operations"></a>
 ## Gói 3.4 — vận hành Background/chi phí và nguồn, chưa deploy
 

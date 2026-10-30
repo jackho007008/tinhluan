@@ -88,7 +88,12 @@ export function PaidAiProvider({
             className="card paid-ai-progress"
             aria-label="Tiến trình AI 11 cung"
           >
-            <p className="result-eyebrow">Thanh toán thành công</p>{view.simulation&&<p><strong>QA · Mô phỏng AI, không gọi API thật</strong></p>}
+            <p className="result-eyebrow">Thanh toán thành công</p>
+            {view.simulation && (
+              <p>
+                <strong>QA · Mô phỏng AI, không gọi API thật</strong>
+              </p>
+            )}
             <h2 role="status" aria-live="polite">
               {view.state === "completed"
                 ? "Đã hoàn thành luận giải 11 cung"
@@ -165,12 +170,12 @@ export function PaidPalaceReading({ palace }: { palace: string }) {
         Luận AI ·{" "}
         {p.state === "completed"
           ? "Hoàn thành"
-          : p.state === "running"
+          : p.state === "running" || p.state === "reconciling"
             ? "Đang tạo"
             : p.state === "error"
               ? "Lỗi"
               : p.state === "uncertain"
-                ? "Đang đối soát"
+                ? "Cần kiểm tra"
                 : "Đang chờ xử lý"}
       </p>
       {p.result ? (
@@ -229,7 +234,7 @@ export function PaidPalaceReading({ palace }: { palace: string }) {
       ) : (
         <p>
           {p.state === "uncertain"
-            ? "Đang đối soát kết quả để tránh tạo bài trùng. Quyền của bạn vẫn được giữ; vui lòng liên hệ hỗ trợ nếu cần."
+            ? "Phần này đang chờ kiểm tra. Quyền đã mua và các bài hoàn thành vẫn được giữ; vui lòng liên hệ hỗ trợ. Bạn không cần thanh toán lại."
             : p.state === "error"
               ? "Chưa hoàn thành bài cung này. Các cung khác và quyền đã mua vẫn được giữ."
               : "Bạn có thể đọc cung Mệnh trong lúc chờ hoặc quay lại từ thư viện lá số."}

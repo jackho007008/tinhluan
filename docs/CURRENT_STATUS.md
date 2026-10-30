@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 30/10 — Gói3.5 đã kiểm runtime mock trên QA3115
+
+Consumer3.4 chạy process thật/DB clone/HTTP giả lập, maxNew0; restart cùng ID/attempt, lịch/backoff/cap/404/mấtID đạt.9GET local/0OpenAI/0CREATE, cuối scope3completed(2mock mới)/3queued/5uncertain.17/17test/typecheck/build; web3115 giữ để xem, consumer và mock provider dừng. View phân pending tự đối soát khỏi held; chưa kiểm provider thật hoặc chất lượng/ETA. QA3113/18queued và main nguyên. [Chi tiết](AI-PAID-PACKAGE35-HANDOFF.md).
+
 ## 30/10 — Gói 3.4: code đã kiểm mock, chưa nạp QA
 
 76/76 test, typecheck/build Node24 đạt. Background trả phí nhường sau mỗi lượt, GET cùng ID/attempt theo run_after, kiểm bền vững hữu hạn và khóa/ngân sách claim. Cost nhận cache-write, không backfill usage thiếu của3.2. Facts159/prompt1.1.0 giữ nguyên; retrieval1.1.1 chỉ bổ sung NPL-27/33 nhómD, Phu còn thiếu nguồn trực tiếp. 0 API thật, không consumer/restart,18 queued và bài cũ nguyên; chưa xác nhận ETA hoặc chất lượng11cung. [Chi tiết](AI-PAID-PACKAGE34-HANDOFF.md).

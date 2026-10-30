@@ -1,5 +1,11 @@
 # Sổ quyết định Tinh Luận
 
+## 30/10 — Gói3.5 kiểm vận hành chỉ trên QA riêng
+
+**U:** cho DB QA mới/bản sao kiểm soát, consumer3.4 maxNew0 và provider giả lập; không CREATE thật/18queued gốc/main/Live/3.6.
+
+**C:** backup→clone mới/QA3115, không migration gốc; giữ worker, thử restart hữu hạn và giám sát CLI không prompt. Chỉ sửa UI sau bằng chứng pending bị coi cần hỗ trợ.9GET mock/0OpenAI;17test/typecheck/build. Consumer/provider mock dừng, không scheduler thường trực hoặc quyền vận hành main. [Bàn giao](AI-PAID-PACKAGE35-HANDOFF.md).
+
 ## 30/10 — Gói 3.4: chỉ ổn định vận hành và đầu vào
 
 **U:** cho mở rộng queue/attempt/consumer hiện có để đối soát Background hữu hạn, sửa phí từ usage và kiểm nguồn Quan/Tài/Phu; không API thật, không18queued, main/QA khác/engine/thanh toán/Live/3.5.

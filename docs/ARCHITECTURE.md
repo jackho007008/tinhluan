@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## Gói3.5 — view reconciling và giám sát operator
+
+readPaid chỉ SELECT receipt/error để ánh xạ uncertain còn tự đối soát thành reconciling; exhausted/404/mấtID giữ attention, không đổi status DB hoặc quyền. CLI ai:paid-status chỉ đọc metadata có scope, không prompt/content/credential; không endpoint/scheduler mới. Worker/provider/schema giữ3.4; kiểm process restart qua DB clone và HTTP mock. [Cơ chế hữu hạn và bằng chứng](AI-PAID-PACKAGE35-HANDOFF.md).
+
 ## Gói 3.4 — đối soát ngắn, trạng thái trên attempt cũ
 
 Paid provider CREATE/GET một lượt, receipt bền trước yield; worker lưu lịch ở job.run_after và budget/quan sát ở attempt.usage._background. Không schema/queue mới; claim/reservation khóa transaction, consumer khóa session theo reading. Cost breakdown/price và timing mới là metadata tùy chọn, đọc kết quả cũ không cần backfill. Retrieval1.1.1 thêm hai lựa chọn phương pháp D theo dấu mốc đã lưu, không thay evaluator/rule hoặc prompt1.1.0. [Giới hạn, cấu hình và cơ chế phục hồi](AI-PAID-PACKAGE34-HANDOFF.md).

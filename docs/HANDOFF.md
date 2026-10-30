@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 30/10 — Gói3.5: runtime trên clone, không OpenAI thật
+
+QA3115/DB clone kiểm consumer3.4 maxNew0, SIGTERM rồi hai PID mới đối soát cùng receipt/attempt;9GET mock/0CREATE/0OpenAI. UI1→3/11, refresh/thư viện nguyên; sửa pending bị báo cần hỗ trợ, held vẫn cần kiểm tra. CLI giám sát riêng không prompt.17/17test/typecheck/build QA đạt; consumer/mock provider đã dừng,44job/18queued gốc/main nguyên. [Bàn giao và giới hạn](AI-PAID-PACKAGE35-HANDOFF.md).
+
 ## 30/10 — Gói 3.4: Background và chi phí, chỉ mock
 
 Mở rộng consumer/attempt hiện có: GET có lịch/backoff/ngân sách bền vững, không CREATE lại uncertain; parser tách cache-write/read/output và lưu giá có phiên bản. Retrieval1.1.1 thêm hai nguồn phương pháp D có dấu mốc phù hợp, không thêm lời trực tiếp Phu. 76/76 test/typecheck/build;0 API thật/worker QA/deploy/migration,18 queued giữ nguyên. [Bàn giao và giới hạn trước QA3062](AI-PAID-PACKAGE34-HANDOFF.md).

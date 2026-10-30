@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## Gói3.5 — process thật, provider mock
+
+17/17test Background/paid trên DB test riêng; typecheck/build QA3115 đạt. Runtime clone chạy consumer maxNew0: PID5290 SIGTERM→10325→10343,9GET mock,0CREATE/OpenAI; cùng attempt/ID, backoff/cap,404/mấtID,future job,GET khi hết budget. UI sửa pending bị báo hỗ trợ; refresh/thư viện8phần và Mệnh nguyên, mọi job/attempt không tăng sau đọc. Không E2E/PDF/mobile mới hoặc kiểm provider thật. [Bằng chứng](AI-PAID-PACKAGE35-HANDOFF.md).
+
 ## Gói 3.4 — Background/chi phí và hồi quy hữu hạn
 
 76/76 test trong8file, DBtest riêng/key rỗng hoặc fetch mock; typecheck/root build Node24 đạt. Kiểm pending vượt300s, invocation mới/lease stale,5xx/404/mấtID, backoff/cap GET, ngân sách đồng thời, không CREATE trùng, usage3.2thiếu/3.3đủ, D/provenance và immutable completed. Không restart thật, API/E2E/PDF/mobile mới. Lỗi từng lượt và sửa code/setup được ghi tại [bàn giao](AI-PAID-PACKAGE34-HANDOFF.md).

@@ -104,15 +104,22 @@ export async function readPaid(
   if (!g) return empty;
   const rows = (
     await pool.query(
-      "SELECT palace,status,retryable,attempts,run_after,result FROM ai_reading_jobs WHERE reading_id=$1 AND reading_hash=$2 AND edition=$3",
+      "SELECT j.palace,j.status,j.error_code,j.retryable,j.attempts,j.run_after,j.result,a.response_id,a.provider AS attempt_provider FROM ai_reading_jobs j LEFT JOIN ai_reading_attempts a ON a.id=j.attempt_id WHERE j.reading_id=$1 AND j.reading_hash=$2 AND j.edition=$3",
       [record.id, readingHash(record), PAID_EDITION],
     )
   ).rows;
   const palaces = PAID_PALACES.map((palace) => {
     const r = rows.find((r) => r.palace === palace);
+    const reconciling =
+      r?.status === "uncertain" &&
+      r.response_id &&
+      r.attempt_provider === "openai" &&
+      !["AI_RECONCILIATION_EXHAUSTED", "AI_RESPONSE_UNAVAILABLE"].includes(
+        r.error_code,
+      );
     return {
       palace,
-      state: r?.status || "awaiting-queue",
+      state: reconciling ? "reconciling" : r?.status || "awaiting-queue",
       canRetry:
         !!r &&
         r.status === "error" &&
@@ -129,7 +136,7 @@ export async function readPaid(
   ).length;
   return {
     eligible: true,
-    simulation:process.env.QA_PAID_MOCK_WORKER==='true',
+    simulation: process.env.QA_PAID_MOCK_WORKER === "true",
     completed,
     total: 11,
     state:

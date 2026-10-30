@@ -243,6 +243,16 @@ it("provider >300 seconds yields once, survives restart, and completes same atte
   const first = await job("Quan Lộc");
   expect(first.status).toBe("uncertain");
   expect(first.error_code).toBe("AI_BACKGROUND_PENDING");
+  await pool.query(
+    "UPDATE orders SET paid_at=now()-interval '6 minutes' WHERE id=$1",
+    [order],
+  );
+  const pendingView = await readPaid(record, order);
+  expect(pendingView.state).toBe("processing");
+  expect(pendingView.overEstimate).toBe(true);
+  expect(pendingView.palaces.find((p) => p.palace === "Quan Lộc")?.state).toBe(
+    "reconciling",
+  );
   expect(creates).toBe(1);
   expect(gets).toBe(0);
   // A fresh invocation uses only persisted DB state, not an in-memory timer.
@@ -317,6 +327,12 @@ it("restart after dispatch uses durable ID; provider errors back off then 404 re
   await due("Tài Bạch");
   expect(await runAiMenhJob(openaiNarrator, scope("Tài Bạch"))).toBe(false);
   expect(gets).toBe(2);
+  const held = await readPaid(record, order);
+  expect(held.state).toBe("attention");
+  expect(held.palaces.find((p) => p.palace === "Tài Bạch")).toMatchObject({
+    state: "uncertain",
+    canRetry: false,
+  });
   expect((await job("Tài Bạch")).attempts).toBe(1);
 });
 it("unknown accepted CREATE with lost ID is held without another request", async () => {
@@ -334,6 +350,15 @@ it("unknown accepted CREATE with lost ID is held without another request", async
   ).toBe(false);
   expect(calls).toBe(1);
   expect((await job("Phu Thê")).retryable).toBe(false);
+  const held = await job("Phu Thê");
+  await pool.query(
+    "UPDATE ai_reading_attempts SET provider='test-mock',response_id='mock-non-provider-receipt' WHERE id=$1",
+    [held.attempt_id],
+  );
+  expect(
+    (await readPaid(record, order)).palaces.find((p) => p.palace === "Phu Thê")
+      ?.state,
+  ).toBe("uncertain");
 });
 it("GET budget survives crash, exhaustion releases scheduling and does not block another eligible job", async () => {
   await runAiMenhJob(async (_i, _a, r) => {
@@ -400,4 +425,14 @@ it("atomically reserves the last request budget across concurrent consumers", as
     runAiMenhJob(narrator, scope("Phụ Mẫu")),
   ]);
   expect(narrator).toHaveBeenCalledTimes(1);
+});
+it("daily CREATE cap blocks a fresh mock attempt without changing queued data", async () => {
+  vi.stubEnv("AI_PAID_MAX_DAILY_CREATES", "1");
+  vi.stubEnv("AI_PAID_MAX_RUNNING", "11");
+  vi.stubEnv("AI_PAID_DAILY_BUDGET_USD", "1000");
+  const before = await job("Tử Nữ");
+  const narrator = vi.fn(async (i: any) => mockPaidGeneration(i));
+  expect(await runAiMenhJob(narrator, scope("Tử Nữ"))).toBe(false);
+  expect(narrator).not.toHaveBeenCalled();
+  expect(await job("Tử Nữ")).toEqual(before);
 });
