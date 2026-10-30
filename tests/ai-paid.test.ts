@@ -88,8 +88,10 @@ beforeAll(async () => {
     )
   )
     throw Error("DEDICATED_PAID_TEST_DB_REQUIRED");
+  await pool.query("TRUNCATE ai_reading_attempts,ai_reading_jobs");
   for (const [k, v] of Object.entries({
     AI_PAID_ENABLED: "true",
+    AI_PAID_DAILY_BUDGET_USD: "100",
     AI_MENH_ENABLED: "false",
     AI_PAID_READING_MODEL: "gpt-6-astra",
     OPENAI_API_KEY: "",
@@ -225,13 +227,42 @@ it("two consumers claim different jobs and GET/reopen never generate more work",
     return mockPaidGeneration(input);
   };
   await Promise.all([
-    runAiMenhJob(narrator, { paid: true, readingId: record.id, palace: PAID_PALACES[0] }),
-    runAiMenhJob(narrator, { paid: true, readingId: record.id, palace: PAID_PALACES[1] }),
+    runAiMenhJob(narrator, {
+      paid: true,
+      readingId: record.id,
+      palace: PAID_PALACES[0],
+    }),
+    runAiMenhJob(narrator, {
+      paid: true,
+      readingId: record.id,
+      palace: PAID_PALACES[1],
+    }),
   ]);
   expect(calls).toBe(2);
-  await expect(runAiMenhJob(narrator,{paid:true,readingId:record.id,palace:"Mệnh"})).rejects.toThrow("AI_INVALID_PALACE_SCOPE");
-  expect(await runAiMenhJob(narrator,{paid:true,readingId:record.id,palace:PAID_PALACES[0]})).toBe(false);
-  expect((await pool.query("SELECT palace FROM ai_reading_jobs WHERE reading_id=$1 AND status='completed' ORDER BY palace",[record.id])).rows.map(r=>r.palace).sort()).toEqual([PAID_PALACES[0],PAID_PALACES[1]].sort());
+  await expect(
+    runAiMenhJob(narrator, {
+      paid: true,
+      readingId: record.id,
+      palace: "Mệnh",
+    }),
+  ).rejects.toThrow("AI_INVALID_PALACE_SCOPE");
+  expect(
+    await runAiMenhJob(narrator, {
+      paid: true,
+      readingId: record.id,
+      palace: PAID_PALACES[0],
+    }),
+  ).toBe(false);
+  expect(
+    (
+      await pool.query(
+        "SELECT palace FROM ai_reading_jobs WHERE reading_id=$1 AND status='completed' ORDER BY palace",
+        [record.id],
+      )
+    ).rows
+      .map((r) => r.palace)
+      .sort(),
+  ).toEqual([PAID_PALACES[0], PAID_PALACES[1]].sort());
   expect(calls).toBe(2);
   const before = await pool.query(
     "SELECT attempts FROM ai_reading_jobs WHERE reading_id=$1 ORDER BY palace",
@@ -282,10 +313,26 @@ it("known error preserves rights; explicit retry is idempotent and completed imm
   ).toBe("1");
   // Isolate the retried job from equally-timestamped queued jobs. This case must
   // finish its two-attempt retry before the next case tests a first-attempt timeout.
-  await pool.query("UPDATE ai_reading_jobs SET run_after=now()+interval '1 hour' WHERE reading_id=$1 AND palace<>$2 AND status='queued'", [record.id,bad]);
-  await runAiMenhJob(async i=>mockPaidGeneration(i),{paid:true,readingId:record.id});
-  expect((await pool.query("SELECT status,attempts FROM ai_reading_jobs WHERE reading_id=$1 AND palace=$2",[record.id,bad])).rows[0]).toMatchObject({status:'completed',attempts:2});
-  await pool.query("UPDATE ai_reading_jobs SET run_after=now() WHERE reading_id=$1 AND status='queued'",[record.id]);
+  await pool.query(
+    "UPDATE ai_reading_jobs SET run_after=now()+interval '1 hour' WHERE reading_id=$1 AND palace<>$2 AND status='queued'",
+    [record.id, bad],
+  );
+  await runAiMenhJob(async (i) => mockPaidGeneration(i), {
+    paid: true,
+    readingId: record.id,
+  });
+  expect(
+    (
+      await pool.query(
+        "SELECT status,attempts FROM ai_reading_jobs WHERE reading_id=$1 AND palace=$2",
+        [record.id, bad],
+      )
+    ).rows[0],
+  ).toMatchObject({ status: "completed", attempts: 2 });
+  await pool.query(
+    "UPDATE ai_reading_jobs SET run_after=now() WHERE reading_id=$1 AND status='queued'",
+    [record.id],
+  );
   const complete = (
     await pool.query(
       "SELECT palace,result FROM ai_reading_jobs WHERE reading_id=$1 AND status='completed' LIMIT 1",
@@ -426,10 +473,15 @@ it("revocation blocks reading/retry/worker without deleting results", async () =
 });
 
 it("Tật Ách dry-run remains structural and rejects medical claims without API", () => {
-  const input=paidInput(record,"Tật Ách");
-  expect(paidInstructions(input)).toContain("Riêng Tật Ách chỉ chú giải truyền thống theo cấu trúc");
-  const safe=mockPaidGeneration(input);
-  expect(validatePaidNarration(safe.raw,input).sections).toHaveLength(8);
-  (safe.raw as any).sections[0].content="Bạn sẽ mắc bệnh và cần điều trị ngay.";
-  expect(()=>validatePaidNarration(safe.raw,input)).toThrow("AI_SCOPE_VIOLATION");
+  const input = paidInput(record, "Tật Ách");
+  expect(paidInstructions(input)).toContain(
+    "Riêng Tật Ách chỉ chú giải truyền thống theo cấu trúc",
+  );
+  const safe = mockPaidGeneration(input);
+  expect(validatePaidNarration(safe.raw, input).sections).toHaveLength(8);
+  (safe.raw as any).sections[0].content =
+    "Bạn sẽ mắc bệnh và cần điều trị ngay.";
+  expect(() => validatePaidNarration(safe.raw, input)).toThrow(
+    "AI_SCOPE_VIOLATION",
+  );
 });

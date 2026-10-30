@@ -35,11 +35,22 @@ export type AiFact = {
   text: string;
   kind: "engine" | "geometry";
   paths: string[];
-  provenance?: {palace:string;relation:string;field:string;scope:"natal";verification:"source-traced"|"source-conflict"|"upstream-unverified"|"engine-reported";source:string};
+  provenance?: {
+    palace: string;
+    relation: string;
+    field: string;
+    scope: "natal";
+    verification:
+      | "source-traced"
+      | "source-conflict"
+      | "upstream-unverified"
+      | "engine-reported";
+    source: string;
+  };
 };
 export type Knowledge = {
-  group?: "A"|"B"|"C"|"D";
-  application?: "direct"|"context"|"reference-only";
+  group?: "A" | "B" | "C" | "D";
+  application?: "direct" | "context" | "reference-only";
   subjectPalaces?: string[];
   predicate?: { conditions: unknown[]; exceptions: unknown[] };
   id: string;
@@ -64,7 +75,11 @@ export type Knowledge = {
 export type MenhInput = {
   paidTarget?: { palace: string; edition: string };
   version: typeof FACTS_VERSION | "paid-facts-1.1.0";
-  knowledgeVersion: typeof KNOWLEDGE_VERSION | "menh-retrieval-1.0.0" | "paid-retrieval-1.1.0";
+  knowledgeVersion:
+    | typeof KNOWLEDGE_VERSION
+    | "menh-retrieval-1.0.0"
+    | "paid-retrieval-1.1.0"
+    | "paid-retrieval-1.1.1";
   facts: AiFact[];
   knowledge: Knowledge[];
   missing: string[];
@@ -91,6 +106,19 @@ export type AiResult = {
     cachedInputTokens: number;
     outputTokens: number;
     reasoningTokens: number;
+    cacheWriteTokens?: number;
+    cacheBreakdownComplete?: boolean;
+    _background?: import("./background").BackgroundState;
+  };
+  cost?: ReturnType<typeof import("./cost").responseCost>["cost"];
+  timing?: {
+    providerCreatedAt?: string;
+    providerCompletedAt?: string;
+    providerElapsedMs?: number;
+    queueWaitMs?: number;
+    observationMs?: number;
+    accumulatedObservationMs?: number;
+    dispatchToPersistMs?: number;
   };
   estimatedCostUsd: number | null;
 };

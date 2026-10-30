@@ -1,3 +1,4 @@
+import { responseCost } from "./cost";
 import { paidInstructions, paidUserInput, PAID_PROMPT } from "./paid-contract";
 import { aiModels } from "./config";
 import OpenAI from "openai";
@@ -12,6 +13,8 @@ export type Generation = {
   responseId: string;
   usage: AiResult["usage"];
   durationMs: number;
+  cost?: AiResult["cost"];
+  timing?: AiResult["timing"];
   estimatedCostUsd: number | null;
 };
 export type Narrator = (
@@ -28,6 +31,7 @@ export class GenerationFailure extends Error {
     public code: string,
     public retryable: boolean,
     public uncertain = false,
+    public background?: import("./background").BackgroundState,
   ) {
     super(code);
   }
@@ -45,7 +49,7 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
   const config = {
     ...aiConfig(),
     model: input.paidTarget ? aiModels().paidReading : aiConfig().model,
-    ...(input.paidTarget ? {background:true} : {}),
+    ...(input.paidTarget ? { background: true } : {}),
   };
   if (!config.apiKey || (!config.model && !recovery?.responseId))
     throw new GenerationFailure(
@@ -71,14 +75,21 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
     if (config.background && !recovery)
       throw new GenerationFailure("AI_RECOVERY_REQUIRED", false);
     let response = responseId
-      ? await client.responses.retrieve(responseId)
+      ? await client.responses.retrieve(
+          responseId,
+          input.paidTarget
+            ? { timeout: Math.min(30000, config.timeoutMs) }
+            : undefined,
+        )
       : await client.responses.create(
           {
             model: config.model!,
             store: config.background,
             ...(config.background ? { background: true } : {}),
             instructions,
-            input: input.paidTarget ? paidUserInput(input) : menhUserInput(input),
+            input: input.paidTarget
+              ? paidUserInput(input)
+              : menhUserInput(input),
             max_output_tokens: config.maxOutputTokens,
             reasoning: { effort: config.reasoningEffort as "high" },
             text: { format: zodTextFormat(narrationSchema, "menh_reading") },
@@ -90,6 +101,20 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
       // Do not poll until the ID is durable. If this write fails, the attempt is
       // ambiguous and must not be dispatched again.
       await recovery!.onResponseCreated(response.id, response.model);
+    }
+    if (
+      input.paidTarget &&
+      ["queued", "in_progress"].includes(response.status!)
+    ) {
+      throw new GenerationFailure("AI_BACKGROUND_PENDING", false, true, {
+        ...(Number.isFinite(response.created_at)
+          ? {
+              providerCreatedAt: new Date(
+                response.created_at * 1000,
+              ).toISOString(),
+            }
+          : {}),
+      });
     }
     while (response.status === "queued" || response.status === "in_progress") {
       const remaining = config.backgroundWaitMs - (Date.now() - start);
@@ -105,14 +130,7 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
         timeout: Math.min(config.timeoutMs, timeout),
       });
     }
-    const usage = {
-      inputTokens: response.usage?.input_tokens ?? 0,
-      cachedInputTokens:
-        response.usage?.input_tokens_details.cached_tokens ?? 0,
-      outputTokens: response.usage?.output_tokens ?? 0,
-      reasoningTokens:
-        response.usage?.output_tokens_details.reasoning_tokens ?? 0,
-    };
+    const { usage, estimatedCostUsd, cost } = responseCost(response);
     let raw: unknown = null;
     try {
       raw = JSON.parse(response.output_text);
@@ -120,19 +138,30 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
       /* persisted as an invalid-schema attempt by the worker */
     }
     if (response.status !== "completed") raw = null;
-    const prices = [
-      process.env.OPENAI_INPUT_USD_PER_MILLION,
-      process.env.OPENAI_CACHED_INPUT_USD_PER_MILLION,
-      process.env.OPENAI_OUTPUT_USD_PER_MILLION,
-    ].map((v) => (v === undefined ? NaN : Number(v)));
-    const estimatedCostUsd = prices.every((p) => Number.isFinite(p) && p >= 0)
-      ? ((usage.inputTokens - usage.cachedInputTokens) * prices[0] +
-          usage.cachedInputTokens * prices[1] +
-          usage.outputTokens * prices[2]) /
-        1e6
-      : null;
     return {
       raw,
+      cost,
+      timing: {
+        ...(Number.isFinite(response.created_at)
+          ? {
+              providerCreatedAt: new Date(
+                response.created_at * 1000,
+              ).toISOString(),
+            }
+          : {}),
+        ...((response as any).completed_at
+          ? {
+              providerCompletedAt: new Date(
+                (response as any).completed_at * 1000,
+              ).toISOString(),
+              providerElapsedMs: Math.max(
+                0,
+                ((response as any).completed_at - response.created_at) * 1000,
+              ),
+            }
+          : {}),
+        observationMs: Date.now() - start,
+      },
       model: response.model,
       provider: "openai",
       responseId: response.id,
@@ -146,7 +175,11 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
       // Retrieval never creates a new billed response. An expired/deleted ID
       // needs operator review, not a fresh CREATE or an endless GET loop.
       if (error instanceof OpenAI.APIError && error.status === 404)
-        throw new GenerationFailure("AI_RESPONSE_UNAVAILABLE", false);
+        throw new GenerationFailure(
+          "AI_RESPONSE_UNAVAILABLE",
+          false,
+          !!input.paidTarget,
+        );
       throw new GenerationFailure("AI_OUTCOME_UNCERTAIN", false, true);
     }
     if (

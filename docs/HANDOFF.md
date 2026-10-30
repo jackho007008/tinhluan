@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 30/10 — Gói 3.4: Background và chi phí, chỉ mock
+
+Mở rộng consumer/attempt hiện có: GET có lịch/backoff/ngân sách bền vững, không CREATE lại uncertain; parser tách cache-write/read/output và lưu giá có phiên bản. Retrieval1.1.1 thêm hai nguồn phương pháp D có dấu mốc phù hợp, không thêm lời trực tiếp Phu. 76/76 test/typecheck/build;0 API thật/worker QA/deploy/migration,18 queued giữ nguyên. [Bàn giao và giới hạn trước QA3062](AI-PAID-PACKAGE34-HANDOFF.md).
+
 ## 30/10 — Gói 3.3: dry-run và một bài Quan Lộc thật
 
 Adapter trả phí bổ sung vòng sao/provenance, retrieval A/B/C/D và prompt1.1.0 giữ bản cũ; 64/64 test/typecheck/build. Ba packet111→159facts, cùng chart Gói3.2 và không đổi33job cũ. Chỉ1CREATE Quan Lộc mới: uncertain sau300s; GETthứ4 được chủ dự án cho phép trảcompleted, lưu cùngattempt/ID qua worker hiện có khôngHTTPthêm. Bài dùng đúng BạchHổ–TấuThư, có cải thiện mộtphần; 28.108input/5.916output, ước$0,64714 kểcache-write, provider812s. Tài/Phu0CREATE, chưa nghiệmthu11cung. Worker hữu hạn và mock consumer dừng; QA3062/3070/main/Live nguyên. [Bàn giao, packet và trở ngại](AI-PAID-PACKAGE33-HANDOFF.md).

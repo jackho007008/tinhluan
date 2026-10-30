@@ -1,3 +1,8 @@
+import {
+  backgroundDecision,
+  backgroundLimits,
+  type BackgroundState,
+} from "./background";
 import { PAID_GRANT_SQL } from "./paid-store";
 import {
   paidEnabled,
@@ -29,9 +34,13 @@ export async function runAiMenhJob(
     revalidateOutput?: boolean;
   } = {},
 ) {
+  const observedStart = Date.now();
   const paid = options.paid === true;
   if (paid ? !paidEnabled() : !aiEnabled()) return false;
-  if (options.palace && (!paid || !PAID_PALACES.includes(options.palace as any)))
+  if (
+    options.palace &&
+    (!paid || !PAID_PALACES.includes(options.palace as any))
+  )
     throw Error("AI_INVALID_PALACE_SCOPE");
   if (options.readingId && !validReadingId(options.readingId))
     throw Error("AI_INVALID_READING_SCOPE");
@@ -41,6 +50,12 @@ export async function runAiMenhJob(
   )
     throw Error("AI_REVALIDATE_REQUIRES_READ_ONLY_SCOPE");
   const job = await transaction(async (c) => {
+    const limits = backgroundLimits();
+    // Serializes claim + reservation across processes without a second queue.
+    if (paid)
+      await c.query(
+        "SELECT pg_advisory_xact_lock(hashtextextended('paid-ai-dispatch',0))",
+      );
     // A crashed/overlong dispatched attempt is never automatically re-billed.
     const stale = await c.query(
       `UPDATE ai_reading_jobs SET status='uncertain',error_code='AI_INTERRUPTED',retryable=false WHERE status='running' AND ${paid ? "edition='" + PAID_EDITION + "'" : "palace='Mệnh'"} AND locked_at<now()-interval '6 minutes' AND ($1::uuid IS NULL OR reading_id=$1) AND ($2::text IS NULL OR palace=$2) RETURNING attempt_id`,
@@ -54,7 +69,7 @@ export async function runAiMenhJob(
       );
     const row = (
       await c.query(
-        `SELECT j.*,a.response_id,a.started_at AS attempt_started_at,a.duration_ms AS previous_duration_ms,a.estimated_cost_usd AS previous_estimated_cost_usd FROM ai_reading_jobs j LEFT JOIN ai_reading_attempts a ON a.id=j.attempt_id WHERE ${paid ? "j.edition='" + PAID_EDITION + "' AND " + PAID_GRANT_SQL : "j.palace='Mệnh'"} AND j.run_after<=now() AND ($1::uuid IS NULL OR j.reading_id=$1) AND ($4::text IS NULL OR j.palace=$4) AND ((j.status='queued' AND $2::boolean) OR ((j.status='uncertain' OR ($3::boolean AND j.status='error' AND j.error_code='AI_INVALID_OUTPUT')) AND a.response_id IS NOT NULL AND a.provider='openai')) ORDER BY j.created_at FOR UPDATE OF j SKIP LOCKED LIMIT 1`,
+        `SELECT j.*,a.response_id,a.started_at AS attempt_started_at,a.duration_ms AS previous_duration_ms,a.estimated_cost_usd AS previous_estimated_cost_usd,a.usage AS previous_usage FROM ai_reading_jobs j LEFT JOIN ai_reading_attempts a ON a.id=j.attempt_id WHERE ${paid ? "j.edition='" + PAID_EDITION + "' AND " + PAID_GRANT_SQL : "j.palace='Mệnh'"} AND j.run_after<=now() AND ($1::uuid IS NULL OR j.reading_id=$1) AND ($4::text IS NULL OR j.palace=$4) AND ((j.status='queued' AND $2::boolean AND (a.response_id IS NULL OR a.status='error') AND j.attempts<3) OR (((j.status='uncertain' AND COALESCE(j.error_code,'') NOT IN ('AI_RECONCILIATION_EXHAUSTED','AI_RESPONSE_UNAVAILABLE')) OR ($3::boolean AND j.status='error' AND j.error_code='AI_INVALID_OUTPUT')) AND a.response_id IS NOT NULL AND a.provider='openai')) ORDER BY CASE WHEN j.status='queued' THEN 1 ELSE 0 END,j.run_after,j.created_at FOR UPDATE OF j SKIP LOCKED LIMIT 1`,
         [
           options.readingId || null,
           options.allowCreate !== false,
@@ -64,7 +79,38 @@ export async function runAiMenhJob(
       )
     ).rows[0];
     if (!row) return;
+    const state: BackgroundState = row.previous_usage?._background || {};
+    if (paid) {
+      const active = +(
+        await c.query(
+          "SELECT count(*) FROM ai_reading_jobs WHERE edition=$1 AND status='running'",
+          [PAID_EDITION],
+        )
+      ).rows[0].count;
+      if (active >= limits.maxRunning) return;
+    }
     if (row.status !== "queued") {
+      if (paid) {
+        const decision = backgroundDecision(state, row.attempt_started_at);
+        if (decision.exhausted) {
+          await c.query(
+            "UPDATE ai_reading_jobs SET error_code='AI_RECONCILIATION_EXHAUSTED',retryable=false,run_after=now()+interval '1 day' WHERE id=$1",
+            [row.id],
+          );
+          await c.query(
+            "UPDATE ai_reading_attempts SET error_code='AI_RECONCILIATION_EXHAUSTED' WHERE id=$1",
+            [row.attempt_id],
+          );
+          return { deferred: true } as const;
+        }
+        // Reserve the GET before I/O: crash/restart cannot reset its budget.
+        state.checks = (state.checks || 0) + 1;
+        state.lastCheckedAt = new Date().toISOString();
+        await c.query(
+          "UPDATE ai_reading_attempts SET usage=COALESCE(usage,'{}'::jsonb)||jsonb_build_object('_background',$2::jsonb) WHERE id=$1",
+          [row.attempt_id, JSON.stringify(state)],
+        );
+      }
       // Same attempt, same provider response: only GET reconciliation. Never
       // enqueue or increment attempts for a response that may already be billed.
       await c.query(
@@ -77,8 +123,34 @@ export async function runAiMenhJob(
       );
       return {
         ...row,
+        background_state: state,
         revalidating_output: row.status === "error",
       } as ClaimedJob;
+    }
+    if (paid) {
+      const outstanding = +(
+        await c.query(
+          "SELECT count(*) FROM ai_reading_jobs WHERE edition=$1 AND status IN ('running','uncertain')",
+          [PAID_EDITION],
+        )
+      ).rows[0].count;
+      if (outstanding >= limits.maxRunning) return;
+      if (row.attempts >= limits.maxAttempts) return;
+      const q = (
+        await c.query(
+          `SELECT count(*) FILTER (WHERE a.started_at>=date_trunc('day',now())) AS count,
+        COALESCE(sum(COALESCE(a.estimated_cost_usd,(a.usage->'_background'->>'reservedUsd')::numeric,$2)),0) AS reserved
+        FROM ai_reading_attempts a JOIN ai_reading_jobs j ON j.id=a.job_id
+        WHERE j.edition=$1 AND (a.started_at>=date_trunc('day',now()) OR a.status IN ('running','uncertain'))`,
+          [PAID_EDITION, limits.reservationUsd],
+        )
+      ).rows[0];
+      if (
+        +q.count >= limits.maxDailyCreates ||
+        +q.reserved + limits.reservationUsd > limits.dailyBudgetUsd
+      )
+        return;
+      state.reservedUsd = limits.reservationUsd;
     }
     const attempt = randomUUID();
     await c.query(
@@ -86,18 +158,25 @@ export async function runAiMenhJob(
       [row.id, attempt],
     );
     await c.query(
-      "INSERT INTO ai_reading_attempts(id,job_id,status,model) VALUES($1,$2,'running',$3)",
-      [attempt, row.id, row.requested_model],
+      "INSERT INTO ai_reading_attempts(id,job_id,status,model,usage) VALUES($1,$2,'running',$3,$4)",
+      [
+        attempt,
+        row.id,
+        row.requested_model,
+        paid ? { _background: state } : null,
+      ],
     );
     return {
       ...row,
       attempt_id: attempt,
       attempts: row.attempts + 1,
+      background_state: state,
       response_id: undefined,
       attempt_started_at: new Date(),
     } as ClaimedJob;
   });
   if (!job) return false;
+  if ("deferred" in job) return true;
   let generated: Generation | undefined;
   try {
     if (
@@ -132,6 +211,20 @@ export async function runAiMenhJob(
         generated.durationMs,
         Date.now() - new Date(job.attempt_started_at).getTime(),
       );
+    if (paid)
+      generated.usage = {
+        ...generated.usage,
+        _background: {
+          ...job.background_state,
+          ...(generated.timing && {
+            observationMsTotal:
+              (job.background_state?.observationMsTotal || 0) +
+              (generated.timing.observationMs || 0),
+            providerCreatedAt: generated.timing.providerCreatedAt,
+            providerCompletedAt: generated.timing.providerCompletedAt,
+          }),
+        },
+      };
     const content = paid
       ? validatePaidNarration(generated.raw, job.input)
       : validateNarration(generated.raw, job.input);
@@ -144,6 +237,27 @@ export async function runAiMenhJob(
       model: generated.model,
       provider: generated.provider,
       durationMs: generated.durationMs,
+      ...(generated.cost ? { cost: generated.cost } : {}),
+      ...(generated.timing
+        ? {
+            timing: {
+              ...generated.timing,
+              accumulatedObservationMs:
+                generated.usage._background?.observationMsTotal,
+              dispatchToPersistMs: job.attempt_started_at
+                ? Date.now() - new Date(job.attempt_started_at).getTime()
+                : undefined,
+              queueWaitMs:
+                job.attempt_started_at && job.created_at
+                  ? Math.max(
+                      0,
+                      new Date(job.attempt_started_at).getTime() -
+                        new Date(job.created_at).getTime(),
+                    )
+                  : undefined,
+            },
+          }
+        : {}),
       usage: generated.usage,
       estimatedCostUsd: generated.estimatedCostUsd,
     };
@@ -178,15 +292,36 @@ export async function runAiMenhJob(
         (validation ? "AI_INVALID_OUTPUT" : "AI_OUTCOME_UNCERTAIN"),
       uncertain = known?.uncertain || (!known && !validation),
       retryable = known?.retryable ?? validation;
+    const state = {
+      ...job.background_state,
+      ...known?.background,
+      lastCode: code,
+      observationMsTotal:
+        (job.background_state?.observationMsTotal || 0) +
+        Date.now() -
+        observedStart,
+    };
+    const decision = backgroundDecision(
+      state,
+      job.attempt_started_at || new Date(),
+    );
+    const unavailable = code === "AI_RESPONSE_UNAVAILABLE";
+    const finalCode =
+      paid && uncertain && job.response_id && decision.exhausted
+        ? "AI_RECONCILIATION_EXHAUSTED"
+        : code;
+    // Pending yields immediately. run_after persists the bounded exponential schedule.
+    const delay = paid ? decision.delayMs : 30000;
     await transaction(async (c) => {
       await c.query(
-        "UPDATE ai_reading_jobs SET status=$3,error_code=$4,retryable=$5,run_after=now()+interval '30 seconds' WHERE id=$1 AND attempt_id=$2 AND status='running' AND result IS NULL",
+        "UPDATE ai_reading_jobs SET status=$3,error_code=$4,retryable=$5,run_after=now()+($6::double precision*interval '1 millisecond') WHERE id=$1 AND attempt_id=$2 AND status='running' AND result IS NULL",
         [
           job.id,
           job.attempt_id,
           uncertain ? "uncertain" : "error",
-          code,
-          retryable,
+          finalCode,
+          paid && (uncertain || unavailable) ? false : retryable,
+          delay,
         ],
       );
       await c.query(
@@ -194,11 +329,17 @@ export async function runAiMenhJob(
         [
           job.attempt_id,
           uncertain ? "uncertain" : "error",
-          code,
+          finalCode,
           generated?.model || null,
           generated?.provider || null,
           generated?.responseId || null,
-          generated?.usage || null,
+          paid
+            ? {
+                ...job.previous_usage,
+                ...(generated?.usage || {}),
+                _background: state,
+              }
+            : generated?.usage || null,
           generated?.durationMs || null,
           generated?.estimatedCostUsd ?? null,
         ],

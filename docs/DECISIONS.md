@@ -1,5 +1,11 @@
 # Sổ quyết định Tinh Luận
 
+## 30/10 — Gói 3.4: chỉ ổn định vận hành và đầu vào
+
+**U:** cho mở rộng queue/attempt/consumer hiện có để đối soát Background hữu hạn, sửa phí từ usage và kiểm nguồn Quan/Tài/Phu; không API thật, không18queued, main/QA khác/engine/thanh toán/Live/3.5.
+
+**C:** dùng run_after và metadata JSON hiện có, không migration; uncertain/mấtID không CREATE, hết GET/404 giữ cần kiểm tra. Ngân sách dự phòng không là hard cap hóa đơn. Giữ nguồn chưa đủ điều kiện, chỉ thêm D NPL-27/33 theo dấu mốc, không gỡ phạm vi Phu. 76/76 test/typecheck/build,0 API/deploy/worker QA. [Bằng chứng và phần chưa kiểm thật](AI-PAID-PACKAGE34-HANDOFF.md).
+
 ## 30/10 — Gói 3.3: nâng đầu vào và đánh giá hữu hạn
 
 **U:** sửa facts sao vòng, retrieval có điều kiện và prompt sâu/chuyên biệt; giữ engine, quyền, queue, báo cáo cũ. Dry-run trước; tối đa3CREATE mớiQuan/Tài/Phu trên phiên đánh giá tách biệt, không retryuncertain/xửlý8queued cũ, không3.4/QA3062/3070/Live.

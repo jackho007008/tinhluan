@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## Gói 3.4 — đối soát ngắn, trạng thái trên attempt cũ
+
+Paid provider CREATE/GET một lượt, receipt bền trước yield; worker lưu lịch ở job.run_after và budget/quan sát ở attempt.usage._background. Không schema/queue mới; claim/reservation khóa transaction, consumer khóa session theo reading. Cost breakdown/price và timing mới là metadata tùy chọn, đọc kết quả cũ không cần backfill. Retrieval1.1.1 thêm hai lựa chọn phương pháp D theo dấu mốc đã lưu, không thay evaluator/rule hoặc prompt1.1.0. [Giới hạn, cấu hình và cơ chế phục hồi](AI-PAID-PACKAGE34-HANDOFF.md).
+
 ## Gói 3.3 — paid facts/retrieval1.1.0
 
 `paid-facts` đọc bốn field vòng đã lưu, provenance phân cung/quan hệ/nguồn/phạm vi và mức kiểm; không an lại. Boshi/suiqian kiểm trace, changsheng giữ bất nhất, jiangqian và supplementary upstream không thành căn cứ cá nhân. `paid-retrieval` tái dùng executeRules, loại false/unknown/template/conflict, ưu tiên V1 trực tiếp và phân A/B/C/D; context không được chuyển chủ đề. Registry prompt1.1.0 giữ legacy body, provider dùng version từ job; Mệnh cũ không đổi. Queue/payment/schema/engine không sửa. Một CREATE đã quauncertain→GET được phép→lưucompleted cùngattempt/ID bằng worker/validator/store hiện có, khôngHTTP khi lưu. Không consumer thường trực/requeue tự động. Metadata phí cần xử lý cache_write_tokens trướcQA3062. [Chi tiết](AI-PAID-PACKAGE33-HANDOFF.md).

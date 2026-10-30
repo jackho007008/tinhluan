@@ -1,5 +1,10 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="package34-operations"></a>
+## Gói 3.4 — vận hành Background/chi phí và nguồn, chưa deploy
+
+Đã mở rộng consumer cũ với lịch GET bền vững, backoff/cap, cùng response/attempt và reservation ngân sách; mất ID/404/hết hạn không CREATE lại. Parser usage/price nhận cache-write và không tính reasoning hai lần; không backfill3.2. Kiểm nguồn ba cung, thêm phương pháp D có điều kiện1.1.1, không thêm rule; dry Tài/Phu159facts/13và10nguồn, prompt1.1.0. 76/76test/typecheck/build,0API thật/consumer QA/migration/deploy;44job/18queued giữ nguyên. Chưa kiểm vận hành mới thật hoặc chiều sâu bài Tài/Phu; không3.5. [Bàn giao/cấu hình/khoảng thiếu](AI-PAID-PACKAGE34-HANDOFF.md).
+
 <a id="package33-quality"></a>
 ## Gói 3.3 — adapter/retrieval/prompt và một bài thật
 

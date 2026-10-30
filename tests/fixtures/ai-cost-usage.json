@@ -1,0 +1,64 @@
+[
+  {
+    "package": "3.2",
+    "palace": "Quan Lộc",
+    "model": "gpt-6-astra",
+    "usage": {
+      "input_tokens": 9192,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 4170,
+      "output_tokens_details": {
+        "reasoning_tokens": 2070
+      }
+    }
+  },
+  {
+    "package": "3.2",
+    "palace": "Tài Bạch",
+    "model": "gpt-6-astra",
+    "usage": {
+      "input_tokens": 9826,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 5216,
+      "output_tokens_details": {
+        "reasoning_tokens": 2904
+      }
+    }
+  },
+  {
+    "package": "3.2",
+    "palace": "Phu Thê",
+    "model": "gpt-6-astra",
+    "usage": {
+      "input_tokens": 8380,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 4062,
+      "output_tokens_details": {
+        "reasoning_tokens": 2070
+      }
+    }
+  },
+  {
+    "package": "3.3",
+    "palace": "Quan Lộc",
+    "model": "gpt-6-astra",
+    "usage": {
+      "input_tokens": 28108,
+      "input_tokens_details": {
+        "cache_write_tokens": 28105,
+        "cached_tokens": 0
+      },
+      "output_tokens": 5916,
+      "output_tokens_details": {
+        "reasoning_tokens": 3358
+      },
+      "total_tokens": 34024
+    }
+  }
+]

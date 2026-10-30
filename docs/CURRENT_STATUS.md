@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 30/10 — Gói 3.4: code đã kiểm mock, chưa nạp QA
+
+76/76 test, typecheck/build Node24 đạt. Background trả phí nhường sau mỗi lượt, GET cùng ID/attempt theo run_after, kiểm bền vững hữu hạn và khóa/ngân sách claim. Cost nhận cache-write, không backfill usage thiếu của3.2. Facts159/prompt1.1.0 giữ nguyên; retrieval1.1.1 chỉ bổ sung NPL-27/33 nhómD, Phu còn thiếu nguồn trực tiếp. 0 API thật, không consumer/restart,18 queued và bài cũ nguyên; chưa xác nhận ETA hoặc chất lượng11cung. [Chi tiết](AI-PAID-PACKAGE34-HANDOFF.md).
+
 ## 30/10 — Gói 3.3: mới đánh giá một bài thật
 
 Dry-run adapter159facts/metadata nguồn và retrieval A/B/C/D đạt, prompt1.1.0 giữ1.0.0/1.0.1; 64/64test/typecheck/build. 1CREATE Astra Quan Lộc trên report mới `cbb4fd02…`, ban đầuuncertain; GETthứ4 được chủ dự án cho phép trảcompleted, lưu cùngattempt/ID khôngHTTPthêm. 28.108input/5.916output(3.358reasoning), cachewrite28.105, ước$0,64714/provider812s. Bài cải thiện mộtphần, chưa nghiệmthu11cung; Tài/Phu0CREATE.33job cũ nguyên, QA mới1completed+10queued, consumer dừng, web3113khôngrestart; khôngQA3062/3070/Live/Gói3.4. [Chi tiết](AI-PAID-PACKAGE33-HANDOFF.md).

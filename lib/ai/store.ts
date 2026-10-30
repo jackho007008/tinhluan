@@ -148,6 +148,9 @@ export async function readMenh(record: InternalReading): Promise<AiView> {
   };
 }
 export type ClaimedJob = {
+  previous_usage?: AiResult["usage"];
+  created_at?: Date;
+  background_state?: import("./background").BackgroundState;
   palace: string;
   requested_model?: string;
   id: string;

@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## Gói 3.4 — Background/chi phí và hồi quy hữu hạn
+
+76/76 test trong8file, DBtest riêng/key rỗng hoặc fetch mock; typecheck/root build Node24 đạt. Kiểm pending vượt300s, invocation mới/lease stale,5xx/404/mấtID, backoff/cap GET, ngân sách đồng thời, không CREATE trùng, usage3.2thiếu/3.3đủ, D/provenance và immutable completed. Không restart thật, API/E2E/PDF/mobile mới. Lỗi từng lượt và sửa code/setup được ghi tại [bàn giao](AI-PAID-PACKAGE34-HANDOFF.md).
+
 ## Gói 3.3 — dry-run,64test và một bài completed
 
 64/64test trong6file trênDBtest riêng; typecheck/rootbuild đạt. Chínca adapter/retrieval kiểm tám sao yêu cầu, xác minh/phạmvi/quan hệ, khôngđổi snapshot, template trongvăn/điềukiện, falsepredicate, Dkhôngđượcsource-interpretation, hashpromptcũ vàfocusmới. Lượtđầu63/64do thiếu đúng câu guardTậtÁch, phục hồi guard khôngđổi assertion.111facts cũ giữtext/paths, thêm48fieldvòng, ba packetmới khớpdry/cùngchart3.2. APIthật1CREATEuncertain sau300s; GETthứ4 được chủdựán cho phép trảcompleted/validationđạt, lưu cùngattempt/ID khôngHTTPthêm. UI8phần/1trên11, Mệnh7đoạn, refresh/thưviện nguyên. Không gọiTàiPhu; không coi64test hoặc mộtbài là nghiệmthu11cung.33jobcũ, main185file/8bảng/dịchvụ nguyên. [Bằng chứng/CSV/giới hạn](AI-PAID-PACKAGE33-HANDOFF.md).
