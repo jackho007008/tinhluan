@@ -1,5 +1,7 @@
 # Gói 3.6 — supervisor QA và vận hành AI trả phí
 
+**Cập nhật sau phê duyệt recovery:** đã kiểm UI9/11,72phần,refresh/thư viện/Mệnh/mobile360/390 trên đúng report; một fixture đã thu hồi,11job/12attempt giữ nguyên và0API mới. [Bằng chứng và giới hạn phiên recovery/account](AI-PAID-PACKAGE36-RECOVERY-QA.md). Các ghi chú “chưa xác minh UI” dưới đây là trạng thái trước lần bổ sung này.
+
 31/10/2026. Baseline `main@daf2d70`; đầu phiên tracked/index sạch, chỉ `buu-dinh-7parts/` chưa theo dõi, không sửa/stage. **0 CREATE/0 GET OpenAI thật, chi phí API $0.** Không kiểm chất lượng Astra hoặc ETA 11 cung. Backend/runtime mock đã kiểm; **chưa nghiệm thu lại UI trả phí trong phiên trình duyệt khách hàng**, xem giới hạn cuối.
 
 ## Thay đổi

@@ -1,5 +1,11 @@
 # Sổ quyết định Tinh Luận
 
+## 31/10 — Phê duyệt riêng một recovery fixture QA3116
+
+**U:** cho đúng một fixture trên clone55446/report38d15aef…, gắn synthetic owner hiện hữu qua recovery hiện có; không chèn cookie tùy ý, sửa grant/order/job hoặc gọi OpenAI. Sau kiểm phải thu hồi.
+
+**C:** kiểm ownership/server rồi seed một binding, deliver local mail và browser Tiếp tục→exchange hiện có. UI9/11/72phần/mobile/refresh/thư viện đạt; fixture đã revoked,0token hoạt động; quyền/order/11job/12attempt giữ nguyên. Không endpoint/auth/app mới. Phiên account QA có sẵn dùng cho thư viện, không coi recovery là đăng nhập account. [Bằng chứng và giới hạn](AI-PAID-PACKAGE36-RECOVERY-QA.md).
+
 ## 31/10 — Gói3.6: chỉ supervisor QA, mock và operator
 
 **U:** cho supervisor bằng process manager hiện có, scope/ngân sách hữu hạn; thanh toán test→11job trên clone/HTTPmock, không OpenAI thật/QA3062/3070/worker chính/Live/3.7.

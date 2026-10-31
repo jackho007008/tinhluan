@@ -1,8 +1,8 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-## 31/10 — Gói3.6: backend/runtime mock đạt, browser paid chưa nghiệm thu
+## 31/10 — Gói3.6: runtime mock và UI QA3116 đã kiểm
 
-QA3116 build yVlddR10fDAS90V0pX_Et, supervisor launchd có allowlist/expiry/run cap; payment test lặp1grant,9/11mock completed và2held. Clone GET-only restart cùng receipt/attempt, CREATEbudget0;28/28test/typecheck/build,0OpenAI. Supervisor đã dừng; chưa kiểm browser paid/reopen/library trong phiên hợp lệ, không ảnh paid mới. QA cũ/PG55439 offline từ đầu, không restart; không QA3062/Gói3.7. [Bàn giao](AI-PAID-PACKAGE36-HANDOFF.md).
+Một recovery fixture đúng synthetic owner được cấp quyền, exchange hiện có; browser9/11,72phần khớp bản lưu,2held không retry, Mệnh7đoạn/refresh/thư viện nguyên. Mobile360/390 không tràn;11job/12attempt/quyền/order giữ hash. Fixture đã revoked/0token hoạt động,0OpenAI/provider mock mới; không sửa app/QA3062/3070/worker. Provider thật/chất lượng/ETA vẫn chưa nghiệm thu. [Kiểm UI và giới hạn](AI-PAID-PACKAGE36-RECOVERY-QA.md); [supervisor/28test/build Gói3.6](AI-PAID-PACKAGE36-HANDOFF.md).
 
 ## 30/10 — Gói3.5 đã kiểm runtime mock trên QA3115
 

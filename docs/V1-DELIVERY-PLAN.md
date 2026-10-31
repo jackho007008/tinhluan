@@ -1,9 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
 <a id="package36-supervisor"></a>
-## Gói3.6 — supervisor và operator, còn kiểm browser paid
+## Gói3.6 — supervisor/operator và kiểm UI QA3116
 
-Đã triển khai launchd→consumer hữu hạn, scope/lock/heartbeat, operator states và budget UTC;28/28test/typecheck/build. QA clone paymenttest→11jobs;9completed/2uncertain,12CREATE/24GET HTTPmock/0OpenAI. Clone GET-only crash/restart cùng receipt/attempt khi budgetCREATE0. APIrefresh đạt; UI browser paid/library chưa xác minh, chưa có phiên hợp lệ và recovery fixture bị auto-review từ chối. Label đã dừng, không main/18queued; QA cũ offline không tự khởi động. Không nghiệm thu provider thật/ETA hoặc triển khai3.7/QA3062. [Bàn giao](AI-PAID-PACKAGE36-HANDOFF.md).
+Một recovery fixture đúng synthetic owner được cấp quyền, exchange hiện có; browser9/11,72phần khớp bản lưu,2held không retry, Mệnh7đoạn/refresh/thư viện nguyên. Mobile360/390 không tràn;11job/12attempt/quyền/order giữ hash. Fixture đã revoked/0token hoạt động,0OpenAI/provider mock mới; không sửa app/QA3062/3070/worker. Provider thật/chất lượng/ETA vẫn chưa nghiệm thu. [Kiểm UI và giới hạn](AI-PAID-PACKAGE36-RECOVERY-QA.md); [supervisor/28test/build Gói3.6](AI-PAID-PACKAGE36-HANDOFF.md).
 
 <a id="package35-runtime"></a>
 ## Gói3.5 — kiểm runtime Background trên clone

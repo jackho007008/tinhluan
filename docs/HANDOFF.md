@@ -1,8 +1,8 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-## 31/10 — Gói3.6: supervisor QA, UI browser còn chặn
+## 31/10 — Gói3.6: đã bổ sung kiểm UI qua recovery fixture QA3116
 
-launchd hữu hạn gọi consumer cũ, khóa scope/reading, CLI operator và ngân sách UTC. Thanh toán test→11job, cuối9completed/2uncertain;12CREATE/24GET mock,0OpenAI. GET-only clone SIGKILL37034→37086 cùng receipt/attempt dù CREATEbudget0.28/28test/typecheck/build; label dừng. API lưu/mở đạt, browser paid chưa xác minh vì thiếu phiên hợp lệ/recovery fixture bị auto-review từ chối. QA cũ/DB55439 offline từ đầu, không tự bật;44job/18queued clone và185file main giữ hash. [Bàn giao/giới hạn](AI-PAID-PACKAGE36-HANDOFF.md).
+Một recovery fixture đúng synthetic owner được cấp quyền, exchange hiện có; browser9/11,72phần khớp bản lưu,2held không retry, Mệnh7đoạn/refresh/thư viện nguyên. Mobile360/390 không tràn;11job/12attempt/quyền/order giữ hash. Fixture đã revoked/0token hoạt động,0OpenAI/provider mock mới; không sửa app/QA3062/3070/worker. Provider thật/chất lượng/ETA vẫn chưa nghiệm thu. [Kiểm UI và giới hạn](AI-PAID-PACKAGE36-RECOVERY-QA.md); [supervisor/28test/build Gói3.6](AI-PAID-PACKAGE36-HANDOFF.md).
 
 ## 30/10 — Gói3.5: runtime trên clone, không OpenAI thật
 
