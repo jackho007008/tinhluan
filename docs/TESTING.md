@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## Gói3.6 — supervisor runtime mock, UI browser chưa xác minh
+
+28/28 tại ai-background/ai-paid/ai-supervisor trên DB riêng; UTC rollover/reservation, limits/attempt/rights/no duplicate và operator/scope. Typecheck/build QA3116 đạt. HTTPmock paymenttest→11jobs/9completed/2held,12CREATE/24GET local,0OpenAI. Native launchd SIGKILL→PIDmới cùng receipt/attempt/maxNew0; chồng invocation trả already-running. APIrefresh/reopen không CREATE; browser paid/library chưa xác minh do không có phiên hợp lệ, auto-review chặn recovery auth fixture; không ảnh paid/mobile mới. Không toàn E2E/PDF, không coi mock là provider thật. [Bằng chứng và lỗi từng lượt](AI-PAID-PACKAGE36-HANDOFF.md).
+
 ## Gói3.5 — process thật, provider mock
 
 17/17test Background/paid trên DB test riêng; typecheck/build QA3115 đạt. Runtime clone chạy consumer maxNew0: PID5290 SIGTERM→10325→10343,9GET mock,0CREATE/OpenAI; cùng attempt/ID, backoff/cap,404/mấtID,future job,GET khi hết budget. UI sửa pending bị báo hỗ trợ; refresh/thư viện8phần và Mệnh nguyên, mọi job/attempt không tăng sau đọc. Không E2E/PDF/mobile mới hoặc kiểm provider thật. [Bằng chứng](AI-PAID-PACKAGE35-HANDOFF.md).

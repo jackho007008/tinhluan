@@ -436,3 +436,53 @@ it("daily CREATE cap blocks a fresh mock attempt without changing queued data", 
   expect(narrator).not.toHaveBeenCalled();
   expect(await job("Tử Nữ")).toEqual(before);
 });
+it("UTC day rollover resets CREATE count but retains unresolved old reservations across restart", async () => {
+  const { paidBudgetSnapshot } = await import("../lib/ai/budget");
+  const c = await pool.connect();
+  await c.query("BEGIN");
+  try {
+    await c.query("SET LOCAL TIME ZONE 'Asia/Ho_Chi_Minh'");
+    await c.query(
+      "UPDATE ai_reading_attempts SET started_at=now()-interval '2 days',status='completed',estimated_cost_usd=1",
+    );
+    const ids = (
+      await c.query(
+        "SELECT a.id FROM ai_reading_attempts a JOIN ai_reading_jobs j ON j.id=a.job_id WHERE j.edition=$1 ORDER BY a.id LIMIT 2",
+        [PAID_EDITION],
+      )
+    ).rows.map((r) => r.id);
+    expect(ids).toHaveLength(2);
+    await c.query(
+      "UPDATE ai_reading_attempts SET status='uncertain',estimated_cost_usd=NULL,usage='{\"_background\":{\"reservedUsd\":2}}' WHERE id=$1",
+      [ids[0]],
+    );
+    expect(await paidBudgetSnapshot(c, PAID_EDITION)).toEqual({
+      dailyAttempts: 0,
+      accountedUsd: 2,
+    });
+    await c.query(
+      "UPDATE ai_reading_attempts SET started_at=now(),estimated_cost_usd=.5 WHERE id=$1",
+      [ids[1]],
+    );
+    expect(await paidBudgetSnapshot(c, PAID_EDITION)).toEqual({
+      dailyAttempts: 1,
+      accountedUsd: 2.5,
+    });
+    await c.query("SET LOCAL TIME ZONE 'UTC'");
+    expect(await paidBudgetSnapshot(c, PAID_EDITION)).toEqual({
+      dailyAttempts: 1,
+      accountedUsd: 2.5,
+    });
+    await c.query(
+      "UPDATE ai_reading_attempts SET status='completed',estimated_cost_usd=1 WHERE id=$1",
+      [ids[0]],
+    );
+    expect(await paidBudgetSnapshot(c, PAID_EDITION)).toEqual({
+      dailyAttempts: 1,
+      accountedUsd: 0.5,
+    });
+  } finally {
+    await c.query("ROLLBACK");
+    c.release();
+  }
+});

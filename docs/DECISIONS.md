@@ -1,5 +1,11 @@
 # Sổ quyết định Tinh Luận
 
+## 31/10 — Gói3.6: chỉ supervisor QA, mock và operator
+
+**U:** cho supervisor bằng process manager hiện có, scope/ngân sách hữu hạn; thanh toán test→11job trên clone/HTTPmock, không OpenAI thật/QA3062/3070/worker chính/Live/3.7.
+
+**C:** chọn launchd user domain, tái dùng consumer/queue/attempt/locks, thêm private scope heartbeat (không queue mới); ngày ngân sách UTC, reservation unresolved qua ngày.12CREATE/24GET mock/0OpenAI; label đã dừng. API/DB đạt; browser paid còn thiếu phiên hợp lệ, không seed auth sau auto-review từ chối. Dịch vụ cũ offline không tự bật. [Bàn giao](AI-PAID-PACKAGE36-HANDOFF.md).
+
 ## 30/10 — Gói3.5 kiểm vận hành chỉ trên QA riêng
 
 **U:** cho DB QA mới/bản sao kiểm soát, consumer3.4 maxNew0 và provider giả lập; không CREATE thật/18queued gốc/main/Live/3.6.

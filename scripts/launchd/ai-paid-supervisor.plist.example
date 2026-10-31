@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>Label</key><string>com.tinhluan.qa-paid-supervisor</string>
+<key>ProgramArguments</key><array>
+<string>/ABSOLUTE/NODE24</string><string>--env-file=/PRIVATE/runtime.env</string>
+<string>--import</string><string>tsx</string><string>scripts/ai-paid-supervisor.ts</string>
+</array>
+<key>WorkingDirectory</key><string>/APPROVED/CHECKOUT</string>
+<key>RunAtLoad</key><true/>
+<key>StartInterval</key><integer>60</integer>
+<key>KeepAlive</key><false/>
+<key>ThrottleInterval</key><integer>30</integer>
+<key>StandardOutPath</key><string>/PRIVATE/supervisor.log</string>
+<key>StandardErrorPath</key><string>/PRIVATE/supervisor-error.log</string>
+</dict></plist>

@@ -1,3 +1,4 @@
+import { paidBudgetSnapshot } from "./budget";
 import {
   backgroundDecision,
   backgroundLimits,
@@ -136,18 +137,10 @@ export async function runAiMenhJob(
       ).rows[0].count;
       if (outstanding >= limits.maxRunning) return;
       if (row.attempts >= limits.maxAttempts) return;
-      const q = (
-        await c.query(
-          `SELECT count(*) FILTER (WHERE a.started_at>=date_trunc('day',now())) AS count,
-        COALESCE(sum(COALESCE(a.estimated_cost_usd,(a.usage->'_background'->>'reservedUsd')::numeric,$2)),0) AS reserved
-        FROM ai_reading_attempts a JOIN ai_reading_jobs j ON j.id=a.job_id
-        WHERE j.edition=$1 AND (a.started_at>=date_trunc('day',now()) OR a.status IN ('running','uncertain'))`,
-          [PAID_EDITION, limits.reservationUsd],
-        )
-      ).rows[0];
+      const q = await paidBudgetSnapshot(c, PAID_EDITION);
       if (
-        +q.count >= limits.maxDailyCreates ||
-        +q.reserved + limits.reservationUsd > limits.dailyBudgetUsd
+        q.dailyAttempts >= limits.maxDailyCreates ||
+        q.accountedUsd + limits.reservationUsd > limits.dailyBudgetUsd
       )
         return;
       state.reservedUsd = limits.reservationUsd;

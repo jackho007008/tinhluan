@@ -1,3 +1,6 @@
+import fs from "node:fs/promises";
+import { paidBudgetSnapshot } from "../lib/ai/budget";
+import { operatorDisposition } from "../lib/ai/operator";
 /** Operator CLI only. Deliberately selects no prompt, content, owner or credential. */
 import { pool } from "../lib/db";
 import { PAID_EDITION } from "../lib/ai/paid-contract";
@@ -8,7 +11,7 @@ if (!id || !validReadingId(id)) throw Error("AI_PAID_READING_SCOPE_REQUIRED");
 try {
   const rows = (
     await pool.query(
-      `SELECT j.palace,j.status,j.error_code,j.attempts,j.run_after,j.completed_at,
+      `SELECT j.palace,j.status,j.error_code,j.retryable,j.attempts,j.run_after,j.completed_at,
   a.usage,a.estimated_cost_usd,a.response_id IS NOT NULL AS has_response_id,a.provider AS attempt_provider,
   j.result->'cost' AS cost,j.result->'timing' AS timing
   FROM ai_reading_jobs j LEFT JOIN ai_reading_attempts a ON a.id=j.attempt_id
@@ -16,15 +19,7 @@ try {
       [id, PAID_EDITION],
     )
   ).rows;
-  const budget = (
-    await pool.query(
-      `SELECT count(*) FILTER(WHERE a.started_at>=date_trunc('day',now())) AS daily_attempts,
-  COALESCE(sum(COALESCE(a.estimated_cost_usd,(a.usage->'_background'->>'reservedUsd')::numeric,$2)),0) AS accounted_usd
-  FROM ai_reading_attempts a JOIN ai_reading_jobs j ON j.id=a.job_id WHERE j.edition=$1
-  AND (a.started_at>=date_trunc('day',now()) OR a.status IN ('running','uncertain'))`,
-      [PAID_EDITION, backgroundLimits().reservationUsd],
-    )
-  ).rows[0];
+  const budget = await paidBudgetSnapshot(pool, PAID_EDITION);
   const counts = Object.fromEntries(
     ["queued", "running", "completed", "uncertain", "error"].map((s) => [
       s,
@@ -33,6 +28,7 @@ try {
   );
   const jobs = rows.map((r) => ({
     palace: r.palace,
+    operator: operatorDisposition(r),
     status: r.status,
     attempts: r.attempts,
     reconciliations: r.usage?._background?.checks || 0,
@@ -61,16 +57,49 @@ try {
     cost: r.cost || null,
     timing: r.timing || null,
   }));
+  let supervisor: unknown = null;
+  if (process.env.AI_PAID_SCOPE_FILE) {
+    try {
+      const scope = JSON.parse(
+        await fs.readFile(process.env.AI_PAID_SCOPE_FILE, "utf8"),
+      );
+      let state: any = {};
+      try {
+        state = JSON.parse(
+          await fs.readFile(
+            process.env.AI_PAID_SCOPE_FILE + ".state.json",
+            "utf8",
+          ),
+        );
+      } catch {}
+      supervisor = {
+        scopeId: scope.id,
+        readingAllowed:
+          Array.isArray(scope.readingIds) && scope.readingIds.includes(id),
+        maxRuns: scope.maxRuns,
+        runs: state.runs || 0,
+        expiresAt: scope.expiresAt,
+        lastState: state.state || "not-run",
+        startedAt: state.startedAt,
+        finishedAt: state.finishedAt,
+        scopeExpired: Date.now() >= Date.parse(scope.expiresAt),
+        runBudgetExhausted: (state.runs || 0) >= scope.maxRuns,
+      };
+    } catch {
+      supervisor = { state: "configuration-unavailable", needsOperator: true };
+    }
+  }
   console.log(
     JSON.stringify(
       {
         observedAt: new Date().toISOString(),
         readingId: id,
         counts,
+        supervisor,
         limits: backgroundLimits(),
         budget: {
-          dailyAttempts: +budget.daily_attempts,
-          accountedUsd: +budget.accounted_usd,
+          dailyAttempts: budget.dailyAttempts,
+          accountedUsd: budget.accountedUsd,
           kind: "estimate-and-reservations-not-invoice",
         },
         jobs,

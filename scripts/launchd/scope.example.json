@@ -1,0 +1,13 @@
+{
+  "id": "replace-approved-scope",
+  "database": "REPLACE_DATABASE",
+  "checkout": "/APPROVED/CHECKOUT",
+  "readingIds": ["00000000-0000-4000-8000-000000000036"],
+  "createdAt": "2026-01-01T00:00:00Z",
+  "expiresAt": "2026-01-01T01:00:00Z",
+  "maxRuns": 3,
+  "maxScopesPerRun": 1,
+  "maxNewJobsPerScope": 0,
+  "runtimeMs": 5000,
+  "maxTicks": 20
+}

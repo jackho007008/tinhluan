@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 31/10 — Gói3.6: supervisor QA, UI browser còn chặn
+
+launchd hữu hạn gọi consumer cũ, khóa scope/reading, CLI operator và ngân sách UTC. Thanh toán test→11job, cuối9completed/2uncertain;12CREATE/24GET mock,0OpenAI. GET-only clone SIGKILL37034→37086 cùng receipt/attempt dù CREATEbudget0.28/28test/typecheck/build; label dừng. API lưu/mở đạt, browser paid chưa xác minh vì thiếu phiên hợp lệ/recovery fixture bị auto-review từ chối. QA cũ/DB55439 offline từ đầu, không tự bật;44job/18queued clone và185file main giữ hash. [Bàn giao/giới hạn](AI-PAID-PACKAGE36-HANDOFF.md).
+
 ## 30/10 — Gói3.5: runtime trên clone, không OpenAI thật
 
 QA3115/DB clone kiểm consumer3.4 maxNew0, SIGTERM rồi hai PID mới đối soát cùng receipt/attempt;9GET mock/0CREATE/0OpenAI. UI1→3/11, refresh/thư viện nguyên; sửa pending bị báo cần hỗ trợ, held vẫn cần kiểm tra. CLI giám sát riêng không prompt.17/17test/typecheck/build QA đạt; consumer/mock provider đã dừng,44job/18queued gốc/main nguyên. [Bàn giao và giới hạn](AI-PAID-PACKAGE35-HANDOFF.md).
