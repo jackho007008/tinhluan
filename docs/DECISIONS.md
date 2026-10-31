@@ -1,5 +1,11 @@
 # Sổ quyết định Tinh Luận
 
+## 31/10 — Chỉ nghiệm thu nội dung, không triển khai hoặc API mới
+
+**U:** đọc4bài thật, dry11packet, phân loại thiếu facts/nguồn/lập luận/văn và đề xuất công việc/chi phí; không hạ tầng/API/provider/QA3062/3070/Live/3.7.
+
+**C:** đánh giá chưa đạt thương mại;0request/DB/worker, không sửa bài/prompt/app. C8 thiênMệnh là vấn đề chọn ngữ cảnh có bằng chứng; thiếu nguồn trực tiếp ởNô/Tử/Tật vàPhu mỏng giữ nguyên. Mọi thay đổi chọn nguồn/prompt/phạm vi gói và kế hoạchAPI trong báo cáo chỉ là **đề xuất**, chưa thành phê duyệt hoặc quyền mởbán. [Báo cáo](AI-PAID-CONTENT-ACCEPTANCE-20261031.md).
+
 ## 31/10 — Phê duyệt riêng một recovery fixture QA3116
 
 **U:** cho đúng một fixture trên clone55446/report38d15aef…, gắn synthetic owner hiện hữu qua recovery hiện có; không chèn cookie tùy ý, sửa grant/order/job hoặc gọi OpenAI. Sau kiểm phải thu hồi.

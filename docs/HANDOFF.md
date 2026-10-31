@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 31/10 — Nghiệm thu nội dung trả phí: chưa đạt thương mại
+
+Đọc toàn văn4bài thật, dry11cung offline trên snapshot có sẵn;159facts/cung,0provider/DB/worker. Phát hiện C8 của Quan/Tài bị Mệnh chiếm hết, nguồn phù hợp bị cắt; Nô/Tử/Tật0trực tiếp trên mẫu, Phu chỉKhoa. Quan3.3 cải thiện nhưng chưa đủ; báo cáo có9tiêu chí/bài,ma trậnCSV,phân loạiA–F,văn mẫu đề xuất và kế hoạchAPI có gate/ngân sách, chưa thực thi. Không sửa app/bài lưu/test/build/QA/Live/Gói3.7. [Báo cáo và đề xuất](AI-PAID-CONTENT-ACCEPTANCE-20261031.md).
+
 ## 31/10 — Gói3.6: đã bổ sung kiểm UI qua recovery fixture QA3116
 
 Một recovery fixture đúng synthetic owner được cấp quyền, exchange hiện có; browser9/11,72phần khớp bản lưu,2held không retry, Mệnh7đoạn/refresh/thư viện nguyên. Mobile360/390 không tràn;11job/12attempt/quyền/order giữ hash. Fixture đã revoked/0token hoạt động,0OpenAI/provider mock mới; không sửa app/QA3062/3070/worker. Provider thật/chất lượng/ETA vẫn chưa nghiệm thu. [Kiểm UI và giới hạn](AI-PAID-PACKAGE36-RECOVERY-QA.md); [supervisor/28test/build Gói3.6](AI-PAID-PACKAGE36-HANDOFF.md).
