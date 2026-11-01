@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 01/11 — Nguồn Nô–Tử–Phu và ngữ cảnh Quan–Tài: đã kiểm mock
+
+Bổ sung bốn trích ý Trung Châu có điều kiện; trên mẫu đối chứng Nô0→1, Tử0→1, Phu1→2nguồn trực tiếp hẹp. Retrieval1.4/prompt2.2 thêm contextGuide Quan/Tài và guard cung gốc C theo phiên bản; không đổi schemaV2, facts159, bài cũ hoặc Mệnh.92test/typecheck/build cách ly đạt;0API thật, không cập nhậtQA3062/3070. Chưa kết luận văn Astra mới hoặc phát hành. [Nguồn, điều kiện, dry-run và giới hạn](AI-PAID-SOURCES-CONTEXT-20261101.md).
+
 ## 01/11 — AI trả phí: ba bài Reading V2 thật, chưa đạt phát hành
 
 Đã sửa phân loại billing/provider và lỗi validation V2; retrieval1.3.0 bổ sung trích ý sách có điều kiện, prompt2.1.0 giữ schemaV2 và mọi bản cũ. QA3120/DB55450 riêng: 3CREATE/8GET, Quan focused, Tài/Phúc limited; ước tính1,863740USD. 98test liên quan riêng biệt, typecheck/build và HTTP quyền/lưu–mở đạt; không browser/mobile mới. Văn gọn hơn nhưng Quan/Tài bỏ ngữ cảnh hữu ích; Nô/Tử và Phu còn thiếu nền. Không phát hành, không thêm API hoặc QA3062/3070; lịch sử/Mệnh giữ nguyên. [Toàn văn, ma trận11cung và kết luận](AI-PAID-RELEASE-READINESS-20261101.md).

@@ -201,7 +201,7 @@ it("selects existing source-specific methods as reference-only, never promotes H
   const t = paidInput(record, "Tài Bạch"),
     q = paidInput(record, "Quan Lộc"),
     p = paidInput(record, "Phu Thê");
-  expect(t.knowledgeVersion).toBe("paid-retrieval-1.3.0");
+  expect(t.knowledgeVersion).toBe("paid-retrieval-1.4.0");
   expect(
     t.knowledge.find((k) => k.id === "paid-method.inherited-NPL-27"),
   ).toMatchObject({

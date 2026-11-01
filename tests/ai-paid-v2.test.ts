@@ -1,4 +1,5 @@
-import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v21";
+import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v22";
+import { PAID_PROMPT_CURRENT as PAID_PROMPT_V21 } from "../lib/ai/paid-prompt-v21";
 import { it, expect, afterEach, vi } from "vitest";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
@@ -293,7 +294,7 @@ it("writer is opt-in while V1/V2 schema and prompts remain addressable", () => {
   });
   expect(() => paidOutputSchema("unknown")).toThrow();
 });
-it.each([PAID_V1_PROMPTS[3], PAID_PROMPT_V2, PAID_PROMPT_CURRENT])(
+it.each([PAID_V1_PROMPTS[3], PAID_PROMPT_V2, PAID_PROMPT_V21, PAID_PROMPT_CURRENT])(
   "SDK CREATE/GET uses saved %s even if writer flag changes (fetch mock)",
   async (version) => {
     vi.stubEnv("OPENAI_API_KEY", "unit-test-not-live");

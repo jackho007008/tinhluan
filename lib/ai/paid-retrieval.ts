@@ -279,5 +279,6 @@ export function paidKnowledge(record: InternalReading, target: string) {
     excluded,
     ruleSetHash: execution.ruleSetHash,
     contextSelection,
+    contextMetadata,
   };
 }

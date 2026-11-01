@@ -81,10 +81,23 @@ export type MenhInput = {
     | "paid-retrieval-1.1.0"
     | "paid-retrieval-1.1.1"
     | "paid-retrieval-1.2.0"
-    | "paid-retrieval-1.3.0";
+    | "paid-retrieval-1.3.0"
+    | "paid-retrieval-1.4.0";
   facts: AiFact[];
   knowledge: Knowledge[];
   missing: string[];
+  contextGuide?: {
+    version: "paid-context-guide-1.0.0";
+    links: {
+      sourcePalace: string;
+      relation: "trine" | "opposition";
+      sourceKnowledgeIds: string[];
+      targetKnowledgeIds: string[];
+      factIds: string[];
+      focus: string;
+      limits: string[];
+    }[];
+  };
   editorial?: {
     version: string | null;
     status: "available" | "absent" | "mismatch";

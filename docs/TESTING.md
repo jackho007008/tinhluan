@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 01/11 — Nguồn theo cung và hướng dẫn liên hệ
+
+89pure trong8file +3ca DBV2mock55451 đạt; kiểm Lộc/Khoa năm sinh đúng cung, không mượn LộcTồn/tự hóa/sao chiếu, giới hạn nguồn, guide có nền/C/hình học, đủ vòng sao/Quyền, Cmethod-only không ép dùng, một link đủ, nguồn C không bị giấu và Unicode/hoa-thường. Giữ V1pending/receipt/attempt/quyền, SDK chọn đúng saved version. Typecheck/build cách ly cuối đạt;0OpenAI, không E2E/PDF/browser/mobile mới.79artifact và promptcũ nguyên. [Nguồn/dry/mock/log và giới hạn](AI-PAID-SOURCES-CONTEXT-20261101.md).
+
 ## 01/11 — Kiểm hoàn thiện AI trả phí
 
 98test liên quan riêng biệt đạt:74pure,3case bổ sung HTTP429/billing và Bnền không thay nguồn trực tiếp (hai file chạy lại37/37),21integration DBtest55450 cách ly. Có webhook lặp/quyền11jobs, V1pending, ba mức coverage, billing terminal giữ receipt/quyền, validation V2 không thành uncertain, Background và y khoa. Typecheck/buildQA3120 đạt.3CREATEAstra/8GET→3completed, đọc toàn văn; HTTP404/200/resultDB, mở lại/thư viện không tăng job/attempt/API, dữ liệu gốc7bảng/44job/49artifact giữ nguyên. Chưa browser/mobile mới, không toànE2E/PDF. [Log, lỗi từng lượt và giới hạn](AI-PAID-RELEASE-READINESS-20261101.md).

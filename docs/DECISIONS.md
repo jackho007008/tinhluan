@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 01/11 — Chỉ tiếp tục nguồn và ngữ cảnh bằng mock
+
+Chủ dự án giao tận dụng kho sách đã xử lý cho Nô/Tử/Phu và cải thiện Quan/Tài dùng liên cung; **chưa gọi thêm API, không cập nhậtQA3062/3070**. Đây là phạm vi thay cho vòng thử thật đã kết thúc: chỉ code/dry/mock, không tái sử dụng quyền CREATE cũ. Bốn trích ý giữ điều kiện và quan điểm nguồn, không mở dự đoán số con/hôn nhân/y khoa, không nghiệm thu thương mại. [Bằng chứng và trạng thái](AI-PAID-SOURCES-CONTEXT-20261101.md).
+
 ## 01/11 — Hoàn thiện AI trả phí trong vòng hữu hạn
 
 Chủ dự án cho phép tận dụng facts/V1 và kho sách đã xử lý, kể cả tri thức nền chưa thành rule, để Astra phân tích có căn cứ; không trở lại chương trình469rule. Giữ ReadingV2 linh hoạt và Mệnh miễn phí V1/Luna. Cho phép tối đa3CREATE mới/$5dự phòng trên QA riêng, không retry hai attempt credit cũ, không phát hành hoặc QA3062/3070. Thực tế chọn trước Quan/Tài/Phúc theo nền hợp lệ,3completed/1,863740USDước tính, không gọi thêm. Phạm vi focused/limited không là chứng nhận chuyên sâu thương mại. [Bằng chứng và kết luận chưa đạt](AI-PAID-RELEASE-READINESS-20261101.md).

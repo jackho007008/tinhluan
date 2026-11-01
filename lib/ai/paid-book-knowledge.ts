@@ -1,6 +1,7 @@
 import type { InternalReading } from "../internal-review/reading-store";
 import type { Knowledge } from "./contract";
 import { paidFacts } from "./paid-facts";
+import { paidTopicBooks } from "./paid-topic-books";
 
 /** Small source-backed editorial extracts, not an evaluator or a new chart rule
  * system. General star meanings remain reference-only; conditions are retained.
@@ -8,7 +9,8 @@ import { paidFacts } from "./paid-facts";
 export function paidBookKnowledge(record: InternalReading, target: string): Knowledge[] {
   const palace = record.snapshot.chart.palaces.find(p => p.name === target);
   if (!palace || target === "Tật Ách") return [];
-  const facts = paidFacts(record, target).facts;
+  const input = paidFacts(record, target);
+  const facts = input.facts;
   const traced = (name: string, field: string) => facts.some(f =>
     f.provenance?.palace === target && f.provenance.field === field &&
     f.provenance.verification === "source-traced" && f.text.includes(name));
@@ -40,5 +42,5 @@ export function paidBookKnowledge(record: InternalReading, target: string): Know
     add("npl262-hao-boundary", "Giới hạn điều kiện Nhị Hao theo Nguyễn Phát Lộc", "Mục hao tiền của tác giả nói Nhị Hao hãm và dành ngoại lệ Mão, Dậu; văn nguồn có các lời hoang phí, túng thiếu và nợ nần. Phạm vi nhóm Nhị Hao và bảng hãm của nguồn này phải giữ riêng, không tự áp sang một Đại Hao có trạng thái thuộc bảng khác.", 262,
       ["Nguồn xét Đại/Tiểu Hao theo nhóm, điều kiện hãm và ngoại lệ Mão/Dậu; cần đối chiếu bảng riêng của tác giả."],
       ["Không đổi trạng thái snapshot để khớp sách; không gán các lời hao tiền, nợ nần hoặc nghiện cho người đọc.", "Không dùng làm phép phối hợp Liêm–Hao hoặc nguồn xác nhận đặc tính tài chính cá nhân."]);
-  return items;
+  return [...items, ...paidTopicBooks(input, target)];
 }

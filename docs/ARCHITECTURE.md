@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 01/11 — Retrieval1.4 và prompt2.2, chưa gọi provider
+
+Bốn trích ý sách lấy facts đã kiểm receipt, giữ vị trí điều kiện khác chủ đề nhận lời (Lộc tạiNô →vế đối đãi Tử đúng nguồn). contextGuide chỉ trỏ C/A-B/facts có quan hệ đã kiểm, không tri thức mới; bỏ method-only, không nhân bản văn nguồn. Prompt2.2 giữ schemaV2, guard C tên cung gốc trên cả tổng hợp chỉ áp phiên bản mới. reviewPaidContextUse chỉ đọc, không coverage/status/retry tự động; job/attempt cũ giữ đúng prompt. Không queue/DB/UI/offer/Mệnh mới. [Cách kiểm và giới hạn](AI-PAID-SOURCES-CONTEXT-20261101.md).
+
 ## 01/11 — Lỗi provider và nguồn nền trả phí
 
 Generation giữ lỗi terminal an toàn cùng receipt/usage/timing; worker phân biệt billing, incomplete/cancelled, provider failure và validation V2, không biến credit thành schema hoặc tự CREATE lại. Operator có billing-held. Retrieval1.3.0 giữ evaluator/Cbudget, thêm trích ý sách B/reference-only có điều kiện; validator chỉ cho tổng hợp cùng nền A/B direct. Prompt2.1.0 dùng schema2.0.0, chọn theo job/attempt; reader giữ V1/V2/2.0 và writer vẫn opt-in. Không migration, queue, offer/edition hoặc Mệnh mới. [Kiến trúc thực kiểm và giới hạn](AI-PAID-RELEASE-READINESS-20261101.md).
