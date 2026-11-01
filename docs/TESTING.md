@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 01/11 — Retrieval thư viện và prompt2.3, mock
+
+100test/9file pure và3test DB V2 trên clone55453 đạt; điều kiện/hash/nguồn/nền limited/anchor/C/y khoa/V1-V2/legacy đã kiểm. Typecheck/build cách ly Node24/keyrỗng đạt, không browser/mobile mới/E2E/PDF/API thật. Sáu kết quả2.1/2.2 qua validator cũ,113artifact giữ hash. DB test đã dừng; không consumer/supervisor hoặc QA3062/3070. [Lỗi đầu, logs và phạm vi](AI-PAID-LIBRARY-SYNTHESIS-20261101.md).
+
 ## 01/11 — Nguồn theo cung và hướng dẫn liên hệ
 
 89pure trong8file +3ca DBV2mock55451 đạt; kiểm Lộc/Khoa năm sinh đúng cung, không mượn LộcTồn/tự hóa/sao chiếu, giới hạn nguồn, guide có nền/C/hình học, đủ vòng sao/Quyền, Cmethod-only không ép dùng, một link đủ, nguồn C không bị giấu và Unicode/hoa-thường. Giữ V1pending/receipt/attempt/quyền, SDK chọn đúng saved version. Typecheck/build cách ly cuối đạt;0OpenAI, không E2E/PDF/browser/mobile mới.79artifact và promptcũ nguyên. [Nguồn/dry/mock/log và giới hạn](AI-PAID-SOURCES-CONTEXT-20261101.md).

@@ -6,6 +6,8 @@ import { executeRules } from "../interpretation-rules/execute";
 import { tanBienRules } from "../interpretation-rules/profile-rules";
 import { ruleReference, unresolvedTemplate } from "./v1-editorial";
 import { paidRelations } from "./paid-facts";
+import { paidLibrary } from "./paid-library";
+import { paidFacts } from "./paid-facts";
 import { paidBookKnowledge } from "./paid-book-knowledge";
 import type { Knowledge } from "./contract";
 export const PAID_THEMES: Record<string, string[]> = {
@@ -209,7 +211,10 @@ export function paidKnowledge(record: InternalReading, target: string) {
     "Nô Bộc": ["inherited-NPL-02", "inherited-NPL-42"],
     "Tử Nữ": ["inherited-NPL-46", "inherited-NPL-07"],
   };
-  for (const id of ["inherited-NPL-01", ...(topicMethods[target] || ["inherited-NPL-07", specificMethod])]) {
+  for (const id of [
+    "inherited-NPL-01",
+    ...(topicMethods[target] || ["inherited-NPL-07", specificMethod]),
+  ]) {
     const file = path.join(root, "records", id + ".json");
     if (!fs.existsSync(file)) continue;
     const r = JSON.parse(fs.readFileSync(file, "utf8"));
@@ -246,6 +251,19 @@ export function paidKnowledge(record: InternalReading, target: string) {
     });
   }
   for (const k of paidBookKnowledge(record, target)) add(k);
+  const library = paidLibrary(paidFacts(record, target), target);
+  for (const replacement of library.replacements) {
+    const oldIndex = items.findIndex((k) => k.id === replacement.oldId);
+    if (oldIndex >= 0) {
+      items.splice(oldIndex, 1);
+      excluded.push({
+        id: replacement.oldId,
+        reason: "equivalent-reviewed-passage:" + replacement.newId,
+      });
+    }
+  }
+  for (const k of library.items) add(k);
+  excluded.push(...library.excluded);
   const ranked = items.sort(
     (a, b) =>
       a.group!.localeCompare(b.group!) ||

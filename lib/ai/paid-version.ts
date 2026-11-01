@@ -1,8 +1,15 @@
 import { narrationSchema } from "./contract";
 import { PAID_PROMPT_V2, paidReadingV2Schema } from "./paid-reading-v2";
 import { PAID_PROMPT_CURRENT as PAID_PROMPT_V21 } from "./paid-prompt-v21";
-import { PAID_PROMPT_CURRENT } from "./paid-prompt-v22";
-export const isPaidV2Prompt = (version: string) => [PAID_PROMPT_V2, PAID_PROMPT_V21, PAID_PROMPT_CURRENT].includes(version);
+import { PAID_PROMPT_CURRENT as PAID_PROMPT_V22 } from "./paid-prompt-v22";
+import { PAID_PROMPT_CURRENT } from "./paid-prompt-v23";
+export const isPaidV2Prompt = (version: string) =>
+  [
+    PAID_PROMPT_V2,
+    PAID_PROMPT_V21,
+    PAID_PROMPT_V22,
+    PAID_PROMPT_CURRENT,
+  ].includes(version);
 export const PAID_V1_PROMPTS = [
   "paid-palaces-vietnamese-1.0.0",
   "paid-palaces-vietnamese-1.0.1",

@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 01/11 — Tiếp tục retrieval sách và tổng hợp, chỉ mock
+
+Chủ dự án giao hoàn thiện retrieval từ sách đã xử lý và cách Astra tổng hợp, ưu tiên Nô/Tử/Phu/Tài; kiểm mock trước, không API thêm, giữ bài cũ/QA3062/3070. Trong phạm vi này triển khai index7đoạn có điều kiện/dấu vết và prompt2.3, không đòi nguyên văn toàn tổ hợp để tổng hợp có mức độ. Chưa phê duyệt văn mới/phát hành, không thay quyết định Tật/y khoa hoặc quyền lịch sử. [Bàn giao và giới hạn](AI-PAID-LIBRARY-SYNTHESIS-20261101.md).
+
 ## 01/11 — Quyền kiểm Astra2.2 hữu hạn
 
 Chủ dự án cho phép tối đa3CREATE mới Quan Lộc/Tài Bạch/Phu Thê trên QA riêng, ngân sách dự phòng3USD; Background đối soát cùng receipt, không CREATE retry uncertain, giữ bài cũ và không QA3062/3070. Quyền này thay giới hạn chưa API của lô nguồn/ngữ cảnh trước, không tái mở các attempt credit cũ hoặc cho phép gọi thêm cung. Dự toán token trước dispatch2,91775USD; reservation nội bộ không là hard cap provider. [Kết quả vòng kiểm](AI-PAID-ASTRA22-EVALUATION-20261101.md).

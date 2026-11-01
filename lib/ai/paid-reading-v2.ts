@@ -84,7 +84,11 @@ export function paidV2Shape(raw: unknown): PaidReadingV2 {
 }
 
 /** Checks structural provenance, not a proof that every sentence follows a source. */
-export function validatePaidV2(raw: unknown, input: MenhInput) {
+export function validatePaidV2(
+  raw: unknown,
+  input: MenhInput,
+  allowLibraryFoundation = false,
+) {
   const r = paidV2Shape(raw);
   for (const s of r.sections)
     for (const p of s.paragraphs) {
@@ -97,8 +101,48 @@ export function validatePaidV2(raw: unknown, input: MenhInput) {
       if (p.basis === "facts" && knowledge.length)
         throw Error("AI_REFERENCE_SCOPE");
       if (p.basis !== "facts") {
-        if (knowledge.some(k => k?.group === "B" && k.application === "reference-only") &&
-            !knowledge.some(k => ["A", "B"].includes(k?.group || "") && k?.application === "direct"))
+        if (
+          allowLibraryFoundation &&
+          knowledge.some(
+            (k) =>
+              k?.passage &&
+              (!k.passage.anchorFactIds.length ||
+                k.passage.anchorFactIds.some((id) => !p.factIds.includes(id))),
+          )
+        )
+          throw Error("AI_REFERENCE_SCOPE");
+        const backgrounds = knowledge.filter(
+          (k) => k?.group === "B" && k.application === "reference-only",
+        );
+        const direct = knowledge.some(
+          (k) =>
+            ["A", "B"].includes(k?.group || "") && k?.application === "direct",
+        );
+        const grounded =
+          backgrounds.length > 0 &&
+          backgrounds.every(
+            (k) =>
+              k!.passage?.version === "paid-library-1.0.0" &&
+              k!.passage.kind === "foundation" &&
+              /^[a-f0-9]{64}$/.test(k!.passage.digest) &&
+              k!.passage.anchorFactIds.length > 0 &&
+              k!.passage.anchorFactIds.every(
+                (id) =>
+                  p.factIds.includes(id) &&
+                  input.facts.some(
+                    (f) =>
+                      f.id === id &&
+                      f.provenance?.verification === "source-traced" &&
+                      f.provenance.palace === input.paidTarget?.palace &&
+                      f.provenance.relation === "target",
+                  ),
+              ),
+          );
+        if (
+          backgrounds.length &&
+          !direct &&
+          !(allowLibraryFoundation && p.basis === "ai-synthesis" && grounded)
+        )
           throw Error("AI_REFERENCE_SCOPE");
         if (
           !knowledge.length ||

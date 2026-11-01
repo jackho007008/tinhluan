@@ -1,4 +1,4 @@
-import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v22";
+import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v23";
 import { PAID_PROMPT_CURRENT as PAID_PROMPT_V21 } from "../lib/ai/paid-prompt-v21";
 import { it, expect, afterEach, vi } from "vitest";
 import { createElement } from "react";

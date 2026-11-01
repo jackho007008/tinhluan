@@ -1,7 +1,14 @@
 import { PAID_PROMPT_V2, validatePaidV2 } from "./paid-reading-v2";
 import { paidInstructionsV2 } from "./paid-prompt-v2";
-import { paidInstructionsV21, PAID_PROMPT_CURRENT as PAID_PROMPT_V21 } from "./paid-prompt-v21";
-import { paidInstructionsV22, PAID_PROMPT_CURRENT } from "./paid-prompt-v22";
+import {
+  paidInstructionsV21,
+  PAID_PROMPT_CURRENT as PAID_PROMPT_V21,
+} from "./paid-prompt-v21";
+import { paidInstructionsV23, PAID_PROMPT_CURRENT } from "./paid-prompt-v23";
+import {
+  paidInstructionsV22,
+  PAID_PROMPT_CURRENT as PAID_PROMPT_V22,
+} from "./paid-prompt-v22";
 import { validatePaidContextAttribution } from "./paid-context-guide";
 import { isPaidV2Prompt } from "./paid-version";
 import { violatesPaidMedicalScope } from "./paid-safety";
@@ -57,7 +64,8 @@ export function paidInstructions(input: MenhInput, version = PAID_PROMPT) {
     throw Error("AI_PAID_TARGET_INVALID");
   if (version === PAID_PROMPT_V2) return paidInstructionsV2(input);
   if (version === PAID_PROMPT_V21) return paidInstructionsV21(input);
-  if (version === PAID_PROMPT_CURRENT) return paidInstructionsV22(input);
+  if (version === PAID_PROMPT_V22) return paidInstructionsV22(input);
+  if (version === PAID_PROMPT_CURRENT) return paidInstructionsV23(input);
   if (
     ["paid-palaces-vietnamese-1.0.0", "paid-palaces-vietnamese-1.0.1"].includes(
       version,
@@ -75,8 +83,9 @@ export function validatePaidNarration(
   version = PAID_PROMPT,
 ) {
   if (isPaidV2Prompt(version)) {
-    const content = validatePaidV2(raw, input);
-    if (version === PAID_PROMPT_CURRENT) validatePaidContextAttribution(input, content);
+    const content = validatePaidV2(raw, input, version === PAID_PROMPT_CURRENT);
+    if ([PAID_PROMPT_CURRENT, PAID_PROMPT_V22].includes(version))
+      validatePaidContextAttribution(input, content);
     return content;
   }
   if (

@@ -12,7 +12,15 @@ export function paidInput(record: InternalReading, palace: string) {
     throw Error("AI_UNVERIFIED_SNAPSHOT");
   const retrieval = paidKnowledge(record, palace);
   input.knowledge = retrieval.items;
-  input.knowledgeVersion = "paid-retrieval-1.4.0";
+  if (
+    retrieval.excluded.some(
+      (e) => e.id === "paid-library" && e.reason === "missing-or-invalid-index",
+    )
+  )
+    input.missing.push(
+      "Kho đoạn sách đã duyệt chưa sẵn sàng; chỉ dùng phần nguồn có thật trong yêu cầu này.",
+    );
+  input.knowledgeVersion = "paid-retrieval-1.5.0";
   const guide = paidContextGuide(input, retrieval.contextMetadata);
   if (guide) input.contextGuide = guide;
   if (!input.knowledge.some((k) => k.application === "direct"))

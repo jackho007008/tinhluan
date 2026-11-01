@@ -1,5 +1,10 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 01/11 — Retrieval thư viện1.5/prompt2.3: đã kiểm mock
+
+Bộ chọn đọc index7đơn vị từ8trang chữ đã xử lý, giữ điều kiện/hash/ngoại lệ; Nô1→3, Phu2→3nguồn trực tiếp trên mẫu, Tử vẫn1/Tài3. Nghĩa nền2.3 có thể tổng hợp limited với neo đủ, không cần directV1; không nâng thành lời nguồn/focused.100test+3DBmock/typecheck/build đạt;0API, sáu bài2.1/2.2 và113artifact cũ nguyên. DBtest55453 đã dừng, không deployQA3062/3070 hoặc nghiệm thu văn Astra mới. [Nguồn, dry-run, kho private và giới hạn](AI-PAID-LIBRARY-SYNTHESIS-20261101.md).
+
+
 ## 01/11 — Astra2.2 thật: ba bài lưu đúng, chưa đạt phát hành
 
 QA3121/DB55452 riêng, code866bd37:3CREATE/9ResponsesGET/1attempt mỗi cung, tổngước1,8457525USD trong dự phòng3USD. Quan/Tài focused, Phu limited, mỗi bài3phần; Quan/Tài đã dùng C đúng cung gốc, Phu thêm nét tương tác từ nguồn mới. HTTP quyền/lưu–mở và85hash lịch sử đạt; không browser/mobile mới hoặc chạy lại test/build. QA riêng đã backup/dừng, khôngQA3062/3070. Vẫn thiếu phối hợp/độ phủ và chiều sâu để phát hành11cung. [Toàn văn, nguồn, đối chứng và số đo](AI-PAID-ASTRA22-EVALUATION-20261101.md).

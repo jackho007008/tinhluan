@@ -49,6 +49,12 @@ export type AiFact = {
   };
 };
 export type Knowledge = {
+  passage?: {
+    version: "paid-library-1.0.0";
+    digest: string;
+    kind: "direct" | "foundation";
+    anchorFactIds: string[];
+  };
   group?: "A" | "B" | "C" | "D";
   application?: "direct" | "context" | "reference-only";
   subjectPalaces?: string[];
@@ -82,7 +88,8 @@ export type MenhInput = {
     | "paid-retrieval-1.1.1"
     | "paid-retrieval-1.2.0"
     | "paid-retrieval-1.3.0"
-    | "paid-retrieval-1.4.0";
+    | "paid-retrieval-1.4.0"
+    | "paid-retrieval-1.5.0";
   facts: AiFact[];
   knowledge: Knowledge[];
   missing: string[];
