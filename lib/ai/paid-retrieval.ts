@@ -6,6 +6,7 @@ import { executeRules } from "../interpretation-rules/execute";
 import { tanBienRules } from "../interpretation-rules/profile-rules";
 import { ruleReference, unresolvedTemplate } from "./v1-editorial";
 import { paidRelations } from "./paid-facts";
+import { paidBookKnowledge } from "./paid-book-knowledge";
 import type { Knowledge } from "./contract";
 export const PAID_THEMES: Record<string, string[]> = {
   "Quan Lộc": ["work"],
@@ -201,7 +202,14 @@ export function paidKnowledge(record: InternalReading, target: string) {
           storedRings?.boshi12 === "Tấu Thư"
         ? "inherited-NPL-33"
         : "inherited-NPL-15";
-  for (const id of ["inherited-NPL-01", "inherited-NPL-07", specificMethod]) {
+  const topicMethods: Record<string, string[]> = {
+    "Quan Lộc": ["inherited-NPL-42", specificMethod],
+    "Tài Bạch": ["inherited-NPL-22", specificMethod],
+    "Phu Thê": ["inherited-NPL-45", "inherited-NPL-15"],
+    "Nô Bộc": ["inherited-NPL-02", "inherited-NPL-42"],
+    "Tử Nữ": ["inherited-NPL-46", "inherited-NPL-07"],
+  };
+  for (const id of ["inherited-NPL-01", ...(topicMethods[target] || ["inherited-NPL-07", specificMethod])]) {
     const file = path.join(root, "records", id + ".json");
     if (!fs.existsSync(file)) continue;
     const r = JSON.parse(fs.readFileSync(file, "utf8"));
@@ -237,6 +245,7 @@ export function paidKnowledge(record: InternalReading, target: string) {
       subjectPalaces: [],
     });
   }
+  for (const k of paidBookKnowledge(record, target)) add(k);
   const ranked = items.sort(
     (a, b) =>
       a.group!.localeCompare(b.group!) ||

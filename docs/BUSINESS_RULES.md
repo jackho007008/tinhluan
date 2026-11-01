@@ -1,5 +1,9 @@
 # Tinh Luận — hợp đồng sản phẩm, nguồn và quyết định
 
+## 01/11 — Phạm vi AI trả phí hiện hành
+
+Astra được tổng hợp từ facts và tri thức phù hợp, gồm nguồn nền đã xử lý chưa chuyển thành rule; nền tham khảo không tự thành lời cá nhân. Không bỏ điều kiện hoặc chọn bảng nguồn thắng. ReadingV2 được ngắn/limited/insufficient; quyền đã mua giữ nguyên, không gọi insufficient là bài chuyên sâu đã giao. Không thay gói/offer hoặc mở bán; Mệnh miễn phí vẫnV1/Luna. Ba bài QA đã lưu là bằng chứng nội dung có giới hạn, chưa nghiệm thu thương mại11cung. [Kết luận và ma trận](AI-PAID-RELEASE-READINESS-20261101.md).
+
 ## Gói3.1 — phạm vi QA đã được phép
 
 Yêu cầu triển khai mới cho phép AI11cung và UX sau payment trên QA riêng, mocktrước; không phải mởbán/Live hoặc thayquyềnlịch sử. Chỉ offerAIedition mới+paid+ready+grant cònhiệulực mớiđược enqueue/read/retry; đơn cũ khôngtự nâng. Mệnhmiễnphí V1/Luna và các kếtquảcompleted giữnguyên. [Bàn giao](AI-PAID-PACKAGE31-HANDOFF.md).

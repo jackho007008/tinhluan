@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 01/11 — Lỗi provider và nguồn nền trả phí
+
+Generation giữ lỗi terminal an toàn cùng receipt/usage/timing; worker phân biệt billing, incomplete/cancelled, provider failure và validation V2, không biến credit thành schema hoặc tự CREATE lại. Operator có billing-held. Retrieval1.3.0 giữ evaluator/Cbudget, thêm trích ý sách B/reference-only có điều kiện; validator chỉ cho tổng hợp cùng nền A/B direct. Prompt2.1.0 dùng schema2.0.0, chọn theo job/attempt; reader giữ V1/V2/2.0 và writer vẫn opt-in. Không migration, queue, offer/edition hoặc Mệnh mới. [Kiến trúc thực kiểm và giới hạn](AI-PAID-RELEASE-READINESS-20261101.md).
+
 ## 01/11 — Paid Reading V2 đã kiểm mock trên QA3118
 
 ContractV2/prompt2.0 riêng, readerV1/V2 và chọn schema theo job đã lưu; writer mặc định tắt, chỉQA3118 bật.84/84test/typecheck/build đạt; browser/mobile360/390, refresh/mở lại và căn cứ đạt. QA11processed/8có bài(1focused/7limited)/3insufficient, không báo11bài sâu giả;44job cũ nguyên. Recovery1fixture đã được duyệt và revoked;0OpenAI. Chưa chất lượng/schemaAPI thật, khôngQA3062/3070/Live. [Bàn giao, mock và giới hạn](AI-PAID-READING-V2-HANDOFF-20261101.md).

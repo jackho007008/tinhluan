@@ -4,13 +4,13 @@ import {
   paidV2Shape,
   type PaidResult,
 } from "./paid-reading-v2";
-import { PAID_V1_PROMPTS } from "./paid-version";
+import { PAID_V1_PROMPTS, isPaidV2Prompt } from "./paid-version";
 /** Pure reader shared by server and client. No shape guessing or legacy fallback. */
 export function readPaidContent(
   result: Pick<PaidResult, "content" | "promptVersion">,
 ) {
   try {
-    if (result.promptVersion === PAID_PROMPT_V2)
+    if (isPaidV2Prompt(result.promptVersion))
       return { version: 2 as const, content: paidV2Shape(result.content) };
     if (!(PAID_V1_PROMPTS as readonly string[]).includes(result.promptVersion))
       return null;

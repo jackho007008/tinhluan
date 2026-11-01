@@ -1,5 +1,7 @@
 import { PAID_PROMPT_V2, validatePaidV2 } from "./paid-reading-v2";
 import { paidInstructionsV2 } from "./paid-prompt-v2";
+import { paidInstructionsV21, PAID_PROMPT_CURRENT } from "./paid-prompt-v21";
+import { isPaidV2Prompt } from "./paid-version";
 import { violatesPaidMedicalScope } from "./paid-safety";
 import { newPaidInstructions, paidInstructionsV110 } from "./paid-prompt";
 import { narrationSchema, SECTION_KINDS, type MenhInput } from "./contract";
@@ -7,7 +9,7 @@ export const PAID_EDITION = "paid-palaces-ai-1.0.0";
 export const PAID_PROMPT = "paid-palaces-vietnamese-1.2.0";
 export const paidWritePromptVersion = () =>
   process.env.AI_PAID_READING_V2_ENABLED === "true"
-    ? PAID_PROMPT_V2
+    ? PAID_PROMPT_CURRENT
     : PAID_PROMPT;
 export const PAID_PALACES = [
   "Phụ Mẫu",
@@ -52,6 +54,7 @@ export function paidInstructions(input: MenhInput, version = PAID_PROMPT) {
   )
     throw Error("AI_PAID_TARGET_INVALID");
   if (version === PAID_PROMPT_V2) return paidInstructionsV2(input);
+  if (version === PAID_PROMPT_CURRENT) return paidInstructionsV21(input);
   if (
     ["paid-palaces-vietnamese-1.0.0", "paid-palaces-vietnamese-1.0.1"].includes(
       version,
@@ -68,7 +71,7 @@ export function validatePaidNarration(
   input: MenhInput,
   version = PAID_PROMPT,
 ) {
-  if (version === PAID_PROMPT_V2) return validatePaidV2(raw, input);
+  if (isPaidV2Prompt(version)) return validatePaidV2(raw, input);
   if (
     ![
       "paid-palaces-vietnamese-1.0.0",

@@ -17,6 +17,12 @@ export function operatorDisposition(
       needsOperator: false,
       action: "read-saved-result",
     };
+  if (r.status === "error" && r.error_code === "AI_BILLING_UNAVAILABLE")
+    return {
+      state: "billing-unavailable",
+      needsOperator: true,
+      action: "verify-provider-credit-and-project-limits-no-automatic-create",
+    };
   if (r.status === "queued")
     return {
       state: "queued",

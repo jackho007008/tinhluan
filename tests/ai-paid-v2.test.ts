@@ -1,3 +1,4 @@
+import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v21";
 import { it, expect, afterEach, vi } from "vitest";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
@@ -283,7 +284,7 @@ it("writer is opt-in while V1/V2 schema and prompts remain addressable", () => {
   vi.stubEnv("AI_PAID_READING_V2_ENABLED", "false");
   expect(paidWritePromptVersion()).toBe(PAID_V1_PROMPTS[3]);
   vi.stubEnv("AI_PAID_READING_V2_ENABLED", "true");
-  expect(paidWritePromptVersion()).toBe(PAID_PROMPT_V2);
+  expect(paidWritePromptVersion()).toBe(PAID_PROMPT_CURRENT);
   expect(paidInstructions(input, PAID_PROMPT_V2)).toContain(
     "Không số từ tối thiểu".toLowerCase().replace("không", "không"),
   );
@@ -292,17 +293,17 @@ it("writer is opt-in while V1/V2 schema and prompts remain addressable", () => {
   });
   expect(() => paidOutputSchema("unknown")).toThrow();
 });
-it.each([PAID_V1_PROMPTS[3], PAID_PROMPT_V2])(
+it.each([PAID_V1_PROMPTS[3], PAID_PROMPT_V2, PAID_PROMPT_CURRENT])(
   "SDK CREATE/GET uses saved %s even if writer flag changes (fetch mock)",
   async (version) => {
     vi.stubEnv("OPENAI_API_KEY", "unit-test-not-live");
     vi.stubEnv("AI_PAID_READING_MODEL", "gpt-6-astra");
     vi.stubEnv(
       "AI_PAID_READING_V2_ENABLED",
-      version === PAID_PROMPT_V2 ? "false" : "true",
+      version !== PAID_V1_PROMPTS[3] ? "false" : "true",
     );
     const raw =
-      version === PAID_PROMPT_V2 ? output() : mockPaidGeneration(input).raw;
+      version !== PAID_V1_PROMPTS[3] ? output() : mockPaidGeneration(input).raw;
     let creates = 0,
       gets = 0;
     const response = {
@@ -342,7 +343,7 @@ it.each([PAID_V1_PROMPTS[3], PAID_PROMPT_V2])(
           expect(body.text.format.schema.properties.sections.maxItems).toBe(8);
           expect(
             body.text.format.schema.properties.schemaVersion?.const ?? null,
-          ).toBe(version === PAID_PROMPT_V2 ? PAID_SCHEMA_V2 : null);
+          ).toBe(version !== PAID_V1_PROMPTS[3] ? PAID_SCHEMA_V2 : null);
         } else gets++;
         return new Response(JSON.stringify(response), {
           headers: { "Content-Type": "application/json" },
@@ -372,4 +373,14 @@ it("paid provider refuses missing saved version before any network call", async 
     openaiNarrator(input, "fixture", { onResponseCreated: async () => {} }),
   ).rejects.toMatchObject({ code: "AI_PROMPT_VERSION_UNSUPPORTED" });
   expect(fetcher).not.toHaveBeenCalled();
+});
+
+it("book background cannot substitute for a matched direct thesis", () => {
+  const i = structuredClone(input);
+  Object.assign(i.knowledge[0], {group:"B",application:"reference-only"});
+  const r = output();r.sections[0].paragraphs[0].basis="ai-synthesis";
+  expect(() => validatePaidV2(r,i)).toThrow("AI_REFERENCE_SCOPE");
+  i.knowledge.push({...input.knowledge[0],id:"direct-base"});
+  r.sections[0].paragraphs[0].knowledgeIds.push("direct-base");
+  expect(() => validatePaidV2(r,i)).not.toThrow();
 });

@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 01/11 — Hoàn thiện AI trả phí trong vòng hữu hạn
+
+Chủ dự án cho phép tận dụng facts/V1 và kho sách đã xử lý, kể cả tri thức nền chưa thành rule, để Astra phân tích có căn cứ; không trở lại chương trình469rule. Giữ ReadingV2 linh hoạt và Mệnh miễn phí V1/Luna. Cho phép tối đa3CREATE mới/$5dự phòng trên QA riêng, không retry hai attempt credit cũ, không phát hành hoặc QA3062/3070. Thực tế chọn trước Quan/Tài/Phúc theo nền hợp lệ,3completed/1,863740USDước tính, không gọi thêm. Phạm vi focused/limited không là chứng nhận chuyên sâu thương mại. [Bằng chứng và kết luận chưa đạt](AI-PAID-RELEASE-READINESS-20261101.md).
+
 ## 01/11 — Duyệt kiểm AstraV2 thật, tối đa hai CREATE
 
 **U:** cho phép1CREATEQuan Lộc+1CREATETài Bạch trên QA riêng, khoảng3USD, Background/đối soát và so với1.2; giữ bài cũ, khôngcungkhác/QA3062/3070.

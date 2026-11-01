@@ -1,4 +1,5 @@
 import type { PaidContent } from "./paid-reading-v2";
+import { isOutputValidationError } from "./provider-failure";
 import { paidBudgetSnapshot } from "./budget";
 import {
   backgroundDecision,
@@ -219,6 +220,8 @@ export async function runAiMenhJob(
           }),
         },
       };
+    if (generated.failure)
+      throw new GenerationFailure(generated.failure.code, generated.failure.retryable);
     const content = paid
       ? validatePaidNarration(generated.raw, job.input, job.prompt_version)
       : validateNarration(generated.raw, job.input);
@@ -277,9 +280,7 @@ export async function runAiMenhJob(
     const known = error instanceof GenerationFailure ? error : undefined;
     const validation =
       error instanceof Error &&
-      /^AI_(INVALID_SCHEMA|SECTION_ORDER|UNKNOWN_REFERENCE|SCOPE_VIOLATION)$/.test(
-        error.message,
-      );
+      isOutputValidationError(error.message);
     // An infrastructure failure after a successful API call is ambiguous, too.
     const code =
         known?.code ||

@@ -97,6 +97,9 @@ export function validatePaidV2(raw: unknown, input: MenhInput) {
       if (p.basis === "facts" && knowledge.length)
         throw Error("AI_REFERENCE_SCOPE");
       if (p.basis !== "facts") {
+        if (knowledge.some(k => k?.group === "B" && k.application === "reference-only") &&
+            !knowledge.some(k => ["A", "B"].includes(k?.group || "") && k?.application === "direct"))
+          throw Error("AI_REFERENCE_SCOPE");
         if (
           !knowledge.length ||
           knowledge.some(

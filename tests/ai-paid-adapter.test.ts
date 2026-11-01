@@ -201,7 +201,7 @@ it("selects existing source-specific methods as reference-only, never promotes H
   const t = paidInput(record, "Tài Bạch"),
     q = paidInput(record, "Quan Lộc"),
     p = paidInput(record, "Phu Thê");
-  expect(t.knowledgeVersion).toBe("paid-retrieval-1.2.0");
+  expect(t.knowledgeVersion).toBe("paid-retrieval-1.3.0");
   expect(
     t.knowledge.find((k) => k.id === "paid-method.inherited-NPL-27"),
   ).toMatchObject({
@@ -217,10 +217,10 @@ it("selects existing source-specific methods as reference-only, never promotes H
       [
         "paid-method.inherited-NPL-27",
         "paid-method.inherited-NPL-33",
-        "paid-method.inherited-NPL-45",
       ].includes(k.id),
     ),
   ).toBe(false);
+  expect(p.knowledge.find(k => k.id === "paid-method.inherited-NPL-45")).toMatchObject({group:"D",application:"reference-only"});
   expect(t.knowledge.filter((k) => k.group === "D")).toHaveLength(3);
 });
 it.each(["Quan Lộc", "Tài Bạch", "Phu Thê"])(

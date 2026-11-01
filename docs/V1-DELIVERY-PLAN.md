@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 01/11 — AI trả phí: ba bài Reading V2 thật, chưa đạt phát hành
+
+Đã sửa phân loại billing/provider và lỗi validation V2; retrieval1.3.0 bổ sung trích ý sách có điều kiện, prompt2.1.0 giữ schemaV2 và mọi bản cũ. QA3120/DB55450 riêng: 3CREATE/8GET, Quan focused, Tài/Phúc limited; ước tính1,863740USD. 98test liên quan riêng biệt, typecheck/build và HTTP quyền/lưu–mở đạt; không browser/mobile mới. Văn gọn hơn nhưng Quan/Tài bỏ ngữ cảnh hữu ích; Nô/Tử và Phu còn thiếu nền. Không phát hành, không thêm API hoặc QA3062/3070; lịch sử/Mệnh giữ nguyên. [Toàn văn, ma trận11cung và kết luận](AI-PAID-RELEASE-READINESS-20261101.md).
+
 <a id="astra-v2-real-20261101"></a>
 ## 01/11 — AstraV2 thật: hai request failed do hết credit
 

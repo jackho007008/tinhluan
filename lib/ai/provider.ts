@@ -5,6 +5,7 @@ import { aiModels } from "./config";
 import OpenAI from "openai";
 import { zodTextFormat } from "openai/helpers/zod";
 import { aiConfig } from "./config";
+import { providerFailure } from "./provider-failure";
 import { narrationSchema, type MenhInput, type AiResult } from "./contract";
 import { menhInstructions, menhUserInput } from "./prompt";
 export type Generation = {
@@ -17,6 +18,7 @@ export type Generation = {
   cost?: AiResult["cost"];
   timing?: AiResult["timing"];
   estimatedCostUsd: number | null;
+  failure?: { code: string; retryable: boolean };
 };
 export type Narrator = (
   input: MenhInput,
@@ -154,6 +156,11 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
     if (response.status !== "completed") raw = null;
     return {
       raw,
+      ...(response.status === "failed"
+        ? { failure: providerFailure(response.error) }
+        : response.status !== "completed"
+          ? { failure: { code: response.status === "incomplete" ? "AI_OUTPUT_INCOMPLETE" : "AI_PROVIDER_CANCELLED", retryable: false } }
+          : {}),
       cost,
       timing: {
         ...(Number.isFinite(response.created_at)
@@ -203,8 +210,8 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
       error.status !== 408
     ) {
       throw new GenerationFailure(
-        error.status === 429 ? "AI_RATE_LIMITED" : "AI_REQUEST_REJECTED",
-        error.status === 429 || error.status === 401 || error.status === 403,
+        providerFailure(error as any, error.status).code,
+        providerFailure(error as any, error.status).retryable,
       );
     }
     // Timeout/network/5xx may have reached the provider. Never automatically send

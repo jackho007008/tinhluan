@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 01/11 — Kiểm hoàn thiện AI trả phí
+
+98test liên quan riêng biệt đạt:74pure,3case bổ sung HTTP429/billing và Bnền không thay nguồn trực tiếp (hai file chạy lại37/37),21integration DBtest55450 cách ly. Có webhook lặp/quyền11jobs, V1pending, ba mức coverage, billing terminal giữ receipt/quyền, validation V2 không thành uncertain, Background và y khoa. Typecheck/buildQA3120 đạt.3CREATEAstra/8GET→3completed, đọc toàn văn; HTTP404/200/resultDB, mở lại/thư viện không tăng job/attempt/API, dữ liệu gốc7bảng/44job/49artifact giữ nguyên. Chưa browser/mobile mới, không toànE2E/PDF. [Log, lỗi từng lượt và giới hạn](AI-PAID-RELEASE-READINESS-20261101.md).
+
 ## 01/11 — Paid Reading V2 đã kiểm mock trên QA3118
 
 ContractV2/prompt2.0 riêng, readerV1/V2 và chọn schema theo job đã lưu; writer mặc định tắt, chỉQA3118 bật.84/84test/typecheck/build đạt; browser/mobile360/390, refresh/mở lại và căn cứ đạt. QA11processed/8có bài(1focused/7limited)/3insufficient, không báo11bài sâu giả;44job cũ nguyên. Recovery1fixture đã được duyệt và revoked;0OpenAI. Chưa chất lượng/schemaAPI thật, khôngQA3062/3070/Live. [Bàn giao, mock và giới hạn](AI-PAID-READING-V2-HANDOFF-20261101.md).

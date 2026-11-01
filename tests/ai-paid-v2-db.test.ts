@@ -1,3 +1,4 @@
+import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v21";
 import { PAID_PROMPT_V2 } from "../lib/ai/paid-reading-v2";
 import { mockPaidV2 } from "./fixtures/ai-paid-v2-mock";
 import { beforeAll, afterAll, it, expect, vi } from "vitest";
@@ -175,7 +176,7 @@ it("new V2 jobs honor duplicate payment/grants, deliver three coverage states, a
     ])
   ).rows;
   expect(jobs).toHaveLength(11);
-  expect(jobs.every((j) => j.prompt_version === PAID_PROMPT_V2)).toBe(true);
+  expect(jobs.every((j) => j.prompt_version === PAID_PROMPT_CURRENT)).toBe(true);
   for (const [palace, coverage] of [
     ["Quan Lộc", "focused"],
     ["Tài Bạch", "limited"],
@@ -183,7 +184,7 @@ it("new V2 jobs honor duplicate payment/grants, deliver three coverage states, a
   ] as const) {
     await runAiMenhJob(
       async (i, attempt, recovery) => {
-        expect(recovery?.promptVersion).toBe(PAID_PROMPT_V2);
+        expect(recovery?.promptVersion).toBe(PAID_PROMPT_CURRENT);
         return mockPaidV2(i, coverage);
       },
       { paid: true, readingId: record.id, palace },
@@ -321,4 +322,34 @@ it("V1 pending receipt survives writer V2 enablement and reconciles with its old
   expect(v.completed).toBe(1);
   expect(v.focused).toBe(0);
   expect(v.limited).toBe(0);
+});
+it("terminal credit failure preserves receipt and rights; V2 validation failure is not uncertain", async () => {
+  const fresh = {...structuredClone(record), id:randomUUID(), createdAt:new Date().toISOString()};
+  const owner = await createTrialOwner();
+  await saveTrialReading(owner.owner,fresh);
+  await linkCreatedReading(user.token,owner.token,fresh.id);
+  vi.stubEnv("AI_PAID_READING_V2_ENABLED","true");
+  const id = await createCheckout(user.token,fresh.id,"cung-4",testOffer()!.version);
+  const c = (await pool.query("SELECT code FROM orders WHERE id=$1",[id])).rows[0].code;
+  await pay(c); await runReportJob(id); await reconcilePaidOrders(fresh.id);
+  await runAiMenhJob(async (input,_a,recovery) => {
+    await recovery!.onResponseCreated("resp_mock_credit_terminal","gpt-6-astra");
+    return {...mockPaidV2(input),provider:"openai",responseId:"resp_mock_credit_terminal",raw:null,estimatedCostUsd:null,
+      failure:{code:"AI_BILLING_UNAVAILABLE",retryable:false}};
+  },{paid:true,readingId:fresh.id,palace:"Quan Lộc"});
+  const row = (await pool.query("SELECT j.*,row_to_json(a) AS attempt FROM ai_reading_jobs j LEFT JOIN ai_reading_attempts a ON a.id=j.attempt_id WHERE j.reading_id=$1 AND j.palace='Quan Lộc'",[fresh.id])).rows[0];
+  expect(row).toMatchObject({status:"error",error_code:"AI_BILLING_UNAVAILABLE",attempts:1,retryable:false,result:null});
+  expect(row.attempt).toMatchObject({response_id:"resp_mock_credit_terminal",error_code:"AI_BILLING_UNAVAILABLE"});
+  await retryPaid(fresh,id,"Quan Lộc");
+  let invoked = 0;
+  await runAiMenhJob(async () => {invoked++; throw Error("NO_REPEAT");},{paid:true,readingId:fresh.id,palace:"Quan Lộc",allowCreate:false});
+  expect(invoked).toBe(0);
+  expect((await readPaid(fresh,id)).eligible).toBe(true);
+  await runAiMenhJob(async input => {
+    const gen = mockPaidV2(input,"focused");
+    (gen.raw as any).sections[1].id = (gen.raw as any).sections[0].id;
+    return gen;
+  },{paid:true,readingId:fresh.id,palace:"Tài Bạch"});
+  expect((await pool.query("SELECT status,error_code,attempts FROM ai_reading_jobs WHERE reading_id=$1 AND palace='Tài Bạch'",[fresh.id])).rows[0])
+    .toMatchObject({status:"error",error_code:"AI_INVALID_OUTPUT",attempts:1});
 });
