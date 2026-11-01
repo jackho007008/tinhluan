@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 01/11 — Cấu trúc trả phí V2: mới là đề xuất
+
+Đã đọc sáu bài và đối chiếu nguồn, đề xuất phần theo luận điểm, thường5–8 nhưng được ngắn hơn khi thiếu nền. Có ví dụ Quan5/Tài4, phân loại11cung trên một snapshot và kế hoạch schema/reader giữ V1, quyền và completed cũ. Chưa triển khai hoặc gọi API; chưa đạt thương mại. [Đề cương, ví dụ và tác động kỹ thuật](AI-PAID-READING-V2-PROPOSAL-20261101.md).
+
 ## 01/11 — Astra1.2: hai bài thật, chưa nghiệm thu thương mại
 
 Hai bài Quan Lộc/Tài Bạch đã hoàn thành bằng Astra thật, prompt1.2.0; chi phí ước tính tổng1,324435USD. Lưu–mở và quyền qua HTTP đạt; chưa kiểm browser vòng này, chưa đạt chiều sâu thương mại. QA riêng đã dừng, kết quả cũ giữ nguyên. [Toàn văn, đối chiếu chín tiêu chí và chứng cứ](AI-PAID-ASTRA12-EVALUATION-20261101.md).

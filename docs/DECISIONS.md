@@ -1,5 +1,11 @@
 # Sổ quyết định Tinh Luận
 
+## 01/11 — Chỉ thiết kế cấu trúc bài trả phí V2
+
+**U:** giao đánh giá sáu bài đã có, đề xuất cấu trúc linh hoạt khoảng5–8phần, ví dụ Quan/Tài, tương thích lịch sử và phạm vi thương mại. Chỉ tài liệu; không API, sửa bài lưu, schema/UI/worker/DB/deploy hoặc mở bán.
+
+**C — đề xuất, chưa phải quyết định triển khai:** tổ chức theo luận điểm; nguồn mỏng có thể1–4phần hoặc không có bài phân tích, không ép đủ số mục. SchemaVersion riêng với prompt, reader V1/V2; giữ PAID_EDITION/quyền cũ và đối soát theo phiên bản job. Không đếm thiếu nền thành bài sâu đã giao. Phạm vi thương mại/cách báo thiếu cần chủ dự án duyệt; không tự thay hợp đồng mua. [Tài liệu đề xuất](AI-PAID-READING-V2-PROPOSAL-20261101.md).
+
 ## 01/11 — Content P0 được giao, không quyền gọi API hoặc mở bán
 
 **U:** cho sửa lựa chọn C, rà4khoảng thiếu trong kho đã xử lý, prompt phiên bản mới giữ cũ, tái hiện/sửa hẹp validator Tật; test/typecheck/build. Không OpenAI/queued/worker/deploy/Live/469rule/3.7.

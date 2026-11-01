@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 01/11 — Cấu trúc trả phí V2: mới là đề xuất
+
+Đã đọc sáu bài và đối chiếu nguồn, đề xuất phần theo luận điểm, thường5–8 nhưng được ngắn hơn khi thiếu nền. Có ví dụ Quan5/Tài4, phân loại11cung trên một snapshot và kế hoạch schema/reader giữ V1, quyền và completed cũ. Chưa triển khai hoặc gọi API; chưa đạt thương mại. [Đề cương, ví dụ và tác động kỹ thuật](AI-PAID-READING-V2-PROPOSAL-20261101.md).
+
 ## 01/11 — Astra1.2: hai bài thật, chưa nghiệm thu thương mại
 
 Quan Lộc/Tài Bạch completed: 2CREATE, 6Responses GET, một attempt mỗi cung; tổng ước tính1,324435USD, provider124/121giây. Cùng snapshot, facts159/retrieval1.2.0/prompt1.2.0; HTTP/quyền/lưu–mở đạt, chín job mới chưa xử lý và44job cũ giữ nguyên. Chưa kiểm browser/mobile lần này. Quan có thêm ngữ cảnh Tài nhưng vẫn lặp; Tài chưa có phối hợp Liêm–Hao có nguồn. Consumer kết thúc; web3117/DBclone55447 đã dừng và giữ dữ liệu. Không cập nhật QA3062/3070 hoặc bật Live. [Báo cáo và toàn văn](AI-PAID-ASTRA12-EVALUATION-20261101.md).

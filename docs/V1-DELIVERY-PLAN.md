@@ -1,5 +1,10 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="paid-reading-v2-proposal-20261101"></a>
+## 01/11 — Cấu trúc trả phí V2: mới là đề xuất
+
+Đã đọc sáu bài và đối chiếu nguồn, đề xuất phần theo luận điểm, thường5–8 nhưng được ngắn hơn khi thiếu nền. Có ví dụ Quan5/Tài4, phân loại11cung trên một snapshot và kế hoạch schema/reader giữ V1, quyền và completed cũ. Chưa triển khai hoặc gọi API; chưa đạt thương mại. [Đề cương, ví dụ và tác động kỹ thuật](AI-PAID-READING-V2-PROPOSAL-20261101.md).
+
 <a id="astra12-evaluation-20261101"></a>
 ## 01/11 — Astra1.2: hai bài thật, chưa nghiệm thu thương mại
 
