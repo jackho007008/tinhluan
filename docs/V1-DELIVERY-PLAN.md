@@ -1,5 +1,10 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 01/11 — Rà mock bốn cung và một bản nháp Luna ít phí
+
+31test/mock đạt; facts159/điều kiện nguồn Nô–Tử–Phu–Tài giữ đúng. Chọn1Phu, báo dự toán trước gọi; Luna2.3 completed1CREATE/2ResponsesGET/39giây provider, ước0,004867675USD theo write30m (0,00834405USD nếu12h), dưới dự phòng0,02. Có ích để rà văn, còn lỗi phân nhãn nguồn/tổng hợp và sắc thái thời gian; chưa dùng nguyên văn cho khách. DBQA55454 đã backup/dừng, khôngAstra/QA3062/3070. [Mock, toàn văn, chi phí và giới hạn](AI-PAID-FRUGAL-TRIAL-20261101.md).
+
+
 ## 01/11 — Retrieval thư viện1.5/prompt2.3: đã kiểm mock
 
 Bộ chọn đọc index7đơn vị từ8trang chữ đã xử lý, giữ điều kiện/hash/ngoại lệ; Nô1→3, Phu2→3nguồn trực tiếp trên mẫu, Tử vẫn1/Tài3. Nghĩa nền2.3 có thể tổng hợp limited với neo đủ, không cần directV1; không nâng thành lời nguồn/focused.100test+3DBmock/typecheck/build đạt;0API, sáu bài2.1/2.2 và113artifact cũ nguyên. DBtest55453 đã dừng, không deployQA3062/3070 hoặc nghiệm thu văn Astra mới. [Nguồn, dry-run, kho private và giới hạn](AI-PAID-LIBRARY-SYNTHESIS-20261101.md).

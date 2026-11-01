@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 01/11 — Kiểm nội dung tiết kiệm, mock trước và một model nhẹ
+
+Chủ dự án yêu cầu rà facts/nguồn bốn cung bằng mock trước, chọn một cung đủ nền để thử model nhẹ và báo dự toán trước; chưa Astra hoặcQA3062/3070. Codex chọnPhu, báo dự phòng0,02USD rồi xác minh quyền/count/gate và thực hiện1LunaCREATE. Không thay model sản phẩm/Astra hoặc Mệnh; không tự gọi lại để sửa văn. Mặc địnhmock, mỗi vòng đầu1bài, tái dùng kết quả để rà offline. [Số đo và đánh giá thực](AI-PAID-FRUGAL-TRIAL-20261101.md).
+
 ## 01/11 — Tiếp tục retrieval sách và tổng hợp, chỉ mock
 
 Chủ dự án giao hoàn thiện retrieval từ sách đã xử lý và cách Astra tổng hợp, ưu tiên Nô/Tử/Phu/Tài; kiểm mock trước, không API thêm, giữ bài cũ/QA3062/3070. Trong phạm vi này triển khai index7đoạn có điều kiện/dấu vết và prompt2.3, không đòi nguyên văn toàn tổ hợp để tổng hợp có mức độ. Chưa phê duyệt văn mới/phát hành, không thay quyết định Tật/y khoa hoặc quyền lịch sử. [Bàn giao và giới hạn](AI-PAID-LIBRARY-SYNTHESIS-20261101.md).
