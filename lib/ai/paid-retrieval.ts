@@ -1,3 +1,4 @@
+import { selectPaidContext, type ContextMetadata } from "./paid-context";
 import fs from "node:fs";
 import path from "node:path";
 import type { InternalReading } from "../internal-review/reading-store";
@@ -37,6 +38,7 @@ export function paidKnowledge(record: InternalReading, target: string) {
       c.rules.map((r) => [r.id, { r, text: c.text }] as const),
     ),
   );
+  const contextMetadata = new Map<string, ContextMetadata>();
   const items: Knowledge[] = [],
     excluded: { id: string; reason: string }[] = [],
     covered = new Set<string>(),
@@ -141,6 +143,10 @@ export function paidKnowledge(record: InternalReading, target: string) {
       k.subjectPalaces = subjects(
         rs.map((r) => r.presentation!.readingTheme || ""),
       );
+      contextMetadata.set(k.id, {
+        themes: rs.map((r) => r.presentation!.readingTheme || ""),
+        types: rs.map((r) => r.presentation!.contentType),
+      });
       add(k);
       rs.forEach((r) => covered.add(r.id));
     }
@@ -163,6 +169,10 @@ export function paidKnowledge(record: InternalReading, target: string) {
     k.group = scope === "direct" ? "B" : "C";
     k.application = scope === "direct" ? "direct" : "context";
     k.subjectPalaces = subjects([r.presentation.readingTheme || ""]);
+    contextMetadata.set(k.id, {
+      themes: [r.presentation.readingTheme || ""],
+      types: [r.presentation.contentType],
+    });
     add(k);
   }
   // A failed evaluator branch is NEVER reintroduced as a personal claim.
@@ -234,14 +244,31 @@ export function paidKnowledge(record: InternalReading, target: string) {
         Number(a.selection === "matched-v1-editorial") ||
       a.id.localeCompare(b.id),
   );
-  // Reserve room for context/method without letting them crowd out direct arguments.
+  const contextSelection = selectPaidContext(
+    ranked.filter((k) => k.group === "C"),
+    target,
+    contextMetadata,
+  );
   const selected = (["A", "B", "C", "D"] as const).flatMap((g) =>
-    ranked
-      .filter((k) => k.group === g)
-      .slice(0, g === "A" ? 12 : g === "B" ? 10 : g === "C" ? 8 : 3),
+    g === "C"
+      ? contextSelection.items
+      : ranked
+          .filter((k) => k.group === g)
+          .slice(0, g === "A" ? 12 : g === "B" ? 10 : 3),
   );
   for (const k of ranked)
     if (!selected.includes(k))
-      excluded.push({ id: k.id, reason: "bounded-context-budget" });
-  return { items: selected, excluded, ruleSetHash: execution.ruleSetHash };
+      excluded.push({
+        id: k.id,
+        reason:
+          k.group === "C"
+            ? contextSelection.decisions.find((d) => d.id === k.id)!.reason
+            : "bounded-context-budget",
+      });
+  return {
+    items: selected,
+    excluded,
+    ruleSetHash: execution.ruleSetHash,
+    contextSelection,
+  };
 }

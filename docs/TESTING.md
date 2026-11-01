@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## Content P0 —01/11, retrieval/prompt/validator
+
+39/39 tại ai-paid-adapter/context/safety, không DB/provider: realshape3cung, đa dạng nguồn/khôngquota, bytebudget/bấtbiến/cap, legacyhash và phân biệt câu giới hạn/khẳng định ykhoa. Redtest5câu an toàn fail trước sửa; một fixturebyte ban đầu7thay8 đã cân kíchthước, giữexpected. Typecheck/build Node24 cáchly đạt, không QA/E2E/PDF. Dry3cung159facts/A-B-D nguyên, payload giảm;16artifact cũ/11prompt1.1.0 nguyên. [Logs](AI-PAID-CONTENT-P0-HANDOFF-20261101.md).
+
 ## Gói3.6 — bổ sung UI recovery QA3116,31/10
 
 Một fixture được cấp quyền, exchange đúng luồng/magic replay403; unauth và token sai404/owner200. Browser9/11,72phần khớp saved,2held/Mệnh/refresh/thư viện nguyên;mobile360/390 có ảnh,không tràn. Hash11job/12attempt/quyền/order và providerledger nguyên;fixture revoked/0token hoạt động,0API mới. Không app change/test-build/E2E/PDF mới;28test/build trước vẫn là lượt cũ. [Bằng chứng/giới hạn](AI-PAID-PACKAGE36-RECOVERY-QA.md).

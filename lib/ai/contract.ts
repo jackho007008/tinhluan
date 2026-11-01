@@ -79,7 +79,8 @@ export type MenhInput = {
     | typeof KNOWLEDGE_VERSION
     | "menh-retrieval-1.0.0"
     | "paid-retrieval-1.1.0"
-    | "paid-retrieval-1.1.1";
+    | "paid-retrieval-1.1.1"
+    | "paid-retrieval-1.2.0";
   facts: AiFact[];
   knowledge: Knowledge[];
   missing: string[];

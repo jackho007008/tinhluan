@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 01/11 — Content P0: đã sửa ngữ cảnh/prompt/validator, chưa API
+
+Retrieval1.2.0 cân cung gốc và theme trong C8/bytebudget không tăng; Quan/Tài không còn toàn Mệnh, Phu giữ6nguồn. Prompt1.2.0 bỏ ép số từ/coaching, giữ11chuỗi1.1.0 và schema8phần. Tái hiện5câu an toàn bị chặn, sửa whitelist câu hoàn chỉnh, giữ chặn bệnh/thuốc/tuổi thọ.39/39test/typecheck/build cáchly đạt;4phiếu nguồn chưa đủ phối hợp mới.0API/DB/worker/deploy, bài cũ nguyên. [Bàn giao](AI-PAID-CONTENT-P0-HANDOFF-20261101.md).
+
 ## 31/10 — Nghiệm thu nội dung trả phí: chưa đạt thương mại
 
 Đọc toàn văn4bài thật, dry11cung offline trên snapshot có sẵn;159facts/cung,0provider/DB/worker. Phát hiện C8 của Quan/Tài bị Mệnh chiếm hết, nguồn phù hợp bị cắt; Nô/Tử/Tật0trực tiếp trên mẫu, Phu chỉKhoa. Quan3.3 cải thiện nhưng chưa đủ; báo cáo có9tiêu chí/bài,ma trậnCSV,phân loạiA–F,văn mẫu đề xuất và kế hoạchAPI có gate/ngân sách, chưa thực thi. Không sửa app/bài lưu/test/build/QA/Live/Gói3.7. [Báo cáo và đề xuất](AI-PAID-CONTENT-ACCEPTANCE-20261031.md).

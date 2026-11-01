@@ -1,5 +1,11 @@
 # Sổ quyết định Tinh Luận
 
+## 01/11 — Content P0 được giao, không quyền gọi API hoặc mở bán
+
+**U:** cho sửa lựa chọn C, rà4khoảng thiếu trong kho đã xử lý, prompt phiên bản mới giữ cũ, tái hiện/sửa hẹp validator Tật; test/typecheck/build. Không OpenAI/queued/worker/deploy/Live/469rule/3.7.
+
+**C:** C chọn theo theme/loại văn và đa dạng cung gốc, không quota cứng; tốiđa8 và byte không vượt C8cũ/trần24KB. Prompt1.2.0 không ép số từ, schema giữ8phần; thay cấu trúc chỉ đề xuất. Guard y khoa chỉ whitelist câu giới hạn hoàn chỉnh sau tái hiện lỗi, không bỏ kiểm y khoa.4phiếu không tự thành luận điểm mới hoặc quyền publish;0API. [Bằng chứng và giới hạn](AI-PAID-CONTENT-P0-HANDOFF-20261101.md).
+
 ## 31/10 — Chỉ nghiệm thu nội dung, không triển khai hoặc API mới
 
 **U:** đọc4bài thật, dry11packet, phân loại thiếu facts/nguồn/lập luận/văn và đề xuất công việc/chi phí; không hạ tầng/API/provider/QA3062/3070/Live/3.7.

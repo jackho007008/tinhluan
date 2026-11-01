@@ -1,5 +1,10 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="paid-content-p0-20261101"></a>
+## Content P0 — đã triển khai hữu hạn, chưa bài Astra mới
+
+C được cân cung gốc/theme trong ngân sách cũ, dryQuan/Tài/Phu payload giảm và facts/A-B-D giữ nguyên. Prompt1.2.0 giữ phiên bản cũ, bỏ ép số từ/coaching, schema8phần; validator sửa5câu giới hạn falsepositive bằng whitelist hoàn chỉnh.39test/typecheck/build cáchly đạt.4phiếu nguồn chưa đủ thêm lời phối hợp Liêm–Hao/Phá–Đà–Hỏa/Nô/Tử; khôngrule mới.0API/DB/worker/QA/Live/3.7. Chỉ đề xuất Quan/Tài đángthử tiếp, Phu có điều kiện. [Bàn giao](AI-PAID-CONTENT-P0-HANDOFF-20261101.md).
+
 <a id="paid-content-acceptance-20261031"></a>
 ## Nghiệm thu nội dung trả phí — chưa mở bán
 

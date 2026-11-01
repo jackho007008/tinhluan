@@ -10,7 +10,7 @@ export function paidInput(record: InternalReading, palace: string) {
   if (record.frozen.customerReport?.snapshotId !== record.snapshot.resultId)
     throw Error("AI_UNVERIFIED_SNAPSHOT");
   input.knowledge = paidKnowledge(record, palace).items;
-  input.knowledgeVersion = "paid-retrieval-1.1.1";
+  input.knowledgeVersion = "paid-retrieval-1.2.0";
   if (!input.knowledge.some((k) => k.application === "direct"))
     input.missing.push(
       "Chưa có luận điểm áp trực tiếp cung này; dùng phần nguồn có thật, không bịa phần thiếu.",

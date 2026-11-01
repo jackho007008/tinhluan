@@ -201,7 +201,7 @@ it("selects existing source-specific methods as reference-only, never promotes H
   const t = paidInput(record, "Tài Bạch"),
     q = paidInput(record, "Quan Lộc"),
     p = paidInput(record, "Phu Thê");
-  expect(t.knowledgeVersion).toBe("paid-retrieval-1.1.1");
+  expect(t.knowledgeVersion).toBe("paid-retrieval-1.2.0");
   expect(
     t.knowledge.find((k) => k.id === "paid-method.inherited-NPL-27"),
   ).toMatchObject({
@@ -223,3 +223,26 @@ it("selects existing source-specific methods as reference-only, never promotes H
   ).toBe(false);
   expect(t.knowledge.filter((k) => k.group === "D")).toHaveLength(3);
 });
+it.each(["Quan Lộc", "Tài Bạch", "Phu Thê"])(
+  "selects context from useful related palaces on a real stored shape without enlarging C: %s",
+  (palace) => {
+    const before = JSON.stringify(record);
+    const result = paidKnowledge(record, palace),
+      c = result.items.filter((k) => k.group === "C");
+    const expected =
+      palace === "Quan Lộc"
+        ? ["Mệnh", "Tài Bạch", "Phu Thê"]
+        : palace === "Tài Bạch"
+          ? ["Mệnh", "Quan Lộc", "Phúc Đức"]
+          : ["Quan Lộc", "Phúc Đức", "Thiên Di"];
+    expect(c.length).toBeLessThanOrEqual(8);
+    expect(new Set(c.flatMap((k) => k.subjectPalaces || []))).toEqual(
+      new Set(expected),
+    );
+    expect(result.contextSelection.usedBytes).toBeLessThanOrEqual(
+      result.contextSelection.byteBudget,
+    );
+    expect(c.every((k) => k.application === "context")).toBe(true);
+    expect(JSON.stringify(record)).toBe(before);
+  },
+);

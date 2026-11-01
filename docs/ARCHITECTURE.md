@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## Content P0 —01/11, chỉ nội dung input và validation
+
+paid-context chọn C bằng metadata theme/contentType/cung gốc của nguồn đã hợp lệ, giảm ưu tiên cung đã dùng và cap8/serializedbyte không quálegacyC8/trần24KB. A/B/D và nguồn không đổi; trace lựa chọn ngoài packet. Retrieval1.2.0/prompt1.2.0 cho job mới; registry giữ cũ, không schema/queue/UI/migration. paid-safety whitelist nguyên câu giới hạn y khoa trước regex, không bỏ qua câu phủ định tùy ý; API vẫn kiểm schema/IDs/guard. [Cách kiểm và giới hạn](AI-PAID-CONTENT-P0-HANDOFF-20261101.md).
+
 ## Gói3.5 — view reconciling và giám sát operator
 
 readPaid chỉ SELECT receipt/error để ánh xạ uncertain còn tự đối soát thành reconciling; exhausted/404/mấtID giữ attention, không đổi status DB hoặc quyền. CLI ai:paid-status chỉ đọc metadata có scope, không prompt/content/credential; không endpoint/scheduler mới. Worker/provider/schema giữ3.4; kiểm process restart qua DB clone và HTTP mock. [Cơ chế hữu hạn và bằng chứng](AI-PAID-PACKAGE35-HANDOFF.md).
