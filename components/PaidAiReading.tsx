@@ -8,7 +8,8 @@ import {
 } from "react";
 import type { PaidView } from "@/lib/ai/paid-store";
 import { paidLabel } from "@/lib/ai/paid-contract";
-import ReadingDisclosure from "./ReadingDisclosure";
+import { readPaidContent } from "@/lib/ai/paid-result";
+import PaidReadingContent from "./PaidReadingContent";
 const Context = createContext<{
   view: PaidView | null;
   retry: (palace: string) => void;
@@ -95,19 +96,35 @@ export function PaidAiProvider({
               </p>
             )}
             <h2 role="status" aria-live="polite">
-              {view.state === "completed"
-                ? "Đã hoàn thành luận giải 11 cung"
-                : "Đang chuẩn bị bài luận AI của bạn"}
+              {view.state === "content-limited"
+                ? "Đã xử lý xong · Nội dung có giới hạn"
+                : view.state === "attention" && view.processed === 11
+                  ? "Đã xử lý xong · Một số nội dung cần kiểm tra"
+                  : view.state === "completed"
+                    ? "Đã hoàn thành luận giải 11 cung"
+                    : "Đang chuẩn bị bài luận AI của bạn"}
             </h2>
             <p>
-              Đã hoàn thành <strong>{view.completed}/11 cung</strong>
+              {view.focused || view.limited || view.insufficient
+                ? "Có bài phân tích"
+                : "Đã hoàn thành"}{" "}
+              <strong>{view.completed}/11 cung</strong>
             </p>
             <progress
               max={11}
               value={view.completed}
               aria-label={`${view.completed} trên 11 cung hoàn thành`}
             />
-            {view.state !== "completed" && (
+            {(view.focused > 0 ||
+              view.limited > 0 ||
+              view.insufficient > 0) && (
+              <p>
+                Đã xử lý {view.processed}/11 cung · {view.focused} bài phân tích
+                · {view.limited} bài có giới hạn · {view.insufficient} cung chưa
+                đủ căn cứ.
+              </p>
+            )}
+            {view.state !== "completed" && view.processed !== 11 && (
               <>
                 <p>
                   Thời gian dự kiến: <strong>Khoảng 5 phút</strong>. Đây chỉ là
@@ -160,6 +177,8 @@ export function PaidPalaceReading({ palace }: { palace: string }) {
         <p>Luận AI · Chưa có quyền</p>
       </div>
     );
+  const content = p.result ? readPaidContent(p.result) : null;
+  const coverage = content?.version === 2 ? content.content.coverage : null;
   return (
     <section
       className="paid-palace-reading"
@@ -169,75 +188,32 @@ export function PaidPalaceReading({ palace }: { palace: string }) {
       <p className="result-eyebrow">
         Luận AI ·{" "}
         {p.state === "completed"
-          ? "Hoàn thành"
+          ? coverage === "insufficient"
+            ? "Đã xử lý · Chưa đủ căn cứ"
+            : coverage === "limited"
+              ? "Hoàn thành · Phân tích có giới hạn"
+              : "Hoàn thành"
           : p.state === "running" || p.state === "reconciling"
             ? "Đang tạo"
-            : p.state === "error"
-              ? "Lỗi"
-              : p.state === "uncertain"
-                ? "Cần kiểm tra"
-                : "Đang chờ xử lý"}
+            : p.state === "unsupported"
+              ? "Cần kiểm tra phiên bản nội dung"
+              : p.state === "error"
+                ? "Lỗi"
+                : p.state === "uncertain"
+                  ? "Cần kiểm tra"
+                  : "Đang chờ xử lý"}
       </p>
       {p.result ? (
-        <>
-          <p>
-            {p.result.provider === "test-mock"
-              ? "BẢN MÔ PHỎNG KIỂM THỬ · KHÔNG PHẢI LUẬN GIẢI API THẬT"
-              : "Nội dung AI diễn giải · tham khảo"}
-          </p>
-          {p.result.content.sections.map((s) => (
-            <article key={s.kind}>
-              <h3>{s.title}</h3>
-              {s.content.split(/\n\n+/).map((t, i) => (
-                <p key={i}>{t}</p>
-              ))}
-              <ReadingDisclosure>
-                <summary>Xem căn cứ</summary>
-                {s.factIds.map((id) => (
-                  <p key={id}>
-                    {p.result!.facts.find((f) => f.id === id)?.text}
-                  </p>
-                ))}
-                {s.knowledgeIds.map((id) => {
-                  const k = p.result!.knowledge.find((k) => k.id === id);
-                  return k ? (
-                    <div key={id}>
-                      <p>{k.text}</p>
-                      {k.references.map((r, i) => (
-                        <p key={i}>
-                          {r.title} · {r.location}
-                        </p>
-                      ))}
-                      {k.conditions.map((t, i) => (
-                        <p key={"c" + i}>{t}</p>
-                      ))}
-                      {k.limits.map((t, i) => (
-                        <p key={"l" + i}>{t}</p>
-                      ))}
-                    </div>
-                  ) : null;
-                })}
-                <p>
-                  {s.basis === "ai-synthesis"
-                    ? "Có phần tổng hợp do AI suy luận; không phải dữ kiện đã được chứng minh về đời sống."
-                    : "Đọc cùng điều kiện và giới hạn của nguồn."}
-                </p>
-              </ReadingDisclosure>
-            </article>
-          ))}
-          {p.result.content.limitations.map((t, i) => (
-            <p className="result-muted" key={i}>
-              {t}
-            </p>
-          ))}
-        </>
+        <PaidReadingContent result={p.result} />
       ) : (
         <p>
-          {p.state === "uncertain"
-            ? "Phần này đang chờ kiểm tra. Quyền đã mua và các bài hoàn thành vẫn được giữ; vui lòng liên hệ hỗ trợ. Bạn không cần thanh toán lại."
-            : p.state === "error"
-              ? "Chưa hoàn thành bài cung này. Các cung khác và quyền đã mua vẫn được giữ."
-              : "Bạn có thể đọc cung Mệnh trong lúc chờ hoặc quay lại từ thư viện lá số."}
+          {p.state === "unsupported"
+            ? "Chưa đọc được phiên bản nội dung này. Bài đã lưu và quyền đã mua vẫn được giữ; vui lòng liên hệ hỗ trợ."
+            : p.state === "uncertain"
+              ? "Phần này đang chờ kiểm tra. Quyền đã mua và các bài hoàn thành vẫn được giữ; vui lòng liên hệ hỗ trợ. Bạn không cần thanh toán lại."
+              : p.state === "error"
+                ? "Chưa hoàn thành bài cung này. Các cung khác và quyền đã mua vẫn được giữ."
+                : "Bạn có thể đọc cung Mệnh trong lúc chờ hoặc quay lại từ thư viện lá số."}
         </p>
       )}
       {p.canRetry && (

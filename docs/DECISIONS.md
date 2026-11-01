@@ -1,5 +1,11 @@
 # Sổ quyết định Tinh Luận
 
+## 01/11 — Phê duyệt triển khai Paid Reading V2 trên QA riêng
+
+**U:** duyệt contractpaid-reading-v2.0.0, promptpaid-palaces-vietnamese-2.0.0, focused2–8/limited1–8/insufficient0; reader trước writer, giữV1/Mệnh/quyền/job cũ, trạng thái giao nội dung trung thực và testmock/mobile. Không API thật, migration không cần thiết, QA3062/3070/Live/thương mại/PDF hoặc đổi PAID_EDITION. Sau auto-review từ chối credential fixture, U duyệt đúng1recoveryfixtureQA3118 cho synthetic owner hiện hữu, thu hồi sau kiểm.
+
+**C:** writerV2 dùng cờ mặc địnhfalse, version chốt ở job; GET dùng receipt/validator của job cũ. ResultJSONB giữ envelope và contentversion, view táchprocessed/contentcoverage, insufficient không retry/đếm là bài.84test/build/mobile đạt; fixture revoked/0tokenrecovery,0providerthật. Không coi nhãnfocused là chứng nhận chuyên môn. [Bàn giao](AI-PAID-READING-V2-HANDOFF-20261101.md).
+
 ## 01/11 — Chỉ thiết kế cấu trúc bài trả phí V2
 
 **U:** giao đánh giá sáu bài đã có, đề xuất cấu trúc linh hoạt khoảng5–8phần, ví dụ Quan/Tài, tương thích lịch sử và phạm vi thương mại. Chỉ tài liệu; không API, sửa bài lưu, schema/UI/worker/DB/deploy hoặc mở bán.

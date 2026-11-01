@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 01/11 — Paid Reading V2 đã kiểm mock trên QA3118
+
+ContractV2/prompt2.0 riêng, readerV1/V2 và chọn schema theo job đã lưu; writer mặc định tắt, chỉQA3118 bật.84/84test/typecheck/build đạt; browser/mobile360/390, refresh/mở lại và căn cứ đạt. QA11processed/8có bài(1focused/7limited)/3insufficient, không báo11bài sâu giả;44job cũ nguyên. Recovery1fixture đã được duyệt và revoked;0OpenAI. Chưa chất lượng/schemaAPI thật, khôngQA3062/3070/Live. [Bàn giao, mock và giới hạn](AI-PAID-READING-V2-HANDOFF-20261101.md).
+
 ## 01/11 — Cấu trúc trả phí V2: mới là đề xuất
 
 Đã đọc sáu bài và đối chiếu nguồn, đề xuất phần theo luận điểm, thường5–8 nhưng được ngắn hơn khi thiếu nền. Có ví dụ Quan5/Tài4, phân loại11cung trên một snapshot và kế hoạch schema/reader giữ V1, quyền và completed cũ. Chưa triển khai hoặc gọi API; chưa đạt thương mại. [Đề cương, ví dụ và tác động kỹ thuật](AI-PAID-READING-V2-PROPOSAL-20261101.md).

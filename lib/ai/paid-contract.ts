@@ -1,8 +1,14 @@
+import { PAID_PROMPT_V2, validatePaidV2 } from "./paid-reading-v2";
+import { paidInstructionsV2 } from "./paid-prompt-v2";
 import { violatesPaidMedicalScope } from "./paid-safety";
 import { newPaidInstructions, paidInstructionsV110 } from "./paid-prompt";
 import { narrationSchema, SECTION_KINDS, type MenhInput } from "./contract";
 export const PAID_EDITION = "paid-palaces-ai-1.0.0";
 export const PAID_PROMPT = "paid-palaces-vietnamese-1.2.0";
+export const paidWritePromptVersion = () =>
+  process.env.AI_PAID_READING_V2_ENABLED === "true"
+    ? PAID_PROMPT_V2
+    : PAID_PROMPT;
 export const PAID_PALACES = [
   "Phụ Mẫu",
   "Phúc Đức",
@@ -45,6 +51,7 @@ export function paidInstructions(input: MenhInput, version = PAID_PROMPT) {
     !PAID_PALACES.includes(input.paidTarget.palace as any)
   )
     throw Error("AI_PAID_TARGET_INVALID");
+  if (version === PAID_PROMPT_V2) return paidInstructionsV2(input);
   if (
     ["paid-palaces-vietnamese-1.0.0", "paid-palaces-vietnamese-1.0.1"].includes(
       version,
@@ -56,7 +63,21 @@ export function paidInstructions(input: MenhInput, version = PAID_PROMPT) {
   if (version !== PAID_PROMPT) throw Error("AI_PROMPT_VERSION_UNSUPPORTED");
   return newPaidInstructions(input, version);
 }
-export function validatePaidNarration(raw: unknown, input: MenhInput) {
+export function validatePaidNarration(
+  raw: unknown,
+  input: MenhInput,
+  version = PAID_PROMPT,
+) {
+  if (version === PAID_PROMPT_V2) return validatePaidV2(raw, input);
+  if (
+    ![
+      "paid-palaces-vietnamese-1.0.0",
+      "paid-palaces-vietnamese-1.0.1",
+      "paid-palaces-vietnamese-1.1.0",
+      PAID_PROMPT,
+    ].includes(version)
+  )
+    throw Error("AI_PROMPT_VERSION_UNSUPPORTED");
   const p = narrationSchema.safeParse(raw);
   if (!p.success) throw Error("AI_INVALID_SCHEMA");
   const r = p.data;

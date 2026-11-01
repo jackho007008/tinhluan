@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 01/11 — Paid Reading V2 đã kiểm mock trên QA3118
+
+ContractV2/prompt2.0 riêng, readerV1/V2 và chọn schema theo job đã lưu; writer mặc định tắt, chỉQA3118 bật.84/84test/typecheck/build đạt; browser/mobile360/390, refresh/mở lại và căn cứ đạt. QA11processed/8có bài(1focused/7limited)/3insufficient, không báo11bài sâu giả;44job cũ nguyên. Recovery1fixture đã được duyệt và revoked;0OpenAI. Chưa chất lượng/schemaAPI thật, khôngQA3062/3070/Live. [Bàn giao, mock và giới hạn](AI-PAID-READING-V2-HANDOFF-20261101.md).
+
 ## Content P0 —01/11, retrieval/prompt/validator
 
 39/39 tại ai-paid-adapter/context/safety, không DB/provider: realshape3cung, đa dạng nguồn/khôngquota, bytebudget/bấtbiến/cap, legacyhash và phân biệt câu giới hạn/khẳng định ykhoa. Redtest5câu an toàn fail trước sửa; một fixturebyte ban đầu7thay8 đã cân kíchthước, giữexpected. Typecheck/build Node24 cáchly đạt, không QA/E2E/PDF. Dry3cung159facts/A-B-D nguyên, payload giảm;16artifact cũ/11prompt1.1.0 nguyên. [Logs](AI-PAID-CONTENT-P0-HANDOFF-20261101.md).

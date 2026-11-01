@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 01/11 — Paid Reading V2 đã kiểm mock trên QA3118
+
+ContractV2/prompt2.0 riêng, readerV1/V2 và chọn schema theo job đã lưu; writer mặc định tắt, chỉQA3118 bật.84/84test/typecheck/build đạt; browser/mobile360/390, refresh/mở lại và căn cứ đạt. QA11processed/8có bài(1focused/7limited)/3insufficient, không báo11bài sâu giả;44job cũ nguyên. Recovery1fixture đã được duyệt và revoked;0OpenAI. Chưa chất lượng/schemaAPI thật, khôngQA3062/3070/Live. [Bàn giao, mock và giới hạn](AI-PAID-READING-V2-HANDOFF-20261101.md).
+
 ## Content P0 —01/11, chỉ nội dung input và validation
 
 paid-context chọn C bằng metadata theme/contentType/cung gốc của nguồn đã hợp lệ, giảm ưu tiên cung đã dùng và cap8/serializedbyte không quálegacyC8/trần24KB. A/B/D và nguồn không đổi; trace lựa chọn ngoài packet. Retrieval1.2.0/prompt1.2.0 cho job mới; registry giữ cũ, không schema/queue/UI/migration. paid-safety whitelist nguyên câu giới hạn y khoa trước regex, không bỏ qua câu phủ định tùy ý; API vẫn kiểm schema/IDs/guard. [Cách kiểm và giới hạn](AI-PAID-CONTENT-P0-HANDOFF-20261101.md).

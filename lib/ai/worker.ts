@@ -1,3 +1,4 @@
+import type { PaidContent } from "./paid-reading-v2";
 import { paidBudgetSnapshot } from "./budget";
 import {
   backgroundDecision,
@@ -219,9 +220,9 @@ export async function runAiMenhJob(
         },
       };
     const content = paid
-      ? validatePaidNarration(generated.raw, job.input)
+      ? validatePaidNarration(generated.raw, job.input, job.prompt_version)
       : validateNarration(generated.raw, job.input);
-    const result: AiResult = {
+    const result: AiResult<PaidContent> = {
       content,
       facts: job.input.facts,
       knowledge: job.input.knowledge,

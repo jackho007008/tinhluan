@@ -1,3 +1,4 @@
+import { paidOutputSchema } from "./paid-version";
 import { responseCost } from "./cost";
 import { paidInstructions, paidUserInput, PAID_PROMPT } from "./paid-contract";
 import { aiModels } from "./config";
@@ -38,6 +39,12 @@ export class GenerationFailure extends Error {
 }
 /** No key/model fallback and no SDK retry of a possibly billed request. */
 export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
+  if (input.paidTarget && !recovery?.promptVersion)
+    throw new GenerationFailure(
+      "AI_PROMPT_VERSION_UNSUPPORTED",
+      false,
+      !!recovery?.responseId,
+    );
   let instructions: string;
   try {
     instructions = input.paidTarget
@@ -92,7 +99,14 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
               : menhUserInput(input),
             max_output_tokens: config.maxOutputTokens,
             reasoning: { effort: config.reasoningEffort as "high" },
-            text: { format: zodTextFormat(narrationSchema, "menh_reading") },
+            text: {
+              format: zodTextFormat(
+                input.paidTarget
+                  ? paidOutputSchema(recovery!.promptVersion!)
+                  : narrationSchema,
+                "menh_reading",
+              ),
+            },
           },
           { headers: { "X-Client-Request-Id": attemptId } },
         );

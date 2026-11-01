@@ -1,16 +1,17 @@
+import { emptyPaidView, paidProgress, type PaidView } from "./paid-progress";
+export type { PaidView } from "./paid-progress";
 import { randomUUID } from "node:crypto";
 import { pool, transaction } from "../db";
 import type { InternalReading } from "../internal-review/reading-store";
 import { readingHash } from "../order-readings";
 import {
   PAID_EDITION,
-  PAID_PROMPT,
+  paidWritePromptVersion,
   PAID_PALACES,
   paidEnabled,
 } from "./paid-contract";
 import { paidInput } from "./paid-input";
 import { aiModels } from "./config";
-import type { AiResult } from "./contract";
 /** Same paid/grant predicate is checked before claiming work. No client state is authority. */
 export const PAID_GRANT_SQL = `EXISTS(SELECT 1 FROM order_reading_bindings b JOIN orders o ON o.id=b.order_id JOIN customer_checkouts cc ON cc.order_id=o.id JOIN access_tokens a ON a.order_id=o.id AND a.purpose='customer-order' AND a.revoked_at IS NULL AND a.expires_at>now() WHERE b.reading_id=j.reading_id AND b.content_hash=j.reading_hash AND cc.offer->>'aiEdition'='${PAID_EDITION}' AND o.payment_status='paid' AND o.report_status='ready')`;
 async function grant(orderId: string, record: InternalReading) {
@@ -60,7 +61,7 @@ export async function reconcilePaidOrders(readingId?: string) {
             row.content_hash,
             palace,
             PAID_EDITION,
-            PAID_PROMPT,
+            paidWritePromptVersion(),
             input,
             readingHash(input),
             model,
@@ -72,33 +73,11 @@ export async function reconcilePaidOrders(readingId?: string) {
   }
   return inserted;
 }
-export type PaidView = {
-  eligible: boolean;
-  simulation?: boolean;
-  completed: number;
-  total: 11;
-  state: "not-entitled" | "processing" | "completed" | "attention";
-  startedAt?: string;
-  overEstimate: boolean;
-  palaces: {
-    palace: string;
-    state: string;
-    canRetry: boolean;
-    result?: AiResult;
-  }[];
-};
 export async function readPaid(
   record: InternalReading,
   authorizedOrderId?: string,
 ): Promise<PaidView> {
-  const empty: PaidView = {
-    eligible: false,
-    completed: 0,
-    total: 11,
-    state: "not-entitled",
-    overEstimate: false,
-    palaces: [],
-  };
+  const empty = emptyPaidView();
   if (!paidEnabled() || !authorizedOrderId) return empty;
   const g = await grant(authorizedOrderId, record);
   if (!g) return empty;
@@ -108,49 +87,13 @@ export async function readPaid(
       [record.id, readingHash(record), PAID_EDITION],
     )
   ).rows;
-  const palaces = PAID_PALACES.map((palace) => {
-    const r = rows.find((r) => r.palace === palace);
-    const reconciling =
-      r?.status === "uncertain" &&
-      r.response_id &&
-      r.attempt_provider === "openai" &&
-      !["AI_RECONCILIATION_EXHAUSTED", "AI_RESPONSE_UNAVAILABLE"].includes(
-        r.error_code,
-      );
-    return {
-      palace,
-      state: reconciling ? "reconciling" : r?.status || "awaiting-queue",
-      canRetry:
-        !!r &&
-        r.status === "error" &&
-        r.retryable &&
-        r.attempts < 3 &&
-        new Date(r.run_after).getTime() <= Date.now(),
-      ...(r?.status === "completed" && r.result
-        ? { result: r.result as AiResult }
-        : {}),
-    };
-  });
-  const completed = palaces.filter(
-    (p) => p.state === "completed" && p.result,
-  ).length;
-  return {
-    eligible: true,
-    simulation: process.env.QA_PAID_MOCK_WORKER === "true",
-    completed,
-    total: 11,
-    state:
-      completed === 11
-        ? "completed"
-        : palaces.some((p) => ["error", "uncertain"].includes(p.state))
-          ? "attention"
-          : "processing",
-    startedAt: new Date(g.paid_at).toISOString(),
-    overEstimate:
-      completed !== 11 && Date.now() - new Date(g.paid_at).getTime() > 300000,
-    palaces,
-  };
+  return paidProgress(
+    rows,
+    new Date(g.paid_at).toISOString(),
+    process.env.QA_PAID_MOCK_WORKER === "true",
+  );
 }
+
 export async function retryPaid(
   record: InternalReading,
   authorizedOrderId: string | undefined,

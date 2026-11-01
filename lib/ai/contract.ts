@@ -93,8 +93,8 @@ export type MenhInput = {
     note: string;
   };
 };
-export type AiResult = {
-  content: Narration;
+export type AiResult<T = Narration> = {
+  content: T;
   facts: AiFact[];
   knowledge: Knowledge[];
   promptVersion: string;
