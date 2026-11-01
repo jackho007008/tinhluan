@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 01/11 — Quyền kiểm Astra2.2 hữu hạn
+
+Chủ dự án cho phép tối đa3CREATE mới Quan Lộc/Tài Bạch/Phu Thê trên QA riêng, ngân sách dự phòng3USD; Background đối soát cùng receipt, không CREATE retry uncertain, giữ bài cũ và không QA3062/3070. Quyền này thay giới hạn chưa API của lô nguồn/ngữ cảnh trước, không tái mở các attempt credit cũ hoặc cho phép gọi thêm cung. Dự toán token trước dispatch2,91775USD; reservation nội bộ không là hard cap provider. [Kết quả vòng kiểm](AI-PAID-ASTRA22-EVALUATION-20261101.md).
+
 ## 01/11 — Chỉ tiếp tục nguồn và ngữ cảnh bằng mock
 
 Chủ dự án giao tận dụng kho sách đã xử lý cho Nô/Tử/Phu và cải thiện Quan/Tài dùng liên cung; **chưa gọi thêm API, không cập nhậtQA3062/3070**. Đây là phạm vi thay cho vòng thử thật đã kết thúc: chỉ code/dry/mock, không tái sử dụng quyền CREATE cũ. Bốn trích ý giữ điều kiện và quan điểm nguồn, không mở dự đoán số con/hôn nhân/y khoa, không nghiệm thu thương mại. [Bằng chứng và trạng thái](AI-PAID-SOURCES-CONTEXT-20261101.md).

@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 01/11 — Astra2.2 thật: ba bài lưu đúng, chưa đạt phát hành
+
+QA3121/DB55452 riêng, code866bd37:3CREATE/9ResponsesGET/1attempt mỗi cung, tổngước1,8457525USD trong dự phòng3USD. Quan/Tài focused, Phu limited, mỗi bài3phần; Quan/Tài đã dùng C đúng cung gốc, Phu thêm nét tương tác từ nguồn mới. HTTP quyền/lưu–mở và85hash lịch sử đạt; không browser/mobile mới hoặc chạy lại test/build. QA riêng đã backup/dừng, khôngQA3062/3070. Vẫn thiếu phối hợp/độ phủ và chiều sâu để phát hành11cung. [Toàn văn, nguồn, đối chứng và số đo](AI-PAID-ASTRA22-EVALUATION-20261101.md).
+
 ## 01/11 — Nguồn Nô–Tử–Phu và ngữ cảnh Quan–Tài: đã kiểm mock
 
 Bổ sung bốn trích ý Trung Châu có điều kiện; trên mẫu đối chứng Nô0→1, Tử0→1, Phu1→2nguồn trực tiếp hẹp. Retrieval1.4/prompt2.2 thêm contextGuide Quan/Tài và guard cung gốc C theo phiên bản; không đổi schemaV2, facts159, bài cũ hoặc Mệnh.92test/typecheck/build cách ly đạt;0API thật, không cập nhậtQA3062/3070. Chưa kết luận văn Astra mới hoặc phát hành. [Nguồn, điều kiện, dry-run và giới hạn](AI-PAID-SOURCES-CONTEXT-20261101.md).
