@@ -1,5 +1,10 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="astra12-evaluation-20261101"></a>
+## 01/11 — Astra1.2: hai bài thật, chưa nghiệm thu thương mại
+
+Đã kiểm hữu hạn hai bài Quan Lộc/Tài Bạch bằng Astra thật với prompt1.2.0 trên bản đánh giá riêng; 2CREATE/6GET, không xử lý job ngoài scope. Lưu–mở qua HTTP đạt; chưa kiểm browser mới và chưa nghiệm thu thương mại. Còn lặp ý và thiếu chiều sâu phối hợp phụ tinh; không gọi thêm để nâng điểm. QA riêng đã dừng, chưa cập nhật QA3062/3070 hoặc mở bán. [Toàn văn, chín tiêu chí và giới hạn](AI-PAID-ASTRA12-EVALUATION-20261101.md).
+
 <a id="paid-content-p0-20261101"></a>
 ## Content P0 — đã triển khai hữu hạn, chưa bài Astra mới
 

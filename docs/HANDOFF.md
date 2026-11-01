@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 01/11 — Astra1.2: hai bài thật, chưa nghiệm thu thương mại
+
+Hai bài Quan Lộc/Tài Bạch đã hoàn thành bằng Astra thật, prompt1.2.0; chi phí ước tính tổng1,324435USD. Lưu–mở và quyền qua HTTP đạt; chưa kiểm browser vòng này, chưa đạt chiều sâu thương mại. QA riêng đã dừng, kết quả cũ giữ nguyên. [Toàn văn, đối chiếu chín tiêu chí và chứng cứ](AI-PAID-ASTRA12-EVALUATION-20261101.md).
+
 ## 01/11 — Content P0: đã sửa ngữ cảnh/prompt/validator, chưa API
 
 Retrieval1.2.0 cân cung gốc và theme trong C8/bytebudget không tăng; Quan/Tài không còn toàn Mệnh, Phu giữ6nguồn. Prompt1.2.0 bỏ ép số từ/coaching, giữ11chuỗi1.1.0 và schema8phần. Tái hiện5câu an toàn bị chặn, sửa whitelist câu hoàn chỉnh, giữ chặn bệnh/thuốc/tuổi thọ.39/39test/typecheck/build cáchly đạt;4phiếu nguồn chưa đủ phối hợp mới.0API/DB/worker/deploy, bài cũ nguyên. [Bàn giao](AI-PAID-CONTENT-P0-HANDOFF-20261101.md).
