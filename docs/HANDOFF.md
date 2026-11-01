@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 01/11 — AstraV2 thật: hai request failed do hết credit
+
+Đã dùng2CREATE/4ResponsesGET, cùngID/attempt, đúngQuan/Tài trên QA3119/DB55449 mới. Provider failed/credit_balance_exhausted,0bàiV2; không thể so chất lượng1.2, usage/chi phí chưa xác định. Quyền còn,9job khác0attempt/44job cũ và35artifact nguyên. Vòng đã dừng, QA riêng3119/55449 đã dừng và giữ receipt; khôngQA3062/3070/3118 hoặc API thêm. [Chứng cứ, giới hạn và bước tiếp](AI-PAID-ASTRA-V2-EVALUATION-20261101.md).
+
 ## 01/11 — Paid Reading V2 đã kiểm mock trên QA3118
 
 ContractV2/prompt2.0 riêng, readerV1/V2 và chọn schema theo job đã lưu; writer mặc định tắt, chỉQA3118 bật.84/84test/typecheck/build đạt; browser/mobile360/390, refresh/mở lại và căn cứ đạt. QA11processed/8có bài(1focused/7limited)/3insufficient, không báo11bài sâu giả;44job cũ nguyên. Recovery1fixture đã được duyệt và revoked;0OpenAI. Chưa chất lượng/schemaAPI thật, khôngQA3062/3070/Live. [Bàn giao, mock và giới hạn](AI-PAID-READING-V2-HANDOFF-20261101.md).

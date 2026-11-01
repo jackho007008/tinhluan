@@ -1,5 +1,11 @@
 # Sổ quyết định Tinh Luận
 
+## 01/11 — Duyệt kiểm AstraV2 thật, tối đa hai CREATE
+
+**U:** cho phép1CREATEQuan Lộc+1CREATETài Bạch trên QA riêng, khoảng3USD, Background/đối soát và so với1.2; giữ bài cũ, khôngcungkhác/QA3062/3070.
+
+**C:** ModelsGET có quyền nhưng haiResponses failed/credit_balance_exhausted;2CREATE/4GET,1attempt mỗi cung,0bài mới/không đánh giá chất lượng hoặc chi phí khi usage=null. Giữ receipt/error; không retry thêm hoặc tự đổi code để ép bài. QA3119/55449 dừng,3118 nguyên. Cần credit và quyền mới trước vòng khác; đề xuất sửa phân loại billing không tự thành quyền triển khai. [Báo cáo](AI-PAID-ASTRA-V2-EVALUATION-20261101.md).
+
 ## 01/11 — Phê duyệt triển khai Paid Reading V2 trên QA riêng
 
 **U:** duyệt contractpaid-reading-v2.0.0, promptpaid-palaces-vietnamese-2.0.0, focused2–8/limited1–8/insufficient0; reader trước writer, giữV1/Mệnh/quyền/job cũ, trạng thái giao nội dung trung thực và testmock/mobile. Không API thật, migration không cần thiết, QA3062/3070/Live/thương mại/PDF hoặc đổi PAID_EDITION. Sau auto-review từ chối credential fixture, U duyệt đúng1recoveryfixtureQA3118 cho synthetic owner hiện hữu, thu hồi sau kiểm.

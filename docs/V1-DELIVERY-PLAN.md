@@ -1,5 +1,10 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+<a id="astra-v2-real-20261101"></a>
+## 01/11 — AstraV2 thật: hai request failed do hết credit
+
+Đã dùng2CREATE/4ResponsesGET, cùngID/attempt, đúngQuan/Tài trên QA3119/DB55449 mới. Provider failed/credit_balance_exhausted,0bàiV2; không thể so chất lượng1.2, usage/chi phí chưa xác định. Quyền còn,9job khác0attempt/44job cũ và35artifact nguyên. Vòng đã dừng, QA riêng3119/55449 đã dừng và giữ receipt; khôngQA3062/3070/3118 hoặc API thêm. [Chứng cứ, giới hạn và bước tiếp](AI-PAID-ASTRA-V2-EVALUATION-20261101.md).
+
 <a id="paid-reading-v2-implementation-20261101"></a>
 ## 01/11 — Paid Reading V2 đã kiểm mock trên QA3118
 
