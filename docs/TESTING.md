@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — Prompt2.4 và kiểm biên tập
+
+97test/mock6file (22ca biên tập mới),3DBmock riêng55455,typecheck/build đạt. Đúng bài Luna gốc bị2.4 chặn hai lỗi trên bản sao từng bước, vẫn đọc được2.3;7bài cũ giữ hash.0API, không browser/E2E/PDF hoặc QA3062/3070; DBtest đã dừng. [Chi tiết](AI-PAID-ATTRIBUTION-FIX-20261102.md).
+
 ## 01/11 — Retrieval thư viện và prompt2.3, mock
 
 100test/9file pure và3test DB V2 trên clone55453 đạt; điều kiện/hash/nguồn/nền limited/anchor/C/y khoa/V1-V2/legacy đã kiểm. Typecheck/build cách ly Node24/keyrỗng đạt, không browser/mobile mới/E2E/PDF/API thật. Sáu kết quả2.1/2.2 qua validator cũ,113artifact giữ hash. DB test đã dừng; không consumer/supervisor hoặc QA3062/3070. [Lỗi đầu, logs và phạm vi](AI-PAID-LIBRARY-SYNTHESIS-20261101.md).

@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 02/11 — Prompt2.4 và kiểm biên tập
+
+Writer2.4 dùng guard biên tập sau validationV2/C. Marker rõ dưới source-interpretation và mất vế thời gian nguồn Tả/Hữu sinh lỗi validation, không tự sửa/relabelling/retry.2.3 giữ nền limited,2.2/2.3 giữ Cguard; registry chọn đúng version cũ khi GET, không schema/queue/UI/migration mới. [Chi tiết](AI-PAID-ATTRIBUTION-FIX-20261102.md).
+
 ## 01/11 — Retrieval thư viện có neo và tổng hợp2.3
 
 paidLibrary đọc index đoạn biên tập trong AI_KNOWLEDGE_DIR, kiểm điều kiện/hash trang và ngân sách4đoạn/14KB; không quét PDF/rawkeyword thành lời cá nhân. Knowledge.passage giữ digest/neo/version. Chỉ validator2.3 cho nghĩa nền đã duyệt làm ai-synthesis limited khi neo source-traced đủ; không focused/source-interpretation, guard C/y khoa còn nguyên. Reader/schemaV2 và mọi prompt cũ giữ, không DB/queue/UI/offer/Mệnh mới. [Contract/kho private/kiểm](AI-PAID-LIBRARY-SYNTHESIS-20261101.md).

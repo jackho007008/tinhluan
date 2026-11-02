@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 02/11 — Sửa hai lỗi biên tập, không gọi API
+
+Chủ dự án giao tách lời nguồn khỏi tổng hợp AI và giữ đủ ý trợ giúp qua một giai đoạn; mock trước, không API thêm/bài cũ/QA3062/3070. Triển khai prompt2.4 và kiểm dấu hiệu hẹp theo version, không thay nội dung lưu hoặc quyền. Đây không phải cho phép thử model hay nghiệm thu thương mại. [Bằng chứng và giới hạn](AI-PAID-ATTRIBUTION-FIX-20261102.md).
+
 ## 01/11 — Kiểm nội dung tiết kiệm, mock trước và một model nhẹ
 
 Chủ dự án yêu cầu rà facts/nguồn bốn cung bằng mock trước, chọn một cung đủ nền để thử model nhẹ và báo dự toán trước; chưa Astra hoặcQA3062/3070. Codex chọnPhu, báo dự phòng0,02USD rồi xác minh quyền/count/gate và thực hiện1LunaCREATE. Không thay model sản phẩm/Astra hoặc Mệnh; không tự gọi lại để sửa văn. Mặc địnhmock, mỗi vòng đầu1bài, tái dùng kết quả để rà offline. [Số đo và đánh giá thực](AI-PAID-FRUGAL-TRIAL-20261101.md).
