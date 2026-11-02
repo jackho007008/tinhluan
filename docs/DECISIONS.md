@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 02/11 — Phu liên cung và giới hạn: chỉ mock
+
+Chủ dự án giao cải thiện chiều sâu liên hệ và giảm lặp giới hạn từ nguồn sẵn có; mock trước, không API/bài cũ/QA3062/3070. Prompt2.5 là thay đổi cho job mới khi sau này được bật; không thêm kiến thức/rule hoặc phê duyệt thương mại. [Bằng chứng và giới hạn](AI-PAID-PHU-CONTEXT-20261102.md).
+
 ## 02/11 — Quyền thử đúng một Luna2.4 Phu Thê
 
 Chủ dự án cho phép đúng1CREATE Luna/prompt2.4/Phu Thê, QA riêng, dự phòng0,02USD; kiểm token/giá trước, không retry/Astra/QA3062/3070. Đã thực hiện trong giới hạn; không mở rộng quyền gọi thêm hoặc đổi model sản phẩm. [Bằng chứng và giới hạn](AI-PAID-LUNA24-EVALUATION-20261102.md).

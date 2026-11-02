@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 02/11 — Phu Thê: liên hệ có luận điểm, giới hạn bớt lặp (mock)
+
+Prompt2.5 giữ2.4/bài cũ, yêu cầu đối chiếu hai tiền đề có căn cứ và đóng góp cụ thể; gom giới hạn chung, giữ lượng từ/nam mệnh/thời gian/cung gốc tại lời nguồn. Cùng input cũ, mock qua validation và8bài thật cũ vẫn đọc đúngversion.92puretest/typecheck/build đạt;0API, khôngDB/worker/QA3062/3070. Chưa xác minh model2.5. [Ví dụ đề xuất và bằng chứng](AI-PAID-PHU-CONTEXT-20261102.md).
+
 ## 02/11 — Luna2.4 thật: hai điểm biên tập đạt trên một mẫu
 
 Đúng1CREATE Phu Thê/2ResponsesGET/1attempt, provider41giây. Lời nguồn và tổng hợp tách đúng basis; giữ “từng trợ giúp … qua một giai đoạn”. Ước0,005221175USD theo write30m (0,00875755USD nếu12h), dưới dự phòng0,02. Lưu/đọc lại qua store không API mới; không browser/mobile mới. DBQA55456 backup/dừng, bài cũ nguyên, khôngAstra/QA3062/3070. Chưa nghiệm thu thương mại11cung. [Toàn văn, đối chứng và số đo](AI-PAID-LUNA24-EVALUATION-20261102.md).

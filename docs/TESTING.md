@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — Phu liên cung/prompt2.5
+
+92/92pure tại5file editorial/V2/library/contextGuide/safety; typecheck/build cách ly đạt. Dry mock trên input thật,8result cũ đọc savedversion;0API, khôngDBtest/E2E/PDF/browser/mobile mới. SDK fetch mock có2.4/2.5 để giữversion khi writerflag đổi. [Log và giới hạn](AI-PAID-PHU-CONTEXT-20261102.md).
+
 ## 02/11 — Prompt2.4 và kiểm biên tập
 
 97test/mock6file (22ca biên tập mới),3DBmock riêng55455,typecheck/build đạt. Đúng bài Luna gốc bị2.4 chặn hai lỗi trên bản sao từng bước, vẫn đọc được2.3;7bài cũ giữ hash.0API, không browser/E2E/PDF hoặc QA3062/3070; DBtest đã dừng. [Chi tiết](AI-PAID-ATTRIBUTION-FIX-20261102.md).

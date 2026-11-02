@@ -9,6 +9,7 @@ import { PAID_PROMPT_CURRENT as V23 } from "../lib/ai/paid-prompt-v23";
 import { paidOutputSchema } from "../lib/ai/paid-version";
 import { isOutputValidationError } from "../lib/ai/provider-failure";
 import type { MenhInput } from "../lib/ai/contract";
+import { PAID_PROMPT_CURRENT as V25 } from "../lib/ai/paid-prompt-v25";
 const input = (): MenhInput => ({
   paidTarget: { palace: "Phu Thê", edition: "paid-palaces-ai-1.0.0" },
   version: "paid-facts-1.1.0",
@@ -207,7 +208,7 @@ it("supports lowercase/NFD Vietnamese and preserves unknown reference, C and med
     "AI_SCOPE_VIOLATION",
   );
 });
-it("old 2.3 retains its validator while only the opt-in writer chooses 2.4", () => {
+it("old 2.3 retains its validator while only the opt-in writer chooses 2.5", () => {
   const r = content();
   r.sections[0].paragraphs[0].text = "BẢN MOCK. Tả Phù có sự trợ giúp.";
   r.sections[1].paragraphs[1].basis = "source-interpretation";
@@ -219,7 +220,7 @@ it("old 2.3 retains its validator while only the opt-in writer chooses 2.4", () 
   );
   expect(paidOutputSchema(V24)).toBe(paidOutputSchema(V23));
   vi.stubEnv("AI_PAID_READING_V2_ENABLED", "true");
-  expect(paidWritePromptVersion()).toBe(V24);
+  expect(paidWritePromptVersion()).toBe(V25);
 });
 it.each(["AI_MIXED_ATTRIBUTION", "AI_SOURCE_QUALIFIER_LOST"])(
   "classifies %s as output validation, not provider billing or model failure",
@@ -237,3 +238,62 @@ it("2.4 keeps the reviewed-foundation limited path introduced in 2.3", () => {
   expect(() => validatePaidNarration(r, i, V23)).not.toThrow();
   expect(() => validatePaidNarration(r, i, V24)).not.toThrow();
 });
+
+it("2.5 adds a grounded context comparison and places general limits once without deleting source conditions", () => {
+  const before = paidInstructions(input(), V24);
+  const after = paidInstructions(input(), V25);
+  expect(before).not.toContain("CHIỀU SÂU LIÊN CUNG");
+  expect(after).toContain("CHIỀU SÂU LIÊN CUNG");
+  expect(after).toContain("cả hai phía đã có nguồn và facts phù hợp");
+  expect(after).toContain(
+    "Nếu chỉ có lời trợ giúp, không suy thêm xung động hay tranh quyền",
+  );
+  expect(after).toContain("Đặt giới hạn chung");
+  expect(after).toContain("Conditions riêng");
+  expect(after).toContain("không gom mất xuống cuối");
+  expect(paidOutputSchema(V25)).toBe(paidOutputSchema(V24));
+});
+
+it("2.5 accepts one shared limitation with separate source and synthesis paragraphs", () => {
+  const r = content();
+  r.sections[1].paragraphs[1].text =
+    "BẢN MOCK. Đọc lời Quan Lộc về tổ chức cạnh khác biệt quan niệm tại Phu Thê, cách thực hiện và sự đồng thuận là hai phương diện cần phân biệt: một việc được sắp xếp rõ ràng vẫn có thể được hai người nhìn nhận khác nhau.";
+  expect(validatePaidNarration(r, input(), V25)).toMatchObject({
+    coverage: "limited",
+  });
+  expect(r.limitations).toHaveLength(1);
+  // Technical acceptance is not a claim that these synthetic facts prove an astrological rule.
+});
+
+it.each([V24, V25])(
+  "%s preserves attribution, time, C origin, references and medical guards",
+  (version) => {
+    const r = content();
+    expect(() => validatePaidNarration(r, input(), version)).not.toThrow();
+    r.sections[1].paragraphs[1].basis = "source-interpretation";
+    expect(() => validatePaidNarration(r, input(), version)).toThrow(
+      "AI_MIXED_ATTRIBUTION",
+    );
+    r.sections[1].paragraphs[1].basis = "ai-synthesis";
+    r.sections[0].paragraphs[0].text = "Tả Phù có sự trợ giúp.";
+    expect(() => validatePaidNarration(r, input(), version)).toThrow(
+      "AI_SOURCE_QUALIFIER_LOST",
+    );
+    r.sections[0].paragraphs[0].text =
+      "Tả Phù từng trợ giúp qua một giai đoạn.";
+    r.sections[1].paragraphs[1].text = "Phép nối sang Phu Thê.";
+    expect(() => validatePaidNarration(r, input(), version)).toThrow(
+      "AI_CONTEXT_AS_DIRECT",
+    );
+    r.sections[1].paragraphs[1].text = "Quan Lộc và Phu Thê trong bản mock.";
+    r.sections[0].paragraphs[0].knowledgeIds = ["missing"];
+    expect(() => validatePaidNarration(r, input(), version)).toThrow(
+      "AI_UNKNOWN_REFERENCE",
+    );
+    r.sections[0].paragraphs[0].knowledgeIds = ["paid-library.thp2-phu-ta-huu"];
+    r.limitations = ["Bạn mắc bệnh tim."];
+    expect(() => validatePaidNarration(r, input(), version)).toThrow(
+      "AI_SCOPE_VIOLATION",
+    );
+  },
+);

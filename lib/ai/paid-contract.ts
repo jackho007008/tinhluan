@@ -8,7 +8,11 @@ import {
   paidInstructionsV23,
   PAID_PROMPT_CURRENT as PAID_PROMPT_V23,
 } from "./paid-prompt-v23";
-import { paidInstructionsV24, PAID_PROMPT_CURRENT } from "./paid-prompt-v24";
+import {
+  paidInstructionsV24,
+  PAID_PROMPT_CURRENT as PAID_PROMPT_V24,
+} from "./paid-prompt-v24";
+import { paidInstructionsV25, PAID_PROMPT_CURRENT } from "./paid-prompt-v25";
 import { validatePaidEditorial } from "./paid-editorial-guards";
 import {
   paidInstructionsV22,
@@ -71,7 +75,8 @@ export function paidInstructions(input: MenhInput, version = PAID_PROMPT) {
   if (version === PAID_PROMPT_V21) return paidInstructionsV21(input);
   if (version === PAID_PROMPT_V22) return paidInstructionsV22(input);
   if (version === PAID_PROMPT_V23) return paidInstructionsV23(input);
-  if (version === PAID_PROMPT_CURRENT) return paidInstructionsV24(input);
+  if (version === PAID_PROMPT_V24) return paidInstructionsV24(input);
+  if (version === PAID_PROMPT_CURRENT) return paidInstructionsV25(input);
   if (
     ["paid-palaces-vietnamese-1.0.0", "paid-palaces-vietnamese-1.0.1"].includes(
       version,
@@ -92,13 +97,19 @@ export function validatePaidNarration(
     const content = validatePaidV2(
       raw,
       input,
-      [PAID_PROMPT_CURRENT, PAID_PROMPT_V23].includes(version),
+      [PAID_PROMPT_CURRENT, PAID_PROMPT_V24, PAID_PROMPT_V23].includes(version),
     );
     if (
-      [PAID_PROMPT_CURRENT, PAID_PROMPT_V23, PAID_PROMPT_V22].includes(version)
+      [
+        PAID_PROMPT_CURRENT,
+        PAID_PROMPT_V24,
+        PAID_PROMPT_V23,
+        PAID_PROMPT_V22,
+      ].includes(version)
     )
       validatePaidContextAttribution(input, content);
-    if (version === PAID_PROMPT_CURRENT) validatePaidEditorial(content, input);
+    if ([PAID_PROMPT_CURRENT, PAID_PROMPT_V24].includes(version))
+      validatePaidEditorial(content, input);
     return content;
   }
   if (

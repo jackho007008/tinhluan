@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 02/11 — Prompt2.5 giữ reader/validator cũ
+
+WriterV2 opt-in chọn2.5 cho job mới; registry giữ2.4 và các version cũ cho savedattempt/GET. Guard biên tập2.4 áp cả2.5, không đổi schema/nguồn/store/retry. Chỉ hướng dẫn liên hệ có luận điểm và tổ chức giới hạn. [Kiểm mock và phạm vi](AI-PAID-PHU-CONTEXT-20261102.md).
+
 ## 02/11 — Prompt2.4 và kiểm biên tập
 
 Writer2.4 dùng guard biên tập sau validationV2/C. Marker rõ dưới source-interpretation và mất vế thời gian nguồn Tả/Hữu sinh lỗi validation, không tự sửa/relabelling/retry.2.3 giữ nền limited,2.2/2.3 giữ Cguard; registry chọn đúng version cũ khi GET, không schema/queue/UI/migration mới. [Chi tiết](AI-PAID-ATTRIBUTION-FIX-20261102.md).
