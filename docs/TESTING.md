@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — Bản thảo10bài vàT1nghiên cứu
+
+10bài qua validator với savedinput/facts khớp;T1qua guard an toàn nhưng không được gọi làpaidV2.3câu mock vượt phạm vi bịchặn;2probe chặn C-onlyfocused/upstream chưa xác minh.8bài thật/10bản thảo/21nguồn giữhash. Không appchange nên không build/typecheck/suite167/E2E/PDF/DB/mobile,0API. [Bằng chứng và giới hạn](AI-PAID-TAT-T1-REVIEW-20261102.md#hồ-sơ-kiểm-và-tiến-độ).
+
 ## 02/11 — P06Điền/retrieval1.11
 
 167/167pure9file,typecheck/build cáchly đạt; mockĐiền đúngC/neoLộc ởNô, xóa origin bịchặn, dry11cung159facts,8bài thật/21nguồn giữhash. Lỗi scriptbaselinepath được sửa đúnglayout, không đổi nguồn.0API/DB/E2E/PDF/mobile/deploy. [Logs và phạm vi chưa kiểm](AI-PAID-PATH-TO-100-20261102.md).

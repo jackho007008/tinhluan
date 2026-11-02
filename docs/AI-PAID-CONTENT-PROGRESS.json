@@ -1,7 +1,7 @@
 {
   "schemaVersion": "paid-content-progress-1.0.0",
   "updatedAt": "2026-11-02",
-  "baselineHead": "935318f",
+  "baselineHead": "f3fdaa3",
   "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
   "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
   "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
@@ -494,8 +494,8 @@
     },
     {
       "palace": "Tật Ách",
-      "percent": 40,
-      "passed": 4,
+      "percent": 70,
+      "passed": 7,
       "total": 10,
       "commercialReady": false,
       "scope": "Chỉ chú giải cấu trúc hoặc insufficient, chưa duyệt bài sức khỏe cá nhân; không chẩn đoán/tuổi thọ/điều trị.",
@@ -520,9 +520,9 @@
         },
         {
           "id": "P04",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": "docs/AI-PAID-TAT-T1-REVIEW-20261102.md",
+          "note": "Có bản thẩm định T1 năm phần, có luận điểm về cấu trúc VCD trong phạm vi row cũ; chưa duyệt nội dung/chưa publish và không luận cá nhân hoàn chỉnh."
         },
         {
           "id": "P05",
@@ -538,15 +538,15 @@
         },
         {
           "id": "P07",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": "docs/AI-PAID-TAT-T1-REVIEW-20261102.md",
+          "note": "Đã đọc và tách facts, phương pháp theo từng tác giả và phần phân tích; không áp hai mẫu khác cấu trúc hoặc dùng C/D làm direct."
         },
         {
           "id": "P08",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": "docs/AI-PAID-TAT-T1-REVIEW-20261102.md",
+          "note": "Đã đọc toàn văn bản T1, không gán sự kiện cơ thể hoặc phương án can thiệp; guard/negative probes hỗ trợ, không thay thẩm định nghĩa."
         },
         {
           "id": "P09",
@@ -843,7 +843,7 @@
       ]
     }
   ],
-  "lastReview": "path-to-100-and-dien-P06",
+  "lastReview": "T1-structural-manuscript-review-not-paid-reading",
   "history": [
     {
       "updatedAt": "2026-11-02",
@@ -1074,6 +1074,29 @@
         }
       ],
       "report": "docs/AI-PAID-PATH-TO-100-20261102.md"
+    },
+    {
+      "updatedAt": "2026-11-02",
+      "baselineHead": "f3fdaa3",
+      "measurementVersion": "paid-content-progress-1.0.0",
+      "criteriaChanged": false,
+      "changes": [
+        {
+          "palace": "Tật Ách",
+          "before": 40,
+          "after": 70,
+          "changedCriteria": [
+            "P04",
+            "P07",
+            "P08"
+          ],
+          "scopeUnchanged": true,
+          "internalReviewOnly": true,
+          "personalReadingComplete": false,
+          "evidence": "docs/AI-PAID-TAT-T1-REVIEW-20261102.md"
+        }
+      ],
+      "report": "docs/AI-PAID-TAT-T1-REVIEW-20261102.md"
     }
   ]
 }

@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 02/11 — T1VCDMùi: đọc đúng nguồn, giữ riêng học phái
+
+Đối chiếu chữTHP2/88 vàTB181, tái dùng metadata/hồ sơNPL01/15 vàTL186-PHUACH; không PDF/ảnh mới hoặc sửaBửuĐình. THP2khôngmượnPhụ để lấpTậtVCD; TBgiữ yêu cầuMệnh–Thân–Phúc; không hợp nhất thành công thức hoặc áp ví dụ nhân quả. Không thêm indexunit/nguồn directchoTật. [BảnT1/mapping/hash](AI-PAID-TAT-T1-REVIEW-20261102.md).
+
 ## 02/11 — Nền Lương cho bản luận Nô, không phép chế hóa mới
 
 HàmSố/NguyễnPhátLộc125§4: lấy lớp nghĩa chung Lương dùđắc/hãm làmBfoundation, không lời riêng bạn bè; giữ nhánh/bảng khác, không kích hoạt các vế nhân phẩm/y khoa hoặc đổi trạng thái. Indexv110 riêng13unit/bundle21artifact, v17/legacy nguyên; không PDF/ảnh mới/BửuĐình. Các đoạn Cơ/Cự/Hỏa được đối chiếu chữ nhưng không nhập vì không đủ điều kiện cho lời đang viết; không tính thành nguồn mới. [Phân tích và hash](AI-PAID-COMPLETE-ANALYSIS-HANDOFF-20261102.md).
