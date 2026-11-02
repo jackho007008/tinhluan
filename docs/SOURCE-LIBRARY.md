@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 02/11 — Ba unit có điều kiện, kho private v113
+
+Tái dùng TB41/190/195, THP2/172/465–466/699 và TB181–182 cùng phiếu đã có; không PDF/ảnh mới. Thêm3unit vào index-v113,13unit v110 nguyên; bundle31artifact có hash/bản sao riêng. Tài chỉ nền, Phu/T1 chỉ phương pháp; reviewed không là phê duyệt lời cá nhân hoặc publishT1. [Bằng chứng và giới hạn](AI-PAID-SCOPE-INPUT-20261102.md).
+
 ## 02/11 — Điều kiện Đà nữmệnh, nghĩa Hao đắc và hai nhánh cứu/tác
 
 Rà chữTHP2/172,TB41/190/195/181–182; khôngPDF/ảnh mới hoặc BửuĐình. Không bỏgiới tính, không chọn bảngsáng thắng hoặc tự đếm ngưỡngnhiều. Nguồn dùng viết3chúgiải nghiêncứu, khôngindex/rule/app mới. [Bản mới và kiểm](AI-PAID-CONTENT-BLOCKERS-REVIEW-20261102.md).

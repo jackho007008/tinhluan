@@ -113,22 +113,25 @@ export function paidLibrary(
   const excluded: { id: string; reason: string }[] = [];
   const items: Knowledge[] = [];
   const replacements: { oldId: string; newId: string }[] = [];
-  if (!["Nô Bộc", "Tử Nữ", "Phu Thê", "Tài Bạch"].includes(target))
+  if (!["Nô Bộc", "Tử Nữ", "Phu Thê", "Tài Bạch", "Tật Ách"].includes(target))
     return { items, excluded, replacements };
   let data: z.infer<typeof index>;
   try {
     // Old checkouts keep reading their original index; new method units never
     // make a shared legacy index unreadable. Missing v1.6 assets use the old set.
+    const v113 = path.join(root, "paid-passages", "index-v113.json");
     const v110 = path.join(root, "paid-passages", "index-v110.json");
     const v17 = path.join(root, "paid-passages", "index-v17.json");
     const v16 = path.join(root, "paid-passages", "index-v16.json");
-    const file = fs.existsSync(v110)
-      ? v110
-      : fs.existsSync(v17)
-        ? v17
-        : fs.existsSync(v16)
-          ? v16
-          : path.join(root, "paid-passages", "index.json");
+    const file = fs.existsSync(v113)
+      ? v113
+      : fs.existsSync(v110)
+        ? v110
+        : fs.existsSync(v17)
+          ? v17
+          : fs.existsSync(v16)
+            ? v16
+            : path.join(root, "paid-passages", "index.json");
     if (fs.lstatSync(file).isSymbolicLink() || fs.statSync(file).size > 256000)
       throw Error();
     data = index.parse(JSON.parse(fs.readFileSync(file, "utf8")));
@@ -145,6 +148,11 @@ export function paidLibrary(
   for (const u of data.units.filter((u) => u.targets.includes(target))) {
     const id = "paid-library." + u.id;
     const reject = (reason: string) => excluded.push({ id, reason });
+    // T1 is method-only. A future index must not silently open personal readings.
+    if (target === "Tật Ách" && u.kind !== "method") {
+      reject("tat-t1-method-only");
+      continue;
+    }
     if (u.status !== "reviewed") {
       reject("not-reviewed");
       continue;

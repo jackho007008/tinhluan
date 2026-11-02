@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 02/11 — Khép lô nguồn có điều kiện và input bài mới
+
+Thêm3unit qua loader hiện hành, không rule/queue/schema mới. TàiB/reference-only, Phu/T1D/reference-only; Tật chặn mọi unit ngoài method. Dry11cung/3mock/8lịch sử và201test/typecheck/build cách ly đạt. Điểm dừng: code/kho private/mock; chưa khép P09 hoặc quyền publish T1,11cung90%. [Bằng chứng và giới hạn](AI-PAID-SCOPE-INPUT-20261102.md).
+
 ## 02/11 — Khép lô nguồn/mock ba ưu tiên, không tự mở phạm vi
 
 Đối chiếu nguồn172/41/182 cùng audit đãcó, biên tập3chúgiải.3artifact/2probeID/3negative đạt,8lịch sử/19baseline giữhash. Chưa cầu nối đủ cho cả hai tổhợp hoặc lượngtừ điều chỉnhT1;0API/code/deploy,checklist90%giữ. [Bản mới và kiểm](AI-PAID-CONTENT-BLOCKERS-REVIEW-20261102.md).

@@ -282,6 +282,8 @@ export function paidKnowledge(record: InternalReading, target: string) {
   const topicMethodIds = new Set(
     (topicMethods[target] || []).map((id) => "paid-method." + id),
   );
+  if (target === "Tật Ách" && hasLibraryMethod)
+    topicMethodIds.add("paid-method.inherited-NPL-15");
   const ranked = items.sort(
     (a, b) =>
       a.group!.localeCompare(b.group!) ||

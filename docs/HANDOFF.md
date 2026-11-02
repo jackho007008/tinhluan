@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 02/11 — Nguồn đã rà vào input mới Phu/Tài/T1
+
+Retrieval1.13 nhận ba unit: Tài nềnB, Phu/T1 phương phápD; giữ cap và không nâng thành lời trực tiếp. Dry11cung giữ159facts,201test/typecheck/build cách ly đạt;8bài thật/19baseline/10bản cũ nguyên. Tật vẫn insufficient;11cung90%/P09 chưa kiểm,0API/DB/deploy. [Bằng chứng và giới hạn](AI-PAID-SCOPE-INPUT-20261102.md).
+
 ## 02/11 — Ba chú giải mới cho Phu/Tài/T1, giữ phạm vi
 
 THP2/172 giữ nữmệnhĐà;TB41giữ nghĩaHao dùđắc;TB182Quyền/TảHữu cóhai nhánh theo nhóm.3bản thẩmđịnh mới,3artifact/2probeID/3negativey khoa đạt,8bài thật/19baseline nguyên. Không thêmnguồn vàoinput1.12 hoặc publish,0API/QA.11cung90%giữ, tổhợp/điềuchỉnh còn mở. [Bản mới và kiểm](AI-PAID-CONTENT-BLOCKERS-REVIEW-20261102.md).

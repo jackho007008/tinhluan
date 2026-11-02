@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 02/11 — Đưa phần đủ căn cứ của Phu/Tài/T1 vào bài mới
+
+Chủ dự án giao rà phần thiếu, phần đủ căn cứ đưa vào input mới, kiểm mock; chưa API, giữ bài cũ và QA3062/3070. Triển khai input1.13 với3unit đúng vai trò, không tự chọn phép phối hợp hoặc ngưỡng chưa có. Không thay prompt/schema/quyền, không quyền publishT1/thu phí;P09 giữ chưa kiểm. [Bằng chứng và giới hạn](AI-PAID-SCOPE-INPUT-20261102.md).
+
 ## 02/11 — Đưa sắc thái nguồn đã rà vào đầu vào bài mới
 
 **Chủ dự án giao:** đưa sửa Quan/Nô/Phu vào inputAstra cho bài mới, kiểmmock trước; chưaAPI, giữbài cũ/QA3062/3070 và báo%theochecklist. Phạm vi là hiệuđính tri thức đầu vào đã chọn, không nâng nềnLương/Cthành trực tiếp hoặc cấp quyềnphát hành. Triểnkhai retrieval1.12/sourceReview1.0, không thay prompt2.6/schema/quyền/queue;P09vẫnchưa kiểm. [Bằng chứng/giới hạn](AI-PAID-SOURCE-INPUT-20261102.md).

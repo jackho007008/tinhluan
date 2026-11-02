@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — Input1.13:201test và dry11cung
+
+11test mới kiểm vai trò/neo/độc tọa/cap/serializer/failclosed/T1method-only; suite201/201 đạt. Sau thêm hash699 kiểm lại11test/dry11cung/typecheck đạt. Build cách ly đạt;3mock/8bài thật/19baseline/10bản cũ giữ.0API/DB/E2E/PDF/mobile/deploy, không coi validator là nghiệm thu nghĩa nguồn. [Bằng chứng và giới hạn](AI-PAID-SCOPE-INPUT-20261102.md).
+
 ## 02/11 — Mock ba ưu tiên và giữ nội dung đã lưu
 
 3artifact hiệnhành qua validator (Phu/Tài limited,Tậtinsufficient),3chúgiải qua guard;2nguồnIDgiả/3negativeykhoa bịchặn.8bài thật/19baseline nguyên,0API/DB/QA. Chỉtài liệu, khôngbuild/typecheck/E2E/PDF hoặc190suite;không gọi guard làkiểm nguồn tựđộng. [Bản mới và kiểm](AI-PAID-CONTENT-BLOCKERS-REVIEW-20261102.md).

@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 02/11 — Retrieval1.13 và kho16unit giữ nguyên13unit cũ
+
+Loader index-v113→v110/v17/v16/legacy, bản mới sai fail closed; Tật chỉ method. Giữ cap4/14000byte,D3,C8/24000byte; ưu tiên NPL15 khi có methodT1. Savedinput/GET/prompt2.6/ReadingV2/queue/quyền/freeMệnh nguyên. Chưa cập nhật runtime. [Bằng chứng và giới hạn](AI-PAID-SCOPE-INPUT-20261102.md).
+
 ## 02/11 — Hiệu đính nguồn cho paidinput1.12
 
 reviewPaidSource là hàm thuần trên nguồn đãmatched/kiểmhash: QuanC/TàiR06, NôfoundationLương, PhuTảHữu đúngunitdigest. Áp trước library4/14KB và C8/24KB; giữID/conditions/refs/roles/neo/passage.digest, thêm sourceReviewversion/hash và text/limitmới. Input mới1.12, prompt2.6/outputV2 nguyên; job đã có giữ savedinput vàGETkhông hiệuđính lại. Không DB/queue/permission/UI/freeMệnhchange. [Cơ chế và kiểm](AI-PAID-SOURCE-INPUT-20261102.md).
