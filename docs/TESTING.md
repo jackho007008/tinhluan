@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — Input1.14:216test, bảo toàn sách và giới hạn Hao
+
+15test mới/216testcuối đạt. Kiểminput đầu thấy rơi methodgiao dịch: sửa4slotsách+webbyte dư; lượt215/216 phát hiệnrơi NPL27: sửaưu tiêncụthể, không bỏexpected. Dry11/3mock/8bài thật/hash33 đạt, typecheck/buildcáchly đạt.0API/DB/QA/E2E/PDF; giữloglỗi và guard phủđịnh rútgọn cũ chưa sửa. [Thay đổi và bằng chứng](AI-PAID-WEB-INTEGRATION-20261102.md).
+
 ## 02/11 — Mock rà nguồn web và phát hiện guard câu rào
 
 11input/159facts khớp1.13,3mock/8bài thật cũ hợp lệ;2IDweb chưa chọn và3câu ykhoa sai bị chặn. Lượt đầu fail vì câu phủ định ngắn bị guard bắt; giữ script/log, lượt tiếp ghi finding còn mở và kiểm mẫu allowlist đầy đủ/bảo toàn. Không sửa validator/expected nguồn, không chạy appbuild/typecheck/E2E/PDF hoặc gọi model.19baseline/15artifact/31nguồn giữhash. [Phiếu nguồn và bằng chứng](AI-PAID-INTERNET-SOURCE-REVIEW-20261102.md).

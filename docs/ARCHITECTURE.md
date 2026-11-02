@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 02/11 — Retrieval1.14: webmethod và ràngbuộc quan hệ
+
+Index-v114 giữ16unit cũ+1methodweb, pages vàwebSources táchloại; web chỉmethod, localreceipt/hash/status/metadata/HTTPS được kiểm.4slot sách trước+1web dùng14KBcũ, D3/Ccapnguyên; req.relation kiểm provenance. GuidePhu chỉnối Quanopposition códirect/C. Savedinput/prompt2.6/schema/quyền/queue/Mệnhnguyên. [Thay đổi và bằng chứng](AI-PAID-WEB-INTEGRATION-20261102.md).
+
 ## 02/11 — Retrieval1.13 và kho16unit giữ nguyên13unit cũ
 
 Loader index-v113→v110/v17/v16/legacy, bản mới sai fail closed; Tật chỉ method. Giữ cap4/14000byte,D3,C8/24000byte; ưu tiên NPL15 khi có methodT1. Savedinput/GET/prompt2.6/ReadingV2/queue/quyền/freeMệnh nguyên. Chưa cập nhật runtime. [Bằng chứng và giới hạn](AI-PAID-SCOPE-INPUT-20261102.md).

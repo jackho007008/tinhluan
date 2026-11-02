@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 02/11 — Hoàn tất lô tích hợp phương pháp web và ngữ cảnhPhu
+
+Đã nhận1/5phiếu mới vào loaderhiệncó đúng D/method,4phiếu khác chưa nhận. Bằng chứngweb là phiếu cục bộ/hash/URL, không giả sốtrang hoặc fetchruntime. Giữbytecap/sách và NPL27 sau kiểm phát hiệnrơi nguồn.216test/dry/typecheck/buildcáchly đạt; không tự gọiAstra/triểnkhai hoặc nâng100%. [Thay đổi và bằng chứng](AI-PAID-WEB-INTEGRATION-20261102.md).
+
 ## 02/11 — Khép lô tìm nguồn internet có điều kiện
 
 Hoàn thành7phiếu/đối chiếu điều kiện và mock bảo toàn; không coi bản sao cùng lời là chứng cứ độc lập hoặc lấy câu ThiênPhủ gán Liêm. Chưa khép phối hợp/điều chỉnh, không nâng checklist90% hoặc publishT1. Chỉ hồ sơ nghiên cứu, không app/API/DB/QAupdate. [Phiếu nguồn và bằng chứng](AI-PAID-INTERNET-SOURCE-REVIEW-20261102.md).

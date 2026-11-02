@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 02/11 — Tiếp tục tìm nguồn và chỉ thử Astra sau đánh giá đầu vào
+
+Chủ dự án yêu cầu tìm internet đến khi hoàn thiện rồi sẽ kiểm Astra thật. Thực hiện nghiên cứu/input/mock; không coi đây là giới hạn CREATE/budget mới hoặc quyền tự gọi ngay. Nhận1method hìnhthếHao đúng vai trò, thêmguidePhu; còn tổnghợp limited/T1 vàP09 phảikhai rõ, không100%thươngmại giả. [Thay đổi và bằng chứng](AI-PAID-WEB-INTEGRATION-20261102.md).
+
 ## 02/11 — Cho phép tìm nguồn internet khi sách chưa đủ
 
 Chủ dự án yêu cầu mở rộng tìm kiếm internet để bổ sung dữ liệu luận giải. Quyền này cho phép khảo cứu nguồn công khai, không tự phê duyệt luận điểm/tác giả, publishT1, gọiAI hoặc triển khaiQA. Đã lập7phiếu nghiên cứu; giữ input1.13 và mọi giới hạn phiên hiện hành. [Phiếu nguồn và bằng chứng](AI-PAID-INTERNET-SOURCE-REVIEW-20261102.md).

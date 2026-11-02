@@ -10,6 +10,13 @@ const namesPalace = (text: string, palace: string) =>
 /** Topic framing, not a new astrological proposition or an instruction in a source.
  * IDs point to existing, condition-matched C and target A/B. No duplicated prose. */
 const FRAMES: Record<string, { palace: string; focus: string }[]> = {
+  "Phu Thê": [
+    {
+      palace: "Quan Lộc",
+      focus:
+        "Đọc nguồn Quan Lộc về tổ chức, biểu đạt hoặc quyền hạn cạnh luận điểm thực có tại Phu: nhịp theo đuổi mục tiêu, khác biệt quan niệm hoặc trợ giúp từng qua một giai đoạn. Giải thích khác nhau giữa tổ chức cách thực hiện và hai người có cùng nhìn nhận mục tiêu hay không; không suy người đọc áp đặt công việc lên quan hệ. Chỉ phát triển nét được hai phía hỗ trợ, không dùng Khoa hoặc Quyền làm phép cứu sát và không lặp lời nguồn dưới nhiều tiêu đề.",
+    },
+  ],
   "Điền Trạch": [
     {
       palace: "Tử Nữ",

@@ -41,7 +41,7 @@ it.each(Object.keys(ids))(
       i = paidInput(record, target),
       k = i.knowledge.find((k) => k.id === "paid-library." + ids[target]);
     expect(k).toBeDefined();
-    expect(i.knowledgeVersion).toBe("paid-retrieval-1.13.0");
+    expect(i.knowledgeVersion).toBe("paid-retrieval-1.14.0");
     expect(k!.application).toBe("reference-only");
     expect(k!.group).toBe(target === "Tài Bạch" ? "B" : "D");
     expect(k!.passage!.kind).toBe(
@@ -50,7 +50,7 @@ it.each(Object.keys(ids))(
     expect(JSON.parse(paidUserInput(i)).knowledge).toContainEqual(k);
     expect(JSON.stringify(record)).toBe(before);
     const library = paidLibrary(i, target);
-    expect(library.items.length).toBeLessThanOrEqual(4);
+    expect(library.items.length).toBeLessThanOrEqual(5);
     expect(
       library.items.reduce(
         (n, k) => n + Buffer.byteLength(JSON.stringify(k)),

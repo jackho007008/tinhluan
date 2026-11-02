@@ -292,6 +292,12 @@ export function paidKnowledge(record: InternalReading, target: string) {
       (hasLibraryMethod
         ? Number(topicMethodIds.has(b.id)) - Number(topicMethodIds.has(a.id))
         : 0) ||
+      // Keep the method tied to stored facts before generic topic guidance
+      // when reviewed library methods occupy the finite D slots.
+      (hasLibraryMethod
+        ? Number(b.id === "paid-method." + specificMethod) -
+          Number(a.id === "paid-method." + specificMethod)
+        : 0) ||
       Number(b.selection === "matched-v1-editorial") -
         Number(a.selection === "matched-v1-editorial") ||
       a.id.localeCompare(b.id),

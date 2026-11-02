@@ -35,6 +35,21 @@ const page = z
     sha256: z.string().regex(/^[a-f0-9]{64}$/),
   })
   .strict();
+const webSource = z
+  .object({
+    id: z.string().regex(/^[a-z0-9-]+$/),
+    url: z
+      .string()
+      .url()
+      .refine((v) => {
+        const u = new URL(v);
+        return u.protocol === "https:" && !u.username && !u.password;
+      }),
+    title: z.string().min(1).max(240),
+    locator: z.string().min(1).max(500),
+    sha256: z.string().regex(/^[a-f0-9]{64}$/),
+  })
+  .strict();
 const unit = z
   .object({
     id: z.string().regex(/^[a-z0-9-]+$/),
@@ -51,7 +66,11 @@ const unit = z
     requirements: z
       .array(
         z
-          .object({ palace: z.string(), any: z.array(anchor).min(1).max(3) })
+          .object({
+            palace: z.string(),
+            any: z.array(anchor).min(1).max(3),
+            relation: z.enum(["trine", "opposition"]).optional(),
+          })
           .strict(),
       )
       .min(1)
@@ -79,9 +98,18 @@ const unit = z
       )
       .min(1)
       .max(4),
-    pages: z.array(page).min(1).max(6),
+    pages: z.array(page).max(6),
+    webSources: z.array(webSource).min(1).max(2).optional(),
   })
   .strict()
+  .refine(
+    (u) => u.pages.length > 0 || !!u.webSources?.length,
+    "A reviewed unit requires source evidence",
+  )
+  .refine(
+    (u) => !u.webSources?.length || u.kind === "method",
+    "Web research currently supports methods only, not personal interpretations",
+  )
   .refine(
     (u) =>
       u.kind === "method" ||
@@ -119,19 +147,22 @@ export function paidLibrary(
   try {
     // Old checkouts keep reading their original index; new method units never
     // make a shared legacy index unreadable. Missing v1.6 assets use the old set.
+    const v114 = path.join(root, "paid-passages", "index-v114.json");
     const v113 = path.join(root, "paid-passages", "index-v113.json");
     const v110 = path.join(root, "paid-passages", "index-v110.json");
     const v17 = path.join(root, "paid-passages", "index-v17.json");
     const v16 = path.join(root, "paid-passages", "index-v16.json");
-    const file = fs.existsSync(v113)
-      ? v113
-      : fs.existsSync(v110)
-        ? v110
-        : fs.existsSync(v17)
-          ? v17
-          : fs.existsSync(v16)
-            ? v16
-            : path.join(root, "paid-passages", "index.json");
+    const file = fs.existsSync(v114)
+      ? v114
+      : fs.existsSync(v113)
+        ? v113
+        : fs.existsSync(v110)
+          ? v110
+          : fs.existsSync(v17)
+            ? v17
+            : fs.existsSync(v16)
+              ? v16
+              : path.join(root, "paid-passages", "index.json");
     if (fs.lstatSync(file).isSymbolicLink() || fs.statSync(file).size > 256000)
       throw Error();
     data = index.parse(JSON.parse(fs.readFileSync(file, "utf8")));
@@ -204,28 +235,30 @@ export function paidLibrary(
       continue;
     }
     const matches = u.requirements.map((req) =>
-      input.facts.filter((f) =>
-        req.any.some((a) => {
-          if (a.kind === "palace")
+      input.facts.filter(
+        (f) =>
+          (!req.relation || f.provenance?.relation === req.relation) &&
+          req.any.some((a) => {
+            if (a.kind === "palace")
+              return (
+                /^palace\.\d+\.location$/.test(f.id) &&
+                f.kind === "engine" &&
+                f.text.startsWith(`${req.palace} tại `) &&
+                f.paths.some((p) => /^chart\.palaces\.\d+$/.test(p))
+              );
+            if (a.kind === "natal")
+              return (
+                f.id === "natal." + a.name &&
+                f.text.includes(`tại ${req.palace} (`)
+              );
             return (
-              /^palace\.\d+\.location$/.test(f.id) &&
-              f.kind === "engine" &&
-              f.text.startsWith(`${req.palace} tại `) &&
-              f.paths.some((p) => /^chart\.palaces\.\d+$/.test(p))
+              f.provenance?.verification === "source-traced" &&
+              f.provenance.scope === "natal" &&
+              f.provenance.palace === req.palace &&
+              f.provenance.field === a.field &&
+              f.text.includes(`: ${a.name};`)
             );
-          if (a.kind === "natal")
-            return (
-              f.id === "natal." + a.name &&
-              f.text.includes(`tại ${req.palace} (`)
-            );
-          return (
-            f.provenance?.verification === "source-traced" &&
-            f.provenance.scope === "natal" &&
-            f.provenance.palace === req.palace &&
-            f.provenance.field === a.field &&
-            f.text.includes(`: ${a.name};`)
-          );
-        }),
+          }),
       ),
     );
     if (matches.some((m) => !m.length)) {
@@ -267,6 +300,29 @@ export function paidLibrary(
         )
           throw Error();
       }
+      for (const w of u.webSources || []) {
+        // A local, reviewed research receipt, not a live fetch or proof that a
+        // web claim is true. Never load arbitrary paths/URLs from model output.
+        const file = path.resolve(root, "../web", w.id + ".json");
+        if (
+          fs.lstatSync(file).isSymbolicLink() ||
+          fs.statSync(file).size > 16000
+        )
+          throw Error();
+        const bytes = fs.readFileSync(file);
+        if (digest(bytes) !== w.sha256) throw Error();
+        const receipt = JSON.parse(bytes.toString("utf8"));
+        if (
+          receipt.schemaVersion !== "paid-web-research-receipt-1.0.0" ||
+          receipt.status !== "reviewed-method-only" ||
+          receipt.id !== w.id ||
+          receipt.url !== w.url ||
+          receipt.title !== w.title ||
+          receipt.locator !== w.locator ||
+          !u.references.some((r) => r.location.includes(w.url))
+        )
+          throw Error();
+      }
     } catch {
       reject("missing-or-changed-source-page");
       continue;
@@ -302,18 +358,30 @@ export function paidLibrary(
     };
     candidates.push(reviewPaidSource(candidate, target));
   }
-  // Direct theses before background; more matched anchors before ID. No score of
-  // a chart/person, no promotion of background to a direct claim.
+  // Keep the original four book slots first. At most one web method may use
+  // remaining bytes, never evicting a book unit or raising the byte budget.
+  const webIds = new Set(
+    data.units
+      .filter((u) => u.webSources?.length)
+      .map((u) => "paid-library." + u.id),
+  );
   candidates.sort(
     (a, b) =>
+      Number(webIds.has(a.id)) - Number(webIds.has(b.id)) ||
       Number(b.application === "direct") - Number(a.application === "direct") ||
       b.passage!.anchorFactIds.length - a.passage!.anchorFactIds.length ||
       a.id.localeCompare(b.id),
   );
   let bytes = 0;
+  let bookItems = 0,
+    webItems = 0;
   for (const k of candidates) {
     const n = Buffer.byteLength(JSON.stringify(k));
-    if (items.length >= 4 || bytes + n > LIBRARY_MAX_BYTES) {
+    const isWeb = webIds.has(k.id);
+    if (
+      (isWeb ? webItems >= 1 : bookItems >= 4) ||
+      bytes + n > LIBRARY_MAX_BYTES
+    ) {
       excluded.push({ id: k.id, reason: "library-budget" });
       continue;
     }
@@ -323,6 +391,8 @@ export function paidLibrary(
     }
     items.push(k);
     bytes += n;
+    if (isWeb) webItems++;
+    else bookItems++;
     for (const oldId of data.units.find((u) => "paid-library." + u.id === k.id)!
       .replaces || [])
       replacements.push({ oldId, newId: k.id });
