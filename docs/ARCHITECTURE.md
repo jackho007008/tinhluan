@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 02/11 — Retrieval1.8/prompt2.6 giữ neo nguồn
+
+Knowledge có anchorFactIds optional cho các đoạn topic-book có tiền đề rõ; guide mới mang neo cả cung khác.2.6 kiểm neo sau V2/C/editorial,2.5/cũ giữ validator; registry CREATE/GET theo savedversion. Thêm frame Nô→Huynh/Tử→Phụ chỉ khi đủdirect/C/hình học. Không schemaDB/UI/queue/model/migration mới. [Chi tiết](AI-PAID-DEPTH-20261102.md).
+
 ## 02/11 — Retrieval1.7, ràng buộc vị trí/chính tinh duy nhất
 
 Thư viện hỗ trợ palaceConditions từ nguồn, kiểm location/chi/đủ majorStars/độc tọa, giữ neo sao/vị trí. Loader v17→v16→legacy, invalid mới fail closed; index cũ nguyên. Không thay prompt2.5/schemaV2/store/UI/quyền. %hồ sơ chỉ tài liệu, không UI khách/X11. [Chi tiết và kiểm](AI-PAID-CONTENT-PROGRESS-20261102.md).

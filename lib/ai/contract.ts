@@ -49,6 +49,8 @@ export type AiFact = {
   };
 };
 export type Knowledge = {
+  /** Facts that established this source's applicability, not a generated conclusion. */
+  anchorFactIds?: string[];
   passage?: {
     version: "paid-library-1.0.0";
     digest: string;
@@ -91,7 +93,8 @@ export type MenhInput = {
     | "paid-retrieval-1.4.0"
     | "paid-retrieval-1.5.0"
     | "paid-retrieval-1.6.0"
-    | "paid-retrieval-1.7.0";
+    | "paid-retrieval-1.7.0"
+    | "paid-retrieval-1.8.0";
   facts: AiFact[];
   knowledge: Knowledge[];
   missing: string[];

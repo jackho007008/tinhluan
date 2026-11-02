@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 02/11 — Nô/Tử có liên cung đúng vai, mock
+
+Guide Nô–Huynh xung/Tử–Phụ tam hợp dùng nguồn đã chọn; nguồn Tử từ Lộc tạiNô giữ neo thật, không lấy sao tạiTử thay. Prompt2.6 chỉ thêm300byte so2.5, sourceword/facts nguyên;4mock mới limited,150test/typecheck/build đạt,8bài thật cũ/19sourceartifact nguyên.0API/DB/worker/QA3062/3070. Nô/Tử70→80% doP06, Phu/Tài/Quan/Phúc80%, Phụ/Điền/Di/Huynh/Tật40%; %hồ sơ, không mứcphát hành, P05/P09 vẫn chưa đạt. [Bằng chứng và giới hạn](AI-PAID-DEPTH-20261102.md).
+
 ## 02/11 — Retrieval1.7, bốn bản biên tập và tiến độ hồ sơ
 
 Tài thêm Bfoundation Liêm độcThân/Tử–Phủ–Vũ; index-v17 riêng, v16/legacy/bài cũ nguyên. Dựng4mock limited, dry11cung159facts,131test/typecheck/build đạt;0API/DB/worker/QA3062/3070. Mốc10mục: Nô/Tử70%, Phu/Tài/Quan/Phúc80%, Phụ/Điền/Di/Huynh/Tật40%; đây là %hồ sơ kiểm/biên tập, không mức sẵn sàng phát hành. P05chiều sâu/P09model hiện hành còn chặn. [Tiêu chí và bằng chứng](AI-PAID-CONTENT-PROGRESS-20261102.md) · [Dữ liệu cập nhật mỗi phiên](AI-PAID-CONTENT-PROGRESS.json).

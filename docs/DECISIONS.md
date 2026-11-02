@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 02/11 — Tiếp tục sau gián đoạn, mock và giữ checklist
+
+Chủ dự án yêu cầu tiếp tục chiều sâu Nô/Tử/Phu/Tài, không API/QA3062/3070, giữ bài cũ và báo % theo checklist. Triển khai guide/neo nguồn/prompt mới cho job tương lai; cập nhậtP06 trên bản mock có bằng chứng, không phê duyệt chất lượng model hoặc đổi tiêu chuẩn phát hành. [Bàn giao](AI-PAID-DEPTH-20261102.md).
+
 ## 02/11 — Tiếp tục nội dung và báo % mỗi cung sau mỗi phiên
 
 Chủ dự án yêu cầu tiếp tục hoàn thiện và báo % mỗi cung sau phiên. Giữ phạm vi mock/chưaAPI/bài cũ/QA3062/3070 của task đang tiếp tục. Codex áp mốc đo hồ sơ10mục có evidence và mẫu số cố định; đây là phương pháp theo dõi công việc, không lời chủ dự án duyệt tiêu chuẩn thương mại, điểm Tử Vi hoặc tỷ lệ bao phủ. Đổi mẫu số phải giải thích/version. [Định nghĩa và mốc đầu](AI-PAID-CONTENT-PROGRESS-20261102.md).

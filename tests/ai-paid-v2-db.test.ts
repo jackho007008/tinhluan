@@ -1,4 +1,4 @@
-import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v25";
+import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v26";
 import { PAID_PROMPT_V2 } from "../lib/ai/paid-reading-v2";
 import { mockPaidV2 } from "./fixtures/ai-paid-v2-mock";
 import { beforeAll, afterAll, it, expect, vi } from "vitest";

@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — Tiền đề nguồn và ngữ cảnh gia đình2.6
+
+150/150pure8file, có11outputmock,2guide mới, neoLộc tạiNô cho lờiTử, thiếu/sai/neo rỗng,legacyvalidator/C/time/y khoa vàSDK2.5/2.6 theo savedversion.4mock biên tập/dry11cung;8result/19sourceasset giữhash. Typecheck/build cáchly đạt,0API/DB/E2E/PDF/browser mới. DBtest chỉ đổiimport, không chạy. [Logs/giới hạn](AI-PAID-DEPTH-20261102.md).
+
 ## 02/11 — Nền Tài1.7 và4bản biên tập mock
 
 131/131pure7file; dry11cung159facts,4mock limited hợp lệ,4negative probes bỏ tiền đề. Kiểm chi/độc tọa/sao thứhai chưaverified/thiếu nhóm/anchor/v17-legacy;8result cũ giữ hash. Typecheck/build cách ly đạt;0API/DB/E2E/PDF/browser mới. Checklist10mục tiến độ có evidence, không tínhpartial hoặc dùng mock thay chất lượng model. [Bàn giao/logs](AI-PAID-CONTENT-PROGRESS-20261102.md).

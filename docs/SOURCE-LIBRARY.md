@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 02/11 — Dùng lại nguồn gia đình cho guide1.8
+
+Tái dùng đoạnV1 Phụ/Huynh và TrungChâu1/128–130; đối chiếu chữ TânBiên126/218 và giới hạn131, không PDF/ảnh mới. Không thêm indexunit hoặc sửa nguồn; sourceVersion topic-book1.1 chỉ metadata neo điều kiện, không sách mới. Giữ riêng các chủ thể/thế hệ và bỏ vế số người/phẩm hạnh. [Bằng chứng, nội dung mock và phạm vi](AI-PAID-DEPTH-20261102.md).
+
 ## 02/11 — Nền Tài tam phương và bất nhất trang218
 
 `paid-passages/index-v17.json`12đơn vị, thêm1foundation từ THP2/in218; đối chiếu ảnh218 sẵn có do nghiOCR, xác nhận sách cũng ghi Sửu/Thân. Không sửa thànhDần, chỉ nhận nhánhThân đủ tiền đề. Không đọc lại toànPDF hoặc tăng số trang/ảnh độc lập đã ghi trong checkpoint; v16/legacy giữ byte. [Phiếu nguồn, hash/bundle19artifact và phạm vi](AI-PAID-CONTENT-PROGRESS-20261102.md).

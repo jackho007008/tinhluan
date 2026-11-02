@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 02/11 — Biên luận2.6: tiền đề nguồn và hai ngữ cảnh gia đình
+
+Retrieval1.8/prompt2.6 bổ sung Nô–Huynh/Tử–Phụ đúng nguồn, giữ natal.Lộc tạiNô bằng anchor;150test/typecheck/build đạt,0API/DB/worker/QA3062/3070. Checklist không đổi: Nô/Tử70→80 ởP06, Phu/Tài/Quan/Phúc80, nămcungkhác40; vẫn chặnP05/P09. [Bàn giao/mock](AI-PAID-DEPTH-20261102.md) · [Tiến độ từng ô](AI-PAID-CONTENT-PROGRESS.json).
+
 ## 02/11 — Nền Tài1.7 và mốc % hồ sơ nội dung
 
 Thêm nền LiêmThân/Tử–Phủ–Vũ đúng điều kiện,4bản biên tập mock,131test/typecheck/build đạt;0API/QA3062/3070. Từ phiên này báo % từng cung theo checklist10mục, không là điểm chất lượng/phát hành. [Bàn giao](AI-PAID-CONTENT-PROGRESS-20261102.md) · [Mốc từng cung/evidence](AI-PAID-CONTENT-PROGRESS.json).

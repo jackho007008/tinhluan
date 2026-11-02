@@ -17,6 +17,7 @@ export function paidTopicBooks(input: MenhInput, target: string): Knowledge[] {
     location: string,
     conditions: string[],
     limits: string[],
+    anchorFactIds: string[],
   ) => {
     items.push({
       id: `paid-book.${id}`,
@@ -28,6 +29,7 @@ export function paidTopicBooks(input: MenhInput, target: string): Knowledge[] {
       selection: "matched-snapshot",
       conditions,
       limits,
+      anchorFactIds,
       references: [
         {
           title: `Nguyễn Anh Vũ — Trung Châu Tử Vi Đẩu Số, Tứ Hóa Phái, phần ${part}`,
@@ -37,7 +39,7 @@ export function paidTopicBooks(input: MenhInput, target: string): Knowledge[] {
       provenance: {
         ruleIds: [],
         ruleStatuses: [],
-        sourceVersion: "paid-topic-books-1.0.0",
+        sourceVersion: "paid-topic-books-1.1.0",
         certification: "editorial-reference-not-expert-approved",
       },
     });
@@ -58,6 +60,7 @@ export function paidTopicBooks(input: MenhInput, target: string): Knowledge[] {
         "Chưa có phi hóa phù hợp thì không kết luận được giúp đỡ, chân tình, lợi nhuận hợp tác hoặc quý nhân. Không tự tính phi hóa.",
         "Không chuyển các lời số lượng bạn bè, tai họa, bệnh hoặc các dự báo khác trong chương thành sự kiện của khách hàng.",
       ],
+      ["natal.Lộc"],
     );
   const stars = input.facts.filter(
     (f) =>
@@ -87,6 +90,13 @@ export function paidTopicBooks(input: MenhInput, target: string): Knowledge[] {
         "Không xác nhận phép phối hợp Phá Quân–Đà La–Hỏa Tinh. Không dùng Hóa Khoa xóa sát tinh hoặc bỏ Tuần.",
         "Giữ riêng quan điểm Tứ Hóa phái; không hợp nhất với Tân Biên thành một kết luận chắc chắn hoặc biến nguồn thành lời khuyên chấp nhận bạo hành.",
       ],
+      stars
+        .filter((f) =>
+          ["Thất Sát", "Tham Lang", "Phá Quân"].some((name) =>
+            f.text.includes(`: ${name};`),
+          ),
+        )
+        .map((f) => f.id),
     );
   if (target === "Tử Nữ" && natalAt("Lộc", "Nô Bộc"))
     add(
@@ -104,6 +114,7 @@ export function paidTopicBooks(input: MenhInput, target: string): Knowledge[] {
         "Không chuyển Hóa Lộc từ Nô sang Tử, không lấy câu này giải nghĩa chính tinh xung chiếu của Tử VCD hoặc giải hết các ngoại lệ của Tân Biên.",
         "Không suy số con, sinh sản, giới tính, học vấn, tài sản hoặc lợi nhuận hợp tác từ lời đối đãi này.",
       ],
+      ["natal.Lộc"],
     );
   if (target === "Tử Nữ" && natalAt("Khoa"))
     add(
@@ -121,6 +132,7 @@ export function paidTopicBooks(input: MenhInput, target: string): Knowledge[] {
         "Không chẩn đoán trí tuệ, sức khỏe hoặc khả năng sinh sản; không hứa thành tích học tập.",
         "Không áp nhánh Khoa cho Tử vô chính diệu chỉ vì có Đào Hoa/Ân Quang; thiếu Khoa năm sinh thì nhánh này không phù hợp.",
       ],
+      ["natal.Khoa"],
     );
   return items;
 }

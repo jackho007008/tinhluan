@@ -10,6 +10,20 @@ const namesPalace = (text: string, palace: string) =>
 /** Topic framing, not a new astrological proposition or an instruction in a source.
  * IDs point to existing, condition-matched C and target A/B. No duplicated prose. */
 const FRAMES: Record<string, { palace: string; focus: string }[]> = {
+  "Nô Bộc": [
+    {
+      palace: "Huynh Đệ",
+      focus:
+        "Đọc lời đối đãi/giao du tại Nô cạnh lời về anh chị em tại Huynh Đệ: hai loại quan hệ và kỳ vọng đáp lại khác nhau. Phân tích vì sao không thể lấy độ rộng giao du thay cho sự gần gũi trong quan hệ huyết thống; không suy trợ giúp, phản bội hoặc thay thế tình thân.",
+    },
+  ],
+  "Tử Nữ": [
+    {
+      palace: "Phụ Mẫu",
+      focus:
+        "Phân biệt hai thế hệ và vai của mệnh tạo: là con khi đọc Phụ Mẫu, trong quan hệ với con khi đọc Tử Nữ. Giữ riêng điều kiện vật chất và sự hòa thuận trong lời Phụ; không truyền lời về cha mẹ sang phẩm chất con hoặc dự báo gia đình lặp lại. Điều kiện cho lời Tử có thể nằm ở cung khác theo phương pháp nguồn, không chuyển sao.",
+    },
+  ],
   "Quan Lộc": [
     {
       palace: "Tài Bạch",
@@ -48,6 +62,13 @@ export function paidContextGuide(
       k.subjectPalaces?.includes(target),
   );
   if (!direct.length) return undefined;
+  const premiseIds = [
+    ...new Set(
+      direct.flatMap((k) => k.anchorFactIds || k.passage?.anchorFactIds || []),
+    ),
+  ];
+  if (premiseIds.some((id) => !input.facts.some((f) => f.id === id)))
+    return undefined;
   const links: Link[] = [];
   for (const frame of FRAMES[target]) {
     const source = input.knowledge.filter(
@@ -95,10 +116,13 @@ export function paidContextGuide(
       sourceKnowledgeIds: source.slice(0, 3).map((k) => k.id),
       targetKnowledgeIds: direct.slice(0, 3).map((k) => k.id),
       factIds: [
-        geometry.id,
-        ...anchors(targetFacts).map((f) => f.id),
-        ...anchors(sourceFacts).map((f) => f.id),
-        ...natal.map((f) => f.id),
+        ...new Set([
+          geometry.id,
+          ...anchors(targetFacts).map((f) => f.id),
+          ...anchors(sourceFacts).map((f) => f.id),
+          ...natal.map((f) => f.id),
+          ...premiseIds,
+        ]),
       ],
       focus: frame.focus,
       limits: [

@@ -1,4 +1,5 @@
-import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v25";
+import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v26";
+import { PAID_PROMPT_CURRENT as PAID_PROMPT_V25 } from "../lib/ai/paid-prompt-v25";
 import { PAID_PROMPT_CURRENT as PAID_PROMPT_V24 } from "../lib/ai/paid-prompt-v24";
 import { PAID_PROMPT_CURRENT as PAID_PROMPT_V21 } from "../lib/ai/paid-prompt-v21";
 import { it, expect, afterEach, vi } from "vitest";
@@ -300,6 +301,7 @@ it.each([
   PAID_PROMPT_V2,
   PAID_PROMPT_V21,
   PAID_PROMPT_V24,
+  PAID_PROMPT_V25,
   PAID_PROMPT_CURRENT,
 ])(
   "SDK CREATE/GET uses saved %s even if writer flag changes (fetch mock)",
@@ -385,10 +387,11 @@ it("paid provider refuses missing saved version before any network call", async 
 
 it("book background cannot substitute for a matched direct thesis", () => {
   const i = structuredClone(input);
-  Object.assign(i.knowledge[0], {group:"B",application:"reference-only"});
-  const r = output();r.sections[0].paragraphs[0].basis="ai-synthesis";
-  expect(() => validatePaidV2(r,i)).toThrow("AI_REFERENCE_SCOPE");
-  i.knowledge.push({...input.knowledge[0],id:"direct-base"});
+  Object.assign(i.knowledge[0], { group: "B", application: "reference-only" });
+  const r = output();
+  r.sections[0].paragraphs[0].basis = "ai-synthesis";
+  expect(() => validatePaidV2(r, i)).toThrow("AI_REFERENCE_SCOPE");
+  i.knowledge.push({ ...input.knowledge[0], id: "direct-base" });
   r.sections[0].paragraphs[0].knowledgeIds.push("direct-base");
-  expect(() => validatePaidV2(r,i)).not.toThrow();
+  expect(() => validatePaidV2(r, i)).not.toThrow();
 });

@@ -18,6 +18,13 @@ export function mockPaidV2(
         f.provenance?.relation === "target" &&
         f.provenance?.verification === "source-traced",
     ) || input.facts[0];
+  const anchors = [
+    ...new Set([
+      f.id,
+      ...(k?.anchorFactIds || []),
+      ...(k?.passage?.anchorFactIds || []),
+    ]),
+  ];
   return {
     provider: "test-mock",
     model: "test-mock-not-an-openai-model",
@@ -50,7 +57,7 @@ export function mockPaidV2(
                   {
                     text: "BẢN MÔ PHỎNG KIỂM THỬ. " + k!.text,
                     basis: "source-interpretation",
-                    factIds: [f.id],
+                    factIds: anchors,
                     knowledgeIds: [k!.id],
                   },
                 ],
@@ -65,7 +72,7 @@ export function mockPaidV2(
                         {
                           text: "BẢN MÔ PHỎNG: lời nguồn trên chỉ gợi một cách tự quan sát trong phạm vi đã nêu, không phải kết luận về đời sống người đọc.",
                           basis: "ai-synthesis",
-                          factIds: [f.id],
+                          factIds: anchors,
                           knowledgeIds: [k!.id],
                         },
                       ],
