@@ -1,0 +1,846 @@
+{
+  "schemaVersion": "paid-content-progress-1.0.0",
+  "updatedAt": "2026-11-02",
+  "baselineHead": "f84e9dc",
+  "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
+  "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
+  "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
+  "releaseGate": "P05/P09 còn mở là điểm chặn quan trọng dù % hồ sơ cao; không tự mở bán hoặc nâng phạm vi sản phẩm.",
+  "freeMenh": "V1/Luna giữ nguyên, ngoài chỉ số11cung trả phí.",
+  "apiCreate": 0,
+  "apiGet": 0,
+  "criteria": [
+    {
+      "id": "P01",
+      "title": "Packet đối chiếu snapshot và provenance",
+      "definition": "Dữ kiện đã lưu, không tự an sao; kiểm trên mẫu QA đang theo dõi.",
+      "weight": 10
+    },
+    {
+      "id": "P02",
+      "title": "Retrieval có điều kiện và phân vai",
+      "definition": "Kiểm kỹ thuật điều kiện/template/nhóm nguồn; không chứng nhận mọi luận điểm sách đúng ngoài đời.",
+      "weight": 10
+    },
+    {
+      "id": "P03",
+      "title": "Khai rõ phạm vi và khoảng thiếu",
+      "definition": "Có phạm vi focused/limited/insufficient phù hợp chứng cứ, không cam kết sâu đồng đều.",
+      "weight": 10
+    },
+    {
+      "id": "P04",
+      "title": "Có đề cương/bản luận với tham chiếu",
+      "definition": "Một bản biên tập có luận điểm trong phạm vi đã khai; có thể là mock hoặc bài cũ còn áp dụng, chưa thay nghiệm thu model.",
+      "weight": 10
+    },
+    {
+      "id": "P05",
+      "title": "Phối hợp và điều chỉnh đủ chiều sâu",
+      "definition": "Đối chiếu các yếu tố trọng yếu của phạm vi bài, không chỉ liệt kê hoặc rào; không đòi diễn giải mọi sao.",
+      "weight": 10
+    },
+    {
+      "id": "P06",
+      "title": "Liên cung có lập luận cụ thể",
+      "definition": "Có hai tiền đề phù hợp, giải thích vì sao cùng xét và giữ chủ thể; không chỉ kể vị trí hoặc đổi tên cung.",
+      "weight": 10
+    },
+    {
+      "id": "P07",
+      "title": "Tách lời nguồn và tổng hợp, giữ sắc thái",
+      "definition": "Đọc từng đoạn: basis/nguồn/thời gian/lượng từ/cung gốc đúng; không coi ID hợp lệ là đủ.",
+      "weight": 10
+    },
+    {
+      "id": "P08",
+      "title": "Rà an toàn và không bịa",
+      "definition": "Đọc toàn văn mẫu: không sự kiện chắc chắn, giả nguồn, chẩn đoán, tuổi thọ hoặc điều trị.",
+      "weight": 10
+    },
+    {
+      "id": "P09",
+      "title": "Astra hiện hành đạt đánh giá thực",
+      "definition": "API thật trên cấu hình hiện hành, đánh giá toàn văn đạt; mock/model nhẹ không thay mục này.",
+      "weight": 10
+    },
+    {
+      "id": "P10",
+      "title": "Tương thích lưu/mở/quyền đã kiểm",
+      "definition": "Tái dùng QA kỹ thuật đã có và kiểm regression version; không đổi quyền hoặc bài lưu.",
+      "weight": 10
+    }
+  ],
+  "rows": [
+    {
+      "palace": "Phụ Mẫu",
+      "percent": 40,
+      "passed": 4,
+      "total": 10,
+      "commercialReady": false,
+      "scope": "Chỉ đủ một phần theo ma trận QA; chưa rà lại bài đầy đủ trong phiên này.",
+      "checks": [
+        {
+          "id": "P01",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/dry-summary.json",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P02",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/tests-final.log",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P03",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-CONTENT-ACCEPTANCE-20261031.md + docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P04",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P05",
+          "status": "partial",
+          "evidence": "docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+        },
+        {
+          "id": "P06",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P07",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P08",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P09",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Không gọi API trong phiên; các bài thật cũ không kiểm cấu hình1.7/prompt2.5 hiện hành."
+        },
+        {
+          "id": "P10",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-PACKAGE36-HANDOFF.md + tests/ai-paid-v2.test.ts",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        }
+      ]
+    },
+    {
+      "palace": "Phúc Đức",
+      "percent": 80,
+      "passed": 8,
+      "total": 10,
+      "commercialReady": false,
+      "scope": "Giới hạn: nền họ hàng và khoảng cách nơi sống; chưa toàn diện tinh thần/truyền thống gia đình.",
+      "checks": [
+        {
+          "id": "P01",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/dry-summary.json",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P02",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/tests-final.log",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P03",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-CONTENT-ACCEPTANCE-20261031.md + docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P04",
+          "status": "passed",
+          "evidence": ".local/ai-paid-finish-20261101/phuc-duc-reading.md",
+          "note": "Đọc lại toàn văn bài thật cũ; không ghi nhận như bài của prompt/nguồn mới."
+        },
+        {
+          "id": "P05",
+          "status": "partial",
+          "evidence": "docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+        },
+        {
+          "id": "P06",
+          "status": "passed",
+          "evidence": ".local/ai-paid-finish-20261101/phuc-duc-reading.md",
+          "note": "Có đối chiếu giữ cung gốc trong mẫu, không đồng nghĩa đủ chiều sâu phối hợp toàn bài."
+        },
+        {
+          "id": "P07",
+          "status": "passed",
+          "evidence": ".local/ai-paid-finish-20261101/phuc-duc-reading.md",
+          "note": "Đọc lại toàn văn bài thật cũ; không ghi nhận như bài của prompt/nguồn mới."
+        },
+        {
+          "id": "P08",
+          "status": "passed",
+          "evidence": ".local/ai-paid-finish-20261101/phuc-duc-reading.md",
+          "note": "Đọc lại toàn văn bài thật cũ; không ghi nhận như bài của prompt/nguồn mới."
+        },
+        {
+          "id": "P09",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Không gọi API trong phiên; các bài thật cũ không kiểm cấu hình1.7/prompt2.5 hiện hành."
+        },
+        {
+          "id": "P10",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-PACKAGE36-HANDOFF.md + tests/ai-paid-v2.test.ts",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        }
+      ]
+    },
+    {
+      "palace": "Điền Trạch",
+      "percent": 40,
+      "passed": 4,
+      "total": 10,
+      "commercialReady": false,
+      "scope": "Chỉ đủ một phần theo ma trận QA; chưa rà lại bài đầy đủ trong phiên này.",
+      "checks": [
+        {
+          "id": "P01",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/dry-summary.json",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P02",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/tests-final.log",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P03",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-CONTENT-ACCEPTANCE-20261031.md + docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P04",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P05",
+          "status": "partial",
+          "evidence": "docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+        },
+        {
+          "id": "P06",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P07",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P08",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P09",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Không gọi API trong phiên; các bài thật cũ không kiểm cấu hình1.7/prompt2.5 hiện hành."
+        },
+        {
+          "id": "P10",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-PACKAGE36-HANDOFF.md + tests/ai-paid-v2.test.ts",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        }
+      ]
+    },
+    {
+      "palace": "Quan Lộc",
+      "percent": 80,
+      "passed": 8,
+      "total": 10,
+      "commercialReady": false,
+      "scope": "Có hạt nhân tổ chức/quyền/biểu đạt; còn thiếu chiều sâu điều chỉnh và văn phiên bản hiện hành.",
+      "checks": [
+        {
+          "id": "P01",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/dry-summary.json",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P02",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/tests-final.log",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P03",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-CONTENT-ACCEPTANCE-20261031.md + docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P04",
+          "status": "passed",
+          "evidence": ".local/ai-paid22-real-20261101/quan-loc-reading.md",
+          "note": "Đọc lại toàn văn bài thật cũ; không ghi nhận như bài của prompt/nguồn mới."
+        },
+        {
+          "id": "P05",
+          "status": "partial",
+          "evidence": "docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+        },
+        {
+          "id": "P06",
+          "status": "passed",
+          "evidence": ".local/ai-paid22-real-20261101/quan-loc-reading.md",
+          "note": "Có đối chiếu giữ cung gốc trong mẫu, không đồng nghĩa đủ chiều sâu phối hợp toàn bài."
+        },
+        {
+          "id": "P07",
+          "status": "passed",
+          "evidence": ".local/ai-paid22-real-20261101/quan-loc-reading.md",
+          "note": "Đọc lại toàn văn bài thật cũ; không ghi nhận như bài của prompt/nguồn mới."
+        },
+        {
+          "id": "P08",
+          "status": "passed",
+          "evidence": ".local/ai-paid22-real-20261101/quan-loc-reading.md",
+          "note": "Đọc lại toàn văn bài thật cũ; không ghi nhận như bài của prompt/nguồn mới."
+        },
+        {
+          "id": "P09",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Không gọi API trong phiên; các bài thật cũ không kiểm cấu hình1.7/prompt2.5 hiện hành."
+        },
+        {
+          "id": "P10",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-PACKAGE36-HANDOFF.md + tests/ai-paid-v2.test.ts",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        }
+      ]
+    },
+    {
+      "palace": "Nô Bộc",
+      "percent": 70,
+      "passed": 7,
+      "total": 10,
+      "commercialReady": false,
+      "scope": "Giới hạn: giao du, kỳ vọng và biểu hiện hợp tác từ Lộc tại Nô; chưa Lương–Lộc toàn cấu trúc.",
+      "checks": [
+        {
+          "id": "P01",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/dry-summary.json",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P02",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/tests-final.log",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P03",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-CONTENT-ACCEPTANCE-20261031.md + docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P04",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/Nô-Bộc-proposed.mock.md",
+          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
+        },
+        {
+          "id": "P05",
+          "status": "partial",
+          "evidence": "docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+        },
+        {
+          "id": "P06",
+          "status": "partial",
+          "evidence": ".local/ai-paid-content-progress-20261102/Nô-Bộc-proposed.mock.md",
+          "note": "Phân biệt chủ thể/phương diện đã rõ, chưa có liên hệ hai tiền đề liên cung đủ mạnh."
+        },
+        {
+          "id": "P07",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/Nô-Bộc-proposed.mock.md",
+          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
+        },
+        {
+          "id": "P08",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/Nô-Bộc-proposed.mock.md",
+          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
+        },
+        {
+          "id": "P09",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Không gọi API trong phiên; các bài thật cũ không kiểm cấu hình1.7/prompt2.5 hiện hành."
+        },
+        {
+          "id": "P10",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-PACKAGE36-HANDOFF.md + tests/ai-paid-v2.test.ts",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        }
+      ]
+    },
+    {
+      "palace": "Thiên Di",
+      "percent": 40,
+      "passed": 4,
+      "total": 10,
+      "commercialReady": false,
+      "scope": "Chỉ đủ một phần theo ma trận QA; chưa rà lại bài đầy đủ trong phiên này.",
+      "checks": [
+        {
+          "id": "P01",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/dry-summary.json",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P02",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/tests-final.log",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P03",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-CONTENT-ACCEPTANCE-20261031.md + docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P04",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P05",
+          "status": "partial",
+          "evidence": "docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+        },
+        {
+          "id": "P06",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P07",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P08",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P09",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Không gọi API trong phiên; các bài thật cũ không kiểm cấu hình1.7/prompt2.5 hiện hành."
+        },
+        {
+          "id": "P10",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-PACKAGE36-HANDOFF.md + tests/ai-paid-v2.test.ts",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        }
+      ]
+    },
+    {
+      "palace": "Tật Ách",
+      "percent": 40,
+      "passed": 4,
+      "total": 10,
+      "commercialReady": false,
+      "scope": "Chỉ chú giải cấu trúc hoặc insufficient, chưa duyệt bài sức khỏe cá nhân; không chẩn đoán/tuổi thọ/điều trị.",
+      "checks": [
+        {
+          "id": "P01",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/dry-summary.json",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P02",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/tests-final.log",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P03",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-CONTENT-ACCEPTANCE-20261031.md + docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P04",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P05",
+          "status": "partial",
+          "evidence": "docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+        },
+        {
+          "id": "P06",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P07",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P08",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P09",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Không gọi API trong phiên; các bài thật cũ không kiểm cấu hình1.7/prompt2.5 hiện hành."
+        },
+        {
+          "id": "P10",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-PACKAGE36-HANDOFF.md + tests/ai-paid-v2.test.ts",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        }
+      ]
+    },
+    {
+      "palace": "Tài Bạch",
+      "percent": 80,
+      "passed": 8,
+      "total": 10,
+      "commercialReady": false,
+      "scope": "Giới hạn: cạnh tranh/tạo nguồn, ngữ cảnh nghề và chi ngoài việc; chưa Liêm–Hao.",
+      "checks": [
+        {
+          "id": "P01",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/dry-summary.json",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P02",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/tests-final.log",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P03",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-CONTENT-ACCEPTANCE-20261031.md + docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P04",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/Tài-Bạch-proposed.mock.md",
+          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
+        },
+        {
+          "id": "P05",
+          "status": "partial",
+          "evidence": "docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+        },
+        {
+          "id": "P06",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/Tài-Bạch-proposed.mock.md",
+          "note": "Có đối chiếu giữ cung gốc trong mẫu, không đồng nghĩa đủ chiều sâu phối hợp toàn bài."
+        },
+        {
+          "id": "P07",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/Tài-Bạch-proposed.mock.md",
+          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
+        },
+        {
+          "id": "P08",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/Tài-Bạch-proposed.mock.md",
+          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
+        },
+        {
+          "id": "P09",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Không gọi API trong phiên; các bài thật cũ không kiểm cấu hình1.7/prompt2.5 hiện hành."
+        },
+        {
+          "id": "P10",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-PACKAGE36-HANDOFF.md + tests/ai-paid-v2.test.ts",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        }
+      ]
+    },
+    {
+      "palace": "Tử Tức",
+      "percent": 70,
+      "passed": 7,
+      "total": 10,
+      "commercialReady": false,
+      "scope": "Giới hạn: một nét đối đãi theo cách đọc Lộc ở Nô; chưa nền toàn diện TửVCD.",
+      "checks": [
+        {
+          "id": "P01",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/dry-summary.json",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P02",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/tests-final.log",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P03",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-CONTENT-ACCEPTANCE-20261031.md + docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P04",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/Tử-Nữ-proposed.mock.md",
+          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
+        },
+        {
+          "id": "P05",
+          "status": "partial",
+          "evidence": "docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+        },
+        {
+          "id": "P06",
+          "status": "partial",
+          "evidence": ".local/ai-paid-content-progress-20261102/Tử-Nữ-proposed.mock.md",
+          "note": "Phân biệt chủ thể/phương diện đã rõ, chưa có liên hệ hai tiền đề liên cung đủ mạnh."
+        },
+        {
+          "id": "P07",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/Tử-Nữ-proposed.mock.md",
+          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
+        },
+        {
+          "id": "P08",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/Tử-Nữ-proposed.mock.md",
+          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
+        },
+        {
+          "id": "P09",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Không gọi API trong phiên; các bài thật cũ không kiểm cấu hình1.7/prompt2.5 hiện hành."
+        },
+        {
+          "id": "P10",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-PACKAGE36-HANDOFF.md + tests/ai-paid-v2.test.ts",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        }
+      ]
+    },
+    {
+      "palace": "Phu Thê",
+      "percent": 80,
+      "passed": 8,
+      "total": 10,
+      "commercialReady": false,
+      "scope": "Giới hạn: tương tác Phá/Tả/Khoa và ví dụ MệnhVũ–Phủ/PhuPhá; chưa Phá–Đà–Hỏa.",
+      "checks": [
+        {
+          "id": "P01",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/dry-summary.json",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P02",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/tests-final.log",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P03",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-CONTENT-ACCEPTANCE-20261031.md + docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P04",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/Phu-Thê-proposed.mock.md",
+          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
+        },
+        {
+          "id": "P05",
+          "status": "partial",
+          "evidence": "docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+        },
+        {
+          "id": "P06",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/Phu-Thê-proposed.mock.md",
+          "note": "Có đối chiếu giữ cung gốc trong mẫu, không đồng nghĩa đủ chiều sâu phối hợp toàn bài."
+        },
+        {
+          "id": "P07",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/Phu-Thê-proposed.mock.md",
+          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
+        },
+        {
+          "id": "P08",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/Phu-Thê-proposed.mock.md",
+          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
+        },
+        {
+          "id": "P09",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Không gọi API trong phiên; các bài thật cũ không kiểm cấu hình1.7/prompt2.5 hiện hành."
+        },
+        {
+          "id": "P10",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-PACKAGE36-HANDOFF.md + tests/ai-paid-v2.test.ts",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        }
+      ]
+    },
+    {
+      "palace": "Huynh Đệ",
+      "percent": 40,
+      "passed": 4,
+      "total": 10,
+      "commercialReady": false,
+      "scope": "Chỉ đủ một phần theo ma trận QA; chưa rà lại bài đầy đủ trong phiên này.",
+      "checks": [
+        {
+          "id": "P01",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/dry-summary.json",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P02",
+          "status": "passed",
+          "evidence": ".local/ai-paid-content-progress-20261102/tests-final.log",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P03",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-CONTENT-ACCEPTANCE-20261031.md + docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        },
+        {
+          "id": "P04",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P05",
+          "status": "partial",
+          "evidence": "docs/AI-PAID-CONTENT-PROGRESS-20261102.md",
+          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+        },
+        {
+          "id": "P06",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P07",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P08",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+        },
+        {
+          "id": "P09",
+          "status": "not-verified",
+          "evidence": null,
+          "note": "Không gọi API trong phiên; các bài thật cũ không kiểm cấu hình1.7/prompt2.5 hiện hành."
+        },
+        {
+          "id": "P10",
+          "status": "passed",
+          "evidence": "docs/AI-PAID-PACKAGE36-HANDOFF.md + tests/ai-paid-v2.test.ts",
+          "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
+        }
+      ]
+    }
+  ]
+}

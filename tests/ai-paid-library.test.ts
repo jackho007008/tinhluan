@@ -114,6 +114,74 @@ const methodUnit = () => {
   });
   write();
 };
+const exclusiveShape = () => {
+  units[0].palaceConditions = [
+    { palace: "Tài Bạch", branches: ["Thân"], soleMajor: "Liêm Trinh" },
+  ];
+  input.facts.push(
+    {
+      id: "palace.9.location",
+      kind: "engine",
+      text: "Tài Bạch tại Thân; can cung đã lưu.",
+      paths: ["chart.palaces.9"],
+    },
+    {
+      id: "major",
+      kind: "engine",
+      text: "Tài Bạch tại Thân: Liêm Trinh; nhóm chính tinh",
+      paths: ["major"],
+      provenance: {
+        palace: "Tài Bạch",
+        relation: "target",
+        field: "majorStars",
+        scope: "natal",
+        verification: "source-traced",
+        source: "fixture",
+      },
+    },
+  );
+  write();
+};
+it("enforces a source's sole-major/branch condition and retains the location anchor", () => {
+  exclusiveShape();
+  expect(
+    paidLibrary(input, "Tài Bạch", root).items[0].passage?.anchorFactIds,
+  ).toEqual(["f", "palace.9.location", "major"]);
+});
+it.each([
+  "wrong-branch",
+  "second-major",
+  "unverified-second",
+  "missing-major",
+  "unverified-major",
+  "missing-location",
+  "incomplete",
+])("does not treat %s as an exclusive-major match", (variant) => {
+  exclusiveShape();
+  if (variant === "wrong-branch")
+    input.facts[1].text = "Tài Bạch tại Dần; can cung đã lưu.";
+  if (variant === "second-major" || variant === "unverified-second")
+    input.facts.push({
+      ...input.facts[2],
+      id: "second",
+      text: "Tài Bạch tại Thân: Thiên Phủ; nhóm chính tinh",
+      provenance: {
+        ...input.facts[2].provenance!,
+        verification:
+          variant === "unverified-second" ? "engine-reported" : "source-traced",
+      },
+    });
+  if (variant === "missing-major") input.facts.pop();
+  if (variant === "unverified-major")
+    input.facts[2].provenance!.verification = "engine-reported";
+  if (variant === "missing-location") input.facts.splice(1, 1);
+  if (variant === "incomplete")
+    input.missing.push("Tài Bạch: thiếu majorStars");
+  expect(paidLibrary(input, "Tài Bạch", root).excluded).toContainEqual({
+    id: "paid-library.speech",
+    reason: "palace-condition-not-met",
+  });
+});
 it("palace existence selects a method as D only, never a new direct thesis", () => {
   methodUnit();
   const k = paidLibrary(input, "Tài Bạch", root).items[0];
@@ -199,6 +267,23 @@ it("uses a separate v1.6 index without altering the legacy asset; invalid new as
     reason: "missing-or-invalid-index",
   });
   fs.unlinkSync(versioned);
+  expect(paidLibrary(input, "Tài Bạch", root).items[0].group).toBe("B");
+});
+it("v1.7 has its own index and invalid v1.7 must not masquerade as v1.6 success", () => {
+  const v16 = path.join(root, "paid-passages/index-v16.json"),
+    v17 = path.join(root, "paid-passages/index-v17.json");
+  fs.copyFileSync(path.join(root, "paid-passages/index.json"), v16);
+  const before = fs.readFileSync(v16);
+  methodUnit();
+  fs.copyFileSync(path.join(root, "paid-passages/index.json"), v17);
+  expect(paidLibrary(input, "Tài Bạch", root).items[0].group).toBe("D");
+  expect(fs.readFileSync(v16)).toEqual(before);
+  fs.writeFileSync(v17, "invalid v17");
+  expect(paidLibrary(input, "Tài Bạch", root).excluded).toContainEqual({
+    id: "paid-library",
+    reason: "missing-or-invalid-index",
+  });
+  fs.unlinkSync(v17);
   expect(paidLibrary(input, "Tài Bạch", root).items[0].group).toBe("B");
 });
 it("cross-palace foundation requires every source premise, not a matching star name elsewhere", () => {

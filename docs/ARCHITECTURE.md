@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 02/11 — Retrieval1.7, ràng buộc vị trí/chính tinh duy nhất
+
+Thư viện hỗ trợ palaceConditions từ nguồn, kiểm location/chi/đủ majorStars/độc tọa, giữ neo sao/vị trí. Loader v17→v16→legacy, invalid mới fail closed; index cũ nguyên. Không thay prompt2.5/schemaV2/store/UI/quyền. %hồ sơ chỉ tài liệu, không UI khách/X11. [Chi tiết và kiểm](AI-PAID-CONTENT-PROGRESS-20261102.md).
+
 ## 02/11 — Retrieval1.6 và phương pháp thư viện
 
 Loader ưu tiên index-v16, thiếu thì dùng index cũ; invalid mới fail closed. Kind method luônD, neo location chỉ cho phương pháp, không thay lời sao hoặc đủ để sinh bài cá nhân. Có method thư viện thì ưu tiên method đúng chủ đề trước quy trình chung, vẫn D3/library4/14KB. Prompt2.5/schemaV2/store/queue giữ nguyên. [Nguồn và kiểm](AI-PAID-FOUR-SOURCES-20261102.md).

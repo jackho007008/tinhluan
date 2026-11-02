@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 02/11 — Retrieval1.7, bốn bản biên tập và tiến độ hồ sơ
+
+Tài thêm Bfoundation Liêm độcThân/Tử–Phủ–Vũ; index-v17 riêng, v16/legacy/bài cũ nguyên. Dựng4mock limited, dry11cung159facts,131test/typecheck/build đạt;0API/DB/worker/QA3062/3070. Mốc10mục: Nô/Tử70%, Phu/Tài/Quan/Phúc80%, Phụ/Điền/Di/Huynh/Tật40%; đây là %hồ sơ kiểm/biên tập, không mức sẵn sàng phát hành. P05chiều sâu/P09model hiện hành còn chặn. [Tiêu chí và bằng chứng](AI-PAID-CONTENT-PROGRESS-20261102.md) · [Dữ liệu cập nhật mỗi phiên](AI-PAID-CONTENT-PROGRESS.json).
+
 ## 02/11 — Retrieval1.6 cho Nô–Tử–Phu–Tài, mock
 
 Nguồn mới:3methodD xác định chủ thể/giao dịch và1Bfoundation ví dụ MệnhVũ–Phủ/PhuPhá; direct trên mẫu vẫn3/1/3/3,159facts/C nguyên. Index-v16 riêng, index cũ7đơn vị giữ byte; kho mới11đơn vị, bundle private16artifact.122puretest/typecheck/build đạt,8bài thật cũ đọc đúngversion;0API/DB/worker/QA3062/3070. Chưa nghiệm thu model/thương mại. [Phiếu nguồn, trước/sau và giới hạn](AI-PAID-FOUR-SOURCES-20261102.md).

@@ -55,6 +55,19 @@ const unit = z
       )
       .min(1)
       .max(4),
+    palaceConditions: z
+      .array(
+        z
+          .object({
+            palace: z.string().min(1),
+            branches: z.array(z.string().min(1)).min(1).max(12),
+            soleMajor: z.string().min(1),
+          })
+          .strict(),
+      )
+      .min(1)
+      .max(4)
+      .optional(),
     conditions: z.array(z.string().min(1)).min(1).max(8),
     limits: z.array(z.string().min(1)).min(1).max(8),
     references: z
@@ -105,10 +118,13 @@ export function paidLibrary(
   try {
     // Old checkouts keep reading their original index; new method units never
     // make a shared legacy index unreadable. Missing v1.6 assets use the old set.
-    const versioned = path.join(root, "paid-passages", "index-v16.json");
-    const file = fs.existsSync(versioned)
-      ? versioned
-      : path.join(root, "paid-passages", "index.json");
+    const v17 = path.join(root, "paid-passages", "index-v17.json");
+    const v16 = path.join(root, "paid-passages", "index-v16.json");
+    const file = fs.existsSync(v17)
+      ? v17
+      : fs.existsSync(v16)
+        ? v16
+        : path.join(root, "paid-passages", "index.json");
     if (fs.lstatSync(file).isSymbolicLink() || fs.statSync(file).size > 256000)
       throw Error();
     data = index.parse(JSON.parse(fs.readFileSync(file, "utf8")));
@@ -127,6 +143,38 @@ export function paidLibrary(
     const reject = (reason: string) => excluded.push({ id, reason });
     if (u.status !== "reviewed") {
       reject("not-reviewed");
+      continue;
+    }
+    // A name match does not establish an exclusive-star or branch condition.
+    // Count even unverified extra major stars: they cannot be treated as absent.
+    if (
+      u.palaceConditions?.some((c) => {
+        const located = input.facts.some(
+          (f) =>
+            /^palace\.\d+\.location$/.test(f.id) &&
+            f.kind === "engine" &&
+            c.branches.some((b) =>
+              f.text.startsWith(`${c.palace} tại ${b};`),
+            ) &&
+            f.paths.some((p) => /^chart\.palaces\.\d+$/.test(p)),
+        );
+        const majors = input.facts.filter(
+          (f) =>
+            f.provenance?.palace === c.palace &&
+            f.provenance.field === "majorStars",
+        );
+        return (
+          !located ||
+          majors.length !== 1 ||
+          majors[0].provenance?.verification !== "source-traced" ||
+          !majors[0].text.includes(`: ${c.soleMajor};`) ||
+          input.missing.some(
+            (m) => m.startsWith(c.palace + ":") && m.includes("majorStars"),
+          )
+        );
+      })
+    ) {
+      reject("palace-condition-not-met");
       continue;
     }
     if (
@@ -172,7 +220,24 @@ export function paidLibrary(
       reject("condition-not-met");
       continue;
     }
-    const anchorFactIds = [...new Set(matches.flat().map((f) => f.id))];
+    const anchorFactIds = [
+      ...new Set([
+        ...matches.flat().map((f) => f.id),
+        ...input.facts
+          .filter((f) =>
+            u.palaceConditions?.some(
+              (c) =>
+                (/^palace\.\d+\.location$/.test(f.id) &&
+                  c.branches.some((b) =>
+                    f.text.startsWith(`${c.palace} tại ${b};`),
+                  )) ||
+                (f.provenance?.palace === c.palace &&
+                  f.provenance.field === "majorStars"),
+            ),
+          )
+          .map((f) => f.id),
+      ]),
+    ];
     try {
       for (const p of u.pages) {
         const file = path.resolve(

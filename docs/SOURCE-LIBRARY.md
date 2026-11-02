@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 02/11 — Nền Tài tam phương và bất nhất trang218
+
+`paid-passages/index-v17.json`12đơn vị, thêm1foundation từ THP2/in218; đối chiếu ảnh218 sẵn có do nghiOCR, xác nhận sách cũng ghi Sửu/Thân. Không sửa thànhDần, chỉ nhận nhánhThân đủ tiền đề. Không đọc lại toànPDF hoặc tăng số trang/ảnh độc lập đã ghi trong checkpoint; v16/legacy giữ byte. [Phiếu nguồn, hash/bundle19artifact và phạm vi](AI-PAID-CONTENT-PROGRESS-20261102.md).
+
 ## 02/11 — Đoạn sách cho AI trả phí1.6
 
 Kho private có `knowledge/paid-passages/index-v16.json`:11đơn vị, thêm3method/1foundation từ chữ THP2 đã xử lý; index.json cũ7đơn vị nguyên byte. Không PDF/ảnh mới hoặc tăng mức chứng nhận; reviewed là Codex rà diễn ý/điều kiện, không chứng nhận độc lập hay publish. [Phiếu nguồn, hash/bundle16artifact và giới hạn](AI-PAID-FOUR-SOURCES-20261102.md). Không sửa BửuĐình, không coi phạm vi đã rà là hết kho.

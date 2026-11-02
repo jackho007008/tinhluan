@@ -90,7 +90,8 @@ export type MenhInput = {
     | "paid-retrieval-1.3.0"
     | "paid-retrieval-1.4.0"
     | "paid-retrieval-1.5.0"
-    | "paid-retrieval-1.6.0";
+    | "paid-retrieval-1.6.0"
+    | "paid-retrieval-1.7.0";
   facts: AiFact[];
   knowledge: Knowledge[];
   missing: string[];

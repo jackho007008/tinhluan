@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 02/11 — Tiếp tục nội dung và báo % mỗi cung sau mỗi phiên
+
+Chủ dự án yêu cầu tiếp tục hoàn thiện và báo % mỗi cung sau phiên. Giữ phạm vi mock/chưaAPI/bài cũ/QA3062/3070 của task đang tiếp tục. Codex áp mốc đo hồ sơ10mục có evidence và mẫu số cố định; đây là phương pháp theo dõi công việc, không lời chủ dự án duyệt tiêu chuẩn thương mại, điểm Tử Vi hoặc tỷ lệ bao phủ. Đổi mẫu số phải giải thích/version. [Định nghĩa và mốc đầu](AI-PAID-CONTENT-PROGRESS-20261102.md).
+
 ## 02/11 — Hoàn thiện bốn cung từ kho đã xử lý, chỉ mock
 
 Chủ dự án giao ưu tiên khoảng thiếu khả thi của Nô/Tử/Phu/Tài, giữ bài cũ, không API hoặc QA3062/3070. Lượt này chỉ thêm nguồn nền/phương pháp có giới hạn, không phê duyệt dự báo hôn nhân, sinh sản, phép chế hóa hoặc phát hành. [Kết quả và giới hạn](AI-PAID-FOUR-SOURCES-20261102.md).

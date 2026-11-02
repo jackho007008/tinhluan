@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 02/11 — Tiếp tục hoàn thiện nội dung, mốc theo dõi đầu tiên
+
+Khép lô nền TàiThân và4bản mock,131test/typecheck/build; chưa API/deploy. Từ nay mỗi phiên báo % hồ sơ từng cung theo10mục cố định và evidence, partial/chưakiểm không tính. Đây là số đo trong backlog này, không hàng đợi nghiên cứu khác hoặc tiêu chuẩn publish. [Mốc/định nghĩa và khoảng thiếu](AI-PAID-CONTENT-PROGRESS-20261102.md); vẫn còn P05chiều sâu vàP09Astra cấu hình hiện hành chưa đạt.
+
 ## 02/11 — Khép lô nguồn khả thi Nô–Tử–Phu–Tài, chỉ mock
 
 Đã đưa3methodD/1Bfoundation vào retrieval1.6 có điều kiện, không thêm rule hoặc tăng direct; source cards/mock/122test/typecheck/build đã ghi. Vẫn thiếu Lương–Lộc, nền TửVCD toàn diện, Phá–Đà–Hỏa và Liêm–Hao trong phạm vi rà; không tự gọi API/QA3062/3070. [Đầu ra và điểm dừng](AI-PAID-FOUR-SOURCES-20261102.md).
