@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — Mock hai tổ hợp và điểm mù về suy diễn
+
+2bản limited trêninput1.12 nguyên qua validator;2factID giả bị chặn.1probe điều hòaPhá–Hỏa sai nguồn qua kỹthuật nhưng bị ràtay bác, khôngreading/publish.8bài thật giữhash,0API/code/DB/deploy;khôngbuild/testsuite/E2E/PDF. [Phiếu và kiểm](AI-PAID-PAIR-SOURCE-REVIEW-20261102.md).
+
 ## 02/11 — Input1.12:190test và provider HTTPmock
 
 19testmới/190testliênquan đạt, kiểm scope/digest/neo/idempotence/budget/payload3cung/GETinput1.11khôngPOST. Typecheck/buildcáchly đạt;dry11cung159facts giữ nguồn,3mock/8bài thật/21bundle nguyên.2dryfail mất1CMệnh do độdài được giữlog, rútgọn text rồi kiểmcuối đạt; khôngnới expected/cap.0API/DB/E2E/PDF/mobile/deploy. [Logs/BUILD_ID/phạmvi](AI-PAID-SOURCE-INPUT-20261102.md).

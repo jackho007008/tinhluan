@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 02/11 — Nguồn cặp Phá–Hỏa và giới hạn NhịHao
+
+THP2/465–466/475/698–699 tách Mệnh/Phu/nhóm/bộvị; NPL249–250 có điều kiệnMãoDậu,262khác bảngsáng,309chủđềQuan. Không nói kho thiếu mọi lời hoặc đổi đầu ra để lấp.12asset cóhash, chỉ chữ/hồ sơ,khôngPDF/ảnh/index/BửuĐình mới. [Phiếu và kiểm](AI-PAID-PAIR-SOURCE-REVIEW-20261102.md).
+
 ## 02/11 — Hiệu đính trong input mới, canonicalnguồn giữ nguyên
 
 Tái dùng phiếu THP2/174,TB190,HS125 để hiệuđính3nguồn trong paidinput1.12. Không đọc PDF/ảnh mới, không sửa index-v110 hoặc BửuĐình. passage.digest vẫn nhận unitgốc; sourceReview1.0 nhận bản hiệuđính riêng, không chứngnhận chuyênmôn mới.21bundle/8bài thật giữhash; codekhôngphụthuộcID/ngàysinhmẫu. [Phiếu áp dụng và provenance](AI-PAID-SOURCE-INPUT-20261102.md).

@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 02/11 — Khép lô rà hai khoảng thiếu, không tự thêm rule
+
+Rà chữ/hồ sơ đúng Phá–Đà–Hỏa/Phu vàLiêm–Hao/Tài; tìm cặpPhá–Hỏa nhưng chưa cầu nối đủđiềukiện/đầu ra cho toànbộ.2mock hiệnhành đạt,probe sai nghĩa bị bác thủcông dù qua schema.0API/code/deploy;scope/checklist90%giữ. [Phiếu và kiểm](AI-PAID-PAIR-SOURCE-REVIEW-20261102.md).
+
 ## 02/11 — Khép tích hợp sắc thái vào đầu vào mới
 
 Lớp hiệuđính1.0/retrieval1.12 đi qua inputfactory/provider hiệncó; không tạo rule/queue/schemaoutputmới, không sửa savedinput.190test/typecheck/buildcáchly đạt;dry đầu mất1CMệnh do dung lượng đã sửa bằng rútgọn, cap/baseline nguyên.3mock/8lịch sử/21bundle đạt,0API/deploy.11cung90%; dừng đúng code/mock, không tự đóngP09. [Đầu ra/giới hạn](AI-PAID-SOURCE-INPUT-20261102.md).

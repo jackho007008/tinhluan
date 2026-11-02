@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 02/11 — Rà hai tổ hợp: thêm nguồn Phá–Hỏa, chưa khép toàn bộ
+
+THP2/699 có cặp Phá–HỏaPhu nhưng đầu ra không đưa vào lời khách;466 bác phép HỏađiềuhòaPhá. NhịHao249–250 giữMãoDậu, chưa giảiLiêm–ĐạiHaoThân.2mock/2probeID đạt;1suydiễnsai qua validator đã bị rànguồn bác.0API/code/QA,11cung90%giữ. [Phiếu và kiểm](AI-PAID-PAIR-SOURCE-REVIEW-20261102.md).
+
 ## 02/11 — Sắc thái nguồn đã vào inputfactory bài mới
 
 Retrieval1.12 hiệuđính đúng3nguồn Quan/Nô/Phu trước cap, giữfacts/roles/conditions/neo vàunitgốc; sourceReview1.0 có dấu vết. Prompt2.6/queue/GET/bài cũ giữ, khôngruntimeupdate.190test/typecheck/buildcáchly đạt;dry11cung giữ nguồn/facts,8bài thật/21bundle nguyên.0API/DB/QA3062/3070; mọi cung90%,P09chưa kiểm. [Triển khai và bằng chứng](AI-PAID-SOURCE-INPUT-20261102.md).
