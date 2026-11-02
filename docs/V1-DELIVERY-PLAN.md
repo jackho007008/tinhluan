@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 02/11 — T1P06 có lập luận; P05 chưa khép
+
+Đã nối đúng hai tiền đề THP2về Mệnh–Tật/VCD, biên tập5phần/15đoạn và rà BệnhPhù/TB188. Chỉ P06đạt theo scope/tiêu chí cũ, Tật80%;10cung90%. P05partial vì chưa giải phối hợp phụ tinh/điều chỉnh đủ điều kiện, P09chưa kiểm; không gọiAPI/publish hoặc đổi appinsufficient.6probe/10validator/8bài cũ/21sourceartifact đạt;0code/DB/deploy. [Đầu ra và điểm dừng](AI-PAID-TAT-T1-P05-P06-20261102.md).
+
 ## 02/11 — Khép lô T1thẩm định và bản thảo tổng hợp
 
 Đã cóT1nămphần theo cấu trúc đúngmẫu và ghép10bài hiện hành, không chỉnh lịch sử hoặc publish. Tật70%hồ sơ(P04/P07/P08),mười cung90%; không dùng T1đóngP05/P06/P09 hoặc tính làluậncánhânhoànchỉnh.0API/code/deploy. [Đầu ra/giới hạn](AI-PAID-TAT-T1-REVIEW-20261102.md).

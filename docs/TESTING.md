@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — T1P06: kiểm mock tham chiếu/an toàn/bảo toàn
+
+159facts/knowledge khớp savedinput;T1mới5phần/15đoạn mapping vàguard đạt.6probe chặn3y khoa/C-onlyfocused/upstream/unknownfact;insufficient0section hợp lệ.10bản/8bài thật cũ qua đúngvalidator;hash21nguồn/bảncũ/snapshot nguyên. Lượt đầu14đoạn và cuối15đoạn đều đạt; không appchange/build/typecheck/suite167/E2E/PDF/DB/mobile,0API. [Log và phạm vi thực kiểm](AI-PAID-TAT-T1-P05-P06-20261102.md#4-kiểm-mock-thực-sự-đã-chạy).
+
 ## 02/11 — Bản thảo10bài vàT1nghiên cứu
 
 10bài qua validator với savedinput/facts khớp;T1qua guard an toàn nhưng không được gọi làpaidV2.3câu mock vượt phạm vi bịchặn;2probe chặn C-onlyfocused/upstream chưa xác minh.8bài thật/10bản thảo/21nguồn giữhash. Không appchange nên không build/typecheck/suite167/E2E/PDF/DB/mobile,0API. [Bằng chứng và giới hạn](AI-PAID-TAT-T1-REVIEW-20261102.md#hồ-sơ-kiểm-và-tiến-độ).

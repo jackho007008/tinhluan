@@ -1,7 +1,7 @@
 {
   "schemaVersion": "paid-content-progress-1.0.0",
   "updatedAt": "2026-11-02",
-  "baselineHead": "f3fdaa3",
+  "baselineHead": "f60d6bb",
   "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
   "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
   "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
@@ -494,8 +494,8 @@
     },
     {
       "palace": "Tật Ách",
-      "percent": 70,
-      "passed": 7,
+      "percent": 80,
+      "passed": 8,
       "total": 10,
       "commercialReady": false,
       "scope": "Chỉ chú giải cấu trúc hoặc insufficient, chưa duyệt bài sức khỏe cá nhân; không chẩn đoán/tuổi thọ/điều trị.",
@@ -521,31 +521,31 @@
         {
           "id": "P04",
           "status": "passed",
-          "evidence": "docs/AI-PAID-TAT-T1-REVIEW-20261102.md",
+          "evidence": "docs/AI-PAID-TAT-T1-DEPTH-20261102.md + docs/AI-PAID-TAT-T1-P05-P06-20261102.md",
           "note": "Có bản thẩm định T1 năm phần, có luận điểm về cấu trúc VCD trong phạm vi row cũ; chưa duyệt nội dung/chưa publish và không luận cá nhân hoàn chỉnh."
         },
         {
           "id": "P05",
           "status": "partial",
-          "evidence": "docs/AI-PAID-DEPTH-20261102.md",
-          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+          "evidence": "docs/AI-PAID-TAT-T1-P05-P06-20261102.md#2-p05--đã-làm-rõ-điều-gì-và-vì-sao-chưa-khép",
+          "note": "Đã đối chiếu Triệt ởĐiền và3nhánh BệnhPhù/TB188, nhưng chưa đủ lập luận phối hợp phụ tinh/điều chỉnh đúng điều kiện trên mẫu; không lấy nhận diện ranh giới làm chiều sâu để tính điểm."
         },
         {
           "id": "P06",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": "docs/AI-PAID-TAT-T1-P05-P06-20261102.md#1-p06--hai-tiền-đề-và-đóng-góp-cụ-thể-của-liên-cung",
+          "note": "Trong phạm vi T1 cấu trúc: THP2/88 giữ chức trách cung +238/241 giải thích Mệnh–Tật; nối MệnhTý/Vũ–Phủ với TậtMùi/VCD mà không mượn sao hoặc gán kết quả cá nhân. Chưa duyệt/publish, app vẫn insufficient."
         },
         {
           "id": "P07",
           "status": "passed",
-          "evidence": "docs/AI-PAID-TAT-T1-REVIEW-20261102.md",
+          "evidence": "docs/AI-PAID-TAT-T1-DEPTH-20261102.md + docs/AI-PAID-TAT-T1-P05-P06-20261102.md",
           "note": "Đã đọc và tách facts, phương pháp theo từng tác giả và phần phân tích; không áp hai mẫu khác cấu trúc hoặc dùng C/D làm direct."
         },
         {
           "id": "P08",
           "status": "passed",
-          "evidence": "docs/AI-PAID-TAT-T1-REVIEW-20261102.md",
+          "evidence": "docs/AI-PAID-TAT-T1-DEPTH-20261102.md + docs/AI-PAID-TAT-T1-P05-P06-20261102.md",
           "note": "Đã đọc toàn văn bản T1, không gán sự kiện cơ thể hoặc phương án can thiệp; guard/negative probes hỗ trợ, không thay thẩm định nghĩa."
         },
         {
@@ -843,7 +843,7 @@
       ]
     }
   ],
-  "lastReview": "T1-structural-manuscript-review-not-paid-reading",
+  "lastReview": "T1-structural-Menh-Tat-source-comparison-P06-only",
   "history": [
     {
       "updatedAt": "2026-11-02",
@@ -1097,6 +1097,28 @@
         }
       ],
       "report": "docs/AI-PAID-TAT-T1-REVIEW-20261102.md"
+    },
+    {
+      "updatedAt": "2026-11-02",
+      "baselineHead": "f60d6bb",
+      "measurementVersion": "paid-content-progress-1.0.0",
+      "criteriaChanged": false,
+      "changes": [
+        {
+          "palace": "Tật Ách",
+          "before": 70,
+          "after": 80,
+          "changedCriteria": [
+            "P06"
+          ],
+          "scopeUnchanged": true,
+          "internalReviewOnly": true,
+          "personalReadingComplete": false,
+          "P05": "partial",
+          "evidence": "docs/AI-PAID-TAT-T1-P05-P06-20261102.md"
+        }
+      ],
+      "report": "docs/AI-PAID-TAT-T1-P05-P06-20261102.md"
     }
   ]
 }

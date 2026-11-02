@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 02/11 — T1Mệnh–Tật và ba nhánh BệnhPhù
+
+Đối chiếu lại chữTHP2/88,238,241 vàTB181/188; tái dùng nhật ký2.6/crosswalkTB-153–155/NPL01/15, không PDF/ảnh mới hoặc BửuĐình. Một–sáu khác xung Tật–Phụ; ẩn–lộ giữ đúng phương diện; BệnhPhù không tự nhận nhánhHình–Kỵ/Hao–Sát hoặc chốtAND/OR. Không thêmnguồn direct/index/rule, không áp kết quả cơ thể. [Phiếu nguồn, mapping/hash và giới hạn](AI-PAID-TAT-T1-P05-P06-20261102.md#3-hồ-sơ-nguồn-và-phạm-vi-đã-rà).
+
 ## 02/11 — T1VCDMùi: đọc đúng nguồn, giữ riêng học phái
 
 Đối chiếu chữTHP2/88 vàTB181, tái dùng metadata/hồ sơNPL01/15 vàTL186-PHUACH; không PDF/ảnh mới hoặc sửaBửuĐình. THP2khôngmượnPhụ để lấpTậtVCD; TBgiữ yêu cầuMệnh–Thân–Phúc; không hợp nhất thành công thức hoặc áp ví dụ nhân quả. Không thêm indexunit/nguồn directchoTật. [BảnT1/mapping/hash](AI-PAID-TAT-T1-REVIEW-20261102.md).
