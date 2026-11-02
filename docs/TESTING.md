@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — Rà sắc thái5đoạn, mock trên input cũ
+
+10bản/159facts qua validator, chỉ5trườngtext đổi, metadata/input/coverage nguyên;6negativeprobe và kiểm sắc thái đạt.8bài thật cũ/14artifactbaseline/21bundle giữhash,7bài khác/T1nguyên. Một lượt mock đạt; chỉ tài liệu nên không build/typecheck/suite167/E2E/PDF/mobile/DB,0API. Không gọi validator là kiểm nghĩa hoặc chất lượngmodel. [Log và phạm vi](AI-PAID-READING-SOURCE-FIDELITY-20261102.md#5-kiểm-mock-và-bảo-toàn).
+
 ## 02/11 — T1P05 và bộ bản luận hiện hành, chỉ mock
 
 T1mới6phần/17đoạn qua mapping/guard;159facts/knowledge nguyên.6probe ykhoa/C-only/upstream/IDgiả đạt,insufficient0section hợp lệ.10bản limited/8bài thật cũ qua đúngversion,16artifactbaseline/21bundle giữhash; bộmới ghép nguyên10bài. Không appchange/build/typecheck/suite167/E2E/PDF/DB/mobile,0API. P05dođọcnghĩa/nguồn, không do validator tựchấm. [Log/phạm vi](AI-PAID-TAT-T1-P05-SYNTHESIS-20261102.md#4-kiểm-thực-sự-đã-chạy).

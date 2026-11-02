@@ -1,7 +1,7 @@
 {
   "schemaVersion": "paid-content-progress-1.0.0",
   "updatedAt": "2026-11-02",
-  "baselineHead": "454a252",
+  "baselineHead": "87a7e8b",
   "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
   "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
   "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
@@ -311,13 +311,13 @@
         {
           "id": "P04",
           "status": "passed",
-          "evidence": ".local/ai-paid-six-p05-20261102/Quan-Lộc-p05.json",
-          "note": "Đọc lại toàn văn bài thật cũ; không ghi nhận như bài của prompt/nguồn mới."
+          "evidence": "docs/AI-PAID-READING-SOURCE-ALIGNED-20261102.md + docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md",
+          "note": "Bản biên soạn MOCK hiện hành có tham chiếu; không ghi nhận như một bài Astra mới hoặc sửa bài thật cũ."
         },
         {
           "id": "P05",
           "status": "passed",
-          "evidence": "docs/AI-PAID-SIX-P05-ACCEPTANCE-20261102.md",
+          "evidence": "docs/AI-PAID-READING-SOURCE-ALIGNED-20261102.md + docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md",
           "note": "Đã rà phối hợp và điều chỉnh trong phạm vi limited của bản QA; giữ scope cũ, không nghiệm thu Astra hoặc mọi lá số."
         },
         {
@@ -329,14 +329,14 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": ".local/ai-paid-six-p05-20261102/Quan-Lộc-p05.json",
-          "note": "Đọc lại toàn văn bài thật cũ; không ghi nhận như bài của prompt/nguồn mới."
+          "evidence": "docs/AI-PAID-READING-SOURCE-ALIGNED-20261102.md + docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md",
+          "note": "Đối chiếu riêng TB190/NPL261 ở lời ngữ cảnh Tài; tách cách khẳng định của sách khỏi kết quả tích lũy được bảo đảm. Phần nối vẫn là tổng hợp, không luận trực tiếp ở Quan từ nguồnC."
         },
         {
           "id": "P08",
           "status": "passed",
-          "evidence": ".local/ai-paid-six-p05-20261102/Quan-Lộc-p05.json",
-          "note": "Đọc lại toàn văn bài thật cũ; không ghi nhận như bài của prompt/nguồn mới."
+          "evidence": "docs/AI-PAID-READING-SOURCE-ALIGNED-20261102.md + docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md",
+          "note": "Đã đọc toàn văn bản biên soạn mới và guard; không biến lời sách về làm giàu thành cam kết tài sản hoặc xác nhận đời sống người đọc."
         },
         {
           "id": "P09",
@@ -381,13 +381,13 @@
         {
           "id": "P04",
           "status": "passed",
-          "evidence": ".local/ai-paid-reading-copy-20261102/Nô-Bộc-reading.json",
+          "evidence": "docs/AI-PAID-READING-SOURCE-ALIGNED-20261102.md + docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
           "id": "P05",
           "status": "passed",
-          "evidence": "docs/AI-PAID-P05-ACCEPTANCE-20261102.md",
+          "evidence": "docs/AI-PAID-READING-SOURCE-ALIGNED-20261102.md + docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md",
           "note": "Đã đọc và đối chiếu lập luận phối hợp/điều chỉnh của bản limited trên mẫu QA; giữ nguyên phạm vi cũ. Chỉ khép P05 cho bản này, không nghiệm thu Astra hoặc mọi lá số."
         },
         {
@@ -399,13 +399,13 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": ".local/ai-paid-reading-copy-20261102/Nô-Bộc-reading.json",
+          "evidence": "docs/AI-PAID-READING-SOURCE-ALIGNED-20261102.md + docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
           "id": "P08",
           "status": "passed",
-          "evidence": ".local/ai-paid-reading-copy-20261102/Nô-Bộc-reading.json",
+          "evidence": "docs/AI-PAID-READING-SOURCE-ALIGNED-20261102.md + docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
@@ -731,13 +731,13 @@
         {
           "id": "P04",
           "status": "passed",
-          "evidence": ".local/ai-paid-reading-copy-20261102/Phu-Thê-reading.json",
+          "evidence": "docs/AI-PAID-READING-SOURCE-ALIGNED-20261102.md + docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
           "id": "P05",
           "status": "passed",
-          "evidence": "docs/AI-PAID-P05-ACCEPTANCE-20261102.md",
+          "evidence": "docs/AI-PAID-READING-SOURCE-ALIGNED-20261102.md + docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md",
           "note": "Đã đọc và đối chiếu lập luận phối hợp/điều chỉnh của bản limited trên mẫu QA; giữ nguyên phạm vi cũ. Chỉ khép P05 cho bản này, không nghiệm thu Astra hoặc mọi lá số."
         },
         {
@@ -749,13 +749,13 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": ".local/ai-paid-reading-copy-20261102/Phu-Thê-reading.json",
+          "evidence": "docs/AI-PAID-READING-SOURCE-ALIGNED-20261102.md + docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
           "id": "P08",
           "status": "passed",
-          "evidence": ".local/ai-paid-reading-copy-20261102/Phu-Thê-reading.json",
+          "evidence": "docs/AI-PAID-READING-SOURCE-ALIGNED-20261102.md + docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
@@ -843,7 +843,7 @@
       ]
     }
   ],
-  "lastReview": "T1-structural-source-synthesis-P05-only",
+  "lastReview": "source-fidelity-5-paragraphs-no-status-change",
   "history": [
     {
       "updatedAt": "2026-11-02",
@@ -1141,6 +1141,42 @@
         }
       ],
       "report": "docs/AI-PAID-TAT-T1-P05-SYNTHESIS-20261102.md"
+    },
+    {
+      "updatedAt": "2026-11-02",
+      "baselineHead": "87a7e8b",
+      "measurementVersion": "paid-content-progress-1.0.0",
+      "criteriaChanged": false,
+      "changes": [
+        {
+          "palace": "Quan Lộc",
+          "before": 90,
+          "after": 90,
+          "changedCriteria": [],
+          "evidenceOnly": true,
+          "scopeUnchanged": true
+        },
+        {
+          "palace": "Nô Bộc",
+          "before": 90,
+          "after": 90,
+          "changedCriteria": [],
+          "evidenceOnly": true,
+          "scopeUnchanged": true
+        },
+        {
+          "palace": "Phu Thê",
+          "before": 90,
+          "after": 90,
+          "changedCriteria": [],
+          "evidenceOnly": true,
+          "scopeUnchanged": true
+        }
+      ],
+      "revisedParagraphs": 5,
+      "apiCreate": 0,
+      "apiGet": 0,
+      "report": "docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md"
     }
   ]
 }

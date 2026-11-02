@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 02/11 — Đối chiếu sắc thái Tả/Liêm/Lương
+
+Đúng chữTHP2/173/174/179,TB190,NPL261,HS125; Tả giữ tần suất vàrồimới, Liêm giữ lời khẳngđịnh là quan điểm sách, Lương dùng phần nền cảđắc/hãm. Không hiệuđính toànkho/PDF/ảnh mới hoặc sửa nguồn/index/BửuĐình. Bản biên tập mới không phải đầu vào ứng dụng đã đổi. [Phiếu nguồn và cách sửa](AI-PAID-READING-SOURCE-FIDELITY-20261102.md).
+
 ## 02/11 — T1BệnhPhù/ThiênY/Thương–Sứ từ HàmSố
 
 Đọc đúng các mụcHS154/220/216–217, nối HS-S040/074/071 đã rà; mức suy đoán, cung/hạn/ngoại lệ giữ riêng, không trộn TânBiên/NPL hoặc sinh phép cứu giải. AliasDiêu–Riêu chỉ đối chiếu code sẵn có. Không PDF/ảnh mới, không sửa nguồn/index/BửuĐình;3phiếu chỉ nghiên cứu, không nguồn directmới. [Phiếu nguồn và tổng hợp](AI-PAID-TAT-T1-P05-SYNTHESIS-20261102.md#1-nguồn-bổ-sung-từ-kho-đã-có).

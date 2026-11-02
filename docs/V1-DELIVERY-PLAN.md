@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 02/11 — Khép lô kiểm sắc thái, giữ P09 mở
+
+Đọc10bài, đối chiếu đúng6asset và sửa5đoạn ở3cung; ghép bộ mới, giữ7bài/T1 và mọi bài cũ.10validator/6probe/8bài thật/21nguồn đạt,0API/code/DB/deploy.11cung vẫn90%, tiêu chí/phạm vi nguyên; phải đối chiếu đầu vào thực trước vòngAPI được phép, không lấy bản biên tập làm kết quảmodel. [Đầu ra/điểm dừng](AI-PAID-READING-SOURCE-FIDELITY-20261102.md).
+
 ## 02/11 — Khép T1P05 và tổng hợp đủ bản hiện hành
 
 Đối chiếu3mục HàmSố đã có, biên tập T1và ghép10bài nguyên văn vào bản tổng hợp mới;P05Tật80→90%, mọi cung90%, chỉP09chưa kiểm. Không đổi tiêu chí/scope/coverage hoặc appinsufficient; chưa duyệt/publish,0API/code/DB/QA3062/3070.6probe/10bản/8bài cũ/bundle21nguồn đạt. Điểm dừng là hồ sơ/mock; mục tiêu100%không tự cấp quyền gọiAstra. [Đầu ra/giới hạn](AI-PAID-TAT-T1-P05-SYNTHESIS-20261102.md).
