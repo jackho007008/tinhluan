@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 02/11 — Cho phép tìm nguồn internet khi sách chưa đủ
+
+Chủ dự án yêu cầu mở rộng tìm kiếm internet để bổ sung dữ liệu luận giải. Quyền này cho phép khảo cứu nguồn công khai, không tự phê duyệt luận điểm/tác giả, publishT1, gọiAI hoặc triển khaiQA. Đã lập7phiếu nghiên cứu; giữ input1.13 và mọi giới hạn phiên hiện hành. [Phiếu nguồn và bằng chứng](AI-PAID-INTERNET-SOURCE-REVIEW-20261102.md).
+
 ## 02/11 — Đưa phần đủ căn cứ của Phu/Tài/T1 vào bài mới
 
 Chủ dự án giao rà phần thiếu, phần đủ căn cứ đưa vào input mới, kiểm mock; chưa API, giữ bài cũ và QA3062/3070. Triển khai input1.13 với3unit đúng vai trò, không tự chọn phép phối hợp hoặc ngưỡng chưa có. Không thay prompt/schema/quyền, không quyền publishT1/thu phí;P09 giữ chưa kiểm. [Bằng chứng và giới hạn](AI-PAID-SCOPE-INPUT-20261102.md).

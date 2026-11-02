@@ -1,7 +1,7 @@
 {
   "schemaVersion": "paid-content-progress-1.0.0",
   "updatedAt": "2026-11-02",
-  "baselineHead": "6952371",
+  "baselineHead": "c0e0c17",
   "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
   "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
   "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
@@ -843,7 +843,7 @@
       ]
     }
   ],
-  "lastReview": "scoped-source-units-input-1.13-no-api",
+  "lastReview": "internet-source-research-no-runtime-admission",
   "history": [
     {
       "updatedAt": "2026-11-02",
@@ -1244,6 +1244,16 @@
       "apiCreate": 0,
       "apiGet": 0,
       "note": "Ba unit đủ căn cứ vào input mới với đúng vai trò; không khép toàn bộ tổ hợp hoặc mở phạm vi Tật.201test/dry/typecheck/build cách ly, P09 chưa kiểm."
+    },
+    {
+      "updatedAt": "2026-11-02",
+      "baselineHead": "c0e0c17",
+      "criteriaChanged": false,
+      "statusChanged": false,
+      "report": "docs/AI-PAID-INTERNET-SOURCE-REVIEW-20261102.md",
+      "apiCreate": 0,
+      "apiGet": 0,
+      "note": "7phiếu internet nghiên cứu,0nguồn runtime mới; giữ input1.13/bài cũ, chưa khép tổ hợp/ngưỡngT1. Ghi guard phủ định rút gọn bị chặn, chưa sửa ứng dụng."
     }
   ]
 }

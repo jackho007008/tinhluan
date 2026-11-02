@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 02/11 — Khép lô tìm nguồn internet có điều kiện
+
+Hoàn thành7phiếu/đối chiếu điều kiện và mock bảo toàn; không coi bản sao cùng lời là chứng cứ độc lập hoặc lấy câu ThiênPhủ gán Liêm. Chưa khép phối hợp/điều chỉnh, không nâng checklist90% hoặc publishT1. Chỉ hồ sơ nghiên cứu, không app/API/DB/QAupdate. [Phiếu nguồn và bằng chứng](AI-PAID-INTERNET-SOURCE-REVIEW-20261102.md).
+
 ## 02/11 — Khép lô nguồn có điều kiện và input bài mới
 
 Thêm3unit qua loader hiện hành, không rule/queue/schema mới. TàiB/reference-only, Phu/T1D/reference-only; Tật chặn mọi unit ngoài method. Dry11cung/3mock/8lịch sử và201test/typecheck/build cách ly đạt. Điểm dừng: code/kho private/mock; chưa khép P09 hoặc quyền publish T1,11cung90%. [Bằng chứng và giới hạn](AI-PAID-SCOPE-INPUT-20261102.md).

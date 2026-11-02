@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 02/11 — Nguồn web đang ở hồ sơ nghiên cứu, không tự vào runtime
+
+Đã tra Phu/Tài/T1 trên internet, lập7phiếu; chưa có mệnh đề mới đủ điều kiện nạp trực tiếp.11input/3mock/8bài thật cũ giữ,0OpenAI/worker/deploy. Giữ11cung90%/P09 chưa kiểm; ghi riêng guard câu rào rút gọn bị chặn, chưa sửa ứng dụng. [Phiếu nguồn và bằng chứng](AI-PAID-INTERNET-SOURCE-REVIEW-20261102.md).
+
 ## 02/11 — Input1.13 đã kiểm mock, chưa deploy hoặc nghiệm thu model
 
 Phần đủ căn cứ của Hao và giới hạn Phá–Đà–Hỏa/T1 đã vào thư viện cho bài mới; chưa khép toàn bộ tổ hợp hoặc xuất T1.201test/typecheck/build cách ly đạt, bài cũ nguyên. Không API/worker/QA3062/3070,11cung90%,P09 còn mở. [Bằng chứng và giới hạn](AI-PAID-SCOPE-INPUT-20261102.md).

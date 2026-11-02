@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — Mock rà nguồn web và phát hiện guard câu rào
+
+11input/159facts khớp1.13,3mock/8bài thật cũ hợp lệ;2IDweb chưa chọn và3câu ykhoa sai bị chặn. Lượt đầu fail vì câu phủ định ngắn bị guard bắt; giữ script/log, lượt tiếp ghi finding còn mở và kiểm mẫu allowlist đầy đủ/bảo toàn. Không sửa validator/expected nguồn, không chạy appbuild/typecheck/E2E/PDF hoặc gọi model.19baseline/15artifact/31nguồn giữhash. [Phiếu nguồn và bằng chứng](AI-PAID-INTERNET-SOURCE-REVIEW-20261102.md).
+
 ## 02/11 — Input1.13:201test và dry11cung
 
 11test mới kiểm vai trò/neo/độc tọa/cap/serializer/failclosed/T1method-only; suite201/201 đạt. Sau thêm hash699 kiểm lại11test/dry11cung/typecheck đạt. Build cách ly đạt;3mock/8bài thật/19baseline/10bản cũ giữ.0API/DB/E2E/PDF/mobile/deploy, không coi validator là nghiệm thu nghĩa nguồn. [Bằng chứng và giới hạn](AI-PAID-SCOPE-INPUT-20261102.md).

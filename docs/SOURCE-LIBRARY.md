@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 02/11 — Internet bổ sung đầu mối, giữ riêng nguồn/tác giả
+
+Tra đúng Phu/Tài/T1: Wikisource revision1963110, sách 楊禎祥 trên GoogleBooks, các bản đăng lại và ý kiến hành nghề.7phiếu private không runtimeEligible/claimApproved; không sửa index16unit. PDFcache chưa kiểm ảnh404 không gọi là ấn bản đã kiểm; không tải toàn sách. Phần đủ căn cứ1.13 vẫn giữ. [Phiếu nguồn và bằng chứng](AI-PAID-INTERNET-SOURCE-REVIEW-20261102.md).
+
 ## 02/11 — Ba unit có điều kiện, kho private v113
 
 Tái dùng TB41/190/195, THP2/172/465–466/699 và TB181–182 cùng phiếu đã có; không PDF/ảnh mới. Thêm3unit vào index-v113,13unit v110 nguyên; bundle31artifact có hash/bản sao riêng. Tài chỉ nền, Phu/T1 chỉ phương pháp; reviewed không là phê duyệt lời cá nhân hoặc publishT1. [Bằng chứng và giới hạn](AI-PAID-SCOPE-INPUT-20261102.md).

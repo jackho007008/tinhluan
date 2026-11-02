@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 02/11 — Rà internet cho ba khoảng thiếu, chưa nhận nguồn trực tiếp mới
+
+7phiếu nguồn có URL/locator/điều kiện: sách 楊禎祥 và cổ bản đối chiếu, các bản đăng lại/nguồn chưa xác minh tách riêng. Chưa đủ khép hai tổ hợp hoặc ngưỡngT1; giữ input1.13/bài cũ,0AIAPI/DB/QA. Mock bảo toàn đạt; có phát hiện câu ràoTật rút gọn bị guard chặn, giữ log đầu.11cung90% giữ. [Phiếu nguồn và bằng chứng](AI-PAID-INTERNET-SOURCE-REVIEW-20261102.md).
+
 ## 02/11 — Nguồn đã rà vào input mới Phu/Tài/T1
 
 Retrieval1.13 nhận ba unit: Tài nềnB, Phu/T1 phương phápD; giữ cap và không nâng thành lời trực tiếp. Dry11cung giữ159facts,201test/typecheck/build cách ly đạt;8bài thật/19baseline/10bản cũ nguyên. Tật vẫn insufficient;11cung90%/P09 chưa kiểm,0API/DB/deploy. [Bằng chứng và giới hạn](AI-PAID-SCOPE-INPUT-20261102.md).
