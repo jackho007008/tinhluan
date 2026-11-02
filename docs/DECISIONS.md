@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 02/11 — Quyền thử đúng một Luna2.4 Phu Thê
+
+Chủ dự án cho phép đúng1CREATE Luna/prompt2.4/Phu Thê, QA riêng, dự phòng0,02USD; kiểm token/giá trước, không retry/Astra/QA3062/3070. Đã thực hiện trong giới hạn; không mở rộng quyền gọi thêm hoặc đổi model sản phẩm. [Bằng chứng và giới hạn](AI-PAID-LUNA24-EVALUATION-20261102.md).
+
 ## 02/11 — Sửa hai lỗi biên tập, không gọi API
 
 Chủ dự án giao tách lời nguồn khỏi tổng hợp AI và giữ đủ ý trợ giúp qua một giai đoạn; mock trước, không API thêm/bài cũ/QA3062/3070. Triển khai prompt2.4 và kiểm dấu hiệu hẹp theo version, không thay nội dung lưu hoặc quyền. Đây không phải cho phép thử model hay nghiệm thu thương mại. [Bằng chứng và giới hạn](AI-PAID-ATTRIBUTION-FIX-20261102.md).

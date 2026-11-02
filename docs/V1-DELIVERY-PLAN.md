@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 02/11 — Luna2.4 thật: hai điểm biên tập đạt trên một mẫu
+
+Đúng1CREATE Phu Thê/2ResponsesGET/1attempt, provider41giây. Lời nguồn và tổng hợp tách đúng basis; giữ “từng trợ giúp … qua một giai đoạn”. Ước0,005221175USD theo write30m (0,00875755USD nếu12h), dưới dự phòng0,02. Lưu/đọc lại qua store không API mới; không browser/mobile mới. DBQA55456 backup/dừng, bài cũ nguyên, khôngAstra/QA3062/3070. Chưa nghiệm thu thương mại11cung. [Toàn văn, đối chứng và số đo](AI-PAID-LUNA24-EVALUATION-20261102.md).
+
 ## 02/11 — Sửa trộn căn cứ và sắc thái thời gian, chỉ mock
 
 Prompt2.4/guard mới tách lời nguồn–tổng hợp và giữ vế trợ giúp qua một giai đoạn; chỉ áp job mới2.4, giữ validator/prompt cũ. Tái hiện đúng2lỗi từ bài Luna2.3 và sửa trên bản sao mock;7kết quả thật cũ nguyên.97mock+3DBtest/typecheck/build đạt,0API; DBtest55455 đã dừng, khôngQA3062/3070. Chưa xác minh văn model mới. [Ví dụ trước/sau, phạm vi guard và kiểm](AI-PAID-ATTRIBUTION-FIX-20261102.md).
