@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 02/11 — Mục tiêu tất cả cung100%
+
+Chủ dự án đặt đích tất cả100%. Giữ checklist đã dùng, không coi mục tiêu là quyền gọiAPI hoặc mở nội dungTật/y khoa từng bị giới hạn. Tiếp tục phần có thể làm bằng nguồn/mock; P09và bảnTật cần đúng bằng chứng/phạm vi trước khép. Không100%giả hoặc mởbán từ điểm hồ sơ. [Trạng thái và phụ thuộc](AI-PAID-PATH-TO-100-20261102.md).
+
 ## 02/11 — Ưu tiên phân tích và tổng hợp bản luận từ nguồn đã có
 
 Chủ dự án chỉ đạo nguồn đã có luận giải, yêu cầu tập trung phân tích và tổng hợp đầy đủ bản luận. Triển khai biên luận từ các ý có căn cứ, không đòi tác giả viết sẵn nguyên câu nối/tổ hợp; vẫn giữ điều kiện và phân biệt facts/lời nguồn/tổng hợp. Không biến chỉ đạo này thành quyền gọiAPI, bỏ ngoại lệ, sửa lịch sử hoặc deploy. [Bài và chứng cứ](AI-PAID-COMPLETE-ANALYSIS-HANDOFF-20261102.md).

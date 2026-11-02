@@ -36,6 +36,7 @@ beforeAll(async () => {
   record = { snapshot, receipt, frozen: freezeReading(snapshot, receipt) };
 });
 it.each([
+  ["Điền Trạch", "Tử Nữ"],
   ["Phụ Mẫu", "Tử Nữ"],
   ["Huynh Đệ", "Nô Bộc"],
 ])(
@@ -105,7 +106,6 @@ it.each([
   "Phu Thê",
   "Tài Bạch",
   "Quan Lộc",
-  "Điền Trạch",
 ])(
   "does not broaden book contexts outside the approved target list: %s",
   (target) => {
@@ -113,6 +113,7 @@ it.each([
   },
 );
 it.each([
+  ["Điền Trạch", "Tử Nữ"],
   ["Phụ Mẫu", "Tử Nữ"],
   ["Huynh Đệ", "Nô Bộc"],
   ["Thiên Di", "Phúc Đức"],
@@ -126,7 +127,7 @@ it.each([
     expect(link.factIds.every((id) => i.facts.some((f) => f.id === id))).toBe(
       true,
     );
-    if (target === "Phụ Mẫu") {
+    if (target === "Phụ Mẫu" || target === "Điền Trạch") {
       expect(link.factIds).toContain("natal.Lộc");
       expect(i.facts.find((f) => f.id === "natal.Lộc")!.text).toContain(
         "tại Nô Bộc (",

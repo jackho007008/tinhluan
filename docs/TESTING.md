@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — P06Điền/retrieval1.11
+
+167/167pure9file,typecheck/build cáchly đạt; mockĐiền đúngC/neoLộc ởNô, xóa origin bịchặn, dry11cung159facts,8bài thật/21nguồn giữhash. Lỗi scriptbaselinepath được sửa đúnglayout, không đổi nguồn.0API/DB/E2E/PDF/mobile/deploy. [Logs và phạm vi chưa kiểm](AI-PAID-PATH-TO-100-20261102.md).
+
 ## 02/11 — P05 sáu bài, chỉ biên tập
 
 6mock qua validator2.6;11probe bịchặn(6IDnguồnsai/5mấtcunggốcC),6kiểmđiềukiện,25đoạn đối chiếu tay. Input/refs/scope giữ nguyên,8bài thật/21nguồn giữhash. Không appchange nên không build/typecheck/suite/E2E/PDF/mobile/DBtest,0API/QA. [Log và giới hạn](AI-PAID-SIX-P05-ACCEPTANCE-20261102.md).

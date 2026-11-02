@@ -6,6 +6,7 @@ import { paidLibrary } from "./paid-library";
 
 // A bounded editorial choice of missing origins, not a rule about a person's life.
 const ORIGINS: Record<string, string[]> = {
+  "Điền Trạch": ["Tử Nữ"],
   "Phụ Mẫu": ["Tử Nữ"],
   "Huynh Đệ": ["Nô Bộc"],
 };

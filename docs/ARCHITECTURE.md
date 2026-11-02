@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 02/11 — Retrieval1.11 thêm ngữ cảnh Điền←Tử
+
+Mở một origin trong paidBookContexts và một frameguide, tái dùng directA/B đã khớp củaTử thànhC tạiĐiền; giữ anchors cảLộc tạiNô, sourcewords và cap4/14KB,C8/24KB. Không nguồn/rule, schemaDB, queue, provider hoặc UI mới. Prompt2.6/savedinput/versionregistry giữ nguyên. [Mock và kiểm](AI-PAID-PATH-TO-100-20261102.md).
+
 ## 02/11 — Retrieval1.10: nền Hàm Số qua loader hiện hành
 
 Loader nhận bookhs và index-v110 riêng trướcv17/v16/legacy; index mới sai failclosed.13unit gồm12cũ+1foundation Lương cần neo tọaNô source-traced, không direct; cap4/14KB nguyên. Writer/schema/prompt2.6/queue/UI/savedinput không đổi. [Bundle và tương thích](AI-PAID-COMPLETE-ANALYSIS-HANDOFF-20261102.md).

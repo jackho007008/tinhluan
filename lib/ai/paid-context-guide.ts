@@ -10,6 +10,13 @@ const namesPalace = (text: string, palace: string) =>
 /** Topic framing, not a new astrological proposition or an instruction in a source.
  * IDs point to existing, condition-matched C and target A/B. No duplicated prose. */
 const FRAMES: Record<string, { palace: string; focus: string }[]> = {
+  "Điền Trạch": [
+    {
+      palace: "Tử Nữ",
+      focus:
+        "Đặt quá trình tạo lập/duy trì nhà đất cạnh lời về quan hệ với con tại Tử. Phân biệt điều kiện nơi ở với cách đối đãi trong gia đình; không suy nhà khó tạo gây bất hòa hoặc lời hòa hợp bảo đảm tài sản. Giữ điều kiện Lộc tại Nô nếu nguồn Tử dựa vào đó, không chuyển sao.",
+    },
+  ],
   "Phụ Mẫu": [
     {
       palace: "Tử Nữ",

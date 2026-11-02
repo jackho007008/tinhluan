@@ -1,7 +1,7 @@
 {
   "schemaVersion": "paid-content-progress-1.0.0",
   "updatedAt": "2026-11-02",
-  "baselineHead": "d5be225",
+  "baselineHead": "935318f",
   "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
   "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
   "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
@@ -132,7 +132,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -202,7 +202,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -214,8 +214,8 @@
     },
     {
       "palace": "Điền Trạch",
-      "percent": 80,
-      "passed": 8,
+      "percent": 90,
+      "passed": 9,
       "total": 10,
       "commercialReady": false,
       "scope": "Bản biên tập MOCK limited đã rà toàn văn; chỉ phạm vi nguồn thực sự hỗ trợ, chưa đủ chiều sâu toàn cung hoặc nghiệm thu model.",
@@ -252,9 +252,9 @@
         },
         {
           "id": "P06",
-          "status": "partial",
-          "evidence": ".local/ai-paid-remaining-20261102/Điền-Trạch-dry.json",
-          "note": "Chưa có hai tiền đề liên cung phù hợp chủ đề nhà đất; không ép dùng C Huynh hoặc tự dựng phép liên hệ."
+          "status": "passed",
+          "evidence": "docs/AI-PAID-PATH-TO-100-20261102.md",
+          "note": "Đã đối chiếu nhà đất tại Điền với quan hệ tại Tử, giữ Lộc tại Nô/cung gốc và không suy điều kiện vật chất quyết định tình thân; chỉ phạm vi limited/mẫu QA."
         },
         {
           "id": "P07",
@@ -272,7 +272,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -342,7 +342,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -412,7 +412,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.10/prompt2.6 chưa được Astra kiểm thật; bản biên soạn không thay mục này."
+          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -482,7 +482,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -552,7 +552,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -622,7 +622,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.10/prompt2.6 chưa được Astra kiểm thật; bản biên soạn không thay mục này."
+          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -692,7 +692,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.10/prompt2.6 chưa được Astra kiểm thật; bản biên soạn không thay mục này."
+          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -762,7 +762,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.10/prompt2.6 chưa được Astra kiểm thật; bản biên soạn không thay mục này."
+          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -832,7 +832,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -843,7 +843,7 @@
       ]
     }
   ],
-  "lastReview": "six-limited-readings-P05-editorial-acceptance",
+  "lastReview": "path-to-100-and-dien-P06",
   "history": [
     {
       "updatedAt": "2026-11-02",
@@ -1058,6 +1058,22 @@
         }
       ],
       "report": "docs/AI-PAID-SIX-P05-ACCEPTANCE-20261102.md"
+    },
+    {
+      "updatedAt": "2026-11-02",
+      "baselineHead": "935318f",
+      "measurementVersion": "paid-content-progress-1.0.0",
+      "criteriaChanged": false,
+      "changes": [
+        {
+          "palace": "Điền Trạch",
+          "before": 80,
+          "after": 90,
+          "changedCriterion": "P06",
+          "scopeUnchanged": true
+        }
+      ],
+      "report": "docs/AI-PAID-PATH-TO-100-20261102.md"
     }
   ]
 }
