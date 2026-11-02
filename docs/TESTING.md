@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — Ghép bộ11artifact biên soạn
+
+7artifact mới/ghép gồm6limited+1insufficientTật, cùng4bài trước qua validator=11hợp lệ.8bài thật/21nguồn giữhash. Hai lượt đầu câu phủ địnhTật ngoài exactallowlist bị chặn; dùng câu giới hạn hỗ trợ sẵn, giữ validator. Không codechange nên không build/typecheck/suite/E2E/PDF/mobile/DB,0API/QA. [Logs và giới hạn](AI-PAID-READING-COLLECTION-20261102.md).
+
 ## 02/11 — Bản đọc bốn bài, chỉ biên tập
 
 4mock qua validator2.6/không cảnh báoC; kiểm riêng có thể/phần nhiều/nam mệnh/đủ vế trợ giúp qua một giai đoạn và chi rồi giữ.25đoạn có mapping trước/sau, input/refs nguyên;8bài thật/4P05/21nguồn giữhash. Không codechange nên không rerun suite166/typecheck/build/E2E/PDF/mobile/DB,0API. [Bằng chứng](AI-PAID-FOUR-READINGS-READER-20261102.md#biên-bản-kiểm-phiên-biên-tập).

@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 02/11 — Đã ghép bộ bản luận ngoài bốn bài ưu tiên
+
+Quan mới3phần/Phúc mới3phần;4bản Phụ/Điền/Di/Huynh dùng lại, Tật0section/insufficient đúng giới hạn. Cùng4bài trước thành10bản limited+1trạng thái,11validation đạt. Không có API/job/deploy mới hoặc thay bài lưu;8bài thật/21nguồn giữhash. %không đổi, P09chưa kiểm. [Danh mục đủ11cung và toàn văn](AI-PAID-READING-COLLECTION-20261102.md).
+
 ## 02/11 — Hoàn thiện bản đọc liền mạch của bốn bài
 
 4bài limited có căn cứ tách riêng sau mỗi bài;rà25đoạn/biên tập22, giữ159facts/cung và từng source/basis/ref.4mock qua validation và kiểm sắc thái riêng, lịch sử/P05/21sourceartifact nguyên. Không appchange/API/QA3062/3070;90%bốn cung/P09giữ nguyên, không runtime hoặc nghiệm thu thương mại mới. [Bài đọc và kiểm](AI-PAID-FOUR-READINGS-READER-20261102.md).

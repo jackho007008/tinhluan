@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 02/11 — Khép lô bộ bài biên soạn, chưa11bài model
+
+Đã dựng Quan/Phúc, ghép Phụ/Điền/Di/Huynh và giữ Tật đúng giới hạn, cùng4bài trước thành bộ11vị trí:10bài limited, Tật insufficient0section. Giữ4bài90%/nămcung80%/Điền70%/Tật40%, không cộng điểm từ số artifact.11validation đạt,0API/DB/code/deploy. [Bộ bài và điểm dừng](AI-PAID-READING-COLLECTION-20261102.md).
+
 ## 02/11 — Khép lô biên tập bản đọc, không thêm vòng API
 
 Đã tổng hợp4bài từP05 với căn cứ riêng, rà25đoạn giữ điều kiện/nguồn/thời gian/chủ thể;4mock đạt,0API/appchange/deploy.90%giữ nguyên, P09còn mở; không đổi tiêu chí hoặc mở gói mới. [Đầu ra và phạm vi kiểm](AI-PAID-FOUR-READINGS-READER-20261102.md).
