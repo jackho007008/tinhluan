@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — Mock và rà tay P05 bốn bài
+
+4bản limited qua validator2.6/input nguyên;9probe gồm8lỗi bị chặn và1vế thời gian còn “từng” được chấp nhận theo guard cũ, phải rà tay để giữ đủ sắc thái.8bài thật cũ/4mock cũ/21nguồn giữhash. Không appchange nên không suite166/typecheck/build/E2E/PDF/DB/mobile/API mới. [Log đầu/cuối và giới hạn](AI-PAID-P05-ACCEPTANCE-20261102.md).
+
 ## 02/11 — Bốn bản luận và nền Lương1.10
 
 166/166pure9file, typecheck/build cách ly;4mock liền mạch qua validator2.6,159facts nguyên/8bài cũ và19sourceartifact giữhash. KiểmHSfoundation/neo/hash/indexmới-sai/legacy và các guard hiện hành.0API/DB/E2E/PDF/mobile/QA mới. [Logs, lệnh đầu và giới hạn](AI-PAID-COMPLETE-ANALYSIS-HANDOFF-20261102.md).
