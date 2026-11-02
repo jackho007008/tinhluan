@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 02/11 — Rà sâu bốn cung: không bỏ điều kiện để tăng độ phủ
+
+Đối chiếu thêm bảngNô168–172, Tử200–201/207, PhuTHP2/179 và TàiSongHao195/NPL261; chưa đủ giải bốn tổ hợp thiếu.4mock limited biên tập lại qua validator;8bài cũ/19sourceartifact nguyên,0API/DB/deploy. Nô/Tử/Phu/Tài giữ80%, chưa đóngP05/P09; chỉ rõ đoạn/chú giải cần bổ sung. [Phiếu nguồn và bản mock](AI-PAID-FOUR-DEPTH-SOURCE-REVIEW-20261102.md).
+
 ## 02/11 — Các cung còn lại: ngữ cảnh1.9 và bốn mock limited
 
 Dùng lại nguồn Tử cho Phụ, Nô cho Huynh đúng C/cung gốc; thêm guide Di–Phúc. Không thêm nguồn/rule, prompt2.6 giữ nguyên.163test/typecheck/build đạt,0API/DB/worker/QA3062/3070. Phụ/Di/Huynh40→80%, Điền40→70%, sáu cung80/Tật40 giữ; %hồ sơ, P05/P09 còn chặn. [Bản mock, checklist và tài liệu cần bổ sung](AI-PAID-READING-COMPLETION-20261102.md).

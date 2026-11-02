@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 02/11 — Rà điều kiện nguồn bốn cung, không thêm indexunit
+
+Đối chiếu chữTB168–172/195/200–201/207, THP2/179/208–209/218/273 vàNPL261 từ kho/hồ sơ cũ. Không PDF/ảnh mới, không nâng chứng nhận, sửa chữ hoặcBửuĐình. BảngMệnh–Nô chưa rõ cách chọn hàng choVũ–Phủ, SongHao không thànhĐạiHao, ngoại lệ sát tụ không thành phépPhá–Đà–Hỏa. [Phiếu nguồn/hash và tài liệu cần thêm](AI-PAID-FOUR-DEPTH-SOURCE-REVIEW-20261102.md).
+
 ## 02/11 — Nguồn C cho Phụ/Huynh và mock Điền/Di
 
 Dùng lại Tân Biên126/177/218, nhánh Điền NPL đã đặc tả và THP1/PDF128–130 đã xử lý; không sửa indexunit hoặc thêm sách/rule. Chỉ đối chiếu phần chữ cần thiết, không PDF/ảnh mới hoặc nâng chứng nhận. Giữ nguyên chữ/điều kiện/ngoại lệ khi chuyển nguồn cung gốc thành C. [Bản mock, audit19artifact và các đoạn sách bổ sung có ích](AI-PAID-READING-COMPLETION-20261102.md).

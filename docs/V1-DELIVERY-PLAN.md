@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 02/11 — Khép lô rà nguồn bốn cung, không tự mở rộng API
+
+Đã đối chiếu thêm điều kiện bảngNô, TửVCD, ngoại lệ Phu và SongHao;4mock mới limited qua validation. Không nguồn phối hợp đủ điều kiện mới, không lấp bằng rule/đổi toán tử;P05/P09 giữ mở, Nô/Tử/Phu/Tài80%.0API/DB/deploy. [Phiếu đoạn cần bổ sung và điểm dừng](AI-PAID-FOUR-DEPTH-SOURCE-REVIEW-20261102.md).
+
 ## 02/11 — Khép lô các cung còn lại bằng mock
 
 Phụ/Huynh dùng thêm nguồn C có sẵn, Di có guide, Điền chỉ giữ tạo/duy trì nhà đất.4mock limited/163test/typecheck/build đạt,0API/deploy; checklist cũ cập nhật Phụ/Di/Huynh80%, Điền70%, Tật40%, sáu cung còn lại80%. Không tính P05/P09 đã đạt hoặc mở hàng đợi mới. [Đầu ra, giới hạn và nguồn bổ sung có ích](AI-PAID-READING-COMPLETION-20261102.md).
