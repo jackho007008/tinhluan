@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 02/11 — Bộ bản luận mới, T1khép P05 trong phạm vi cấu trúc
+
+HàmSố154/220/216–217 làm rõ BệnhPhù/ThiênY và thời điểm Thương–Sứ; bảnT1mới6phần/17đoạn, ghép nguyên10bài thành bộ hiện hành riêng. P05Tật đạt,11cung đều90%; P09tất cảchưa kiểm, chưa100%.6probe/10validator/8bài cũ/21nguồn đạt,0API/code/DB/QA;T1chưa duyệt/publish, appinsufficient giữ. [Đọc toàn bộ](AI-PAID-READING-CURRENT-20261102.md) · [Căn cứ và kiểm](AI-PAID-TAT-T1-P05-SYNTHESIS-20261102.md).
+
 ## 02/11 — T1: khép P06 cấu trúc, P05 còn thiếu phối hợp
 
 Bản mới nối THP2/88 với238/241 trên MệnhTý/Vũ–Phủ vàTậtMùi/VCD, giữ cung gốc; thêm đối chiếu3nhánh BệnhPhù/TB188. ChỉP06đạt, Tật70→80%,10cung90%giữ;P05partial/P09chưa kiểm.5phần/15đoạn,6probe/10bản/8bài cũ đạt;0API/code/DB/deploy, chưa duyệt/publish, appTật vẫninsufficient. [T1mới](AI-PAID-TAT-T1-DEPTH-20261102.md) · [Đối chiếu và kiểm](AI-PAID-TAT-T1-P05-P06-20261102.md).

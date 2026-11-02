@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 02/11 — Khép T1P05 và tổng hợp đủ bản hiện hành
+
+Đối chiếu3mục HàmSố đã có, biên tập T1và ghép10bài nguyên văn vào bản tổng hợp mới;P05Tật80→90%, mọi cung90%, chỉP09chưa kiểm. Không đổi tiêu chí/scope/coverage hoặc appinsufficient; chưa duyệt/publish,0API/code/DB/QA3062/3070.6probe/10bản/8bài cũ/bundle21nguồn đạt. Điểm dừng là hồ sơ/mock; mục tiêu100%không tự cấp quyền gọiAstra. [Đầu ra/giới hạn](AI-PAID-TAT-T1-P05-SYNTHESIS-20261102.md).
+
 ## 02/11 — T1P06 có lập luận; P05 chưa khép
 
 Đã nối đúng hai tiền đề THP2về Mệnh–Tật/VCD, biên tập5phần/15đoạn và rà BệnhPhù/TB188. Chỉ P06đạt theo scope/tiêu chí cũ, Tật80%;10cung90%. P05partial vì chưa giải phối hợp phụ tinh/điều chỉnh đủ điều kiện, P09chưa kiểm; không gọiAPI/publish hoặc đổi appinsufficient.6probe/10validator/8bài cũ/21sourceartifact đạt;0code/DB/deploy. [Đầu ra và điểm dừng](AI-PAID-TAT-T1-P05-P06-20261102.md).

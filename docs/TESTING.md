@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — T1P05 và bộ bản luận hiện hành, chỉ mock
+
+T1mới6phần/17đoạn qua mapping/guard;159facts/knowledge nguyên.6probe ykhoa/C-only/upstream/IDgiả đạt,insufficient0section hợp lệ.10bản limited/8bài thật cũ qua đúngversion,16artifactbaseline/21bundle giữhash; bộmới ghép nguyên10bài. Không appchange/build/typecheck/suite167/E2E/PDF/DB/mobile,0API. P05dođọcnghĩa/nguồn, không do validator tựchấm. [Log/phạm vi](AI-PAID-TAT-T1-P05-SYNTHESIS-20261102.md#4-kiểm-thực-sự-đã-chạy).
+
 ## 02/11 — T1P06: kiểm mock tham chiếu/an toàn/bảo toàn
 
 159facts/knowledge khớp savedinput;T1mới5phần/15đoạn mapping vàguard đạt.6probe chặn3y khoa/C-onlyfocused/upstream/unknownfact;insufficient0section hợp lệ.10bản/8bài thật cũ qua đúngvalidator;hash21nguồn/bảncũ/snapshot nguyên. Lượt đầu14đoạn và cuối15đoạn đều đạt; không appchange/build/typecheck/suite167/E2E/PDF/DB/mobile,0API. [Log và phạm vi thực kiểm](AI-PAID-TAT-T1-P05-P06-20261102.md#4-kiểm-mock-thực-sự-đã-chạy).

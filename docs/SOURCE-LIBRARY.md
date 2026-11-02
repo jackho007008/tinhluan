@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 02/11 — T1BệnhPhù/ThiênY/Thương–Sứ từ HàmSố
+
+Đọc đúng các mụcHS154/220/216–217, nối HS-S040/074/071 đã rà; mức suy đoán, cung/hạn/ngoại lệ giữ riêng, không trộn TânBiên/NPL hoặc sinh phép cứu giải. AliasDiêu–Riêu chỉ đối chiếu code sẵn có. Không PDF/ảnh mới, không sửa nguồn/index/BửuĐình;3phiếu chỉ nghiên cứu, không nguồn directmới. [Phiếu nguồn và tổng hợp](AI-PAID-TAT-T1-P05-SYNTHESIS-20261102.md#1-nguồn-bổ-sung-từ-kho-đã-có).
+
 ## 02/11 — T1Mệnh–Tật và ba nhánh BệnhPhù
 
 Đối chiếu lại chữTHP2/88,238,241 vàTB181/188; tái dùng nhật ký2.6/crosswalkTB-153–155/NPL01/15, không PDF/ảnh mới hoặc BửuĐình. Một–sáu khác xung Tật–Phụ; ẩn–lộ giữ đúng phương diện; BệnhPhù không tự nhận nhánhHình–Kỵ/Hao–Sát hoặc chốtAND/OR. Không thêmnguồn direct/index/rule, không áp kết quả cơ thể. [Phiếu nguồn, mapping/hash và giới hạn](AI-PAID-TAT-T1-P05-P06-20261102.md#3-hồ-sơ-nguồn-và-phạm-vi-đã-rà).
