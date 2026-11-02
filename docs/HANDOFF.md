@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 02/11 — Ba chú giải mới cho Phu/Tài/T1, giữ phạm vi
+
+THP2/172 giữ nữmệnhĐà;TB41giữ nghĩaHao dùđắc;TB182Quyền/TảHữu cóhai nhánh theo nhóm.3bản thẩmđịnh mới,3artifact/2probeID/3negativey khoa đạt,8bài thật/19baseline nguyên. Không thêmnguồn vàoinput1.12 hoặc publish,0API/QA.11cung90%giữ, tổhợp/điềuchỉnh còn mở. [Bản mới và kiểm](AI-PAID-CONTENT-BLOCKERS-REVIEW-20261102.md).
+
 ## 02/11 — Rà hai tổ hợp: thêm nguồn Phá–Hỏa, chưa khép toàn bộ
 
 THP2/699 có cặp Phá–HỏaPhu nhưng đầu ra không đưa vào lời khách;466 bác phép HỏađiềuhòaPhá. NhịHao249–250 giữMãoDậu, chưa giảiLiêm–ĐạiHaoThân.2mock/2probeID đạt;1suydiễnsai qua validator đã bị rànguồn bác.0API/code/QA,11cung90%giữ. [Phiếu và kiểm](AI-PAID-PAIR-SOURCE-REVIEW-20261102.md).

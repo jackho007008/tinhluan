@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — Mock ba ưu tiên và giữ nội dung đã lưu
+
+3artifact hiệnhành qua validator (Phu/Tài limited,Tậtinsufficient),3chúgiải qua guard;2nguồnIDgiả/3negativeykhoa bịchặn.8bài thật/19baseline nguyên,0API/DB/QA. Chỉtài liệu, khôngbuild/typecheck/E2E/PDF hoặc190suite;không gọi guard làkiểm nguồn tựđộng. [Bản mới và kiểm](AI-PAID-CONTENT-BLOCKERS-REVIEW-20261102.md).
+
 ## 02/11 — Mock hai tổ hợp và điểm mù về suy diễn
 
 2bản limited trêninput1.12 nguyên qua validator;2factID giả bị chặn.1probe điều hòaPhá–Hỏa sai nguồn qua kỹthuật nhưng bị ràtay bác, khôngreading/publish.8bài thật giữhash,0API/code/DB/deploy;khôngbuild/testsuite/E2E/PDF. [Phiếu và kiểm](AI-PAID-PAIR-SOURCE-REVIEW-20261102.md).

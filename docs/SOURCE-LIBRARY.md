@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 02/11 — Điều kiện Đà nữmệnh, nghĩa Hao đắc và hai nhánh cứu/tác
+
+Rà chữTHP2/172,TB41/190/195/181–182; khôngPDF/ảnh mới hoặc BửuĐình. Không bỏgiới tính, không chọn bảngsáng thắng hoặc tự đếm ngưỡngnhiều. Nguồn dùng viết3chúgiải nghiêncứu, khôngindex/rule/app mới. [Bản mới và kiểm](AI-PAID-CONTENT-BLOCKERS-REVIEW-20261102.md).
+
 ## 02/11 — Nguồn cặp Phá–Hỏa và giới hạn NhịHao
 
 THP2/465–466/475/698–699 tách Mệnh/Phu/nhóm/bộvị; NPL249–250 có điều kiệnMãoDậu,262khác bảngsáng,309chủđềQuan. Không nói kho thiếu mọi lời hoặc đổi đầu ra để lấp.12asset cóhash, chỉ chữ/hồ sơ,khôngPDF/ảnh/index/BửuĐình mới. [Phiếu và kiểm](AI-PAID-PAIR-SOURCE-REVIEW-20261102.md).
