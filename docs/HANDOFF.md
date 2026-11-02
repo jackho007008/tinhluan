@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 02/11 — Bốn bài đọc và căn cứ riêng
+
+Rà25đoạn từ bảnP05, biên tập22đoạn, giữ source/basis/refs/facts, giảm lời rào lặp và tách tác giả/trang cuối từng bài.4mock/qualifiers đạt,8bài cũ/4P05/21nguồn nguyên;0API/code/DB/deploy. Bốn cung90% giữ,P09chưa kiểm. [Toàn văn, căn cứ và biên bản kiểm](AI-PAID-FOUR-READINGS-READER-20261102.md).
+
 ## 02/11 — Khép P05 cho bốn bản limited, chưa kiểm Astra
 
 Biên tập lại Nô/Tử/Phu/Tài với luận điểm phối hợp và đối chiếu từng đoạn;4mock/8probe từ chối+1giới hạn rà tay,8bài cũ/21sourceartifact nguyên. ChỉP05partial→passed trong phạm vi limited/mẫuQA đã có: bốn cung80→90%,P09giữ mở.0API/code/DB/deploy. [Toàn văn mới](AI-PAID-FOUR-READINGS-P05-20261102.md) · [Bằng chứng khépP05](AI-PAID-P05-ACCEPTANCE-20261102.md).

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "paid-content-progress-1.0.0",
   "updatedAt": "2026-11-02",
-  "baselineHead": "8c67e52",
+  "baselineHead": "d451689",
   "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
   "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
   "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
@@ -381,7 +381,7 @@
         {
           "id": "P04",
           "status": "passed",
-          "evidence": ".local/ai-paid-p05-20261102/Nô-Bộc-p05.json",
+          "evidence": ".local/ai-paid-reading-copy-20261102/Nô-Bộc-reading.json",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
@@ -399,13 +399,13 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": ".local/ai-paid-p05-20261102/Nô-Bộc-p05.json",
+          "evidence": ".local/ai-paid-reading-copy-20261102/Nô-Bộc-reading.json",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
           "id": "P08",
           "status": "passed",
-          "evidence": ".local/ai-paid-p05-20261102/Nô-Bộc-p05.json",
+          "evidence": ".local/ai-paid-reading-copy-20261102/Nô-Bộc-reading.json",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
@@ -591,7 +591,7 @@
         {
           "id": "P04",
           "status": "passed",
-          "evidence": ".local/ai-paid-p05-20261102/Tài-Bạch-p05.json",
+          "evidence": ".local/ai-paid-reading-copy-20261102/Tài-Bạch-reading.json",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
@@ -609,13 +609,13 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": ".local/ai-paid-p05-20261102/Tài-Bạch-p05.json",
+          "evidence": ".local/ai-paid-reading-copy-20261102/Tài-Bạch-reading.json",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
           "id": "P08",
           "status": "passed",
-          "evidence": ".local/ai-paid-p05-20261102/Tài-Bạch-p05.json",
+          "evidence": ".local/ai-paid-reading-copy-20261102/Tài-Bạch-reading.json",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
@@ -661,7 +661,7 @@
         {
           "id": "P04",
           "status": "passed",
-          "evidence": ".local/ai-paid-p05-20261102/Tử-Nữ-p05.json",
+          "evidence": ".local/ai-paid-reading-copy-20261102/Tử-Nữ-reading.json",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
@@ -679,13 +679,13 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": ".local/ai-paid-p05-20261102/Tử-Nữ-p05.json",
+          "evidence": ".local/ai-paid-reading-copy-20261102/Tử-Nữ-reading.json",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
           "id": "P08",
           "status": "passed",
-          "evidence": ".local/ai-paid-p05-20261102/Tử-Nữ-p05.json",
+          "evidence": ".local/ai-paid-reading-copy-20261102/Tử-Nữ-reading.json",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
@@ -731,7 +731,7 @@
         {
           "id": "P04",
           "status": "passed",
-          "evidence": ".local/ai-paid-p05-20261102/Phu-Thê-p05.json",
+          "evidence": ".local/ai-paid-reading-copy-20261102/Phu-Thê-reading.json",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
@@ -749,13 +749,13 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": ".local/ai-paid-p05-20261102/Phu-Thê-p05.json",
+          "evidence": ".local/ai-paid-reading-copy-20261102/Phu-Thê-reading.json",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
           "id": "P08",
           "status": "passed",
-          "evidence": ".local/ai-paid-p05-20261102/Phu-Thê-p05.json",
+          "evidence": ".local/ai-paid-reading-copy-20261102/Phu-Thê-reading.json",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
@@ -843,7 +843,7 @@
       ]
     }
   ],
-  "lastReview": "P05-four-limited-readings-editorial-acceptance",
+  "lastReview": "four-reading-customer-prose-and-separated-evidence",
   "history": [
     {
       "updatedAt": "2026-11-02",
@@ -989,6 +989,15 @@
         }
       ],
       "report": "docs/AI-PAID-P05-ACCEPTANCE-20261102.md"
+    },
+    {
+      "updatedAt": "2026-11-02",
+      "baselineHead": "d451689",
+      "measurementVersion": "paid-content-progress-1.0.0",
+      "criteriaChanged": false,
+      "changes": [],
+      "report": "docs/AI-PAID-FOUR-READINGS-READER-20261102.md",
+      "note": "Biên tập4bài đọc liền mạch và tách căn cứ; giữ90%, không gọiAPI để khépP09."
     }
   ]
 }

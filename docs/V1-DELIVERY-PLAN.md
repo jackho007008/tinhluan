@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 02/11 — Khép lô biên tập bản đọc, không thêm vòng API
+
+Đã tổng hợp4bài từP05 với căn cứ riêng, rà25đoạn giữ điều kiện/nguồn/thời gian/chủ thể;4mock đạt,0API/appchange/deploy.90%giữ nguyên, P09còn mở; không đổi tiêu chí hoặc mở gói mới. [Đầu ra và phạm vi kiểm](AI-PAID-FOUR-READINGS-READER-20261102.md).
+
 ## 02/11 — Khép P05 trong phạm vi bốn bài limited
 
 Đã sửa bản mới, giữ bản cũ/nguồn và coverage; đối chiếu tiền đề, phần nối, điểm căng và điều chỉnh có căn cứ. P05bốn cung đạt theo định nghĩa cũ,80→90%;P09còn mở, không nghiệm thu thương mại hoặc mở tác vụ API. Chỉ tài liệu/kiểm mock,0deploy. [Hồ sơ và điểm dừng](AI-PAID-P05-ACCEPTANCE-20261102.md).

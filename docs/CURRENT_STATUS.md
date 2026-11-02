@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 02/11 — Hoàn thiện bản đọc liền mạch của bốn bài
+
+4bài limited có căn cứ tách riêng sau mỗi bài;rà25đoạn/biên tập22, giữ159facts/cung và từng source/basis/ref.4mock qua validation và kiểm sắc thái riêng, lịch sử/P05/21sourceartifact nguyên. Không appchange/API/QA3062/3070;90%bốn cung/P09giữ nguyên, không runtime hoặc nghiệm thu thương mại mới. [Bài đọc và kiểm](AI-PAID-FOUR-READINGS-READER-20261102.md).
+
 ## 02/11 — P05 đạt cho bốn bản biên soạn limited
 
 Giữ input/coverage cũ, không đổi tiêu chí: Nô phân biệt nhường nhịn/cam kết, Tử chăm lo/gần gũi/nếp nhà, Phu trân trọng/đồng thuận, Tài cạnh tranh/đấu lý/xuất vốn.4mock qua validator,9probe(8bị chặn/1cần rà tay), khôngcode/build/API/DB/QA3062/3070. Nô/Tử/Phu/Tài90%,P09chưa kiểm; không suy mọi lá số hoặc thương mại đã đạt. [Đối chiếu và giới hạn](AI-PAID-P05-ACCEPTANCE-20261102.md).

@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — Bản đọc bốn bài, chỉ biên tập
+
+4mock qua validator2.6/không cảnh báoC; kiểm riêng có thể/phần nhiều/nam mệnh/đủ vế trợ giúp qua một giai đoạn và chi rồi giữ.25đoạn có mapping trước/sau, input/refs nguyên;8bài thật/4P05/21nguồn giữhash. Không codechange nên không rerun suite166/typecheck/build/E2E/PDF/mobile/DB,0API. [Bằng chứng](AI-PAID-FOUR-READINGS-READER-20261102.md#biên-bản-kiểm-phiên-biên-tập).
+
 ## 02/11 — Mock và rà tay P05 bốn bài
 
 4bản limited qua validator2.6/input nguyên;9probe gồm8lỗi bị chặn và1vế thời gian còn “từng” được chấp nhận theo guard cũ, phải rà tay để giữ đủ sắc thái.8bài thật cũ/4mock cũ/21nguồn giữhash. Không appchange nên không suite166/typecheck/build/E2E/PDF/DB/mobile/API mới. [Log đầu/cuối và giới hạn](AI-PAID-P05-ACCEPTANCE-20261102.md).
