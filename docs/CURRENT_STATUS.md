@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 02/11 — Phụ/Huynh/Di có bản biên tập truy vết, Điền giữ hẹp
+
+Retrieval1.9 dùng lại nguồn sách phù hợp của cung liên quan dưới C, giữ điều kiện/ID gốc/neo; direct/facts159 và8bài thật cũ/19sourceartifact nguyên.4mock limited,163test/typecheck/build đạt;0API/DB/deploy. Phụ/Di/Huynh80%, Điền70%, Quan/Phúc/Nô/Tử/Phu/Tài80%, Tật40% theo checklist cũ, không điểm sẵn sàng thương mại. P05/P09 vẫn mở; không QA3062/3070. [Bàn giao và khoảng cần sách](AI-PAID-READING-COMPLETION-20261102.md).
+
 ## 02/11 — Nô/Tử có liên cung đúng vai, mock
 
 Guide Nô–Huynh xung/Tử–Phụ tam hợp dùng nguồn đã chọn; nguồn Tử từ Lộc tạiNô giữ neo thật, không lấy sao tạiTử thay. Prompt2.6 chỉ thêm300byte so2.5, sourceword/facts nguyên;4mock mới limited,150test/typecheck/build đạt,8bài thật cũ/19sourceartifact nguyên.0API/DB/worker/QA3062/3070. Nô/Tử70→80% doP06, Phu/Tài/Quan/Phúc80%, Phụ/Điền/Di/Huynh/Tật40%; %hồ sơ, không mứcphát hành, P05/P09 vẫn chưa đạt. [Bằng chứng và giới hạn](AI-PAID-DEPTH-20261102.md).

@@ -10,6 +10,27 @@ const namesPalace = (text: string, palace: string) =>
 /** Topic framing, not a new astrological proposition or an instruction in a source.
  * IDs point to existing, condition-matched C and target A/B. No duplicated prose. */
 const FRAMES: Record<string, { palace: string; focus: string }[]> = {
+  "Phụ Mẫu": [
+    {
+      palace: "Tử Nữ",
+      focus:
+        "Phân biệt gia đình xuất thân của mệnh tạo với quan hệ của mệnh tạo với con. Giữ riêng điều kiện vật chất, bất hòa trong lời Phụ và nét đối đãi trong lời Tử; không dự báo thế hệ sau lặp lại hoặc hóa giải thế hệ trước.",
+    },
+  ],
+  "Huynh Đệ": [
+    {
+      palace: "Nô Bộc",
+      focus:
+        "Đọc sự gắn bó giữa anh chị em cạnh kỳ vọng giao du ở Nô; hai loại quan hệ khác nhau, không dùng bạn bè thay tình thân hoặc lời thuận ở Nô xóa lời xa cách tại Huynh.",
+    },
+  ],
+  "Thiên Di": [
+    {
+      palace: "Phúc Đức",
+      focus:
+        "Đặt trải nghiệm bên ngoài được lời Di mô tả cạnh lời về nơi sinh sống/họ hàng ở Phúc, nếu nguồn có. Giữ cả mặt thuận và may rủi, không biến ở xa thành chỉ định di cư hoặc bảo đảm vị thế.",
+    },
+  ],
   "Nô Bộc": [
     {
       palace: "Huynh Đệ",
@@ -80,6 +101,15 @@ export function paidContextGuide(
         metadata.get(k.id)?.types.some((type) => type !== "method-gloss"),
     );
     if (!source.length) continue;
+    const sourcePremises = [
+      ...new Set(
+        source.flatMap(
+          (k) => k.anchorFactIds || k.passage?.anchorFactIds || [],
+        ),
+      ),
+    ];
+    if (sourcePremises.some((id) => !input.facts.some((f) => f.id === id)))
+      continue;
     const sourceFacts = input.facts.filter(
       (f) =>
         f.provenance?.palace === frame.palace &&
@@ -122,6 +152,7 @@ export function paidContextGuide(
           ...anchors(sourceFacts).map((f) => f.id),
           ...natal.map((f) => f.id),
           ...premiseIds,
+          ...sourcePremises,
         ]),
       ],
       focus: frame.focus,

@@ -49,6 +49,11 @@ export type AiFact = {
   };
 };
 export type Knowledge = {
+  contextOrigin?: {
+    palace: string;
+    knowledgeId: string;
+    application: "direct";
+  };
   /** Facts that established this source's applicability, not a generated conclusion. */
   anchorFactIds?: string[];
   passage?: {
@@ -94,7 +99,8 @@ export type MenhInput = {
     | "paid-retrieval-1.5.0"
     | "paid-retrieval-1.6.0"
     | "paid-retrieval-1.7.0"
-    | "paid-retrieval-1.8.0";
+    | "paid-retrieval-1.8.0"
+    | "paid-retrieval-1.9.0";
   facts: AiFact[];
   knowledge: Knowledge[];
   missing: string[];

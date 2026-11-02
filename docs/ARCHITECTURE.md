@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 02/11 — Retrieval1.9 dùng lại nguồn sách ngữ cảnh
+
+`paidBookContexts` gọi bộ chọn sách/thư viện gốc cho hai đường Phụ←Tử/Huynh←Nô, chỉ directA/B đủ điều kiện/tam hợp/xung rồi chuyển C, giữ nguyên source text/anchors/conditions/refs và contextOrigin. Cap4/14KB trước Cselector8/24KB hiện có; không lấy nền/method thay direct. Guide thêm Phụ/Tử, Huynh/Nô, Di/Phúc và neo nguồn C. Prompt2.6/schemaV2/savedjob/queue/UI giữ nguyên. [Dry và kiểm tương thích](AI-PAID-READING-COMPLETION-20261102.md).
+
 ## 02/11 — Retrieval1.8/prompt2.6 giữ neo nguồn
 
 Knowledge có anchorFactIds optional cho các đoạn topic-book có tiền đề rõ; guide mới mang neo cả cung khác.2.6 kiểm neo sau V2/C/editorial,2.5/cũ giữ validator; registry CREATE/GET theo savedversion. Thêm frame Nô→Huynh/Tử→Phụ chỉ khi đủdirect/C/hình học. Không schemaDB/UI/queue/model/migration mới. [Chi tiết](AI-PAID-DEPTH-20261102.md).

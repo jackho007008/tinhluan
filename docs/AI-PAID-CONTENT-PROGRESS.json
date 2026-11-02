@@ -1,7 +1,7 @@
 {
   "schemaVersion": "paid-content-progress-1.0.0",
   "updatedAt": "2026-11-02",
-  "baselineHead": "1fa79a3",
+  "baselineHead": "ae65022",
   "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
   "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
   "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
@@ -74,22 +74,22 @@
   "rows": [
     {
       "palace": "Phụ Mẫu",
-      "percent": 40,
-      "passed": 4,
+      "percent": 80,
+      "passed": 8,
       "total": 10,
       "commercialReady": false,
-      "scope": "Chỉ đủ một phần theo ma trận QA; chưa rà lại bài đầy đủ trong phiên này.",
+      "scope": "Bản biên tập MOCK limited đã rà toàn văn; chỉ phạm vi nguồn thực sự hỗ trợ, chưa đủ chiều sâu toàn cung hoặc nghiệm thu model.",
       "checks": [
         {
           "id": "P01",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/dry-summary.json",
+          "evidence": ".local/ai-paid-remaining-20261102/dry-summary.json",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
           "id": "P02",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/tests-final.log",
+          "evidence": ".local/ai-paid-remaining-20261102/tests-final.log",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
@@ -100,9 +100,9 @@
         },
         {
           "id": "P04",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": ".local/ai-paid-remaining-20261102/Phụ-Mẫu-dry.json",
+          "note": "Có bản mock limited, section/paragraph với facts và nguồn, đã rà toàn văn; không phải model thật."
         },
         {
           "id": "P05",
@@ -112,27 +112,27 @@
         },
         {
           "id": "P06",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": ".local/ai-paid-remaining-20261102/Phụ-Mẫu-dry.json",
+          "note": "Mock giữ Phụ–Tử ở hai thế hệ/vai của mệnh tạo; điều kiện Lộc vẫn tại Nô, không suy lặp lại hoặc hóa giải."
         },
         {
           "id": "P07",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": ".local/ai-paid-remaining-20261102/Phụ-Mẫu-dry.json",
+          "note": "Đối chiếu từng đoạn với nguồn đã chọn; lời nguồn và tổng hợp tách basis, giữ cung gốc và điều kiện."
         },
         {
           "id": "P08",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": ".local/ai-paid-remaining-20261102/Phụ-Mẫu-dry.json",
+          "note": "Đã rà toàn văn mock: không sự kiện chắc chắn, số người/phẩm hạnh, giả nguồn hoặc khuyến nghị y khoa/đầu tư/di cư."
         },
         {
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: cấu hình retrieval1.8/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -153,13 +153,13 @@
         {
           "id": "P01",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/dry-summary.json",
+          "evidence": ".local/ai-paid-remaining-20261102/dry-summary.json",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
           "id": "P02",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/tests-final.log",
+          "evidence": ".local/ai-paid-remaining-20261102/tests-final.log",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
@@ -202,7 +202,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: cấu hình retrieval1.8/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -214,22 +214,22 @@
     },
     {
       "palace": "Điền Trạch",
-      "percent": 40,
-      "passed": 4,
+      "percent": 70,
+      "passed": 7,
       "total": 10,
       "commercialReady": false,
-      "scope": "Chỉ đủ một phần theo ma trận QA; chưa rà lại bài đầy đủ trong phiên này.",
+      "scope": "Bản biên tập MOCK limited đã rà toàn văn; chỉ phạm vi nguồn thực sự hỗ trợ, chưa đủ chiều sâu toàn cung hoặc nghiệm thu model.",
       "checks": [
         {
           "id": "P01",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/dry-summary.json",
+          "evidence": ".local/ai-paid-remaining-20261102/dry-summary.json",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
           "id": "P02",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/tests-final.log",
+          "evidence": ".local/ai-paid-remaining-20261102/tests-final.log",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
@@ -240,9 +240,9 @@
         },
         {
           "id": "P04",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": ".local/ai-paid-remaining-20261102/Điền-Trạch-dry.json",
+          "note": "Có bản mock limited, section/paragraph với facts và nguồn, đã rà toàn văn; không phải model thật."
         },
         {
           "id": "P05",
@@ -252,27 +252,27 @@
         },
         {
           "id": "P06",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "partial",
+          "evidence": ".local/ai-paid-remaining-20261102/Điền-Trạch-dry.json",
+          "note": "Chưa có hai tiền đề liên cung phù hợp chủ đề nhà đất; không ép dùng C Huynh hoặc tự dựng phép liên hệ."
         },
         {
           "id": "P07",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": ".local/ai-paid-remaining-20261102/Điền-Trạch-dry.json",
+          "note": "Đối chiếu từng đoạn với nguồn đã chọn; lời nguồn và tổng hợp tách basis, giữ cung gốc và điều kiện."
         },
         {
           "id": "P08",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": ".local/ai-paid-remaining-20261102/Điền-Trạch-dry.json",
+          "note": "Đã rà toàn văn mock: không sự kiện chắc chắn, số người/phẩm hạnh, giả nguồn hoặc khuyến nghị y khoa/đầu tư/di cư."
         },
         {
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: cấu hình retrieval1.8/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -293,13 +293,13 @@
         {
           "id": "P01",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/dry-summary.json",
+          "evidence": ".local/ai-paid-remaining-20261102/dry-summary.json",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
           "id": "P02",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/tests-final.log",
+          "evidence": ".local/ai-paid-remaining-20261102/tests-final.log",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
@@ -342,7 +342,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: cấu hình retrieval1.8/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -363,13 +363,13 @@
         {
           "id": "P01",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/dry-summary.json",
+          "evidence": ".local/ai-paid-remaining-20261102/dry-summary.json",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
           "id": "P02",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/tests-final.log",
+          "evidence": ".local/ai-paid-remaining-20261102/tests-final.log",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
@@ -412,7 +412,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: cấu hình retrieval1.8/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -424,22 +424,22 @@
     },
     {
       "palace": "Thiên Di",
-      "percent": 40,
-      "passed": 4,
+      "percent": 80,
+      "passed": 8,
       "total": 10,
       "commercialReady": false,
-      "scope": "Chỉ đủ một phần theo ma trận QA; chưa rà lại bài đầy đủ trong phiên này.",
+      "scope": "Bản biên tập MOCK limited đã rà toàn văn; chỉ phạm vi nguồn thực sự hỗ trợ, chưa đủ chiều sâu toàn cung hoặc nghiệm thu model.",
       "checks": [
         {
           "id": "P01",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/dry-summary.json",
+          "evidence": ".local/ai-paid-remaining-20261102/dry-summary.json",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
           "id": "P02",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/tests-final.log",
+          "evidence": ".local/ai-paid-remaining-20261102/tests-final.log",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
@@ -450,9 +450,9 @@
         },
         {
           "id": "P04",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": ".local/ai-paid-remaining-20261102/Thiên-Di-dry.json",
+          "note": "Có bản mock limited, section/paragraph với facts và nguồn, đã rà toàn văn; không phải model thật."
         },
         {
           "id": "P05",
@@ -462,27 +462,27 @@
         },
         {
           "id": "P06",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": ".local/ai-paid-remaining-20261102/Thiên-Di-dry.json",
+          "note": "Mock đối chiếu lời Sát tại Di với Thiên Mã ở Phúc: sự nể trọng, may rủi và hoàn cảnh nơi sống là các phương diện riêng, không xóa nhau."
         },
         {
           "id": "P07",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": ".local/ai-paid-remaining-20261102/Thiên-Di-dry.json",
+          "note": "Đối chiếu từng đoạn với nguồn đã chọn; lời nguồn và tổng hợp tách basis, giữ cung gốc và điều kiện."
         },
         {
           "id": "P08",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": ".local/ai-paid-remaining-20261102/Thiên-Di-dry.json",
+          "note": "Đã rà toàn văn mock: không sự kiện chắc chắn, số người/phẩm hạnh, giả nguồn hoặc khuyến nghị y khoa/đầu tư/di cư."
         },
         {
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: cấu hình retrieval1.8/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -503,13 +503,13 @@
         {
           "id": "P01",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/dry-summary.json",
+          "evidence": ".local/ai-paid-remaining-20261102/dry-summary.json",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
           "id": "P02",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/tests-final.log",
+          "evidence": ".local/ai-paid-remaining-20261102/tests-final.log",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
@@ -552,7 +552,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: cấu hình retrieval1.8/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -573,13 +573,13 @@
         {
           "id": "P01",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/dry-summary.json",
+          "evidence": ".local/ai-paid-remaining-20261102/dry-summary.json",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
           "id": "P02",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/tests-final.log",
+          "evidence": ".local/ai-paid-remaining-20261102/tests-final.log",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
@@ -622,7 +622,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: cấu hình retrieval1.8/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -643,13 +643,13 @@
         {
           "id": "P01",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/dry-summary.json",
+          "evidence": ".local/ai-paid-remaining-20261102/dry-summary.json",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
           "id": "P02",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/tests-final.log",
+          "evidence": ".local/ai-paid-remaining-20261102/tests-final.log",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
@@ -692,7 +692,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: cấu hình retrieval1.8/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -713,13 +713,13 @@
         {
           "id": "P01",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/dry-summary.json",
+          "evidence": ".local/ai-paid-remaining-20261102/dry-summary.json",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
           "id": "P02",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/tests-final.log",
+          "evidence": ".local/ai-paid-remaining-20261102/tests-final.log",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
@@ -762,7 +762,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: cấu hình retrieval1.8/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -774,22 +774,22 @@
     },
     {
       "palace": "Huynh Đệ",
-      "percent": 40,
-      "passed": 4,
+      "percent": 80,
+      "passed": 8,
       "total": 10,
       "commercialReady": false,
-      "scope": "Chỉ đủ một phần theo ma trận QA; chưa rà lại bài đầy đủ trong phiên này.",
+      "scope": "Bản biên tập MOCK limited đã rà toàn văn; chỉ phạm vi nguồn thực sự hỗ trợ, chưa đủ chiều sâu toàn cung hoặc nghiệm thu model.",
       "checks": [
         {
           "id": "P01",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/dry-summary.json",
+          "evidence": ".local/ai-paid-remaining-20261102/dry-summary.json",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
           "id": "P02",
           "status": "passed",
-          "evidence": ".local/ai-paid-depth-20261102/tests-final.log",
+          "evidence": ".local/ai-paid-remaining-20261102/tests-final.log",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
@@ -800,9 +800,9 @@
         },
         {
           "id": "P04",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": ".local/ai-paid-remaining-20261102/Huynh-Đệ-dry.json",
+          "note": "Có bản mock limited, section/paragraph với facts và nguồn, đã rà toàn văn; không phải model thật."
         },
         {
           "id": "P05",
@@ -812,27 +812,27 @@
         },
         {
           "id": "P06",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": ".local/ai-paid-remaining-20261102/Huynh-Đệ-dry.json",
+          "note": "Mock phân biệt gắn bó huyết thống với kỳ vọng giao du ở Nô; không suy bạn thay người thân hoặc phi hóa chưa có."
         },
         {
           "id": "P07",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": ".local/ai-paid-remaining-20261102/Huynh-Đệ-dry.json",
+          "note": "Đối chiếu từng đoạn với nguồn đã chọn; lời nguồn và tổng hợp tách basis, giữ cung gốc và điều kiện."
         },
         {
           "id": "P08",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa rà toàn văn bản tương ứng trong phạm vi này; không tính điểm."
+          "status": "passed",
+          "evidence": ".local/ai-paid-remaining-20261102/Huynh-Đệ-dry.json",
+          "note": "Đã rà toàn văn mock: không sự kiện chắc chắn, số người/phẩm hạnh, giả nguồn hoặc khuyến nghị y khoa/đầu tư/di cư."
         },
         {
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: cấu hình retrieval1.8/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.9/prompt2.6 chưa được Astra kiểm thật; bài cũ/mock/model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -843,7 +843,7 @@
       ]
     }
   ],
-  "lastReview": "source-premises-and-family-context-2.6",
+  "lastReview": "remaining-family-outside-assets-retrieval-1.9",
   "history": [
     {
       "updatedAt": "2026-11-02",
@@ -867,6 +867,63 @@
         }
       ],
       "report": "docs/AI-PAID-DEPTH-20261102.md"
+    },
+    {
+      "updatedAt": "2026-11-02",
+      "baselineHead": "ae65022",
+      "measurementVersion": "paid-content-progress-1.0.0",
+      "criteriaChanged": false,
+      "changes": [
+        {
+          "palace": "Phụ Mẫu",
+          "before": 40,
+          "after": 80,
+          "changedCriteria": [
+            "P04",
+            "P06",
+            "P07",
+            "P08"
+          ],
+          "evidence": ".local/ai-paid-remaining-20261102/Phụ-Mẫu-dry.json"
+        },
+        {
+          "palace": "Điền Trạch",
+          "before": 40,
+          "after": 70,
+          "changedCriteria": [
+            "P04",
+            "P06",
+            "P07",
+            "P08"
+          ],
+          "evidence": ".local/ai-paid-remaining-20261102/Điền-Trạch-dry.json"
+        },
+        {
+          "palace": "Thiên Di",
+          "before": 40,
+          "after": 80,
+          "changedCriteria": [
+            "P04",
+            "P06",
+            "P07",
+            "P08"
+          ],
+          "evidence": ".local/ai-paid-remaining-20261102/Thiên-Di-dry.json"
+        },
+        {
+          "palace": "Huynh Đệ",
+          "before": 40,
+          "after": 80,
+          "changedCriteria": [
+            "P04",
+            "P06",
+            "P07",
+            "P08"
+          ],
+          "evidence": ".local/ai-paid-remaining-20261102/Huynh-Đệ-dry.json"
+        }
+      ],
+      "report": "docs/AI-PAID-READING-COMPLETION-20261102.md"
     }
   ]
 }

@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 02/11 — Tiếp tục hoàn thiện các cung từ nguồn hiện có
+
+Chủ dự án giao tiếp tục các cung và sẵn sàng bổ sung sách nếu cần. Giữ giới hạn mock/noAPI/QA3062/3070 của phiên đang tiếp tục; không coi lời đề nghị bổ sung sách là quyền nhập toàn kho, mở bán hoặc gọi model. Triển khai dùng lại nguồn C và bốn bản biên tập có truy vết; yêu cầu tài liệu có điều kiện/ngoại lệ cho khoảng phối hợp còn thiếu, không chọn nguồn thắng. [Bàn giao](AI-PAID-READING-COMPLETION-20261102.md).
+
 ## 02/11 — Tiếp tục sau gián đoạn, mock và giữ checklist
 
 Chủ dự án yêu cầu tiếp tục chiều sâu Nô/Tử/Phu/Tài, không API/QA3062/3070, giữ bài cũ và báo % theo checklist. Triển khai guide/neo nguồn/prompt mới cho job tương lai; cập nhậtP06 trên bản mock có bằng chứng, không phê duyệt chất lượng model hoặc đổi tiêu chuẩn phát hành. [Bàn giao](AI-PAID-DEPTH-20261102.md).

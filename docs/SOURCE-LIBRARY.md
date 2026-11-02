@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 02/11 — Nguồn C cho Phụ/Huynh và mock Điền/Di
+
+Dùng lại Tân Biên126/177/218, nhánh Điền NPL đã đặc tả và THP1/PDF128–130 đã xử lý; không sửa indexunit hoặc thêm sách/rule. Chỉ đối chiếu phần chữ cần thiết, không PDF/ảnh mới hoặc nâng chứng nhận. Giữ nguyên chữ/điều kiện/ngoại lệ khi chuyển nguồn cung gốc thành C. [Bản mock, audit19artifact và các đoạn sách bổ sung có ích](AI-PAID-READING-COMPLETION-20261102.md).
+
 ## 02/11 — Dùng lại nguồn gia đình cho guide1.8
 
 Tái dùng đoạnV1 Phụ/Huynh và TrungChâu1/128–130; đối chiếu chữ TânBiên126/218 và giới hạn131, không PDF/ảnh mới. Không thêm indexunit hoặc sửa nguồn; sourceVersion topic-book1.1 chỉ metadata neo điều kiện, không sách mới. Giữ riêng các chủ thể/thế hệ và bỏ vế số người/phẩm hạnh. [Bằng chứng, nội dung mock và phạm vi](AI-PAID-DEPTH-20261102.md).

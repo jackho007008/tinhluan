@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 02/11 — Các cung còn lại: ngữ cảnh1.9 và bốn mock limited
+
+Dùng lại nguồn Tử cho Phụ, Nô cho Huynh đúng C/cung gốc; thêm guide Di–Phúc. Không thêm nguồn/rule, prompt2.6 giữ nguyên.163test/typecheck/build đạt,0API/DB/worker/QA3062/3070. Phụ/Di/Huynh40→80%, Điền40→70%, sáu cung80/Tật40 giữ; %hồ sơ, P05/P09 còn chặn. [Bản mock, checklist và tài liệu cần bổ sung](AI-PAID-READING-COMPLETION-20261102.md).
+
 ## 02/11 — Biên luận2.6: tiền đề nguồn và hai ngữ cảnh gia đình
 
 Retrieval1.8/prompt2.6 bổ sung Nô–Huynh/Tử–Phụ đúng nguồn, giữ natal.Lộc tạiNô bằng anchor;150test/typecheck/build đạt,0API/DB/worker/QA3062/3070. Checklist không đổi: Nô/Tử70→80 ởP06, Phu/Tài/Quan/Phúc80, nămcungkhác40; vẫn chặnP05/P09. [Bàn giao/mock](AI-PAID-DEPTH-20261102.md) · [Tiến độ từng ô](AI-PAID-CONTENT-PROGRESS.json).

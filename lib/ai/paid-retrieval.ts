@@ -9,6 +9,7 @@ import { paidRelations } from "./paid-facts";
 import { paidLibrary } from "./paid-library";
 import { paidFacts } from "./paid-facts";
 import { paidBookKnowledge } from "./paid-book-knowledge";
+import { paidBookContexts } from "./paid-book-context";
 import type { Knowledge } from "./contract";
 export const PAID_THEMES: Record<string, string[]> = {
   "Quan Lộc": ["work"],
@@ -264,6 +265,15 @@ export function paidKnowledge(record: InternalReading, target: string) {
   }
   for (const k of library.items) add(k);
   excluded.push(...library.excluded);
+  const bookContexts = paidBookContexts(record, target);
+  for (const k of bookContexts.items) {
+    contextMetadata.set(k.id, {
+      themes: PAID_THEMES[k.contextOrigin!.palace] || [],
+      types: ["context"],
+    });
+    add(k);
+  }
+  excluded.push(...bookContexts.excluded);
   const hasLibraryMethod = library.items.some(
     (k) => k.passage?.kind === "method",
   );
