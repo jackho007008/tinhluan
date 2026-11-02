@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 02/11 — Hiệu đính nguồn cho paidinput1.12
+
+reviewPaidSource là hàm thuần trên nguồn đãmatched/kiểmhash: QuanC/TàiR06, NôfoundationLương, PhuTảHữu đúngunitdigest. Áp trước library4/14KB và C8/24KB; giữID/conditions/refs/roles/neo/passage.digest, thêm sourceReviewversion/hash và text/limitmới. Input mới1.12, prompt2.6/outputV2 nguyên; job đã có giữ savedinput vàGETkhông hiệuđính lại. Không DB/queue/permission/UI/freeMệnhchange. [Cơ chế và kiểm](AI-PAID-SOURCE-INPUT-20261102.md).
+
 ## 02/11 — Retrieval1.11 thêm ngữ cảnh Điền←Tử
 
 Mở một origin trong paidBookContexts và một frameguide, tái dùng directA/B đã khớp củaTử thànhC tạiĐiền; giữ anchors cảLộc tạiNô, sourcewords và cap4/14KB,C8/24KB. Không nguồn/rule, schemaDB, queue, provider hoặc UI mới. Prompt2.6/savedinput/versionregistry giữ nguyên. [Mock và kiểm](AI-PAID-PATH-TO-100-20261102.md).

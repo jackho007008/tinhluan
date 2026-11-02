@@ -49,6 +49,13 @@ export type AiFact = {
   };
 };
 export type Knowledge = {
+  /** Editorial derivation for newly built paid inputs; original source unit and
+   * its passage digest remain unchanged. Never applied on saved-input reads. */
+  sourceReview?: {
+    version: "paid-source-fidelity-1.0.0";
+    sourceTextDigest: string;
+    reviewDigest: string;
+  };
   contextOrigin?: {
     palace: string;
     knowledgeId: string;
@@ -102,7 +109,8 @@ export type MenhInput = {
     | "paid-retrieval-1.8.0"
     | "paid-retrieval-1.9.0"
     | "paid-retrieval-1.10.0"
-    | "paid-retrieval-1.11.0";
+    | "paid-retrieval-1.11.0"
+    | "paid-retrieval-1.12.0";
   facts: AiFact[];
   knowledge: Knowledge[];
   missing: string[];

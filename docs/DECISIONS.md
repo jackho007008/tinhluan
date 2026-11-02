@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 02/11 — Đưa sắc thái nguồn đã rà vào đầu vào bài mới
+
+**Chủ dự án giao:** đưa sửa Quan/Nô/Phu vào inputAstra cho bài mới, kiểmmock trước; chưaAPI, giữbài cũ/QA3062/3070 và báo%theochecklist. Phạm vi là hiệuđính tri thức đầu vào đã chọn, không nâng nềnLương/Cthành trực tiếp hoặc cấp quyềnphát hành. Triểnkhai retrieval1.12/sourceReview1.0, không thay prompt2.6/schema/quyền/queue;P09vẫnchưa kiểm. [Bằng chứng/giới hạn](AI-PAID-SOURCE-INPUT-20261102.md).
+
 ## 02/11 — Mục tiêu tất cả cung100%
 
 Chủ dự án đặt đích tất cả100%. Giữ checklist đã dùng, không coi mục tiêu là quyền gọiAPI hoặc mở nội dungTật/y khoa từng bị giới hạn. Tiếp tục phần có thể làm bằng nguồn/mock; P09và bảnTật cần đúng bằng chứng/phạm vi trước khép. Không100%giả hoặc mởbán từ điểm hồ sơ. [Trạng thái và phụ thuộc](AI-PAID-PATH-TO-100-20261102.md).

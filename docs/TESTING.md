@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — Input1.12:190test và provider HTTPmock
+
+19testmới/190testliênquan đạt, kiểm scope/digest/neo/idempotence/budget/payload3cung/GETinput1.11khôngPOST. Typecheck/buildcáchly đạt;dry11cung159facts giữ nguồn,3mock/8bài thật/21bundle nguyên.2dryfail mất1CMệnh do độdài được giữlog, rútgọn text rồi kiểmcuối đạt; khôngnới expected/cap.0API/DB/E2E/PDF/mobile/deploy. [Logs/BUILD_ID/phạmvi](AI-PAID-SOURCE-INPUT-20261102.md).
+
 ## 02/11 — Rà sắc thái5đoạn, mock trên input cũ
 
 10bản/159facts qua validator, chỉ5trườngtext đổi, metadata/input/coverage nguyên;6negativeprobe và kiểm sắc thái đạt.8bài thật cũ/14artifactbaseline/21bundle giữhash,7bài khác/T1nguyên. Một lượt mock đạt; chỉ tài liệu nên không build/typecheck/suite167/E2E/PDF/mobile/DB,0API. Không gọi validator là kiểm nghĩa hoặc chất lượngmodel. [Log và phạm vi](AI-PAID-READING-SOURCE-FIDELITY-20261102.md#5-kiểm-mock-và-bảo-toàn).

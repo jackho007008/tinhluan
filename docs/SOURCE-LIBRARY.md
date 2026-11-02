@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 02/11 — Hiệu đính trong input mới, canonicalnguồn giữ nguyên
+
+Tái dùng phiếu THP2/174,TB190,HS125 để hiệuđính3nguồn trong paidinput1.12. Không đọc PDF/ảnh mới, không sửa index-v110 hoặc BửuĐình. passage.digest vẫn nhận unitgốc; sourceReview1.0 nhận bản hiệuđính riêng, không chứngnhận chuyênmôn mới.21bundle/8bài thật giữhash; codekhôngphụthuộcID/ngàysinhmẫu. [Phiếu áp dụng và provenance](AI-PAID-SOURCE-INPUT-20261102.md).
+
 ## 02/11 — Đối chiếu sắc thái Tả/Liêm/Lương
 
 Đúng chữTHP2/173/174/179,TB190,NPL261,HS125; Tả giữ tần suất vàrồimới, Liêm giữ lời khẳngđịnh là quan điểm sách, Lương dùng phần nền cảđắc/hãm. Không hiệuđính toànkho/PDF/ảnh mới hoặc sửa nguồn/index/BửuĐình. Bản biên tập mới không phải đầu vào ứng dụng đã đổi. [Phiếu nguồn và cách sửa](AI-PAID-READING-SOURCE-FIDELITY-20261102.md).

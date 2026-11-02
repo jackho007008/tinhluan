@@ -4,6 +4,7 @@ import { createHash } from "node:crypto";
 import { z } from "zod";
 import type { Knowledge, MenhInput } from "./contract";
 import { unresolvedTemplate } from "./v1-editorial";
+import { reviewPaidSource } from "./paid-source-fidelity";
 const anchor = z.discriminatedUnion("kind", [
   z
     .object({
@@ -262,7 +263,7 @@ export function paidLibrary(
       reject("missing-or-changed-source-page");
       continue;
     }
-    candidates.push({
+    const candidate: Knowledge = {
       id,
       title: u.title,
       text: u.text,
@@ -290,7 +291,8 @@ export function paidLibrary(
         kind: u.kind,
         anchorFactIds: [...new Set(anchorFactIds)],
       },
-    });
+    };
+    candidates.push(reviewPaidSource(candidate, target));
   }
   // Direct theses before background; more matched anchors before ID. No score of
   // a chart/person, no promotion of background to a direct claim.

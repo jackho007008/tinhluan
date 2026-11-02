@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 02/11 — Sắc thái nguồn đã vào inputfactory bài mới
+
+Retrieval1.12 hiệuđính đúng3nguồn Quan/Nô/Phu trước cap, giữfacts/roles/conditions/neo vàunitgốc; sourceReview1.0 có dấu vết. Prompt2.6/queue/GET/bài cũ giữ, khôngruntimeupdate.190test/typecheck/buildcáchly đạt;dry11cung giữ nguồn/facts,8bài thật/21bundle nguyên.0API/DB/QA3062/3070; mọi cung90%,P09chưa kiểm. [Triển khai và bằng chứng](AI-PAID-SOURCE-INPUT-20261102.md).
+
 ## 02/11 — Bản luận đối chiếu sắc thái nguồn, %giữ90
 
 Rà52đoạn, sửa5đoạn Quan/Nô/Phu: tần suất/rồimới ởTả, tách khẳng định làmgiàu khỏi bảođảm tíchlũy, giữ Lương là nghĩa nền.6asset chữ đối chiếu,10validator/6probe/8bài cũ/21nguồn đạt;7bài khác/T1nguyên. Bảnmới chỉ biên tập, input ứng dụng chưađổi;11cung90%,P09chưa kiểm,0API/code/DB/QA. [Đọc bộ mới](AI-PAID-READING-SOURCE-ALIGNED-20261102.md) · [Phiếu sửa/giới hạn](AI-PAID-READING-SOURCE-FIDELITY-20261102.md).

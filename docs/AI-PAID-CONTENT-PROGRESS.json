@@ -1,7 +1,7 @@
 {
   "schemaVersion": "paid-content-progress-1.0.0",
   "updatedAt": "2026-11-02",
-  "baselineHead": "87a7e8b",
+  "baselineHead": "fe08f9f",
   "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
   "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
   "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
@@ -132,7 +132,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.12/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -202,7 +202,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.12/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -272,7 +272,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.12/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -299,7 +299,7 @@
         {
           "id": "P02",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-20261102/tests-final.log",
+          "evidence": "docs/AI-PAID-SOURCE-INPUT-20261102.md + tests/ai-paid-source-fidelity.test.ts",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
@@ -329,7 +329,7 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": "docs/AI-PAID-READING-SOURCE-ALIGNED-20261102.md + docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md",
+          "evidence": "docs/AI-PAID-SOURCE-INPUT-20261102.md + tests/ai-paid-source-fidelity.test.ts",
           "note": "Đối chiếu riêng TB190/NPL261 ở lời ngữ cảnh Tài; tách cách khẳng định của sách khỏi kết quả tích lũy được bảo đảm. Phần nối vẫn là tổng hợp, không luận trực tiếp ở Quan từ nguồnC."
         },
         {
@@ -342,7 +342,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.12/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -369,7 +369,7 @@
         {
           "id": "P02",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-20261102/tests-final.log",
+          "evidence": "docs/AI-PAID-SOURCE-INPUT-20261102.md + tests/ai-paid-source-fidelity.test.ts",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
@@ -399,7 +399,7 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": "docs/AI-PAID-READING-SOURCE-ALIGNED-20261102.md + docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md",
+          "evidence": "docs/AI-PAID-SOURCE-INPUT-20261102.md + tests/ai-paid-source-fidelity.test.ts",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
@@ -412,7 +412,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.12/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -482,7 +482,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.12/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -552,7 +552,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.12/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -622,7 +622,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.12/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -692,7 +692,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.12/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -719,7 +719,7 @@
         {
           "id": "P02",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-20261102/tests-final.log",
+          "evidence": "docs/AI-PAID-SOURCE-INPUT-20261102.md + tests/ai-paid-source-fidelity.test.ts",
           "note": "Có bằng chứng kỹ thuật/phạm vi trên mẫu QA; không phải độ phủ mọi lá số."
         },
         {
@@ -749,7 +749,7 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": "docs/AI-PAID-READING-SOURCE-ALIGNED-20261102.md + docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md",
+          "evidence": "docs/AI-PAID-SOURCE-INPUT-20261102.md + tests/ai-paid-source-fidelity.test.ts",
           "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
         },
         {
@@ -762,7 +762,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.12/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -832,7 +832,7 @@
           "id": "P09",
           "status": "not-verified",
           "evidence": null,
-          "note": "Chưa gọi API: retrieval1.11/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "note": "Chưa gọi API: retrieval1.12/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
         },
         {
           "id": "P10",
@@ -843,7 +843,7 @@
       ]
     }
   ],
-  "lastReview": "source-fidelity-5-paragraphs-no-status-change",
+  "lastReview": "paid-source-input-1.12-mock-no-api",
   "history": [
     {
       "updatedAt": "2026-11-02",
@@ -1177,6 +1177,43 @@
       "apiCreate": 0,
       "apiGet": 0,
       "report": "docs/AI-PAID-READING-SOURCE-FIDELITY-20261102.md"
+    },
+    {
+      "updatedAt": "2026-11-02",
+      "baselineHead": "fe08f9f",
+      "measurementVersion": "paid-content-progress-1.0.0",
+      "criteriaChanged": false,
+      "knowledgeVersion": "paid-retrieval-1.12.0",
+      "sourceReviewVersion": "paid-source-fidelity-1.0.0",
+      "changes": [
+        {
+          "palace": "Quan Lộc",
+          "before": 90,
+          "after": 90,
+          "changedCriteria": [],
+          "evidenceOnly": true,
+          "scopeUnchanged": true
+        },
+        {
+          "palace": "Nô Bộc",
+          "before": 90,
+          "after": 90,
+          "changedCriteria": [],
+          "evidenceOnly": true,
+          "scopeUnchanged": true
+        },
+        {
+          "palace": "Phu Thê",
+          "before": 90,
+          "after": 90,
+          "changedCriteria": [],
+          "evidenceOnly": true,
+          "scopeUnchanged": true
+        }
+      ],
+      "apiCreate": 0,
+      "apiGet": 0,
+      "report": "docs/AI-PAID-SOURCE-INPUT-20261102.md"
     }
   ]
 }

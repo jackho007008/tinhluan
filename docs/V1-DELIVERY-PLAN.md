@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 02/11 — Khép tích hợp sắc thái vào đầu vào mới
+
+Lớp hiệuđính1.0/retrieval1.12 đi qua inputfactory/provider hiệncó; không tạo rule/queue/schemaoutputmới, không sửa savedinput.190test/typecheck/buildcáchly đạt;dry đầu mất1CMệnh do dung lượng đã sửa bằng rútgọn, cap/baseline nguyên.3mock/8lịch sử/21bundle đạt,0API/deploy.11cung90%; dừng đúng code/mock, không tự đóngP09. [Đầu ra/giới hạn](AI-PAID-SOURCE-INPUT-20261102.md).
+
 ## 02/11 — Khép lô kiểm sắc thái, giữ P09 mở
 
 Đọc10bài, đối chiếu đúng6asset và sửa5đoạn ở3cung; ghép bộ mới, giữ7bài/T1 và mọi bài cũ.10validator/6probe/8bài thật/21nguồn đạt,0API/code/DB/deploy.11cung vẫn90%, tiêu chí/phạm vi nguyên; phải đối chiếu đầu vào thực trước vòngAPI được phép, không lấy bản biên tập làm kết quảmodel. [Đầu ra/điểm dừng](AI-PAID-READING-SOURCE-FIDELITY-20261102.md).

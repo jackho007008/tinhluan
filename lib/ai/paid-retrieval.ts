@@ -11,6 +11,7 @@ import { paidFacts } from "./paid-facts";
 import { paidBookKnowledge } from "./paid-book-knowledge";
 import { paidBookContexts } from "./paid-book-context";
 import type { Knowledge } from "./contract";
+import { reviewPaidSource } from "./paid-source-fidelity";
 export const PAID_THEMES: Record<string, string[]> = {
   "Quan Lộc": ["work"],
   "Tài Bạch": ["finance"],
@@ -63,6 +64,7 @@ export function paidKnowledge(record: InternalReading, target: string) {
     return "outside";
   };
   const add = (k: Knowledge) => {
+    k = reviewPaidSource(k, target);
     if (unresolvedTemplate([k.text, ...k.conditions, ...k.limits].join(" "))) {
       excluded.push({
         id: k.id,
