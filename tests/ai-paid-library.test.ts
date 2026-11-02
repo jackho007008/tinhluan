@@ -101,6 +101,147 @@ it("loads only a reviewed, hash-verified topic passage with the exact natal anch
   input.facts[0].provenance!.palace = "Quan Lộc";
   expect(paidLibrary(input, "Tài Bạch", root).items).toEqual([]);
 });
+
+const methodUnit = () => {
+  units[0].id = "method";
+  units[0].kind = "method";
+  units[0].requirements = [{ palace: "Tài Bạch", any: [{ kind: "palace" }] }];
+  input.facts.push({
+    id: "palace.9.location",
+    kind: "engine",
+    text: "Tài Bạch tại Thân; dữ kiện vị trí.",
+    paths: ["chart.palaces.9"],
+  });
+  write();
+};
+it("palace existence selects a method as D only, never a new direct thesis", () => {
+  methodUnit();
+  const k = paidLibrary(input, "Tài Bạch", root).items[0];
+  expect(k).toMatchObject({
+    group: "D",
+    application: "reference-only",
+    selection: "background-method",
+    passage: { kind: "method", anchorFactIds: ["palace.9.location"] },
+  });
+  input.knowledge = [k];
+  const r: any = {
+    schemaVersion: "paid-reading-v2.0.0",
+    coverage: "limited",
+    coverageNote: "Mock",
+    limitations: ["Mock limitation."],
+    sections: [
+      {
+        id: "method",
+        role: "analysis",
+        title: "Mock",
+        paragraphs: [
+          {
+            text: "Mock phương pháp.",
+            basis: "ai-synthesis",
+            factIds: ["palace.9.location"],
+            knowledgeIds: [k.id],
+          },
+        ],
+      },
+    ],
+  };
+  expect(() => validatePaidNarration(r, input, PAID_PROMPT_CURRENT)).toThrow(
+    "AI_REFERENCE_SCOPE",
+  );
+  r.sections[0].paragraphs[0].basis = "source-interpretation";
+  expect(() => validatePaidNarration(r, input, PAID_PROMPT_CURRENT)).toThrow(
+    "AI_REFERENCE_SCOPE",
+  );
+});
+it.each(["direct", "foundation"])(
+  "presence cannot authorize %s content",
+  (kind) => {
+    methodUnit();
+    units[0].kind = kind;
+    write();
+    expect(paidLibrary(input, "Tài Bạch", root).excluded).toContainEqual({
+      id: "paid-library",
+      reason: "missing-or-invalid-index",
+    });
+  },
+);
+it.each(["wrong-palace", "wrong-id", "wrong-path", "missing"])(
+  "method still requires an authentic saved palace location: %s",
+  (variant) => {
+    methodUnit();
+    const f = input.facts[1];
+    if (variant === "wrong-palace") f.text = "Quan Lộc tại Thân";
+    if (variant === "wrong-id") f.id = "fake.location";
+    if (variant === "wrong-path") f.paths = ["unverified"];
+    if (variant === "missing") input.facts.pop();
+    expect(paidLibrary(input, "Tài Bạch", root).items).toEqual([]);
+  },
+);
+it("a method cannot replace an existing personal star interpretation", () => {
+  methodUnit();
+  units[0].replaces = ["paid-book.direct"];
+  write();
+  expect(paidLibrary(input, "Tài Bạch", root).items).toEqual([]);
+});
+it("uses a separate v1.6 index without altering the legacy asset; invalid new assets fail closed", () => {
+  const legacy = fs.readFileSync(path.join(root, "paid-passages/index.json"));
+  methodUnit();
+  const versioned = path.join(root, "paid-passages/index-v16.json");
+  fs.copyFileSync(path.join(root, "paid-passages/index.json"), versioned);
+  fs.writeFileSync(path.join(root, "paid-passages/index.json"), legacy);
+  expect(paidLibrary(input, "Tài Bạch", root).items[0].group).toBe("D");
+  expect(fs.readFileSync(path.join(root, "paid-passages/index.json"))).toEqual(
+    legacy,
+  );
+  fs.writeFileSync(versioned, "invalid new index");
+  expect(paidLibrary(input, "Tài Bạch", root).excluded).toContainEqual({
+    id: "paid-library",
+    reason: "missing-or-invalid-index",
+  });
+  fs.unlinkSync(versioned);
+  expect(paidLibrary(input, "Tài Bạch", root).items[0].group).toBe("B");
+});
+it("cross-palace foundation requires every source premise, not a matching star name elsewhere", () => {
+  units[0].requirements = [
+    {
+      palace: "Mệnh",
+      any: [{ kind: "star", name: "Vũ Khúc", field: "majorStars" }],
+    },
+    {
+      palace: "Mệnh",
+      any: [{ kind: "star", name: "Thiên Phủ", field: "majorStars" }],
+    },
+    {
+      palace: "Tài Bạch",
+      any: [{ kind: "star", name: "Liêm Trinh", field: "majorStars" }],
+    },
+  ];
+  write();
+  const f = (id: string, palace: string, name: string): any => ({
+    id,
+    kind: "engine",
+    paths: [id],
+    text: `${palace} tại Tý: ${name}; nhóm chính tinh`,
+    provenance: {
+      palace,
+      field: "majorStars",
+      relation: palace === "Mệnh" ? "trine" : "target",
+      scope: "natal",
+      verification: "source-traced",
+      source: "fixture",
+    },
+  });
+  input.facts.push(
+    f("a", "Mệnh", "Vũ Khúc"),
+    f("b", "Mệnh", "Thiên Phủ"),
+    f("c", "Tài Bạch", "Liêm Trinh"),
+  );
+  expect(
+    paidLibrary(input, "Tài Bạch", root).items[0].passage?.anchorFactIds,
+  ).toEqual(["a", "b", "c"]);
+  input.facts[2].provenance!.palace = "Quan Lộc";
+  expect(paidLibrary(input, "Tài Bạch", root).items).toEqual([]);
+});
 it.each(["engine-reported", "source-conflict", "upstream-unverified"] as const)(
   "never interprets %s anchors",
   (verification) => {

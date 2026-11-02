@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 02/11 — Retrieval1.6 cho Nô–Tử–Phu–Tài, mock
+
+Nguồn mới:3methodD xác định chủ thể/giao dịch và1Bfoundation ví dụ MệnhVũ–Phủ/PhuPhá; direct trên mẫu vẫn3/1/3/3,159facts/C nguyên. Index-v16 riêng, index cũ7đơn vị giữ byte; kho mới11đơn vị, bundle private16artifact.122puretest/typecheck/build đạt,8bài thật cũ đọc đúngversion;0API/DB/worker/QA3062/3070. Chưa nghiệm thu model/thương mại. [Phiếu nguồn, trước/sau và giới hạn](AI-PAID-FOUR-SOURCES-20261102.md).
+
 ## 02/11 — Phu Thê: liên hệ có luận điểm, giới hạn bớt lặp (mock)
 
 Prompt2.5 giữ2.4/bài cũ, yêu cầu đối chiếu hai tiền đề có căn cứ và đóng góp cụ thể; gom giới hạn chung, giữ lượng từ/nam mệnh/thời gian/cung gốc tại lời nguồn. Cùng input cũ, mock qua validation và8bài thật cũ vẫn đọc đúngversion.92puretest/typecheck/build đạt;0API, khôngDB/worker/QA3062/3070. Chưa xác minh model2.5. [Ví dụ đề xuất và bằng chứng](AI-PAID-PHU-CONTEXT-20261102.md).

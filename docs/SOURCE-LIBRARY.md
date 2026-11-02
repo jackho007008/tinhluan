@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 02/11 — Đoạn sách cho AI trả phí1.6
+
+Kho private có `knowledge/paid-passages/index-v16.json`:11đơn vị, thêm3method/1foundation từ chữ THP2 đã xử lý; index.json cũ7đơn vị nguyên byte. Không PDF/ảnh mới hoặc tăng mức chứng nhận; reviewed là Codex rà diễn ý/điều kiện, không chứng nhận độc lập hay publish. [Phiếu nguồn, hash/bundle16artifact và giới hạn](AI-PAID-FOUR-SOURCES-20261102.md). Không sửa BửuĐình, không coi phạm vi đã rà là hết kho.
+
 Cập nhật21/10/2026 nối `main@5c228e4`; bàn giao TL186 `f96c25f`. [Kho riêng/hướng dẫn](../.local/source-library/README.md) · [Danh mục đầy đủ, tác giả, phiên bản, SHA256](../.local/source-library/inventory.json) · [Hồ sơ kiến thức](../.local/source-library/knowledge/README.md) · [Kết quả TL298/điểm chặn](../.local/source-library/blocker-results-tl298-complete.md) · [Nhật ký mới/checkpoint](../.local/source-library/journals/tl298-20261021.json).
 
 Kho sách, chữ đầy đủ, ảnh và hồ sơ dài ở `/Volumes/DATA/TINHLUAN/.local/source-library/`, ngoài Git/phần công khai theo ignore hiện có. Liên kết cục bộ không được khôi phục bằng clone Git; chưa tạo bản sao lưu ngoài máy.

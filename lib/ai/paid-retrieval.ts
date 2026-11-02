@@ -264,9 +264,20 @@ export function paidKnowledge(record: InternalReading, target: string) {
   }
   for (const k of library.items) add(k);
   excluded.push(...library.excluded);
+  const hasLibraryMethod = library.items.some(
+    (k) => k.passage?.kind === "method",
+  );
+  const topicMethodIds = new Set(
+    (topicMethods[target] || []).map((id) => "paid-method." + id),
+  );
   const ranked = items.sort(
     (a, b) =>
       a.group!.localeCompare(b.group!) ||
+      Number(b.passage?.kind === "method") -
+        Number(a.passage?.kind === "method") ||
+      (hasLibraryMethod
+        ? Number(topicMethodIds.has(b.id)) - Number(topicMethodIds.has(a.id))
+        : 0) ||
       Number(b.selection === "matched-v1-editorial") -
         Number(a.selection === "matched-v1-editorial") ||
       a.id.localeCompare(b.id),

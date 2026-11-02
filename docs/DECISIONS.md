@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 02/11 — Hoàn thiện bốn cung từ kho đã xử lý, chỉ mock
+
+Chủ dự án giao ưu tiên khoảng thiếu khả thi của Nô/Tử/Phu/Tài, giữ bài cũ, không API hoặc QA3062/3070. Lượt này chỉ thêm nguồn nền/phương pháp có giới hạn, không phê duyệt dự báo hôn nhân, sinh sản, phép chế hóa hoặc phát hành. [Kết quả và giới hạn](AI-PAID-FOUR-SOURCES-20261102.md).
+
 ## 02/11 — Phu liên cung và giới hạn: chỉ mock
 
 Chủ dự án giao cải thiện chiều sâu liên hệ và giảm lặp giới hạn từ nguồn sẵn có; mock trước, không API/bài cũ/QA3062/3070. Prompt2.5 là thay đổi cho job mới khi sau này được bật; không thêm kiến thức/rule hoặc phê duyệt thương mại. [Bằng chứng và giới hạn](AI-PAID-PHU-CONTEXT-20261102.md).

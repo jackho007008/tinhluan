@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — Thư viện1.6 bốn cung
+
+122/122pure7file; typecheck/build cách ly đạt. Dry159facts/C nguyên/direct3-1-3-3;3negative probes Phu và8savedresult đúngversion, kho cũ giữ byte. D không thành direct, location chỉmethod, method không thay lời sao, v16/legacy/invalid đã kiểm. Lỗi đầu fixture thiếu limitation được ghi riêng;0API/DB/E2E/PDF/browser mới. [Logs và phiếu nguồn](AI-PAID-FOUR-SOURCES-20261102.md).
+
 ## 02/11 — Phu liên cung/prompt2.5
 
 92/92pure tại5file editorial/V2/library/contextGuide/safety; typecheck/build cách ly đạt. Dry mock trên input thật,8result cũ đọc savedversion;0API, khôngDBtest/E2E/PDF/browser/mobile mới. SDK fetch mock có2.4/2.5 để giữversion khi writerflag đổi. [Log và giới hạn](AI-PAID-PHU-CONTEXT-20261102.md).

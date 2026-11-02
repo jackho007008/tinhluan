@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 02/11 — Retrieval1.6 và phương pháp thư viện
+
+Loader ưu tiên index-v16, thiếu thì dùng index cũ; invalid mới fail closed. Kind method luônD, neo location chỉ cho phương pháp, không thay lời sao hoặc đủ để sinh bài cá nhân. Có method thư viện thì ưu tiên method đúng chủ đề trước quy trình chung, vẫn D3/library4/14KB. Prompt2.5/schemaV2/store/queue giữ nguyên. [Nguồn và kiểm](AI-PAID-FOUR-SOURCES-20261102.md).
+
 ## 02/11 — Prompt2.5 giữ reader/validator cũ
 
 WriterV2 opt-in chọn2.5 cho job mới; registry giữ2.4 và các version cũ cho savedattempt/GET. Guard biên tập2.4 áp cả2.5, không đổi schema/nguồn/store/retry. Chỉ hướng dẫn liên hệ có luận điểm và tổ chức giới hạn. [Kiểm mock và phạm vi](AI-PAID-PHU-CONTEXT-20261102.md).

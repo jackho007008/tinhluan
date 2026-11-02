@@ -24,6 +24,7 @@ const anchor = z.discriminatedUnion("kind", [
       name: z.enum(["Lộc", "Quyền", "Khoa", "Kỵ"]),
     })
     .strict(),
+  z.object({ kind: z.literal("palace") }).strict(),
 ]);
 const page = z
   .object({
@@ -44,7 +45,7 @@ const unit = z
     title: z.string().min(1).max(180),
     text: z.string().min(1).max(3000),
     targets: z.array(z.string()).min(1).max(4),
-    kind: z.enum(["direct", "foundation"]),
+    kind: z.enum(["direct", "foundation", "method"]),
     // All requirements must hold; alternatives inside a requirement are explicit OR.
     requirements: z
       .array(
@@ -66,7 +67,17 @@ const unit = z
       .max(4),
     pages: z.array(page).min(1).max(6),
   })
-  .strict();
+  .strict()
+  .refine(
+    (u) =>
+      u.kind === "method" ||
+      !u.requirements.some((r) => r.any.some((a) => a.kind === "palace")),
+    "Palace presence anchors methods only, never personal interpretations",
+  )
+  .refine(
+    (u) => u.kind !== "method" || !u.replaces?.length,
+    "A method cannot replace a star interpretation",
+  );
 const index = z
   .object({
     version: z.literal("paid-library-1.0.0"),
@@ -92,7 +103,12 @@ export function paidLibrary(
     return { items, excluded, replacements };
   let data: z.infer<typeof index>;
   try {
-    const file = path.join(root, "paid-passages", "index.json");
+    // Old checkouts keep reading their original index; new method units never
+    // make a shared legacy index unreadable. Missing v1.6 assets use the old set.
+    const versioned = path.join(root, "paid-passages", "index-v16.json");
+    const file = fs.existsSync(versioned)
+      ? versioned
+      : path.join(root, "paid-passages", "index.json");
     if (fs.lstatSync(file).isSymbolicLink() || fs.statSync(file).size > 256000)
       throw Error();
     data = index.parse(JSON.parse(fs.readFileSync(file, "utf8")));
@@ -130,6 +146,13 @@ export function paidLibrary(
     const matches = u.requirements.map((req) =>
       input.facts.filter((f) =>
         req.any.some((a) => {
+          if (a.kind === "palace")
+            return (
+              /^palace\.\d+\.location$/.test(f.id) &&
+              f.kind === "engine" &&
+              f.text.startsWith(`${req.palace} tại `) &&
+              f.paths.some((p) => /^chart\.palaces\.\d+$/.test(p))
+            );
           if (a.kind === "natal")
             return (
               f.id === "natal." + a.name &&
@@ -178,10 +201,15 @@ export function paidLibrary(
       conditions: u.conditions,
       limits: u.limits,
       references: u.references,
-      group: "B",
+      group: u.kind === "method" ? "D" : "B",
       application: u.kind === "direct" ? "direct" : "reference-only",
       subjectPalaces: [target],
-      selection: u.kind === "direct" ? "matched-snapshot" : "reference-only",
+      selection:
+        u.kind === "direct"
+          ? "matched-snapshot"
+          : u.kind === "method"
+            ? "background-method"
+            : "reference-only",
       provenance: {
         ruleIds: [],
         ruleStatuses: [],

@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 02/11 — Khép lô nguồn khả thi Nô–Tử–Phu–Tài, chỉ mock
+
+Đã đưa3methodD/1Bfoundation vào retrieval1.6 có điều kiện, không thêm rule hoặc tăng direct; source cards/mock/122test/typecheck/build đã ghi. Vẫn thiếu Lương–Lộc, nền TửVCD toàn diện, Phá–Đà–Hỏa và Liêm–Hao trong phạm vi rà; không tự gọi API/QA3062/3070. [Đầu ra và điểm dừng](AI-PAID-FOUR-SOURCES-20261102.md).
+
 ## 02/11 — Phu Thê: liên hệ có luận điểm, giới hạn bớt lặp (mock)
 
 Prompt2.5 giữ2.4/bài cũ, yêu cầu đối chiếu hai tiền đề có căn cứ và đóng góp cụ thể; gom giới hạn chung, giữ lượng từ/nam mệnh/thời gian/cung gốc tại lời nguồn. Cùng input cũ, mock qua validation và8bài thật cũ vẫn đọc đúngversion.92puretest/typecheck/build đạt;0API, khôngDB/worker/QA3062/3070. Chưa xác minh model2.5. [Ví dụ đề xuất và bằng chứng](AI-PAID-PHU-CONTEXT-20261102.md).
