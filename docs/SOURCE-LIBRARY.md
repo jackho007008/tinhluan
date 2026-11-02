@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 02/11 — Nền Lương cho bản luận Nô, không phép chế hóa mới
+
+HàmSố/NguyễnPhátLộc125§4: lấy lớp nghĩa chung Lương dùđắc/hãm làmBfoundation, không lời riêng bạn bè; giữ nhánh/bảng khác, không kích hoạt các vế nhân phẩm/y khoa hoặc đổi trạng thái. Indexv110 riêng13unit/bundle21artifact, v17/legacy nguyên; không PDF/ảnh mới/BửuĐình. Các đoạn Cơ/Cự/Hỏa được đối chiếu chữ nhưng không nhập vì không đủ điều kiện cho lời đang viết; không tính thành nguồn mới. [Phân tích và hash](AI-PAID-COMPLETE-ANALYSIS-HANDOFF-20261102.md).
+
 ## 02/11 — Rà điều kiện nguồn bốn cung, không thêm indexunit
 
 Đối chiếu chữTB168–172/195/200–201/207, THP2/179/208–209/218/273 vàNPL261 từ kho/hồ sơ cũ. Không PDF/ảnh mới, không nâng chứng nhận, sửa chữ hoặcBửuĐình. BảngMệnh–Nô chưa rõ cách chọn hàng choVũ–Phủ, SongHao không thànhĐạiHao, ngoại lệ sát tụ không thành phépPhá–Đà–Hỏa. [Phiếu nguồn/hash và tài liệu cần thêm](AI-PAID-FOUR-DEPTH-SOURCE-REVIEW-20261102.md).

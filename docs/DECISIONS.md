@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 02/11 — Ưu tiên phân tích và tổng hợp bản luận từ nguồn đã có
+
+Chủ dự án chỉ đạo nguồn đã có luận giải, yêu cầu tập trung phân tích và tổng hợp đầy đủ bản luận. Triển khai biên luận từ các ý có căn cứ, không đòi tác giả viết sẵn nguyên câu nối/tổ hợp; vẫn giữ điều kiện và phân biệt facts/lời nguồn/tổng hợp. Không biến chỉ đạo này thành quyền gọiAPI, bỏ ngoại lệ, sửa lịch sử hoặc deploy. [Bài và chứng cứ](AI-PAID-COMPLETE-ANALYSIS-HANDOFF-20261102.md).
+
 ## 02/11 — Tiếp tục hoàn thiện các cung từ nguồn hiện có
 
 Chủ dự án giao tiếp tục các cung và sẵn sàng bổ sung sách nếu cần. Giữ giới hạn mock/noAPI/QA3062/3070 của phiên đang tiếp tục; không coi lời đề nghị bổ sung sách là quyền nhập toàn kho, mở bán hoặc gọi model. Triển khai dùng lại nguồn C và bốn bản biên tập có truy vết; yêu cầu tài liệu có điều kiện/ngoại lệ cho khoảng phối hợp còn thiếu, không chọn nguồn thắng. [Bàn giao](AI-PAID-READING-COMPLETION-20261102.md).

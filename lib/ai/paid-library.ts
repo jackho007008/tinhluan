@@ -28,7 +28,7 @@ const anchor = z.discriminatedUnion("kind", [
 ]);
 const page = z
   .object({
-    book: z.enum(["npl", "tb", "thp1", "thp2", "vttl170"]),
+    book: z.enum(["npl", "hs", "tb", "thp1", "thp2", "vttl170"]),
     number: z.number().int().min(1).max(1000),
     layer: z.enum(["text", "ocr"]),
     sha256: z.string().regex(/^[a-f0-9]{64}$/),
@@ -118,13 +118,16 @@ export function paidLibrary(
   try {
     // Old checkouts keep reading their original index; new method units never
     // make a shared legacy index unreadable. Missing v1.6 assets use the old set.
+    const v110 = path.join(root, "paid-passages", "index-v110.json");
     const v17 = path.join(root, "paid-passages", "index-v17.json");
     const v16 = path.join(root, "paid-passages", "index-v16.json");
-    const file = fs.existsSync(v17)
-      ? v17
-      : fs.existsSync(v16)
-        ? v16
-        : path.join(root, "paid-passages", "index.json");
+    const file = fs.existsSync(v110)
+      ? v110
+      : fs.existsSync(v17)
+        ? v17
+        : fs.existsSync(v16)
+          ? v16
+          : path.join(root, "paid-passages", "index.json");
     if (fs.lstatSync(file).isSymbolicLink() || fs.statSync(file).size > 256000)
       throw Error();
     data = index.parse(JSON.parse(fs.readFileSync(file, "utf8")));

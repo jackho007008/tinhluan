@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 02/11 — Retrieval1.10: nền Hàm Số qua loader hiện hành
+
+Loader nhận bookhs và index-v110 riêng trướcv17/v16/legacy; index mới sai failclosed.13unit gồm12cũ+1foundation Lương cần neo tọaNô source-traced, không direct; cap4/14KB nguyên. Writer/schema/prompt2.6/queue/UI/savedinput không đổi. [Bundle và tương thích](AI-PAID-COMPLETE-ANALYSIS-HANDOFF-20261102.md).
+
 ## 02/11 — Retrieval1.9 dùng lại nguồn sách ngữ cảnh
 
 `paidBookContexts` gọi bộ chọn sách/thư viện gốc cho hai đường Phụ←Tử/Huynh←Nô, chỉ directA/B đủ điều kiện/tam hợp/xung rồi chuyển C, giữ nguyên source text/anchors/conditions/refs và contextOrigin. Cap4/14KB trước Cselector8/24KB hiện có; không lấy nền/method thay direct. Guide thêm Phụ/Tử, Huynh/Nô, Di/Phúc và neo nguồn C. Prompt2.6/schemaV2/savedjob/queue/UI giữ nguyên. [Dry và kiểm tương thích](AI-PAID-READING-COMPLETION-20261102.md).

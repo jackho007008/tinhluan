@@ -18,6 +18,56 @@ const write = () =>
     path.join(root, "paid-passages/index.json"),
     JSON.stringify({ version: "paid-library-1.0.0", units }),
   );
+it("loads the versioned HS foundation without changing a legacy index", () => {
+  fs.mkdirSync(path.join(temp, "books/hs/pages"), { recursive: true });
+  const text = "TECHNICAL HS FIXTURE, no personal conclusion.";
+  fs.writeFileSync(path.join(temp, "books/hs/pages/0125.txt"), text);
+  const legacy = fs.readFileSync(
+    path.join(root, "paid-passages/index.json"),
+    "utf8",
+  );
+  const u = structuredClone(units[0]);
+  u.id = "hs-foundation";
+  u.pages = [{ book: "hs", number: 125, layer: "text", sha256: sha(text) }];
+  fs.writeFileSync(
+    path.join(root, "paid-passages/index-v110.json"),
+    JSON.stringify({ version: "paid-library-1.0.0", units: [u] }),
+  );
+  const r = paidLibrary(input, "Tài Bạch", root);
+  expect(r.items[0]).toMatchObject({
+    id: "paid-library.hs-foundation",
+    application: "reference-only",
+    passage: { kind: "foundation" },
+  });
+  expect(
+    fs.readFileSync(path.join(root, "paid-passages/index.json"), "utf8"),
+  ).toBe(legacy);
+  input.facts = [];
+  expect(paidLibrary(input, "Tài Bạch", root).items).toEqual([]);
+});
+it("an invalid new index fails closed rather than silently using legacy sources", () => {
+  fs.writeFileSync(path.join(root, "paid-passages/index-v110.json"), "{}");
+  expect(paidLibrary(input, "Tài Bạch", root)).toMatchObject({
+    items: [],
+    excluded: [{ reason: "missing-or-invalid-index" }],
+  });
+});
+it("changed HS source text is rejected before the foundation enters the packet", () => {
+  fs.mkdirSync(path.join(temp, "books/hs/pages"), { recursive: true });
+  fs.writeFileSync(path.join(temp, "books/hs/pages/0125.txt"), "CHANGED");
+  const u = structuredClone(units[0]);
+  u.pages = [
+    { book: "hs", number: 125, layer: "text", sha256: sha("EXPECTED") },
+  ];
+  fs.writeFileSync(
+    path.join(root, "paid-passages/index-v110.json"),
+    JSON.stringify({ version: "paid-library-1.0.0", units: [u] }),
+  );
+  expect(paidLibrary(input, "Tài Bạch", root)).toMatchObject({
+    items: [],
+    excluded: [{ reason: "missing-or-changed-source-page" }],
+  });
+});
 beforeEach(() => {
   vi.stubGlobal("fetch", () => {
     throw Error("NO_NETWORK_IN_MOCK");
