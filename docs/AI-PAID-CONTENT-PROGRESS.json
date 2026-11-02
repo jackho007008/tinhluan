@@ -1,7 +1,7 @@
 {
   "schemaVersion": "paid-content-progress-1.0.0",
   "updatedAt": "2026-11-02",
-  "baselineHead": "34a230b",
+  "baselineHead": "d5be225",
   "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
   "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
   "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
@@ -74,8 +74,8 @@
   "rows": [
     {
       "palace": "Phụ Mẫu",
-      "percent": 80,
-      "passed": 8,
+      "percent": 90,
+      "passed": 9,
       "total": 10,
       "commercialReady": false,
       "scope": "Bản biên tập MOCK limited đã rà toàn văn; chỉ phạm vi nguồn thực sự hỗ trợ, chưa đủ chiều sâu toàn cung hoặc nghiệm thu model.",
@@ -101,14 +101,14 @@
         {
           "id": "P04",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-20261102/Phụ-Mẫu-dry.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Phụ-Mẫu-p05.json",
           "note": "Có bản mock limited, section/paragraph với facts và nguồn, đã rà toàn văn; không phải model thật."
         },
         {
           "id": "P05",
-          "status": "partial",
-          "evidence": "docs/AI-PAID-DEPTH-20261102.md",
-          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+          "status": "passed",
+          "evidence": "docs/AI-PAID-SIX-P05-ACCEPTANCE-20261102.md",
+          "note": "Đã rà phối hợp và điều chỉnh trong phạm vi limited của bản QA; giữ scope cũ, không nghiệm thu Astra hoặc mọi lá số."
         },
         {
           "id": "P06",
@@ -119,13 +119,13 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-20261102/Phụ-Mẫu-dry.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Phụ-Mẫu-p05.json",
           "note": "Đối chiếu từng đoạn với nguồn đã chọn; lời nguồn và tổng hợp tách basis, giữ cung gốc và điều kiện."
         },
         {
           "id": "P08",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-20261102/Phụ-Mẫu-dry.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Phụ-Mẫu-p05.json",
           "note": "Đã rà toàn văn mock: không sự kiện chắc chắn, số người/phẩm hạnh, giả nguồn hoặc khuyến nghị y khoa/đầu tư/di cư."
         },
         {
@@ -144,8 +144,8 @@
     },
     {
       "palace": "Phúc Đức",
-      "percent": 80,
-      "passed": 8,
+      "percent": 90,
+      "passed": 9,
       "total": 10,
       "commercialReady": false,
       "scope": "Giới hạn: nền họ hàng và khoảng cách nơi sống; chưa toàn diện tinh thần/truyền thống gia đình.",
@@ -171,14 +171,14 @@
         {
           "id": "P04",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-readings-20261102/Phúc-Đức-reading.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Phúc-Đức-p05.json",
           "note": "Đọc lại toàn văn bài thật cũ; không ghi nhận như bài của prompt/nguồn mới."
         },
         {
           "id": "P05",
-          "status": "partial",
-          "evidence": "docs/AI-PAID-DEPTH-20261102.md",
-          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+          "status": "passed",
+          "evidence": "docs/AI-PAID-SIX-P05-ACCEPTANCE-20261102.md",
+          "note": "Đã rà phối hợp và điều chỉnh trong phạm vi limited của bản QA; giữ scope cũ, không nghiệm thu Astra hoặc mọi lá số."
         },
         {
           "id": "P06",
@@ -189,13 +189,13 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-readings-20261102/Phúc-Đức-reading.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Phúc-Đức-p05.json",
           "note": "Đọc lại toàn văn bài thật cũ; không ghi nhận như bài của prompt/nguồn mới."
         },
         {
           "id": "P08",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-readings-20261102/Phúc-Đức-reading.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Phúc-Đức-p05.json",
           "note": "Đọc lại toàn văn bài thật cũ; không ghi nhận như bài của prompt/nguồn mới."
         },
         {
@@ -214,8 +214,8 @@
     },
     {
       "palace": "Điền Trạch",
-      "percent": 70,
-      "passed": 7,
+      "percent": 80,
+      "passed": 8,
       "total": 10,
       "commercialReady": false,
       "scope": "Bản biên tập MOCK limited đã rà toàn văn; chỉ phạm vi nguồn thực sự hỗ trợ, chưa đủ chiều sâu toàn cung hoặc nghiệm thu model.",
@@ -241,14 +241,14 @@
         {
           "id": "P04",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-20261102/Điền-Trạch-dry.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Điền-Trạch-p05.json",
           "note": "Có bản mock limited, section/paragraph với facts và nguồn, đã rà toàn văn; không phải model thật."
         },
         {
           "id": "P05",
-          "status": "partial",
-          "evidence": "docs/AI-PAID-DEPTH-20261102.md",
-          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+          "status": "passed",
+          "evidence": "docs/AI-PAID-SIX-P05-ACCEPTANCE-20261102.md",
+          "note": "Đã rà phối hợp và điều chỉnh trong phạm vi limited của bản QA; giữ scope cũ, không nghiệm thu Astra hoặc mọi lá số."
         },
         {
           "id": "P06",
@@ -259,13 +259,13 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-20261102/Điền-Trạch-dry.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Điền-Trạch-p05.json",
           "note": "Đối chiếu từng đoạn với nguồn đã chọn; lời nguồn và tổng hợp tách basis, giữ cung gốc và điều kiện."
         },
         {
           "id": "P08",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-20261102/Điền-Trạch-dry.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Điền-Trạch-p05.json",
           "note": "Đã rà toàn văn mock: không sự kiện chắc chắn, số người/phẩm hạnh, giả nguồn hoặc khuyến nghị y khoa/đầu tư/di cư."
         },
         {
@@ -284,8 +284,8 @@
     },
     {
       "palace": "Quan Lộc",
-      "percent": 80,
-      "passed": 8,
+      "percent": 90,
+      "passed": 9,
       "total": 10,
       "commercialReady": false,
       "scope": "Có hạt nhân tổ chức/quyền/biểu đạt; còn thiếu chiều sâu điều chỉnh và văn phiên bản hiện hành.",
@@ -311,14 +311,14 @@
         {
           "id": "P04",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-readings-20261102/Quan-Lộc-reading.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Quan-Lộc-p05.json",
           "note": "Đọc lại toàn văn bài thật cũ; không ghi nhận như bài của prompt/nguồn mới."
         },
         {
           "id": "P05",
-          "status": "partial",
-          "evidence": "docs/AI-PAID-DEPTH-20261102.md",
-          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+          "status": "passed",
+          "evidence": "docs/AI-PAID-SIX-P05-ACCEPTANCE-20261102.md",
+          "note": "Đã rà phối hợp và điều chỉnh trong phạm vi limited của bản QA; giữ scope cũ, không nghiệm thu Astra hoặc mọi lá số."
         },
         {
           "id": "P06",
@@ -329,13 +329,13 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-readings-20261102/Quan-Lộc-reading.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Quan-Lộc-p05.json",
           "note": "Đọc lại toàn văn bài thật cũ; không ghi nhận như bài của prompt/nguồn mới."
         },
         {
           "id": "P08",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-readings-20261102/Quan-Lộc-reading.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Quan-Lộc-p05.json",
           "note": "Đọc lại toàn văn bài thật cũ; không ghi nhận như bài của prompt/nguồn mới."
         },
         {
@@ -424,8 +424,8 @@
     },
     {
       "palace": "Thiên Di",
-      "percent": 80,
-      "passed": 8,
+      "percent": 90,
+      "passed": 9,
       "total": 10,
       "commercialReady": false,
       "scope": "Bản biên tập MOCK limited đã rà toàn văn; chỉ phạm vi nguồn thực sự hỗ trợ, chưa đủ chiều sâu toàn cung hoặc nghiệm thu model.",
@@ -451,14 +451,14 @@
         {
           "id": "P04",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-20261102/Thiên-Di-dry.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Thiên-Di-p05.json",
           "note": "Có bản mock limited, section/paragraph với facts và nguồn, đã rà toàn văn; không phải model thật."
         },
         {
           "id": "P05",
-          "status": "partial",
-          "evidence": "docs/AI-PAID-DEPTH-20261102.md",
-          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+          "status": "passed",
+          "evidence": "docs/AI-PAID-SIX-P05-ACCEPTANCE-20261102.md",
+          "note": "Đã rà phối hợp và điều chỉnh trong phạm vi limited của bản QA; giữ scope cũ, không nghiệm thu Astra hoặc mọi lá số."
         },
         {
           "id": "P06",
@@ -469,13 +469,13 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-20261102/Thiên-Di-dry.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Thiên-Di-p05.json",
           "note": "Đối chiếu từng đoạn với nguồn đã chọn; lời nguồn và tổng hợp tách basis, giữ cung gốc và điều kiện."
         },
         {
           "id": "P08",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-20261102/Thiên-Di-dry.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Thiên-Di-p05.json",
           "note": "Đã rà toàn văn mock: không sự kiện chắc chắn, số người/phẩm hạnh, giả nguồn hoặc khuyến nghị y khoa/đầu tư/di cư."
         },
         {
@@ -774,8 +774,8 @@
     },
     {
       "palace": "Huynh Đệ",
-      "percent": 80,
-      "passed": 8,
+      "percent": 90,
+      "passed": 9,
       "total": 10,
       "commercialReady": false,
       "scope": "Bản biên tập MOCK limited đã rà toàn văn; chỉ phạm vi nguồn thực sự hỗ trợ, chưa đủ chiều sâu toàn cung hoặc nghiệm thu model.",
@@ -801,14 +801,14 @@
         {
           "id": "P04",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-20261102/Huynh-Đệ-dry.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Huynh-Đệ-p05.json",
           "note": "Có bản mock limited, section/paragraph với facts và nguồn, đã rà toàn văn; không phải model thật."
         },
         {
           "id": "P05",
-          "status": "partial",
-          "evidence": "docs/AI-PAID-DEPTH-20261102.md",
-          "note": "Chưa đủ bằng chứng về chiều sâu phối hợp/điều chỉnh trọng yếu; không tính điểm cho việc chỉ nêu thiếu."
+          "status": "passed",
+          "evidence": "docs/AI-PAID-SIX-P05-ACCEPTANCE-20261102.md",
+          "note": "Đã rà phối hợp và điều chỉnh trong phạm vi limited của bản QA; giữ scope cũ, không nghiệm thu Astra hoặc mọi lá số."
         },
         {
           "id": "P06",
@@ -819,13 +819,13 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-20261102/Huynh-Đệ-dry.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Huynh-Đệ-p05.json",
           "note": "Đối chiếu từng đoạn với nguồn đã chọn; lời nguồn và tổng hợp tách basis, giữ cung gốc và điều kiện."
         },
         {
           "id": "P08",
           "status": "passed",
-          "evidence": ".local/ai-paid-remaining-20261102/Huynh-Đệ-dry.json",
+          "evidence": ".local/ai-paid-six-p05-20261102/Huynh-Đệ-p05.json",
           "note": "Đã rà toàn văn mock: không sự kiện chắc chắn, số người/phẩm hạnh, giả nguồn hoặc khuyến nghị y khoa/đầu tư/di cư."
         },
         {
@@ -843,7 +843,7 @@
       ]
     }
   ],
-  "lastReview": "remaining-six-readings-and-eleven-palace-collection",
+  "lastReview": "six-limited-readings-P05-editorial-acceptance",
   "history": [
     {
       "updatedAt": "2026-11-02",
@@ -1007,6 +1007,57 @@
       "changes": [],
       "report": "docs/AI-PAID-READING-COLLECTION-20261102.md",
       "note": "Ghép10bản limited và1trạng tháiTật insufficient; giữ %, không coi có artifact là đã đạtP05/model."
+    },
+    {
+      "updatedAt": "2026-11-02",
+      "baselineHead": "d5be225",
+      "measurementVersion": "paid-content-progress-1.0.0",
+      "criteriaChanged": false,
+      "changes": [
+        {
+          "palace": "Phụ Mẫu",
+          "before": 80,
+          "after": 90,
+          "changedCriterion": "P05",
+          "scopeUnchanged": true
+        },
+        {
+          "palace": "Phúc Đức",
+          "before": 80,
+          "after": 90,
+          "changedCriterion": "P05",
+          "scopeUnchanged": true
+        },
+        {
+          "palace": "Điền Trạch",
+          "before": 70,
+          "after": 80,
+          "changedCriterion": "P05",
+          "scopeUnchanged": true
+        },
+        {
+          "palace": "Quan Lộc",
+          "before": 80,
+          "after": 90,
+          "changedCriterion": "P05",
+          "scopeUnchanged": true
+        },
+        {
+          "palace": "Thiên Di",
+          "before": 80,
+          "after": 90,
+          "changedCriterion": "P05",
+          "scopeUnchanged": true
+        },
+        {
+          "palace": "Huynh Đệ",
+          "before": 80,
+          "after": 90,
+          "changedCriterion": "P05",
+          "scopeUnchanged": true
+        }
+      ],
+      "report": "docs/AI-PAID-SIX-P05-ACCEPTANCE-20261102.md"
     }
   ]
 }

@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 02/11 — P05 sáu bài, chỉ biên tập
+
+6mock qua validator2.6;11probe bịchặn(6IDnguồnsai/5mấtcunggốcC),6kiểmđiềukiện,25đoạn đối chiếu tay. Input/refs/scope giữ nguyên,8bài thật/21nguồn giữhash. Không appchange nên không build/typecheck/suite/E2E/PDF/mobile/DBtest,0API/QA. [Log và giới hạn](AI-PAID-SIX-P05-ACCEPTANCE-20261102.md).
+
 ## 02/11 — Ghép bộ11artifact biên soạn
 
 7artifact mới/ghép gồm6limited+1insufficientTật, cùng4bài trước qua validator=11hợp lệ.8bài thật/21nguồn giữhash. Hai lượt đầu câu phủ địnhTật ngoài exactallowlist bị chặn; dùng câu giới hạn hỗ trợ sẵn, giữ validator. Không codechange nên không build/typecheck/suite/E2E/PDF/mobile/DB,0API/QA. [Logs và giới hạn](AI-PAID-READING-COLLECTION-20261102.md).
