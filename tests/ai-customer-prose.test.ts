@@ -75,6 +75,20 @@ const output = (): any => ({
 });
 afterEach(() => vi.unstubAllEnvs());
 
+it("distinguishes ordinary có học from the source name Cổ Học", () => {
+  expect(() =>
+    validateCustomerProse([
+      "Với nam mệnh, Hóa Khoa tại Phu Thê gắn với hình tượng người vợ có học vấn.",
+    ]),
+  ).not.toThrow();
+  for (const text of [
+    "Cổ Học bàn về Phu Thê.",
+    "CỔ HỌC",
+    "Cổ\u200b Học".normalize("NFD"),
+  ])
+    expect(() => validateCustomerProse([text])).toThrow("AI_CUSTOMER_PROSE");
+});
+
 it.each(PAID_PALACES)(
   "plain-language policy applies to every new paid palace: %s",
   (palace) => {

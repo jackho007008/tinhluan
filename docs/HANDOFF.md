@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 03/11 — Vòng Sol 11 cung đã đóng, chưa đủ bài
+
+Đúng 11 CREATE trên DB QA55458 mới: 4 limited, 1 insufficient, 1 lỗi tham chiếu và 5 credit failed. Đã sửa hai guard chặn nhầm, GET lại cùng receipt; thêm hold billing/access cho consumer và bảng giá Sol, kiểm 112 test/build. Không deploy hoặc sửa DB nguồn; clone đã backup/dừng. [Bản đọc, chi phí và giới hạn](AI-PAID-SOL-11PALACES-20261103.md).
+
 ## 03/11 — Quy tắc lời văn dễ hiểu, tên nguồn xem riêng
 
 Paid prompt 2.7/Luna edit 1.2 dùng chính sách chung cho bài mới, thêm guard tên sách/tác giả ở lời khách; giữ căn cứ và mọi version cũ. 120 test/typecheck/build cách ly/dry 11 input/9 bài cũ đạt, có bản Tài biên tập minh họa. Không API hoặc deploy; QA3118 còn 2.6. P09 writer mới chưa kiểm nên Tài trở về 90% hồ sơ, 10 cung khác giữ 90%. [Mẫu đọc, thay đổi và giới hạn](AI-CUSTOMER-PROSE-20261103.md).

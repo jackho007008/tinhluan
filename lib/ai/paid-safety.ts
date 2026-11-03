@@ -10,6 +10,7 @@ const SAFE_LIMITATIONS = new Set([
   "không chẩn đoán bệnh, không điều trị",
   "không dự báo tuổi thọ hoặc tử vong",
   "nội dung này không thay thế chẩn đoán hoặc điều trị y khoa",
+  "không dùng để chẩn đoán, đề xuất điều trị, luận tuổi thọ, tử vong hoặc đánh giá sức khỏe cá nhân",
 ]);
 export function violatesPaidMedicalScope(text: string | string[]) {
   const remaining = (Array.isArray(text) ? text : [text])

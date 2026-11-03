@@ -54,7 +54,16 @@ export async function consumePaidScope(scope: PaidConsumerScope) {
     const initial = await count(),
       deadline = Date.now() + runtime;
     for (let tick = 0; tick < ticks && Date.now() < deadline; tick++) {
-      const allowCreate = (await count()) - initial < limit;
+      // A terminal account failure must not consume every remaining CREATE in
+      // the report. Existing receipts still need GET reconciliation. An operator
+      // must resolve the failed jobs before new dispatch in this scope resumes.
+      const accountBlocked = (
+        await pool.query(
+          `SELECT EXISTS(SELECT 1 FROM ai_reading_jobs WHERE edition=$1 AND reading_id=$2 AND status='error' AND error_code IN ('AI_BILLING_UNAVAILABLE','AI_ACCESS_UNAVAILABLE')) AS blocked`,
+          [PAID_EDITION, id],
+        )
+      ).rows[0].blocked;
+      const allowCreate = !accountBlocked && (await count()) - initial < limit;
       const worked = await runAiMenhJob(undefined, {
         paid: true,
         readingId: id,

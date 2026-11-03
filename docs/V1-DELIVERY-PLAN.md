@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 03/11 — Đóng vòng một báo cáo Sol, không mở rộng CREATE
+
+Chủ dự án chọn 11 cung/tối đa 11 CREATE; đã dùng đủ, không fallback hoặc retry. Chỉ 4 bài đọc hợp lệ/1 insufficient; phần thiếu được ghi đúng trong bản đọc. Khép kiểm/chẩn đoán/backup và sửa guard có bằng chứng, chưa đạt nghiệm thu 11 cung. Không đổi tiêu chí P09 Astra hoặc tự gọi API tiếp. [Đầu ra và điểm dừng](AI-PAID-SOL-11PALACES-20261103.md).
+
 ## 03/11 — Khép lô sửa văn phong bằng mock
 
 Đã áp quy tắc dễ hiểu/không trộn nguồn vào lời khách cho writer paid 2.7 và Luna edit 1.2 tương lai; giữ trace, phiên bản và bài cũ. Mock/test/build đạt, bản Tài riêng để duyệt giọng văn; không tự gọi API, cập nhật QA hoặc đóng P09 theo bài 2.6. Điểm dừng: code/build và bản minh họa, chưa nghiệm thu model mới. [Triển khai và kiểm](AI-CUSTOMER-PROSE-20261103.md).

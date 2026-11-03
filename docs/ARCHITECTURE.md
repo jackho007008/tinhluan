@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 03/11 — Hold dispatch khi tài khoản lỗi, giữ GET receipt
+
+Consumer hiện có kiểm billing/accesserror theo toàn reading trước CREATE; cungscope không vượt hold và restart vẫn nhận diện lỗi đã lưu. Không chặn đối soát receipt, không đổi attempt/backoff/queue/schema/entitlement; operator phải xử lý lỗi theo luồng hiện có, không tự xóa hold sau nạp credit. Cost chọn bảng Sol riêng/Astra cũ, guard sửa hai falsepositive có mock; chỉ build, chưa runtime deploy. [Bằng chứng và phạm vi](AI-PAID-SOL-11PALACES-20261103.md).
+
 ## 03/11 — Chính sách lời khách dùng chung, validation theo version
 
 `customer-prose` dùng cho paid prompt 2.7 và Luna edit 1.2: kiểm riêng lời khách, giữ refs/conditions ngoài thân bài. Paid giữ schema V2 và mọi prompt/guard cũ, đặc biệt 2.6; lỗi CUSTOMER_PROSE là output validation. V1 edit/read/review dùng promptVersion của candidate để không áp guard mới vào artifact cũ; fallback và kho approved cũ giữ nguyên. Không đổi queue/receipt/quyền/renderer hoặc runtime QA trong lượt này. [Triển khai và kiểm](AI-CUSTOMER-PROSE-20261103.md).

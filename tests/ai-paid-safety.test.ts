@@ -27,6 +27,7 @@ it.each([
   "Không chẩn đoán, không điều trị.",
   "Bài viết này không chẩn đoán bệnh.",
   "Không dự báo tuổi thọ hoặc tử vong.",
+  "Không dùng để chẩn đoán, đề xuất điều trị, luận tuổi thọ, tử vong hoặc đánh giá sức khỏe cá nhân.",
 ])(
   "allows a complete safe limitation, not an affirmative medical claim: %s",
   (text) => {
@@ -43,6 +44,8 @@ it.each([
   "Không phải không chẩn đoán bệnh.",
   "Không điều trị là không đúng; bạn cần điều trị.",
   "Không chẩn đoán bệnh. Bạn sẽ mắc bệnh.",
+  "Không dùng để chẩn đoán, đề xuất điều trị, luận tuổi thọ, tử vong hoặc đánh giá sức khỏe cá nhân. Bạn bị ung thư.",
+  "Không dùng để chẩn đoán, đề xuất điều trị, luận tuổi thọ, tử vong hoặc đánh giá sức khỏe cá nhân nhưng cần dùng thuốc.",
 ])("rejects medical claim/negation laundering: %s", (text) => {
   const raw: any = mockPaidGeneration(input).raw;
   raw.sections[0].content =

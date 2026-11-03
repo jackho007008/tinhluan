@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 03/11 — Cho phép một báo cáo QA đủ 11 cung bằng Sol
+
+Chủ dự án yêu cầu dùng gpt-6.1-sol đã cấu hình và xác nhận “Một báo cáo đủ 11 cung, tối đa 11 CREATE”. Phạm vi là báo cáo QA mới, giữ Mệnh V1/Luna và lịch sử; không phải quyền fallback, retry uncertain, mở bán hoặc deploy QA3062/3070. Đã dùng hết11CREATE; không tự cấp lượt thay thế cho lỗicredit/output. Kết quả Sol không tự chứng nhận P09 theo Astra hoặc thay nhãn phạm vi sản phẩm. [Biên bản](AI-PAID-SOL-11PALACES-20261103.md).
+
 ## 03/11 — Lời luận phải dễ hiểu, không nêu tên sách/nguồn trong thân bài
 
 Chủ dự án đọc bài thật và yêu cầu gấp cho toàn bộ luận giải: người chưa học Tử Vi vẫn hiểu được; không đưa tên sách, tác giả hoặc nguồn vào lời khách hàng. Căn cứ được giữ riêng, không bỏ điều kiện hoặc nâng độ khẳng định để làm văn trôi chảy. Áp vào phiên bản tạo bài mới, không sửa lịch sử, không coi yêu cầu này là quyền gọi thêm API/deploy. Quyết định này bổ sung tiêu chí văn phong; đánh giá có giới hạn bài 2.6 trước đó không chứng nhận writer 2.7. [Triển khai và minh họa](AI-CUSTOMER-PROSE-20261103.md).

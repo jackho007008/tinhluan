@@ -53,3 +53,30 @@ it("records long-context and Flex prices explicitly rather than using Standard s
   expect(r.cost.price?.cacheWrite).toBe(12.5);
   expect(r.cost.price?.output).toBe(37.5);
 });
+it("prices explicitly selected Sol with its own table, without changing Astra fixtures", () => {
+  const response = {
+    model: "gpt-6.1-sol",
+    service_tier: "default",
+    usage: {
+      input_tokens: 100,
+      input_tokens_details: { cached_tokens: 30, cache_write_tokens: 20 },
+      output_tokens: 40,
+      output_tokens_details: { reasoning_tokens: 25 },
+    },
+  };
+  const sol = responseCost(response);
+  expect(sol.estimatedCostUsd).toBeCloseTo(
+    (50 * 2 + 30 * 0.1 + 20 * 2.5 + 40 * 10) / 1e6,
+    10,
+  );
+  expect(sol.cost.price?.version).toBe("openai-standard-2026-11-03-sol");
+  expect(sol.cost.price?.source).toContain("gpt-6.1-sol");
+  expect(sol.cost.breakdown?.reasoningTokensIncluded).toBe(25);
+  expect(
+    responseCost({ ...response, service_tier: "flex" }).estimatedCostUsd,
+  ).toBeCloseTo(sol.estimatedCostUsd! / 2, 10);
+  expect(
+    responseCost({ ...response, model: "unconfirmed-model" }).estimatedCostUsd,
+  ).toBeNull();
+  expect(responseCost(fixtures[3]).estimatedCostUsd).toBeCloseTo(0.6471425, 8);
+});

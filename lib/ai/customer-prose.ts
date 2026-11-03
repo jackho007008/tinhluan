@@ -34,7 +34,6 @@ const sourceNames = [
   "楊禎祥",
   "王亭之",
   "Học Viện Lý Số",
-  "Cổ Học",
 ].map(normalize);
 /** Deliberately narrow: a source-name/citation check, not a readability or truth score.
  * Never called to transform an old reading or to inspect its disclosure metadata. */
@@ -53,6 +52,9 @@ export function validateCustomerProse(
     const text = normalize(field),
       padded = " " + text + " ";
     if (
+      // Accent folding makes the ordinary phrase “có học” collide with this
+      // short source name. Match its actual spelling instead.
+      /\bcổ\s+học\b/iu.test(field.normalize("NFC").replace(/\p{Cf}/gu, "")) ||
       names.some((name) =>
         /[\u3400-\u9fff]/u.test(name)
           ? text.includes(name)

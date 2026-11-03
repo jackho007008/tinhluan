@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 03/11 — Sol thật và sửa guard theo lỗi thực tế
+
+71 test đầu đạt; sau sửa 112/112 ở 6 file đạt, gồm consumer hold billing/access vẫn GET, restart/cung scope, trần CREATE, có học/Cổ Học và phủ định y khoa chính xác. Typecheck/build cách ly đạt. 11 CREATE/23 GET thật, 4 limited + 1 insufficient; readPaid hai lần/không grant, 11 input/37 bảng nguồn/66 job cũ giữ nguyên. Mobile360/390 chỉ HTML SSR cục bộ, chưa phiên web owner. Không E2E/PDF hoặc deploy. [Log, lỗi đầu và giới hạn](AI-PAID-SOL-11PALACES-20261103.md).
+
 ## 03/11 — Lời văn khách hàng 2.7, chỉ mock
 
 120/120 test ở 7 file, typecheck/build cách ly đạt; lượt đầu 110 đạt, không fail. Dry 11 input nguyên/9 kết quả thật cũ qua saved version; bản Tài minh họa 10 đoạn giữ basis/refs qua guard mới, còn result 2.6 gốc bị guard mới bắt tên nguồn nhưng vẫn hợp lệ ở version cũ. Có kiểm các trường lời khách, tên sao/nguồn thu không bị chặn nhầm, sắc thái giai đoạn trợ giúp và y khoa; legacy Luna 1.0/1.1 giữ đường đọc/duyệt theo version. Không API/DB/E2E/PDF/browser/mobile/deploy; không đo readability tự động hoặc coi mock là model thật. [Log, bản mẫu và giới hạn](AI-CUSTOMER-PROSE-20261103.md).

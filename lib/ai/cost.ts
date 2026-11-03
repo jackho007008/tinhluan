@@ -9,6 +9,15 @@ export const ASTRA_PRICE = {
   cacheWrite: 12.5,
   output: 50,
 } as const;
+export const SOL_PRICE = {
+  version: "openai-standard-2026-11-03-sol",
+  source: "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+  currency: "USD",
+  input: 2,
+  cachedRead: 0.1,
+  cacheWrite: 2.5,
+  output: 10,
+} as const;
 const count = (n: unknown): n is number =>
   typeof n === "number" && Number.isSafeInteger(n) && n >= 0;
 export function responseCost(response: any) {
@@ -30,19 +39,25 @@ export function responseCost(response: any) {
     cacheBreakdownComplete: !!valid,
   };
   const tier = response.service_tier || "default";
+  const basePrice =
+    response.model === "gpt-6-astra"
+      ? ASTRA_PRICE
+      : response.model === "gpt-6.1-sol"
+        ? SOL_PRICE
+        : null;
   const supported =
-    response.model === "gpt-6-astra" &&
+    basePrice !== null &&
     ["default", "standard", "flex", "batch", "priority"].includes(tier);
   // Priority does not imply Fast. Unknown tiers/pricing are deliberately unpriced.
   const priced = supported && tier !== "priority" && valid;
   const long = priced && u.input_tokens > 272000;
   const factor = tier === "flex" || tier === "batch" ? 0.5 : 1;
   const prices = {
-    ...ASTRA_PRICE,
-    input: ASTRA_PRICE.input * (long ? 2 : 1) * factor,
-    cachedRead: ASTRA_PRICE.cachedRead * (long ? 2 : 1) * factor,
-    cacheWrite: ASTRA_PRICE.cacheWrite * (long ? 2 : 1) * factor,
-    output: ASTRA_PRICE.output * (long ? 1.5 : 1) * factor,
+    ...(basePrice || ASTRA_PRICE),
+    input: (basePrice || ASTRA_PRICE).input * (long ? 2 : 1) * factor,
+    cachedRead: (basePrice || ASTRA_PRICE).cachedRead * (long ? 2 : 1) * factor,
+    cacheWrite: (basePrice || ASTRA_PRICE).cacheWrite * (long ? 2 : 1) * factor,
+    output: (basePrice || ASTRA_PRICE).output * (long ? 1.5 : 1) * factor,
     serviceTier: tier,
   };
   const breakdown = valid
