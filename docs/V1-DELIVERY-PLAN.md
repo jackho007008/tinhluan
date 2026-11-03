@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 03/11 — Khép phép thử chính thức một CREATE Tài Bạch
+
+Đã dùng grant thanh toán test trên báo cáo QA mới, Background cùng receipt/attempt tới completed và rà toàn văn theo chín tiêu chí. Khép P09 của Tài trong phạm vi mẫu, không đổi tiêu chí/phạm vi hoặc commercialReady. Giữ bài cũ/18 queued, không xử lý 10 cung mới còn lại; chưa browser owner, không mở bán hoặc tự gọi thêm. [Bài thật, số đo và điểm dừng](AI-PAID-OFFICIAL-ACCEPTANCE-20261103.md).
+
 ## 03/11 — Khép lô cập nhật checkout QA riêng
 
 Theo xác nhận của chủ dự án, đã thay riêng web QA3118 đang dùng retrieval 1.2 bằng checkout `d64d7e4` / retrieval 1.14 / prompt 2.6. Backup và smoke đọc dữ liệu đạt, không migration hoặc xử lý 18 job queued. Điểm dừng: môi trường QA đã cập nhật; chưa gọi API, chưa khép P09 hoặc nghiệm thu thương mại. [Thao tác, bằng chứng và bước trước phép thử thật](QA3118-RETRIEVAL114-UPDATED-20261103.md).

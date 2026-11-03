@@ -1,14 +1,14 @@
 {
   "schemaVersion": "paid-content-progress-1.0.0",
-  "updatedAt": "2026-11-02",
-  "baselineHead": "cec82dd",
+  "updatedAt": "2026-11-03",
+  "baselineHead": "b728404",
   "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
   "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
   "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
-  "releaseGate": "P05/P09 còn mở là điểm chặn quan trọng dù % hồ sơ cao; không tự mở bán hoặc nâng phạm vi sản phẩm.",
+  "releaseGate": "Tài Bạch khép P09 trên một mẫu/phạm vi giới hạn, không đủ nghiệm thu thương mại toàn cung hoặc 11 cung; P09 mười cung khác chưa kiểm, Tật chỉ T1 chưa publish. Không tự mở bán.",
   "freeMenh": "V1/Luna giữ nguyên, ngoài chỉ số11cung trả phí.",
-  "apiCreate": 0,
-  "apiGet": 0,
+  "apiCreate": 1,
+  "apiGet": 3,
   "criteria": [
     {
       "id": "P01",
@@ -564,11 +564,11 @@
     },
     {
       "palace": "Tài Bạch",
-      "percent": 90,
-      "passed": 9,
+      "percent": 100,
+      "passed": 10,
       "total": 10,
       "commercialReady": false,
-      "scope": "Giới hạn: cạnh tranh/tạo nguồn, ngữ cảnh nghề và chi ngoài việc; chưa Liêm–Hao.",
+      "scope": "Bài Astra 2.6 thật đã rà đạt trên mẫu QA trong phạm vi tạo/tích lũy, nghĩa Hao và ngữ cảnh nghề/chi ngoài việc; 100% hồ sơ mẫu, không là nghiệm thu chiều sâu toàn cung hoặc thương mại 11 cung.",
       "checks": [
         {
           "id": "P01",
@@ -620,9 +620,9 @@
         },
         {
           "id": "P09",
-          "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa gọi API: retrieval1.14/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "status": "passed",
+          "evidence": "docs/AI-PAID-OFFICIAL-ACCEPTANCE-20261103.md + .local/ai-paid-official-20261103/content-review.json",
+          "note": "Đúng 1 CREATE Astra/prompt2.6/retrieval1.14, completed và đọc toàn văn/10đoạn/6nguồn thực dùng; đạt trên mẫu trong phạm vi đã khai. Không khép phối hợp Liêm–Đại Hao hoặc nghiệm thu 11cung."
         },
         {
           "id": "P10",
@@ -843,7 +843,7 @@
       ]
     }
   ],
-  "lastReview": "web-method-and-phu-context-input-1.14-no-api",
+  "lastReview": "official-astra-2.6-tai-one-create-20261103",
   "history": [
     {
       "updatedAt": "2026-11-02",
@@ -1264,6 +1264,16 @@
       "apiCreate": 0,
       "apiGet": 0,
       "note": "1methodweb vàguidePhu vào input1.14,216test/dry/typecheck/buildcáchly; giữ bài cũ. Sẵn sàng đánh giá limited có giới hạn khác với nghiệm thu thương mại; P09 chưa kiểm."
+    },
+    {
+      "updatedAt": "2026-11-03",
+      "baselineHead": "b728404",
+      "criteriaChanged": false,
+      "statusChanged": true,
+      "report": "docs/AI-PAID-OFFICIAL-ACCEPTANCE-20261103.md",
+      "apiCreate": 1,
+      "apiGet": 3,
+      "note": "Tài khép P09 trên một mẫu Astra2.6/input1.14 đã đọc toàn văn trong phạm vi có căn cứ;90→100% hồ sơ mẫu, commercialReady=false.10cung khác90%/P09 chưa kiểm; Tật chỉT1. Không mởbán hoặc QA3062/3070."
     }
   ]
 }

@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 03/11 — Tài Bạch đã kiểm Astra hiện hành, chưa phát hành
+
+Bài QA mới completed bằng gpt-6-astra/prompt 2.6/input 1.14, đúng 1 CREATE và 3 GET đối soát; đã đọc toàn văn/10 đoạn/6 nguồn thực dùng. Lưu/mở và grant kiểm phía server đạt, chưa smoke browser owner. Bài cải thiện nghĩa Hao và ngữ cảnh nghề/tam phương; chưa giải toàn bộ Liêm–Đại Hao hoặc nghiệm thu 11 cung. Tài 100% hồ sơ mẫu/P09 đạt, 10 cung khác 90%; commercialReady=false. Không sửa bài cũ, không gọi thêm API hoặc QA3062/3070. [Kết quả và giới hạn](AI-PAID-OFFICIAL-ACCEPTANCE-20261103.md).
+
 ## 03/11 — Checkout QA3118 đã cập nhật, nội dung chưa nghiệm thu model mới
 
 QA3118 phục vụ retrieval 1.14 / prompt 2.6 bằng build đã kiểm của `d64d7e4`, Node 24.22.1; không cập nhật QA3062/3070. HTTP đạt, decoder đọc nguyên 37 kết quả, DB không đổi; chưa smoke phiên owner/mobile. Web không có API key, worker/supervisor không bật, 0 CREATE/GET OpenAI. 18 job cũ vẫn giữ input đã lưu; phép thử mới cần báo cáo mới và kiểm quyền/credit/scope trước. Checklist 11 cung vẫn 90%, P09 chưa kiểm. [Bàn giao QA](QA3118-RETRIEVAL114-UPDATED-20261103.md).

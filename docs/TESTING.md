@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 03/11 — Astra 2.6 thật: một Tài Bạch, bảo toàn lịch sử
+
+Preflight xác minh model, 32.784 input token dự toán; input 159 facts/18 nguồn khớp bản kiểm. Mock Tài và 4 probe request sai đạt. Harness đầu sai so sánh chuỗi JSONB, chặn trước HTTP; giữ log, chứng minh 0 CREATE rồi phân loại lỗi local có bằng chứng. Lượt gửi thật 1 CREATE/3 GET completed, validator và đọc toàn văn/10 đoạn đạt; tiếp tục đúng receipt sau dừng harness ở kiểm số attempt. ReadPaid hai lần/không order, 55 job cũ, 216 dòng lịch sử trong 37 bảng và file đối chứng giữ nguyên; 10 job mới khác Tài queued/0 attempt. Không app change nên không build/typecheck/suite/E2E/PDF; chưa browser owner/mobile. [Phạm vi, log và số đo](AI-PAID-OFFICIAL-ACCEPTANCE-20261103.md).
+
 ## 03/11 — Runtime QA3118 sau cập nhật checkout
 
 393 file mã khớp bản đã build, 113 artifact nguồn khớp hash; dry-run 11 input/159 facts và 3 mock đạt. HTTP 200 ở trang chủ, lập lá số và manifest đúng build; guest không nhận payload trả phí (404). Decoder cũ/mới đọc giống 37/37 completed, 37 bảng DB giữ hash/count; 18 queued và 37 attempt nguyên. Kiểm lại sau khi sửa cấu hình daily CREATE 0 không hợp lệ thành daily 1/budget 0 hợp lệ và nạp lại riêng web. Không app change nên không chạy lại 216 test/typecheck/build, không E2E/PDF; chưa browser owner/mobile, 0 OpenAI CREATE/GET. [Log, PID và phạm vi](QA3118-RETRIEVAL114-UPDATED-20261103.md).

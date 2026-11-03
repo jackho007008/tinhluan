@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 03/11 — Cho phép test chính thức đúng một CREATE model thật
+
+Chủ dự án giao bắt đầu test chính thức 1 CREATE để nghiệm thu bản trả phí. Chọn Tài Bạch trên QA3118/clone 55448, báo dự toán bảo thủ 1,4606 USD và dự phòng nội bộ 2 USD trước gửi. Quyền này không bao gồm gọi các cung khác, xử lý queue tồn, mở bán hoặc cập nhật QA3062/3070. Đã thực hiện đúng 1 HTTP CREATE, 3 GET cùng receipt; hai attempt nội bộ gồm một guard chặn trước gửi được đối soát có bằng chứng. Đánh giá Codex đạt trên mẫu/phạm vi có giới hạn không tự là quyết định phát hành hoặc duyệt toàn gói của chủ dự án. [Bằng chứng và kết luận](AI-PAID-OFFICIAL-ACCEPTANCE-20261103.md).
+
 ## 03/11 — Cho phép cập nhật checkout QA đang dùng retrieval 1.2
 
 Chủ dự án xác nhận thực hiện sau khi phát hiện QA checkout cũ chưa có thay đổi mới. Phạm vi thực hiện được nêu là cập nhật QA riêng, xác minh đích thực tế QA3118/clone 55448; không suy thành quyền gọi Astra, cấp key cho worker hoặc xử lý queue. Đã thay riêng web, giữ checkout cũ và backup; không thay bài, quyền, job hoặc cấu hình QA3062/3070. [Bàn giao và giới hạn](QA3118-RETRIEVAL114-UPDATED-20261103.md).

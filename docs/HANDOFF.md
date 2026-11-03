@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 03/11 — Một bài Tài Bạch Astra thật đã lưu và rà toàn văn
+
+Đúng 1 CREATE / 3 Responses GET, prompt 2.6 / retrieval 1.14; 4 phần, giữ facts/nguồn và phân biệt tổng hợp. Đạt vòng kiểm trên mẫu/phạm vi đã khai, chưa nghiệm thu thương mại 11 cung. Parser ước 0,8061175 USD theo write 30m; nhạy cảm 12h là 1,215455 USD, chưa hóa đơn. Giữ 55 job cũ/18 queued; 10 job mới khác Tài chưa xử lý. Tài khép P09: 100% hồ sơ mẫu, mười cung khác 90%, commercialReady=false. [Toàn văn, đánh giá, lỗi harness và bằng chứng](AI-PAID-OFFICIAL-ACCEPTANCE-20261103.md).
+
 ## 03/11 — QA3118 đã dùng retrieval 1.14, chưa gọi model
 
 Cập nhật riêng web QA3118 từ checkout retrieval 1.2 sang mã `d64d7e4`, retrieval 1.14 / prompt 2.6, Node 24.22.1. Đã backup clone 55448, kiểm 11 input, HTTP và đọc lại 37 kết quả; hash 37 bảng không đổi, 18 job queued giữ nguyên. Không key trong web, không worker hoặc OpenAI API; chưa kiểm browser bằng phiên owner. [Runtime, bằng chứng và giới hạn](QA3118-RETRIEVAL114-UPDATED-20261103.md).
