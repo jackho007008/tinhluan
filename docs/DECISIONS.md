@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 03/11 — Cho phép cập nhật checkout QA đang dùng retrieval 1.2
+
+Chủ dự án xác nhận thực hiện sau khi phát hiện QA checkout cũ chưa có thay đổi mới. Phạm vi thực hiện được nêu là cập nhật QA riêng, xác minh đích thực tế QA3118/clone 55448; không suy thành quyền gọi Astra, cấp key cho worker hoặc xử lý queue. Đã thay riêng web, giữ checkout cũ và backup; không thay bài, quyền, job hoặc cấu hình QA3062/3070. [Bàn giao và giới hạn](QA3118-RETRIEVAL114-UPDATED-20261103.md).
+
 ## 02/11 — Tiếp tục tìm nguồn và chỉ thử Astra sau đánh giá đầu vào
 
 Chủ dự án yêu cầu tìm internet đến khi hoàn thiện rồi sẽ kiểm Astra thật. Thực hiện nghiên cứu/input/mock; không coi đây là giới hạn CREATE/budget mới hoặc quyền tự gọi ngay. Nhận1method hìnhthếHao đúng vai trò, thêmguidePhu; còn tổnghợp limited/T1 vàP09 phảikhai rõ, không100%thươngmại giả. [Thay đổi và bằng chứng](AI-PAID-WEB-INTEGRATION-20261102.md).

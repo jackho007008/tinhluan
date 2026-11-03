@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 03/11 — QA3118 đã dùng retrieval 1.14, chưa gọi model
+
+Cập nhật riêng web QA3118 từ checkout retrieval 1.2 sang mã `d64d7e4`, retrieval 1.14 / prompt 2.6, Node 24.22.1. Đã backup clone 55448, kiểm 11 input, HTTP và đọc lại 37 kết quả; hash 37 bảng không đổi, 18 job queued giữ nguyên. Không key trong web, không worker hoặc OpenAI API; chưa kiểm browser bằng phiên owner. [Runtime, bằng chứng và giới hạn](QA3118-RETRIEVAL114-UPDATED-20261103.md).
+
 ## 02/11 — Nguồn web đầu tiên vào input1.14; Phu có guideQuan
 
 Nhận1method DươngLương về cặpHao tọa–xung, đủ2neo source-traced/quan hệ mới chọn; không dự báo hoặc đổi bảng sáng.4slot sách giữ, thêm tốiđa1web trong14KBcũ; D3 giữ NPL27. Phu thêmguideQuanopposition, không nguồn trực tiếp mới.216test/typecheck/buildcáchly/dry11cung/8bài cũ đạt;0API/QA,11cung90%giữ. [Thay đổi và bằng chứng](AI-PAID-WEB-INTEGRATION-20261102.md).

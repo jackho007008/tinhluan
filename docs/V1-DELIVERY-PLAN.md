@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 03/11 — Khép lô cập nhật checkout QA riêng
+
+Theo xác nhận của chủ dự án, đã thay riêng web QA3118 đang dùng retrieval 1.2 bằng checkout `d64d7e4` / retrieval 1.14 / prompt 2.6. Backup và smoke đọc dữ liệu đạt, không migration hoặc xử lý 18 job queued. Điểm dừng: môi trường QA đã cập nhật; chưa gọi API, chưa khép P09 hoặc nghiệm thu thương mại. [Thao tác, bằng chứng và bước trước phép thử thật](QA3118-RETRIEVAL114-UPDATED-20261103.md).
+
 ## 02/11 — Hoàn tất lô tích hợp phương pháp web và ngữ cảnhPhu
 
 Đã nhận1/5phiếu mới vào loaderhiệncó đúng D/method,4phiếu khác chưa nhận. Bằng chứngweb là phiếu cục bộ/hash/URL, không giả sốtrang hoặc fetchruntime. Giữbytecap/sách và NPL27 sau kiểm phát hiệnrơi nguồn.216test/dry/typecheck/buildcáchly đạt; không tự gọiAstra/triểnkhai hoặc nâng100%. [Thay đổi và bằng chứng](AI-PAID-WEB-INTEGRATION-20261102.md).

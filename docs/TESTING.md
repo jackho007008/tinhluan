@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 03/11 — Runtime QA3118 sau cập nhật checkout
+
+393 file mã khớp bản đã build, 113 artifact nguồn khớp hash; dry-run 11 input/159 facts và 3 mock đạt. HTTP 200 ở trang chủ, lập lá số và manifest đúng build; guest không nhận payload trả phí (404). Decoder cũ/mới đọc giống 37/37 completed, 37 bảng DB giữ hash/count; 18 queued và 37 attempt nguyên. Kiểm lại sau khi sửa cấu hình daily CREATE 0 không hợp lệ thành daily 1/budget 0 hợp lệ và nạp lại riêng web. Không app change nên không chạy lại 216 test/typecheck/build, không E2E/PDF; chưa browser owner/mobile, 0 OpenAI CREATE/GET. [Log, PID và phạm vi](QA3118-RETRIEVAL114-UPDATED-20261103.md).
+
 ## 02/11 — Input1.14:216test, bảo toàn sách và giới hạn Hao
 
 15test mới/216testcuối đạt. Kiểminput đầu thấy rơi methodgiao dịch: sửa4slotsách+webbyte dư; lượt215/216 phát hiệnrơi NPL27: sửaưu tiêncụthể, không bỏexpected. Dry11/3mock/8bài thật/hash33 đạt, typecheck/buildcáchly đạt.0API/DB/QA/E2E/PDF; giữloglỗi và guard phủđịnh rútgọn cũ chưa sửa. [Thay đổi và bằng chứng](AI-PAID-WEB-INTEGRATION-20261102.md).

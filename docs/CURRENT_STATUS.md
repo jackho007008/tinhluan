@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 03/11 — Checkout QA3118 đã cập nhật, nội dung chưa nghiệm thu model mới
+
+QA3118 phục vụ retrieval 1.14 / prompt 2.6 bằng build đã kiểm của `d64d7e4`, Node 24.22.1; không cập nhật QA3062/3070. HTTP đạt, decoder đọc nguyên 37 kết quả, DB không đổi; chưa smoke phiên owner/mobile. Web không có API key, worker/supervisor không bật, 0 CREATE/GET OpenAI. 18 job cũ vẫn giữ input đã lưu; phép thử mới cần báo cáo mới và kiểm quyền/credit/scope trước. Checklist 11 cung vẫn 90%, P09 chưa kiểm. [Bàn giao QA](QA3118-RETRIEVAL114-UPDATED-20261103.md).
+
 ## 02/11 — Đầu vào1.14 đã kiểm; chưa có nghiệm thu Astra mới
 
 Tài nhận phương pháp đọc đủ haiHao,4nguồn sách giữ; Phu nhận hướng dẫn nối Quan có đủ2phía/geometry.216test/dry/typecheck/buildcáchly đạt. Hai mocklimited mới, Tậtinsufficient giữ. Có thể đánh giá model có giới hạn Phu/Tài, chưa đầy đủ chiều sâu thương mại;0API/deploy,11cung90%/P09còn mở. [Thay đổi và bằng chứng](AI-PAID-WEB-INTEGRATION-20261102.md).
