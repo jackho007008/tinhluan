@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 03/11 — Foundation2.8 và bốn bản biên tập, chỉ offline
+
+222/222 test ở9file, typecheck/build cách ly đạt; giữ log lỗi đầu gồm assertion prompt theo cung, default writer cũ và hai implicit-any trong test. Bốn bản đề xuất qua validator,10probe âm bị chặn; Tài nguyên văn qua2.8/không qua2.7,11prompt cũ và52artifact nguyên. 0 API/DB/worker/deploy/E2E/PDF; không dùng mock làm nghiệm thu model. [Log và giới hạn](AI-PAID-DEPTH28-MOCK-20261103.md).
+
 ## 03/11 — Sol thật và sửa guard theo lỗi thực tế
 
 71 test đầu đạt; sau sửa 112/112 ở 6 file đạt, gồm consumer hold billing/access vẫn GET, restart/cung scope, trần CREATE, có học/Cổ Học và phủ định y khoa chính xác. Typecheck/build cách ly đạt. 11 CREATE/23 GET thật, 4 limited + 1 insufficient; readPaid hai lần/không grant, 11 input/37 bảng nguồn/66 job cũ giữ nguyên. Mobile360/390 chỉ HTML SSR cục bộ, chưa phiên web owner. Không E2E/PDF hoặc deploy. [Log, lỗi đầu và giới hạn](AI-PAID-SOL-11PALACES-20261103.md).

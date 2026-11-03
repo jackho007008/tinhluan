@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 03/11 — Tham chiếu liên cung và biên luận 2.8 đã kiểm mock
+
+Writer2.8 nhận foundation liên cung đúng neo/geometry, giữ validator2.7; Tài nguyên văn qua kiểm offline nhưng job cũ không đổi. Bốn bản đề xuất riêng, thêm hai nguồn đã có cho Huynh/Phu; Phụ/Tử vẫn limited. 222 test/typecheck/build cách ly đạt, 0 API/DB/deploy, 11 cung giữ90% hồ sơ. [Bản đọc và bàn giao](AI-PAID-DEPTH28-MOCK-20261103.md).
+
 ## 03/11 — Vòng Sol 11 cung đã đóng, chưa đủ bài
 
 Đúng 11 CREATE trên DB QA55458 mới: 4 limited, 1 insufficient, 1 lỗi tham chiếu và 5 credit failed. Đã sửa hai guard chặn nhầm, GET lại cùng receipt; thêm hold billing/access cho consumer và bảng giá Sol, kiểm 112 test/build. Không deploy hoặc sửa DB nguồn; clone đã backup/dừng. [Bản đọc, chi phí và giới hạn](AI-PAID-SOL-11PALACES-20261103.md).

@@ -1,6 +1,7 @@
 import { z } from "zod";
 import type { AiResult, MenhInput, Narration } from "./contract";
 import { violatesPaidMedicalScope } from "./paid-safety";
+import { groundedFoundationScope } from "./paid-foundation-scope";
 
 export const PAID_SCHEMA_V2 = "paid-reading-v2.0.0";
 export const PAID_PROMPT_V2 = "paid-palaces-vietnamese-2.0.0";
@@ -88,6 +89,7 @@ export function validatePaidV2(
   raw: unknown,
   input: MenhInput,
   allowLibraryFoundation = false,
+  allowCrossPalaceFoundation = false,
 ) {
   const r = paidV2Shape(raw);
   for (const s of r.sections)
@@ -122,21 +124,23 @@ export function validatePaidV2(
           backgrounds.length > 0 &&
           backgrounds.every(
             (k) =>
-              k!.passage?.version === "paid-library-1.0.0" &&
-              k!.passage.kind === "foundation" &&
-              /^[a-f0-9]{64}$/.test(k!.passage.digest) &&
-              k!.passage.anchorFactIds.length > 0 &&
-              k!.passage.anchorFactIds.every(
-                (id) =>
-                  p.factIds.includes(id) &&
-                  input.facts.some(
-                    (f) =>
-                      f.id === id &&
-                      f.provenance?.verification === "source-traced" &&
-                      f.provenance.palace === input.paidTarget?.palace &&
-                      f.provenance.relation === "target",
-                  ),
-              ),
+              (allowCrossPalaceFoundation &&
+                groundedFoundationScope(k!, input, p.factIds, p.text)) ||
+              (k!.passage?.version === "paid-library-1.0.0" &&
+                k!.passage.kind === "foundation" &&
+                /^[a-f0-9]{64}$/.test(k!.passage.digest) &&
+                k!.passage.anchorFactIds.length > 0 &&
+                k!.passage.anchorFactIds.every(
+                  (id) =>
+                    p.factIds.includes(id) &&
+                    input.facts.some(
+                      (f) =>
+                        f.id === id &&
+                        f.provenance?.verification === "source-traced" &&
+                        f.provenance.palace === input.paidTarget?.palace &&
+                        f.provenance.relation === "target",
+                    ),
+                )),
           );
         if (
           backgrounds.length &&

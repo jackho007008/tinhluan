@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 03/11 — Chỉ sửa tham chiếu và chiều sâu bằng mock
+
+Chủ dự án yêu cầu tiếp tục sửa Tài và cải thiện bốn bài đã có, chưa API, giữ bài cũ và QA3062/3070. Thực hiện version2.8 riêng cho contract/prompt mới và bản đề xuất biên tập ngoài báo cáo; không biến kiểm offline output cũ thành quyền ghi lại job hoặc nghiệm thu model. Không đổi tiêu chí tiến độ/thương mại. [Phạm vi đã làm](AI-PAID-DEPTH28-MOCK-20261103.md).
+
 ## 03/11 — Cho phép một báo cáo QA đủ 11 cung bằng Sol
 
 Chủ dự án yêu cầu dùng gpt-6.1-sol đã cấu hình và xác nhận “Một báo cáo đủ 11 cung, tối đa 11 CREATE”. Phạm vi là báo cáo QA mới, giữ Mệnh V1/Luna và lịch sử; không phải quyền fallback, retry uncertain, mở bán hoặc deploy QA3062/3070. Đã dùng hết11CREATE; không tự cấp lượt thay thế cho lỗicredit/output. Kết quả Sol không tự chứng nhận P09 theo Astra hoặc thay nhãn phạm vi sản phẩm. [Biên bản](AI-PAID-SOL-11PALACES-20261103.md).

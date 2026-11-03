@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 03/11 — Khép lô sửa tham chiếu và biên luận bằng mock
+
+Đã tách version2.8 để nhận foundation liên cung đủ điều kiện, giữ bài/attempt2.7; thêm hướng dẫn lập luận không lặp và bốn bản đề xuất có căn cứ từng đoạn. Không thêm nguồn/rule hoặc schema/DB mới. Điểm dừng: 222 test/build và kiểm offline, chưa model thật/QA deployment hoặc giao lại bài Tài. [Đầu ra](AI-PAID-DEPTH28-MOCK-20261103.md).
+
 ## 03/11 — Đóng vòng một báo cáo Sol, không mở rộng CREATE
 
 Chủ dự án chọn 11 cung/tối đa 11 CREATE; đã dùng đủ, không fallback hoặc retry. Chỉ 4 bài đọc hợp lệ/1 insufficient; phần thiếu được ghi đúng trong bản đọc. Khép kiểm/chẩn đoán/backup và sửa guard có bằng chứng, chưa đạt nghiệm thu 11 cung. Không đổi tiêu chí P09 Astra hoặc tự gọi API tiếp. [Đầu ra và điểm dừng](AI-PAID-SOL-11PALACES-20261103.md).

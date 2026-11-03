@@ -8,6 +8,7 @@ import {
   validatePaidNarration,
 } from "../lib/ai/paid-contract";
 import { PAID_PROMPT_CURRENT as V27 } from "../lib/ai/paid-prompt-v27";
+import { PAID_PROMPT_CURRENT as V28 } from "../lib/ai/paid-prompt-v28";
 import { PAID_PROMPT_CURRENT as V26 } from "../lib/ai/paid-prompt-v26";
 import { paidOutputSchema } from "../lib/ai/paid-version";
 import { readPaidContent } from "../lib/ai/paid-result";
@@ -103,9 +104,10 @@ it.each(PAID_PALACES)(
     expect(prompt).not.toContain("paragraph1 nêu tác giả");
   },
 );
-it("selects 2.7 for new V2 jobs but preserves schema and saved 2.6 prompt", () => {
+it("selects 2.8 for new V2 jobs but preserves schema and saved 2.6/2.7 prompts", () => {
   vi.stubEnv("AI_PAID_READING_V2_ENABLED", "true");
-  expect(paidWritePromptVersion()).toBe(V27);
+  expect(paidWritePromptVersion()).toBe(V28);
+  expect(paidOutputSchema(V28)).toBe(paidOutputSchema(V27));
   expect(paidOutputSchema(V27)).toBe(paidOutputSchema(V26));
   expect(paidInstructions(input(), V26)).not.toContain(
     "LỜI VĂN DÀNH CHO NGƯỜI CHƯA HỌC",

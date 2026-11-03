@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 03/11 — Foundation liên cung có version, schema V2 giữ nguyên
+
+Chỉ validator2.8 mở nhánh B/foundation đứng riêng cho ai-synthesis: đủ mọi neo, target source-traced, sao liên cung natal source-traced, có geometry đúng vị trí và tên cung gốc trong đoạn. Location phải khớp neo sao cùng cung/chi. Không nâng thành direct/focused, không nới C/D hoặc y khoa; CREATE/GET dùng saved prompt/schema, 2.7 giữ nguyên. Không phụ thuộc kho nguồn hiện hành khi đọc attempt cũ. [Contract và kiểm](AI-PAID-DEPTH28-MOCK-20261103.md).
+
 ## 03/11 — Hold dispatch khi tài khoản lỗi, giữ GET receipt
 
 Consumer hiện có kiểm lỗi billing/access theo toàn báo cáo trước CREATE; scope một cung không vượt hold và restart vẫn nhận diện lỗi đã lưu. Không chặn GET receipt hoặc đổi attempt/backoff/queue/schema/quyền. Không tự xóa hold sau nạp credit; hiện chưa có thao tác operator chuyên biệt mở lại lỗi billing không retryable, cần xử lý có quyền trước khi vận hành tiếp. Cost chọn bảng Sol riêng, giữ Astra cũ; sửa hai guard chặn nhầm có mock, chỉ build, chưa deploy. [Bằng chứng và phạm vi](AI-PAID-SOL-11PALACES-20261103.md).

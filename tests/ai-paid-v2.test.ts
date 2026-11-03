@@ -1,4 +1,5 @@
-import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v27";
+import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v28";
+import { PAID_PROMPT_CURRENT as PAID_PROMPT_V27 } from "../lib/ai/paid-prompt-v27";
 import { PAID_PROMPT_CURRENT as PAID_PROMPT_V26 } from "../lib/ai/paid-prompt-v26";
 import { PAID_PROMPT_CURRENT as PAID_PROMPT_V25 } from "../lib/ai/paid-prompt-v25";
 import { PAID_PROMPT_CURRENT as PAID_PROMPT_V24 } from "../lib/ai/paid-prompt-v24";
@@ -304,6 +305,7 @@ it.each([
   PAID_PROMPT_V24,
   PAID_PROMPT_V25,
   PAID_PROMPT_V26,
+  PAID_PROMPT_V27,
   PAID_PROMPT_CURRENT,
 ])(
   "SDK CREATE/GET uses saved %s even if writer flag changes (fetch mock)",

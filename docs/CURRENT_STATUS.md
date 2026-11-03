@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 03/11 — Đã sửa Tài ở writer mới, chưa gọi model
+
+Prompt2.8 và guard foundation theo neo/geometry đã kiểm mock; output Tài cũ không sửa chữ/refs qua kiểm mới, 2.7 vẫn từ chối và job cũ nguyên. Có bốn bản Codex biên tập để đối chiếu, không phải kết quả API. Huynh/Phu dùng thêm nguồn có sẵn, Phụ/Tử gọn hơn nhưng nguồn vẫn hẹp. 222 test/typecheck/build đạt, 0 CREATE/GET/DB; chưa deploy hoặc nghiệm thu model mới, 11 cung90% hồ sơ giữ. [Bằng chứng và giới hạn](AI-PAID-DEPTH28-MOCK-20261103.md).
+
 ## 03/11 — Sol thật: 4/11 bài, chưa phát hành
 
 gpt-6.1-sol/prompt 2.7 trên báo cáo QA mới: 11 CREATE/23 Responses GET; 4 limited, 1 insufficient, 1 Tài bị chặn tham chiếu, 5 lỗi credit. Mệnh 7 unit và lịch sử nguyên. Đã sửa hẹp guard Phu/Tật, GET lại không tăng attempt; consumer hold billing/access kiểm mock. 112 test/typecheck/build cách ly đạt; chưa web owner/deploy. Checklist 11 cung 90%/commercialReady=false giữ. [Kết quả thật và ba điểm chặn](AI-PAID-SOL-11PALACES-20261103.md).
