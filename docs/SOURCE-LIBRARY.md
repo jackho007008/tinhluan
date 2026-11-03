@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 03/11 — Rà hẹp nguồn cho bộ biên tập và Tật T1
+
+Tái dùng nguồn đã chọn trong input1.14 cho10bản; rà chữ có sẵn NPL226, TB181/182/188, HS154/220/216–217 và các mục Trực Phù221–222, Quốc Ấn197–198, phân nhóm144–146. Chín phiếu giữ tác giả/điều kiện/hash; không nhận nguồn trực tiếp mới cho Tật, không PDF/ảnh mới hoặc nâng mức đã đọc/hiệu đính toàn sách. Không sửa kho nguồn/Bửu Đình hoặc publishT1. [Phiếu và giới hạn](AI-PAID-TEN-READINGS-DEPTH-20261103.md).
+
 ## 02/11 — Nguồn DươngLương về hìnhthế haiHao được nhận phươngpháp
 
 Bài HọcviệnLýsố có tên/ngày/mục, giữ đoạnđối chiếu ngắn trongphiếu private; chỉ nhậnmệnhđềbốtrí với facts đãlưu, khôngnhập bảngsáng/dựbáo.5phiếu mới,1nhậnmethod; blogTrungChâu/metadataNCC/đầu mốiTật giữđúng mức. Index17unit/bundle33, nguồn và bài cũ giữhash. [Thay đổi và bằng chứng](AI-PAID-WEB-INTEGRATION-20261102.md).

@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 03/11 — Kiểm bản biên tập và phiếu nguồn, không app build
+
+10bản qua validator2.8; 12probe âm bị chặn, giới hạn y khoa hợp lệ/insufficient0section giữ. 9phiếu Tật kiểm IDs/hash, 110file cũ nguyên; previewSSR360/390 không tràn. Lượt đầu C thiếu tên cung gốc được sửa tại bản văn, giữ guard; log và giới hạn lưu riêng. Không suite ứng dụng/build/DB/E2E/PDF hoặc OpenAI API. [Log](AI-PAID-TEN-READINGS-DEPTH-20261103.md).
+
 ## 03/11 — 227case hardening/DB, thêm kiểm CLI riêng
 
 185unit/9file +42integration/3file đạt; một ca recovery chạy riêng qua CLI kiểm dry-run/apply/receipt replay/owner retry và giữ attempt cũ. DBtest mới55459, mạng ngoài/OpenAI bị chặn, đã backup/dừng. Typecheck/build cách ly đạt, 10 bản biên tập qua validator2.8, preview360/390 không tràn; chưa browser owner/runtime mới. Giữ các lỗi đầu trong log, không nới guard hoặc sửa nguồn để xanh. [Log và phạm vi](AI-PAID-QA-HARDENING-20261103.md).

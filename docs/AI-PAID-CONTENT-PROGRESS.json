@@ -1,11 +1,11 @@
 {
   "schemaVersion": "paid-content-progress-1.1.0",
   "updatedAt": "2026-11-03",
-  "baselineHead": "6b7a82a",
+  "baselineHead": "9622be8",
   "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
   "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
   "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
-  "releaseGate": "Chủ dự án chưa chốt phạm vi thương mại và yêu cầu tiếp tục giữ QA. Writer2.8 chưa kiểm API thật. Đã hoàn thiện recovery/TTL và bộ 10 bản đề xuất QA; Tật chưa có bài cá nhân được duyệt. Không mở bán hoặc đổi offer/QA3062/3070.",
+  "releaseGate": "Chủ dự án giữ QA, chưa chốt thương mại. Mười bản biên tập limited mới/9phiếu Tật đã kiểm mock; input/prompt/ứng dụng và bài cũ nguyên. Chưa kiểm model2.8; Tật vẫn insufficient/chưa bài cá nhân được duyệt, không deploy hoặc đổi offer.",
   "freeMenh": "V1/Luna giữ nguyên, ngoài chỉ số11cung trả phí.",
   "apiCreate": 0,
   "apiGet": 0,
@@ -843,7 +843,7 @@
       ]
     }
   ],
-  "lastReview": "qa-hardening-recovery-ttl-full-manuscript",
+  "lastReview": "ten-editorial-depth-and-tat-source-scope-mock",
   "history": [
     {
       "updatedAt": "2026-11-02",
@@ -1317,6 +1317,16 @@
       "apiCreate": 0,
       "apiGet": 0,
       "note": "Bỏ tên Astra cố định theo lựa chọn Sol của chủ dự án, vẫn yêu cầu API thật đúng model/prompt và đánh giá toàn văn. Không hạ chuẩn hoặc đổi điểm:11cung90%,P09chưa kiểm. Chủ dự án trả lời Chưa chốt, tiếp tục giữ QA cho phạm vi thương mại."
+    },
+    {
+      "updatedAt": "2026-11-03",
+      "baselineHead": "9622be8",
+      "criteriaChanged": false,
+      "statusChanged": false,
+      "report": "docs/AI-PAID-TEN-READINGS-DEPTH-20261103.md",
+      "apiCreate": 0,
+      "apiGet": 0,
+      "note": "10bản limited: sửa28đoạn/thêm1;9phiếu Tật/0direct mới;mock và hash110file đạt. Giữ11cung90%,P09not-verified và commercialReady=false; không app/DB/deploy."
     }
   ],
   "criteriaVersion": "paid-content-checklist-1.1.0",

@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 03/11 — Khép lô biên tập và rà nguồn đã giao, giữ QA
+
+Đã sửa lập luận của10bản limited và lập9phiếu Tật; không áp nguồn sai phạm vi, không sửa đầu vào/ứng dụng hoặc bài đã lưu. Phần còn chặn: kiểm model hiện hành, phạm vi/Tật chưa chốt và runtime owner mới chưa nghiệm thu. Không tự gọi API, deploy hoặc đổi offer; checklist giữ nguyên. [Bản đọc, mock và điểm dừng](AI-PAID-TEN-READINGS-DEPTH-20261103.md).
+
 ## 03/11 — Hoàn thiện phần QA khả thi, chưa phát hành
 
 Đã bổ sung khôi phục billing/access qua owner retry, tách lifetime/cost và giữ attempt, kiểm mock toàn luồng11job trên DB mới. Ghép10 bản biên tập có căn cứ, Tật vẫn chưa có bài cá nhân. Điểm dừng theo lựa chọn chủ dự án: tiếp tục QA, chưa đổi offer/phạm vi hoặc gọi model/deploy. Checklist1.1 bỏ tên Astra cố định theo model đã chọn nhưng không đổi điểm/chuẩn API thật. [Bằng chứng và phần còn chặn](AI-PAID-QA-HARDENING-20261103.md).
