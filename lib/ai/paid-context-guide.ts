@@ -1,6 +1,6 @@
 import type { MenhInput } from "./contract";
 import type { PaidReadingV2 } from "./paid-reading-v2";
-import type { ContextMetadata } from "./paid-context";
+import { paidContextFocusRank, type ContextMetadata } from "./paid-context";
 type Link = NonNullable<MenhInput["contextGuide"]>["links"][number];
 const namesPalace = (text: string, palace: string) =>
   text
@@ -14,7 +14,7 @@ const FRAMES: Record<string, { palace: string; focus: string }[]> = {
     {
       palace: "Quan Lộc",
       focus:
-        "Đọc nguồn Quan Lộc về tổ chức, biểu đạt hoặc quyền hạn cạnh luận điểm thực có tại Phu: nhịp theo đuổi mục tiêu, khác biệt quan niệm hoặc trợ giúp từng qua một giai đoạn. Giải thích khác nhau giữa tổ chức cách thực hiện và hai người có cùng nhìn nhận mục tiêu hay không; không suy người đọc áp đặt công việc lên quan hệ. Chỉ phát triển nét được hai phía hỗ trợ, không dùng Khoa hoặc Quyền làm phép cứu sát và không lặp lời nguồn dưới nhiều tiêu đề.",
+        "Từ nguồn thực có, phân biệt sắp xếp cách làm ở Quan Lộc với thống nhất điều muốn làm trong quan hệ Phu Thê. Nếu có nguồn biểu đạt ở Quan, phân tích vì sao trình bày để người khác hiểu khác với hai bên đồng ý; không suy nghề nghiệp gây bất hòa hoặc chuyển năng lực sang người phối ngẫu. Giữ lượng từ, sắc thái trợ giúp từng qua một giai đoạn và trình tự rồi mới nếu nguồn Phu có nêu. Một đoạn diễn ý nguồn đúng cung gốc, đoạn khác tổng hợp mối liên hệ; không lặp quyền–trách nhiệm hoặc dùng Khoa/Quyền hóa giải sát tinh.",
     },
   ],
   "Điền Trạch": [
@@ -49,38 +49,38 @@ const FRAMES: Record<string, { palace: string; focus: string }[]> = {
     {
       palace: "Huynh Đệ",
       focus:
-        "Đọc lời đối đãi/giao du tại Nô cạnh lời về anh chị em tại Huynh Đệ: hai loại quan hệ và kỳ vọng đáp lại khác nhau. Phân tích vì sao không thể lấy độ rộng giao du thay cho sự gần gũi trong quan hệ huyết thống; không suy trợ giúp, phản bội hoặc thay thế tình thân.",
+        "Dùng lời đối đãi/giao du thực có tại Nô và lời về anh chị em tại Huynh Đệ để phân biệt độ rộng qua lại với độ sâu chia sẻ. Ở Nô, giữ riêng thiện chí, kỳ vọng đáp lại, biểu hiện hợp tác và kết quả thu lợi nếu nguồn có phân biệt; không lấy cảm tình thay điều kiện phi hóa. Nghĩa nền về sao không tự xác nhận phẩm chất bạn bè. Giải thích mối liên hệ thay vì chỉ nói hai cung khác nhau; không suy phản bội, trợ vốn hoặc lấy bạn bè thay tình thân.",
     },
   ],
   "Tử Nữ": [
     {
       palace: "Phụ Mẫu",
       focus:
-        "Phân biệt hai thế hệ và vai của mệnh tạo: là con khi đọc Phụ Mẫu, trong quan hệ với con khi đọc Tử Nữ. Giữ riêng điều kiện vật chất và sự hòa thuận trong lời Phụ; không truyền lời về cha mẹ sang phẩm chất con hoặc dự báo gia đình lặp lại. Điều kiện cho lời Tử có thể nằm ở cung khác theo phương pháp nguồn, không chuyển sao.",
+        "Giải thích hai vai của người đọc: là con khi đọc Phụ Mẫu, là một bên trong quan hệ với con khi đọc Tử Nữ. Nếu lời Tử chỉ có một nét đối đãi, phân tích đúng chủ thể quan hệ, không biến thành phẩm chất cố định của con hoặc thêm chủ đề sinh sản/số con. Đặt điều kiện vật chất, hòa thuận, khoảng cách của lời Phụ vào đúng quan hệ; không suy truyền đời hoặc phép hóa giải. Giữ nguyên điều kiện ở cung khác của lời Tử, không chuyển sao hoặc mượn chính tinh để lấp cung trống.",
     },
   ],
   "Quan Lộc": [
     {
       palace: "Tài Bạch",
       focus:
-        "Đối chiếu lời về công việc với những phương diện tiền bạc thực sự được nguồn ở Tài hỗ trợ; phân biệt tạo, tích lũy và chi, không coi một mặt bảo đảm mặt kia.",
+        "Dùng đúng tiền đề của Quan Lộc và Tài Bạch để nối cách tổ chức/biểu đạt với tiến trình tạo và giữ nguồn thu. Giải thích mỗi phía góp ý gì; không chỉ lặp rằng hai mặt khác nhau hoặc quay lại quyền–trách nhiệm ở mọi phần. Tốc độ tích lũy ở Tài không tự đánh giá năng lực công việc, lời thuận ở Quan không bảo đảm thu nhập. Giữ nguyên nguồn, điều kiện và giới hạn phối hợp hao tinh.",
     },
     {
       palace: "Mệnh",
       focus:
-        "Đặt những luận điểm phù hợp ở Mệnh cạnh cách làm việc tại Quan, giải thích sự khác nhau về chủ thể và phạm vi; không lấy nét ở Mệnh thành nghĩa của sao tọa Quan.",
+        "Ưu tiên lời suy xét/hành động thực có tại Mệnh khi đối chiếu tổ chức ở Quan Lộc: một phía hình thành cách giải quyết, một phía thực hiện và truyền đạt. Nói rõ tiền đề nào thuộc Mệnh, tiền đề nào thuộc Quan, phần nối là tổng hợp. Không lấy lời tài lộc chung ở Mệnh thay phân tích công việc, không mở bài Mệnh thứ hai hoặc nhận đây là quan hệ nhân quả.",
     },
   ],
   "Tài Bạch": [
     {
       palace: "Quan Lộc",
       focus:
-        "Đối chiếu những mặt thực sự được nguồn Quan hỗ trợ với chủ đề tạo và dùng tiền; chỉ bàn tổ chức/biểu đạt nếu nguồn có, không đổi lời thuận công việc thành mức thu nhập hoặc lợi nhuận.",
+        "Đọc cách tổ chức/biểu đạt thực có ở Quan Lộc cạnh các mặt tạo nguồn, giữ lại và sử dụng tiền được nguồn Tài hỗ trợ. Nối rõ từ cách thực hiện đến câu hỏi về khoản thu, không lấy tổ chức tốt làm bằng chứng có lợi nhuận. Nếu dùng nghĩa nền biểu đạt của một sao tại Tài, đó là tổng hợp giới hạn, không lời nguồn xác nhận bán hàng/thu nhập. Giữ nhịp chi ngoài công việc theo đúng điều kiện nguồn, không gán mọi khoản hao cho một nguyên nhân.",
     },
     {
       palace: "Mệnh",
       focus:
-        "Đọc những luận điểm phù hợp ở Mệnh như ngữ cảnh riêng bên cạnh thu/tích lũy/chi; không tự bù trừ Hóa Kỵ, lời thuận hoặc hao tinh.",
+        "Ưu tiên lời suy xét/hành động thực có ở Mệnh để đối chiếu cách tiếp cận nguồn lực tại Tài Bạch. Phân biệt tính toán phương án, quá trình tạo khoản thu và phần giữ lại; không lấy lời giàu có chung ở Mệnh làm kết quả của Tài. Phần nối là tổng hợp có mức độ, không tự tạo công thức cộng trừ chính tinh–hao tinh hoặc chọn bảng nguồn thắng.",
     },
   ],
 };
@@ -114,10 +114,18 @@ export function paidContextGuide(
         k.subjectPalaces[0] === frame.palace &&
         metadata.get(k.id)?.types.some((type) => type !== "method-gloss"),
     );
+    // Rank only already-selected, condition-matched C. This changes neither the
+    // retrieval budget nor source meaning. No new candidate enters the packet.
+    const selectedSource = [...source]
+      .sort(
+        (a, b) =>
+          paidContextFocusRank(a, target) - paidContextFocusRank(b, target),
+      )
+      .slice(0, 3);
     if (!source.length) continue;
     const sourcePremises = [
       ...new Set(
-        source.flatMap(
+        selectedSource.flatMap(
           (k) => k.anchorFactIds || k.passage?.anchorFactIds || [],
         ),
       ),
@@ -157,7 +165,7 @@ export function paidContextGuide(
     links.push({
       sourcePalace: frame.palace,
       relation: relation as Link["relation"],
-      sourceKnowledgeIds: source.slice(0, 3).map((k) => k.id),
+      sourceKnowledgeIds: selectedSource.map((k) => k.id),
       targetKnowledgeIds: direct.slice(0, 3).map((k) => k.id),
       factIds: [
         ...new Set([
@@ -177,7 +185,7 @@ export function paidContextGuide(
     });
   }
   return links.length
-    ? { version: "paid-context-guide-1.0.0", links }
+    ? { version: "paid-context-guide-1.1.0", links }
     : undefined;
 }
 

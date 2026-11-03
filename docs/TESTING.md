@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 03/11 — 220test cho input1.15 và bảo toàn nguồn
+
+11file220test đạt; sau một câu làm rõ điều kiện guidePhu,6guide và dry11 đạt. 159facts/direct/điều kiện giữ nguyên,10bản limited qua input mới,Tậtinsufficient,120file cũ nguyên;typecheck/build snapshot đạt. Giữ lỗi đầu về themequárộng/đòi3slot và method-gloss;không nới validator/nguồn.0API/DB/E2E/PDF/deploy. [Bằng chứng và giới hạn](AI-PAID-INPUT115-READY-20261103.md).
+
 ## 03/11 — Kiểm bản biên tập và phiếu nguồn, không app build
 
 10bản qua validator2.8; 12probe âm bị chặn, giới hạn y khoa hợp lệ/insufficient0section giữ. 9phiếu Tật kiểm IDs/hash, 110file cũ nguyên; previewSSR360/390 không tràn. Lượt đầu C thiếu tên cung gốc được sửa tại bản văn, giữ guard; log và giới hạn lưu riêng. Không suite ứng dụng/build/DB/E2E/PDF hoặc OpenAI API. [Log](AI-PAID-TEN-READINGS-DEPTH-20261103.md).

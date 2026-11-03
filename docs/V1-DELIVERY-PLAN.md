@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 03/11 — Khép chuẩn bị phép thử đầu vào1.15
+
+Đã chuyển cách khai thác nguồn vào factory/guide dùng chung, giữ ngân sách C và điều kiện; không tự thêm công thức Phá–Đà–Hỏa/Liêm–Hao hoặc publishTật. Phép thử limited mục tiêu Tài có thể chuẩn bị sau quyền API/dự toán riêng; không gọi ngay hoặc xử lý queue. Điểm dừng:220test/build/dry11, chưa model/runtime hoặc thương mại. [Bằng chứng và giới hạn](AI-PAID-INPUT115-READY-20261103.md).
+
 ## 03/11 — Khép lô biên tập và rà nguồn đã giao, giữ QA
 
 Đã sửa lập luận của10bản limited và lập9phiếu Tật; không áp nguồn sai phạm vi, không sửa đầu vào/ứng dụng hoặc bài đã lưu. Phần còn chặn: kiểm model hiện hành, phạm vi/Tật chưa chốt và runtime owner mới chưa nghiệm thu. Không tự gọi API, deploy hoặc đổi offer; checklist giữ nguyên. [Bản đọc, mock và điểm dừng](AI-PAID-TEN-READINGS-DEPTH-20261103.md).

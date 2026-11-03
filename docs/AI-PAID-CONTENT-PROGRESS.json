@@ -1,11 +1,11 @@
 {
   "schemaVersion": "paid-content-progress-1.1.0",
   "updatedAt": "2026-11-03",
-  "baselineHead": "9622be8",
+  "baselineHead": "fd0dd14",
   "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
   "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
   "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
-  "releaseGate": "Chủ dự án giữ QA, chưa chốt thương mại. Mười bản biên tập limited mới/9phiếu Tật đã kiểm mock; input/prompt/ứng dụng và bài cũ nguyên. Chưa kiểm model2.8; Tật vẫn insufficient/chưa bài cá nhân được duyệt, không deploy hoặc đổi offer.",
+  "releaseGate": "Input1.15/guide1.1 đã kiểm mock/build, chuẩn bị phép thử limited Tài có mục tiêu sau quyền/dự toán riêng. Chưa API thật trên đầu vào mới, Tật0direct/insufficient và phạm vi thương mại chưa chốt; bài cũ/QA3062/3070 giữ nguyên.",
   "freeMenh": "V1/Luna giữ nguyên, ngoài chỉ số11cung trả phí.",
   "apiCreate": 0,
   "apiGet": 0,
@@ -843,7 +843,7 @@
       ]
     }
   ],
-  "lastReview": "ten-editorial-depth-and-tat-source-scope-mock",
+  "lastReview": "input115-context-guide11-ready-limited-mock",
   "history": [
     {
       "updatedAt": "2026-11-02",
@@ -1327,6 +1327,16 @@
       "apiCreate": 0,
       "apiGet": 0,
       "note": "10bản limited: sửa28đoạn/thêm1;9phiếu Tật/0direct mới;mock và hash110file đạt. Giữ11cung90%,P09not-verified và commercialReady=false; không app/DB/deploy."
+    },
+    {
+      "updatedAt": "2026-11-03",
+      "baselineHead": "fd0dd14",
+      "criteriaChanged": false,
+      "statusChanged": false,
+      "report": "docs/AI-PAID-INPUT115-READY-20261103.md",
+      "apiCreate": 0,
+      "apiGet": 0,
+      "note": "220test/dry11/build:input1.15 và guide1.1 ưu tiên ngữ cảnh có ích,10bản limited giữ hợp lệ. Nguồn trực tiếp/facts/điều kiện và120file cũ nguyên;0claim/rule mới,không model/DB/deploy. 11cung90%hồ sơ/P09chưa kiểm giữ."
     }
   ],
   "criteriaVersion": "paid-content-checklist-1.1.0",

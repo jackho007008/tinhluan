@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 03/11 — Xếp ngữ cảnh và guide1.1 cho input mới
+
+paidContextFocusRank chỉ là relevance của C đã khớp điều kiện, ưu tiên suy xét/hành động/học hỏi từ Mệnh khi đích Quan/Tài; method-gloss không được nâng bởi một từ khóa. Guide dùng tốiđa3nguồn đã vào packet, không quota nếu thiếu, giữ geometry/neo và trần cũ. Retrieval1.15 lưu vào job mới; savedinput/guide1.0/prompt2.7–2.8 giữ đọc nguyên, không migration/queue/provider mới. [Bằng chứng và giới hạn](AI-PAID-INPUT115-READY-20261103.md).
+
 ## 03/11 — Recovery có kiểm soát và metadata cache trên attempt
 
 Operator CLI mặc định dry-run, apply chỉ retryable cho job/attempt/error khớp, cần grant, DB/plan hữu hạn, lock và budget; owner vẫn phải POST retry. Không queue/auth/migration mới. Lifetime30m được lưu trước CREATE, GET dùng saved context; usage giữ _cost kể cả validation lỗi, không gắn giá mới vào số tiền cũ khi revalidate. Metadata JSONB tương thích, không backfill. [Chi tiết và kiểm](AI-PAID-QA-HARDENING-20261103.md).

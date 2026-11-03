@@ -84,3 +84,31 @@ it("selection is stable when input array order changes", () => {
     selectPaidContext([...c].reverse(), "Quan Lộc", new Map()).items,
   );
 });
+it("does not promote a method that mentions action above a usable thought/action premise", () => {
+  const method = {
+    ...item("method", "Mệnh"),
+    text: "Vai trò Mệnh và Thân trong hành động.",
+  };
+  const wealth = {
+    ...item("wealth", "Mệnh"),
+    text: "Lời tài lộc và hưởng phúc với điều kiện riêng.",
+  };
+  const thought = {
+    ...item("thought", "Mệnh"),
+    text: "Nghĩa nền suy tính và tìm cách giải quyết việc khó.",
+  };
+  const meta = new Map<string, ContextMetadata>([
+    [method.id, { themes: ["action"], types: ["method-gloss"] }],
+    [wealth.id, { themes: ["action"], types: ["context"] }],
+    [thought.id, { themes: ["action"], types: ["element-gloss"] }],
+  ]);
+  const before = JSON.stringify([method, wealth, thought]);
+  const result = selectPaidContext([method, wealth, thought], "Tài Bạch", meta);
+  expect(result.items.map((k) => k.id)).toEqual([
+    "thought",
+    "wealth",
+    "method",
+  ]);
+  expect(JSON.stringify([method, wealth, thought])).toBe(before);
+  expect(result.usedBytes).toBeLessThanOrEqual(result.byteBudget);
+});

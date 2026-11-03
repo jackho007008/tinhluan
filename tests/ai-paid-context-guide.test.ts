@@ -132,6 +132,46 @@ it("does not manufacture a guide without C, direct foundations or verified relat
     ),
   ).toBeUndefined();
 });
+it.each(["Quan Lộc", "Tài Bạch"])(
+  "%s guide prioritizes useful action/thought context without changing source conditions or the knowledge budget",
+  (palace) => {
+    const input = paidInput(record, palace);
+    const metadata = paidKnowledge(record, palace).contextMetadata;
+    const before = JSON.stringify(input.knowledge);
+    const guide = paidContextGuide(input, metadata)!;
+    const link = guide.links.find((l) => l.sourcePalace === "Mệnh")!;
+    expect(guide.version).toBe("paid-context-guide-1.1.0");
+    expect(link.sourceKnowledgeIds.length).toBeGreaterThan(0);
+    expect(link.sourceKnowledgeIds.length).toBeLessThanOrEqual(3);
+    expect(link.sourceKnowledgeIds).toContain("paid-v1.natal-paragraph-0-3");
+    expect(link.sourceKnowledgeIds).not.toContain(
+      "paid-v1.natal-paragraph-0-1",
+    );
+    expect(
+      link.sourceKnowledgeIds.every((id) =>
+        metadata
+          .get(id)
+          ?.themes.some((theme) =>
+            ["initiative", "action", "learning"].includes(theme),
+          ),
+      ),
+    ).toBe(true);
+    expect(JSON.stringify(input.knowledge)).toBe(before);
+    expect(JSON.stringify(guide).length).toBeLessThan(5500);
+    // Missing fine-grained themes do not suppress valid C; ranking uses the
+    // supplied source prose because the historical action theme is too broad.
+    const noPreferred = new Map(
+      [...metadata].map(([id, m]) => [id, { ...m, themes: ["other"] }]),
+    );
+    const fallback = paidContextGuide(input, noPreferred)!.links.find(
+      (l) => l.sourcePalace === "Mệnh",
+    )!;
+    expect(fallback.sourceKnowledgeIds.length).toBe(
+      link.sourceKnowledgeIds.length,
+    );
+    expect(fallback.sourceKnowledgeIds).toEqual(link.sourceKnowledgeIds);
+  },
+);
 it("new prompt cannot launder unnamed C by mixing a direct source; old version stays addressable", () => {
   const i = paidInput(record, "Quan Lộc"),
     link = i.contextGuide!.links[0],

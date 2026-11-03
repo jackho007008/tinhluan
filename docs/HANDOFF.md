@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 03/11 — Input1.15 chuẩn bị thử limited, chưa API
+
+Rà5nhóm nguồn có sẵn, không nhận claim mới sai điều kiện; C/guide ưu tiên suy xét–hành động của Mệnh cho Quan/Tài. Guide1.1 rõ vai liên cung cho Phu/Nô/Tử; oldinput/bài cũ nguyên. 220test +6guide cuối/dry11/build cách ly đạt,0API/DB/deploy. Có thể chuẩn bị thử1Tài limited sau quyền/dự toán riêng; chưa phát hành. [Bằng chứng và giới hạn](AI-PAID-INPUT115-READY-20261103.md).
+
 ## 03/11 — Rà chiều sâu mười bản và nguồn Tật, chỉ QA
 
 Biên tập28đoạn/thêm1đoạn, 10bản limited giữ facts/input; dùng thêm nguồn nền đã chọn cho Quan/Tài. Chín phiếu Tật phân biệt phạm vi/điều kiện, chưa nguồn trực tiếp mới. 10validator/12probe âm/hash110/mobile360–390 đạt; 0API/DB/deploy. 11cung90%hồ sơ giữ, chưa nghiệm thu thương mại. [Bản đọc và điểm chặn](AI-PAID-TEN-READINGS-DEPTH-20261103.md).

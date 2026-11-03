@@ -10,6 +10,23 @@ const RELATED_THEMES: Record<string, string[]> = {
 export type ContextMetadata = { themes: string[]; types: string[] };
 export const contextBytes = (k: Knowledge) =>
   Buffer.byteLength(JSON.stringify(k), "utf8");
+/** Editorial relevance inside already-valid C, never source applicability or an
+ * astrological inference. The old "action" theme also contains wealth and
+ * yin/yang glosses; inspect the actual supplied prose to prioritize thought,
+ * execution and learning for these two work/resource comparisons. */
+export function paidContextFocusRank(k: Knowledge, target: string) {
+  if (
+    !["Quan Lộc", "Tài Bạch"].includes(target) ||
+    k.subjectPalaces?.length !== 1 ||
+    k.subjectPalaces[0] !== "Mệnh"
+  )
+    return 0;
+  const text = k.text.normalize("NFC").toLocaleLowerCase("vi");
+  if (/suy tính|suy xét|giải quyết|tính toán/u.test(text)) return 0;
+  if (/hành động|quả quyết|tổ chức|cương nghị/u.test(text)) return 1;
+  if (/học rộng|học hỏi|nhiều khả năng/u.test(text)) return 2;
+  return 3;
+}
 export function selectPaidContext(
   candidates: Knowledge[],
   target: string,
@@ -51,6 +68,8 @@ export function selectPaidContext(
         : 1;
     return [kind, topic];
   };
+  const methodOnly = (k: Knowledge) =>
+    metadata.get(k.id)?.types.every((type) => type === "method-gloss") ? 1 : 0;
   let used = 0;
   while (selected.length < 8) {
     const fitting = remaining.filter(
@@ -60,6 +79,8 @@ export function selectPaidContext(
     fitting.sort(
       (a, b) =>
         uses(a) - uses(b) ||
+        methodOnly(a) - methodOnly(b) ||
+        paidContextFocusRank(a, target) - paidContextFocusRank(b, target) ||
         relevance(a)[0] - relevance(b)[0] ||
         relevance(a)[1] - relevance(b)[1] ||
         a.id.localeCompare(b.id),

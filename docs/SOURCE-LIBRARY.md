@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 03/11 — Tái sử dụng nguồn đúng điều kiện trước phép thử model
+
+Rà hẹp TB170/200–201,THP1/129–130,THP2/178–179,TB190/195;5phiếu có hash. Không áp hàng Lương đơn lẻ thiếu nhánh Mệnh,không mượn chính tinh cho TửVCD,không ghép tổ hợp chưa có phép. Các đoạn đối đãi/hợp tác và hai phía Mệnh–Phu đã có được guide khai thác rõ hơn;0direct/rule mới,không PDF/ảnh hoặc BửuĐình mới. [Bằng chứng và giới hạn](AI-PAID-INPUT115-READY-20261103.md).
+
 ## 03/11 — Rà hẹp nguồn cho bộ biên tập và Tật T1
 
 Tái dùng nguồn đã chọn trong input1.14 cho10bản; rà chữ có sẵn NPL226, TB181/182/188, HS154/220/216–217 và các mục Trực Phù221–222, Quốc Ấn197–198, phân nhóm144–146. Chín phiếu giữ tác giả/điều kiện/hash; không nhận nguồn trực tiếp mới cho Tật, không PDF/ảnh mới hoặc nâng mức đã đọc/hiệu đính toàn sách. Không sửa kho nguồn/Bửu Đình hoặc publishT1. [Phiếu và giới hạn](AI-PAID-TEN-READINGS-DEPTH-20261103.md).

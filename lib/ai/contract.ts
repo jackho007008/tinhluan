@@ -112,12 +112,13 @@ export type MenhInput = {
     | "paid-retrieval-1.11.0"
     | "paid-retrieval-1.12.0"
     | "paid-retrieval-1.13.0"
-    | "paid-retrieval-1.14.0";
+    | "paid-retrieval-1.14.0"
+    | "paid-retrieval-1.15.0";
   facts: AiFact[];
   knowledge: Knowledge[];
   missing: string[];
   contextGuide?: {
-    version: "paid-context-guide-1.0.0";
+    version: "paid-context-guide-1.0.0" | "paid-context-guide-1.1.0";
     links: {
       sourcePalace: string;
       relation: "trine" | "opposition";
