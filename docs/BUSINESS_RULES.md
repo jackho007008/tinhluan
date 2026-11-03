@@ -1,5 +1,9 @@
 # Tinh Luận — hợp đồng sản phẩm, nguồn và quyết định
 
+## 03/11 — Lời khách hàng và căn cứ trình bày riêng
+
+Bài mới phải dùng tiếng Việt dễ hiểu, giải thích ngắn thuật ngữ cần thiết, không kể việc khảo cứu hoặc nêu tên sách/tác giả/website trong phần luận, tiêu đề hay giới hạn. Nguồn vẫn được lưu cùng điều kiện/ngoại lệ và xem riêng tại Xem căn cứ. Không đơn giản hóa bằng cách xóa sắc thái quan trọng, trộn lời nguồn với tổng hợp hoặc tăng mức khẳng định. Văn phong mới không cho phép viết lại báo cáo lịch sử. [Quy tắc và triển khai](AI-CUSTOMER-PROSE-20261103.md).
+
 ## 01/11 — Phạm vi AI trả phí hiện hành
 
 Astra được tổng hợp từ facts và tri thức phù hợp, gồm nguồn nền đã xử lý chưa chuyển thành rule; nền tham khảo không tự thành lời cá nhân. Không bỏ điều kiện hoặc chọn bảng nguồn thắng. ReadingV2 được ngắn/limited/insufficient; quyền đã mua giữ nguyên, không gọi insufficient là bài chuyên sâu đã giao. Không thay gói/offer hoặc mở bán; Mệnh miễn phí vẫnV1/Luna. Ba bài QA đã lưu là bằng chứng nội dung có giới hạn, chưa nghiệm thu thương mại11cung. [Kết luận và ma trận](AI-PAID-RELEASE-READINESS-20261101.md).

@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 03/11 — Văn phong mới đã kiểm mock, chưa model/runtime mới
+
+Chủ dự án yêu cầu dễ hiểu và không tên sách/tác giả trong thân bài. Code writer 2.7 và Luna edit 1.2 đã kiểm 120 test/typecheck/build, giữ lịch sử/căn cứ; có bản Tài minh họa riêng, không thay result 2.6. Tất cả 11 cung 90% hồ sơ vì P09 chưa kiểm writer mới, commercialReady=false. 0 API/DB/deploy; QA3118 vẫn checkout/prompt 2.6, QA3062/3070 nguyên. [Bản mẫu và bằng chứng](AI-CUSTOMER-PROSE-20261103.md).
+
 ## 03/11 — Tài Bạch đã kiểm Astra hiện hành, chưa phát hành
 
 Bài QA mới completed bằng gpt-6-astra/prompt 2.6/input 1.14, đúng 1 CREATE và 3 GET đối soát; đã đọc toàn văn/10 đoạn/6 nguồn thực dùng. Lưu/mở và grant kiểm phía server đạt, chưa smoke browser owner. Bài cải thiện nghĩa Hao và ngữ cảnh nghề/tam phương; chưa giải toàn bộ Liêm–Đại Hao hoặc nghiệm thu 11 cung. Tài 100% hồ sơ mẫu/P09 đạt, 10 cung khác 90%; commercialReady=false. Không sửa bài cũ, không gọi thêm API hoặc QA3062/3070. [Kết quả và giới hạn](AI-PAID-OFFICIAL-ACCEPTANCE-20261103.md).

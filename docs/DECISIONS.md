@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 03/11 — Lời luận phải dễ hiểu, không nêu tên sách/nguồn trong thân bài
+
+Chủ dự án đọc bài thật và yêu cầu gấp cho toàn bộ luận giải: người chưa học Tử Vi vẫn hiểu được; không đưa tên sách, tác giả hoặc nguồn vào lời khách hàng. Căn cứ được giữ riêng, không bỏ điều kiện hoặc nâng độ khẳng định để làm văn trôi chảy. Áp vào phiên bản tạo bài mới, không sửa lịch sử, không coi yêu cầu này là quyền gọi thêm API/deploy. Quyết định này bổ sung tiêu chí văn phong; đánh giá có giới hạn bài 2.6 trước đó không chứng nhận writer 2.7. [Triển khai và minh họa](AI-CUSTOMER-PROSE-20261103.md).
+
 ## 03/11 — Cho phép test chính thức đúng một CREATE model thật
 
 Chủ dự án giao bắt đầu test chính thức 1 CREATE để nghiệm thu bản trả phí. Chọn Tài Bạch trên QA3118/clone 55448, báo dự toán bảo thủ 1,4606 USD và dự phòng nội bộ 2 USD trước gửi. Quyền này không bao gồm gọi các cung khác, xử lý queue tồn, mở bán hoặc cập nhật QA3062/3070. Đã thực hiện đúng 1 HTTP CREATE, 3 GET cùng receipt; hai attempt nội bộ gồm một guard chặn trước gửi được đối soát có bằng chứng. Đánh giá Codex đạt trên mẫu/phạm vi có giới hạn không tự là quyết định phát hành hoặc duyệt toàn gói của chủ dự án. [Bằng chứng và kết luận](AI-PAID-OFFICIAL-ACCEPTANCE-20261103.md).

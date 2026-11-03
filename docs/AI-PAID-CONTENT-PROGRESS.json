@@ -1,14 +1,14 @@
 {
   "schemaVersion": "paid-content-progress-1.0.0",
   "updatedAt": "2026-11-03",
-  "baselineHead": "b728404",
+  "baselineHead": "acb2aa9",
   "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
   "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
   "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
-  "releaseGate": "Tài Bạch khép P09 trên một mẫu/phạm vi giới hạn, không đủ nghiệm thu thương mại toàn cung hoặc 11 cung; P09 mười cung khác chưa kiểm, Tật chỉ T1 chưa publish. Không tự mở bán.",
+  "releaseGate": "Đã thêm yêu cầu dễ hiểu/không tên nguồn trong thân bài; prompt2.7 chưa kiểm Astra thật. P09 của cả11cung hiện chưa kiểm theo writer mới, không mở bán. Bài2.6 và nghiệm thu có giới hạn trước đó giữ trong lịch sử.",
   "freeMenh": "V1/Luna giữ nguyên, ngoài chỉ số11cung trả phí.",
-  "apiCreate": 1,
-  "apiGet": 3,
+  "apiCreate": 0,
+  "apiGet": 0,
   "criteria": [
     {
       "id": "P01",
@@ -131,8 +131,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa gọi API: retrieval1.14/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "evidence": "docs/AI-CUSTOMER-PROSE-20261103.md",
+          "note": "Writer hiện hành đổi sang paid-palaces-vietnamese-2.7.0 theo yêu cầu văn phong mới; chỉ kiểm mock, chưa gọi API. Kết quả và đánh giá các phiên bản cũ vẫn giữ trong lịch sử."
         },
         {
           "id": "P10",
@@ -201,8 +201,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa gọi API: retrieval1.14/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "evidence": "docs/AI-CUSTOMER-PROSE-20261103.md",
+          "note": "Writer hiện hành đổi sang paid-palaces-vietnamese-2.7.0 theo yêu cầu văn phong mới; chỉ kiểm mock, chưa gọi API. Kết quả và đánh giá các phiên bản cũ vẫn giữ trong lịch sử."
         },
         {
           "id": "P10",
@@ -271,8 +271,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa gọi API: retrieval1.14/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "evidence": "docs/AI-CUSTOMER-PROSE-20261103.md",
+          "note": "Writer hiện hành đổi sang paid-palaces-vietnamese-2.7.0 theo yêu cầu văn phong mới; chỉ kiểm mock, chưa gọi API. Kết quả và đánh giá các phiên bản cũ vẫn giữ trong lịch sử."
         },
         {
           "id": "P10",
@@ -341,8 +341,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa gọi API: retrieval1.14/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "evidence": "docs/AI-CUSTOMER-PROSE-20261103.md",
+          "note": "Writer hiện hành đổi sang paid-palaces-vietnamese-2.7.0 theo yêu cầu văn phong mới; chỉ kiểm mock, chưa gọi API. Kết quả và đánh giá các phiên bản cũ vẫn giữ trong lịch sử."
         },
         {
           "id": "P10",
@@ -411,8 +411,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa gọi API: retrieval1.14/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "evidence": "docs/AI-CUSTOMER-PROSE-20261103.md",
+          "note": "Writer hiện hành đổi sang paid-palaces-vietnamese-2.7.0 theo yêu cầu văn phong mới; chỉ kiểm mock, chưa gọi API. Kết quả và đánh giá các phiên bản cũ vẫn giữ trong lịch sử."
         },
         {
           "id": "P10",
@@ -481,8 +481,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa gọi API: retrieval1.14/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "evidence": "docs/AI-CUSTOMER-PROSE-20261103.md",
+          "note": "Writer hiện hành đổi sang paid-palaces-vietnamese-2.7.0 theo yêu cầu văn phong mới; chỉ kiểm mock, chưa gọi API. Kết quả và đánh giá các phiên bản cũ vẫn giữ trong lịch sử."
         },
         {
           "id": "P10",
@@ -551,8 +551,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa gọi API: retrieval1.14/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "evidence": "docs/AI-CUSTOMER-PROSE-20261103.md",
+          "note": "Writer hiện hành đổi sang paid-palaces-vietnamese-2.7.0 theo yêu cầu văn phong mới; chỉ kiểm mock, chưa gọi API. Kết quả và đánh giá các phiên bản cũ vẫn giữ trong lịch sử."
         },
         {
           "id": "P10",
@@ -564,11 +564,11 @@
     },
     {
       "palace": "Tài Bạch",
-      "percent": 100,
-      "passed": 10,
+      "percent": 90,
+      "passed": 9,
       "total": 10,
       "commercialReady": false,
-      "scope": "Bài Astra 2.6 thật đã rà đạt trên mẫu QA trong phạm vi tạo/tích lũy, nghĩa Hao và ngữ cảnh nghề/chi ngoài việc; 100% hồ sơ mẫu, không là nghiệm thu chiều sâu toàn cung hoặc thương mại 11 cung.",
+      "scope": "Có bài thật2.6 và bản biên tập dễ đọc riêng; facts/nguồn giữ, chưa kiểm Astra2.7. Không cam kết chiều sâu toàn cung hoặc phối hợp Liêm–Đại Hao.",
       "checks": [
         {
           "id": "P01",
@@ -591,8 +591,8 @@
         {
           "id": "P04",
           "status": "passed",
-          "evidence": ".local/ai-paid-reading-copy-20261102/Tài-Bạch-reading.json",
-          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
+          "evidence": ".local/ai-paid-reading-copy-20261102/Tài-Bạch-reading.json + .local/ai-customer-prose-20261103/tai-bach-readable-preview.json",
+          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model. Bản minh họa dễ đọc giữ basis/refs; không phải bài Astra mới."
         },
         {
           "id": "P05",
@@ -609,20 +609,20 @@
         {
           "id": "P07",
           "status": "passed",
-          "evidence": ".local/ai-paid-reading-copy-20261102/Tài-Bạch-reading.json + docs/AI-PAID-SCOPE-INPUT-20261102.md + docs/AI-PAID-WEB-INTEGRATION-20261102.md",
-          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
+          "evidence": ".local/ai-paid-reading-copy-20261102/Tài-Bạch-reading.json + docs/AI-PAID-SCOPE-INPUT-20261102.md + docs/AI-PAID-WEB-INTEGRATION-20261102.md + .local/ai-customer-prose-20261103/tai-bach-readable-preview.json",
+          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model. Bản minh họa dễ đọc giữ basis/refs; không phải bài Astra mới."
         },
         {
           "id": "P08",
           "status": "passed",
-          "evidence": ".local/ai-paid-reading-copy-20261102/Tài-Bạch-reading.json",
-          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model."
+          "evidence": ".local/ai-paid-reading-copy-20261102/Tài-Bạch-reading.json + .local/ai-customer-prose-20261103/tai-bach-readable-preview.json",
+          "note": "Bản mock biên tập được đọc/đối chiếu, chưa kết quả model. Bản minh họa dễ đọc giữ basis/refs; không phải bài Astra mới."
         },
         {
           "id": "P09",
-          "status": "passed",
-          "evidence": "docs/AI-PAID-OFFICIAL-ACCEPTANCE-20261103.md + .local/ai-paid-official-20261103/content-review.json",
-          "note": "Đúng 1 CREATE Astra/prompt2.6/retrieval1.14, completed và đọc toàn văn/10đoạn/6nguồn thực dùng; đạt trên mẫu trong phạm vi đã khai. Không khép phối hợp Liêm–Đại Hao hoặc nghiệm thu 11cung."
+          "status": "not-verified",
+          "evidence": "docs/AI-CUSTOMER-PROSE-20261103.md",
+          "note": "Writer hiện hành đổi sang paid-palaces-vietnamese-2.7.0 theo yêu cầu văn phong mới; chỉ kiểm mock, chưa gọi API. Kết quả và đánh giá các phiên bản cũ vẫn giữ trong lịch sử."
         },
         {
           "id": "P10",
@@ -691,8 +691,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa gọi API: retrieval1.14/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "evidence": "docs/AI-CUSTOMER-PROSE-20261103.md",
+          "note": "Writer hiện hành đổi sang paid-palaces-vietnamese-2.7.0 theo yêu cầu văn phong mới; chỉ kiểm mock, chưa gọi API. Kết quả và đánh giá các phiên bản cũ vẫn giữ trong lịch sử."
         },
         {
           "id": "P10",
@@ -761,8 +761,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa gọi API: retrieval1.14/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "evidence": "docs/AI-CUSTOMER-PROSE-20261103.md",
+          "note": "Writer hiện hành đổi sang paid-palaces-vietnamese-2.7.0 theo yêu cầu văn phong mới; chỉ kiểm mock, chưa gọi API. Kết quả và đánh giá các phiên bản cũ vẫn giữ trong lịch sử."
         },
         {
           "id": "P10",
@@ -831,8 +831,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": null,
-          "note": "Chưa gọi API: retrieval1.14/prompt2.6 chưa được Astra kiểm thật; mock hoặc model nhẹ không thay mục này."
+          "evidence": "docs/AI-CUSTOMER-PROSE-20261103.md",
+          "note": "Writer hiện hành đổi sang paid-palaces-vietnamese-2.7.0 theo yêu cầu văn phong mới; chỉ kiểm mock, chưa gọi API. Kết quả và đánh giá các phiên bản cũ vẫn giữ trong lịch sử."
         },
         {
           "id": "P10",
@@ -843,7 +843,7 @@
       ]
     }
   ],
-  "lastReview": "official-astra-2.6-tai-one-create-20261103",
+  "lastReview": "customer-readable-prose-paid2.7-luna1.2-mock",
   "history": [
     {
       "updatedAt": "2026-11-02",
@@ -1274,6 +1274,16 @@
       "apiCreate": 1,
       "apiGet": 3,
       "note": "Tài khép P09 trên một mẫu Astra2.6/input1.14 đã đọc toàn văn trong phạm vi có căn cứ;90→100% hồ sơ mẫu, commercialReady=false.10cung khác90%/P09 chưa kiểm; Tật chỉT1. Không mởbán hoặc QA3062/3070."
+    },
+    {
+      "updatedAt": "2026-11-03",
+      "baselineHead": "acb2aa9",
+      "criteriaChanged": false,
+      "statusChanged": true,
+      "report": "docs/AI-CUSTOMER-PROSE-20261103.md",
+      "apiCreate": 0,
+      "apiGet": 0,
+      "note": "Chủ dự án yêu cầu dễ hiểu và không sách/tác giả trong thân bài. Writer2.7/Lunaedit1.2,120test/typecheck/build/dry11/previewTài đạt; P09 writer mới chưa kiểm, Tài100→90 do version mới,10cung khác90 giữ. Không sửa bài2.6 hoặc gọiAPI."
     }
   ]
 }

@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 03/11 — Chính sách lời khách dùng chung, validation theo version
+
+`customer-prose` dùng cho paid prompt 2.7 và Luna edit 1.2: kiểm riêng lời khách, giữ refs/conditions ngoài thân bài. Paid giữ schema V2 và mọi prompt/guard cũ, đặc biệt 2.6; lỗi CUSTOMER_PROSE là output validation. V1 edit/read/review dùng promptVersion của candidate để không áp guard mới vào artifact cũ; fallback và kho approved cũ giữ nguyên. Không đổi queue/receipt/quyền/renderer hoặc runtime QA trong lượt này. [Triển khai và kiểm](AI-CUSTOMER-PROSE-20261103.md).
+
 ## 02/11 — Retrieval1.14: webmethod và ràngbuộc quan hệ
 
 Index-v114 giữ16unit cũ+1methodweb, pages vàwebSources táchloại; web chỉmethod, localreceipt/hash/status/metadata/HTTPS được kiểm.4slot sách trước+1web dùng14KBcũ, D3/Ccapnguyên; req.relation kiểm provenance. GuidePhu chỉnối Quanopposition códirect/C. Savedinput/prompt2.6/schema/quyền/queue/Mệnhnguyên. [Thay đổi và bằng chứng](AI-PAID-WEB-INTEGRATION-20261102.md).

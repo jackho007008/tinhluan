@@ -11,6 +11,7 @@ import { isOutputValidationError } from "../lib/ai/provider-failure";
 import type { MenhInput } from "../lib/ai/contract";
 import { PAID_PROMPT_CURRENT as V25 } from "../lib/ai/paid-prompt-v25";
 import { PAID_PROMPT_CURRENT as V26 } from "../lib/ai/paid-prompt-v26";
+import { PAID_PROMPT_CURRENT as V27 } from "../lib/ai/paid-prompt-v27";
 const input = (): MenhInput => ({
   paidTarget: { palace: "Phu Thê", edition: "paid-palaces-ai-1.0.0" },
   version: "paid-facts-1.1.0",
@@ -209,7 +210,7 @@ it("supports lowercase/NFD Vietnamese and preserves unknown reference, C and med
     "AI_SCOPE_VIOLATION",
   );
 });
-it("old 2.3 retains its validator while only the opt-in writer chooses 2.6", () => {
+it("old 2.3 retains its validator while only the opt-in writer chooses 2.7", () => {
   const r = content();
   r.sections[0].paragraphs[0].text = "BẢN MOCK. Tả Phù có sự trợ giúp.";
   r.sections[1].paragraphs[1].basis = "source-interpretation";
@@ -221,7 +222,7 @@ it("old 2.3 retains its validator while only the opt-in writer chooses 2.6", () 
   );
   expect(paidOutputSchema(V24)).toBe(paidOutputSchema(V23));
   vi.stubEnv("AI_PAID_READING_V2_ENABLED", "true");
-  expect(paidWritePromptVersion()).toBe(V26);
+  expect(paidWritePromptVersion()).toBe(V27);
 });
 it.each(["AI_MIXED_ATTRIBUTION", "AI_SOURCE_QUALIFIER_LOST"])(
   "classifies %s as output validation, not provider billing or model failure",

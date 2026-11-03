@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 03/11 — Lời văn khách hàng 2.7, chỉ mock
+
+120/120 test ở 7 file, typecheck/build cách ly đạt; lượt đầu 110 đạt, không fail. Dry 11 input nguyên/9 kết quả thật cũ qua saved version; bản Tài minh họa 10 đoạn giữ basis/refs qua guard mới, còn result 2.6 gốc bị guard mới bắt tên nguồn nhưng vẫn hợp lệ ở version cũ. Có kiểm các trường lời khách, tên sao/nguồn thu không bị chặn nhầm, sắc thái giai đoạn trợ giúp và y khoa; legacy Luna 1.0/1.1 giữ đường đọc/duyệt theo version. Không API/DB/E2E/PDF/browser/mobile/deploy; không đo readability tự động hoặc coi mock là model thật. [Log, bản mẫu và giới hạn](AI-CUSTOMER-PROSE-20261103.md).
+
 ## 03/11 — Astra 2.6 thật: một Tài Bạch, bảo toàn lịch sử
 
 Preflight xác minh model, 32.784 input token dự toán; input 159 facts/18 nguồn khớp bản kiểm. Mock Tài và 4 probe request sai đạt. Harness đầu sai so sánh chuỗi JSONB, chặn trước HTTP; giữ log, chứng minh 0 CREATE rồi phân loại lỗi local có bằng chứng. Lượt gửi thật 1 CREATE/3 GET completed, validator và đọc toàn văn/10 đoạn đạt; tiếp tục đúng receipt sau dừng harness ở kiểm số attempt. ReadPaid hai lần/không order, 55 job cũ, 216 dòng lịch sử trong 37 bảng và file đối chứng giữ nguyên; 10 job mới khác Tài queued/0 attempt. Không app change nên không build/typecheck/suite/E2E/PDF; chưa browser owner/mobile. [Phạm vi, log và số đo](AI-PAID-OFFICIAL-ACCEPTANCE-20261103.md).

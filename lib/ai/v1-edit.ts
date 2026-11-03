@@ -19,10 +19,15 @@ import { zodTextFormat } from "openai/helpers/zod";
 import { z } from "zod";
 import { aiConfig, aiModels } from "./config";
 import type { CustomerParagraph } from "../internal-review/customer-report";
+import {
+  CUSTOMER_PROSE_INSTRUCTIONS,
+  validateCustomerProse,
+} from "./customer-prose";
 
-export const V1_EDIT_PROMPT = "menh-v1-copyedit-1.1.0";
+export const V1_EDIT_PROMPT = "menh-v1-copyedit-1.2.0";
 export const V1_EDIT_PROMPTS = [
   V1_EDIT_PROMPT,
+  "menh-v1-copyedit-1.1.0",
   "menh-v1-copyedit-1.0.0",
 ] as const;
 export const supportedV1Prompt = (version: string) =>
@@ -74,16 +79,27 @@ Giữ nguyên từng nhận định, phủ định, mức độ, điều kiện,
 Điều kiện/nguồn dùng để bảo toàn nghĩa, không tự biến các mục đó thành nhận định mới trong bài. Giữ tên sao, độ sáng, quan hệ, số liệu và mọi vế hạn định đã có trong lời gốc. Không dùng từ engine, packet, retrieval, catalog, schema, gói trả phí trong lời khách hàng. Chỉ trả text theo cấu trúc yêu cầu.`;
 export function v1EditInstructions(version: string = V1_EDIT_PROMPT) {
   if (version === "menh-v1-copyedit-1.0.0") return V1_EDIT_INSTRUCTIONS;
-  if (version !== V1_EDIT_PROMPT) throw Error("V1_EDIT_UNKNOWN_PROMPT");
-  return (
+  if (!supportedV1Prompt(version)) throw Error("V1_EDIT_UNKNOWN_PROMPT");
+  const v11 =
     V1_EDIT_INSTRUCTIONS +
     `
-Giọng Tinh Luận: điềm đạm, gần gũi, mạch lạc; mỗi câu có nội dung cụ thể. Giảm lặp và câu khuôn mẫu nhưng không gộp mất nhận định riêng. Không tăng mức khẳng định để văn nghe hay hơn. Giữ tường minh đích của lời: tọa Mệnh khác chiếu về Mệnh, đồng cung khác giáp hoặc tam hợp. Giữ mọi lượng từ, phủ định, can/chi, độ sáng và ngoại lệ; khi không chắc cách diễn đạt tương đương, giữ nguyên câu gốc. Không tự thêm câu nối mang ý Tử Vi mới.`
+Giọng Tinh Luận: điềm đạm, gần gũi, mạch lạc; mỗi câu có nội dung cụ thể. Giảm lặp và câu khuôn mẫu nhưng không gộp mất nhận định riêng. Không tăng mức khẳng định để văn nghe hay hơn. Giữ tường minh đích của lời: tọa Mệnh khác chiếu về Mệnh, đồng cung khác giáp hoặc tam hợp. Giữ mọi lượng từ, phủ định, can/chi, độ sáng và ngoại lệ; khi không chắc cách diễn đạt tương đương, giữ nguyên câu gốc. Không tự thêm câu nối mang ý Tử Vi mới.`;
+  if (version === "menh-v1-copyedit-1.1.0") return v11;
+  return (
+    v11 +
+    "\n\n" +
+    CUSTOMER_PROSE_INSTRUCTIONS +
+    `
+Với tác vụ biên tập Mệnh này, chỉ trả trường text; căn cứ đã có trong metadata conditions/sources của đơn vị V1, không tự thêm basis/factIds/knowledgeIds vào đầu ra. Chỉ diễn đạt lại ý V1, không áp quyền tổng hợp của bài trả phí vào đây. Ví dụ giải thích thuật ngữ chỉ được dùng khi không tạo thêm ý; nếu không bảo toàn nghĩa thì giữ V1 gốc để duyệt.`
   );
 }
 /** Structural checks are necessary but cannot certify semantic equivalence.
  * Only an independently reviewed candidate can enter the shared display store. */
-export function validateV1Edit(raw: unknown, unit: V1EditUnit) {
+export function validateV1Edit(
+  raw: unknown,
+  unit: V1EditUnit,
+  version = V1_EDIT_PROMPT,
+) {
   const { text } = editSchema.parse(raw);
   if (
     /\{\{|\}\}|\b(engine|packet|retrieval|catalog|schema)\b|gói trả phí/i.test(
@@ -144,6 +160,11 @@ export function validateV1Edit(raw: unknown, unit: V1EditUnit) {
     !/chắc chắn sẽ|bảo đảm.*thành công|chẩn đoán|tuổi thọ.*\d/i.test(unit.text)
   )
     throw Error("V1_EDIT_ADDED_CLAIM");
+  if (version === V1_EDIT_PROMPT)
+    validateCustomerProse(
+      [text],
+      unit.conditions.flatMap((c) => c.sources.map((s) => s.title)),
+    );
   return text;
 }
 export type V1EditCandidate = {
@@ -252,10 +273,14 @@ export async function prepareV1Edit(
 }
 
 /** Keep invariants as warnings/blockers, never as proof of semantic fidelity. */
-export function v1EditFindings(text: string, unit: V1EditUnit) {
+export function v1EditFindings(
+  text: string,
+  unit: V1EditUnit,
+  version = V1_EDIT_PROMPT,
+) {
   const findings: string[] = [];
   try {
-    validateV1Edit({ text }, unit);
+    validateV1Edit({ text }, unit, version);
   } catch (e) {
     findings.push(e instanceof Error ? e.message : "V1_EDIT_INVALID");
   }
@@ -317,7 +342,11 @@ export async function decideV1Edit(
   )
     throw Error("V1_EDIT_REVIEW_MISMATCH");
   await registerV1Source(candidate.unit, source);
-  const findings = v1EditFindings(candidate.text, candidate.unit);
+  const findings = v1EditFindings(
+    candidate.text,
+    candidate.unit,
+    candidate.promptVersion,
+  );
   return appendV1Review(key, source, reviewedHash, assessment, findings);
 }
 export async function approveV1Edit(
@@ -358,7 +387,7 @@ export async function approvedV1Edit(
         candidate.promptVersion !== prompt ||
         v1EditKey(candidate.unit, candidate.model, candidate.promptVersion) !==
           key ||
-        v1EditFindings(candidate.text, unit).length
+        v1EditFindings(candidate.text, unit, candidate.promptVersion).length
       )
         continue;
       return { ...candidate, artifactHash: review.candidateHash };
@@ -396,7 +425,11 @@ export async function inspectV1Edit(unit: V1EditUnit, source: V1SourceContext) {
           throw Error("V1_EDIT_CANDIDATE_MISMATCH");
         const history = await v1ReviewHistory(key, source),
           review = history.at(-1);
-        const findings = v1EditFindings(candidate.text, unit);
+        const findings = v1EditFindings(
+          candidate.text,
+          unit,
+          candidate.promptVersion,
+        );
         const integrity =
           !review || review.candidateHash === contentHash(candidate);
         return {

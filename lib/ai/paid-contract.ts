@@ -16,7 +16,12 @@ import {
   paidInstructionsV25,
   PAID_PROMPT_CURRENT as PAID_PROMPT_V25,
 } from "./paid-prompt-v25";
-import { paidInstructionsV26, PAID_PROMPT_CURRENT } from "./paid-prompt-v26";
+import {
+  paidInstructionsV26,
+  PAID_PROMPT_CURRENT as PAID_PROMPT_V26,
+} from "./paid-prompt-v26";
+import { paidInstructionsV27, PAID_PROMPT_CURRENT } from "./paid-prompt-v27";
+import { validateCustomerProse } from "./customer-prose";
 import { validatePaidSourceAnchors } from "./paid-source-anchors";
 import { validatePaidEditorial } from "./paid-editorial-guards";
 import {
@@ -82,7 +87,8 @@ export function paidInstructions(input: MenhInput, version = PAID_PROMPT) {
   if (version === PAID_PROMPT_V23) return paidInstructionsV23(input);
   if (version === PAID_PROMPT_V24) return paidInstructionsV24(input);
   if (version === PAID_PROMPT_V25) return paidInstructionsV25(input);
-  if (version === PAID_PROMPT_CURRENT) return paidInstructionsV26(input);
+  if (version === PAID_PROMPT_V26) return paidInstructionsV26(input);
+  if (version === PAID_PROMPT_CURRENT) return paidInstructionsV27(input);
   if (
     ["paid-palaces-vietnamese-1.0.0", "paid-palaces-vietnamese-1.0.1"].includes(
       version,
@@ -105,6 +111,7 @@ export function validatePaidNarration(
       input,
       [
         PAID_PROMPT_CURRENT,
+        PAID_PROMPT_V26,
         PAID_PROMPT_V25,
         PAID_PROMPT_V24,
         PAID_PROMPT_V23,
@@ -113,6 +120,7 @@ export function validatePaidNarration(
     if (
       [
         PAID_PROMPT_CURRENT,
+        PAID_PROMPT_V26,
         PAID_PROMPT_V25,
         PAID_PROMPT_V24,
         PAID_PROMPT_V23,
@@ -121,11 +129,28 @@ export function validatePaidNarration(
     )
       validatePaidContextAttribution(input, content);
     if (
-      [PAID_PROMPT_CURRENT, PAID_PROMPT_V25, PAID_PROMPT_V24].includes(version)
+      [
+        PAID_PROMPT_CURRENT,
+        PAID_PROMPT_V26,
+        PAID_PROMPT_V25,
+        PAID_PROMPT_V24,
+      ].includes(version)
     )
       validatePaidEditorial(content, input);
-    if (version === PAID_PROMPT_CURRENT)
+    if ([PAID_PROMPT_CURRENT, PAID_PROMPT_V26].includes(version))
       validatePaidSourceAnchors(content, input);
+    if (version === PAID_PROMPT_CURRENT)
+      validateCustomerProse(
+        [
+          content.coverageNote,
+          ...content.limitations,
+          ...content.sections.flatMap((s) => [
+            s.title,
+            ...s.paragraphs.map((p) => p.text),
+          ]),
+        ],
+        input.knowledge.flatMap((k) => k.references.map((r) => r.title)),
+      );
     return content;
   }
   if (

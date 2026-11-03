@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 03/11 — Khép lô sửa văn phong bằng mock
+
+Đã áp quy tắc dễ hiểu/không trộn nguồn vào lời khách cho writer paid 2.7 và Luna edit 1.2 tương lai; giữ trace, phiên bản và bài cũ. Mock/test/build đạt, bản Tài riêng để duyệt giọng văn; không tự gọi API, cập nhật QA hoặc đóng P09 theo bài 2.6. Điểm dừng: code/build và bản minh họa, chưa nghiệm thu model mới. [Triển khai và kiểm](AI-CUSTOMER-PROSE-20261103.md).
+
 ## 03/11 — Khép phép thử chính thức một CREATE Tài Bạch
 
 Đã dùng grant thanh toán test trên báo cáo QA mới, Background cùng receipt/attempt tới completed và rà toàn văn theo chín tiêu chí. Khép P09 của Tài trong phạm vi mẫu, không đổi tiêu chí/phạm vi hoặc commercialReady. Giữ bài cũ/18 queued, không xử lý 10 cung mới còn lại; chưa browser owner, không mở bán hoặc tự gọi thêm. [Bài thật, số đo và điểm dừng](AI-PAID-OFFICIAL-ACCEPTANCE-20261103.md).

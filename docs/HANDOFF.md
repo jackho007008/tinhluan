@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 03/11 — Quy tắc lời văn dễ hiểu, tên nguồn xem riêng
+
+Paid prompt 2.7/Luna edit 1.2 dùng chính sách chung cho bài mới, thêm guard tên sách/tác giả ở lời khách; giữ căn cứ và mọi version cũ. 120 test/typecheck/build cách ly/dry 11 input/9 bài cũ đạt, có bản Tài biên tập minh họa. Không API hoặc deploy; QA3118 còn 2.6. P09 writer mới chưa kiểm nên Tài trở về 90% hồ sơ, 10 cung khác giữ 90%. [Mẫu đọc, thay đổi và giới hạn](AI-CUSTOMER-PROSE-20261103.md).
+
 ## 03/11 — Một bài Tài Bạch Astra thật đã lưu và rà toàn văn
 
 Đúng 1 CREATE / 3 Responses GET, prompt 2.6 / retrieval 1.14; 4 phần, giữ facts/nguồn và phân biệt tổng hợp. Đạt vòng kiểm trên mẫu/phạm vi đã khai, chưa nghiệm thu thương mại 11 cung. Parser ước 0,8061175 USD theo write 30m; nhạy cảm 12h là 1,215455 USD, chưa hóa đơn. Giữ 55 job cũ/18 queued; 10 job mới khác Tài chưa xử lý. Tài khép P09: 100% hồ sơ mẫu, mười cung khác 90%, commercialReady=false. [Toàn văn, đánh giá, lỗi harness và bằng chứng](AI-PAID-OFFICIAL-ACCEPTANCE-20261103.md).
