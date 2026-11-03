@@ -1,11 +1,11 @@
 {
-  "schemaVersion": "paid-content-progress-1.0.0",
+  "schemaVersion": "paid-content-progress-1.1.0",
   "updatedAt": "2026-11-03",
-  "baselineHead": "ca7b9e8",
+  "baselineHead": "6b7a82a",
   "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
   "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
   "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
-  "releaseGate": "Writer 2.8 sửa tham chiếu foundation liên cung và biên luận; chưa gọi API phiên bản mới. Bốn bài Sol 2.7 đã lưu và lỗi Tài cũ giữ nguyên. P09 vẫn not-verified theo tiêu chí hiện có; không đổi Astra thành Sol hoặc mock để tự nâng điểm, không mở bán.",
+  "releaseGate": "Chủ dự án chưa chốt phạm vi thương mại và yêu cầu tiếp tục giữ QA. Writer2.8 chưa kiểm API thật. Đã hoàn thiện recovery/TTL và bộ 10 bản đề xuất QA; Tật chưa có bài cá nhân được duyệt. Không mở bán hoặc đổi offer/QA3062/3070.",
   "freeMenh": "V1/Luna giữ nguyên, ngoài chỉ số11cung trả phí.",
   "apiCreate": 0,
   "apiGet": 0,
@@ -60,8 +60,8 @@
     },
     {
       "id": "P09",
-      "title": "Astra hiện hành đạt đánh giá thực",
-      "definition": "API thật trên cấu hình hiện hành, đánh giá toàn văn đạt; mock/model nhẹ không thay mục này.",
+      "title": "Model trả phí đã chọn đạt đánh giá thực",
+      "definition": "API thật trên model trả phí được chủ dự án chọn, đúng prompt/input/schema hiện hành; đọc toàn văn đạt trong phạm vi đã chốt. Mock, bản biên tập Codex hoặc model khác không thay mục này.",
       "weight": 10
     },
     {
@@ -131,8 +131,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": "docs/AI-PAID-DEPTH28-MOCK-20261103.md",
-          "note": "Writer mới 2.8 đã kiểm mock, chưa gọi API. Không dùng bản biên tập Codex hoặc phép kiểm offline output 2.7 làm nghiệm thu model mới; giữ mọi bài và đánh giá cũ."
+          "evidence": "docs/AI-PAID-QA-HARDENING-20261103.md",
+          "note": "Tiêu chí1.1 theo model trả phí chủ dự án chọn (hiện gpt-6.1-sol), không buộc dùng Astra cũ. Chưa API thật với writer2.8; mock và bản Codex không nâng điểm, bài cũ nguyên."
         },
         {
           "id": "P10",
@@ -201,8 +201,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": "docs/AI-PAID-DEPTH28-MOCK-20261103.md",
-          "note": "Writer mới 2.8 đã kiểm mock, chưa gọi API. Không dùng bản biên tập Codex hoặc phép kiểm offline output 2.7 làm nghiệm thu model mới; giữ mọi bài và đánh giá cũ."
+          "evidence": "docs/AI-PAID-QA-HARDENING-20261103.md",
+          "note": "Tiêu chí1.1 theo model trả phí chủ dự án chọn (hiện gpt-6.1-sol), không buộc dùng Astra cũ. Chưa API thật với writer2.8; mock và bản Codex không nâng điểm, bài cũ nguyên."
         },
         {
           "id": "P10",
@@ -271,8 +271,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": "docs/AI-PAID-DEPTH28-MOCK-20261103.md",
-          "note": "Writer mới 2.8 đã kiểm mock, chưa gọi API. Không dùng bản biên tập Codex hoặc phép kiểm offline output 2.7 làm nghiệm thu model mới; giữ mọi bài và đánh giá cũ."
+          "evidence": "docs/AI-PAID-QA-HARDENING-20261103.md",
+          "note": "Tiêu chí1.1 theo model trả phí chủ dự án chọn (hiện gpt-6.1-sol), không buộc dùng Astra cũ. Chưa API thật với writer2.8; mock và bản Codex không nâng điểm, bài cũ nguyên."
         },
         {
           "id": "P10",
@@ -341,8 +341,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": "docs/AI-PAID-DEPTH28-MOCK-20261103.md",
-          "note": "Writer mới 2.8 đã kiểm mock, chưa gọi API. Không dùng bản biên tập Codex hoặc phép kiểm offline output 2.7 làm nghiệm thu model mới; giữ mọi bài và đánh giá cũ."
+          "evidence": "docs/AI-PAID-QA-HARDENING-20261103.md",
+          "note": "Tiêu chí1.1 theo model trả phí chủ dự án chọn (hiện gpt-6.1-sol), không buộc dùng Astra cũ. Chưa API thật với writer2.8; mock và bản Codex không nâng điểm, bài cũ nguyên."
         },
         {
           "id": "P10",
@@ -411,8 +411,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": "docs/AI-PAID-DEPTH28-MOCK-20261103.md",
-          "note": "Writer mới 2.8 đã kiểm mock, chưa gọi API. Không dùng bản biên tập Codex hoặc phép kiểm offline output 2.7 làm nghiệm thu model mới; giữ mọi bài và đánh giá cũ."
+          "evidence": "docs/AI-PAID-QA-HARDENING-20261103.md",
+          "note": "Tiêu chí1.1 theo model trả phí chủ dự án chọn (hiện gpt-6.1-sol), không buộc dùng Astra cũ. Chưa API thật với writer2.8; mock và bản Codex không nâng điểm, bài cũ nguyên."
         },
         {
           "id": "P10",
@@ -481,8 +481,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": "docs/AI-PAID-DEPTH28-MOCK-20261103.md",
-          "note": "Writer mới 2.8 đã kiểm mock, chưa gọi API. Không dùng bản biên tập Codex hoặc phép kiểm offline output 2.7 làm nghiệm thu model mới; giữ mọi bài và đánh giá cũ."
+          "evidence": "docs/AI-PAID-QA-HARDENING-20261103.md",
+          "note": "Tiêu chí1.1 theo model trả phí chủ dự án chọn (hiện gpt-6.1-sol), không buộc dùng Astra cũ. Chưa API thật với writer2.8; mock và bản Codex không nâng điểm, bài cũ nguyên."
         },
         {
           "id": "P10",
@@ -551,8 +551,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": "docs/AI-PAID-DEPTH28-MOCK-20261103.md",
-          "note": "Writer mới 2.8 đã kiểm mock, chưa gọi API. Không dùng bản biên tập Codex hoặc phép kiểm offline output 2.7 làm nghiệm thu model mới; giữ mọi bài và đánh giá cũ."
+          "evidence": "docs/AI-PAID-QA-HARDENING-20261103.md",
+          "note": "Tiêu chí1.1 theo model trả phí chủ dự án chọn (hiện gpt-6.1-sol), không buộc dùng Astra cũ. Chưa API thật với writer2.8; mock và bản Codex không nâng điểm, bài cũ nguyên."
         },
         {
           "id": "P10",
@@ -621,8 +621,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": "docs/AI-PAID-DEPTH28-MOCK-20261103.md",
-          "note": "Writer mới 2.8 đã kiểm mock, chưa gọi API. Không dùng bản biên tập Codex hoặc phép kiểm offline output 2.7 làm nghiệm thu model mới; giữ mọi bài và đánh giá cũ."
+          "evidence": "docs/AI-PAID-QA-HARDENING-20261103.md",
+          "note": "Tiêu chí1.1 theo model trả phí chủ dự án chọn (hiện gpt-6.1-sol), không buộc dùng Astra cũ. Chưa API thật với writer2.8; mock và bản Codex không nâng điểm, bài cũ nguyên."
         },
         {
           "id": "P10",
@@ -691,8 +691,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": "docs/AI-PAID-DEPTH28-MOCK-20261103.md",
-          "note": "Writer mới 2.8 đã kiểm mock, chưa gọi API. Không dùng bản biên tập Codex hoặc phép kiểm offline output 2.7 làm nghiệm thu model mới; giữ mọi bài và đánh giá cũ."
+          "evidence": "docs/AI-PAID-QA-HARDENING-20261103.md",
+          "note": "Tiêu chí1.1 theo model trả phí chủ dự án chọn (hiện gpt-6.1-sol), không buộc dùng Astra cũ. Chưa API thật với writer2.8; mock và bản Codex không nâng điểm, bài cũ nguyên."
         },
         {
           "id": "P10",
@@ -761,8 +761,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": "docs/AI-PAID-DEPTH28-MOCK-20261103.md",
-          "note": "Writer mới 2.8 đã kiểm mock, chưa gọi API. Không dùng bản biên tập Codex hoặc phép kiểm offline output 2.7 làm nghiệm thu model mới; giữ mọi bài và đánh giá cũ."
+          "evidence": "docs/AI-PAID-QA-HARDENING-20261103.md",
+          "note": "Tiêu chí1.1 theo model trả phí chủ dự án chọn (hiện gpt-6.1-sol), không buộc dùng Astra cũ. Chưa API thật với writer2.8; mock và bản Codex không nâng điểm, bài cũ nguyên."
         },
         {
           "id": "P10",
@@ -831,8 +831,8 @@
         {
           "id": "P09",
           "status": "not-verified",
-          "evidence": "docs/AI-PAID-DEPTH28-MOCK-20261103.md",
-          "note": "Writer mới 2.8 đã kiểm mock, chưa gọi API. Không dùng bản biên tập Codex hoặc phép kiểm offline output 2.7 làm nghiệm thu model mới; giữ mọi bài và đánh giá cũ."
+          "evidence": "docs/AI-PAID-QA-HARDENING-20261103.md",
+          "note": "Tiêu chí1.1 theo model trả phí chủ dự án chọn (hiện gpt-6.1-sol), không buộc dùng Astra cũ. Chưa API thật với writer2.8; mock và bản Codex không nâng điểm, bài cũ nguyên."
         },
         {
           "id": "P10",
@@ -843,7 +843,7 @@
       ]
     }
   ],
-  "lastReview": "foundation-scope-paid2.8-four-proposals-mock",
+  "lastReview": "qa-hardening-recovery-ttl-full-manuscript",
   "history": [
     {
       "updatedAt": "2026-11-02",
@@ -1294,6 +1294,31 @@
       "apiCreate": 0,
       "apiGet": 0,
       "note": "Tham chiếu foundation liên cung có ràng buộc, prompt2.8 và bốn bản đề xuất biên tập; 11 cung giữ90%, P09 chưa kiểm model mới. Không DB/deploy hoặc sửa lịch sử."
+    },
+    {
+      "updatedAt": "2026-11-03",
+      "baselineHead": "6b7a82a",
+      "criteriaChanged": true,
+      "criteriaVersion": "paid-content-checklist-1.1.0",
+      "previousCriterion": {
+        "id": "P09",
+        "title": "Astra hiện hành đạt đánh giá thực",
+        "definition": "API thật trên cấu hình hiện hành, đánh giá toàn văn đạt; mock/model nhẹ không thay mục này.",
+        "weight": 10
+      },
+      "currentCriterion": {
+        "id": "P09",
+        "title": "Model trả phí đã chọn đạt đánh giá thực",
+        "definition": "API thật trên model trả phí được chủ dự án chọn, đúng prompt/input/schema hiện hành; đọc toàn văn đạt trong phạm vi đã chốt. Mock, bản biên tập Codex hoặc model khác không thay mục này.",
+        "weight": 10
+      },
+      "statusChanged": false,
+      "report": "docs/AI-PAID-QA-HARDENING-20261103.md",
+      "apiCreate": 0,
+      "apiGet": 0,
+      "note": "Bỏ tên Astra cố định theo lựa chọn Sol của chủ dự án, vẫn yêu cầu API thật đúng model/prompt và đánh giá toàn văn. Không hạ chuẩn hoặc đổi điểm:11cung90%,P09chưa kiểm. Chủ dự án trả lời Chưa chốt, tiếp tục giữ QA cho phạm vi thương mại."
     }
-  ]
+  ],
+  "criteriaVersion": "paid-content-checklist-1.1.0",
+  "paidModelTarget": "gpt-6.1-sol"
 }

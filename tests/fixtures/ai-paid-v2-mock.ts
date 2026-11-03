@@ -55,7 +55,10 @@ export function mockPaidV2(
                 title: "Luận điểm có căn cứ",
                 paragraphs: [
                   {
-                    text: "BẢN MÔ PHỎNG KIỂM THỬ. " + k!.text,
+                    // Technical fixture only: raw knowledge may contain source
+                    // attribution/internal vocabulary that customer prose forbids.
+                    // Do not pretend that copying it tests editorial quality.
+                    text: "BẢN MÔ PHỎNG KIỂM THỬ. Chỉ xác minh lưu, phiên bản và quyền đọc; không phải bài luận dành cho khách hàng.",
                     basis: "source-interpretation",
                     factIds: anchors,
                     knowledgeIds: [k!.id],
@@ -70,7 +73,7 @@ export function mockPaidV2(
                       title: "Tổng hợp để tự đối chiếu",
                       paragraphs: [
                         {
-                          text: "BẢN MÔ PHỎNG: lời nguồn trên chỉ gợi một cách tự quan sát trong phạm vi đã nêu, không phải kết luận về đời sống người đọc.",
+                          text: "BẢN MÔ PHỎNG: diễn giải chỉ gợi một cách tự quan sát trong phạm vi đã nêu, không phải kết luận về đời sống người đọc.",
                           basis: "ai-synthesis",
                           factIds: anchors,
                           knowledgeIds: [k!.id],

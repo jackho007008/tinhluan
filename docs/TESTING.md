@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 03/11 — 227case hardening/DB, thêm kiểm CLI riêng
+
+185unit/9file +42integration/3file đạt; một ca recovery chạy riêng qua CLI kiểm dry-run/apply/receipt replay/owner retry và giữ attempt cũ. DBtest mới55459, mạng ngoài/OpenAI bị chặn, đã backup/dừng. Typecheck/build cách ly đạt, 10 bản biên tập qua validator2.8, preview360/390 không tràn; chưa browser owner/runtime mới. Giữ các lỗi đầu trong log, không nới guard hoặc sửa nguồn để xanh. [Log và phạm vi](AI-PAID-QA-HARDENING-20261103.md).
+
 ## 03/11 — Foundation2.8 và bốn bản biên tập, chỉ offline
 
 222/222 test ở9file, typecheck/build cách ly đạt; giữ log lỗi đầu gồm assertion prompt theo cung, default writer cũ và hai implicit-any trong test. Bốn bản đề xuất qua validator,10probe âm bị chặn; Tài nguyên văn qua2.8/không qua2.7,11prompt cũ và52artifact nguyên. 0 API/DB/worker/deploy/E2E/PDF; không dùng mock làm nghiệm thu model. [Log và giới hạn](AI-PAID-DEPTH28-MOCK-20261103.md).

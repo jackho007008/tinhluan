@@ -54,7 +54,7 @@ try {
     usage: r.usage || null,
     estimatedCostUsd:
       r.estimated_cost_usd == null ? null : Number(r.estimated_cost_usd),
-    cost: r.cost || null,
+    cost: r.cost || r.usage?._cost || null,
     timing: r.timing || null,
   }));
   let supervisor: unknown = null;

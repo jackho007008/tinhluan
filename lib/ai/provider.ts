@@ -26,6 +26,7 @@ export type Narrator = (
   recovery?: {
     responseId?: string;
     promptVersion?: string;
+    cacheWriteTtl?: "30m" | "12h";
     onResponseCreated: (id: string, model: string) => Promise<void>;
   },
 ) => Promise<Generation>;
@@ -74,12 +75,25 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
   if (!recovery?.responseId) {
     try {
       await client.models.retrieve(config.model!);
-    } catch {
+    } catch (error) {
+      if (
+        error instanceof OpenAI.APIError &&
+        error.status &&
+        error.status < 500
+      ) {
+        const failure = providerFailure(error, error.status);
+        throw new GenerationFailure(failure.code, failure.retryable);
+      }
       throw new GenerationFailure("AI_MODEL_UNAVAILABLE", true);
     }
   }
   const start = Date.now();
   let responseId = recovery?.responseId;
+  const cacheWriteTtl = responseId
+    ? recovery?.cacheWriteTtl
+    : ["gpt-6-astra", "gpt-6.1-sol"].includes(config.model || "")
+      ? ("30m" as const)
+      : undefined;
   try {
     if (config.background && !recovery)
       throw new GenerationFailure("AI_RECOVERY_REQUIRED", false);
@@ -93,6 +107,11 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
       : await client.responses.create(
           {
             model: config.model!,
+            ...(cacheWriteTtl
+              ? // New CREATE is pinned to the lifetime supported by this SDK.
+                // A saved 12h lifetime is read only for GET cost reconciliation.
+                { prompt_cache_options: { ttl: "30m" as const } }
+              : {}),
             store: config.background,
             ...(config.background ? { background: true } : {}),
             instructions,
@@ -146,7 +165,10 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
         timeout: Math.min(config.timeoutMs, timeout),
       });
     }
-    const { usage, estimatedCostUsd, cost } = responseCost(response);
+    const { usage, estimatedCostUsd, cost } = responseCost(
+      response,
+      cacheWriteTtl ? { cacheWriteTtl } : undefined,
+    );
     let raw: unknown = null;
     try {
       raw = JSON.parse(response.output_text);
@@ -159,7 +181,15 @@ export const openaiNarrator: Narrator = async (input, attemptId, recovery) => {
       ...(response.status === "failed"
         ? { failure: providerFailure(response.error) }
         : response.status !== "completed"
-          ? { failure: { code: response.status === "incomplete" ? "AI_OUTPUT_INCOMPLETE" : "AI_PROVIDER_CANCELLED", retryable: false } }
+          ? {
+              failure: {
+                code:
+                  response.status === "incomplete"
+                    ? "AI_OUTPUT_INCOMPLETE"
+                    : "AI_PROVIDER_CANCELLED",
+                retryable: false,
+              },
+            }
           : {}),
       cost,
       timing: {

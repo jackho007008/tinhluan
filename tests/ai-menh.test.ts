@@ -1092,7 +1092,7 @@ describe("official SDK adapter with intercepted HTTP, no real API calls", () => 
       );
     vi.stubGlobal("fetch", fetcher);
     await expect(openaiNarrator(input, randomUUID())).rejects.toMatchObject({
-      code: "AI_MODEL_UNAVAILABLE",
+      code: "AI_ACCESS_UNAVAILABLE",
     });
     expect(fetcher).toHaveBeenCalledTimes(1);
     vi.stubEnv("OPENAI_API_KEY", "");

@@ -1,4 +1,5 @@
-import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v26";
+import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v28";
+import { authorizePaidAccountRetry } from "../lib/ai/account-recovery";
 import { PAID_PROMPT_V2 } from "../lib/ai/paid-reading-v2";
 import { mockPaidV2 } from "./fixtures/ai-paid-v2-mock";
 import { beforeAll, afterAll, it, expect, vi } from "vitest";
@@ -6,6 +7,7 @@ import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { randomUUID, createHmac } from "node:crypto";
+import { spawnSync } from "node:child_process";
 import { NextRequest } from "next/server";
 import { pool } from "../lib/db";
 import {
@@ -176,7 +178,9 @@ it("new V2 jobs honor duplicate payment/grants, deliver three coverage states, a
     ])
   ).rows;
   expect(jobs).toHaveLength(11);
-  expect(jobs.every((j) => j.prompt_version === PAID_PROMPT_CURRENT)).toBe(true);
+  expect(jobs.every((j) => j.prompt_version === PAID_PROMPT_CURRENT)).toBe(
+    true,
+  );
   for (const [palace, coverage] of [
     ["Quan Lộc", "focused"],
     ["Tài Bạch", "limited"],
@@ -324,32 +328,272 @@ it("V1 pending receipt survives writer V2 enablement and reconciles with its old
   expect(v.limited).toBe(0);
 });
 it("terminal credit failure preserves receipt and rights; V2 validation failure is not uncertain", async () => {
-  const fresh = {...structuredClone(record), id:randomUUID(), createdAt:new Date().toISOString()};
+  const fresh = {
+    ...structuredClone(record),
+    id: randomUUID(),
+    createdAt: new Date().toISOString(),
+  };
   const owner = await createTrialOwner();
-  await saveTrialReading(owner.owner,fresh);
-  await linkCreatedReading(user.token,owner.token,fresh.id);
-  vi.stubEnv("AI_PAID_READING_V2_ENABLED","true");
-  const id = await createCheckout(user.token,fresh.id,"cung-4",testOffer()!.version);
-  const c = (await pool.query("SELECT code FROM orders WHERE id=$1",[id])).rows[0].code;
-  await pay(c); await runReportJob(id); await reconcilePaidOrders(fresh.id);
-  await runAiMenhJob(async (input,_a,recovery) => {
-    await recovery!.onResponseCreated("resp_mock_credit_terminal","gpt-6-astra");
-    return {...mockPaidV2(input),provider:"openai",responseId:"resp_mock_credit_terminal",raw:null,estimatedCostUsd:null,
-      failure:{code:"AI_BILLING_UNAVAILABLE",retryable:false}};
-  },{paid:true,readingId:fresh.id,palace:"Quan Lộc"});
-  const row = (await pool.query("SELECT j.*,row_to_json(a) AS attempt FROM ai_reading_jobs j LEFT JOIN ai_reading_attempts a ON a.id=j.attempt_id WHERE j.reading_id=$1 AND j.palace='Quan Lộc'",[fresh.id])).rows[0];
-  expect(row).toMatchObject({status:"error",error_code:"AI_BILLING_UNAVAILABLE",attempts:1,retryable:false,result:null});
-  expect(row.attempt).toMatchObject({response_id:"resp_mock_credit_terminal",error_code:"AI_BILLING_UNAVAILABLE"});
-  await retryPaid(fresh,id,"Quan Lộc");
+  await saveTrialReading(owner.owner, fresh);
+  await linkCreatedReading(user.token, owner.token, fresh.id);
+  vi.stubEnv("AI_PAID_READING_V2_ENABLED", "true");
+  const id = await createCheckout(
+    user.token,
+    fresh.id,
+    "cung-4",
+    testOffer()!.version,
+  );
+  const c = (await pool.query("SELECT code FROM orders WHERE id=$1", [id]))
+    .rows[0].code;
+  await pay(c);
+  await runReportJob(id);
+  await reconcilePaidOrders(fresh.id);
+  await runAiMenhJob(
+    async (input, _a, recovery) => {
+      await recovery!.onResponseCreated(
+        "resp_mock_credit_terminal",
+        "gpt-6-astra",
+      );
+      return {
+        ...mockPaidV2(input),
+        provider: "openai",
+        responseId: "resp_mock_credit_terminal",
+        raw: null,
+        estimatedCostUsd: null,
+        failure: { code: "AI_BILLING_UNAVAILABLE", retryable: false },
+      };
+    },
+    { paid: true, readingId: fresh.id, palace: "Quan Lộc" },
+  );
+  const row = (
+    await pool.query(
+      "SELECT j.*,row_to_json(a) AS attempt FROM ai_reading_jobs j LEFT JOIN ai_reading_attempts a ON a.id=j.attempt_id WHERE j.reading_id=$1 AND j.palace='Quan Lộc'",
+      [fresh.id],
+    )
+  ).rows[0];
+  expect(row).toMatchObject({
+    status: "error",
+    error_code: "AI_BILLING_UNAVAILABLE",
+    attempts: 1,
+    retryable: false,
+    result: null,
+  });
+  expect(row.attempt).toMatchObject({
+    response_id: "resp_mock_credit_terminal",
+    error_code: "AI_BILLING_UNAVAILABLE",
+  });
+  await retryPaid(fresh, id, "Quan Lộc");
   let invoked = 0;
-  await runAiMenhJob(async () => {invoked++; throw Error("NO_REPEAT");},{paid:true,readingId:fresh.id,palace:"Quan Lộc",allowCreate:false});
+  await runAiMenhJob(
+    async () => {
+      invoked++;
+      throw Error("NO_REPEAT");
+    },
+    { paid: true, readingId: fresh.id, palace: "Quan Lộc", allowCreate: false },
+  );
   expect(invoked).toBe(0);
-  expect((await readPaid(fresh,id)).eligible).toBe(true);
-  await runAiMenhJob(async input => {
-    const gen = mockPaidV2(input,"focused");
-    (gen.raw as any).sections[1].id = (gen.raw as any).sections[0].id;
-    return gen;
-  },{paid:true,readingId:fresh.id,palace:"Tài Bạch"});
-  expect((await pool.query("SELECT status,error_code,attempts FROM ai_reading_jobs WHERE reading_id=$1 AND palace='Tài Bạch'",[fresh.id])).rows[0])
-    .toMatchObject({status:"error",error_code:"AI_INVALID_OUTPUT",attempts:1});
+  expect((await readPaid(fresh, id)).eligible).toBe(true);
+  await runAiMenhJob(
+    async (input) => {
+      const gen = mockPaidV2(input, "focused");
+      (gen.raw as any).sections[1].id = (gen.raw as any).sections[0].id;
+      return gen;
+    },
+    { paid: true, readingId: fresh.id, palace: "Tài Bạch" },
+  );
+  expect(
+    (
+      await pool.query(
+        "SELECT status,error_code,attempts FROM ai_reading_jobs WHERE reading_id=$1 AND palace='Tài Bạch'",
+        [fresh.id],
+      )
+    ).rows[0],
+  ).toMatchObject({
+    status: "error",
+    error_code: "AI_INVALID_OUTPUT",
+    attempts: 1,
+  });
+});
+it("operator recovery preserves the failed receipt/attempt and still requires an authorized owner retry", async () => {
+  const fresh = {
+      ...structuredClone(record),
+      id: randomUUID(),
+      createdAt: new Date().toISOString(),
+    },
+    owner = await createTrialOwner();
+  await saveTrialReading(owner.owner, fresh);
+  await linkCreatedReading(user.token, owner.token, fresh.id);
+  const order2 = await createCheckout(
+      user.token,
+      fresh.id,
+      "cung-4",
+      testOffer()!.version,
+    ),
+    code2 = (await pool.query("SELECT code FROM orders WHERE id=$1", [order2]))
+      .rows[0].code;
+  await pay(code2);
+  await runReportJob(order2);
+  await reconcilePaidOrders(fresh.id);
+  let generations = 0;
+  await runAiMenhJob(
+    async (i, _a, recovery) => {
+      generations++;
+      await recovery!.onResponseCreated(
+        "resp_mock_recovery_failed",
+        "gpt-6-astra",
+      );
+      return {
+        ...mockPaidV2(i),
+        provider: "openai",
+        responseId: "resp_mock_recovery_failed",
+        raw: null,
+        estimatedCostUsd: null,
+        failure: { code: "AI_BILLING_UNAVAILABLE", retryable: false },
+      };
+    },
+    { paid: true, readingId: fresh.id, palace: "Quan Lộc" },
+  );
+  const before = (
+    await pool.query(
+      "SELECT j.*,row_to_json(a) AS attempt FROM ai_reading_jobs j JOIN ai_reading_attempts a ON a.id=j.attempt_id WHERE j.reading_id=$1 AND j.palace='Quan Lộc'",
+      [fresh.id],
+    )
+  ).rows[0];
+  vi.stubEnv("AI_PAID_OPERATOR_RECOVERY_ENABLED", "true");
+  vi.stubEnv("AI_PAID_MAX_DAILY_CREATES", "100");
+  const identity = (
+      await pool.query(
+        "SELECT current_database() AS name,inet_server_port() AS port",
+      )
+    ).rows[0],
+    now = Date.now();
+  const plan = {
+    version: "paid-account-recovery-1.0.0",
+    database: identity.name,
+    port: identity.port,
+    readingId: fresh.id,
+    createdAt: new Date(now - 1000).toISOString(),
+    expiresAt: new Date(now + 60000).toISOString(),
+    accountAndFailureVerified: true,
+    reason: "Mock provider billing failure verified and test credit restored.",
+    reserveUsd: 2,
+    jobs: [
+      {
+        jobId: before.id,
+        attemptId: before.attempt_id,
+        responseId: before.attempt.response_id,
+        errorCode: "AI_BILLING_UNAVAILABLE",
+      },
+    ],
+  };
+  expect(await authorizePaidAccountRetry(pool, plan)).toMatchObject({
+    mode: "dry-run",
+    changed: 0,
+  });
+  expect(
+    (
+      await pool.query("SELECT retryable FROM ai_reading_jobs WHERE id=$1", [
+        before.id,
+      ])
+    ).rows[0].retryable,
+  ).toBe(false);
+  const planFile = path.join(
+    await fs.mkdtemp(path.join(os.tmpdir(), "ai-recovery-plan-")),
+    "plan.json",
+  );
+  await fs.writeFile(planFile, JSON.stringify(plan), { mode: 0o600 });
+  const cli = (apply = false) =>
+    spawnSync(
+      process.execPath,
+      [
+        "--import",
+        "tsx",
+        "scripts/ai-paid-account-recovery.ts",
+        planFile,
+        ...(apply ? ["--apply"] : []),
+      ],
+      {
+        cwd: process.cwd(),
+        env: { ...process.env, OPENAI_API_KEY: "" },
+        encoding: "utf8",
+        timeout: 10000,
+      },
+    );
+  const preview = cli();
+  expect(preview.status).toBe(0);
+  expect(JSON.parse(preview.stdout)).toMatchObject({
+    mode: "dry-run",
+    changed: 0,
+  });
+  const applied = cli(true);
+  expect(applied.status).toBe(0);
+  expect(JSON.parse(applied.stdout)).toMatchObject({
+    changed: 1,
+    providerCreates: 0,
+  });
+  expect(
+    JSON.parse(await fs.readFile(planFile + ".receipt.json", "utf8")).state,
+  ).toBe("authorized");
+  expect(cli(true).status).not.toBe(0); // a receipt is never silently replayed
+  const authorized = (
+    await pool.query(
+      "SELECT j.*,row_to_json(a) AS attempt FROM ai_reading_jobs j JOIN ai_reading_attempts a ON a.id=j.attempt_id WHERE j.id=$1",
+      [before.id],
+    )
+  ).rows[0];
+  expect(authorized.attempt).toEqual(before.attempt);
+  expect(authorized.status).toBe("error");
+  expect(authorized.attempts).toBe(1);
+  expect(authorized.retryable).toBe(true);
+  expect(
+    (
+      await pool.query(
+        "SELECT EXISTS(SELECT 1 FROM ai_reading_jobs WHERE reading_id=$1 AND status='error' AND NOT retryable AND error_code IN ('AI_BILLING_UNAVAILABLE','AI_ACCESS_UNAVAILABLE')) AS blocked",
+        [fresh.id],
+      )
+    ).rows[0].blocked,
+  ).toBe(false);
+  await readPaid(fresh, order2);
+  expect(generations).toBe(1);
+  // Existing owner-only retry validates the original grant, not the operator plan.
+  await expect(retryPaid(fresh, order, "Quan Lộc")).rejects.toThrow(
+    "AI_PAID_ACCESS_DENIED",
+  );
+  expect(
+    (
+      await pool.query("SELECT status FROM ai_reading_jobs WHERE id=$1", [
+        before.id,
+      ])
+    ).rows[0].status,
+  ).toBe("error");
+  await pool.query(
+    "UPDATE ai_reading_jobs SET run_after=now()-interval '1 second' WHERE id=$1",
+    [before.id],
+  );
+  await retryPaid(fresh, order2, "Quan Lộc");
+  await runAiMenhJob(
+    async (i) => {
+      generations++;
+      return mockPaidV2(i);
+    },
+    { paid: true, readingId: fresh.id, palace: "Quan Lộc" },
+  );
+  const after = (
+    await pool.query(
+      "SELECT status,attempts,attempt_id FROM ai_reading_jobs WHERE id=$1",
+      [before.id],
+    )
+  ).rows[0];
+  expect(after.status).toBe("completed");
+  expect(after.attempts).toBe(2);
+  expect(after.attempt_id).not.toBe(before.attempt_id);
+  expect(generations).toBe(2);
+  expect(
+    (
+      await pool.query(
+        "SELECT row_to_json(a) AS attempt FROM ai_reading_attempts a WHERE id=$1",
+        [before.attempt_id],
+      )
+    ).rows[0].attempt,
+  ).toEqual(before.attempt);
 });

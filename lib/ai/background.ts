@@ -14,6 +14,7 @@ export const backgroundLimits = () => ({
   reservationUsd: bounded("AI_PAID_REQUEST_RESERVATION_USD", 2, 0.01, 100),
 });
 export type BackgroundState = {
+  cacheWriteTtl?: "30m" | "12h";
   observationMsTotal?: number;
   checks?: number;
   reservedUsd?: number;

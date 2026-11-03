@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 03/11 — Hoàn thiện phần QA khả thi, chưa phát hành
+
+Đã bổ sung khôi phục billing/access qua owner retry, tách lifetime/cost và giữ attempt, kiểm mock toàn luồng11job trên DB mới. Ghép10 bản biên tập có căn cứ, Tật vẫn chưa có bài cá nhân. Điểm dừng theo lựa chọn chủ dự án: tiếp tục QA, chưa đổi offer/phạm vi hoặc gọi model/deploy. Checklist1.1 bỏ tên Astra cố định theo model đã chọn nhưng không đổi điểm/chuẩn API thật. [Bằng chứng và phần còn chặn](AI-PAID-QA-HARDENING-20261103.md).
+
 ## 03/11 — Khép lô sửa tham chiếu và biên luận bằng mock
 
 Đã tách version2.8 để nhận foundation liên cung đủ điều kiện, giữ bài/attempt2.7; thêm hướng dẫn lập luận không lặp và bốn bản đề xuất có căn cứ từng đoạn. Không thêm nguồn/rule hoặc schema/DB mới. Điểm dừng: 222 test/build và kiểm offline, chưa model thật/QA deployment hoặc giao lại bài Tài. [Đầu ra](AI-PAID-DEPTH28-MOCK-20261103.md).

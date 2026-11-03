@@ -59,7 +59,7 @@ export async function consumePaidScope(scope: PaidConsumerScope) {
       // must resolve the failed jobs before new dispatch in this scope resumes.
       const accountBlocked = (
         await pool.query(
-          `SELECT EXISTS(SELECT 1 FROM ai_reading_jobs WHERE edition=$1 AND reading_id=$2 AND status='error' AND error_code IN ('AI_BILLING_UNAVAILABLE','AI_ACCESS_UNAVAILABLE')) AS blocked`,
+          `SELECT EXISTS(SELECT 1 FROM ai_reading_jobs WHERE edition=$1 AND reading_id=$2 AND status='error' AND NOT retryable AND error_code IN ('AI_BILLING_UNAVAILABLE','AI_ACCESS_UNAVAILABLE')) AS blocked`,
           [PAID_EDITION, id],
         )
       ).rows[0].blocked;

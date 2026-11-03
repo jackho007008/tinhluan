@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 03/11 — Chủ dự án chưa chốt phạm vi, tiếp tục giữ QA
+
+Trước câu hỏi mô tả10cung theo căn cứ/Tật dữ kiện và không đồng độ sâu11bài, chủ dự án trả lời nguyên văn “Chưa chốt, tiếp tục giữ QA”. Không coi đề xuất phạm vi đã được duyệt, không sửa offer/giá/hoàn tiền hoặc mở bán. Hoàn thiện QA vận hành và bản đọc riêng, chưa API mới. Checklist1.1 đổi nhãn P09 từ Astra cố định sang model được chủ dự án chọn (hiện thử Sol theo cấu hình đã cho phép); vẫn API thật/toàn văn/đúng phiên bản, không hạ chuẩn hoặc tăng điểm bằng mock. [Bàn giao và giới hạn](AI-PAID-QA-HARDENING-20261103.md).
+
 ## 03/11 — Chỉ sửa tham chiếu và chiều sâu bằng mock
 
 Chủ dự án yêu cầu tiếp tục sửa Tài và cải thiện bốn bài đã có, chưa API, giữ bài cũ và QA3062/3070. Thực hiện version2.8 riêng cho contract/prompt mới và bản đề xuất biên tập ngoài báo cáo; không biến kiểm offline output cũ thành quyền ghi lại job hoặc nghiệm thu model. Không đổi tiêu chí tiến độ/thương mại. [Phạm vi đã làm](AI-PAID-DEPTH28-MOCK-20261103.md).

@@ -19,9 +19,11 @@ export function operatorDisposition(
     };
   if (r.status === "error" && r.error_code === "AI_BILLING_UNAVAILABLE")
     return {
-      state: "billing-unavailable",
+      state: r.retryable ? "billing-retry-authorized" : "billing-unavailable",
       needsOperator: true,
-      action: "verify-provider-credit-and-project-limits-no-automatic-create",
+      action: r.retryable
+        ? "explicit-owner-retry-required-no-create-on-read"
+        : "verify-provider-credit-and-project-limits-no-automatic-create",
     };
   if (r.status === "queued")
     return {

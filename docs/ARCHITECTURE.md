@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 03/11 — Recovery có kiểm soát và metadata cache trên attempt
+
+Operator CLI mặc định dry-run, apply chỉ retryable cho job/attempt/error khớp, cần grant, DB/plan hữu hạn, lock và budget; owner vẫn phải POST retry. Không queue/auth/migration mới. Lifetime30m được lưu trước CREATE, GET dùng saved context; usage giữ _cost kể cả validation lỗi, không gắn giá mới vào số tiền cũ khi revalidate. Metadata JSONB tương thích, không backfill. [Chi tiết và kiểm](AI-PAID-QA-HARDENING-20261103.md).
+
 ## 03/11 — Foundation liên cung có version, schema V2 giữ nguyên
 
 Chỉ validator2.8 mở nhánh B/foundation đứng riêng cho ai-synthesis: đủ mọi neo, target source-traced, sao liên cung natal source-traced, có geometry đúng vị trí và tên cung gốc trong đoạn. Location phải khớp neo sao cùng cung/chi. Không nâng thành direct/focused, không nới C/D hoặc y khoa; CREATE/GET dùng saved prompt/schema, 2.7 giữ nguyên. Không phụ thuộc kho nguồn hiện hành khi đọc attempt cũ. [Contract và kiểm](AI-PAID-DEPTH28-MOCK-20261103.md).

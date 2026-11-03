@@ -146,6 +146,8 @@ export async function runAiMenhJob(
       )
         return;
       state.reservedUsd = limits.reservationUsd;
+      if (["gpt-6-astra", "gpt-6.1-sol"].includes(row.requested_model))
+        state.cacheWriteTtl = "30m";
     }
     const attempt = randomUUID();
     await c.query(
@@ -189,6 +191,7 @@ export async function runAiMenhJob(
     generated = await narrator(job.input, job.attempt_id, {
       responseId: job.response_id,
       promptVersion: job.prompt_version,
+      cacheWriteTtl: job.background_state?.cacheWriteTtl,
       onResponseCreated: async (id, model) => {
         const saved = await pool.query(
           "UPDATE ai_reading_attempts SET response_id=$2,provider='openai',model=$3 WHERE id=$1 AND status='running' AND (response_id IS NULL OR response_id=$2) RETURNING id",
@@ -199,8 +202,11 @@ export async function runAiMenhJob(
     });
     if (job.revalidating_output && job.previous_duration_ms != null) {
       generated.durationMs = job.previous_duration_ms;
-      if (job.previous_estimated_cost_usd != null)
+      if (job.previous_estimated_cost_usd != null) {
         generated.estimatedCostUsd = Number(job.previous_estimated_cost_usd);
+        // Do not attach today's price calculation to a preserved older amount.
+        generated.cost = job.previous_usage?._cost;
+      }
     } else if (job.attempt_started_at)
       generated.durationMs = Math.max(
         generated.durationMs,
@@ -209,6 +215,7 @@ export async function runAiMenhJob(
     if (paid)
       generated.usage = {
         ...generated.usage,
+        ...(generated.cost ? { _cost: generated.cost } : {}),
         _background: {
           ...job.background_state,
           ...(generated.timing && {
@@ -221,7 +228,10 @@ export async function runAiMenhJob(
         },
       };
     if (generated.failure)
-      throw new GenerationFailure(generated.failure.code, generated.failure.retryable);
+      throw new GenerationFailure(
+        generated.failure.code,
+        generated.failure.retryable,
+      );
     const content = paid
       ? validatePaidNarration(generated.raw, job.input, job.prompt_version)
       : validateNarration(generated.raw, job.input);
@@ -279,8 +289,7 @@ export async function runAiMenhJob(
   } catch (error) {
     const known = error instanceof GenerationFailure ? error : undefined;
     const validation =
-      error instanceof Error &&
-      isOutputValidationError(error.message);
+      error instanceof Error && isOutputValidationError(error.message);
     // An infrastructure failure after a successful API call is ambiguous, too.
     const code =
         known?.code ||

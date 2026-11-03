@@ -152,6 +152,10 @@ export type AiResult<T = Narration> = {
     outputTokens: number;
     reasoningTokens: number;
     cacheWriteTokens?: number;
+    cacheWrite30mTokens?: number;
+    cacheWrite12hTokens?: number;
+    cacheLifetimeBreakdownComplete?: boolean;
+    _cost?: ReturnType<typeof import("./cost").responseCost>["cost"];
     cacheBreakdownComplete?: boolean;
     _background?: import("./background").BackgroundState;
   };
