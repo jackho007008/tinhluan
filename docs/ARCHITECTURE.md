@@ -2,7 +2,7 @@
 
 ## 03/11 — Hold dispatch khi tài khoản lỗi, giữ GET receipt
 
-Consumer hiện có kiểm billing/accesserror theo toàn reading trước CREATE; cungscope không vượt hold và restart vẫn nhận diện lỗi đã lưu. Không chặn đối soát receipt, không đổi attempt/backoff/queue/schema/entitlement; operator phải xử lý lỗi theo luồng hiện có, không tự xóa hold sau nạp credit. Cost chọn bảng Sol riêng/Astra cũ, guard sửa hai falsepositive có mock; chỉ build, chưa runtime deploy. [Bằng chứng và phạm vi](AI-PAID-SOL-11PALACES-20261103.md).
+Consumer hiện có kiểm lỗi billing/access theo toàn báo cáo trước CREATE; scope một cung không vượt hold và restart vẫn nhận diện lỗi đã lưu. Không chặn GET receipt hoặc đổi attempt/backoff/queue/schema/quyền. Không tự xóa hold sau nạp credit; hiện chưa có thao tác operator chuyên biệt mở lại lỗi billing không retryable, cần xử lý có quyền trước khi vận hành tiếp. Cost chọn bảng Sol riêng, giữ Astra cũ; sửa hai guard chặn nhầm có mock, chỉ build, chưa deploy. [Bằng chứng và phạm vi](AI-PAID-SOL-11PALACES-20261103.md).
 
 ## 03/11 — Chính sách lời khách dùng chung, validation theo version
 

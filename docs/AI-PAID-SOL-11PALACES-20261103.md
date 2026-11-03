@@ -44,7 +44,7 @@ Backup mới sau vòng thử đã kiểm `pg_restore -l`, 7.596.296byte; SHA256 
 2. **Tật:** câu phủ định hoàn chỉnh “không dùng để chẩn đoán, đề xuất điều trị, luận tuổi thọ, tử vong hoặc đánh giá sức khỏe cá nhân” bị medical guard chặn. Thêm **đúng câu đầy đủ** vào allowlist; câu nối chẩn đoán/dùng thuốc vẫn bị bác. Không dùng phát hiện phủ định tổng quát, không mở lời y khoa.
 3. Hai lỗi trên qua mock rồi dùng `runAiMenhJob(allowCreate:false,revalidateOutput:true)` GET đúng2response đã lưu, cùngattempt/responseID, không viết lại output. Phu thành limited, Tật thành insufficient. Các job khác nguyên. [Trước sửa](../.local/ai-paid-sol27-20261103/before-revalidation-private.json) · [Đối soát](../.local/ai-paid-sol27-20261103/revalidation.json).
 4. **Tài:** đoạn “Góc nhìn nghề nghiệp” chỉ dẫn `paid-library.thp2-tai-liem-than-trine` B/reference-only, neo gồm Mệnh/Quan. Contract hiện hành chỉ cho foundation đứng riêng khi mọi neo đã source-traced tại cung mục tiêu; đoạn này không có nguồn direct đi kèm nên `AI_REFERENCE_SCOPE`. Không phải factID không tồn tại, và không kết luận toàn đoạn bịa kiến thức. Đây là không tương thích cách dùng tham chiếu với contract, giữ chặn; muốn sửa phải đặc tả/test rõ cách dùng foundation liên cung, không tự nới để hợp bài.
-5. **Credit:** Background trả HTTP200 nhưng trạng thái response failed. Phân loại billing đã đúng; consumer vẫn tiếp tục gửi các job còn lại khi tài khoản lỗi. Đã thêm kiểm hold billing/access theo **toàn report** trước CREATE; receipt cũ vẫn GET, hold tồn tại qua restart/cungscope. Cần operator xử lý lỗi tài khoản/job theo luồng hiện có trước khi dispatch lại; không tự xóa trạng thái/giả sử nạp tiền đã giải quyết. Bản sửa mới chỉ mock/build, không chạy lại consumer thật. Không hoàn tác11lượt đã dùng.
+5. **Credit:** Background trả HTTP200 nhưng trạng thái response failed. Phân loại billing đã đúng; consumer vẫn tiếp tục gửi các job còn lại khi tài khoản lỗi. Đã thêm kiểm hold billing/access theo **toàn report** trước CREATE; receipt cũ vẫn GET, hold tồn tại qua restart/scope một cung. Cần xử lý có quyền trước khi dispatch lại; hiện chưa có thao tác operator chuyên biệt mở hold billing không retryable. Không tự xóa trạng thái hoặc giả sử nạp tiền đã giải quyết. Bản sửa mới chỉ mock/build, không chạy lại consumer thật. Không hoàn tác 11 lượt đã dùng.
 
 ## Đọc toàn văn và chất lượng
 
@@ -85,7 +85,7 @@ Reasoning nằm trong output, cachewrite/read nằm trong input, không cộng t
 
 Hồ sơ hiện hành của Phụ Mẫu,Phúc Đức,Điền Trạch,Quan Lộc,Nô Bộc,Thiên Di,Tật Ách,Tài Bạch,Tử Tức,Phu Thê,Huynh Đệ **đều giữ90%** theo checklist đang yêu cầuP09Astra2.7. Phép thửSol không âmthầm đổi tiêu chí hoặc tự nâng100%; mọi commercialReady=false. Riêng độgiao bàiSol là4/11limited,1insufficient,6error như trên, không dùng90% để che kết quả này.
 
-1. Chưa đủ11bài:5billingfailed; đã hết11CREATE đượcphép. Không tự retry sau nạpcredit hoặc phục hồi từ backup.
+1. Chưa đủ 11 bài: 5 billing failed; đã hết 11 CREATE được phép. Không tự retry sau nạp credit hoặc phục hồi backup; hold billing chưa có thao tác operator chuyên biệt để mở lại an toàn.
 2. Tài còn lỗi contract nguồn liêncung; bốn bài hợp lệ vẫnlimited và còn hạn chế chiều sâu/văn phong; Tật không đủ lời cá nhân. Không gắn nhãn chuyên sâu.
 3. Chưa nghiệmthu web owner/mởlại thưviện trên runtime mới, và chưa đốisoát hóađơn/TTLcache. Runtime mới khôngđược tự deploy từ thànhcông build.
 
