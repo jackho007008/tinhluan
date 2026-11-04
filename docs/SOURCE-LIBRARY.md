@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 04/11 — Đối chiếu hẹp điều kiện Sơ cấp
+
+Tái dùng các đoạn53,63–64,69,73–77,114–116,197–199,204–205,211–212,249–250; xem lại hình5/7 tại75/77. Bản chữ Trung văn web còn cùng lỗi, không coi là ảnh ấn bản xác minh. Bốn phiếu nguồn mới, không sửa trang sách/index hoặc nhận claim tự động. [Hồ sơ và giới hạn](AI-PAID-VDC-CONDITION-REVIEW-20261104.md).
+
 ## 04/11 — Hai nhánh Sơ cấp đã vào input mới theo điều kiện riêng
 
 Tái dùng khảo cứu305trang: bảng34+211 LiêmThân,35+198 HỏaTuất được nối riêng, không đổi bảngengine. Nô238–239/249 vàTử69/73–75/200 giữ phương pháp/ngoại lệ. Index-v12021unit,2mới/4method đổi;48artifactbundle/hash,không sửa sách/trang/indexcũ. Chỉ2nhánh cụ thể mởdirect,không nhận toàn bộ bảndịchmáy. [Bằng chứng và giới hạn](AI-PAID-VDC-INPUT120-HANDOFF-20261104.md).

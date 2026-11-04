@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 04/11 — Khép lô đối chiếu điều kiện Tài/Phu/Nô/Tử
+
+Đã đối chiếu đúng đoạn Việt/Trung và hình5/7; đặc tả lớp mượn không đổi facts. Chưa xác nhận lượng từ trợ tinh, chữ Phu hoặc hệ Hao trong câu phối hợp; đã ghi đúng vị trí ảnh Trung văn cần kiểm. Điểm dừng: hồ sơ/spec và 33 probe cấu trúc, chưa runtime/API hoặc publish. [Hồ sơ và giới hạn](AI-PAID-VDC-CONDITION-REVIEW-20261104.md).
+
 ## 04/11 — Khép lô tích hợp nguồn đã rõ cho bốn cung
 
 Theo yêu cầu mới: đưa2nhánh tác giả đã xác minh và4method sửa vào input1.20, giữ riêng tác giả/vị trí/liên cung. Mock/dry11/build đạt; không mở backlog/ruleprogram mới. Điểm dừng: đầu vào offline, chưa API hoặc phê duyệt nội dung/thương mại/deploy. [Bằng chứng và giới hạn](AI-PAID-VDC-INPUT120-HANDOFF-20261104.md).

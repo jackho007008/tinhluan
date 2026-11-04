@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 04/11 — Probe hồ sơ điều kiện, không kiểm ứng dụng
+
+33/33 probe đọc snapshot có sẵn đạt: định danh Hao, vị trí trợ/sát, geometry Tử và giữ inventory; 1.464 artifact cũ và96 hash bundle trước khớp. Không evaluator/model/DB/runtime; không test/build/typecheck ứng dụng vì chỉ sửa tài liệu. Đây là kiểm cấu trúc, không nghiệm thu nghĩa nguồn. [Hồ sơ và giới hạn](AI-PAID-VDC-CONDITION-REVIEW-20261104.md).
+
 ## 04/11 — Input1.20: điều kiện nguồn và bản sao kho đạt mock
 
 159/159test6file,dry11giữ159facts/cung/khôngrơinguồn,11bảncũ+2vídụ hợp lệ,1479file giữhash;bundle48artifact/96hash/4selector khớp. Typecheck/build cáchly đạt; giữlog4assertioncũ vàtypecheckthiếu2phụthuộcprivate trước khi bổsungđúngfile.0API/DB/deploy/UI/E2E/PDF;không gọi mock là nghiệmthu nghĩa/model. [Bằng chứng và giới hạn](AI-PAID-VDC-INPUT120-HANDOFF-20261104.md).

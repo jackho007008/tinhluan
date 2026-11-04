@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 04/11 — Rà điều kiện bốn cung, chưa mở nhánh mới
+
+Đã tách hệ Đại Hao, định vị lỗi chữ Phu, phân nhóm trợ tinh Nô và đặc tả mượn toàn hệ Tử. 33 probe cấu trúc đạt; 1.464 artifact giữ hash. Lượng từ Nô, câu Phu và hệ Hao trong phối hợp còn bất định; không sửa runtime/input1.20 hoặc bài cũ, 0 API/deploy. [Hồ sơ và giới hạn](AI-PAID-VDC-CONDITION-REVIEW-20261104.md).
+
 ## 04/11 — Tích hợp phần đã rõ vào input1.20, chưa cập nhật QA
 
 Hai nhánh có điều kiện Liêm Thân/Hỏa Tuất theo Vương Đình Chi, methodNô/Tử và guidePhúc choTài/Phu; facts/bài cũ nguyên.159test/dry11/typecheck/build đạt,0API/DB/deploy. Kho private21unit có bundle48artifact; chưa nghiệm thu model/thương mại. [Bằng chứng và giới hạn](AI-PAID-VDC-INPUT120-HANDOFF-20261104.md).

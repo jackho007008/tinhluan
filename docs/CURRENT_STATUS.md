@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 04/11 — Đã đặc tả điều kiện, không tăng nghiệm thu
+
+Tử có đặc tả toàn tinh hệ và geometry cung nhận; Tài phân biệt ba hệ Hao, Phu/Nô giữ đúng nhánh chưa rõ. Chưa triển khai toán tử hoặc nhận claim mới; input1.20/guide1.3 giữ. 33 probe đạt, 0 API/DB/deploy; 11 cung vẫn90% checklist hồ sơ, commercialReady=false. [Hồ sơ và giới hạn](AI-PAID-VDC-CONDITION-REVIEW-20261104.md).
+
 ## 04/11 — Input1.20/guide1.3 đã kiểm offline
 
 Tài/Phu thêm2luận điểm có điều kiện tác giả; Nô/Tử rõ phương pháp, không tự chọn nhánh thiếu lượng từ hoặc mượn sao.159test/build đạt,1479file giữhash;QA3118 vẫninput1.14,khôngupdateQA3062/3070.11cung giữ90%checklist hồ sơ,không phải thu phí;commercialReady=false. [Bằng chứng và giới hạn](AI-PAID-VDC-INPUT120-HANDOFF-20261104.md).
