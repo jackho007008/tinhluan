@@ -50,6 +50,26 @@ const webSource = z
     sha256: z.string().regex(/^[a-f0-9]{64}$/),
   })
   .strict();
+// Only two image-checked source table branches are admitted. They annotate the
+// author's interpretation; they never replace brightness in engine facts.
+const AUTHOR_CONDITIONS = {
+  "vdcsc-liem-than": {
+    palace: "Tài Bạch",
+    star: "Liêm Trinh",
+    field: "majorStars",
+    branch: "Thân",
+    table: 34,
+    passage: 211,
+  },
+  "vdcsc-hoa-tuat": {
+    palace: "Phu Thê",
+    star: "Hỏa Tinh",
+    field: "minorStars",
+    branch: "Tuất",
+    table: 35,
+    passage: 198,
+  },
+} as const;
 const unit = z
   .object({
     id: z.string().regex(/^[a-z0-9-]+$/),
@@ -75,6 +95,7 @@ const unit = z
       )
       .min(1)
       .max(4),
+    authorCondition: z.enum(["vdcsc-liem-than", "vdcsc-hoa-tuat"]).optional(),
     palaceConditions: z
       .array(
         z
@@ -110,10 +131,22 @@ const unit = z
     (u) => !u.webSources?.length || u.kind === "method",
     "Web research currently supports methods only, not personal interpretations",
   )
-  .refine(
-    (u) => !u.pages.some((p) => p.book === "vdcsc") || u.kind === "method",
-    "The supplied machine-translated introductory lectures support reviewed methods only",
-  )
+  .refine((u) => {
+    if (!u.authorCondition)
+      return !u.pages.some((p) => p.book === "vdcsc") || u.kind === "method";
+    const c = AUTHOR_CONDITIONS[u.authorCondition];
+    return (
+      u.kind === "direct" &&
+      !u.webSources &&
+      !u.replaces?.length &&
+      u.targets.length === 1 &&
+      u.targets[0] === c.palace &&
+      u.pages.every((p) => p.book === "vdcsc") &&
+      [c.table, c.passage].every((n) =>
+        u.pages.some((p) => p.number === n && p.layer === "text"),
+      )
+    );
+  }, "VDC personal branches require an explicitly reviewed author condition and table/passage evidence")
   .refine(
     (u) =>
       u.kind === "method" ||
@@ -151,6 +184,7 @@ export function paidLibrary(
   try {
     // Old checkouts keep reading their original index; new method units never
     // make a shared legacy index unreadable. Missing v1.6 assets use the old set.
+    const v120 = path.join(root, "paid-passages", "index-v120.json");
     const v119 = path.join(root, "paid-passages", "index-v119.json");
     const v118 = path.join(root, "paid-passages", "index-v118.json");
     const v117 = path.join(root, "paid-passages", "index-v117.json");
@@ -160,25 +194,27 @@ export function paidLibrary(
     const v110 = path.join(root, "paid-passages", "index-v110.json");
     const v17 = path.join(root, "paid-passages", "index-v17.json");
     const v16 = path.join(root, "paid-passages", "index-v16.json");
-    const file = fs.existsSync(v119)
-      ? v119
-      : fs.existsSync(v118)
-        ? v118
-        : fs.existsSync(v117)
-          ? v117
-          : fs.existsSync(v116)
-            ? v116
-            : fs.existsSync(v114)
-              ? v114
-              : fs.existsSync(v113)
-                ? v113
-                : fs.existsSync(v110)
-                  ? v110
-                  : fs.existsSync(v17)
-                    ? v17
-                    : fs.existsSync(v16)
-                      ? v16
-                      : path.join(root, "paid-passages", "index.json");
+    const file = fs.existsSync(v120)
+      ? v120
+      : fs.existsSync(v119)
+        ? v119
+        : fs.existsSync(v118)
+          ? v118
+          : fs.existsSync(v117)
+            ? v117
+            : fs.existsSync(v116)
+              ? v116
+              : fs.existsSync(v114)
+                ? v114
+                : fs.existsSync(v113)
+                  ? v113
+                  : fs.existsSync(v110)
+                    ? v110
+                    : fs.existsSync(v17)
+                      ? v17
+                      : fs.existsSync(v16)
+                        ? v16
+                        : path.join(root, "paid-passages", "index.json");
     if (fs.lstatSync(file).isSymbolicLink() || fs.statSync(file).size > 256000)
       throw Error();
     data = index.parse(JSON.parse(fs.readFileSync(file, "utf8")));
@@ -202,6 +238,41 @@ export function paidLibrary(
     }
     if (u.status !== "reviewed") {
       reject("not-reviewed");
+      continue;
+    }
+    const authorAnchors = u.authorCondition
+      ? (() => {
+          const c = AUTHOR_CONDITIONS[u.authorCondition];
+          const locations = input.facts.filter(
+            (f) =>
+              f.kind === "engine" &&
+              /^palace\.\d+\.location$/.test(f.id) &&
+              f.text.startsWith(`${c.palace} tại ${c.branch};`) &&
+              f.paths.includes(`chart.palaces.${f.id.split(".")[1]}`),
+          );
+          const stars = input.facts.filter(
+            (f) =>
+              f.kind === "engine" &&
+              f.provenance?.palace === c.palace &&
+              f.provenance.field === c.field &&
+              f.provenance.scope === "natal" &&
+              f.provenance.verification === "source-traced" &&
+              f.text.startsWith(`${c.palace} tại ${c.branch}: ${c.star};`) &&
+              locations.some((l) =>
+                f.paths.some((p) =>
+                  p.startsWith(
+                    `chart.palaces.${l.id.split(".")[1]}.${c.field}.`,
+                  ),
+                ),
+              ),
+          );
+          return locations.length === 1 && stars.length === 1
+            ? [...locations, ...stars].map((f) => f.id)
+            : [];
+        })()
+      : [];
+    if (u.authorCondition && !authorAnchors.length) {
+      reject("author-condition-not-met");
       continue;
     }
     // A name match does not establish an exclusive-star or branch condition.
@@ -284,6 +355,7 @@ export function paidLibrary(
     const anchorFactIds = [
       ...new Set([
         ...matches.flat().map((f) => f.id),
+        ...authorAnchors,
         ...input.facts
           .filter((f) =>
             u.palaceConditions?.some(
@@ -347,7 +419,12 @@ export function paidLibrary(
       id,
       title: u.title,
       text: u.text,
-      conditions: u.conditions,
+      conditions: u.authorCondition
+        ? [
+            ...u.conditions,
+            `Điều kiện riêng Vương Đình Chi: ${AUTHOR_CONDITIONS[u.authorCondition].star} tại ${AUTHOR_CONDITIONS[u.authorCondition].branch} là Miếu theo bảng PDF${AUTHOR_CONDITIONS[u.authorCondition].table}. Đây là lớp nguồn, không thay trạng thái engine hoặc đồng nhất Miếu/Vượng giữa tác giả.`,
+          ]
+        : u.conditions,
       limits: u.limits,
       references: u.references,
       group: u.kind === "method" ? "D" : "B",
@@ -369,12 +446,25 @@ export function paidLibrary(
         version: data.version,
         digest: digest(JSON.stringify(u)),
         kind: u.kind,
+        ...(u.authorCondition
+          ? {
+              authorCondition: {
+                id: u.authorCondition,
+                author: "Vương Đình Chi",
+                book: "vdcsc",
+                branch: AUTHOR_CONDITIONS[u.authorCondition].branch,
+                brightness: "Miếu",
+                tablePage: AUTHOR_CONDITIONS[u.authorCondition].table,
+              },
+            }
+          : {}),
         anchorFactIds: [...new Set(anchorFactIds)],
       },
     };
     candidates.push(reviewPaidSource(candidate, target));
   }
-  // Keep the original four book slots first. At most one web method may use
+  // Keep four book slots, or five when a reviewed author branch is present.
+  // The byte cap is unchanged; this avoids displacing its qualifying methods. At most one web method may use
   // remaining bytes, never evicting a book unit or raising the byte budget.
   const webIds = new Set(
     data.units
@@ -388,6 +478,7 @@ export function paidLibrary(
       b.passage!.anchorFactIds.length - a.passage!.anchorFactIds.length ||
       a.id.localeCompare(b.id),
   );
+  const bookLimit = candidates.some((k) => k.passage?.authorCondition) ? 5 : 4;
   let bytes = 0;
   let bookItems = 0,
     webItems = 0;
@@ -395,7 +486,7 @@ export function paidLibrary(
     const n = Buffer.byteLength(JSON.stringify(k));
     const isWeb = webIds.has(k.id);
     if (
-      (isWeb ? webItems >= 1 : bookItems >= 4) ||
+      (isWeb ? webItems >= 1 : bookItems >= bookLimit) ||
       bytes + n > LIBRARY_MAX_BYTES
     ) {
       excluded.push({ id: k.id, reason: "library-budget" });

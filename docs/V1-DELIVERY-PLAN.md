@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 04/11 — Khép lô tích hợp nguồn đã rõ cho bốn cung
+
+Theo yêu cầu mới: đưa2nhánh tác giả đã xác minh và4method sửa vào input1.20, giữ riêng tác giả/vị trí/liên cung. Mock/dry11/build đạt; không mở backlog/ruleprogram mới. Điểm dừng: đầu vào offline, chưa API hoặc phê duyệt nội dung/thương mại/deploy. [Bằng chứng và giới hạn](AI-PAID-VDC-INPUT120-HANDOFF-20261104.md).
+
 ## 04/11 — Khép yêu cầu đọc toàn bộ Sơ cấp và đối chiếu khoảng thiếu
 
 Đã đọc305trang, kiểm toàn bộ các trang có ảnh nhúng và lập24phiếu/bản đồ đủ11cung; phân biệt đã đọc với hiệu đính/triển khai. Khép tra hai điều kiện bảng sáng, giữ khoảng thiếu có căn cứ và đề xuất áp dụng hữu hạn bằng pipeline chung. Điểm dừng: chưa sửa writer/index, chưa API/publish/QA; không mở backlog mới hoặc tự nâng% thương mại. [Đầu ra và phần cần làm rõ](AI-PAID-VDC-FULL-BOOK-REVIEW-20261104.md).

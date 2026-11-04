@@ -9,12 +9,21 @@ const namesPalace = (text: string, palace: string) =>
     .includes(palace.normalize("NFC").toLocaleLowerCase("vi"));
 /** Topic framing, not a new astrological proposition or an instruction in a source.
  * IDs point to existing, condition-matched C and target A/B. No duplicated prose. */
-const FRAMES: Record<string, { palace: string; focus: string }[]> = {
+const FRAMES: Record<
+  string,
+  { palace: string; focus: string; methodId?: string }[]
+> = {
   "Phu Thê": [
     {
       palace: "Quan Lộc",
       focus:
         "Từ nguồn thực có, phân biệt sắp xếp cách làm ở Quan Lộc với thống nhất điều muốn làm trong quan hệ Phu Thê. Nếu có nguồn biểu đạt ở Quan, phân tích vì sao trình bày để người khác hiểu khác với hai bên đồng ý; không suy nghề nghiệp gây bất hòa hoặc chuyển năng lực sang người phối ngẫu. Giữ lượng từ, sắc thái trợ giúp từng qua một giai đoạn và trình tự rồi mới nếu nguồn Phu có nêu. Một đoạn diễn ý nguồn đúng cung gốc, đoạn khác tổng hợp mối liên hệ; không lặp quyền–trách nhiệm hoặc dùng Khoa/Quyền hóa giải sát tinh. Nếu có phương pháp kiểm Phá–Đà–Hỏa, dùng nó loại nhánh Tả không gặp sát khi điều kiện không đúng; không suy ngược thành bất hòa. Chỉ nêu giới hạn ấy một lần ở chỗ ảnh hưởng lập luận, không biến thành chương giới hạn riêng.",
+    },
+    {
+      palace: "Phúc Đức",
+      methodId: "paid-library.thp2-phu-combination-scope",
+      focus:
+        "Đọc hoàn cảnh quan hệ tại Phu cạnh ngữ cảnh Phúc thực có. Phương pháp Sơ cấp cho phép đặt hai mặt cạnh nhau, không tự gán nghĩa sao. Nếu nguồn Phúc chỉ nói nơi sinh sống hoặc họ hàng, giữ đúng phạm vi ấy; không đổi thành tính cách người phối ngẫu, hạnh phúc hoặc sức khỏe tâm lý. Mọi nối kết là tổng hợp, không nguyên nhân chắc chắn và không phép giải sát.",
     },
   ],
   "Điền Trạch": [
@@ -82,6 +91,12 @@ const FRAMES: Record<string, { palace: string; focus: string }[]> = {
       focus:
         "Ưu tiên lời suy xét/hành động thực có ở Mệnh để đối chiếu cách tiếp cận nguồn lực tại Tài Bạch. Phân biệt tính toán phương án, quá trình tạo khoản thu và phần giữ lại; không lấy lời giàu có chung ở Mệnh làm kết quả của Tài. Phần nối là tổng hợp có mức độ, không tự tạo công thức cộng trừ chính tinh–hao tinh hoặc chọn bảng nguồn thắng.",
     },
+    {
+      palace: "Phúc Đức",
+      methodId: "paid-library.thp2-tai-transaction-spending",
+      focus:
+        "Phương pháp Sơ cấp tách điều kiện vật chất ở Tài khỏi mặt hưởng thụ tinh thần ở Phúc. Dùng lời Phúc thực được chọn, đúng chủ thể và điều kiện; nếu chỉ có nơi ở/họ hàng thì không bịa thêm mức hài lòng hay thói quen tiêu tiền. Đối chiếu với luận điểm tạo nguồn của Tài, không dùng lời cung khác làm bằng chứng thu nhập/tài sản. Không chọn riêng lời giữ tài ở Mệnh rồi bỏ Kỵ, không đặt phép Liêm–Hao hoặc đồng nhất hai loại Đại Hao.",
+    },
   ],
 };
 export function paidContextGuide(
@@ -106,6 +121,16 @@ export function paidContextGuide(
     return undefined;
   const links: Link[] = [];
   for (const frame of FRAMES[target]) {
+    if (
+      frame.methodId &&
+      !input.knowledge.some(
+        (k) =>
+          k.id === frame.methodId &&
+          k.group === "D" &&
+          k.application === "reference-only",
+      )
+    )
+      continue;
     const source = input.knowledge.filter(
       (k) =>
         k.group === "C" &&
@@ -185,7 +210,7 @@ export function paidContextGuide(
     });
   }
   return links.length
-    ? { version: "paid-context-guide-1.2.0", links }
+    ? { version: "paid-context-guide-1.3.0", links }
     : undefined;
 }
 

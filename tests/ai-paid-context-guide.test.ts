@@ -39,7 +39,7 @@ it.each(["Quan Lộc", "Tài Bạch"])(
     const before = JSON.stringify(record),
       i = paidInput(record, palace),
       guide = i.contextGuide!;
-    expect(guide.links).toHaveLength(2);
+    expect(guide.links).toHaveLength(palace === "Tài Bạch" ? 3 : 2);
     expect(guide.links[0].sourcePalace).toBe(
       palace === "Quan Lộc" ? "Tài Bạch" : "Quan Lộc",
     );
@@ -49,8 +49,14 @@ it.each(["Quan Lộc", "Tài Bạch"])(
       expect(guide.links[0].factIds).toContain("palace.2.ring.suiqian12");
     }
     for (const link of guide.links) {
-      expect(link.relation).toBe("trine");
-      expect(link.factIds).toContain("geometry.tam-hop");
+      expect(link.relation).toBe(
+        link.sourcePalace === "Phúc Đức" ? "opposition" : "trine",
+      );
+      expect(link.factIds).toContain(
+        link.sourcePalace === "Phúc Đức"
+          ? "geometry.xung-chieu"
+          : "geometry.tam-hop",
+      );
       expect(link.factIds.every((id) => i.facts.some((f) => f.id === id))).toBe(
         true,
       );
@@ -73,7 +79,7 @@ it.each(["Quan Lộc", "Tài Bạch"])(
     expect(JSON.stringify(guide).length).toBeLessThan(5500);
     expect(JSON.stringify(record)).toBe(before);
     const raw = mockPaidV2(i, "limited").raw as any;
-    expect(reviewPaidContextUse(i, raw)).toHaveLength(2);
+    expect(reviewPaidContextUse(i, raw)).toHaveLength(guide.links.length);
     const link = guide.links[0];
     raw.sections.push({
       id: "cross-palace",
@@ -140,7 +146,7 @@ it.each(["Quan Lộc", "Tài Bạch"])(
     const before = JSON.stringify(input.knowledge);
     const guide = paidContextGuide(input, metadata)!;
     const link = guide.links.find((l) => l.sourcePalace === "Mệnh")!;
-    expect(guide.version).toBe("paid-context-guide-1.2.0");
+    expect(guide.version).toBe("paid-context-guide-1.3.0");
     expect(link.sourceKnowledgeIds.length).toBeGreaterThan(0);
     expect(link.sourceKnowledgeIds.length).toBeLessThanOrEqual(3);
     expect(link.sourceKnowledgeIds).toContain("paid-v1.natal-paragraph-0-3");
@@ -199,3 +205,43 @@ it("new prompt cannot launder unnamed C by mixing a direct source; old version s
     "Không bỏ toàn bộ ngữ cảnh",
   );
 });
+it.each(["Tài Bạch", "Phu Thê"])(
+  "%s links Phúc only with the reviewed method and an existing context premise",
+  (palace) => {
+    const input = paidInput(record, palace),
+      metadata = paidKnowledge(record, palace).contextMetadata;
+    const before = JSON.stringify(input);
+    const link = paidContextGuide(input, metadata)!.links.find(
+      (l) => l.sourcePalace === "Phúc Đức",
+    )!;
+    expect(link).toBeDefined();
+    expect(
+      link.sourceKnowledgeIds.every((id) =>
+        input.knowledge.some(
+          (k) => k.id === id && k.group === "C" && k.application === "context",
+        ),
+      ),
+    ).toBe(true);
+    expect(JSON.stringify(input)).toBe(before);
+    const noMethod = structuredClone(input);
+    noMethod.knowledge = noMethod.knowledge.filter(
+      (k) =>
+        k.id !==
+        `paid-library.thp2-${palace === "Tài Bạch" ? "tai-transaction-spending" : "phu-combination-scope"}`,
+    );
+    expect(
+      paidContextGuide(noMethod, metadata)?.links.some(
+        (l) => l.sourcePalace === "Phúc Đức",
+      ),
+    ).toBe(false);
+    const noContext = structuredClone(input);
+    noContext.knowledge = noContext.knowledge.filter(
+      (k) => !link.sourceKnowledgeIds.includes(k.id),
+    );
+    expect(
+      paidContextGuide(noContext, metadata)?.links.some(
+        (l) => l.sourcePalace === "Phúc Đức",
+      ),
+    ).toBe(false);
+  },
+);

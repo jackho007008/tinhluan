@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 04/11 — Tích hợp phần đã rõ vào input1.20, chưa cập nhật QA
+
+Hai nhánh có điều kiện Liêm Thân/Hỏa Tuất theo Vương Đình Chi, methodNô/Tử và guidePhúc choTài/Phu; facts/bài cũ nguyên.159test/dry11/typecheck/build đạt,0API/DB/deploy. Kho private21unit có bundle48artifact; chưa nghiệm thu model/thương mại. [Bằng chứng và giới hạn](AI-PAID-VDC-INPUT120-HANDOFF-20261104.md).
+
 ## 04/11 — Đọc hết sách Vương Đình Chi, chưa đổi đầu vào runtime
 
 305/305trang chữ,107trang kiểm ảnh;24phiếu/bản đồ11cung. Khép tra bảng Liêm Thân/Hỏa Tuất của tác giả; thêm phương pháp liên cung, giữ các nhánh chưa đủ điều kiện.0API/app/DB/deploy; bài cũ nguyên. [Kết quả, tài liệu cần làm rõ và điểm dừng](AI-PAID-VDC-FULL-BOOK-REVIEW-20261104.md).

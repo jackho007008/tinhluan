@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 04/11 — Cho phép tích hợp phần đã rõ, không sửa facts hoặc bài cũ
+
+Chủ dự án yêu cầu “Tích hợp phần đã rõ vào đầu vào bài mới”, ưu tiênTài/Phu/Nô/Tử, giữ riêng điều kiện tácgiả/vịtrí/liêncung. Codex nhận2nhánh bảngđãkiểm vàphươngpháp tươngứng theo phạmvi đó. Đây không phải quyền gọiAPI,publishTật,phêduyệt mọi lời nguồn hoặc deploy/mởbán. Kiểm mock trước,giữQA vàlịch sử. [Bằng chứng và giới hạn](AI-PAID-VDC-INPUT120-HANDOFF-20261104.md).
+
 ## 04/11 — Tiếp tục đọc, chỉ nhận phần đủ căn cứ vào bài mới
 
 Chủ dự án giao đọc các phần còn lại, ưu tiên Tài/Phu/Tật; mock,chưa API,giữ bài cũ và không cập nhậtQA3062/3070. Codex khép ba chương ưu tiên, nhận kiểm điều kiện/giới hạn vào nhómD của input1.17; chưa nhận lời cá nhân từ các câu dự báo hoặc dịch mơ hồ. Đây không phải quyền publishTật hay phê duyệt thương mại. [Bằng chứng](AI-PAID-VDC-CHAPTER-REVIEW-20261104.md).

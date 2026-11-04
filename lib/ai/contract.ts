@@ -67,6 +67,14 @@ export type Knowledge = {
     version: "paid-library-1.0.0";
     digest: string;
     kind: "direct" | "foundation" | "method";
+    authorCondition?: {
+      id: "vdcsc-liem-than" | "vdcsc-hoa-tuat";
+      author: "Vương Đình Chi";
+      book: "vdcsc";
+      branch: "Thân" | "Tuất";
+      brightness: "Miếu";
+      tablePage: 34 | 35;
+    };
     anchorFactIds: string[];
   };
   group?: "A" | "B" | "C" | "D";
@@ -117,7 +125,8 @@ export type MenhInput = {
     | "paid-retrieval-1.16.0"
     | "paid-retrieval-1.17.0"
     | "paid-retrieval-1.18.0"
-    | "paid-retrieval-1.19.0";
+    | "paid-retrieval-1.19.0"
+    | "paid-retrieval-1.20.0";
   facts: AiFact[];
   knowledge: Knowledge[];
   missing: string[];
@@ -125,7 +134,8 @@ export type MenhInput = {
     version:
       | "paid-context-guide-1.0.0"
       | "paid-context-guide-1.1.0"
-      | "paid-context-guide-1.2.0";
+      | "paid-context-guide-1.2.0"
+      | "paid-context-guide-1.3.0";
     links: {
       sourcePalace: string;
       relation: "trine" | "opposition";

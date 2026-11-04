@@ -753,3 +753,171 @@ it("a child-relation unit anchored in natal Kỵ at Điền keeps its original p
   input.facts = [];
   expect(paidLibrary(input, "Tử Nữ", root).items).toEqual([]);
 });
+
+// Synthetic fixtures exercise the selector; they do not certify source meaning.
+function authorBranch(which: "vdcsc-liem-than" | "vdcsc-hoa-tuat") {
+  const tai = which === "vdcsc-liem-than";
+  const palace = tai ? "Tài Bạch" : "Phu Thê",
+    branch = tai ? "Thân" : "Tuất";
+  const star = tai ? "Liêm Trinh" : "Hỏa Tinh",
+    field = tai ? "majorStars" : "minorStars";
+  const table = tai ? 34 : 35,
+    passage = tai ? 211 : 198;
+  fs.mkdirSync(path.join(temp, "books/vdcsc/pages"), { recursive: true });
+  units[0] = {
+    ...units[0],
+    id: which,
+    targets: [palace],
+    kind: "direct",
+    authorCondition: which,
+    requirements: [{ palace, any: [{ kind: "star", name: star, field }] }],
+    pages: [table, passage].map((number) => {
+      const text = `TECHNICAL SOURCE ${number}`;
+      fs.writeFileSync(
+        path.join(
+          temp,
+          "books/vdcsc/pages",
+          `${String(number).padStart(4, "0")}.txt`,
+        ),
+        text,
+      );
+      return { book: "vdcsc", number, layer: "text", sha256: sha(text) };
+    }),
+  };
+  input.paidTarget!.palace = palace;
+  input.facts = [
+    {
+      id: "palace.2.location",
+      kind: "engine",
+      text: `${palace} tại ${branch}; cung đã lưu`,
+      paths: ["chart.palaces.2"],
+    },
+    {
+      id: `palace.2.${field}.0`,
+      kind: "engine",
+      text: `${palace} tại ${branch}: ${star}; trạng thái đã lưu ${tai ? "Vượng" : "chưa ghi nhận"};`,
+      paths: [`chart.palaces.2.${field}.0`],
+      provenance: {
+        palace,
+        field,
+        scope: "natal",
+        relation: "target",
+        verification: "source-traced",
+        source: "fixture",
+      },
+    },
+  ];
+  const file = path.join(root, "paid-passages/index-v120.json");
+  const save = () =>
+    fs.writeFileSync(
+      file,
+      JSON.stringify({ version: "paid-library-1.0.0", units }),
+    );
+  save();
+  return { palace, branch, table, file, save };
+}
+it.each(["vdcsc-liem-than", "vdcsc-hoa-tuat"] as const)(
+  "author branch %s retains the engine's brightness and includes both anchor facts",
+  (which) => {
+    const { palace } = authorBranch(which),
+      before = JSON.stringify(input);
+    const k = paidLibrary(input, palace, root).items[0];
+    expect(k).toMatchObject({
+      application: "direct",
+      group: "B",
+      passage: {
+        authorCondition: {
+          id: which,
+          author: "Vương Đình Chi",
+          brightness: "Miếu",
+        },
+        anchorFactIds: expect.arrayContaining(input.facts.map((f) => f.id)),
+      },
+    });
+    expect(k.conditions.join(" ")).toContain("không thay trạng thái engine");
+    expect(JSON.stringify(input)).toBe(before);
+  },
+);
+it.each([
+  "wrong-palace",
+  "wrong-branch",
+  "wrong-field",
+  "unverified",
+  "missing-star",
+  "missing-location",
+  "wrong-path",
+  "different-palace-index",
+  "duplicate-location",
+])("author branch cannot match %s", (mode) => {
+  const { palace } = authorBranch("vdcsc-liem-than");
+  const star = input.facts[1],
+    location = input.facts[0];
+  if (mode === "wrong-palace") star.provenance!.palace = "Mệnh";
+  if (mode === "wrong-branch")
+    location.text = location.text.replace("Thân", "Dần");
+  if (mode === "wrong-field") star.provenance!.field = "boshi12";
+  if (mode === "unverified")
+    star.provenance!.verification = "upstream-unverified";
+  if (mode === "missing-star") input.facts.pop();
+  if (mode === "missing-location") input.facts.shift();
+  if (mode === "wrong-path") location.paths = ["other"];
+  if (mode === "different-palace-index")
+    star.paths = ["chart.palaces.3.majorStars.0"];
+  if (mode === "duplicate-location")
+    input.facts.push(structuredClone(location));
+  expect(paidLibrary(input, palace, root).excluded).toContainEqual({
+    id: "paid-library.vdcsc-liem-than",
+    reason: "author-condition-not-met",
+  });
+});
+it.each([
+  "table",
+  "passage",
+  "target",
+  "kind",
+  "unknown-condition",
+  "mixed-author",
+])("source branch rejects missing or inconsistent evidence: %s", (mode) => {
+  const { palace, save } = authorBranch("vdcsc-hoa-tuat");
+  if (mode === "table") units[0].pages.shift();
+  if (mode === "passage") units[0].pages.pop();
+  if (mode === "target") units[0].targets = ["Tài Bạch"];
+  if (mode === "kind") units[0].kind = "method";
+  if (mode === "unknown-condition")
+    units[0].authorCondition = "vdcsc-unreviewed";
+  if (mode === "mixed-author") units[0].pages[0].book = "tb";
+  save();
+  expect(paidLibrary(input, palace, root).excluded).toContainEqual({
+    id: "paid-library",
+    reason: "missing-or-invalid-index",
+  });
+});
+it("v120 fails closed, falls back only if absent, and retains v119 bytes", () => {
+  const { palace, file } = authorBranch("vdcsc-liem-than");
+  const previous = path.join(root, "paid-passages/index-v119.json");
+  const old = fs.readFileSync(path.join(root, "paid-passages/index.json"));
+  fs.writeFileSync(previous, old);
+  fs.writeFileSync(file, "{}");
+  expect(paidLibrary(input, palace, root).excluded[0].reason).toBe(
+    "missing-or-invalid-index",
+  );
+  fs.unlinkSync(file);
+  expect(paidLibrary(input, palace, root).excluded[0].reason).toBe(
+    "condition-not-met",
+  );
+  expect(fs.readFileSync(previous)).toEqual(old);
+});
+it("a modified author table fails its hash check", () => {
+  const { palace, table } = authorBranch("vdcsc-liem-than");
+  fs.appendFileSync(
+    path.join(
+      temp,
+      "books/vdcsc/pages",
+      `${String(table).padStart(4, "0")}.txt`,
+    ),
+    "changed",
+  );
+  expect(paidLibrary(input, palace, root).excluded[0].reason).toBe(
+    "missing-or-changed-source-page",
+  );
+});

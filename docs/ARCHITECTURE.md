@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 04/11 — Input1.20 có điều kiện tác giả, giữ facts và savedinput
+
+Loader120→119→chuỗi cũ;2authorCondition hữu hạn kiểm vị trí/sao/đường dẫn và hashtrangbảng+lời. Metadata nằm knowledge,không engine. Trần14KBgiữ,5slotsách chỉkhi có nhánh tác giả,webtốiđa1; guide1.3 dùng C+methodD đãchọn choPhúc↔Tài/Phu. Không schemaDB/queue/renderer/prompt mới hoặc hồi tố. [Bằng chứng và giới hạn](AI-PAID-VDC-INPUT120-HANDOFF-20261104.md).
+
 ## 04/11 — Revision nguồn1.18 chỉ cho input mới
 
 Loader v118→v117→chuỗi fallback cũ; bản mới invalid failclosed, không áp lại lên savedinput. Hai unit Nô giữ ID/neo/điều kiện gốc, thêm vế nguồn và hash129; đường C Huynh←Nô kế thừa nguyên provenance/context. Không thêm queue/schemaDB/renderer, không đổi facts/prompt2.8 hoặc ngân sách4slot/14KB. [Kiểm và giới hạn](AI-PAID-FOUR-CONTENT-CLOSURE-20261104.md).
