@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 04/11 — Input1.18 và ba bản biên tập, kiểm hữu hạn
+
+141/141test tại6file, dry11 giữ159facts/cung,11probe âm,227hash cũ đạt; typecheck/build cách ly đạt. Giữ lỗi fixture thiếu limitation và câu giới hạn ghép bị guard chặn, sửa bản mock/cách câu rồi đạt; không sửa guard/schema. 0API/DB/deploy/UI/E2E/PDF. [Log và giới hạn](AI-PAID-FOUR-CONTENT-CLOSURE-20261104.md#kiểm-đã-chạy-và-lỗi-giữ-lại).
+
 ## 04/11 — Kiểm bản Tài tham chiếu 1.1, không suite ứng dụng
 
 Factory/input1.17 khớp; bốn section/bảy đoạn qua validator2.8, bảy trace khớp và chín probe âm bị chặn. Hai lượt đạt do sửa văn liên cung, không tính trùng probe; 271 file cũ giữ hash. 0 API/DB/app/deploy; không build/typecheck/E2E/PDF/UI sản phẩm. [Script, log và giới hạn](AI-PAID-TAI-BACH-REFERENCE117-20261104.md#kiểm-thực-sự-đã-chạy).

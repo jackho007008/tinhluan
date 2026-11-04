@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 04/11 — Revision nguồn1.18 chỉ cho input mới
+
+Loader v118→v117→chuỗi fallback cũ; bản mới invalid failclosed, không áp lại lên savedinput. Hai unit Nô giữ ID/neo/điều kiện gốc, thêm vế nguồn và hash129; đường C Huynh←Nô kế thừa nguyên provenance/context. Không thêm queue/schemaDB/renderer, không đổi facts/prompt2.8 hoặc ngân sách4slot/14KB. [Kiểm và giới hạn](AI-PAID-FOUR-CONTENT-CLOSURE-20261104.md).
+
 ## 03/11 — Xếp ngữ cảnh và guide1.1 cho input mới
 
 paidContextFocusRank chỉ là relevance của C đã khớp điều kiện, ưu tiên suy xét/hành động/học hỏi từ Mệnh khi đích Quan/Tài; method-gloss không được nâng bởi một từ khóa. Guide dùng tốiđa3nguồn đã vào packet, không quota nếu thiếu, giữ geometry/neo và trần cũ. Retrieval1.15 lưu vào job mới; savedinput/guide1.0/prompt2.7–2.8 giữ đọc nguyên, không migration/queue/provider mới. [Bằng chứng và giới hạn](AI-PAID-INPUT115-READY-20261103.md).

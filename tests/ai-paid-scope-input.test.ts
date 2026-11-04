@@ -41,7 +41,7 @@ it.each(Object.keys(ids))(
       i = paidInput(record, target),
       k = i.knowledge.find((k) => k.id === "paid-library." + ids[target]);
     expect(k).toBeDefined();
-    expect(i.knowledgeVersion).toBe("paid-retrieval-1.17.0");
+    expect(i.knowledgeVersion).toBe("paid-retrieval-1.18.0");
     expect(k!.application).toBe("reference-only");
     expect(k!.group).toBe(target === "Tài Bạch" ? "B" : "D");
     expect(k!.passage!.kind).toBe(

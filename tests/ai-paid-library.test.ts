@@ -662,3 +662,32 @@ it("invalid v117 does not fall through to a valid previous revision", () => {
     excluded: [{ reason: "missing-or-invalid-index" }],
   });
 });
+
+it("v118 uses revised source conditions only for new input and preserves v117", () => {
+  write();
+  const previous = fs.readFileSync(
+    path.join(root, "paid-passages/index.json"),
+    "utf8",
+  );
+  const priorFile = path.join(root, "paid-passages/index-v117.json");
+  const nextFile = path.join(root, "paid-passages/index-v118.json");
+  fs.writeFileSync(priorFile, previous);
+  const next = JSON.parse(previous);
+  next.units[0].conditions.push(
+    "TECHNICAL FIXTURE: conditional support, not guaranteed support.",
+  );
+  fs.writeFileSync(nextFile, JSON.stringify(next));
+  expect(paidLibrary(input, "Tài Bạch", root).items[0].conditions).toContain(
+    next.units[0].conditions.at(-1),
+  );
+  expect(fs.readFileSync(priorFile, "utf8")).toBe(previous);
+  fs.writeFileSync(nextFile, "{}");
+  expect(paidLibrary(input, "Tài Bạch", root).excluded).toContainEqual({
+    id: "paid-library",
+    reason: "missing-or-invalid-index",
+  });
+  fs.unlinkSync(nextFile);
+  expect(paidLibrary(input, "Tài Bạch", root).items[0].conditions).toEqual(
+    units[0].conditions,
+  );
+});
