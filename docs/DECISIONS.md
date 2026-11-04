@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 04/11 — Cho phép thử đúng một CREATE Tài bằng model đã cấu hình
+
+Chủ dự án giao chuẩn bị 1 CREATE Tài, input 1.15/prompt 2.8, QA riêng, báo dự toán trước; không tự retry hoặc cập nhật QA3062/3070. Đã báo dự toán $0,2036, dự phòng nội bộ $0,30 rồi dùng 1 CREATE/5 GET với Sol đã cấu hình. Đây không phải quyền gọi lại hoặc đổi model. P09 partial là đánh giá của Codex sau khi đọc toàn văn, không phải phê duyệt phát hành của chủ dự án; phạm vi thương mại tiếp tục chưa chốt. [Bài đầy đủ và bằng chứng](AI-PAID-TAI115-SOL28-REAL-20261104.md).
+
 ## 03/11 — Chủ dự án chưa chốt phạm vi, tiếp tục giữ QA
 
 Trước câu hỏi mô tả10cung theo căn cứ/Tật dữ kiện và không đồng độ sâu11bài, chủ dự án trả lời nguyên văn “Chưa chốt, tiếp tục giữ QA”. Không coi đề xuất phạm vi đã được duyệt, không sửa offer/giá/hoàn tiền hoặc mở bán. Hoàn thiện QA vận hành và bản đọc riêng, chưa API mới. Checklist1.1 đổi nhãn P09 từ Astra cố định sang model được chủ dự án chọn (hiện thử Sol theo cấu hình đã cho phép); vẫn API thật/toàn văn/đúng phiên bản, không hạ chuẩn hoặc tăng điểm bằng mock. [Bàn giao và giới hạn](AI-PAID-QA-HARDENING-20261103.md).

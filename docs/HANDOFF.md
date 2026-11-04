@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 04/11 — Một Tài Sol2.8 thật đã lưu, chiều sâu mới chỉ đạt một phần
+
+Đúng 1 CREATE, 5 Responses GET và 1 attempt trên DB test 55460; Sol/input 1.15/prompt 2.8 đã lưu bài 4 phần, 8 đoạn. Ước tính từ usage $0,1545235; provider 482 giây, dispatch đến lưu 766 giây. Kiểm đọc lại, grant, mock request và preview đạt. Nguồn suy xét mới chưa được dùng nên P09 Tài chỉ partial, giữ 90% hồ sơ. Đã backup/dừng riêng 55460; không deploy hoặc thay QA3062/3070. [Bài đầy đủ và bằng chứng](AI-PAID-TAI115-SOL28-REAL-20261104.md).
+
 ## 03/11 — Input1.15 chuẩn bị thử limited, chưa API
 
 Rà5nhóm nguồn có sẵn, không nhận claim mới sai điều kiện; C/guide ưu tiên suy xét–hành động của Mệnh cho Quan/Tài. Guide1.1 rõ vai liên cung cho Phu/Nô/Tử; oldinput/bài cũ nguyên. 220test +6guide cuối/dry11/build cách ly đạt,0API/DB/deploy. Có thể chuẩn bị thử1Tài limited sau quyền/dự toán riêng; chưa phát hành. [Bằng chứng và giới hạn](AI-PAID-INPUT115-READY-20261103.md).

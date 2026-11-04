@@ -1,14 +1,14 @@
 {
   "schemaVersion": "paid-content-progress-1.1.0",
-  "updatedAt": "2026-11-03",
-  "baselineHead": "fd0dd14",
+  "updatedAt": "2026-11-04",
+  "baselineHead": "5f25ce7",
   "measurement": "Tiến độ hồ sơ kiểm/biên tập trên mẫu QA; không phải điểm chất lượng, độ chính xác, độ phủ mọi lá số hoặc phần trăm sẵn sàng thương mại.",
   "formula": "100 * passed / 10; partial/not-verified không tính; 10 mục có trọng số bằng nhau chỉ để theo dõi công việc.",
   "comparability": "Đây là mốc đo đầu tiên, không công bố tăng/giảm so với phiên chưa có checklist. Đổi tiêu chí phải tạo version và giải thích, không âm thầm đổi mẫu số.",
-  "releaseGate": "Input1.15/guide1.1 đã kiểm mock/build, chuẩn bị phép thử limited Tài có mục tiêu sau quyền/dự toán riêng. Chưa API thật trên đầu vào mới, Tật0direct/insufficient và phạm vi thương mại chưa chốt; bài cũ/QA3062/3070 giữ nguyên.",
+  "releaseGate": "Một Tài Sol/input1.15/prompt2.8 completed đã đọc toàn văn;đúng1CREATE/5GET,khôngretry. P09Tài partial vìchiềusâu liêncung mới chưa đạt rõ,R03suyxét chưa dùng;11cung90%hồsơ giữ. Tật/phạmvi thương mại vàruntimeowner chưa chốt,khôngmởbán/QA3062/3070.",
   "freeMenh": "V1/Luna giữ nguyên, ngoài chỉ số11cung trả phí.",
-  "apiCreate": 0,
-  "apiGet": 0,
+  "apiCreate": 1,
+  "apiGet": 5,
   "criteria": [
     {
       "id": "P01",
@@ -620,9 +620,9 @@
         },
         {
           "id": "P09",
-          "status": "not-verified",
-          "evidence": "docs/AI-PAID-QA-HARDENING-20261103.md",
-          "note": "Tiêu chí1.1 theo model trả phí chủ dự án chọn (hiện gpt-6.1-sol), không buộc dùng Astra cũ. Chưa API thật với writer2.8; mock và bản Codex không nâng điểm, bài cũ nguyên."
+          "status": "partial",
+          "evidence": "docs/AI-PAID-TAI115-SOL28-REAL-20261104.md",
+          "note": "Đã1CREATE thật vớiSol/input1.15/prompt2.8,completed/đọc toàn văn. Đúngfacts/ref vàgọn hơn nhưngchủ yếu sắp xếpý cũ,R03Mệnh/TháiTuếkhôngđược dùng,chiều sâu mới chưa đạt rõ. Giữ90%/commercialReady=false,không lấy nhãnfocused hoặc mock làm100%."
         },
         {
           "id": "P10",
@@ -843,7 +843,7 @@
       ]
     }
   ],
-  "lastReview": "input115-context-guide11-ready-limited-mock",
+  "lastReview": "tai115-sol28-real-one-create-partial-depth",
   "history": [
     {
       "updatedAt": "2026-11-02",
@@ -1337,6 +1337,28 @@
       "apiCreate": 0,
       "apiGet": 0,
       "note": "220test/dry11/build:input1.15 và guide1.1 ưu tiên ngữ cảnh có ích,10bản limited giữ hợp lệ. Nguồn trực tiếp/facts/điều kiện và120file cũ nguyên;0claim/rule mới,không model/DB/deploy. 11cung90%hồ sơ/P09chưa kiểm giữ."
+    },
+    {
+      "updatedAt": "2026-11-04",
+      "baselineHead": "5f25ce7",
+      "criteriaChanged": false,
+      "statusChanged": true,
+      "changes": [
+        {
+          "palace": "Tài Bạch",
+          "criterion": "P09",
+          "before": "not-verified",
+          "after": "partial",
+          "percentBefore": 90,
+          "percentAfter": 90
+        }
+      ],
+      "report": "docs/AI-PAID-TAI115-SOL28-REAL-20261104.md",
+      "apiCreate": 1,
+      "apiGet": 5,
+      "modelGet": 2,
+      "inputTokenCountPosts": 1,
+      "note": "1bàithật đãlưu/đọc lại,chiềusâu mới chưa cải thiện rõ;khôngretry hoặc sửaoutput/bài cũ. DBtest55460backup/dừng,Mệnh và10jobkhác nguyên. Giữphạmvithươngmại chưa chốt."
     }
   ],
   "criteriaVersion": "paid-content-checklist-1.1.0",

@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 04/11 — Một request thật, kiểm đúng scope Tài
+
+Mock body/JSONB order và 7 probe sai đạt. Một CREATE/5 Responses GET thật; output nguyên văn qua validator 2.8, đọc lại hai lần giống nhau, thiếu hoặc sai order bị từ chối. Mười job khác 0 attempt; 120 file cũ, Mệnh miễn phí và snapshot nguyên. Preview 360/390 mở được 8 căn cứ/reload file; chưa kiểm browser owner. Không sửa ứng dụng nên không build/typecheck hoặc chạy lại 220 test/E2E/PDF. [Bài đầy đủ và bằng chứng](AI-PAID-TAI115-SOL28-REAL-20261104.md).
+
 ## 03/11 — 220test cho input1.15 và bảo toàn nguồn
 
 11file220test đạt; sau một câu làm rõ điều kiện guidePhu,6guide và dry11 đạt. 159facts/direct/điều kiện giữ nguyên,10bản limited qua input mới,Tậtinsufficient,120file cũ nguyên;typecheck/build snapshot đạt. Giữ lỗi đầu về themequárộng/đòi3slot và method-gloss;không nới validator/nguồn.0API/DB/E2E/PDF/deploy. [Bằng chứng và giới hạn](AI-PAID-INPUT115-READY-20261103.md).

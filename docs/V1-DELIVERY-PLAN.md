@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 04/11 — Đã dùng lượt thử Tài được giao, không gọi thêm
+
+Khép 1 CREATE mới trên QA riêng theo model cấu hình và dự toán báo trước; Background dùng 5 GET cùng receipt/attempt, completed và lưu/đọc đạt. Nội dung có bốn trục nhưng chưa chứng minh chiều sâu mới; P09 Tài partial, giữ 90% hồ sơ. Dừng tại bài thật, đánh giá và bảo toàn; không tự sửa prompt hoặc tạo lượt chọn bài đẹp. Phạm vi thương mại/Tật và runtime owner còn mở. [Bài đầy đủ và bằng chứng](AI-PAID-TAI115-SOL28-REAL-20261104.md).
+
 ## 03/11 — Khép chuẩn bị phép thử đầu vào1.15
 
 Đã chuyển cách khai thác nguồn vào factory/guide dùng chung, giữ ngân sách C và điều kiện; không tự thêm công thức Phá–Đà–Hỏa/Liêm–Hao hoặc publishTật. Phép thử limited mục tiêu Tài có thể chuẩn bị sau quyền API/dự toán riêng; không gọi ngay hoặc xử lý queue. Điểm dừng:220test/build/dry11, chưa model/runtime hoặc thương mại. [Bằng chứng và giới hạn](AI-PAID-INPUT115-READY-20261103.md).
