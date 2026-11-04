@@ -2,6 +2,8 @@
 
 **Đã tạo và lưu một bài thật; chưa đạt nghiệm thu thương mại.** Baseline ứng dụng `main@5f25ce7`; tracked/index sạch trước lượt. Giữ `buu-dinh-7parts/`, `docs/design-handoff/`. Không sửa mã ứng dụng, bài cũ hoặc model để cứu kết quả.
 
+**Đính chính 04/11 sau khi đếm lại từ `reading-full.json`: bài dùng 5 knowledgeID duy nhất, không phải 6 như bản bàn giao đầu.** Đã sửa số đếm ở mục6 bên dưới; giữ nguyên output model, usage, điểm đánh giá và lịch sử request. Đây cũng là lý do số nguồn không được dùng làm thước đo chiều sâu.
+
 Chủ dự án giao chuẩn bị thử đúng1CREATE Tài bằng model đã cấu hình, báo dự toán trước, không tự retry và không cập nhậtQA3062/3070. Đã báo trước 33.440inputtoken, trần12.000output, ước tính bảo thủ$0,2036/cache30m và dự phòng nội bộ$0,30. Không coi dự phòng là hard cap hóa đơn hoặc xác nhận balance project. Model `.env` là `gpt-6.1-sol`, key có cấu hình nhưng không in/ghiGit; Node24.21.0, OpenAI SDK7.45.0. ModelGET xác nhận truy cập; không fallback. Lỗi đầu khi đọc package metadata qua export bị từ chối, sau đó đọc package.json trên filesystem; không API ở lỗi này.
 
 ## Đọc bài thật và đầu vào
@@ -50,7 +52,7 @@ Không suy ETA11cung/SLA5phút hoặc đổiUI từ một bài này. [Background
 3. **Liên cung3/5:** tam hợp và Quan giữ đúng vai; “cạnh tranh để có khoản thu không đồng nghĩa với mở rộng quyền quyết định” là một phép đối chiếu có giới hạn. **R03ThiênPhủ suy xét mới ưu tiên không được dùng**; Mệnh chỉ xuất hiện trong cấu trúc nghề nghiệp Vũ–Phủ. Cải thiện guide chưa tạo bằng chứng model khai thác tốt nguồn mới.
 4. **TứHóa/điều chỉnh2/5:** không bịa Quyền/Khoa giảiHao; chưa có phân tích TứHóa từ packet trong bài. Đây là phần chưa được khai thác, không lỗi vị trí hoặc yêu cầu phải ép mọi Hóa vào bài.
 5. **Trọng tâm/chiều sâu3/5:** có bốn trục tạo tiền, Hao/giữ tiền, nghề–tổ chức, nhịp chi. Phần Quan vẫn chủ yếu phân biệt phạm vi, nhiều câu phủ định; chưa có luận điểm thực chất mới tương xứng đầu vào đã thêm.
-6. **Nguồn4/5:** sáu knowledgeID hợp lệ, sourceC nêu QuanLộc; lời nguồn và tổng hợp tách basis. Đoạn nghề dùng foundation tam hợp cùng direct phù hợp, không lặp lỗi tham chiếu2.7. Chưa có căn cứ trọn Liêm–ĐạiHao và không nhận đã giải.
+6. **Nguồn4/5:** năm knowledgeID hợp lệ, sourceC nêu QuanLộc; lời nguồn và tổng hợp tách basis. Đoạn nghề dùng foundation tam hợp cùng direct phù hợp, không lặp lỗi tham chiếu2.7. Chưa có căn cứ trọn Liêm–ĐạiHao và không nhận đã giải.
 7. **Văn phong4/5:** tiếng Việt gọn, không sách/tác giả hoặc thuật ngữ nội bộ trong thân bài; tam hợp được giải thích. Đắc và cách đọc chi tiêu qua TửNữ vẫn cần người mới làm quen. Không tự cho5 vì đọc trôi chảy.
 8. **Cụ thể/tự đối chiếu3/5:** “giữ tiền chặt sau một đợt mua sắm” khác “cả quá trình gom góp” là một liên hệ hữu ích, nhưng ý ấy đã có ở bài cũ. Nền TháiTuế cũng không được dùng; chưa có giá trị mới rõ ở chiều sâu.
 9. **Không bịa/dự báo4/5:** không định lượng tài sản/thu nhập, hứa lợi nhuận hoặc đưa lời đầu tư; không bịa phép chế hóa hay trích dẫn. Điểm này chỉ cho phạm vi mẫu đã đọc, không xác nhận các biểu tượng là sự thật về khách.

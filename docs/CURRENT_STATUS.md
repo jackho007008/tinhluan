@@ -4,6 +4,8 @@
 
 Sol/input 1.15/prompt 2.8 completed bằng 1 CREATE/5 GET, không retry; bài 4 phần, 8 đoạn, ước tính $0,1545235 theo usage TTL 30 phút. Facts, nguồn và lưu/đọc đúng nhưng chiều sâu liên cung chưa cải thiện rõ; R03 không được dùng. Codex đánh giá P09 Tài partial; cả 11 cung giữ 90% hồ sơ, commercialReady=false. Mười job khác 0 attempt, Mệnh/bài cũ nguyên. DB test 55460 đã backup/dừng; QA3062/3070 không đổi. [Bài đầy đủ và bằng chứng](AI-PAID-TAI115-SOL28-REAL-20261104.md).
 
+Đính chính cùng ngày: đếm lại output xác nhận 5 knowledgeID duy nhất, không phải 6. Sửa số đếm có ghi chú trong bàn giao; không sửa bài model hoặc dùng số nguồn để nâng chất lượng/tiến độ.
+
 ## 03/11 — Đầu vào mới đã kiểm, runtime chưa cập nhật
 
 Retrieval1.15/guide1.1/prompt2.8: Tài thay1đoạn C tài lộc bằng suy xét ThiênPhủ, Quan ưu tiên đúng tiền đề trong guide; nguồn trực tiếp/159facts/điều kiện không đổi. 10bản biên tập qua input mới, Tật0direct/insufficient giữ. 220test/dry11/build đạt,120file nguyên;0API/DB/deploy,11cung90%hồ sơ. [Bằng chứng và giới hạn](AI-PAID-INPUT115-READY-20261103.md).
