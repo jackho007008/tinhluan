@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 04/11 — Bổ sung nguồn internet và xác định sách cần tìm
+
+7 phiếu mới nối bản đồ 11 cung: thêm phân biệt chủ thể Nô/Tử/Phu, ứng viên quản lý tiền ở Tài và địa chỉ phương pháp VCD; bản chép chưa kiểm ảnh không vào runtime. Có danh sách sách/mục cụ thể, Tật vẫn insufficient. Kiểm 22 neo/10 probe vị trí và 401 file bảo toàn đạt; 0 API/DB/deploy. [Nguồn, giới hạn và sách cần bổ sung](AI-PAID-WEB-SUPPLEMENT-20261104.md).
+
 ## 04/11 — Bài Tài chuẩn đề xuất và bản đồ đủ 11 cung
 
 Có bản Tài mới 4 phần/7 đoạn, tách lời nguồn và tổng hợp, chờ chủ dự án đánh giá; bản đồ 26 mục giữ câu hỏi K12, điều kiện, căn cứ và khoảng thiếu từng cung. Mock 11 input/validator, 14 probe âm, 32 file nguồn/167 file cũ đạt bảo toàn; có ghi guard false-positive chưa sửa. Không API/DB/app/deploy, không nâng % hồ sơ hoặc tự gọi mẫu là đã duyệt. [Đọc bài chuẩn](AI-PAID-TAI-BACH-STANDARD-20261104.md) · [Bản đồ, nguồn cần làm rõ và bằng chứng](AI-PAID-ARGUMENT-MAP-11-20261104.md).

@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 04/11 — Nguồn internet đã bổ sung vào hồ sơ, chưa nâng coverage
+
+Có 7 phiếu nghiên cứu, chưa unit runtime hoặc claim cá nhân mới được chấp nhận; input1.15/prompt2.8 và bài cũ giữ nguyên. Nhánh Liêm Dần/Thân là ứng viên hình thế khớp, VCD cần bản có hình; các nhánh Phu không thành công thức chế hóa. Tật chưa thêm lời T1. 22 neo/10 probe/401 hash đạt, 0 API/deploy; cả 11 giữ 90% hồ sơ, commercialReady=false. [Hồ sơ và danh sách sách](AI-PAID-WEB-SUPPLEMENT-20261104.md).
+
 ## 04/11 — Có bài chuẩn đề xuất, chưa phải chuẩn được chấp nhận
 
 Tài Bạch 4 phần/7 đoạn khai thác Thiên Phủ ở Mệnh nối tổ chức ở Quan với thu/giữ ở Tài, căn cứ xem riêng. Bản đồ 11 cung/26 mục gồm 23 ứng viên, 2 mục Tật nghiên cứu, 1 chi tiết Phu bị loại; ghi câu hỏi còn thiếu, không coi nguồn nhiều là sâu. Mock 11 input/14 probe âm và 167 file cũ đạt; guard câu phủ định tuổi thọ rút gọn còn false-positive, chưa sửa app. 0 API/DB/deploy; P09 Tài partial/mười cung chưa kiểm và 90% hồ sơ giữ, commercialReady=false. [Bài đọc](AI-PAID-TAI-BACH-STANDARD-20261104.md) · [Bản đồ và điểm chặn](AI-PAID-ARGUMENT-MAP-11-20261104.md).

@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 04/11 — Bảy phiếu web nối bản đồ, định vị ấn bản cần tìm
+
+Đã đọc hẹp 5 chương Dushu được gắn Thâm tạo giảng nghĩa, đoạn mượn sao đăng lại và tựa/giới thiệu Tử Vân; NCC đối chiếu metadata/mục lục Sơ cấp/Thâm tạo và Luận tử nữ. Giữ attribution/điều kiện, không gọi bản chép là ảnh ấn bản đã kiểm; không đồng nhất thp1/thp2 Tứ Hóa Phái với giảng nghĩa Vương Đình Chi. 7 phiếu nghiên cứu/0 unit runtime, không PDF mới hoặc sửa Bửu Đình. [Phiếu, phần dùng được và sách cần tìm](AI-PAID-WEB-SUPPLEMENT-20261104.md).
+
 ## 04/11 — Bản đồ luận điểm từ nguồn hiện có, không nhập sách mới
 
 Rà hẹp 12 phiếu chữ/đặc tả đã xử lý cho bài chuẩn và khoảng thiếu: Liêm/Hao/Phủ, bảng Mệnh–Nô, Lộc Nô/Tử, giai đoạn Tả tại Phu, chi VCD/Hỏa–Linh, Triệt tại Phúc (TB140), Tuần tại Huynh (TB223) và nhánh Điền (NPL260). Không PDF/ảnh mới, không sửa nguồn/Bửu Đình hoặc thêm rule. Nguồn đã có khác với đủ điều kiện dùng; không gọi 32 file kiểm hash là 32 nguồn mới, không yêu cầu chủ dự án bổ sung sách chung chung. [Phiếu/locator/hash và bản đồ](AI-PAID-ARGUMENT-MAP-11-20261104.md).

@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 04/11 — Kiểm hồ sơ bổ sung web, không suite ứng dụng
+
+7 phiếu/22 neo facts khớp input lưu, 10 probe vị trí (4 khớp, 6 loại ghép sai) đạt; 401 file ứng dụng/artifact cũ giữ hash. Kiểm link nội bộ/diff; không gọi kiểm hồ sơ là validator sản xuất hoặc nghiệm thu nghĩa nguồn. 0 API/DB/deploy; không build/typecheck/E2E/PDF vì chỉ sửa tài liệu. [Script, log và giới hạn](AI-PAID-WEB-SUPPLEMENT-20261104.md#kiểm-và-bảo-toàn).
+
 ## 04/11 — Mock bài chuẩn và bản đồ, chỉ tài liệu/artifact
 
 11 input từ factory khớp sâu 1.15/159 facts, 26 mục map giữ refs/conditions/limits/provenance; Tài mới 7 đoạn qua validator 2.8, 9 bản limited cũ và Tật insufficient vẫn qua. 14 probe âm từ chối; 35 lượt hash trên 32 file nguồn và 167 file cũ giữ nguyên. Lỗi metadata/null, attribution lexical và câu phủ định y khoa rút gọn được giữ log; guard false-positive cuối chưa sửa, không gọi mock chứng nhận nghĩa nguồn hoặc chất lượng model. Không API/DB/worker/deploy, không build/typecheck/E2E/PDF vì không sửa app. [Bằng chứng và giới hạn](AI-PAID-ARGUMENT-MAP-11-20261104.md#kiểm-mock-thực-sự-đã-chạy).

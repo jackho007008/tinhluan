@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 04/11 — Khép lô tìm nguồn bổ sung cho bản đồ luận điểm
+
+Theo yêu cầu mới, tra internet phần thiếu và xác định sách/mục cần bổ sung; hoàn thành 7 phiếu có điều kiện, phân biệt nghiên cứu với nguồn writer. Điểm dừng: chưa xác minh ảnh các nhánh mới, chưa nhập runtime, không API hoặc QA3062/3070. Không tạo gói/backlog mới, không nâng nghiệm thu bằng số nguồn. [Đầu ra, sách và kiểm offline](AI-PAID-WEB-SUPPLEMENT-20261104.md).
+
 ## 04/11 — Khép bài chuẩn đề xuất và bản đồ luận điểm, chưa API
 
 Theo yêu cầu mới: dùng nguồn hiện có để dựng 1 bài Tài chuẩn đề xuất và bản đồ đủ 11 cung; giữ bài cũ, không API/QA3062/3070. Đã có 4 phần/7 đoạn và 26 mục có câu hỏi/neo/nguồn/điều kiện/khoảng thiếu; mock đạt, không tự chứng nhận gold/thương mại. Nguồn Tuần/Triệt tại Phúc/Huynh và nhánh Điền đã có nhưng cần tách/khóa điều kiện, không yêu cầu thêm sách chung chung. Điểm dừng: chủ dự án chưa đánh giá bài chuẩn, chưa tích hợp bản đồ vào writer hoặc gọi model. [Đầu ra và bằng chứng](AI-PAID-ARGUMENT-MAP-11-20261104.md).
