@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 04/11 — Đã đọc toàn bộ Sơ cấp giảng nghĩa, bổ sung bản đồ 11 cung
+
+Lũy kế305/305trang chữ,107trang kiểm ảnh; thêm264trang chữ/91trang kiểm ảnh, đã xem83trang có134ảnh nhúng.24phiếu nghiên cứu giữ trang/hash/điều kiện, chưa runtime/publish. Bảng34/35 xác định Liêm Thân và Hỏa Tuất Miếu theo tác giả, không đổi engine; tách Đại Hao theo hệ. Có ngữ cảnh liên cung cho đủ11cung, Tử/Tật và một số câu dịch mơ hồ còn mở. [Nhật ký đầy đủ, phiếu và khoảng thiếu](AI-PAID-VDC-FULL-BOOK-REVIEW-20261104.md).
+
 ## 04/11 — Khai thác tiếp vế Lộc Nô, phân biệt thiếu nguồn với ngoài phạm vi
 
 THP1/129 ý4–5/130 ý12 bổ sung hai sắc thái vào index-v118,18unit/2unit đổi; điều kiện Lộc năm sinh và nếu muốn trợ giúp giữ. Rà hẹp TB200–201/207, THP2/173–174/179/180/88, vdcsc239/249 và đoạn Tử, TB181–182/HS154; không PDF/ảnh mới hoặc sửa chữ. Có7phiếu/hash, không tuyên bố đọc toàn chương mới; Tử/Phu/Tật chưa thêm directclaim. [Phiếu, bundle và đầu ra](AI-PAID-FOUR-CONTENT-CLOSURE-20261104.md).

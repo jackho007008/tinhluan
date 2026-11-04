@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 04/11 — Đọc hết sách Vương Đình Chi, chưa đổi đầu vào runtime
+
+305/305trang chữ,107trang kiểm ảnh;24phiếu/bản đồ11cung. Khép tra bảng Liêm Thân/Hỏa Tuất của tác giả; thêm phương pháp liên cung, giữ các nhánh chưa đủ điều kiện.0API/app/DB/deploy; bài cũ nguyên. [Kết quả, tài liệu cần làm rõ và điểm dừng](AI-PAID-VDC-FULL-BOOK-REVIEW-20261104.md).
+
 ## 04/11 — Nô dùng nền Lương, Phu điều chỉnh có điều kiện, Tử thêm nhánh đúng cung
 
 Input1.19/guide1.2 có bản Nô/Phu mới và một nhánh Tử Kỵ tại Điền; mẫu Tử cũ không khớp nên giữ một luận điểm. Tật có chú giải T1 riêng, chưa publish. 136test/dry11/typecheck/build đạt;0API/DB/deploy. [Đầu ra và giới hạn](AI-PAID-TARGETED-SOURCE-APPLICATION-20261104.md).

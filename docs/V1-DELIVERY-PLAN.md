@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 04/11 — Khép yêu cầu đọc toàn bộ Sơ cấp và đối chiếu khoảng thiếu
+
+Đã đọc305trang, kiểm toàn bộ các trang có ảnh nhúng và lập24phiếu/bản đồ đủ11cung; phân biệt đã đọc với hiệu đính/triển khai. Khép tra hai điều kiện bảng sáng, giữ khoảng thiếu có căn cứ và đề xuất áp dụng hữu hạn bằng pipeline chung. Điểm dừng: chưa sửa writer/index, chưa API/publish/QA; không mở backlog mới hoặc tự nâng% thương mại. [Đầu ra và phần cần làm rõ](AI-PAID-VDC-FULL-BOOK-REVIEW-20261104.md).
+
 ## 04/11 — Khép lô khai thác Lương/Nô, điều kiện Phu và nhánh quan hệ Tử
 
 Đã đưa phần đủ căn cứ vào input1.19 và bản biên tập mới; tìm được nhánh Kỵ tại Điền nhưng mẫu Tử hiện hành chưa khớp. Tật làm rõ chú giải T1, không tính là bài cá nhân đã giao. Mock/typecheck/build đạt; dừng trước API/publish/QA. Chưa đổi mức nghiệm thu hoặc mở hàng đợi mới. [Đầu ra và phần chưa khép](AI-PAID-TARGETED-SOURCE-APPLICATION-20261104.md).
