@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 04/11 — Đã đối chiếu Trung văn, ba giới hạn vẫn tách riêng
+
+Kình Dương có dị bản hỗ trợ, không phải đã kiểm ảnh gốc. Cardinality Nô và hệ Hao trong phối hợp chưa xác định; input1.20/bài cũ nguyên. Không tăng% nghiệm thu hoặc cập nhật QA. [Chứng cứ và phần chưa chắc](AI-PAID-VDC-CHINESE-WITNESSES-20261104.md).
+
 ## 04/11 — Đã đặc tả điều kiện, không tăng nghiệm thu
 
 Tử có đặc tả toàn tinh hệ và geometry cung nhận; Tài phân biệt ba hệ Hao, Phu/Nô giữ đúng nhánh chưa rõ. Chưa triển khai toán tử hoặc nhận claim mới; input1.20/guide1.3 giữ. 33 probe đạt, 0 API/DB/deploy; 11 cung vẫn90% checklist hồ sơ, commercialReady=false. [Hồ sơ và giới hạn](AI-PAID-VDC-CONDITION-REVIEW-20261104.md).

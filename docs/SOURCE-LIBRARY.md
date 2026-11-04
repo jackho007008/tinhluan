@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 04/11 — Bổ sung nhân chứng Trung văn và loại bản tinh biên
+
+Ba mục Sơ cấp bản chép2011, Scribd và Đàm tinh tinh bài được đối chiếu hẹp; chưa ảnh nguyên bản câu đích. PDF74trang chỉ tìm chữ, kiểm ảnh trang1 xác nhận bên thứ ba đã sửa/lược; không đọc lại toàn sách, không nhập vào index. [Chứng cứ và phần chưa chắc](AI-PAID-VDC-CHINESE-WITNESSES-20261104.md).
+
 ## 04/11 — Đối chiếu hẹp điều kiện Sơ cấp
 
 Tái dùng các đoạn53,63–64,69,73–77,114–116,197–199,204–205,211–212,249–250; xem lại hình5/7 tại75/77. Bản chữ Trung văn web còn cùng lỗi, không coi là ảnh ấn bản xác minh. Bốn phiếu nguồn mới, không sửa trang sách/index hoặc nhận claim tự động. [Hồ sơ và giới hạn](AI-PAID-VDC-CONDITION-REVIEW-20261104.md).

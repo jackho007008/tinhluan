@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 04/11 — Khép lô tìm Trung văn đúng đoạn
+
+Đã tra Phu/Nô/Tài và đoạn phân biệt Hao ở Đàm tinh; loại PDF bên thứ ba sửa/lược khỏi căn cứ quyết định. Điểm dừng: hồ sơ dị bản, locator ảnh cần kiểm; chưa triển khai hoặc gọi API. [Chứng cứ và phần chưa chắc](AI-PAID-VDC-CHINESE-WITNESSES-20261104.md).
+
 ## 04/11 — Khép lô đối chiếu điều kiện Tài/Phu/Nô/Tử
 
 Đã đối chiếu đúng đoạn Việt/Trung và hình5/7; đặc tả lớp mượn không đổi facts. Chưa xác nhận lượng từ trợ tinh, chữ Phu hoặc hệ Hao trong câu phối hợp; đã ghi đúng vị trí ảnh Trung văn cần kiểm. Điểm dừng: hồ sơ/spec và 33 probe cấu trúc, chưa runtime/API hoặc publish. [Hồ sơ và giới hạn](AI-PAID-VDC-CONDITION-REVIEW-20261104.md).

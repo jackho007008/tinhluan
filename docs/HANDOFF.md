@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 04/11 — Bản chép Trung văn mới, chưa chốt điều kiện
+
+Thêm dị bản Phu hỗ trợ cách đọc Kình Dương; Nô vẫn thiếu lượng từ; Đàm tinh phân biệt hai loại Hao nhưng chưa gán được Hao trong câu phối hợp. Chưa có ảnh gốc câu đích; không mở claim/runtime,0API/deploy. [Chứng cứ và phần chưa chắc](AI-PAID-VDC-CHINESE-WITNESSES-20261104.md).
+
 ## 04/11 — Rà điều kiện bốn cung, chưa mở nhánh mới
 
 Đã tách hệ Đại Hao, định vị lỗi chữ Phu, phân nhóm trợ tinh Nô và đặc tả mượn toàn hệ Tử. 33 probe cấu trúc đạt; 1.464 artifact giữ hash. Lượng từ Nô, câu Phu và hệ Hao trong phối hợp còn bất định; không sửa runtime/input1.20 hoặc bài cũ, 0 API/deploy. [Hồ sơ và giới hạn](AI-PAID-VDC-CONDITION-REVIEW-20261104.md).
