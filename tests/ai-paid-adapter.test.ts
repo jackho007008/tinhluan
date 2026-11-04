@@ -201,7 +201,7 @@ it("selects existing source-specific methods as reference-only, never promotes H
   const t = paidInput(record, "Tài Bạch"),
     q = paidInput(record, "Quan Lộc"),
     p = paidInput(record, "Phu Thê");
-  expect(t.knowledgeVersion).toBe("paid-retrieval-1.16.0");
+  expect(t.knowledgeVersion).toBe("paid-retrieval-1.17.0");
   expect(
     t.knowledge.find((k) => k.id === "paid-method.inherited-NPL-27"),
   ).toMatchObject({
@@ -220,7 +220,12 @@ it("selects existing source-specific methods as reference-only, never promotes H
       ].includes(k.id),
     ),
   ).toBe(false);
-  expect(p.knowledge.find(k => k.id === "paid-method.inherited-NPL-45")).toMatchObject({group:"D",application:"reference-only"});
+  // The source-specific Phá/Đà/Hỏa method occupies the third bounded D slot.
+  // The older two-chart can-hợp method stays in saved inputs, not this packet.
+  expect(p.knowledge.find(k => k.id === "paid-library.vdcsc-phu-conditional-reading"))
+    .toMatchObject({group: "D", application: "reference-only", passage: {kind: "method"}});
+  expect(p.knowledge.some(k => k.id === "paid-method.inherited-NPL-45")).toBe(false);
+  expect(p.knowledge.filter(k => k.group === "D")).toHaveLength(3);
   expect(t.knowledge.filter((k) => k.group === "D")).toHaveLength(3);
 });
 it.each(["Quan Lộc", "Tài Bạch", "Phu Thê"])(

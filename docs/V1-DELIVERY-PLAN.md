@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 04/11 — Khép đọc Phu/Tài/Tật của bản Sơ cấp cung cấp
+
+Đã hoàn thành phần đọc ba mục ưu tiên, đưa phần phương pháp đủ rõ vào input1.17; không mở rule/pipeline mới. Chưa chốt tương đương Miếu/Vượng, phép tổ hợp hoặc lời Tật cá nhân. Điểm dừng: mock/typecheck/build cách ly, chưa model/publish/QA. [Đầu ra, phạm vi chưa đạt và checkpoint](AI-PAID-VDC-CHAPTER-REVIEW-20261104.md).
+
 ## 04/11 — Khép lô nhận sách Sơ cấp và áp dụng phần đã kiểm
 
 Theo yêu cầu đọc/áp dụng sách vừa cung cấp: bốn phương pháp Nô/Tử/Tài/Phu vào input1.16 bằng kho/selector chung, không chương trình rule mới. Chưa khép nhánh cá nhân Liêm–Hao, Phá–Đà–Hỏa hoặc Tật; P09/90% hồ sơ giữ. Điểm dừng: kiểm mock và build cách ly, chưa API/publish/QA. [Đầu ra và checkpoint nguồn](AI-PAID-VDC-INTRO-APPLICATION-20261104.md).

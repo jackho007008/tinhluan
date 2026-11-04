@@ -79,7 +79,7 @@ it.each(["Quan Lộc", "Nô Bộc", "Phu Thê"])(
     const before = hash(record),
       i = paidInput(record, palace),
       k = getSource(palace);
-    expect(i.knowledgeVersion).toBe("paid-retrieval-1.16.0");
+    expect(i.knowledgeVersion).toBe("paid-retrieval-1.17.0");
     expect(i.facts).toEqual(paidFacts(record, palace).facts);
     expect(k.sourceReview).toMatchObject({ version: PAID_SOURCE_REVIEW });
     expect(k.sourceReview!.sourceTextDigest).toMatch(/^[a-f0-9]{64}$/);
@@ -255,7 +255,7 @@ it.each(["Quan Lộc", "Nô Bộc", "Phu Thê"])(
     expect(receipt).toHaveBeenCalledTimes(1);
     const payload = JSON.parse(creates[0][1].body),
       sent = JSON.parse(payload.input);
-    expect(sent.knowledgeVersion).toBe("paid-retrieval-1.16.0");
+    expect(sent.knowledgeVersion).toBe("paid-retrieval-1.17.0");
     expect(
       sent.knowledge.find((k: Knowledge) => k.id === getSource(palace).id),
     ).toEqual(getSource(palace));

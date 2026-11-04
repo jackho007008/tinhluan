@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 04/11 — Tiếp tục đọc, chỉ nhận phần đủ căn cứ vào bài mới
+
+Chủ dự án giao đọc các phần còn lại, ưu tiên Tài/Phu/Tật; mock,chưa API,giữ bài cũ và không cập nhậtQA3062/3070. Codex khép ba chương ưu tiên, nhận kiểm điều kiện/giới hạn vào nhómD của input1.17; chưa nhận lời cá nhân từ các câu dự báo hoặc dịch mơ hồ. Đây không phải quyền publishTật hay phê duyệt thương mại. [Bằng chứng](AI-PAID-VDC-CHAPTER-REVIEW-20261104.md).
+
 ## 04/11 — Nhận sách để đọc và áp dụng, chưa cấp quyền gọi model
 
 Chủ dự án cung cấp Sơ cấp giảng nghĩa và yêu cầu “Giúp mình đọc và áp dụng”. Codex áp dụng phần phương pháp đã đối chiếu vào đầu vào bài mới; giữ riêng tác giả và tình trạng dịch máy. Đây không phải phê duyệt mọi mệnh đề trong sách, phạm vi thương mại, API mới hoặc deploy. Các giới hạn giữ QA/bài cũ/Mệnh/không publish Tật vẫn hiệu lực. [Bằng chứng và phạm vi thực hiện](AI-PAID-VDC-INTRO-APPLICATION-20261104.md).

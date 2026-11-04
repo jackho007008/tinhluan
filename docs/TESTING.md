@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 04/11 — Input1.17/ba chương Sơ cấp, kiểm hữu hạn
+
+140case riêng biệt/6file đạt; lượt đầu139/140 vì NPL45 bị method Phu cụ thể thay trong3slotD, đã đối chiếu nguồn và kiểm lại adapter13/13. Dry11/A–B–C/facts nguyên,5probe âm đạt,201file cũ nguyên. Typecheck/build cách ly đạt;0API/DB/deploy,khôngE2E/UI/PDF sản phẩm. [Log và giới hạn nghiệm thu](AI-PAID-VDC-CHAPTER-REVIEW-20261104.md#kiểm-thực-sự-đã-chạy).
+
 ## 04/11 — Nguồn Sơ cấp/input1.16, kiểm hữu hạn
 
 209 test riêng biệt/10 file đạt sau sửa expected version hiện hành; lượt đầu187/190, chạy lại scope-input11/11, source-fidelity19/19. Dry11 giữ159facts và A/B/C, đúng4unitD đổi;189file cũ giữhash. Typecheck đầu lỗi literal mới/phụ thuộc private bản sao, lần hai và build cách ly đạt. Không E2E/UI/mobile/PDF sản phẩm,0API/DB/deploy. [Log và giới hạn](AI-PAID-VDC-INTRO-APPLICATION-20261104.md#kiểm-thực-tế).

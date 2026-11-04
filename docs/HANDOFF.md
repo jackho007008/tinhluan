@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 04/11 — Đã đọc hết ba mục ưu tiên Sơ cấp
+
+Phu189–199/Tài207–216/Tật217–228 đã đọc; thêm26trang/6ảnh, lũy kế41trang/16ảnh. Input1.17 bổ sung kiểm điều kiện Tài/Phu và giới hạn tư liệu Tật, không direct mới. Mock140test/dry11/typecheck/build đạt;201file cũ nguyên,0API/DB/deploy. [Bàn giao và điểm chưa khép](AI-PAID-VDC-CHAPTER-REVIEW-20261104.md).
+
 ## 04/11 — Đã nhận và áp dụng Sơ cấp giảng nghĩa
 
 Bản dịch máy 305 trang đã vào kho private; đọc hẹp 15 trang nội dung/kiểm 10 ảnh, không gọi là đọc toàn sách. Bốn đoạn phương pháp Nô/Tử/Tài/Phu vào input1.16, giữ facts/nguồn A–B–C/bài cũ. 209 test, dry11, typecheck/build cách ly đạt; 0 API/DB/deploy. [Nguồn, giới hạn và bàn giao](AI-PAID-VDC-INTRO-APPLICATION-20261104.md).

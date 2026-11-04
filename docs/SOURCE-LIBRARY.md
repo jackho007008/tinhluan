@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 04/11 — vdcsc thêm26trang nội dung,6ảnh
+
+Đọc nối toàn mục Phu189–199,Tài207–216,Tật217–228; lũy kế41trang/16ảnh, không gọi đã đọc305trang.10phiếu giữ nhánh/giới/tọa–hội/độ sáng, không chữa bản dịch bằng suy đoán; ghi trùng214–215. Index-v117 nhận2method bổ sung+1mới,0direct; nguyên bản/trang cũ nguyên hash. [Nhật ký và phiếu](AI-PAID-VDC-CHAPTER-REVIEW-20261104.md).
+
 ## 04/11 — Nhập vdcsc, phân biệt dịch máy với nguyên bản
 
 305 trang trích chữ, 15 trang nội dung đọc hẹp, 10 ảnh kiểm; giữ nguyên nguồn/OCR, SHA và trạng thái từng trang. Bốn unit phương pháp mở rộng ở index-v116, nguồn mới chỉ method; không đồng nhất Sơ cấp với Thâm tạo/Tứ Hóa Phái. Hình5–6 ở PDF75 đã có, toán tử VCD chưa đặc tả/triển khai. [Nhật ký, vị trí, phần dùng/chưa dùng](AI-PAID-VDC-INTRO-APPLICATION-20261104.md).

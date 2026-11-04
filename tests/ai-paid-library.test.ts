@@ -632,3 +632,33 @@ it("does not silently fall back when v116 is invalid", () => {
     excluded: [{ reason: "missing-or-invalid-index" }],
   });
 });
+
+it("v117 uses a separate source revision and preserves the v116 index", () => {
+  const save = introductoryMethod();
+  save();
+  const file = path.join(root, "paid-passages/index-v116.json");
+  const old = fs.readFileSync(file, "utf8");
+  const newer = JSON.parse(old);
+  newer.units[0].text = "Revised technical method fixture, no personal claim.";
+  fs.writeFileSync(
+    path.join(root, "paid-passages/index-v117.json"),
+    JSON.stringify(newer),
+  );
+  const result = paidLibrary(input, "Tài Bạch", root);
+  expect(result.items[0].text).toBe(newer.units[0].text);
+  expect(result.items[0].application).toBe("reference-only");
+  expect(fs.readFileSync(file, "utf8")).toBe(old);
+  fs.rmSync(path.join(root, "paid-passages/index-v117.json"));
+  expect(paidLibrary(input, "Tài Bạch", root).items[0].text).toBe(
+    units[0].text,
+  );
+});
+it("invalid v117 does not fall through to a valid previous revision", () => {
+  const save = introductoryMethod();
+  save();
+  fs.writeFileSync(path.join(root, "paid-passages/index-v117.json"), "{}");
+  expect(paidLibrary(input, "Tài Bạch", root)).toMatchObject({
+    items: [],
+    excluded: [{ reason: "missing-or-invalid-index" }],
+  });
+});
