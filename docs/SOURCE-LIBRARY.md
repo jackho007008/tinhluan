@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 04/11 — Bản đồ luận điểm từ nguồn hiện có, không nhập sách mới
+
+Rà hẹp 12 phiếu chữ/đặc tả đã xử lý cho bài chuẩn và khoảng thiếu: Liêm/Hao/Phủ, bảng Mệnh–Nô, Lộc Nô/Tử, giai đoạn Tả tại Phu, chi VCD/Hỏa–Linh, Triệt tại Phúc (TB140), Tuần tại Huynh (TB223) và nhánh Điền (NPL260). Không PDF/ảnh mới, không sửa nguồn/Bửu Đình hoặc thêm rule. Nguồn đã có khác với đủ điều kiện dùng; không gọi 32 file kiểm hash là 32 nguồn mới, không yêu cầu chủ dự án bổ sung sách chung chung. [Phiếu/locator/hash và bản đồ](AI-PAID-ARGUMENT-MAP-11-20261104.md).
+
 ## 03/11 — Tái sử dụng nguồn đúng điều kiện trước phép thử model
 
 Rà hẹp TB170/200–201,THP1/129–130,THP2/178–179,TB190/195;5phiếu có hash. Không áp hàng Lương đơn lẻ thiếu nhánh Mệnh,không mượn chính tinh cho TửVCD,không ghép tổ hợp chưa có phép. Các đoạn đối đãi/hợp tác và hai phía Mệnh–Phu đã có được guide khai thác rõ hơn;0direct/rule mới,không PDF/ảnh hoặc BửuĐình mới. [Bằng chứng và giới hạn](AI-PAID-INPUT115-READY-20261103.md).

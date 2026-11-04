@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 04/11 — Khép bài chuẩn đề xuất và bản đồ luận điểm, chưa API
+
+Theo yêu cầu mới: dùng nguồn hiện có để dựng 1 bài Tài chuẩn đề xuất và bản đồ đủ 11 cung; giữ bài cũ, không API/QA3062/3070. Đã có 4 phần/7 đoạn và 26 mục có câu hỏi/neo/nguồn/điều kiện/khoảng thiếu; mock đạt, không tự chứng nhận gold/thương mại. Nguồn Tuần/Triệt tại Phúc/Huynh và nhánh Điền đã có nhưng cần tách/khóa điều kiện, không yêu cầu thêm sách chung chung. Điểm dừng: chủ dự án chưa đánh giá bài chuẩn, chưa tích hợp bản đồ vào writer hoặc gọi model. [Đầu ra và bằng chứng](AI-PAID-ARGUMENT-MAP-11-20261104.md).
+
 ## 04/11 — Đã dùng lượt thử Tài được giao, không gọi thêm
 
 Khép 1 CREATE mới trên QA riêng theo model cấu hình và dự toán báo trước; Background dùng 5 GET cùng receipt/attempt, completed và lưu/đọc đạt. Nội dung có bốn trục nhưng chưa chứng minh chiều sâu mới; P09 Tài partial, giữ 90% hồ sơ. Dừng tại bài thật, đánh giá và bảo toàn; không tự sửa prompt hoặc tạo lượt chọn bài đẹp. Phạm vi thương mại/Tật và runtime owner còn mở. [Bài đầy đủ và bằng chứng](AI-PAID-TAI115-SOL28-REAL-20261104.md).

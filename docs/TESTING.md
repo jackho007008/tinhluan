@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 04/11 — Mock bài chuẩn và bản đồ, chỉ tài liệu/artifact
+
+11 input từ factory khớp sâu 1.15/159 facts, 26 mục map giữ refs/conditions/limits/provenance; Tài mới 7 đoạn qua validator 2.8, 9 bản limited cũ và Tật insufficient vẫn qua. 14 probe âm từ chối; 35 lượt hash trên 32 file nguồn và 167 file cũ giữ nguyên. Lỗi metadata/null, attribution lexical và câu phủ định y khoa rút gọn được giữ log; guard false-positive cuối chưa sửa, không gọi mock chứng nhận nghĩa nguồn hoặc chất lượng model. Không API/DB/worker/deploy, không build/typecheck/E2E/PDF vì không sửa app. [Bằng chứng và giới hạn](AI-PAID-ARGUMENT-MAP-11-20261104.md#kiểm-mock-thực-sự-đã-chạy).
+
 ## 04/11 — Một request thật, kiểm đúng scope Tài
 
 Mock body/JSONB order và 7 probe sai đạt. Một CREATE/5 Responses GET thật; output nguyên văn qua validator 2.8, đọc lại hai lần giống nhau, thiếu hoặc sai order bị từ chối. Mười job khác 0 attempt; 120 file cũ, Mệnh miễn phí và snapshot nguyên. Preview 360/390 mở được 8 căn cứ/reload file; chưa kiểm browser owner. Không sửa ứng dụng nên không build/typecheck hoặc chạy lại 220 test/E2E/PDF. [Bài đầy đủ và bằng chứng](AI-PAID-TAI115-SOL28-REAL-20261104.md).

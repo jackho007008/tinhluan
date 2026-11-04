@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 04/11 — Bài Tài chuẩn đề xuất và bản đồ đủ 11 cung
+
+Có bản Tài mới 4 phần/7 đoạn, tách lời nguồn và tổng hợp, chờ chủ dự án đánh giá; bản đồ 26 mục giữ câu hỏi K12, điều kiện, căn cứ và khoảng thiếu từng cung. Mock 11 input/validator, 14 probe âm, 32 file nguồn/167 file cũ đạt bảo toàn; có ghi guard false-positive chưa sửa. Không API/DB/app/deploy, không nâng % hồ sơ hoặc tự gọi mẫu là đã duyệt. [Đọc bài chuẩn](AI-PAID-TAI-BACH-STANDARD-20261104.md) · [Bản đồ, nguồn cần làm rõ và bằng chứng](AI-PAID-ARGUMENT-MAP-11-20261104.md).
+
 ## 04/11 — Một Tài Sol2.8 thật đã lưu, chiều sâu mới chỉ đạt một phần
 
 Đúng 1 CREATE, 5 Responses GET và 1 attempt trên DB test 55460; Sol/input 1.15/prompt 2.8 đã lưu bài 4 phần, 8 đoạn. Ước tính từ usage $0,1545235; provider 482 giây, dispatch đến lưu 766 giây. Kiểm đọc lại, grant, mock request và preview đạt. Nguồn suy xét mới chưa được dùng nên P09 Tài chỉ partial, giữ 90% hồ sơ. Đã backup/dừng riêng 55460; không deploy hoặc thay QA3062/3070. [Bài đầy đủ và bằng chứng](AI-PAID-TAI115-SOL28-REAL-20261104.md).

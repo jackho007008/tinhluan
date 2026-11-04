@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 04/11 — Có bài chuẩn đề xuất, chưa phải chuẩn được chấp nhận
+
+Tài Bạch 4 phần/7 đoạn khai thác Thiên Phủ ở Mệnh nối tổ chức ở Quan với thu/giữ ở Tài, căn cứ xem riêng. Bản đồ 11 cung/26 mục gồm 23 ứng viên, 2 mục Tật nghiên cứu, 1 chi tiết Phu bị loại; ghi câu hỏi còn thiếu, không coi nguồn nhiều là sâu. Mock 11 input/14 probe âm và 167 file cũ đạt; guard câu phủ định tuổi thọ rút gọn còn false-positive, chưa sửa app. 0 API/DB/deploy; P09 Tài partial/mười cung chưa kiểm và 90% hồ sơ giữ, commercialReady=false. [Bài đọc](AI-PAID-TAI-BACH-STANDARD-20261104.md) · [Bản đồ và điểm chặn](AI-PAID-ARGUMENT-MAP-11-20261104.md).
+
 ## 04/11 — Kết quả Tài mới có thật; chưa nâng mức thương mại
 
 Sol/input 1.15/prompt 2.8 completed bằng 1 CREATE/5 GET, không retry; bài 4 phần, 8 đoạn, ước tính $0,1545235 theo usage TTL 30 phút. Facts, nguồn và lưu/đọc đúng nhưng chiều sâu liên cung chưa cải thiện rõ; R03 không được dùng. Codex đánh giá P09 Tài partial; cả 11 cung giữ 90% hồ sơ, commercialReady=false. Mười job khác 0 attempt, Mệnh/bài cũ nguyên. DB test 55460 đã backup/dừng; QA3062/3070 không đổi. [Bài đầy đủ và bằng chứng](AI-PAID-TAI115-SOL28-REAL-20261104.md).
