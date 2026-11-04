@@ -29,7 +29,7 @@ const anchor = z.discriminatedUnion("kind", [
 ]);
 const page = z
   .object({
-    book: z.enum(["npl", "hs", "tb", "thp1", "thp2", "vttl170"]),
+    book: z.enum(["npl", "hs", "tb", "thp1", "thp2", "vttl170", "vdcsc"]),
     number: z.number().int().min(1).max(1000),
     layer: z.enum(["text", "ocr"]),
     sha256: z.string().regex(/^[a-f0-9]{64}$/),
@@ -111,6 +111,10 @@ const unit = z
     "Web research currently supports methods only, not personal interpretations",
   )
   .refine(
+    (u) => !u.pages.some((p) => p.book === "vdcsc") || u.kind === "method",
+    "The supplied machine-translated introductory lectures support reviewed methods only",
+  )
+  .refine(
     (u) =>
       u.kind === "method" ||
       !u.requirements.some((r) => r.any.some((a) => a.kind === "palace")),
@@ -147,22 +151,25 @@ export function paidLibrary(
   try {
     // Old checkouts keep reading their original index; new method units never
     // make a shared legacy index unreadable. Missing v1.6 assets use the old set.
+    const v116 = path.join(root, "paid-passages", "index-v116.json");
     const v114 = path.join(root, "paid-passages", "index-v114.json");
     const v113 = path.join(root, "paid-passages", "index-v113.json");
     const v110 = path.join(root, "paid-passages", "index-v110.json");
     const v17 = path.join(root, "paid-passages", "index-v17.json");
     const v16 = path.join(root, "paid-passages", "index-v16.json");
-    const file = fs.existsSync(v114)
-      ? v114
-      : fs.existsSync(v113)
-        ? v113
-        : fs.existsSync(v110)
-          ? v110
-          : fs.existsSync(v17)
-            ? v17
-            : fs.existsSync(v16)
-              ? v16
-              : path.join(root, "paid-passages", "index.json");
+    const file = fs.existsSync(v116)
+      ? v116
+      : fs.existsSync(v114)
+        ? v114
+        : fs.existsSync(v113)
+          ? v113
+          : fs.existsSync(v110)
+            ? v110
+            : fs.existsSync(v17)
+              ? v17
+              : fs.existsSync(v16)
+                ? v16
+                : path.join(root, "paid-passages", "index.json");
     if (fs.lstatSync(file).isSymbolicLink() || fs.statSync(file).size > 256000)
       throw Error();
     data = index.parse(JSON.parse(fs.readFileSync(file, "utf8")));

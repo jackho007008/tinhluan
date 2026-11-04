@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 04/11 — Nguồn Sơ cấp/input1.16, kiểm hữu hạn
+
+209 test riêng biệt/10 file đạt sau sửa expected version hiện hành; lượt đầu187/190, chạy lại scope-input11/11, source-fidelity19/19. Dry11 giữ159facts và A/B/C, đúng4unitD đổi;189file cũ giữhash. Typecheck đầu lỗi literal mới/phụ thuộc private bản sao, lần hai và build cách ly đạt. Không E2E/UI/mobile/PDF sản phẩm,0API/DB/deploy. [Log và giới hạn](AI-PAID-VDC-INTRO-APPLICATION-20261104.md#kiểm-thực-tế).
+
 ## 04/11 — Kiểm hồ sơ bổ sung web, không suite ứng dụng
 
 7 phiếu/22 neo facts khớp input lưu, 10 probe vị trí (4 khớp, 6 loại ghép sai) đạt; 401 file ứng dụng/artifact cũ giữ hash. Kiểm link nội bộ/diff; không gọi kiểm hồ sơ là validator sản xuất hoặc nghiệm thu nghĩa nguồn. 0 API/DB/deploy; không build/typecheck/E2E/PDF vì chỉ sửa tài liệu. [Script, log và giới hạn](AI-PAID-WEB-SUPPLEMENT-20261104.md#kiểm-và-bảo-toàn).

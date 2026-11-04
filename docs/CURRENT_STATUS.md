@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 04/11 — Nguồn sách mới đã nối vào đầu vào 1.16, chưa chạy model
+
+Đã áp dụng bốn phương pháp rõ nghĩa từ Sơ cấp giảng nghĩa bản dịch máy vào nhóm D; 17 unit/không claim cá nhân mới. 159 facts và nguồn A/B/C giữ; cả 11 vẫn 90% hồ sơ, commercialReady=false. 209 test/dry11/build cách ly đạt, 189 file cũ nguyên; 0 API/DB/deploy. QA chưa cập nhật. [Chi tiết và phần cần kiểm nguyên bản](AI-PAID-VDC-INTRO-APPLICATION-20261104.md).
+
 ## 04/11 — Nguồn internet đã bổ sung vào hồ sơ, chưa nâng coverage
 
 Có 7 phiếu nghiên cứu, chưa unit runtime hoặc claim cá nhân mới được chấp nhận; input1.15/prompt2.8 và bài cũ giữ nguyên. Nhánh Liêm Dần/Thân là ứng viên hình thế khớp, VCD cần bản có hình; các nhánh Phu không thành công thức chế hóa. Tật chưa thêm lời T1. 22 neo/10 probe/401 hash đạt, 0 API/deploy; cả 11 giữ 90% hồ sơ, commercialReady=false. [Hồ sơ và danh sách sách](AI-PAID-WEB-SUPPLEMENT-20261104.md).

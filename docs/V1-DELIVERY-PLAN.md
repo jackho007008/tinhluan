@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 04/11 — Khép lô nhận sách Sơ cấp và áp dụng phần đã kiểm
+
+Theo yêu cầu đọc/áp dụng sách vừa cung cấp: bốn phương pháp Nô/Tử/Tài/Phu vào input1.16 bằng kho/selector chung, không chương trình rule mới. Chưa khép nhánh cá nhân Liêm–Hao, Phá–Đà–Hỏa hoặc Tật; P09/90% hồ sơ giữ. Điểm dừng: kiểm mock và build cách ly, chưa API/publish/QA. [Đầu ra và checkpoint nguồn](AI-PAID-VDC-INTRO-APPLICATION-20261104.md).
+
 ## 04/11 — Khép lô tìm nguồn bổ sung cho bản đồ luận điểm
 
 Theo yêu cầu mới, tra internet phần thiếu và xác định sách/mục cần bổ sung; hoàn thành 7 phiếu có điều kiện, phân biệt nghiên cứu với nguồn writer. Điểm dừng: chưa xác minh ảnh các nhánh mới, chưa nhập runtime, không API hoặc QA3062/3070. Không tạo gói/backlog mới, không nâng nghiệm thu bằng số nguồn. [Đầu ra, sách và kiểm offline](AI-PAID-WEB-SUPPLEMENT-20261104.md).

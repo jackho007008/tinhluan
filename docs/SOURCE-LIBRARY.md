@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 04/11 — Nhập vdcsc, phân biệt dịch máy với nguyên bản
+
+305 trang trích chữ, 15 trang nội dung đọc hẹp, 10 ảnh kiểm; giữ nguyên nguồn/OCR, SHA và trạng thái từng trang. Bốn unit phương pháp mở rộng ở index-v116, nguồn mới chỉ method; không đồng nhất Sơ cấp với Thâm tạo/Tứ Hóa Phái. Hình5–6 ở PDF75 đã có, toán tử VCD chưa đặc tả/triển khai. [Nhật ký, vị trí, phần dùng/chưa dùng](AI-PAID-VDC-INTRO-APPLICATION-20261104.md).
+
 ## 04/11 — Bảy phiếu web nối bản đồ, định vị ấn bản cần tìm
 
 Đã đọc hẹp 5 chương Dushu được gắn Thâm tạo giảng nghĩa, đoạn mượn sao đăng lại và tựa/giới thiệu Tử Vân; NCC đối chiếu metadata/mục lục Sơ cấp/Thâm tạo và Luận tử nữ. Giữ attribution/điều kiện, không gọi bản chép là ảnh ấn bản đã kiểm; không đồng nhất thp1/thp2 Tứ Hóa Phái với giảng nghĩa Vương Đình Chi. 7 phiếu nghiên cứu/0 unit runtime, không PDF mới hoặc sửa Bửu Đình. [Phiếu, phần dùng được và sách cần tìm](AI-PAID-WEB-SUPPLEMENT-20261104.md).

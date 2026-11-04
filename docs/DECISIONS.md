@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 04/11 — Nhận sách để đọc và áp dụng, chưa cấp quyền gọi model
+
+Chủ dự án cung cấp Sơ cấp giảng nghĩa và yêu cầu “Giúp mình đọc và áp dụng”. Codex áp dụng phần phương pháp đã đối chiếu vào đầu vào bài mới; giữ riêng tác giả và tình trạng dịch máy. Đây không phải phê duyệt mọi mệnh đề trong sách, phạm vi thương mại, API mới hoặc deploy. Các giới hạn giữ QA/bài cũ/Mệnh/không publish Tật vẫn hiệu lực. [Bằng chứng và phạm vi thực hiện](AI-PAID-VDC-INTRO-APPLICATION-20261104.md).
+
 ## 04/11 — Cho phép thử đúng một CREATE Tài bằng model đã cấu hình
 
 Chủ dự án giao chuẩn bị 1 CREATE Tài, input 1.15/prompt 2.8, QA riêng, báo dự toán trước; không tự retry hoặc cập nhật QA3062/3070. Đã báo dự toán $0,2036, dự phòng nội bộ $0,30 rồi dùng 1 CREATE/5 GET với Sol đã cấu hình. Đây không phải quyền gọi lại hoặc đổi model. P09 partial là đánh giá của Codex sau khi đọc toàn văn, không phải phê duyệt phát hành của chủ dự án; phạm vi thương mại tiếp tục chưa chốt. [Bài đầy đủ và bằng chứng](AI-PAID-TAI115-SOL28-REAL-20261104.md).

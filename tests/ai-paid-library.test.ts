@@ -559,3 +559,76 @@ it("library facts stay attached even when a direct V1 thesis is present, and new
     "AI_CONTEXT_AS_DIRECT",
   );
 });
+
+// Supplied machine translation is reviewed for method, not personal star claims.
+const introductoryMethod = () => {
+  methodUnit();
+  fs.mkdirSync(path.join(temp, "books/vdcsc/pages"), { recursive: true });
+  const text = "TECHNICAL METHOD FIXTURE; not book content.";
+  fs.writeFileSync(path.join(temp, "books/vdcsc/pages/0207.txt"), text);
+  units[0].pages = [
+    { book: "vdcsc", number: 207, layer: "text", sha256: sha(text) },
+  ];
+  return () =>
+    fs.writeFileSync(
+      path.join(root, "paid-passages/index-v116.json"),
+      JSON.stringify({ version: "paid-library-1.0.0", units }),
+    );
+};
+it("v116 method preserves references and conditions without changing facts or legacy index", () => {
+  const save = introductoryMethod();
+  const legacy = fs.readFileSync(
+    path.join(root, "paid-passages/index.json"),
+    "utf8",
+  );
+  const before = JSON.stringify(input);
+  save();
+  const k = paidLibrary(input, "Tài Bạch", root).items[0];
+  expect(k).toMatchObject({
+    group: "D",
+    application: "reference-only",
+    passage: { kind: "method" },
+    conditions: units[0].conditions,
+    limits: units[0].limits,
+    references: units[0].references,
+  });
+  expect(JSON.stringify(input)).toBe(before);
+  expect(
+    fs.readFileSync(path.join(root, "paid-passages/index.json"), "utf8"),
+  ).toBe(legacy);
+  expect(paidLibrary(input, "Phu Thê", root).items).toEqual([]);
+});
+it.each(["direct", "foundation"])(
+  "rejects %s promoted from the machine-translated introductory source",
+  (kind) => {
+    const save = introductoryMethod();
+    units[0].kind = kind;
+    units[0].requirements = [
+      {
+        palace: "Tài Bạch",
+        any: [{ kind: "star", name: "Thái Tuế", field: "suiqian12" }],
+      },
+    ];
+    save();
+    expect(paidLibrary(input, "Tài Bạch", root)).toMatchObject({
+      items: [],
+      excluded: [{ reason: "missing-or-invalid-index" }],
+    });
+  },
+);
+it("rejects a changed introductory page without taking its claims from a legacy index", () => {
+  const save = introductoryMethod();
+  save();
+  fs.writeFileSync(path.join(temp, "books/vdcsc/pages/0207.txt"), "CHANGED");
+  expect(paidLibrary(input, "Tài Bạch", root)).toMatchObject({
+    items: [],
+    excluded: [{ reason: "missing-or-changed-source-page" }],
+  });
+});
+it("does not silently fall back when v116 is invalid", () => {
+  fs.writeFileSync(path.join(root, "paid-passages/index-v116.json"), "{}");
+  expect(paidLibrary(input, "Tài Bạch", root)).toMatchObject({
+    items: [],
+    excluded: [{ reason: "missing-or-invalid-index" }],
+  });
+});

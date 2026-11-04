@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 04/11 — Đã nhận và áp dụng Sơ cấp giảng nghĩa
+
+Bản dịch máy 305 trang đã vào kho private; đọc hẹp 15 trang nội dung/kiểm 10 ảnh, không gọi là đọc toàn sách. Bốn đoạn phương pháp Nô/Tử/Tài/Phu vào input1.16, giữ facts/nguồn A–B–C/bài cũ. 209 test, dry11, typecheck/build cách ly đạt; 0 API/DB/deploy. [Nguồn, giới hạn và bàn giao](AI-PAID-VDC-INTRO-APPLICATION-20261104.md).
+
 ## 04/11 — Bổ sung nguồn internet và xác định sách cần tìm
 
 7 phiếu mới nối bản đồ 11 cung: thêm phân biệt chủ thể Nô/Tử/Phu, ứng viên quản lý tiền ở Tài và địa chỉ phương pháp VCD; bản chép chưa kiểm ảnh không vào runtime. Có danh sách sách/mục cụ thể, Tật vẫn insufficient. Kiểm 22 neo/10 probe vị trí và 401 file bảo toàn đạt; 0 API/DB/deploy. [Nguồn, giới hạn và sách cần bổ sung](AI-PAID-WEB-SUPPLEMENT-20261104.md).

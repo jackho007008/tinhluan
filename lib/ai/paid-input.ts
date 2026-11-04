@@ -20,7 +20,7 @@ export function paidInput(record: InternalReading, palace: string) {
     input.missing.push(
       "Kho đoạn sách đã duyệt chưa sẵn sàng; chỉ dùng phần nguồn có thật trong yêu cầu này.",
     );
-  input.knowledgeVersion = "paid-retrieval-1.15.0";
+  input.knowledgeVersion = "paid-retrieval-1.16.0";
   const guide = paidContextGuide(input, retrieval.contextMetadata);
   if (guide) input.contextGuide = guide;
   if (!input.knowledge.some((k) => k.application === "direct"))
