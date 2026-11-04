@@ -140,7 +140,7 @@ it.each(["Quan Lộc", "Tài Bạch"])(
     const before = JSON.stringify(input.knowledge);
     const guide = paidContextGuide(input, metadata)!;
     const link = guide.links.find((l) => l.sourcePalace === "Mệnh")!;
-    expect(guide.version).toBe("paid-context-guide-1.1.0");
+    expect(guide.version).toBe("paid-context-guide-1.2.0");
     expect(link.sourceKnowledgeIds.length).toBeGreaterThan(0);
     expect(link.sourceKnowledgeIds.length).toBeLessThanOrEqual(3);
     expect(link.sourceKnowledgeIds).toContain("paid-v1.natal-paragraph-0-3");

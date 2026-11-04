@@ -691,3 +691,65 @@ it("v118 uses revised source conditions only for new input and preserves v117", 
     units[0].conditions,
   );
 });
+
+it("v119 is isolated, fails closed when corrupt, and falls back only when absent", () => {
+  write();
+  const old = fs.readFileSync(
+    path.join(root, "paid-passages/index.json"),
+    "utf8",
+  );
+  const previous = path.join(root, "paid-passages/index-v118.json");
+  const current = path.join(root, "paid-passages/index-v119.json");
+  fs.writeFileSync(previous, old);
+  const next = JSON.parse(old);
+  next.units[0].text = "A distinct technical source revision.";
+  fs.writeFileSync(current, JSON.stringify(next));
+  expect(paidLibrary(input, "Tài Bạch", root).items[0].text).toBe(
+    next.units[0].text,
+  );
+  expect(fs.readFileSync(previous, "utf8")).toBe(old);
+  fs.writeFileSync(current, "{}");
+  expect(paidLibrary(input, "Tài Bạch", root).excluded).toContainEqual({
+    id: "paid-library",
+    reason: "missing-or-invalid-index",
+  });
+  fs.unlinkSync(current);
+  expect(paidLibrary(input, "Tài Bạch", root).items[0].text).toBe(
+    units[0].text,
+  );
+});
+
+it("a child-relation unit anchored in natal Kỵ at Điền keeps its original palace", () => {
+  // Technical fixture checks selection only; it is not a chart or a source opinion.
+  units[0].targets = ["Tử Nữ"];
+  units[0].kind = "direct";
+  units[0].requirements = [
+    { palace: "Điền Trạch", any: [{ kind: "natal", name: "Kỵ" }] },
+  ];
+  write();
+  const fact = {
+    id: "natal.Kỵ",
+    kind: "engine" as const,
+    text: "Tứ Hóa năm sinh: Vũ Khúc hóa Kỵ, tại Điền Trạch (Thân).",
+    paths: ["chart.natalTransforms"],
+  };
+  input.facts = [fact];
+  const k = paidLibrary(input, "Tử Nữ", root).items[0];
+  expect(k).toMatchObject({
+    application: "direct",
+    subjectPalaces: ["Tử Nữ"],
+    passage: { anchorFactIds: ["natal.Kỵ"] },
+  });
+  expect(input.facts).toEqual([fact]);
+  expect(paidLibrary(input, "Điền Trạch", root).items).toEqual([]);
+  for (const palace of ["Mệnh", "Tử Nữ", "Nô Bộc"]) {
+    input.facts = [{ ...fact, text: fact.text.replace("Điền Trạch", palace) }];
+    expect(paidLibrary(input, "Tử Nữ", root).items).toEqual([]);
+  }
+  for (const id of ["self.Kỵ", "flight.Kỵ", "natal.Khoa"]) {
+    input.facts = [{ ...fact, id }];
+    expect(paidLibrary(input, "Tử Nữ", root).items).toEqual([]);
+  }
+  input.facts = [];
+  expect(paidLibrary(input, "Tử Nữ", root).items).toEqual([]);
+});

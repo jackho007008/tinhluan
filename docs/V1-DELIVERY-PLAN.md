@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 04/11 — Khép lô khai thác Lương/Nô, điều kiện Phu và nhánh quan hệ Tử
+
+Đã đưa phần đủ căn cứ vào input1.19 và bản biên tập mới; tìm được nhánh Kỵ tại Điền nhưng mẫu Tử hiện hành chưa khớp. Tật làm rõ chú giải T1, không tính là bài cá nhân đã giao. Mock/typecheck/build đạt; dừng trước API/publish/QA. Chưa đổi mức nghiệm thu hoặc mở hàng đợi mới. [Đầu ra và phần chưa khép](AI-PAID-TARGETED-SOURCE-APPLICATION-20261104.md).
+
 ## 04/11 — Khép lô nguồn và biên tập bốn cung ưu tiên
 
 Đã nhận hai sắc thái đủ nguồn cho Nô vào input1.18; xác định Tử có chỉ dẫn VCD nhưng nhánh đang xét chưa cho đầu ra quan hệ phù hợp; Phu/Tật giữ ranh giới đã đối chiếu. Có3bản limited và chú giải T1 riêng, mock/build đạt. Điểm dừng: chưa nguồn cá nhân Tật, chưa model/owner nghiệm thu hoặc deploy; không mở gói nghiên cứu mới. [Bằng chứng](AI-PAID-FOUR-CONTENT-CLOSURE-20261104.md).

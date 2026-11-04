@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 04/11 — Nô dùng nền Lương, Phu điều chỉnh có điều kiện, Tử thêm nhánh đúng cung
+
+Input1.19/guide1.2 có bản Nô/Phu mới và một nhánh Tử Kỵ tại Điền; mẫu Tử cũ không khớp nên giữ một luận điểm. Tật có chú giải T1 riêng, chưa publish. 136test/dry11/typecheck/build đạt;0API/DB/deploy. [Đầu ra và giới hạn](AI-PAID-TARGETED-SOURCE-APPLICATION-20261104.md).
+
 ## 04/11 — Nô thêm sắc thái nguồn; ba bản đọc mới, Tật giữ nghiên cứu
 
 Input1.18 mở rộng hai đoạn Nô có điều kiện; Tử/Phu biên tập gọn và đúng chủ thể, Tật vẫn insufficient. 141test/dry11/11probe/typecheck/build cách ly đạt;227artifact cũ nguyên,0API/DB/deploy. [Bản đọc, phần khép và chặn thu phí](AI-PAID-FOUR-CONTENT-CLOSURE-20261104.md).

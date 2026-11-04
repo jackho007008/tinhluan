@@ -14,7 +14,7 @@ const FRAMES: Record<string, { palace: string; focus: string }[]> = {
     {
       palace: "Quan Lộc",
       focus:
-        "Từ nguồn thực có, phân biệt sắp xếp cách làm ở Quan Lộc với thống nhất điều muốn làm trong quan hệ Phu Thê. Nếu có nguồn biểu đạt ở Quan, phân tích vì sao trình bày để người khác hiểu khác với hai bên đồng ý; không suy nghề nghiệp gây bất hòa hoặc chuyển năng lực sang người phối ngẫu. Giữ lượng từ, sắc thái trợ giúp từng qua một giai đoạn và trình tự rồi mới nếu nguồn Phu có nêu. Một đoạn diễn ý nguồn đúng cung gốc, đoạn khác tổng hợp mối liên hệ; không lặp quyền–trách nhiệm hoặc dùng Khoa/Quyền hóa giải sát tinh.",
+        "Từ nguồn thực có, phân biệt sắp xếp cách làm ở Quan Lộc với thống nhất điều muốn làm trong quan hệ Phu Thê. Nếu có nguồn biểu đạt ở Quan, phân tích vì sao trình bày để người khác hiểu khác với hai bên đồng ý; không suy nghề nghiệp gây bất hòa hoặc chuyển năng lực sang người phối ngẫu. Giữ lượng từ, sắc thái trợ giúp từng qua một giai đoạn và trình tự rồi mới nếu nguồn Phu có nêu. Một đoạn diễn ý nguồn đúng cung gốc, đoạn khác tổng hợp mối liên hệ; không lặp quyền–trách nhiệm hoặc dùng Khoa/Quyền hóa giải sát tinh. Nếu có phương pháp kiểm Phá–Đà–Hỏa, dùng nó loại nhánh Tả không gặp sát khi điều kiện không đúng; không suy ngược thành bất hòa. Chỉ nêu giới hạn ấy một lần ở chỗ ảnh hưởng lập luận, không biến thành chương giới hạn riêng.",
     },
   ],
   "Điền Trạch": [
@@ -49,7 +49,7 @@ const FRAMES: Record<string, { palace: string; focus: string }[]> = {
     {
       palace: "Huynh Đệ",
       focus:
-        "Dùng lời đối đãi/giao du thực có tại Nô và lời về anh chị em tại Huynh Đệ để phân biệt độ rộng qua lại với độ sâu chia sẻ. Ở Nô, giữ riêng thiện chí, kỳ vọng đáp lại, biểu hiện hợp tác và kết quả thu lợi nếu nguồn có phân biệt; không lấy cảm tình thay điều kiện phi hóa. Nghĩa nền về sao không tự xác nhận phẩm chất bạn bè. Giải thích mối liên hệ thay vì chỉ nói hai cung khác nhau; không suy phản bội, trợ vốn hoặc lấy bạn bè thay tình thân.",
+        "Dùng lời đối đãi/giao du thực có tại Nô và lời về anh chị em tại Huynh Đệ để phân biệt độ rộng qua lại với độ sâu chia sẻ. Ở Nô, giữ riêng thiện chí, kỳ vọng đáp lại, biểu hiện hợp tác và kết quả thu lợi nếu nguồn có phân biệt; không lấy cảm tình thay điều kiện phi hóa. Nếu có nền Thiên Lương đã chọn, nối nét mềm mỏng/khoan hòa với kỳ vọng đáp lại của luận điểm trực tiếp: cách đối đãi và điều mong nhận lại là hai mặt cần giải thích cùng nhau. Phần nối là tổng hợp, không công thức Lương–Lộc, không xác nhận phẩm chất bạn bè hoặc dùng Lộc giải Lương hãm. Giải thích mối liên hệ thay vì chỉ nói hai cung khác nhau; không suy phản bội, trợ vốn hoặc lấy bạn bè thay tình thân.",
     },
   ],
   "Tử Nữ": [
@@ -185,7 +185,7 @@ export function paidContextGuide(
     });
   }
   return links.length
-    ? { version: "paid-context-guide-1.1.0", links }
+    ? { version: "paid-context-guide-1.2.0", links }
     : undefined;
 }
 

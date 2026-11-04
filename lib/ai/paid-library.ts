@@ -151,6 +151,7 @@ export function paidLibrary(
   try {
     // Old checkouts keep reading their original index; new method units never
     // make a shared legacy index unreadable. Missing v1.6 assets use the old set.
+    const v119 = path.join(root, "paid-passages", "index-v119.json");
     const v118 = path.join(root, "paid-passages", "index-v118.json");
     const v117 = path.join(root, "paid-passages", "index-v117.json");
     const v116 = path.join(root, "paid-passages", "index-v116.json");
@@ -159,23 +160,25 @@ export function paidLibrary(
     const v110 = path.join(root, "paid-passages", "index-v110.json");
     const v17 = path.join(root, "paid-passages", "index-v17.json");
     const v16 = path.join(root, "paid-passages", "index-v16.json");
-    const file = fs.existsSync(v118)
-      ? v118
-      : fs.existsSync(v117)
-        ? v117
-        : fs.existsSync(v116)
-          ? v116
-          : fs.existsSync(v114)
-            ? v114
-            : fs.existsSync(v113)
-              ? v113
-              : fs.existsSync(v110)
-                ? v110
-                : fs.existsSync(v17)
-                  ? v17
-                  : fs.existsSync(v16)
-                    ? v16
-                    : path.join(root, "paid-passages", "index.json");
+    const file = fs.existsSync(v119)
+      ? v119
+      : fs.existsSync(v118)
+        ? v118
+        : fs.existsSync(v117)
+          ? v117
+          : fs.existsSync(v116)
+            ? v116
+            : fs.existsSync(v114)
+              ? v114
+              : fs.existsSync(v113)
+                ? v113
+                : fs.existsSync(v110)
+                  ? v110
+                  : fs.existsSync(v17)
+                    ? v17
+                    : fs.existsSync(v16)
+                      ? v16
+                      : path.join(root, "paid-passages", "index.json");
     if (fs.lstatSync(file).isSymbolicLink() || fs.statSync(file).size > 256000)
       throw Error();
     data = index.parse(JSON.parse(fs.readFileSync(file, "utf8")));
