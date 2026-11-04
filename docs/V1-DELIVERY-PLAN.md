@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 04/11 — Khép biên tập một bài Tài theo phạm vi được giao
+
+Đã hoàn thiện bản tham chiếu 1.1 bằng luận điểm đủ căn cứ và kiểm mock; giữ bản đề xuất/bài model cũ. Điểm dừng: bản đọc để chủ dự án đánh giá, chưa biến thành chuẩn được chấp nhận hoặc chạy model; không sửa ứng dụng hoặc mở task nguồn mới. [Đầu ra và bằng chứng](AI-PAID-TAI-BACH-REFERENCE117-20261104.md).
+
 ## 04/11 — Khép đọc Phu/Tài/Tật của bản Sơ cấp cung cấp
 
 Đã hoàn thành phần đọc ba mục ưu tiên, đưa phần phương pháp đủ rõ vào input1.17; không mở rule/pipeline mới. Chưa chốt tương đương Miếu/Vượng, phép tổ hợp hoặc lời Tật cá nhân. Điểm dừng: mock/typecheck/build cách ly, chưa model/publish/QA. [Đầu ra, phạm vi chưa đạt và checkpoint](AI-PAID-VDC-CHAPTER-REVIEW-20261104.md).

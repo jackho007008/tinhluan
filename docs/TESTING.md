@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 04/11 — Kiểm bản Tài tham chiếu 1.1, không suite ứng dụng
+
+Factory/input1.17 khớp; bốn section/bảy đoạn qua validator2.8, bảy trace khớp và chín probe âm bị chặn. Hai lượt đạt do sửa văn liên cung, không tính trùng probe; 271 file cũ giữ hash. 0 API/DB/app/deploy; không build/typecheck/E2E/PDF/UI sản phẩm. [Script, log và giới hạn](AI-PAID-TAI-BACH-REFERENCE117-20261104.md#kiểm-thực-sự-đã-chạy).
+
 ## 04/11 — Input1.17/ba chương Sơ cấp, kiểm hữu hạn
 
 140case riêng biệt/6file đạt; lượt đầu139/140 vì NPL45 bị method Phu cụ thể thay trong3slotD, đã đối chiếu nguồn và kiểm lại adapter13/13. Dry11/A–B–C/facts nguyên,5probe âm đạt,201file cũ nguyên. Typecheck/build cách ly đạt;0API/DB/deploy,khôngE2E/UI/PDF sản phẩm. [Log và giới hạn nghiệm thu](AI-PAID-VDC-CHAPTER-REVIEW-20261104.md#kiểm-thực-sự-đã-chạy).

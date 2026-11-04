@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 04/11 — Bài Tài tham chiếu 1.1 đã có, chưa thay bài lưu
+
+Bản limited trên input1.17, bốn phần/bảy đoạn phân thu–giữ–công việc–chi tiêu; liên cung tránh lặp, giữ sắc thái và dấu vết từng đoạn. Mock đạt, chưa model hoặc chủ dự án chấp nhận chuẩn; P09 partial/90% hồ sơ giữ, commercialReady=false. 0 API/DB/deploy. [Bản đọc và giới hạn](AI-PAID-TAI-BACH-REFERENCE117-20261104.md).
+
 ## 04/11 — Input1.17 khép rà ba chương, chưa thêm lời cá nhân
 
 Kho18unit:2method mở rộng+1method mới; A/B/C và159facts/cung giữ. Phu thay1method chung trong trần3D bằng kiểm đúng tổ hợp; Tật0direct/insufficient. 140test/dry11/build cách ly đạt;0API/DB/deploy,11cung vẫn90% hồ sơ,commercialReady=false. [Đọc đầy đủ kết luận nguồn](AI-PAID-VDC-CHAPTER-REVIEW-20261104.md).

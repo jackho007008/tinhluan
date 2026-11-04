@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 04/11 — Hoàn thiện bài Tài tham chiếu bằng nguồn đủ căn cứ
+
+Bản biên tập 1.1 có bốn phần/bảy đoạn, lời khách không tên sách; căn cứ riêng, giữ sắc thái nguồn và giới hạn. Mock/9 probe âm/271 hash đạt; 0 API/DB/app/deploy. Chờ đánh giá nội dung, không tự nâng nghiệm thu. [Đọc toàn văn và căn cứ](AI-PAID-TAI-BACH-REFERENCE117-20261104.md).
+
 ## 04/11 — Đã đọc hết ba mục ưu tiên Sơ cấp
 
 Phu189–199/Tài207–216/Tật217–228 đã đọc; thêm26trang/6ảnh, lũy kế41trang/16ảnh. Input1.17 bổ sung kiểm điều kiện Tài/Phu và giới hạn tư liệu Tật, không direct mới. Mock140test/dry11/typecheck/build đạt;201file cũ nguyên,0API/DB/deploy. [Bàn giao và điểm chưa khép](AI-PAID-VDC-CHAPTER-REVIEW-20261104.md).
