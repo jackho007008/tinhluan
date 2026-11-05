@@ -1,5 +1,13 @@
 # Sổ quyết định Tinh Luận
 
+## Mẫu biên tập Nô Bộc
+
+Ngày 05/11/2026, chủ dự án duyệt [bản Nô Bộc biên tập riêng](../.local/qa3120-no-sol281/no-boc-mau-bien-tap-da-duyet.md) làm mẫu. SHA-256 toàn văn `537762ce1ddeaca6a289c5d584b75f1fb7a744af9e04ea20b671daa5fb642f02`. Mẫu giữ đúng chiều người giúp và chữ “nếu”, dùng ví dụ bạn bè giới thiệu khách để phân biệt sự giúp đỡ, phần việc nhận làm và kết quả kinh doanh. Bài Nô Bộc đã giao vẫn là bản Sol.
+
+Đề xuất Phúc Đức trong bảy job còn chờ trên cùng lá số QA3120. Hai điều kiện trực tiếp cùng khớp ở Dần: Tham Lang là chính tinh duy nhất tại Phúc và Thiên Mã bản mệnh tọa thủ. Có thể phân biệt hoàn cảnh chung của họ hàng với cách luận có điều kiện khi xa quê (gồm mặt sinh kế và người thân sống cách nhau). Thiên Di chỉ bổ sung góc nhìn về trải nghiệm bên ngoài. Không ghép hai sao thành quy tắc mới, chấm phúc đức hay khuyên chuyển nơi ở. Điền Trạch có một nhánh Cơ–Cự gặp Triệt cụ thể nhưng hẹp hơn.
+
+Đã SELECT chỉ đọc, thấy đúng bảy job queued/0 attempt. Bản đối chiếu limited ba phần qua validator trên đầu vào job Phúc Đức. Yêu cầu dự kiến 110.681 byte, gpt-6.1-sol, retrieval 1.20.0/prompt 2.8.1. Quy đổi theo bốn lượt thực trên cùng báo cáo: 28.076–28.387 input token. Với 5.261–7.735 output, biểu giá các lượt trước (2,50 USD/triệu input ghi cache 30 phút, 10 USD/triệu output) cho khoảng 0,123–0,148 USD; nếu dùng hết 12.000 output khoảng 0,191 USD. Dự phòng đề xuất 0,25 USD. Chưa gọi API, chưa đặt ngân sách và chưa thay đổi job.
+
 ## Mẫu biên tập Phu Thê
 
 Ngày 05/11/2026, chủ dự án duyệt [bản Phu Thê đã biên tập](../.local/qa3120-phu-sol281/phu-the-mau-bien-tap-da-duyet.md) làm mẫu. SHA-256 toàn văn `fb4bbf4deedef86a7bbe5e285f1b36cab907b5a8dc13b7bde8bba296204e0eed`. Mẫu giữ chiều và thời điểm của lời trợ giúp, dùng tình huống về thăm cha mẹ để phân biệt khác nhịp với khác mong muốn. Bài đã giao trên QA3120 vẫn là nguyên văn Sol.
