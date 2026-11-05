@@ -1,5 +1,14 @@
 # Sổ quyết định Tinh Luận
 
+## Mẫu biên tập Tài Bạch
+
+Ngày 05/11/2026, chủ dự án duyệt [đúng bản biên tập riêng](../.local/qa3120-sol281-run/tai-bach-mau-bien-tap-da-duyet.md) làm mẫu văn phong và cách nối luận điểm. SHA-256 toàn văn `1809c7362d70076e23792f7baa42d1808ddf77d6bde767204b5605e24715787c`. Bài đã giao tiếp tục dùng kết quả Sol đã lưu. Mẫu dùng để đối chiếu khi duyệt, không tự chèn vào prompt.
+
+Đề xuất một lượt Quan Lộc trên cùng báo cáo QA3120. Có ba luận điểm trực tiếp theo điều kiện lá số: Tử Vi–Thiên Tướng về cách tổ chức và giới hạn quyền quyết định, Bạch Hổ–Tấu Thư về biểu đạt và học hỏi, Hóa Quyền về ý nghĩa vị trí. Bản đối chiếu offline qua validator của job. Kiểm nội dung theo khả năng phân biệt cách tổ chức với cách trình bày trong công việc, tránh lặp quyền–trách nhiệm hoặc suy chức vị.
+
+Với gpt-6.1-sol, retrieval 1.20.0 và prompt 2.8.1, yêu cầu dự kiến 125.852 byte, so với 138.420 byte và 35.112 token đầu vào thực ở lượt Tài. Ước lượng khoảng 31.924 token đầu vào. Dùng biểu giá ghi cache 30 phút của lượt Tài (2,50 USD/triệu input, 10 USD/triệu output), khoảng 0,132 USD với 5.261 token đầu ra hoặc 0,200 USD với 12.000 token đầu ra. Dự phòng đề xuất 0,25 USD cho một CREATE. Cả 10 job còn queued, 0 attempt. Quyết định hiện tại dừng ở chọn cung và dự toán.
+
+
 ## 05/11 — Cho phép sửa guard và chuẩn bị QA riêng, chưa API
 
 Chủ dự án yêu cầu sửa validator nhận đoạn thiếu nguồn và chuẩn bị QA riêng dùng1.20; mock trước, bài cũ/QA3062/3070 giữ. Codex táchcontract2.8.1 và QA3120/clone55462 để không thay runtimecũ. Không suy quyền gọi model, xử lýqueue hoặc mởbán từ việc chuẩn bị QA. [Bằng chứng và giới hạn](AI-PAID-PREMISE-GUARD-QA120-20261105.md).
