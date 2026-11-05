@@ -1,6 +1,6 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-QA3120 đã giao nguyên văn bài Tài Bạch sau khi kiểm lại response đã lưu. Bộ đọc trả 1/11, mười job còn chờ với 0 attempt. [Kết quả kiểm lại](QA3120-TAI-BACH-SOL281-PREFLIGHT-20261105.md#kiểm-lại-tham-chiếu-và-giao-bài).
+QA3120 đã giao nguyên văn bài Tài Bạch sau khi kiểm lại response đã lưu. Bộ đọc trả 1/11, mười job còn chờ với 0 attempt. [Kết quả kiểm lại](QA3120-TAI-BACH-SOL281-PREFLIGHT-20261105.md#kiểm-lại-tham-chiếu-và-giao-bài). [Bản biên tập riêng chờ duyệt](../.local/qa3120-sol281-run/tai-bach-bien-tap-cho-duyet.md) làm rõ Mệnh–Quan–Tài và Đại Hao, giữ nguyên hai đoạn chi tiêu.
 
 ## 05/11 — Tài Bạch QA3120: đã kiểm phiên, còn thiếu quyền checkout
 
