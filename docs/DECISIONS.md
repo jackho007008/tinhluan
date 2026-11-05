@@ -1,5 +1,13 @@
 # Sổ quyết định Tinh Luận
 
+## Mẫu biên tập Thiên Di
+
+Chủ dự án duyệt [bản Thiên Di biên tập riêng](../.local/qa3120-di-sol281/thien-di-mau-bien-tap-da-duyet.md) ngày 05/11/2026. SHA-256 toàn văn `c77ec538ced27fd87f300c456a3a9a05ac441f6876fb04f33f113322778aa7cd`. Ví dụ đối tác đổi lịch minh họa sự khác biệt giữa được tin phục và gặp thuận lợi. Quyết định áp dụng cho mẫu biên tập. Bản model trên QA3120 vẫn ở bước kiểm nguồn đoạn Thiên Mã.
+
+Đề xuất thử Huynh Đệ trên cùng lá số. Thiên Đồng là chính tinh duy nhất tại Hợi, khớp điều kiện của luận điểm về nét xa cách giữa anh chị em. Nguyên nhân và biểu hiện cụ thể của sự xa cách còn mở. Hóa Lộc tại Nô Bộc xung chiếu chỉ giúp đặt mong muốn giao du bên cạnh mức chia sẻ thực tế trong gia đình. Tử Nữ mới có một ý có điều kiện về hòa thuận giữa cha mẹ và con. Tật Ách chỉ đủ dữ kiện cấu trúc.
+
+Kiểm SELECT chỉ đọc trên QA3120 xác nhận ba job này đều queued, 0 attempt. Bản mẫu Huynh Đệ limited hai phần qua validator với đầu vào của job. Với gpt-6.1-sol, retrieval 1.20.0 và prompt 2.8.1, request dự kiến 113.217 byte. Tỷ lệ byte/token của tám lượt trước cho khoảng 28.719–29.223 input token. Áp đơn giá đã dùng trong tám lượt đó (2,50 USD/triệu input nếu toàn bộ ghi cache 30 phút, 10 USD/triệu output gồm reasoning), ước tính 0,104–0,150 USD; nếu dùng hết 12.000 output token, khoảng 0,193 USD. Đề xuất dự phòng 0,25 USD cho một CREATE. Phiên này chỉ kiểm offline và đọc DB.
+
 ## Mẫu biên tập Phụ Mẫu
 
 Ngày 05/11/2026, chủ dự án duyệt [bản Phụ Mẫu biên tập riêng](../.local/qa3120-phumau-sol281/phu-mau-mau-bien-tap-da-duyet.md) làm mẫu. SHA-256 toàn văn `bdde67af965ed4cabea5fdda6421997c7404e60bd770ce31e8eb6091436ed627`. Mẫu dùng ví dụ sửa bếp để tách điều kiện vật chất, cách cha mẹ bàn chuyện chung và khả năng người con ở xa góp sức. Báo cáo QA3120 tiếp tục giữ bản Sol đã giao.
