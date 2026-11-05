@@ -1,5 +1,7 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+QA3120 đã thử Thiên Di đúng một CREATE, QA giữ bài ở bước kiểm nguồn đoạn Thiên Mã; ba job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-THIEN-DI-SOL281-20261105.md).
+
 QA3120 đã giao Phụ Mẫu sau một CREATE, bộ đọc 6/11, bốn job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-PHU-MAU-SOL281-20261105.md). Chủ dự án đã duyệt bản Phụ Mẫu riêng làm mẫu. [Mẫu đã duyệt và dự toán Thiên Di](DECISIONS.md#mẫu-biên-tập-phụ-mẫu).
 
 QA3120 đã giao Điền Trạch sau một CREATE, bộ đọc 5/11, năm job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-DIEN-TRACH-SOL281-20261105.md). Chủ dự án đã duyệt bản Điền Trạch riêng làm mẫu. [Mẫu đã duyệt và dự toán Phụ Mẫu](DECISIONS.md#mẫu-biên-tập-điền-trạch).
