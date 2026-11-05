@@ -6,6 +6,7 @@ import InternalForm from '@/components/InternalForm';
 import CustomerReading from '@/components/CustomerReading';
 import {querySchema,adminReports,adminOrders,adminOrder,adminTransactions,adminReading,type AdminQuery} from '@/lib/admin/operations';
 import './style.css';
+import {AdminInsights} from '@/components/AdminInsights';
 export const dynamic='force-dynamic';
 const date=(d:string|Date|null)=>d?new Date(d).toLocaleString('vi-VN',{timeZone:'Asia/Ho_Chi_Minh'}):'Chưa ghi nhận';
 const money=(v:number|string)=>Number(v).toLocaleString('vi-VN')+' ₫';
@@ -16,7 +17,7 @@ function Pager({q,total}:{q:AdminQuery;total:number}){const pages=Math.max(1,Mat
 function Filters({q}:{q:AdminQuery}){return <form className="card ops-filters" method="get"><input type="hidden" name="view" value={q.view}/><label>Tìm {q.view==='reports'?'tên hoặc ID':q.view==='orders'?'mã đơn hoặc ID':'mã đơn hoặc mã sự kiện'}<input name="q" defaultValue={q.q} maxLength={120} placeholder="Nhập để tra cứu"/></label>{q.view==='reports'&&<label>Nguồn<select name="source" defaultValue={q.source}><option value="all">Tất cả</option><option value="free">Miễn phí</option><option value="order">Đơn hàng</option><option value="internal">Nội bộ</option></select></label>}{['orders','transactions'].includes(q.view)&&<><label>Trạng thái<select name="status" defaultValue={q.status}>{(q.view==='transactions'?['all','paid','accepted','mismatch','unknown_order','ignored','event_conflict','not_enrolled']:['all','pending','paid','waiting','ready','retry','failed','expired']).map(s=><option value={s} key={s}>{s==='all'?'Tất cả':label(s)}</option>)}</select></label><label>Môi trường<select name="environment" defaultValue={q.environment}><option value="all">Tất cả</option><option value="test">Test</option><option value="live">Live</option></select></label></>}<label>Từ ngày<input type="date" name="from" defaultValue={q.from}/></label><label>Đến ngày<input type="date" name="to" defaultValue={q.to}/></label><label>Mỗi trang<select name="size" defaultValue={q.size}>{[5,20,50].map(n=><option key={n}>{n}</option>)}</select></label><button className="primary" type="submit">Tìm kiếm</button><a href={link({view:q.view})}>Xóa bộ lọc</a></form>;}
 function TransactionRows({items}:{items:Awaited<ReturnType<typeof adminTransactions>>['items']}){return <div className="ops-grid">{items.map(e=><article className="card" key={e.transaction_id}><span className="badge">{e.demo===false?'Live':'Test · không phải doanh thu thật'}</span><h3>{money(e.amount)} · {e.direction==='in'?'Tiền vào':'Tiền ra'}</h3><p><strong>{label(e.disposition)}</strong></p><p>{e.booked?'Có khoản thanh toán được ghi sổ':'Không ghi thêm khoản thanh toán'}</p><p>{date(e.created_at)}</p><p>{e.webhook_receipts??0} lượt webhook ghi từ G5; trước đó chưa thống kê lượt nhận.</p><p className="ops-id">{e.transaction_id}</p>{e.order_id?<a href={link({view:'order',id:e.order_id})}>Đơn {e.code} →</a>:<p>Chưa liên kết đơn</p>}<details><summary>Định danh API / webhook đã ghi nhận</summary>{e.aliases.length?e.aliases.map((a:string)=><p className="ops-id" key={a}>{a}</p>):<p>Sự kiện cũ chưa có alias. Không suy hai ID khác nhau là hai khoản tiền.</p>}</details></article>)}</div>;}
 async function Body({q,session}:{q:AdminQuery;session:string}){
- if(['overview','users','user','rights','activity','audit'].includes(q.view))return <AdminPanels q={q} session={session}/>;
+ if(['users','user','rights','activity','audit'].includes(q.view))return <AdminPanels q={q} session={session}/>;
  if(q.view==='report'){
   const result=q.id?await adminReading(session,q.source,q.id):null;
   if(!result)return <p role="alert">Không tìm thấy bản lưu trong nguồn đã chọn.</p>;
@@ -34,7 +35,12 @@ async function Body({q,session}:{q:AdminQuery;session:string}){
 export default async function Page({searchParams}:{searchParams:Promise<Record<string,string|string[]|undefined>>}){
  const session=(await cookies()).get(CUSTOMER_COOKIE)?.value;
  if(!await adminIdentity(session))return <main className="reading-shell"><h1>Cần quyền quản trị nội bộ</h1><p>Phiên khách không có quyền xem dữ liệu vận hành.</p><a href="/la-so-cua-toi?returnTo=%2Finternal%2Fadmin">Đăng nhập Google</a></main>;
- const parsed=querySchema.safeParse(await searchParams);
+ const params=await searchParams;
+ const parsed=querySchema.safeParse(params);
+ if(parsed.success && parsed.data.view==='overview'){
+  const panel=params.panel==='revenue'||params.panel==='analytics'?params.panel:'dashboard';
+  return <AdminInsights q={parsed.data} session={session!} panel={panel}/>;
+ }
  let body;
  if(!parsed.success)body=<p role="alert">Bộ lọc không hợp lệ. <a href="/internal/admin">Trở về danh sách</a></p>;
  else try{body=await Body({q:parsed.data,session:session!});}catch{body=<section className="card" role="alert"><h2>Chưa tải được dữ liệu vận hành</h2><p>Kiểm tra kết nối database, migration hoặc kho bản lưu. Đây không phải danh sách rỗng.</p><a href="/internal/admin">Thử tải lại</a></section>;}

@@ -3400,3 +3400,5 @@ TheoQ14, một rule TTDi áp đúng phạm vi TB179§10.27, không điều kiệ
 Đã đối chiếu bổ sung màn lỗi di động với D1-FormError.png và kiểm lại cả ba màn trên bản build. Dừng ở nhóm trang chủ và form; [bằng chứng và kết quả kiểm](CURRENT_STATUS.md#cổ-thư--trang-chủ-và-form--05112026).
 
 Đã căn lại lưới, họa tiết và khoảng cách desktop theo D2-DeskHome.html/.png; đã kiểm lại cả ba màn. Dừng ở nhóm Trang chủ + form.
+
+Đã triển khai lô A3-Dashboard, A3-Revenue, A3-Analytics trên route admin hiện có. Các ô thiếu nguồn giữ trạng thái “Chưa có dữ liệu” theo quyết định chủ dự án. Dừng trước phần bổ sung dữ liệu.
