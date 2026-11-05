@@ -1,6 +1,6 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
-QA3120 đã giao bài Phu Thê (1 CREATE, 0 retry); bộ đọc 2/11, tám job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-PHU-THE-SOL281-20261105.md). [Bản Phu Thê biên tập riêng chờ duyệt](../.local/qa3120-phu-sol281/phu-the-bien-tap-cho-duyet.md).
+QA3120 đã giao bài Phu Thê (1 CREATE, 0 retry); bộ đọc 2/11, tám job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-PHU-THE-SOL281-20261105.md). Chủ dự án duyệt bản Phu Thê riêng làm mẫu. [Mẫu đã duyệt và dự toán cho Nô Bộc](DECISIONS.md#mẫu-biên-tập-phu-thê).
 
 
 QA3120 đã thử Quan Lộc đúng một CREATE. Provider trả bài, QA giữ lại do phạm vi nguồn ở đoạn Tấu Thư. Tài đã giao, chín cung còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-QUAN-LOC-SOL281-20261105.md). Chủ dự án đã duyệt bản Quan Lộc làm mẫu biên tập. [Mẫu đã duyệt và dự toán cho Phu Thê](DECISIONS.md#mẫu-biên-tập-quan-lộc).

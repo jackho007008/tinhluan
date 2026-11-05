@@ -1,5 +1,13 @@
 # Sổ quyết định Tinh Luận
 
+## Mẫu biên tập Phu Thê
+
+Ngày 05/11/2026, chủ dự án duyệt [bản Phu Thê đã biên tập](../.local/qa3120-phu-sol281/phu-the-mau-bien-tap-da-duyet.md) làm mẫu. SHA-256 toàn văn `fb4bbf4deedef86a7bbe5e285f1b36cab907b5a8dc13b7bde8bba296204e0eed`. Mẫu giữ chiều và thời điểm của lời trợ giúp, dùng tình huống về thăm cha mẹ để phân biệt khác nhịp với khác mong muốn. Bài đã giao trên QA3120 vẫn là nguyên văn Sol.
+
+Đề xuất Nô Bộc trong tám job chờ của cùng báo cáo. Thiên Lương hóa Lộc năm sinh tại Nô Bộc ở Tỵ. Ba mục áp trực tiếp đều triển khai Lộc năm sinh, cho phép phân biệt cách mình đối đãi và mong được đáp lại, chiều trợ giúp có điều kiện, và việc hợp tác khác kết quả thu lợi. Nghĩa Thiên Lương chỉ làm nền. Không suy bên nào sẽ giúp, có quý nhân hoặc có lời từ hợp tác. Phúc Đức cũng có hai điều kiện khớp, nhưng phạm vi hẹp hơn ở hoàn cảnh họ hàng và xa quê. Nô Bộc có tình huống tự đối chiếu rõ hơn cho một bài giới hạn.
+
+Đã kiểm SELECT chỉ đọc: tám job queued/0 attempt. Bản đối chiếu Nô Bộc limited ba phần qua validator offline trên input của job. Dự toán 1 CREATE Sol/1.20.0/2.8.1: yêu cầu 116.803 byte, ước 29.629–29.829 input token theo kích thước và usage thực của Tài/Quan/Phu. Theo giá dùng cho ba lượt trước (2,50 USD/triệu ghi cache 30 phút, 10 USD/triệu output), với 5.261–7.735 output là 0,127–0,152 USD; với 12.000 output là khoảng 0,195 USD. Dự phòng đề xuất 0,25 USD. Chưa gọi API hoặc đặt chỗ ngân sách.
+
 ## Mẫu biên tập Quan Lộc
 
 Ngày 05/11/2026, chủ dự án duyệt [bản Quan Lộc biên tập riêng](../.local/qa3120-quan-sol281/quan-loc-mau-bien-tap-da-duyet.md) làm mẫu. SHA-256 toàn văn `5ed79564daef8e52b1141c1e046a1dc755a83f28d2e32c82bc1ed8bdf1b835f8`. Mẫu tách ý bộ sao khỏi nghĩa riêng, dùng ví dụ trình bày phương án và chỉ bàn quyền hạn ở một chỗ. Phê duyệt này dành cho bản biên tập; kết quả Sol của job Quan trên QA3120 vẫn ở trạng thái đã ghi trước đó.
