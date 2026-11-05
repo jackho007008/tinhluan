@@ -1,6 +1,6 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-QA3120 đã giao Phụ Mẫu sau một CREATE, bộ đọc 6/11, bốn job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-PHU-MAU-SOL281-20261105.md).
+QA3120 đã giao Phụ Mẫu sau một CREATE, bộ đọc 6/11, bốn job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-PHU-MAU-SOL281-20261105.md). [Bản Phụ Mẫu biên tập riêng chờ duyệt](../.local/qa3120-phumau-sol281/phu-mau-bien-tap-cho-duyet.md).
 
 QA3120 đã giao Điền Trạch sau một CREATE, bộ đọc 5/11, năm job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-DIEN-TRACH-SOL281-20261105.md). Chủ dự án đã duyệt bản Điền Trạch riêng làm mẫu. [Mẫu đã duyệt và dự toán Phụ Mẫu](DECISIONS.md#mẫu-biên-tập-điền-trạch).
 
