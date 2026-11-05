@@ -1,5 +1,7 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+QA3120 đã giao Quan Lộc và Thiên Di từ phản hồi đã lưu. Bộ đọc trả 9/11, Tử Nữ và Tật Ách còn chờ, không phát sinh API. [Hai bài đã giao và kết quả kiểm](QA3120-QUAN-DI-ARCHIVE-REVIEW-20261105.md).
+
 QA3120 đã giao Huynh Đệ sau một CREATE. Bộ đọc trả 7/11, Tử Nữ và Tật Ách còn chờ với 0 attempt. [Toàn văn, chi phí và đánh giá theo tám mẫu](QA3120-HUYNH-DE-SOL281-20261105.md).
 
 QA3120 đã thử Thiên Di đúng một CREATE, QA giữ bài ở bước kiểm nguồn đoạn Thiên Mã; ba job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-THIEN-DI-SOL281-20261105.md). Chủ dự án đã duyệt bản Thiên Di riêng làm mẫu. [Mẫu đã duyệt và dự toán Huynh Đệ](DECISIONS.md#mẫu-biên-tập-thiên-di).
