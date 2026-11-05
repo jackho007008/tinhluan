@@ -90,3 +90,41 @@
     .birth-choices { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-4); }
   }
 }
+
+@media screen {
+  .birth-page-header, [data-birth-page] .birth-page-links { display: none; }
+  .birth-date-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-2); margin-bottom: var(--space-2); font: var(--label); }
+  [data-birth-page].reference-ui .birth-date-heading .choice { margin: 0; }
+  [data-birth-page].reference-ui .birth-date-heading .choice label span { min-height: var(--tap-min); padding-inline: var(--space-3); }
+  [data-birth-form] .field-error { display: flex; align-items: baseline; gap: var(--space-1); }
+  [data-birth-form] .field-error svg { flex: none; align-self: flex-start; margin-top: 2px; }
+  [data-birth-page] .birth-choices { display: block; }
+
+  @media (max-width: 767px) {
+    [data-birth-page].reference-ui { background: var(--paper-100); }
+    [data-birth-page].reference-ui > header .header-inner,
+    [data-birth-page] > .prototype-label { display: none; }
+    [data-birth-page] .birth-page-header {
+      display: grid;
+      grid-template-columns: var(--tap-min) 1fr var(--tap-min);
+      height: 100%;
+      align-items: center;
+      text-align: center;
+      padding-inline: var(--space-2);
+      font: var(--title);
+    }
+    [data-birth-page].reference-ui .birth-page-header a { justify-content: center; }
+    [data-birth-page].reference-ui main { margin: 0 auto; padding: var(--space-5); }
+    [data-birth-page].reference-ui .input-wrap > .card {
+      padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none;
+    }
+    [data-birth-page] .input-wrap .card > h1 {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+    }
+    [data-birth-page].reference-ui .input-wrap .field { margin-bottom: var(--space-5); }
+    [data-birth-page].reference-ui .birth-page-links { display: flex; justify-content: center; flex-wrap: wrap; gap: var(--space-3); }
+    [data-birth-page] .birth-page-links a { display: inline-flex; min-height: var(--tap-min); align-items: center; }
+    [data-birth-page] .input-wrap form .hint { text-align: center; font: var(--caption); }
+  }
+}

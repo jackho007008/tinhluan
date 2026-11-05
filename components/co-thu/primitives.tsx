@@ -34,9 +34,9 @@ export function Card({ variant, className = '', ...props }: HTMLAttributes<HTMLD
   return <div {...props} className={`tl-card ${variant ? 'tl-card--' + variant : ''} ${className}`} />;
 }
 
-export function Alert({ tone = 'info', title, children }: { tone?: Exclude<Tone, 'neutral'>; title: string; children: ReactNode }) {
+export function Alert({ tone = 'info', role = 'status', title, children }: { tone?: Exclude<Tone, 'neutral'>; role?: 'alert' | 'status'; title: string; children: ReactNode }) {
   const Icon = icons[tone];
-  return <div className={`tl-alert tl-alert--${tone}`} role="status" aria-live="polite">
+  return <div className={`tl-alert tl-alert--${tone}`} role={role} aria-live={role === 'alert' ? 'assertive' : 'polite'}>
     <Icon size={20} aria-hidden="true" /><div><strong>{title}</strong>{children}</div>
   </div>;
 }
