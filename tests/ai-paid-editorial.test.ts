@@ -1,3 +1,4 @@
+import { PAID_PROMPT_CURRENT as NEW_WRITER } from "../lib/ai/paid-prompt-v281";
 import { it, expect, vi, afterEach } from "vitest";
 import {
   paidInstructions,
@@ -210,7 +211,7 @@ it("supports lowercase/NFD Vietnamese and preserves unknown reference, C and med
     "AI_SCOPE_VIOLATION",
   );
 });
-it("old 2.3 retains its validator while only the opt-in writer chooses 2.8", () => {
+it("old 2.3 retains its validator while only the opt-in writer chooses 2.8.1", () => {
   const r = content();
   r.sections[0].paragraphs[0].text = "BẢN MOCK. Tả Phù có sự trợ giúp.";
   r.sections[1].paragraphs[1].basis = "source-interpretation";
@@ -222,7 +223,7 @@ it("old 2.3 retains its validator while only the opt-in writer chooses 2.8", () 
   );
   expect(paidOutputSchema(V24)).toBe(paidOutputSchema(V23));
   vi.stubEnv("AI_PAID_READING_V2_ENABLED", "true");
-  expect(paidWritePromptVersion()).toBe(V28);
+  expect(paidWritePromptVersion()).toBe(NEW_WRITER);
 });
 it.each(["AI_MIXED_ATTRIBUTION", "AI_SOURCE_QUALIFIER_LOST"])(
   "classifies %s as output validation, not provider billing or model failure",

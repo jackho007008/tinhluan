@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 05/11 — QA riêng dùng1.20, guard tiền đề2.8.1
+
+Mẫu thiếu nguồn đã bị chặn ở writer mới,11bản đối chiếu không đổi. QA3120 sẵn HTTP/input/decoder, chưa phiên owner/model; giới hạn ngữ nghĩa và phạm vi Tật còn mở. Không xử lý28queued,0API. [Bằng chứng và giới hạn](AI-PAID-PREMISE-GUARD-QA120-20261105.md).
+
 ## 05/11 — Bộ đầu vào và bản đọc offline đã đóng, chưa nghiệm thu model
 
 10 bản giới hạn sẵn sàng chuẩn bị thử có kiểm soát; Tật chưa bài cá nhân, Tử chỉ một nét đối đãi. Có preview360/390 và căn cứ từng đoạn. Validator không thay review ngữ nghĩa; QA3118 vẫn1.14, bộ offline1.20;0API/DB/deploy. [Bản đọc và bằng chứng](AI-PAID-OFFLINE-READY-20261105.md).

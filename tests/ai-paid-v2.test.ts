@@ -1,3 +1,4 @@
+import { PAID_PROMPT_CURRENT as NEW_WRITER } from "../lib/ai/paid-prompt-v281";
 import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v28";
 import { PAID_PROMPT_CURRENT as PAID_PROMPT_V27 } from "../lib/ai/paid-prompt-v27";
 import { PAID_PROMPT_CURRENT as PAID_PROMPT_V26 } from "../lib/ai/paid-prompt-v26";
@@ -289,7 +290,7 @@ it("writer is opt-in while V1/V2 schema and prompts remain addressable", () => {
   vi.stubEnv("AI_PAID_READING_V2_ENABLED", "false");
   expect(paidWritePromptVersion()).toBe(PAID_V1_PROMPTS[3]);
   vi.stubEnv("AI_PAID_READING_V2_ENABLED", "true");
-  expect(paidWritePromptVersion()).toBe(PAID_PROMPT_CURRENT);
+  expect(paidWritePromptVersion()).toBe(NEW_WRITER);
   expect(paidInstructions(input, PAID_PROMPT_V2)).toContain(
     "Không số từ tối thiểu".toLowerCase().replace("không", "không"),
   );

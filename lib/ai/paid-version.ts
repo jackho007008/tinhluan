@@ -7,7 +7,8 @@ import { PAID_PROMPT_CURRENT as PAID_PROMPT_V24 } from "./paid-prompt-v24";
 import { PAID_PROMPT_CURRENT as PAID_PROMPT_V25 } from "./paid-prompt-v25";
 import { PAID_PROMPT_CURRENT as PAID_PROMPT_V26 } from "./paid-prompt-v26";
 import { PAID_PROMPT_CURRENT as PAID_PROMPT_V27 } from "./paid-prompt-v27";
-import { PAID_PROMPT_CURRENT } from "./paid-prompt-v28";
+import { PAID_PROMPT_CURRENT as PAID_PROMPT_V28 } from "./paid-prompt-v28";
+import { PAID_PROMPT_CURRENT } from "./paid-prompt-v281";
 export const isPaidV2Prompt = (version: string) =>
   [
     PAID_PROMPT_V2,
@@ -18,6 +19,7 @@ export const isPaidV2Prompt = (version: string) =>
     PAID_PROMPT_V25,
     PAID_PROMPT_V26,
     PAID_PROMPT_V27,
+    PAID_PROMPT_V28,
     PAID_PROMPT_CURRENT,
   ].includes(version);
 export const PAID_V1_PROMPTS = [

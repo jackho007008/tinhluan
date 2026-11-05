@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 05/11 — Khép lô sửa validator và chuẩn bị QA riêng
+
+Đã sửa đúng probe bằng contract mới, kiểm mock và tạoQA3120/clone55462 cách ly. Điểm dừng: chưa API, không job mới/consumer, chưa nghiệm thu thương mại; bài cũ vàQA3062/3070 giữ nguyên. [Bằng chứng và giới hạn](AI-PAID-PREMISE-GUARD-QA120-20261105.md).
+
 ## 05/11 — Khép ba bước offline được giao
 
 Đã chốt phạm vi11cung, biên tập bản đối chiếu và kiểm mock bằng pipeline chung. Không nhận điều kiện Trung văn chưa rõ, không nâng coverage hoặc tạo bài Tật giả. Điểm dừng: bộ private đóng hash, chưa phép thử model/thương mại hoặc cập nhật QA. [Bản đọc và bằng chứng](AI-PAID-OFFLINE-READY-20261105.md).

@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 05/11 — Cho phép sửa guard và chuẩn bị QA riêng, chưa API
+
+Chủ dự án yêu cầu sửa validator nhận đoạn thiếu nguồn và chuẩn bị QA riêng dùng1.20; mock trước, bài cũ/QA3062/3070 giữ. Codex táchcontract2.8.1 và QA3120/clone55462 để không thay runtimecũ. Không suy quyền gọi model, xử lýqueue hoặc mởbán từ việc chuẩn bị QA. [Bằng chứng và giới hạn](AI-PAID-PREMISE-GUARD-QA120-20261105.md).
+
 ## 05/11 — Cho phép hoàn tất ba bước offline, chưa gọi model
 
 Chủ dự án đồng ý chốt phạm vi, hoàn thiện đầu vào/bản biên tập và kiểm mock cho11cung; giữ riêng điều kiện chưa rõ, bài cũ và QA3062/3070. Đây không phải phê duyệt nội dung thương mại, gói bán, API mới hoặc publishTật. Bản đối chiếu vẫn cần đánh giá, đầu ra model chưa được chứng minh. [Bản đọc và bằng chứng](AI-PAID-OFFLINE-READY-20261105.md).

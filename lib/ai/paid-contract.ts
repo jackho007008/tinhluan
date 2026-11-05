@@ -24,7 +24,12 @@ import {
   paidInstructionsV27,
   PAID_PROMPT_CURRENT as PAID_PROMPT_V27,
 } from "./paid-prompt-v27";
-import { paidInstructionsV28, PAID_PROMPT_CURRENT } from "./paid-prompt-v28";
+import {
+  paidInstructionsV28,
+  PAID_PROMPT_CURRENT as PAID_PROMPT_V28,
+} from "./paid-prompt-v28";
+import { paidInstructionsV281, PAID_PROMPT_CURRENT } from "./paid-prompt-v281";
+import { validatePaidPremiseCoverage } from "./paid-premise-coverage";
 import { validateCustomerProse } from "./customer-prose";
 import { validatePaidSourceAnchors } from "./paid-source-anchors";
 import { validatePaidEditorial } from "./paid-editorial-guards";
@@ -93,7 +98,8 @@ export function paidInstructions(input: MenhInput, version = PAID_PROMPT) {
   if (version === PAID_PROMPT_V25) return paidInstructionsV25(input);
   if (version === PAID_PROMPT_V26) return paidInstructionsV26(input);
   if (version === PAID_PROMPT_V27) return paidInstructionsV27(input);
-  if (version === PAID_PROMPT_CURRENT) return paidInstructionsV28(input);
+  if (version === PAID_PROMPT_V28) return paidInstructionsV28(input);
+  if (version === PAID_PROMPT_CURRENT) return paidInstructionsV281(input);
   if (
     ["paid-palaces-vietnamese-1.0.0", "paid-palaces-vietnamese-1.0.1"].includes(
       version,
@@ -116,17 +122,19 @@ export function validatePaidNarration(
       input,
       [
         PAID_PROMPT_CURRENT,
+        PAID_PROMPT_V28,
         PAID_PROMPT_V27,
         PAID_PROMPT_V26,
         PAID_PROMPT_V25,
         PAID_PROMPT_V24,
         PAID_PROMPT_V23,
       ].includes(version),
-      version === PAID_PROMPT_CURRENT,
+      [PAID_PROMPT_CURRENT, PAID_PROMPT_V28].includes(version),
     );
     if (
       [
         PAID_PROMPT_CURRENT,
+        PAID_PROMPT_V28,
         PAID_PROMPT_V27,
         PAID_PROMPT_V26,
         PAID_PROMPT_V25,
@@ -139,6 +147,7 @@ export function validatePaidNarration(
     if (
       [
         PAID_PROMPT_CURRENT,
+        PAID_PROMPT_V28,
         PAID_PROMPT_V27,
         PAID_PROMPT_V26,
         PAID_PROMPT_V25,
@@ -147,10 +156,17 @@ export function validatePaidNarration(
     )
       validatePaidEditorial(content, input);
     if (
-      [PAID_PROMPT_CURRENT, PAID_PROMPT_V27, PAID_PROMPT_V26].includes(version)
+      [
+        PAID_PROMPT_CURRENT,
+        PAID_PROMPT_V28,
+        PAID_PROMPT_V27,
+        PAID_PROMPT_V26,
+      ].includes(version)
     )
       validatePaidSourceAnchors(content, input);
-    if ([PAID_PROMPT_CURRENT, PAID_PROMPT_V27].includes(version))
+    if (
+      [PAID_PROMPT_CURRENT, PAID_PROMPT_V28, PAID_PROMPT_V27].includes(version)
+    )
       validateCustomerProse(
         [
           content.coverageNote,
@@ -162,6 +178,8 @@ export function validatePaidNarration(
         ],
         input.knowledge.flatMap((k) => k.references.map((r) => r.title)),
       );
+    if (version === PAID_PROMPT_CURRENT)
+      validatePaidPremiseCoverage(content, input);
     return content;
   }
   if (

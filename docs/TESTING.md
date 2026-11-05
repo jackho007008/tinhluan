@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 05/11 — Kiểm premise guard và QA nguồn1.20
+
+174/174 tại7file; thêm1mockCREATE rồi17/17 guard đạt, tổng175case khác nhau.11input/bản đọc/2.606hash nguyên; typecheck/build đạt. QA3120 đọc38kết quả cũ,37bảng source/clone không đổi; không owner/mobile/testDBsuite/API. [Bằng chứng và giới hạn](AI-PAID-PREMISE-GUARD-QA120-20261105.md).
+
 ## 05/11 — Kiểm bộ đối chiếu offline, giữ một giới hạn ngữ nghĩa
 
 11 factory/validator,18 probe âm,4 kiểm sắc thái và86 test tại4file đạt;1 probe bỏ nguồn Lộc nhưng giữ suy luận Nô được validator nhận, ghi OPEN không tính đạt.2.606 hash giữ; preview11mục/49đoạn ở360/390 không tràn. Không build/typecheck vì không đổi ứng dụng,0API/DB. [Bản đọc và bằng chứng](AI-PAID-OFFLINE-READY-20261105.md).

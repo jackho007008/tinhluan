@@ -1,5 +1,9 @@
 # Kiến trúc Tinh Luận hiện hành
 
+## 05/11 — Contract tiền đề2.8.1, schema/input giữ nguyên
+
+Đoạn tổng hợp dùng foundation phải có neo nguồn cho mỗi tiền đề sao/TứHóa; D không bù neo. Thêm guard nhận diện tên rõ để ngăn bỏfactId, không chứng minh ngữ nghĩa. Chỉ writer2.8.1, GET cũ giữversion; retrieval1.20/schemaV2/queue/quyền không đổi. [Bằng chứng và giới hạn](AI-PAID-PREMISE-GUARD-QA120-20261105.md).
+
 ## 04/11 — Input1.20 có điều kiện tác giả, giữ facts và savedinput
 
 Loader120→119→chuỗi cũ;2authorCondition hữu hạn kiểm vị trí/sao/đường dẫn và hashtrangbảng+lời. Metadata nằm knowledge,không engine. Trần14KBgiữ,5slotsách chỉkhi có nhánh tác giả,webtốiđa1; guide1.3 dùng C+methodD đãchọn choPhúc↔Tài/Phu. Không schemaDB/queue/renderer/prompt mới hoặc hồi tố. [Bằng chứng và giới hạn](AI-PAID-VDC-INPUT120-HANDOFF-20261104.md).

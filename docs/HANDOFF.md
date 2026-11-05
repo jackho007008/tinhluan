@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 05/11 — Khép lỗi thiếu nguồn và có QA3120/input1.20
+
+Writer2.8.1 chặn probe Nô, giữ2.8/bài cũ;175case mock khác nhau/typecheck/build đạt. QA3120/clone55462 có kho128artifact,38completed/28queued/39attempt nguyên;0API, không đổiQA3062/3070/3118. [Bằng chứng và giới hạn](AI-PAID-PREMISE-GUARD-QA120-20261105.md).
+
 ## 05/11 — Hoàn tất bộ đối chiếu offline 11 cung
 
 Có 10 bản limited/49 đoạn và Tật insufficient; dùng nguyên input1.20/guide1.3/prompt2.8. 86 test đạt,18 probe âm chặn,1 probe ngữ nghĩa Nô còn mở;2.606 file cũ nguyên. Chưa API, chưa thương mại hoặc cập nhật QA. [Bản đọc và bằng chứng](AI-PAID-OFFLINE-READY-20261105.md).

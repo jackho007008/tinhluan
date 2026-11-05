@@ -1,3 +1,4 @@
+import { PAID_PROMPT_CURRENT as V281 } from "../lib/ai/paid-prompt-v281";
 import { afterEach, expect, it, vi } from "vitest";
 import type { MenhInput } from "../lib/ai/contract";
 import { validateCustomerProse } from "../lib/ai/customer-prose";
@@ -104,9 +105,9 @@ it.each(PAID_PALACES)(
     expect(prompt).not.toContain("paragraph1 nêu tác giả");
   },
 );
-it("selects 2.8 for new V2 jobs but preserves schema and saved 2.6/2.7 prompts", () => {
+it("selects 2.8.1 for new V2 jobs but preserves schema and saved 2.6/2.7 prompts", () => {
   vi.stubEnv("AI_PAID_READING_V2_ENABLED", "true");
-  expect(paidWritePromptVersion()).toBe(V28);
+  expect(paidWritePromptVersion()).toBe(V281);
   expect(paidOutputSchema(V28)).toBe(paidOutputSchema(V27));
   expect(paidOutputSchema(V27)).toBe(paidOutputSchema(V26));
   expect(paidInstructions(input(), V26)).not.toContain(

@@ -1,4 +1,4 @@
-import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v28";
+import { PAID_PROMPT_CURRENT } from "../lib/ai/paid-prompt-v281";
 import { authorizePaidAccountRetry } from "../lib/ai/account-recovery";
 import { PAID_PROMPT_V2 } from "../lib/ai/paid-reading-v2";
 import { mockPaidV2 } from "./fixtures/ai-paid-v2-mock";
