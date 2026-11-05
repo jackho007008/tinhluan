@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 05/11 — Bộ đầu vào và bản đọc offline đã đóng, chưa nghiệm thu model
+
+10 bản giới hạn sẵn sàng chuẩn bị thử có kiểm soát; Tật chưa bài cá nhân, Tử chỉ một nét đối đãi. Có preview360/390 và căn cứ từng đoạn. Validator không thay review ngữ nghĩa; QA3118 vẫn1.14, bộ offline1.20;0API/DB/deploy. [Bản đọc và bằng chứng](AI-PAID-OFFLINE-READY-20261105.md).
+
 ## 04/11 — Đã đối chiếu Trung văn, ba giới hạn vẫn tách riêng
 
 Kình Dương có dị bản hỗ trợ, không phải đã kiểm ảnh gốc. Cardinality Nô và hệ Hao trong phối hợp chưa xác định; input1.20/bài cũ nguyên. Không tăng% nghiệm thu hoặc cập nhật QA. [Chứng cứ và phần chưa chắc](AI-PAID-VDC-CHINESE-WITNESSES-20261104.md).

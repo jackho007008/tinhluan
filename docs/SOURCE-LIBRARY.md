@@ -1,5 +1,9 @@
 # Kho nguồn Tử Vi — đầu mối tra cứu
 
+## 05/11 — Đóng nguồn cho bộ đối chiếu, không thêm claim
+
+Tái dùng input1.20 và48artifact nguồn đã kiểm; hai nhánh Liêm Thân/Hỏa Tuất vào bản đọc mới. Hệ Hao trong câu phối hợp, chữ/nhóm Phu và lượng từ Nô vẫn giữ riêng; chưa mượn tinh hệ Tử hoặc publishT1. Không đọc thêm sách/index mới. [Bản đọc và bằng chứng](AI-PAID-OFFLINE-READY-20261105.md).
+
 ## 04/11 — Bổ sung nhân chứng Trung văn và loại bản tinh biên
 
 Ba mục Sơ cấp bản chép2011, Scribd và Đàm tinh tinh bài được đối chiếu hẹp; chưa ảnh nguyên bản câu đích. PDF74trang chỉ tìm chữ, kiểm ảnh trang1 xác nhận bên thứ ba đã sửa/lược; không đọc lại toàn sách, không nhập vào index. [Chứng cứ và phần chưa chắc](AI-PAID-VDC-CHINESE-WITNESSES-20261104.md).

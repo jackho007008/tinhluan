@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 05/11 — Khép ba bước offline được giao
+
+Đã chốt phạm vi11cung, biên tập bản đối chiếu và kiểm mock bằng pipeline chung. Không nhận điều kiện Trung văn chưa rõ, không nâng coverage hoặc tạo bài Tật giả. Điểm dừng: bộ private đóng hash, chưa phép thử model/thương mại hoặc cập nhật QA. [Bản đọc và bằng chứng](AI-PAID-OFFLINE-READY-20261105.md).
+
 ## 04/11 — Khép lô tìm Trung văn đúng đoạn
 
 Đã tra Phu/Nô/Tài và đoạn phân biệt Hao ở Đàm tinh; loại PDF bên thứ ba sửa/lược khỏi căn cứ quyết định. Điểm dừng: hồ sơ dị bản, locator ảnh cần kiểm; chưa triển khai hoặc gọi API. [Chứng cứ và phần chưa chắc](AI-PAID-VDC-CHINESE-WITNESSES-20261104.md).

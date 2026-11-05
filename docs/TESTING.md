@@ -1,5 +1,9 @@
 # Kiểm chứng theo phạm vi
 
+## 05/11 — Kiểm bộ đối chiếu offline, giữ một giới hạn ngữ nghĩa
+
+11 factory/validator,18 probe âm,4 kiểm sắc thái và86 test tại4file đạt;1 probe bỏ nguồn Lộc nhưng giữ suy luận Nô được validator nhận, ghi OPEN không tính đạt.2.606 hash giữ; preview11mục/49đoạn ở360/390 không tràn. Không build/typecheck vì không đổi ứng dụng,0API/DB. [Bản đọc và bằng chứng](AI-PAID-OFFLINE-READY-20261105.md).
+
 ## 04/11 — Probe hồ sơ điều kiện, không kiểm ứng dụng
 
 33/33 probe đọc snapshot có sẵn đạt: định danh Hao, vị trí trợ/sát, geometry Tử và giữ inventory; 1.464 artifact cũ và96 hash bundle trước khớp. Không evaluator/model/DB/runtime; không test/build/typecheck ứng dụng vì chỉ sửa tài liệu. Đây là kiểm cấu trúc, không nghiệm thu nghĩa nguồn. [Hồ sơ và giới hạn](AI-PAID-VDC-CONDITION-REVIEW-20261104.md).

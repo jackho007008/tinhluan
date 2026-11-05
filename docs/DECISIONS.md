@@ -1,5 +1,9 @@
 # Sổ quyết định Tinh Luận
 
+## 05/11 — Cho phép hoàn tất ba bước offline, chưa gọi model
+
+Chủ dự án đồng ý chốt phạm vi, hoàn thiện đầu vào/bản biên tập và kiểm mock cho11cung; giữ riêng điều kiện chưa rõ, bài cũ và QA3062/3070. Đây không phải phê duyệt nội dung thương mại, gói bán, API mới hoặc publishTật. Bản đối chiếu vẫn cần đánh giá, đầu ra model chưa được chứng minh. [Bản đọc và bằng chứng](AI-PAID-OFFLINE-READY-20261105.md).
+
 ## 04/11 — Cho phép tích hợp phần đã rõ, không sửa facts hoặc bài cũ
 
 Chủ dự án yêu cầu “Tích hợp phần đã rõ vào đầu vào bài mới”, ưu tiênTài/Phu/Nô/Tử, giữ riêng điều kiện tácgiả/vịtrí/liêncung. Codex nhận2nhánh bảngđãkiểm vàphươngpháp tươngứng theo phạmvi đó. Đây không phải quyền gọiAPI,publishTật,phêduyệt mọi lời nguồn hoặc deploy/mởbán. Kiểm mock trước,giữQA vàlịch sử. [Bằng chứng và giới hạn](AI-PAID-VDC-INPUT120-HANDOFF-20261104.md).
