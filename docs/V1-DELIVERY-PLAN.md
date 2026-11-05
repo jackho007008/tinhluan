@@ -1,5 +1,9 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+## 05/11 — Tài Bạch QA3120: đã kiểm phiên, còn thiếu quyền checkout
+
+Báo cáo mới mở lại được trong phiên chủ; input 1.20/prompt 2.8.1 khớp mẫu Tài, mock đạt. Server xác nhận chưa có grant, chưa gửi CREATE. Dự toán khoảng $0,21, dự phòng $0,30. [Bằng chứng và điểm tiếp tục](QA3120-TAI-BACH-SOL281-PREFLIGHT-20261105.md).
+
 ## 05/11 — Khép lô sửa validator và chuẩn bị QA riêng
 
 Đã sửa đúng probe bằng contract mới, kiểm mock và tạoQA3120/clone55462 cách ly. Điểm dừng: chưa API, không job mới/consumer, chưa nghiệm thu thương mại; bài cũ vàQA3062/3070 giữ nguyên. [Bằng chứng và giới hạn](AI-PAID-PREMISE-GUARD-QA120-20261105.md).

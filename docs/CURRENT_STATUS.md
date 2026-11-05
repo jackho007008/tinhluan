@@ -1,5 +1,9 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+## 05/11 — Tài Bạch QA3120: đã kiểm phiên, còn thiếu quyền checkout
+
+Báo cáo mới mở lại được trong phiên chủ; input 1.20/prompt 2.8.1 khớp mẫu Tài, mock đạt. Server xác nhận chưa có grant, chưa gửi CREATE. Dự toán khoảng $0,21, dự phòng $0,30. [Bằng chứng và điểm tiếp tục](QA3120-TAI-BACH-SOL281-PREFLIGHT-20261105.md).
+
 ## 05/11 — QA riêng dùng1.20, guard tiền đề2.8.1
 
 Mẫu thiếu nguồn đã bị chặn ở writer mới,11bản đối chiếu không đổi. QA3120 sẵn HTTP/input/decoder, chưa phiên owner/model; giới hạn ngữ nghĩa và phạm vi Tật còn mở. Không xử lý28queued,0API. [Bằng chứng và giới hạn](AI-PAID-PREMISE-GUARD-QA120-20261105.md).

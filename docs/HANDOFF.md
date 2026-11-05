@@ -1,5 +1,9 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+## 05/11 — Tài Bạch QA3120: đã kiểm phiên, còn thiếu quyền checkout
+
+Báo cáo mới mở lại được trong phiên chủ; input 1.20/prompt 2.8.1 khớp mẫu Tài, mock đạt. Server xác nhận chưa có grant, chưa gửi CREATE. Dự toán khoảng $0,21, dự phòng $0,30. [Bằng chứng và điểm tiếp tục](QA3120-TAI-BACH-SOL281-PREFLIGHT-20261105.md).
+
 ## 05/11 — Khép lỗi thiếu nguồn và có QA3120/input1.20
 
 Writer2.8.1 chặn probe Nô, giữ2.8/bài cũ;175case mock khác nhau/typecheck/build đạt. QA3120/clone55462 có kho128artifact,38completed/28queued/39attempt nguyên;0API, không đổiQA3062/3070/3118. [Bằng chứng và giới hạn](AI-PAID-PREMISE-GUARD-QA120-20261105.md).
