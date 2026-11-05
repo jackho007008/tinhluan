@@ -1,5 +1,13 @@
 # Sổ quyết định Tinh Luận
 
+## Mẫu biên tập Quan Lộc
+
+Ngày 05/11/2026, chủ dự án duyệt [bản Quan Lộc biên tập riêng](../.local/qa3120-quan-sol281/quan-loc-mau-bien-tap-da-duyet.md) làm mẫu. SHA-256 toàn văn `5ed79564daef8e52b1141c1e046a1dc755a83f28d2e32c82bc1ed8bdf1b835f8`. Mẫu tách ý bộ sao khỏi nghĩa riêng, dùng ví dụ trình bày phương án và chỉ bàn quyền hạn ở một chỗ. Phê duyệt này dành cho bản biên tập; kết quả Sol của job Quan trên QA3120 vẫn ở trạng thái đã ghi trước đó.
+
+Trong chín job chờ của cùng lá số, đề xuất Phu Thê vì có nhiều điều kiện khớp và cho luận điểm khác nhau về cách tương tác, việc từng giúp nhau trong một giai đoạn và sự khác biệt quan niệm. Nhánh Hỏa Tinh ở Tuất chỉ dùng riêng theo bảng tác giả, giữ hai khả năng thay thế. Bộ ba Phá–Đà–Hỏa chưa có căn cứ để luận gộp. Nô Bộc có nhiều đoạn nhưng vài đoạn cùng khai triển Lộc năm sinh; điều kiện kết luận trợ lực còn thiếu. Bản Phu đối chiếu limited bốn phần qua validator offline trên đúng input của job.
+
+Dự toán riêng cho một CREATE Sol, retrieval 1.20.0/prompt 2.8.1. Yêu cầu 128.988 byte; quy đổi theo hai lần đo Tài và Quan được khoảng 32.719–32.927 input token. Theo cùng biểu giá của hai lượt trước (ghi cache 30 phút 2,50 USD/triệu, output 10 USD/triệu), khoảng 0,134–0,136 USD với 5.261–5.374 output; khoảng 0,202 USD nếu dùng hết 12.000 output. Dự phòng đề xuất 0,25 USD. Kiểm chỉ đọc chín job queued/0 attempt. Không gọi provider hoặc đặt chỗ ngân sách.
+
 ## Mẫu biên tập Tài Bạch
 
 Ngày 05/11/2026, chủ dự án duyệt [đúng bản biên tập riêng](../.local/qa3120-sol281-run/tai-bach-mau-bien-tap-da-duyet.md) làm mẫu văn phong và cách nối luận điểm. SHA-256 toàn văn `1809c7362d70076e23792f7baa42d1808ddf77d6bde767204b5605e24715787c`. Bài đã giao tiếp tục dùng kết quả Sol đã lưu. Mẫu dùng để đối chiếu khi duyệt, không tự chèn vào prompt.
