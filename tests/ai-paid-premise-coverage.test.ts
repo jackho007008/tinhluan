@@ -1,3 +1,4 @@
+import { validatePaidPremiseCoverage } from "../lib/ai/paid-premise-coverage";
 import { afterEach, expect, it, vi } from "vitest";
 import type { MenhInput } from "../lib/ai/contract";
 import {
@@ -297,4 +298,86 @@ it("mock CREATE sends 2.8.1 with Background and unchanged Structured Outputs", a
   expect(sent.text.format.type).toBe("json_schema");
   expect(receipt).toHaveBeenCalledTimes(1);
   expect(validatePaidNarration(result.raw, input, V281)).toEqual(raw);
+});
+
+it("allows a cited Hao entry label but still checks separate mentions and explicit star facts", () => {
+  const { input, raw, p } = fixture();
+  const dao = {
+    ...input.facts[0],
+    id: "palace.6.ring.boshi12",
+    text: "Tài Bạch tại Thân: Đại Hao; vòng bản mệnh.",
+  };
+  const tieu = {
+    ...dao,
+    id: "palace.0.ring.boshi12",
+    text: "Phúc Đức tại Dần: Tiểu Hao; vòng bản mệnh.",
+  };
+  input.facts = [dao, tieu];
+  const k = input.knowledge[0];
+  k.id = "paid-library.tb41-tai-hao-scope";
+  k.passage!.digest =
+    "13ef0725399f252a80c67b93e96c5b6bbe0f75c2e6e4c4564c9ea59707e48b36";
+  k.passage!.anchorFactIds = [dao.id];
+  p.text =
+    "Đại Hao được xét trong nghĩa chung của nhóm Đại Hao–Tiểu Hao, khi nói đến hao hụt.";
+  p.knowledgeIds = [k.id];
+  p.factIds = [dao.id];
+  const check = () => validatePaidPremiseCoverage(raw, input);
+  expect(check).not.toThrow();
+  p.factIds.push(tieu.id);
+  expect(check).toThrow("AI_PREMISE_SOURCE_MISSING");
+  p.factIds.pop();
+  p.text += " Tiểu Hao cũng ở Tài.";
+  expect(check).toThrow("AI_PREMISE_SOURCE_MISSING");
+  p.text = p.text.split(" Tiểu Hao cũng")[0];
+  k.passage!.digest = "0".repeat(64);
+  expect(check).toThrow("AI_PREMISE_SOURCE_MISSING");
+});
+
+it("only resolves the complete R05 pair in its original career palace and paragraph", () => {
+  const { input, raw, p } = fixture();
+  const pair = ["Tử Vi", "Thiên Tướng"].map((name, n) => ({
+    ...input.facts[0],
+    id: "palace.2.majorStars." + n,
+    text: "Quan Lộc tại Thìn: " + name + "; nhóm chính tinh.",
+    provenance: { ...input.facts[0].provenance!, palace: "Quan Lộc" },
+  }));
+  input.facts.push(
+    ...pair,
+    ...["Tử", "Suy"].map((name, index) => ({
+      ...pair[0],
+      id: "palace." + index + ".ring.changsheng12",
+      text: "Cung: " + name + "; vòng Trường Sinh.",
+    })),
+  );
+  const k = input.knowledge[1];
+  Object.assign(k, {
+    id: "r05",
+    selection: "matched-v1-editorial",
+    group: "C",
+    application: "context",
+    subjectPalaces: ["Quan Lộc"],
+    provenance: { ruleIds: ["tanbien.r05"] },
+    anchorFactIds: undefined,
+  });
+  p.text =
+    "Tử Vi và Thiên Tướng tại Quan Lộc là ngữ cảnh, chưa dùng để suy ra kết quả.";
+  p.knowledgeIds = ["foundation", k.id];
+  p.factIds = pair.map((f) => f.id);
+  const check = () => validatePaidPremiseCoverage(raw, input);
+  expect(check).not.toThrow();
+  for (const stage of ["Tử", "Suy"]) {
+    const original = p.text;
+    p.text += " Vòng có " + stage + " tại Quan.";
+    expect(check).toThrow("AI_PREMISE_SOURCE_MISSING");
+    p.text = original;
+  }
+  pair[1].provenance.palace = "Tài Bạch";
+  expect(check).toThrow("AI_PREMISE_SOURCE_MISSING");
+  pair[1].provenance.palace = "Quan Lộc";
+  p.factIds.shift();
+  expect(check).toThrow("AI_PREMISE_SOURCE_MISSING");
+  p.factIds = pair.map((f) => f.id);
+  p.knowledgeIds = ["foundation"];
+  expect(check).toThrow("AI_PREMISE_SOURCE_MISSING");
 });

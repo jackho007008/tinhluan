@@ -31,3 +31,13 @@ Trình duyệt localhost của chủ mở lại đúng bản QA Tài Bạch 1.20
 Sol nhận đúng request đã kiểm (retrieval 1.20.0, prompt 2.8.1). Provider completed sau 105 giây, quan sát đến khi QA ghi nhận kết quả khoảng 217 giây. Usage 35.112 input (3 thường, 35.109 ghi cache 30 phút), 5.261 output gồm 3.624 reasoning. Parser ước tính 0,1403885 USD, dự phòng 0,30 USD.
 
 Bài gồm ba phần, sáu đoạn. QA lưu lỗi AI_INVALID_OUTPUT, bộ đọc giao 0/11. Chạy lại validator offline trên nguyên văn tái hiện AI_PREMISE_SOURCE_MISSING và định vị hai đoạn tổng hợp. Đoạn Đại Hao nhắc Tiểu Hao trong tên nhóm nhưng chưa dẫn fact cho sao đó. Đoạn nghề nghiệp dẫn fact Thiên Tướng ngoài các sao được đánh dấu trong nguồn tam hợp và nguồn V1 đính kèm chưa mang liên kết fact đó. Chưa xác định đây là hai sai nghĩa chuyên môn. Không sửa hoặc duyệt thay nội dung. [Toàn văn để duyệt](../.local/qa3120-sol281-run/bai-tai-bach.html) · [Usage và số đếm sau lượt chạy](../.local/qa3120-sol281-run/audit.json).
+
+## Kiểm lại tham chiếu và giao bài
+
+Tiểu Hao xuất hiện trong tên nhóm của mục Tân Biên tr.41 §3.27. Đoạn luận trạng thái Đại Hao tại Tài, không đặt Tiểu Hao đồng cung. R05 (§8.1/8.11, tr.158/162) được chọn ở nhóm C theo điều kiện Tử Vi và Thiên Tướng cùng ở Quan Lộc. Hai chính tinh đều có trong facts Quan Lộc tại Thìn. Đoạn tổng hợp dùng nguồn này cho mặt tổ chức và giới hạn quyền hạn; khuynh hướng nghề tài chính đến từ nguồn tam hợp riêng. Bộ kiểm tra phân biệt tên nhóm, tên chính tinh Tử Vi và động từ “để suy ra” với các sao/vòng được luận thật. Kiểm riêng các trường hợp nhắc sao độc lập, sai cung và thiếu nguồn.
+
+Dùng đúng response completed lưu tại QA3120, trùng bản lưu của lần GET thứ ba, khớp job/attempt/receipt và input gốc. Validator ban đầu từ chối hai đoạn; sau khi sửa hai liên kết, còn lỗi nhận “Tử”, “Suy” trong đoạn nghề nghiệp. Kiểm lại sau khi phân biệt từ cho kết quả đạt cả bài. Worker dùng nhánh revalidate trên chính attempt đó với nguồn đọc đĩa; mạng ra ngoài bị chặn. Bộ đếm kiểm Background ghi thêm một lượt kiểm nội bộ. Số GET/CREATE thực tế giữ ở 3/1 của lần gọi ban đầu. Không có phí mới.
+
+Đã so sánh toàn bộ content trong DB và qua bộ đọc trả phí với JSON model trả về, bao gồm từng đoạn và các ID tham chiếu. Tài completed, coverage focused, bộ đọc 1/11. Mười hàng job khác khớp nguyên trước/sau, queued và 0 attempt. Chi phí ước tính cũ 0,1403885 USD. [Bài đã giao](../.local/qa3120-sol281-run/bai-tai-bach-da-giao.html) · [Kết quả kiểm](../.local/qa3120-sol281-run/review-completed.json).
+
+55 test ở ba file đạt; kiểm lại riêng 19 ca guard sau tinh chỉnh ranh giới tên sao đều đạt. Typecheck checkout build ban đầu thiếu hai fixture được Git bỏ qua; chép đúng bản cục bộ vào checkout cách ly rồi typecheck và build đạt.

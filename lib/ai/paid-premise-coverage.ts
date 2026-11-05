@@ -1,4 +1,4 @@
-import type { AiFact, MenhInput } from "./contract";
+import type { AiFact, Knowledge, MenhInput } from "./contract";
 import type { PaidReadingV2 } from "./paid-reading-v2";
 
 const starFact = (f: AiFact) =>
@@ -14,6 +14,79 @@ const words = (s: string) =>
     ?.join(" ") || "";
 const contains = (text: string, term: string) =>
   ` ${words(text)} `.includes(` ${words(term)} `);
+
+// Frozen editorial packets identify the matched R05 rule but do not carry
+// anchorFactIds for it. Its two premises are co-located career major stars.
+function careerPairAnchors(sources: Knowledge[], facts: AiFact[]): string[] {
+  if (
+    !sources.some(
+      (k) =>
+        k.group === "C" &&
+        k.application === "context" &&
+        k.selection === "matched-v1-editorial" &&
+        k.subjectPalaces?.length === 1 &&
+        k.subjectPalaces[0] === "Quan Lộc" &&
+        k.provenance?.ruleIds.length === 1 &&
+        k.provenance.ruleIds[0] === "tanbien.r05",
+    )
+  )
+    return [];
+  const pair = ["Tử Vi", "Thiên Tướng"].map((name) =>
+    facts.find(
+      (f) =>
+        f.provenance?.palace === "Quan Lộc" &&
+        f.provenance.field === "majorStars" &&
+        f.provenance.scope === "natal" &&
+        f.provenance.verification === "source-traced" &&
+        /^palace\.\d+\.majorStars\.\d+$/u.test(f.id) &&
+        f.text.startsWith("Quan Lộc tại ") &&
+        f.text.split(": ")[1]?.split(";")[0] === name,
+    ),
+  );
+  const [tu, tuong] = pair;
+  if (!tu || !tuong || tu.id.split(".")[1] !== tuong.id.split(".")[1])
+    return [];
+  return [tu.id, tuong.id];
+}
+
+// In this cited foundation “Đại Hao–Tiểu Hao” names the book entry.
+// Mask only the second name within an explicit, delimited group label.
+// Other occurrences and every explicit fact reference are still checked.
+function premiseText(text: string, sources: Knowledge[]) {
+  if (
+    !sources.some(
+      (k) =>
+        k.id === "paid-library.tb41-tai-hao-scope" &&
+        k.group === "B" &&
+        k.application === "reference-only" &&
+        k.passage?.kind === "foundation" &&
+        k.passage.digest ===
+          "13ef0725399f252a80c67b93e96c5b6bbe0f75c2e6e4c4564c9ea59707e48b36",
+    )
+  )
+    return text;
+  return text
+    .normalize("NFC")
+    .replace(
+      /trong nghĩa chung của nhóm Đại Hao\s*[–—-]\s*Tiểu Hao(?=\s*[,;)])/giu,
+      "trong nghĩa chung của nhóm Đại Hao",
+    );
+}
+
+function mentionsStar(text: string, name: string) {
+  // “Tử Vi” names a major star. The first syllable does not also cite the
+  // Trường Sinh stage Tử. Likewise “để suy ra” is a verb, not the stage Suy.
+  if (name === "Tử")
+    return contains(
+      normalize(text).replace(
+        /(?<![\p{L}\p{N}])tử\s+vi(?![\p{L}\p{N}])/gu,
+        " ",
+      ),
+      name,
+    );
+  if (name === "Suy") return contains(text.replace(/để suy ra/gu, " "), name);
+  return contains(text, name);
+}
 
 /** A bounded structural guard, NOT semantic entailment. In a synthesis that
  * uses library foundations, every star premise must have a cited source anchor.
@@ -48,6 +121,9 @@ export function validatePaidPremiseCoverage(
       const citedStars = input.facts.filter(
         (f) => starFact(f) && p.factIds.includes(f.id),
       );
+      for (const anchor of careerPairAnchors(sources, citedStars))
+        supported.add(anchor);
+      const text = premiseText(p.text, sources);
       if (citedStars.some((f) => !supported.has(f.id)))
         throw Error("AI_PREMISE_SOURCE_MISSING");
 
@@ -64,8 +140,8 @@ export function validatePaidPremiseCoverage(
               name + " tại",
               "với " + name,
               "nền " + name,
-            ].some((t) => contains(p.text, t))
-          : contains(p.text, name);
+            ].some((t) => contains(text, t))
+          : mentionsStar(text, name);
         if (!mentioned) continue;
         const same = citedStars.filter((c) =>
           transformation

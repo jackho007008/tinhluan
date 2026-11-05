@@ -1,6 +1,6 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
-QA3120 đã đối soát đơn test, cấp quyền và thử đúng 1 CREATE Tài Bạch bằng Sol/1.20/2.8.1. Provider completed, validator từ chối hai đoạn, 10 job còn chờ với 0 attempt. [Toàn văn, chi phí và kết quả](QA3120-TAI-BACH-SOL281-PREFLIGHT-20261105.md#kết-quả-lượt-thật).
+QA3120 đã giao nguyên văn bài Tài Bạch sau khi kiểm lại response đã lưu. Bộ đọc trả 1/11, mười job còn chờ với 0 attempt. [Kết quả kiểm lại](QA3120-TAI-BACH-SOL281-PREFLIGHT-20261105.md#kiểm-lại-tham-chiếu-và-giao-bài).
 
 ## 05/11 — Tài Bạch QA3120: đã kiểm phiên, còn thiếu quyền checkout
 
