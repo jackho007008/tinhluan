@@ -23,3 +23,11 @@ Clone có 0 danh tính Google khớp danh sách QA đã duyệt và 0 liên kế
 Đã đối chiếu đúng một tài khoản Google đăng nhập trên clone từ khi mở HTTPS. Web QA3120 nạp ID bổ sung từ file private của riêng môi trường này. Chỉ web 3120 được nạp lại (PID 36748), thư viện trả HTTP 200. Kiểm bằng điều kiện checkout của ứng dụng cho thấy phiên còn hạn và tài khoản được phép checkout.
 
 Trình duyệt localhost của chủ mở lại đúng bản QA Tài Bạch 1.20 (ID ở trên), có Liêm Trinh tại Thân. Đã gửi yêu cầu bằng biểu mẫu khôi phục của bản đó. Email đã xác minh của Google trùng người nhận QA được cấu hình. Lượt xử lý đầu dừng trước SMTP do thiếu lựa chọn provider, transaction rollback. Lượt có provider Gmail xử lý duy nhất email cho binding của đúng phiên chủ và báo cáo. SMTP đã chấp nhận, DB đã ghi sent. Người dùng mở liên kết dùng một lần trên hostname ngrok, bấm Tiếp tục và liên kết bản đọc trong thư viện của phiên Google. Lúc gửi thư, resolver còn chờ bước xác minh và liên kết này, 0 đơn, 0 job cho báo cáo, 0 CREATE.
+
+## Kết quả lượt thật
+
+Đơn test đã paid/ready qua đối soát SePay Sandbox, 1 giao dịch được áp và 1 grant còn hạn. Chưa xác minh đường webhook. Đúng báo cáo đã tạo 11 job. Một CREATE Tài Bạch, một attempt, ba GET đối soát cùng receipt, 0 retry. Mười job khác đều queued với 0 attempt. Giữ nguyên quyền mua.
+
+Sol nhận đúng request đã kiểm (retrieval 1.20.0, prompt 2.8.1). Provider completed sau 105 giây, quan sát đến khi QA ghi nhận kết quả khoảng 217 giây. Usage 35.112 input (3 thường, 35.109 ghi cache 30 phút), 5.261 output gồm 3.624 reasoning. Parser ước tính 0,1403885 USD, dự phòng 0,30 USD.
+
+Bài gồm ba phần, sáu đoạn. QA lưu lỗi AI_INVALID_OUTPUT, bộ đọc giao 0/11. Chạy lại validator offline trên nguyên văn tái hiện AI_PREMISE_SOURCE_MISSING và định vị hai đoạn tổng hợp. Đoạn Đại Hao nhắc Tiểu Hao trong tên nhóm nhưng chưa dẫn fact cho sao đó. Đoạn nghề nghiệp dẫn fact Thiên Tướng ngoài các sao được đánh dấu trong nguồn tam hợp và nguồn V1 đính kèm chưa mang liên kết fact đó. Chưa xác định đây là hai sai nghĩa chuyên môn. Không sửa hoặc duyệt thay nội dung. [Toàn văn để duyệt](../.local/qa3120-sol281-run/bai-tai-bach.html) · [Usage và số đếm sau lượt chạy](../.local/qa3120-sol281-run/audit.json).

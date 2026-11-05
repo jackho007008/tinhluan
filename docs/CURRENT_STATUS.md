@@ -1,6 +1,6 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-QA3120 đã cho phép tài khoản Google thử checkout và gửi thư khôi phục từ phiên chủ đúng lá số Tài Bạch. Chờ xác minh quyền trên báo cáo trước khi thanh toán test. [Bàn giao](QA3120-TAI-BACH-SOL281-PREFLIGHT-20261105.md).
+QA3120 đã đối soát đơn test, cấp quyền và thử đúng 1 CREATE Tài Bạch bằng Sol/1.20/2.8.1. Provider completed, validator từ chối hai đoạn, 10 job còn chờ với 0 attempt. [Toàn văn, chi phí và kết quả](QA3120-TAI-BACH-SOL281-PREFLIGHT-20261105.md#kết-quả-lượt-thật).
 
 ## 05/11 — Tài Bạch QA3120: đã kiểm phiên, còn thiếu quyền checkout
 
