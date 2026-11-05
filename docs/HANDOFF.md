@@ -1,5 +1,7 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+QA3120 có HTTPS riêng, đã kiểm redirect sang Google. Chờ đăng nhập, đối chiếu quyền sở hữu và checkout test trước một lượt Tài Bạch. [URI và kết quả kiểm](QA3120-TAI-BACH-SOL281-PREFLIGHT-20261105.md#bổ-sung-ngày-0511--google-login-qua-https-riêng).
+
 ## 05/11 — Tài Bạch QA3120: đã kiểm phiên, còn thiếu quyền checkout
 
 Báo cáo mới mở lại được trong phiên chủ; input 1.20/prompt 2.8.1 khớp mẫu Tài, mock đạt. Server xác nhận chưa có grant, chưa gửi CREATE. Dự toán khoảng $0,21, dự phòng $0,30. [Bằng chứng và điểm tiếp tục](QA3120-TAI-BACH-SOL281-PREFLIGHT-20261105.md).
