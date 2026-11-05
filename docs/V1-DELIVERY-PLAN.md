@@ -3398,3 +3398,5 @@ TheoQ14, một rule TTDi áp đúng phạm vi TB179§10.27, không điều kiệ
 Đã làm nhóm D1-Home/D1-FormError/D2-DeskHome trên nhánh trial, dùng form, quyền và đường ghi bản đọc hiện hành. Đã kiểm responsive và chụp ba màn. Điểm dừng trước nhóm kết quả. Xem [trạng thái](CURRENT_STATUS.md).
 
 Đã đối chiếu bổ sung màn lỗi di động với D1-FormError.png và kiểm lại cả ba màn trên bản build. Dừng ở nhóm trang chủ và form; [bằng chứng và kết quả kiểm](CURRENT_STATUS.md#cổ-thư--trang-chủ-và-form--05112026).
+
+Đã căn lại lưới, họa tiết và khoảng cách desktop theo D2-DeskHome.html/.png; đã kiểm lại cả ba màn. Dừng ở nhóm Trang chủ + form.

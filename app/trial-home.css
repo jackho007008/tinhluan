@@ -69,6 +69,31 @@
     .home-ency { padding-block: var(--space-16); }
     .home-free { max-width: var(--measure); }
   }
+  @media (min-width: 1024px) {
+    [data-trial-home].reference-ui .header-inner,
+    .trial-home .home-container, .home-footer .home-container {
+      box-sizing: border-box;
+      width: 100%; max-width: 1200px;
+      margin-inline: auto; padding-inline: var(--space-8);
+    }
+    .home-hero-band { position: relative; isolation: isolate; overflow: clip; }
+    .home-hero {
+      grid-template-columns: minmax(0,1fr) 440px;
+      gap: calc(var(--space-8) + var(--space-6));
+      padding-block: calc(var(--space-16) + var(--space-2)) calc(var(--space-16) + var(--space-4));
+    }
+    .home-opening { position: static; isolation: auto; overflow: visible; padding: 0; gap: var(--space-5); }
+    .home-motif { left: -180px; top: -60px; width: 520px; opacity: .35; stroke-width: .5; pointer-events: none; }
+    .home-opening h1 { max-width: 620px; line-height: 1.04; }
+    .home-opening > p { font-size: 18px; max-width: 520px; }
+    .home-checks { margin: var(--space-2) 0 0; }
+    .home-section { padding-block: 0 calc(var(--space-16) + var(--space-4)); }
+    .home-columns { gap: var(--space-8); }
+    .home-ency { margin-top: 0; margin-bottom: var(--space-16); }
+    .home-ency .home-container { grid-template-columns: minmax(0,1fr) 440px; align-items: center; }
+    .home-faq { grid-template-columns: 300px minmax(0,1fr); }
+    .home-free { max-width: calc((100% - var(--space-5)) / 2); }
+  }
 }
 
 @media screen {

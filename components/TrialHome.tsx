@@ -32,7 +32,7 @@ async function LatestArticles() {
 
 export default function TrialHome({accountSignedIn, emailRecovery}: {accountSignedIn: boolean; emailRecovery: boolean}) {
   return <main className="trial-home">
-    <section className="home-hero home-container">
+    <section className="home-hero-band"><div className="home-hero home-container">
       <div className="home-opening">
         <svg className="home-motif" viewBox="0 0 160 160" fill="none" stroke="currentColor" aria-hidden="true">
           <path d="M1 1h158v158H1z M40 1v158m80-158v158M1 40h158M1 120h158M80 1v39m0 80v39M1 80h39m80 0h39"/>
@@ -45,7 +45,7 @@ export default function TrialHome({accountSignedIn, emailRecovery}: {accountSign
           <li key={line}><Check size={20} aria-hidden="true"/>{line}</li>)}</ul>
       </div>
       <div id="lap-la-so"><ReferenceBirthForm publicTrial embedded accountSignedIn={accountSignedIn} emailRecovery={emailRecovery}/></div>
-    </section>
+    </div></section>
     <section className="home-section home-container"><h2>Bạn nhận được gì</h2>
       <div className="home-columns">{benefits.map(([title, text], i) =>
         <div className="home-benefit" key={title}><span aria-hidden="true">0{i + 1}</span><h3>{title}</h3><p>{text}</p></div>)}</div>
