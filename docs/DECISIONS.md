@@ -1,5 +1,13 @@
 # Sổ quyết định Tinh Luận
 
+## Mẫu biên tập Điền Trạch
+
+Chủ dự án duyệt [bản Điền Trạch biên tập riêng](../.local/qa3120-dien-sol281/dien-trach-mau-bien-tap-da-duyet.md) ngày 05/11/2026. SHA-256 toàn văn `c7ed8b0a641fff29eb891859c40841787965ae72dc8126957dae60bcde7a2e2e`. Mẫu mở bằng hai chặng tạo lập và gìn giữ, dùng ví dụ sửa mái trước mùa mưa và giữ phần quan hệ với con ở phạm vi ngữ cảnh.
+
+Đề xuất Phụ Mẫu trên cùng lá số QA3120. Thái Dương và Thái Âm cùng tại Sửu khớp nhánh Sửu/Mùi của nguồn. Một lời có ba mặt để đối chiếu: điều kiện vật chất của cha mẹ, quan hệ giữa cha và mẹ, và khả năng sống gần con. Không coi ba mặt là ba nguồn riêng, không suy nguyên nhân sống xa hoặc xác nhận gia cảnh. Thiên Di cũng có điều kiện trực tiếp nhưng phạm vi chủ yếu là sự tin phục đi cùng may rủi; Huynh Đệ và Tử Tức mới có một nét quan hệ hẹp, Tật Ách chưa có bài cá nhân.
+
+Kiểm chỉ đọc đúng năm job queued/0 attempt. Bản đối chiếu limited hai phần cho Phụ Mẫu qua validator offline trên input của job. Một CREATE Sol/1.20.0/2.8.1 dự kiến 106.456 byte, khoảng 27.004–27.469 input token theo sáu lượt đã đo. Với biểu giá của các lượt đó (2,50 USD/triệu input ghi cache 30 phút, 10 USD/triệu output), các kịch bản 4.724–7.735 output cho khoảng 0,116–0,145 USD; nếu dùng hết 12.000 output, khoảng 0,189 USD. Đề xuất dự phòng 0,25 USD. Chưa gọi API, chưa giữ ngân sách hay thay đổi bài đã giao.
+
 ## Mẫu biên tập Phúc Đức
 
 Ngày 05/11/2026, chủ dự án duyệt [bản Phúc Đức biên tập riêng](../.local/qa3120-phuc-sol281/phuc-duc-mau-bien-tap-da-duyet.md) làm mẫu. SHA-256 toàn văn `f3c8952dc2c69a91a1196e450ed9fb17715a269828fa65e1004af00f1a00fd1c`. Mẫu giải thích chữ “phúc” ngay đầu bài và dùng việc thu xếp lịch khám từ xa để minh họa chăm lo gia đình. Báo cáo QA3120 vẫn giữ bài Sol đã giao.

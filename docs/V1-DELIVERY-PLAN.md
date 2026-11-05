@@ -1,6 +1,6 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
-QA3120 đã giao Điền Trạch sau một CREATE, bộ đọc 5/11, năm job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-DIEN-TRACH-SOL281-20261105.md). [Bản Điền Trạch biên tập riêng chờ duyệt](../.local/qa3120-dien-sol281/dien-trach-bien-tap-cho-duyet.md).
+QA3120 đã giao Điền Trạch sau một CREATE, bộ đọc 5/11, năm job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-DIEN-TRACH-SOL281-20261105.md). Chủ dự án đã duyệt bản Điền Trạch riêng làm mẫu. [Mẫu đã duyệt và dự toán Phụ Mẫu](DECISIONS.md#mẫu-biên-tập-điền-trạch).
 
 QA3120 đã giao Phúc Đức sau một CREATE; bộ đọc 4/11, sáu job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-PHUC-DUC-SOL281-20261105.md). Chủ dự án đã duyệt bản Phúc Đức riêng làm mẫu. [Mẫu đã duyệt và dự toán Điền Trạch](DECISIONS.md#mẫu-biên-tập-phúc-đức).
 
