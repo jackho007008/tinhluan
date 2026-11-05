@@ -1,5 +1,8 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
+QA3120 đã thử Quan Lộc đúng một CREATE. Provider trả bài, QA giữ lại do phạm vi nguồn ở đoạn Tấu Thư. Tài đã giao, chín cung còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-QUAN-LOC-SOL281-20261105.md).
+
+
 QA3120 đã giao nguyên văn bài Tài Bạch sau khi kiểm lại response đã lưu. Bộ đọc trả 1/11, mười job còn chờ với 0 attempt. [Kết quả kiểm lại](QA3120-TAI-BACH-SOL281-PREFLIGHT-20261105.md#kiểm-lại-tham-chiếu-và-giao-bài). Chủ dự án đã duyệt bản biên tập riêng làm mẫu. Đề xuất thử Quan Lộc; 10 job vẫn chờ. [Quyết định và dự toán](DECISIONS.md#mẫu-biên-tập-tài-bạch).
 
 ## 05/11 — Tài Bạch QA3120: đã kiểm phiên, còn thiếu quyền checkout
