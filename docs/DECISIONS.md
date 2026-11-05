@@ -1,5 +1,13 @@
 # Sổ quyết định Tinh Luận
 
+## Mẫu biên tập Phụ Mẫu
+
+Ngày 05/11/2026, chủ dự án duyệt [bản Phụ Mẫu biên tập riêng](../.local/qa3120-phumau-sol281/phu-mau-mau-bien-tap-da-duyet.md) làm mẫu. SHA-256 toàn văn `bdde67af965ed4cabea5fdda6421997c7404e60bd770ce31e8eb6091436ed627`. Mẫu dùng ví dụ sửa bếp để tách điều kiện vật chất, cách cha mẹ bàn chuyện chung và khả năng người con ở xa góp sức. Báo cáo QA3120 tiếp tục giữ bản Sol đã giao.
+
+Đề xuất Thiên Di trong bốn job còn chờ trên cùng lá số. Thất Sát là chính tinh duy nhất tại Thiên Di ở Ngọ, khớp nhánh Tý/Ngọ. Giữ cả hai vế: được nể, tin phục và hoàn cảnh bên ngoài vẫn có may rủi. Ngữ cảnh Thiên Mã ở Phúc Đức giúp phân biệt chuyện sống xa quê với trải nghiệm giao tiếp bên ngoài. Huynh Đệ và Tử Tức mới có một nét quan hệ hẹp; Tật Ách chưa có bài cá nhân đủ căn cứ. Không dự báo địa vị hoặc khuyên di cư.
+
+Đã SELECT chỉ đọc, xác nhận bốn job queued/0 attempt. Bản đối chiếu Thiên Di limited hai phần qua validator trên đúng input của job. Một CREATE Sol/1.20.0/2.8.1 dự kiến 118.078 byte, khoảng 29.952–30.478 input token theo bảy lượt thực tế. Với biểu giá áp cho các lượt đó (2,50 USD/triệu input ghi cache 30 phút, 10 USD/triệu output), các kịch bản 3.133–7.735 output cho khoảng 0,108–0,153 USD; nếu dùng hết 12.000 output khoảng 0,196 USD. Dự phòng đề xuất 0,25 USD. Chưa gọi provider hoặc đặt chỗ ngân sách.
+
 ## Mẫu biên tập Điền Trạch
 
 Chủ dự án duyệt [bản Điền Trạch biên tập riêng](../.local/qa3120-dien-sol281/dien-trach-mau-bien-tap-da-duyet.md) ngày 05/11/2026. SHA-256 toàn văn `c7ed8b0a641fff29eb891859c40841787965ae72dc8126957dae60bcde7a2e2e`. Mẫu mở bằng hai chặng tạo lập và gìn giữ, dùng ví dụ sửa mái trước mùa mưa và giữ phần quan hệ với con ở phạm vi ngữ cảnh.
