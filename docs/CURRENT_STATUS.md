@@ -1,6 +1,6 @@
 # Tinh Luận — trạng thái bàn giao hiện hành
 
-QA3120 đã giao Phúc Đức sau một CREATE; bộ đọc 4/11, sáu job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-PHUC-DUC-SOL281-20261105.md). [Bản Phúc Đức biên tập riêng chờ duyệt](../.local/qa3120-phuc-sol281/phuc-duc-bien-tap-cho-duyet.md).
+QA3120 đã giao Phúc Đức sau một CREATE; bộ đọc 4/11, sáu job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-PHUC-DUC-SOL281-20261105.md). Chủ dự án đã duyệt bản Phúc Đức riêng làm mẫu. [Mẫu đã duyệt và dự toán Điền Trạch](DECISIONS.md#mẫu-biên-tập-phúc-đức).
 
 QA3120 đã giao Nô Bộc sau một CREATE, bộ đọc 3/11, bảy job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-NO-BOC-SOL281-20261105.md). Chủ dự án đã duyệt bản Nô Bộc riêng làm mẫu. [Mẫu đã duyệt và dự toán Phúc Đức](DECISIONS.md#mẫu-biên-tập-nô-bộc).
 

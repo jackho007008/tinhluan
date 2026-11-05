@@ -1,5 +1,13 @@
 # Sổ quyết định Tinh Luận
 
+## Mẫu biên tập Phúc Đức
+
+Ngày 05/11/2026, chủ dự án duyệt [bản Phúc Đức biên tập riêng](../.local/qa3120-phuc-sol281/phuc-duc-mau-bien-tap-da-duyet.md) làm mẫu. SHA-256 toàn văn `f3c8952dc2c69a91a1196e450ed9fb17715a269828fa65e1004af00f1a00fd1c`. Mẫu giải thích chữ “phúc” ngay đầu bài và dùng việc thu xếp lịch khám từ xa để minh họa chăm lo gia đình. Báo cáo QA3120 vẫn giữ bài Sol đã giao.
+
+Đề xuất thử Điền Trạch trên cùng lá số. Trong sáu cung chờ, nhánh này có điều kiện điều chỉnh cụ thể ngay tại cung đích: Thiên Cơ và Cự Môn cùng ở Điền tại Mão, Triệt án trực tiếp. Luận riêng việc tạo lập khó/chậm và việc giữ gìn phần đã có có thể gặp hao hụt. Không xác định gia sản thừa kế, tài sản thực có hay thời điểm mua/mất nhà. Phụ Mẫu cũng có một lời trực tiếp nhưng điều kiện gia cảnh và cách sống giữa người thân dễ bị đọc như sự kiện đã xảy ra. Bản đối chiếu Điền hai phần, phạm vi limited, qua validator offline bằng đúng input của job.
+
+SELECT chỉ đọc xác nhận sáu job queued/0 attempt. Dự toán 1 CREATE Sol/1.20.0/2.8.1: 108.006 byte, 27.397–27.777 input token theo năm lượt thực Tài/Quan/Phu/Nô/Phúc. Với 4.795–7.735 output và biểu giá đã dùng (2,50 USD/triệu input ghi cache 30 phút, 10 USD/triệu output), khoảng 0,117–0,146 USD; với 12.000 output khoảng 0,189 USD. Dự phòng đề xuất 0,25 USD. Chỉ ghi đề xuất, không gọi API hoặc đặt chỗ ngân sách.
+
 ## Mẫu biên tập Nô Bộc
 
 Ngày 05/11/2026, chủ dự án duyệt [bản Nô Bộc biên tập riêng](../.local/qa3120-no-sol281/no-boc-mau-bien-tap-da-duyet.md) làm mẫu. SHA-256 toàn văn `537762ce1ddeaca6a289c5d584b75f1fb7a744af9e04ea20b671daa5fb642f02`. Mẫu giữ đúng chiều người giúp và chữ “nếu”, dùng ví dụ bạn bè giới thiệu khách để phân biệt sự giúp đỡ, phần việc nhận làm và kết quả kinh doanh. Bài Nô Bộc đã giao vẫn là bản Sol.
