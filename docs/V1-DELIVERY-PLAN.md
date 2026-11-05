@@ -1,5 +1,7 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
+Đã chốt [lời văn biên tập Huynh Đệ](QA3120-HUYNH-DE-SOL281-20261105.md#bản-chốt-biên-tập-riêng) riêng với bản đã giao trên QA3120.
+
 QA3120 đã giao Quan Lộc và Thiên Di từ phản hồi đã lưu. Bộ đọc trả 9/11, Tử Nữ và Tật Ách còn chờ, không phát sinh API. [Hai bài đã giao và kết quả kiểm](QA3120-QUAN-DI-ARCHIVE-REVIEW-20261105.md).
 
 QA3120 đã giao Huynh Đệ sau một CREATE. Bộ đọc trả 7/11, Tử Nữ và Tật Ách còn chờ với 0 attempt. [Toàn văn, chi phí và đánh giá theo tám mẫu](QA3120-HUYNH-DE-SOL281-20261105.md).
