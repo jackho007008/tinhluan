@@ -3392,3 +3392,7 @@ TheoQ14, một rule TTDi áp đúng phạm vi TB179§10.27, không điều kiệ
 ## Cổ Thư · lô nền tảng · 05/11/2026
 
 Đã thực hiện phần token, font và component dùng chung của PR nền tảng. Kiểm Chrome ở 320/360/390/768/1440 và kiểm riêng các trạng thái component. Dừng trước lô trang chủ và form: bố cục trang, điều hướng riêng cho checkout và nghiệm thu từng màn còn chờ. [Kết quả kiểm](CURRENT_STATUS.md#cổ-thư--nền-tảng-giao-diện--05112026).
+
+### Trang chủ và form Cổ Thư · 05/11/2026
+
+Đã làm nhóm D1-Home/D1-FormError/D2-DeskHome trên nhánh trial, dùng form, quyền và đường ghi bản đọc hiện hành. Đã kiểm responsive và chụp ba màn. Điểm dừng trước nhóm kết quả. Xem [trạng thái](CURRENT_STATUS.md).

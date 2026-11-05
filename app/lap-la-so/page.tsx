@@ -1,3 +1,4 @@
+import '../trial-home.css';
 import {customerSession} from '@/lib/customer-auth/accounts';
 import {customerReadingAccess} from '@/lib/trial/reading-access';
 import {CUSTOMER_COOKIE} from '@/lib/customer-auth/config';

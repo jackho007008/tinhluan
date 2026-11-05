@@ -626,3 +626,7 @@ Bàn giao tách nội dung/toànvăn trước–sau, cung nhậnýđầutiên, p
 - Ghi một hàng đợi trong backlog từ hồ sơ đã khép; phân biệt thiếu bắt buộc, ngoài phạm vi, tùy chọn, chưa đủ bằng chứng. Giữ nguyên sổ469lịch sử; đổi loại không phải đã giải, không cộng khóa/phương diện/dấu giới hạn. Ưu tiên gói bắt buộc đủ đặc tả dùng chung; được coding/kiểm/tích hợpQA khi đủ, không xin lại quyền. Không mở lại cuộc rà toàn nguồn.
 
 Giữ engine/lịch sử/quyền-hạn/QA3070/34bài, G2 và Live tắt. Việc ghi phê duyệt Q-ND02 không đồng nghĩa policy đã đổi; trạng thái thực thi phải có bằng chứng riêng trong backlog.
+
+## Trang chủ Cổ Thư trong luồng trial · 05/11/2026
+
+Chủ dự án chấp thuận ba phương án sau khi đối chiếu D1-Home và D2-DeskHome với nguồn hiện hành. Trang chủ giới thiệu phần miễn phí, bỏ thẻ giá, CTA mua và lời hứa chuyên sâu 11 cung. Mục “Bài mới nhất” lấy tối đa ba bài công khai, xếp theo ngày xuất bản qua listPublished. Footer chỉ dùng thương hiệu, ghi chú tham khảo và liên kết đang phục vụ; các thông tin pháp nhân, liên hệ và chính sách thiếu nguồn được ẩn.

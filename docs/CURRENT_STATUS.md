@@ -774,3 +774,9 @@ Mốc trước duyệt: đã chuẩn bị [bốn mẫu toàn văn để duyệt]
 ## Cổ Thư · nền tảng giao diện · 05/11/2026
 
 Đã thêm token, font local và lớp trình bày cho 11 component trên checkout phát triển. Typecheck, build và kiểm Chrome đạt. Suite Vitest trên bản sao riêng đạt 4.602/4.656 ca; kho fixture nguồn trong bản sao còn thiếu phần văn bản trang sách. Ca result-presentation lỗi cùng assertion với giao diện trước thay đổi. Chưa tích hợp vào QA.
+
+## Cổ Thư · Trang chủ và form · 05/11/2026
+
+Đã áp dụng D1-Home, D1-FormError và D2-DeskHome trên checkout phát triển. Chrome kiểm cả hai route ở 320/360/390/768/1440, lưu ba ảnh trong `docs/evidence/co-thu-home-20261105/` (kho cục bộ). Đã kiểm ghi một bản đọc trên DB riêng và chuyển tới bốn tab. Phần bài mới đã kiểm tải, lỗi, rỗng và ba bài công khai đúng thứ tự.
+
+Typecheck/build đạt, repo chưa khai báo lint. Vitest toàn suite trên DB riêng đạt 4.625/4.656; lỗi đầu tiên ở tanbien-finance. Trong 31 ca lỗi, 28 trùng tên với log lô nền tảng, thêm hai ca nguồn sách/web tái hiện với UI trước thay đổi. Ca recovery thiếu email local trong suite; chạy lại form/recovery trên DB đã có dữ liệu lỗi 7/14, chạy trên DB mới đạt 14/14. Chưa deploy.

@@ -1,0 +1,92 @@
+/* Home and birth form compose the shared Cổ Thư controls on the public trial routes. */
+@media screen {
+  [data-trial-home] { background: var(--paper-100); color: var(--ink-900); }
+  .reference-ui main.trial-home { width: 100%; max-width: none; margin: 0; padding: 0; font: var(--body); }
+  .trial-home .home-container, .home-footer .home-container {
+    width: min(100% - 2 * var(--space-5), 1200px);
+    margin-inline: auto;
+  }
+  .trial-home h1, .trial-home h2, .trial-home h3, .trial-home p { margin: 0; color: inherit; }
+  .trial-home h1 { font: var(--display-xl); text-wrap: balance; max-width: 16ch; }
+  .trial-home h2, [data-co-thu] .input-wrap[data-birth-form] .card > :is(h1,h2) { font: var(--display-md); }
+  .trial-home h3 { font: var(--display-sm); }
+  .home-overline { font: var(--overline); letter-spacing: var(--overline-tracking); text-transform: uppercase; color: var(--bronze-700); }
+  .home-hero { display: grid; gap: var(--space-6); padding-block: var(--space-8); }
+  .home-opening { position: relative; isolation: isolate; display: grid; align-content: center; gap: var(--space-4); overflow: hidden; }
+  .home-opening > p { color: var(--ink-700); max-width: 50ch; }
+  .home-motif { position: absolute; z-index: -1; right: -40px; top: 0; width: 145px; opacity: .35; color: var(--bronze-500); }
+  .trial-home .home-jump { color: var(--ink-900); border-color: var(--line-500); }
+  .home-checks { display: none; }
+  #lap-la-so, .input-wrap[data-birth-form] :is(input,select) { scroll-margin-top: calc(var(--header-h) + var(--space-3)); }
+  [data-co-thu] .input-wrap[data-birth-form] { width: 100%; min-width: 0; }
+  [data-co-thu] .input-wrap[data-birth-form] .card > :is(h1,h2) { margin: 0 0 var(--space-5); color: var(--ink-900); }
+  [data-co-thu] .input-wrap[data-birth-form] form > fieldset { min-width: 0; }
+  [data-co-thu] .input-wrap[data-birth-form] .field { min-width: 0; margin: 0 0 var(--space-4); }
+  [data-co-thu] .input-wrap[data-birth-form] .row { grid-template-columns: minmax(0,.85fr) minmax(0,1fr) minmax(0,1fr); gap: var(--space-2); }
+  [data-co-thu] .input-wrap[data-birth-form] button[type=submit] { width: 100%; }
+  [data-co-thu] .input-wrap[data-birth-form] .field .row :is(select,input) { padding-inline: var(--space-2); }
+  [data-co-thu] .input-wrap[data-birth-form] .error:empty { display: none; }
+  .birth-error-links { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  .birth-error-links a, .birth-access summary { display: inline-flex; align-items: center; min-height: var(--tap-min); text-decoration: underline; }
+  [data-co-thu] .birth-error-links a { color: var(--danger-fg); }
+  [data-birth-form] .tl-alert { margin-bottom: var(--space-5); }
+  [data-co-thu] .birth-access { margin-top: var(--space-2); }
+  .home-section { padding-block: var(--space-5); }
+  .home-section > h2, .home-titles { margin-bottom: var(--space-4); }
+  .home-columns { display: grid; gap: var(--space-3); }
+  .home-benefit, .home-article { display: grid; align-content: start; gap: var(--space-2); padding-block: var(--space-3); border-top: 1px solid var(--line-200); }
+  .home-benefit > span, .home-article > span { font: var(--label); color: var(--bronze-700); }
+  .home-benefit p, .home-article p { color: var(--ink-700); font: var(--body-sm); }
+  .home-free ul { list-style: disc; padding-left: var(--space-5); margin: var(--space-3) 0 0; }
+  .home-ency, [data-trial-home].reference-ui .home-footer { margin-top: var(--space-6); padding-block: var(--space-8); background: var(--ink-900); color: var(--paper-100); }
+  .home-ency .home-overline { color: var(--gold-300); }
+  .home-ency .home-container { display: grid; gap: var(--space-5); }
+  .home-ency h2 { margin-top: var(--space-2); }
+  .home-ency nav, .home-footer nav { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+  .trial-home .home-ency nav a { padding: var(--space-2) var(--space-4); border: 1px solid var(--line-500); border-radius: var(--radius-pill); color: var(--paper-100); }
+  .home-ency nav a, .home-footer nav a, .home-titles a { display: inline-flex; align-items: center; gap: var(--space-2); min-height: var(--tap-min); }
+  .home-titles { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); }
+  .trial-home .home-titles a { color: var(--bronze-700); font: var(--label); }
+  .trial-home .home-article { color: var(--ink-900); overflow-wrap: anywhere; }
+  .home-faq .reading-disclosure p { padding: 0 var(--space-2) var(--space-4); color: var(--ink-700); }
+  [data-trial-home].reference-ui .home-footer { text-align: left; font: var(--body-sm); }
+  .home-footer strong { font: var(--display-md); }
+  [data-trial-home].reference-ui .home-footer a { color: var(--gold-300); }
+  .home-footer p { color: var(--paper-on-ink); }
+  @media (min-width: 768px) {
+    .home-hero { grid-template-columns: minmax(0,1.1fr) minmax(0,1fr); align-items: center; gap: var(--space-8); padding-block: var(--space-16); }
+    .home-hero .home-jump { display: none; }
+    .home-opening { padding-block: var(--space-16); }
+    .home-motif { width: 340px; top: 0; left: -180px; opacity: .22; }
+    .home-opening h1 { font-size: clamp(42px,4.8vw,64px); }
+    .home-checks { display: grid; gap: var(--space-2); list-style: none; padding: 0; }
+    .home-checks li { display: flex; align-items: center; gap: var(--space-2); }
+    .home-checks svg { color: var(--success-fg); flex-shrink: 0; }
+    .home-columns { grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--space-6); }
+    .home-section { padding-block: var(--space-8); }
+    .home-section > h2, .home-ency h2, .home-titles h2 { font-size: 36px; }
+    .home-ency .home-container, .home-faq { display: grid; grid-template-columns: 1fr 1.3fr; align-items: start; gap: var(--space-8); }
+    .home-ency { padding-block: var(--space-16); }
+    .home-free { max-width: var(--measure); }
+  }
+}
+
+@media screen {
+  [data-co-thu] .input-wrap[data-birth-form] label.leap-choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  [data-co-thu] .input-wrap[data-birth-form] .leap-choice input {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    flex: none;
+  }
+  .reference-ui:has(.input-wrap[data-birth-form]) .tl-mobile-nav > summary::after { content: none; }
+  @media (min-width: 1024px) {
+    .birth-choices { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-4); }
+  }
+}
