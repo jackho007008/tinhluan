@@ -1,5 +1,7 @@
 # Tinh Luận — đầu mối bàn giao đa thread
 
+QA3120 đã giao Phúc Đức sau một CREATE; bộ đọc 4/11, sáu job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-PHUC-DUC-SOL281-20261105.md).
+
 QA3120 đã giao Nô Bộc sau một CREATE, bộ đọc 3/11, bảy job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-NO-BOC-SOL281-20261105.md). Chủ dự án đã duyệt bản Nô Bộc riêng làm mẫu. [Mẫu đã duyệt và dự toán Phúc Đức](DECISIONS.md#mẫu-biên-tập-nô-bộc).
 
 QA3120 đã giao bài Phu Thê (1 CREATE, 0 retry); bộ đọc 2/11, tám job còn chờ. [Toàn văn, chi phí và đánh giá](QA3120-PHU-THE-SOL281-20261105.md). Chủ dự án duyệt bản Phu Thê riêng làm mẫu. [Mẫu đã duyệt và dự toán cho Nô Bộc](DECISIONS.md#mẫu-biên-tập-phu-thê).
