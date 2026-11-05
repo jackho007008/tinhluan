@@ -1,6 +1,6 @@
 # Đặc tả và kế hoạch bàn giao Tinh Luận V1
 
-QA3120 có HTTPS riêng, đã kiểm redirect sang Google. Chờ đăng nhập, đối chiếu quyền sở hữu và checkout test trước một lượt Tài Bạch. [URI và kết quả kiểm](QA3120-TAI-BACH-SOL281-PREFLIGHT-20261105.md#bổ-sung-ngày-0511--google-login-qua-https-riêng).
+QA3120 đã cho phép tài khoản Google thử checkout và gửi thư khôi phục từ phiên chủ đúng lá số Tài Bạch. Chờ xác minh quyền trên báo cáo trước khi thanh toán test. [Bàn giao](QA3120-TAI-BACH-SOL281-PREFLIGHT-20261105.md).
 
 ## 05/11 — Tài Bạch QA3120: đã kiểm phiên, còn thiếu quyền checkout
 
