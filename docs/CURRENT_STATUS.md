@@ -770,3 +770,7 @@ Mốc trước duyệt: đã chuẩn bị [bốn mẫu toàn văn để duyệt]
 ## Baseline Git — 21/10/2026
 
 Đã chuẩn bị quản lý mã/tài liệu cục bộ theo [GIT-BASELINE](GIT-BASELINE.md). Đã có baseline commit `0c5461a1d6fe2bbba9522e99dbeebd8fab67eb98` trên branch `main`, từ597 file đã rà; cập nhật bàn giao bằng commit tài liệu riêng. Không có remote/push. Gói Git không xác minh lại hoặc thay runtime1.54.0/catalog1.51.0, không restart QA/test/build/migration.
+
+## Cổ Thư · nền tảng giao diện · 05/11/2026
+
+Đã thêm token, font local và lớp trình bày cho 11 component trên checkout phát triển. Typecheck, build và kiểm Chrome đạt. Suite Vitest trên bản sao riêng đạt 4.602/4.656 ca; kho fixture nguồn trong bản sao còn thiếu phần văn bản trang sách. Ca result-presentation lỗi cùng assertion với giao diện trước thay đổi. Chưa tích hợp vào QA.

@@ -3388,3 +3388,7 @@ Nguyên tắc giữ chi thật đã duyệt theoQ13; không duyệt ba đoạn t
 ### Kết quả TTDi dùng chung —21/10/2026,1.62/catalog1.59
 
 TheoQ14, một rule TTDi áp đúng phạm vi TB179§10.27, không điều kiện cặp sao/chính tinh; thay rulehẹp thay vì nhân bản. Chỉ phiền lòng, không sinh tử/tai nạn hoặc đảo/xóa nền. So192:59khớp,3Di mới/55bổsung/1thayđoạn,13→10thiếu; các cung khác/G2/lịch sử giữ nguyên. Không coi cung hoàn chỉnh. [Đặc tả và các điểm còn chặn](PHUC-DI-1.0.0.md), [bàn giao/toàn văn](../.local/di-void-shared-20261021/ban-giao.md).397ca nội dung liên quan/6G2/6PDFmock/typecheck/build;6engine luồng công khai/lưu/mở/mobile/quyền,PDF8trang16đoạn. QA3062code daee8c2;QA3070/Livefalse nguyên. Khôngtoàngate, khôngmở sách/Tật/nềnĐồng–Âm. Dừng đúng task.
+
+## Cổ Thư · lô nền tảng · 05/11/2026
+
+Đã thực hiện phần token, font và component dùng chung của PR nền tảng. Kiểm Chrome ở 320/360/390/768/1440 và kiểm riêng các trạng thái component. Dừng trước lô trang chủ và form: bố cục trang, điều hướng riêng cho checkout và nghiệm thu từng màn còn chờ. [Kết quả kiểm](CURRENT_STATUS.md#cổ-thư--nền-tảng-giao-diện--05112026).

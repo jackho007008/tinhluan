@@ -1,3 +1,4 @@
+import {StatusBadge} from './co-thu/primitives';
 import {AI_STATE_LABELS,type AiReadingState} from '@/lib/result-presentation';
 /** Presentation only. Preview states are injected by tests, never by URL/query. */
 export default function AiReadingStatus({state}:{state:AiReadingState}){
@@ -8,5 +9,6 @@ export default function AiReadingStatus({state}:{state:AiReadingState}){
   completed:'Đã có kết quả luận AI được lưu.',
   error:'Chưa tạo được bài luận AI. Vui lòng kiểm tra lại sau.',
  };
- return <div className="ai-reading-status" data-ai-state={state} role="status"><span>Luận AI · {AI_STATE_LABELS[state]}</span><p>{messages[state]}</p></div>;
+ const tones = {'not-created':'neutral','not-entitled':'neutral',generating:'info',completed:'success',error:'danger'} as const;
+ return <div className="ai-reading-status" data-ai-state={state} role="status"><StatusBadge tone={tones[state]}>Luận AI · {AI_STATE_LABELS[state]}</StatusBadge><p>{messages[state]}</p></div>;
 }

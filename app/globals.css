@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "./co-thu-tokens.css";
+@import "./co-thu.css";
 :root {
   --primary: #b4232d;
   --hover: #941c25;
