@@ -8,11 +8,11 @@
 @media(max-width:850px){.ops-app{display:block}.ops-sidebar{padding:16px;border-right:0;border-bottom:1px solid #ddcbb2}.ops-brand{margin-bottom:12px}.ops-sidebar nav{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:4px;padding-bottom:4px}.ops-sidebar nav>a{white-space:nowrap;background:#f2e7d7}.ops-sidebar>.ops-muted{display:none}.ops-main{padding:18px 16px}.ops-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.ops-top{margin-bottom:18px}.ops-top button{padding:10px}.ops-main .ops-fields{grid-template-columns:1fr}.ops-main .ops-filters label{flex:1 1 100%}.ops-main .ops-filters label:has(input[type=date]){flex-basis:calc(50% - 8px)}.ops-metric{padding:16px!important}.ops-main .ops-shell{padding:0}.ops-main .ops-id{font-size:12px}}
 
 /* Cổ Thư dashboard, revenue and analytics share the same admin frame. */
-.ops-app:has(.insights) { background:var(--paper-100);color:var(--ink-900);font:var(--body); }
-.ops-app:has(.insights) .ops-sidebar {background:var(--adm-side);color:var(--adm-side-ink);}
-.ops-app:has(.insights) .ops-sidebar :is(a,span,p) {color:var(--paper-100);}
-.ops-app:has(.insights) .ops-sidebar nav a {background:transparent;}
-.ops-app:has(.insights) .ops-sidebar nav a:is(:hover,:focus-visible) {background:var(--ink-700);}
+.ops-app:has(.insights, .records) { background:var(--paper-100);color:var(--ink-900);font:var(--body); }
+.ops-app:has(.insights, .records) .ops-sidebar {background:var(--adm-side);color:var(--adm-side-ink);}
+.ops-app:has(.insights, .records) .ops-sidebar :is(a,span,p) {color:var(--paper-100);}
+.ops-app:has(.insights, .records) .ops-sidebar nav a {background:transparent;}
+.ops-app:has(.insights, .records) .ops-sidebar nav a:is(:hover,:focus-visible) {background:var(--ink-700);}
 .insights {display:grid;gap:var(--space-4);min-width:0;overflow-wrap:anywhere;}
 .insights :is(h1,h2,h3,p,dl,ol,ul) {margin:0;}
 .insights h1 {font:var(--display-lg);}
@@ -40,9 +40,51 @@
 .insight-ledger td:first-child {font-family:var(--font-mono);}
 .insight-ledger a {display:inline-flex;align-items:center;min-height:var(--tap-min);}
 .insights :focus-visible {outline:2px solid var(--focus);outline-offset:2px;}
-@media(min-width:1024px){.ops-app:has(.insights){grid-template-columns:248px minmax(0,1fr);}}
+@media(min-width:1024px){.ops-app:has(.insights, .records){grid-template-columns:248px minmax(0,1fr);}}
 @media(max-width:1023px){.insight-kpis{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media(max-width:650px){.insight-pair,.insight-kpis{grid-template-columns:minmax(0,1fr);}.insights{gap:var(--space-3);}}
-.ops-app:has(.insights) .ops-sidebar nav a[aria-current=page] {background:var(--adm-side-active);box-shadow:inset 3px 0 var(--seal-600);font-weight:600;}
+.ops-app:has(.insights, .records) .ops-sidebar nav a[aria-current=page] {background:var(--adm-side-active);box-shadow:inset 3px 0 var(--seal-600);font-weight:600;}
 
-@media(max-width:850px){.ops-app:has(.insights) .ops-sidebar nav{flex-wrap:wrap;}}
+@media(max-width:850px){.ops-app:has(.insights, .records) .ops-sidebar nav{flex-wrap:wrap;}}
+
+.records {display:grid;gap:var(--space-5);min-width:0;overflow-wrap:anywhere;}
+.records :is(h1,h2,h3,p,dl) {margin:0;}
+.records h1 {font:var(--display-lg);}
+.records h2 {font:var(--display-sm);}
+.records .tl-card {display:grid;gap:var(--space-4);align-content:start;min-width:0;}
+.records a {color:var(--seal-700);}
+.records :is(a,summary) {min-height:var(--tap-min);display:inline-flex;align-items:center;}
+.records :focus-visible {outline:2px solid var(--focus);outline-offset:2px;}
+.records-heading {display:grid;gap:var(--space-2);}
+.records-id {font-family:var(--font-mono);font-size:12px;overflow-wrap:anywhere;}
+.records-split {display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:var(--space-5);}
+.records-stack {display:grid;gap:var(--space-5);min-width:0;align-content:start;}
+.records-stats {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-3);}
+.records-stat strong {font:var(--display-md);}
+.records-stat h2 {font:var(--label);}
+.records-filters {display:flex;flex-wrap:wrap;align-items:end;gap:var(--space-3);}
+.records-filters label {display:grid;gap:var(--space-1);font:var(--label);min-width:0;flex:1 1 130px;}
+.records-filters input,.records-filters select {width:100%;min-width:0;min-height:var(--control-h);font:var(--body);padding:var(--space-2);border:1px solid var(--line-500);border-radius:var(--radius-md);background:var(--paper-0);color:var(--ink-900);}
+.records-table-wrap {border:1px solid var(--line-200);border-radius:var(--radius-lg);background:var(--paper-0);min-width:0;}
+.records-table {width:100%;table-layout:fixed;border-collapse:collapse;font:var(--body-sm);}
+.records-table :is(th,td) {padding:var(--space-3) var(--space-2);text-align:left;vertical-align:top;border-bottom:1px solid var(--line-200);overflow-wrap:anywhere;}
+.records-table th {font:var(--caption);color:var(--ink-700);}
+.records-table td {min-height:var(--control-h);}
+.records-cell-label {display:none;}
+.records-table .tl-badge {height:auto;white-space:normal;max-width:100%;}
+.records dd {margin:var(--space-1) 0 var(--space-4);}
+.records dt {font:var(--label);color:var(--ink-700);}
+.records-right {border-bottom:1px solid var(--line-200);padding-block:var(--space-3);}
+.records-reader {min-width:0;}
+.records-reader summary {cursor:pointer;font:var(--title);}
+.records-reader .result-workspace {max-width:100%;min-width:0;}
+@media(max-width:1100px){.records-split{grid-template-columns:minmax(0,1fr);}}
+@media(max-width:767px){
+  .records-table,.records-table tbody,.records-table tr,.records-table td{display:block;width:100%;}
+  .records-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
+  .records-table tr{border-bottom:1px solid var(--line-500);padding:var(--space-3);}
+  .records-table td{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:var(--space-3);border:0;padding:var(--space-2) 0;}
+  .records-cell-label{display:block;font:var(--label);color:var(--ink-700);}
+  .records-stats{grid-template-columns:minmax(0,1fr);}
+}
+.records .records-heading {margin:0;width:100%;display:grid;justify-items:start;align-items:start;text-align:left;padding:0;background:transparent;border:0;}

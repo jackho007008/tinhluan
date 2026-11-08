@@ -3402,3 +3402,5 @@ TheoQ14, một rule TTDi áp đúng phạm vi TB179§10.27, không điều kiệ
 Đã căn lại lưới, họa tiết và khoảng cách desktop theo D2-DeskHome.html/.png; đã kiểm lại cả ba màn. Dừng ở nhóm Trang chủ + form.
 
 Đã triển khai lô A3-Dashboard, A3-Revenue, A3-Analytics trên route admin hiện có. Các ô thiếu nguồn giữ trạng thái “Chưa có dữ liệu” theo quyết định chủ dự án. Dừng trước phần bổ sung dữ liệu.
+
+Đã hoàn thành trình bày lô khách hàng và báo cáo Cổ Thư (A3-Customers, A3-CustomerDetail, A3-Reports, A3-ReportDetail) ngày 08/11/2026. Phần bổ sung nguồn dữ liệu theo cung, tổng tiền khách và tác vụ admin chờ lô riêng. Xem CURRENT_STATUS.md.

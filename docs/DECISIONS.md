@@ -632,3 +632,5 @@ Giữ engine/lịch sử/quyền-hạn/QA3070/34bài, G2 và Live tắt. Việc 
 Chủ dự án chấp thuận ba phương án sau khi đối chiếu D1-Home và D2-DeskHome với nguồn hiện hành. Trang chủ giới thiệu phần miễn phí, bỏ thẻ giá, CTA mua và lời hứa chuyên sâu 11 cung. Mục “Bài mới nhất” lấy tối đa ba bài công khai, xếp theo ngày xuất bản qua listPublished. Footer chỉ dùng thương hiệu, ghi chú tham khảo và liên kết đang phục vụ; các thông tin pháp nhân, liên hệ và chính sách thiếu nguồn được ẩn.
 
 05/11/2026 — Chủ dự án xác nhận giữ bố cục cả ba màn A3-Dashboard, A3-Revenue, A3-Analytics. Dùng dữ liệu admin sẵn có, giữ vị trí và ghi “Chưa có dữ liệu” cho chỉ số thiếu nguồn. Phần bổ sung nguồn dữ liệu sẽ thực hiện sau.
+
+08/11/2026 — Chủ dự án đồng ý áp quyết định của lô trước cho A3-Customers, A3-CustomerDetail, A3-Reports, A3-ReportDetail. Giữ bố cục Cổ Thư và dữ liệu hiện có; phần thiếu nguồn ghi “Chưa có dữ liệu”. Chỉ hiện bộ lọc/thao tác khi backend hiện hành hỗ trợ.
