@@ -3404,3 +3404,7 @@ TheoQ14, một rule TTDi áp đúng phạm vi TB179§10.27, không điều kiệ
 Đã triển khai lô A3-Dashboard, A3-Revenue, A3-Analytics trên route admin hiện có. Các ô thiếu nguồn giữ trạng thái “Chưa có dữ liệu” theo quyết định chủ dự án. Dừng trước phần bổ sung dữ liệu.
 
 Đã hoàn thành trình bày lô khách hàng và báo cáo Cổ Thư (A3-Customers, A3-CustomerDetail, A3-Reports, A3-ReportDetail) ngày 08/11/2026. Phần bổ sung nguồn dữ liệu theo cung, tổng tiền khách và tác vụ admin chờ lô riêng. Xem CURRENT_STATUS.md.
+
+Admin local3121 · 09/11/2026: đăng nhập mật khẩu đã có code và 10 test mock/typecheck/build đạt. Còn chặn cấu hình: DB QA hiện có 0 admin hoạt động; chờ xác định tài khoản/DB đúng trước khi bật và kiểm thực tế. Không tự cấp quyền.
+
+Admin local3121 · 09/11/2026: đã khép cấu hình sau khi chủ dự án yêu cầu tạo admin mới. Đăng nhập mật khẩu và logout thực tế qua Chrome đạt; API phân quyền giữ nguyên. Bản local chạy, không phát hành/tunnel mới.

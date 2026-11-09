@@ -1,0 +1,14 @@
+import {it,expect,vi,beforeEach} from 'vitest';
+import {scryptSync} from 'node:crypto';
+const mock=vi.hoisted(()=>({read:vi.fn(),query:vi.fn(),limit:vi.fn()}));
+vi.mock('node:fs/promises',()=>({readFile:mock.read}));
+vi.mock('../lib/db',()=>({pool:{},transaction:(fn:any)=>fn({query:mock.query}),rateLimit:mock.limit}));
+import {loginAdminPassword,verifyPassword} from '../lib/admin/password';
+const salt='ab'.repeat(16),password='test-only-long-password';
+const hash=scryptSync(password,salt,64,{N:32768,r:8,p:1,maxmem:64*1024*1024}).toString('hex');
+beforeEach(()=>{vi.clearAllMocks();process.env.CUSTOMER_AUTH_ENABLED='true';process.env.ADMIN_PASSWORD_FILE='/test/config';mock.read.mockResolvedValue(JSON.stringify({userId:'2b72ca38-5242-4ed9-a2ee-c2d849bbbd98',username:'admin',salt,hash}));mock.query.mockResolvedValue({rowCount:1});});
+it('compares password hash',async()=>{expect(await verifyPassword(password,salt,hash)).toBe(true);expect(await verifyPassword('wrong',salt,hash)).toBe(false);});
+it('rejects unknown usernames and wrong passwords without sessions',async()=>{await expect(loginAdminPassword('other',password)).rejects.toThrow();await expect(loginAdminPassword('admin','wrong')).rejects.toThrow();expect(mock.query).not.toHaveBeenCalled();});
+it('requires existing active role, cannot grant admin',async()=>{mock.query.mockResolvedValue({rowCount:0});await expect(loginAdminPassword('admin',password)).rejects.toThrow();expect(mock.query).toHaveBeenCalledTimes(1);});
+it('creates opaque session only after password and role, rotates old session',async()=>{const token=await loginAdminPassword('ADMIN',password,'a'.repeat(43));expect(token).toMatch(/^[A-Za-z0-9_-]{43}$/);expect(mock.query.mock.calls[0][0]).toContain('revoked_at IS NULL');expect(mock.query.mock.calls[1][0]).toContain('INSERT INTO customer_sessions');expect(mock.query.mock.calls[2][0]).toContain('revoked_at=now()');expect(JSON.stringify(mock.query.mock.calls)).not.toContain(password);});
+it('fails closed when disabled or rate limited',async()=>{process.env.CUSTOMER_AUTH_ENABLED='false';await expect(loginAdminPassword('admin',password)).rejects.toThrow();process.env.CUSTOMER_AUTH_ENABLED='true';mock.limit.mockRejectedValueOnce(Error('RATE_LIMIT'));await expect(loginAdminPassword('admin',password)).rejects.toThrow('RATE_LIMIT');expect(mock.query).not.toHaveBeenCalled();});

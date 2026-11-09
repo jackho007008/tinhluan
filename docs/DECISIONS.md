@@ -634,3 +634,7 @@ Chủ dự án chấp thuận ba phương án sau khi đối chiếu D1-Home và
 05/11/2026 — Chủ dự án xác nhận giữ bố cục cả ba màn A3-Dashboard, A3-Revenue, A3-Analytics. Dùng dữ liệu admin sẵn có, giữ vị trí và ghi “Chưa có dữ liệu” cho chỉ số thiếu nguồn. Phần bổ sung nguồn dữ liệu sẽ thực hiện sau.
 
 08/11/2026 — Chủ dự án đồng ý áp quyết định của lô trước cho A3-Customers, A3-CustomerDetail, A3-Reports, A3-ReportDetail. Giữ bố cục Cổ Thư và dữ liệu hiện có; phần thiếu nguồn ghi “Chưa có dữ liệu”. Chỉ hiện bộ lọc/thao tác khi backend hiện hành hỗ trợ.
+
+09/11/2026 — Chủ dự án yêu cầu admin không bắt buộc Google, cho phép username hoặc email và mật khẩu. Phạm vi triển khai trước mắt là đăng nhập mật khẩu cho bản kiểm tra local, credential liên kết rõ tới user_id đã có vai trò admin; không suy quyền từ email. Yêu cầu này chưa chỉ định tài khoản mới để cấp vai trò.
+
+09/11/2026 — Chủ dự án xác nhận tạo tài khoản username admin với mật khẩu do chủ dự án chỉ định để kiểm giao diện3121. Quyền này cho phép tạo đúng một user và admin_roles trên QA55462, ghi audit server-operator; không cấp quyền đọc khách hoặc thay lịch sử. Credential lưu băm riêng trên máy chủ, không ghi mật khẩu vào tài liệu/Git.

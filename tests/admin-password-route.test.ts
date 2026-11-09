@@ -1,0 +1,13 @@
+import {it,expect,vi,beforeEach} from 'vitest';
+import {NextRequest} from 'next/server';
+const mock=vi.hoisted(()=>({login:vi.fn(),logout:vi.fn()}));
+vi.mock('../lib/admin/password',()=>({passwordLoginEnabled:()=>true,loginAdminPassword:mock.login}));
+vi.mock('../lib/customer-auth/accounts',()=>({logoutCustomer:mock.logout}));
+import {POST} from '../app/api/admin-login/route';
+beforeEach(()=>{vi.clearAllMocks();process.env.APP_ORIGIN='http://127.0.0.1:3121';process.env.CUSTOMER_ALLOWED_ORIGINS='';mock.login.mockResolvedValue('a'.repeat(43));});
+const req=(body:string,origin='http://127.0.0.1:3121')=>new NextRequest('http://127.0.0.1:3121/api/admin-login',{method:'POST',headers:{origin,'content-type':'application/x-www-form-urlencoded'},body});
+it('rejects cross origin before password verification',async()=>{expect((await POST(req('identifier=admin&password=x','https://evil.example'))).status).toBe(403);expect(mock.login).not.toHaveBeenCalled();});
+it('rejects duplicates and oversized body',async()=>{expect((await POST(req('identifier=a&identifier=b&password=c'))).status).toBe(401);expect((await POST(req('password='+'x'.repeat(4100)))).status).toBe(401);expect(mock.login).not.toHaveBeenCalled();});
+it('sets HttpOnly same-site session and fixed redirect',async()=>{const r=await POST(req('identifier=admin&password=test'));expect(r.status).toBe(303);expect(r.headers.get('location')).toBe('http://127.0.0.1:3121/internal/admin');expect(r.headers.get('set-cookie')).toMatch(/HttpOnly/i);expect(r.headers.get('set-cookie')).toMatch(/SameSite=lax/i);});
+it('uses generic failure without disclosing account existence',async()=>{mock.login.mockRejectedValue(Error('private DB detail'));const r=await POST(req('identifier=admin&password=wrong'));expect(r.status).toBe(401);expect(await r.text()).not.toContain('private');});
+it('logout revokes server session and clears cookie',async()=>{const r=await POST(req('action=logout'));expect(mock.logout).toHaveBeenCalled();expect(r.headers.get('set-cookie')).toContain('Max-Age=0');expect(mock.login).not.toHaveBeenCalled();});
